@@ -1,9 +1,0 @@
-/* Backgrpund colorings */
-.bg-default {
-    background-color: #191919;
-}
-
-/* Features */
-.no-pointer-events {
-    pointer-events: none;
-}

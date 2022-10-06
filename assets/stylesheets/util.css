@@ -1,0 +1,39 @@
+/* Backgrpund colorings */
+.bg-default {
+    background-color: #191919;
+}
+
+/* Features */
+.no-pointer-events {
+    pointer-events: none;
+}
+
+.fade-in-bottom {
+    animation: fadeInDown 1.6s ease-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-64px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-right {
+    animation: fadeInRight 1.6s ease-out;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(64px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
