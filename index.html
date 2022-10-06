@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Global head -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta property="og:site_name" content="Sarf Esports">
+    <!-- TODO: Input the absolute path of the favicon ↓↓-->
+    <meta property="og:image" content="/assets/img/logos/sarf_large.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content=""> <!-- TODO: Input the link to index  -->
+    <meta name="theme-color" content="#191919">
+
+    <meta name="keywords" content="sarf">
+    <meta name="author" content="Rinrin.rs">
+    <meta name="copyright" content="© 2022 Sarf Esports All rights reserved">
+
+    <!-- Local head -->
+    <link rel="icon" href="./assets/img/logos/sarf.png">
+    <title>Sarf Esports</title>
+    <meta name="title" content="Sarf Esports">
+    <meta name="description" content="Sarf Esports の公式サイトです。">
+
+    <meta property="og:title" content="Sarf Esports">
+    <meta property="og:description" content="Sarf Esports の公式サイトです。">
+    <meta property="og:url" content=""> <!-- TODO: Input the URL of this page -->
+    <!-- website or article -->
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+    <link rel="stylesheet" href="./assets/stylesheet/util.css">
+    <style>
+        body {
+            /* TODO: Set the background image finally ↓↓ */
+            background-image: url(https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .continer {
+            width: 100%;
+        }
+
+        .container::before {
+            content: "";
+            display: block;
+            padding-top: 64px;
+        }
+
+        .container::after {
+            content: "";
+            display: block;
+            border-bottom: 2px solid white;
+            padding-top: 86px;
+        }
+
+        section {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        .dropdown-btn {
+            text-decoration: none;
+            color: white;
+            padding: 1rem 1.25rem;
+            display: inline-block;
+            margin: 16px auto 32px auto;
+            font-size: 24px;
+            transition: .4s;
+        }
+
+        .dropdown-btn:hover {
+            transform: translateY(4px);
+            color: white;
+        }
+
+        .section-title {
+            text-align: left;
+        }
+
+        .section-title h1 {
+            font-size: 40px;
+            border-bottom: 2px solid white;
+            display: inline-block;
+            padding-right: 32px;
+        }
+
+        .section-content {
+            margin: 16px 0;
+        }
+
+        .section-content p {
+            text-align: left;
+            max-width: 576px;
+            font-size: 22px;
+            margin: 0 auto;
+            font-weight: 1;
+            letter-spacing: .075em;
+            line-height: 1.5;
+        }
+
+        .empty-section {
+            height: 4vw;
+        }
+
+        .topic-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .topic-list li {
+            text-align: left;
+            background-color: #101010;
+            padding: 12px 32px 4px 8px;
+            border-left: #83ebff 5px solid;
+            margin: 7px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .topic-list li h2 {
+            font-size: 24px;
+            margin-left: 5px;
+            letter-spacing: .06em;
+        }
+
+        .topic-list li span {
+            background-color: firebrick;
+            padding: 4px 7px 5px 5px;
+            margin-left: 2px;
+        }
+
+        .title-list {
+            list-style: none;
+        }
+
+        .title-list li {
+            border: #dae6f3 5px solid;
+            border-radius: 3px;
+            padding: 16px 0;
+            width: 64%;
+            margin: 0 auto 24px auto;
+            transition: .4s ease-out;
+        }
+
+        .title-list li:hover {
+            transform: scale(1.34);
+        }
+
+        .title-list li img {
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="./assets/img/logos/sarf.png" alt="logo"></a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#topics">TOPICS</a></li>
+                <li><a href="#title">TITLE</a></li>
+                <li><a href="#sponsor">SPONSOR</a></li>
+                <li><a href="">CONTACT</a></li> <!-- TODO: Implement the contact form -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container bg-default">
+            <section style="margin-top:192px;">
+                <div style="max-width:384px;margin:0 auto;">
+                    <img src="./assets/img/logos/sarf.png" alt="logo" class="no-pointer-events"
+                        style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <h1 style="font-size:64px;">Sarf Esports</h1>
+                <a href="#about" class="dropdown-btn">▼</a>
+            </section>
+        </div>
+
+        <div class="container bg-default">
+            <section id="about">
+                <div class="section-title">
+                    <h1>ABOUT</h1>
+                </div>
+                <div class="section-content">
+                    <p>
+                        2022年に設立された大阪を拠点としているアマチュアEスポーツチームです。
+                        現在「Fortnite部門」「APEX部門」「Minecraft部門」の3部門で活動しており、
+                        eスポーツの発展を目的として精力的に活動を行っております。
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="empty-section"></section>
+        </div>
+
+        <div class="container bg-default">
+            <section id="topics">
+                <div class="section-title">
+                    <h1>TOPICS</h1>
+                </div>
+                <div class="section-content">
+                    <ul class="topic-list">
+                        <!-- 
+                            Note: We can add the NEW flag by adding `<span>new</span>` after the date. 
+                        -->
+                        <li>
+                            2022/10/10<span>new</span>
+                            <h2>公式サイト開設</h32>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="empty-section"></section>
+        </div>
+
+        <div class="container bg-default">
+            <section id="title">
+                <div class="section-title">
+                    <h1>TITLE</h1>
+                </div>
+                <div class="section-content">
+                    <ul class="title-list">
+                        <li><img src="./assets/img/logos/fortnite.svg" alt="fortnite" style="width:80%;"></li>
+                        <li><img src="./assets/img/logos/apex.svg" alt="apex" style="width:40%;"></li>
+                        <li><img src="./assets/img/logos/minecraft.svg" alt="minecraft" style="width:90%;margin:8px 0;">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="empty-section"></section>
+        </div>
+
+        <div class="container bg-default">
+            <section id="sponsor">
+                <div class="section-title">
+                    <h1>SPONSOR</h1>
+                </div>
+                <div class="section-content">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <!-- TODO: Implement the footer -->
+        <p class="copyright">© 2022 Sarf Esports All rights reserved</p>
+    </footer>
+</body>
+<b>
+
+</html>

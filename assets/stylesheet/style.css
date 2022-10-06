@@ -1,0 +1,67 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    /* font-family: ;  TODO: Set font*/
+}
+
+/* ▼ header ▼ */
+
+header {
+    position: fixed;
+}
+
+header img {
+    width: 64px;
+}
+
+header img:hover {
+    transform: rotateZ(360deg);
+    transition: 1s ease-out;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 10px 16px 10px 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-shadow: 0 2.5px #191919;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .3s;
+}
+
+header nav ul li a:hover {
+    color: #83ebff;
+    text-shadow: 0 2.5px #191919;
+    text-decoration: underline;
+}
+
+/* ▲ header ▲ */
+
+/* ▼ footer ▼ */
+
+footer {
+    height: 24vh;
+    background-color: #111;
+}
+
+.copyright {
+    margin-top: 2em;
+}
+
+/* ▲ footer ▲ */
