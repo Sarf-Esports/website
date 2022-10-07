@@ -36,3 +36,16 @@ console.log(`
  ###    ####  #       #        #####  ####   #       ###   #        ##   ####
                                              #
 `);
+
+let is_twitter_visible = false;
+
+window.addEventListener("scroll", function() {
+	if (!is_twitter_visible) { 
+		show_twitter_icon(); 
+		is_twitter_visible = true;
+	}
+});
+
+function show_twitter_icon() {
+	document.getElementById("twitter").classList.add("twitter-show");
+}

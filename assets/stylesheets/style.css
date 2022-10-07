@@ -81,3 +81,42 @@ footer {
 }
 
 /* ▲ footer ▲ */
+
+/* ▼ Twitter link ▼ */
+#twitter {
+    text-decoration: none;
+    color: white;
+    height: 64px;
+    width: 64px;
+    position:fixed;
+    right:4vw;
+    bottom: 64px;
+	display: none;
+}
+
+#twitter div svg {
+    opacity: .75;
+    transition: .37s;
+}
+
+#twitter div svg:hover {
+    color: #1da1f2;
+    opacity: 1;
+    transform: translateX(-6px) translateY(-6px) scale(1.2);
+}
+
+.twitter-show {
+	display: inline !important;
+	animation: show .8s;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* ▲ Twitter link ▲ */
