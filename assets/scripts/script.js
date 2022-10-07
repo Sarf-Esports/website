@@ -62,7 +62,6 @@ function hide_contact_modal() {
 	document.getElementById("contact-modal").classList.add("hide-contact-modal");
 	document.getElementById("contact-modal").classList.remove("show-contact-modal");
 	is_contact_visible = false;
-
 }
 
 document.addEventListener("keydown", function (event) {
