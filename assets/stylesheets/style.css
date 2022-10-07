@@ -1,70 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap");
 
 html {
-    scroll-behavior: smooth;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	scroll-behavior: smooth;
+	font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
 body {
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
 }
 
 /* ▼ header ▼ */
 
 header {
-    position: fixed;
+	position: fixed;
 }
 
 header img {
-    width: 64px;
+	width: 64px;
 }
 
 header img:hover {
-    transform: rotateZ(360deg);
-    transition: 1s ease-out;
+	transform: rotateZ(360deg);
+	transition: 1s ease-out;
 }
 
 header nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 header nav ul li {
-    list-style: none;
-    margin: 10px 16px 10px 10px;
+	list-style: none;
+	margin: 10px 16px 10px 10px;
 }
 
 header nav ul li a {
-    color: white;
-    text-shadow: 0 2.5px #191919;
-    font-size: 16px;
-    text-decoration: none;
-    transition: .3s;
+	color: white;
+	text-shadow: 0 2.5px #191919;
+	font-size: 16px;
+	text-decoration: none;
+	transition: .3s;
 }
 
 header nav ul li a:hover {
-    color: #83ebff;
-    text-shadow: 0 0 #191919;
+	color: #83ebff;
+	text-shadow: 0 0 #191919;
 }
 
 header nav ul li a:not(.has-img)::after {
-    content: "";
-    display: block;
-    width: 0;
-    border-bottom: 2px solid #83ebff;
-    transition: .2s;
+	content: "";
+	display: block;
+	width: 0;
+	border-bottom: 2px solid #83ebff;
+	transition: .2s;
 }
 
 header nav ul li a:not(.has-img):hover::after {
-    content: "";
-    display: block;
-    width: 110%;
-    border-bottom: 2px solid #83ebff;
+	content: "";
+	display: block;
+	width: 110%;
+	border-bottom: 2px solid #83ebff;
 }
 
 /* ▲ header ▲ */
@@ -72,40 +72,40 @@ header nav ul li a:not(.has-img):hover::after {
 /* ▼ footer ▼ */
 
 footer {
-    height: 24vh;
-    background-color: #111;
+	height: 24vh;
+	background-color: #111;
 }
 
 .copyright {
-    margin-top: 2em;
+	margin-top: 2em;
 }
 
 /* ▲ footer ▲ */
 
 /* ▼ Twitter link ▼ */
 #twitter {
-    text-decoration: none;
-    color: white;
-    height: 64px;
-    width: 64px;
-    position:fixed;
-    right:4vw;
-    bottom: 64px;
+	text-decoration: none;
+	color: white;
+	height: 64px;
+	width: 64px;
+	position: fixed;
+	right: 4vw;
+	bottom: 64px;
 	display: none;
 }
 
 #twitter div svg {
-    opacity: .75;
-    transition: .37s;
+	opacity: .75;
+	transition: .37s;
 }
 
 #twitter div svg:hover {
-    color: #1da1f2;
-    opacity: 1;
-    transform: translateX(-6px) translateY(-6px) scale(1.2);
+	color: #1da1f2;
+	opacity: 1;
+	transform: translateX(-6px) translateY(-6px) scale(1.2);
 }
 
-.twitter-show {
+.show-twitter {
 	display: inline !important;
 	animation: show .8s;
 }
@@ -114,9 +114,82 @@ footer {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
 }
 
 /* ▲ Twitter link ▲ */
+
+/* ▼ Mail button ▼ */
+
+#contact-modal {
+	position: fixed;
+	inset: 0;
+	margin: auto;
+	max-width: 320px;
+	height: 192px;
+	background-color: rgb(13, 18, 32);
+	border: 3px solid #daf9ff;
+	padding: 16px;
+}
+
+#contact-modal h1 {
+	color: #daf9ff;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+.modal-close-btn {
+	position: absolute;
+	top: 4px;
+	right: 8px;
+	cursor: pointer;
+	font-size: 2rem;
+	font-weight: bold;
+	transition: .2s;
+}
+
+.modal-close-btn:hover {
+	color: #ff6347;
+}
+
+#contact-modal p {
+	font-size: 12px;
+	margin-bottom: 16px;
+	text-align: left;
+}
+
+.mail-btn {
+	display: inline-block;
+	text-decoration: none;
+	border: 3px solid #fff9ee;
+	color: white;
+	font-size: 16px;
+	font-weight: 900;
+	padding: 4px 6px;
+	transition: .3s;
+}
+
+.mail-btn:hover {
+	background-color: #fff9ee;
+	color: #191919;
+	box-shadow: 0 5px 0 #cfb27a;
+}
+
+.mail-btn:active {
+	box-shadow: 0 1px 0 #cfb27a;
+	transform: translateY(4px);
+}
+
+.show-contact-modal {
+	display: block;
+}
+
+.hide-contact-modal {
+	display: none;
+}
+
+/* ▲ Mail button ▲ */
