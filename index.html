@@ -232,7 +232,7 @@
 				<div class="section-content">
 					<ul class="title-list">
 						<li>
-							<h1 class="game-title">FORTNITE</h1>
+							<button class="game-title">FORTNITE</button>
 							<ul class="member-list" id="fortnite-member-list">
 								<li>
 									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
@@ -276,7 +276,7 @@
 							</ul>
 						</li>
 						<li>
-							<h1 class="game-title">APEX</h1>
+							<button class="game-title">APEX</button>
 							<ul class="member-list" id="fortnite-member-list">
 								<li>
 									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
@@ -311,9 +311,13 @@
 							</ul>
 						</li>
 						<li>
-							<h1 class="game-title">MINECRAFT</h1>
+							<button class="game-title">MINECRAFT</button>
 							<ul class="member-list" id="fortnite-member-list">
-								<li>めんばー</li>
+								<li>
+									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
+										alt="member icon" class="member-icon">
+									<h2 class="member-name">ムスカ大佐だ</h2>
+								</li>
 							</ul>
 						</li>
 					</ul>
@@ -360,7 +364,8 @@
 				transition: .5s ease-in;
 			}
 
-			.game-title:hover +.member-list, .member-list:hover {
+			.game-title:hover+.member-list,
+			.member-list:hover {
 				display: block;
 				height: 100%;
 				transform: rotateX(0deg);
