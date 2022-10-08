@@ -232,7 +232,7 @@
 				<div class="section-content">
 					<ul class="title-list">
 						<li>
-							<a class="game-title">FORTNITE</a>
+							<button class="game-title">FORTNITE</button>
 							<ul class="member-list" id="fortnite-member-list">
 								<li>
 									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
@@ -276,7 +276,7 @@
 							</ul>
 						</li>
 						<li>
-							<a class="game-title">APEX</a>
+							<button class="game-title">APEX</button>
 							<ul class="member-list" id="fortnite-member-list">
 								<li>
 									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
@@ -311,7 +311,7 @@
 							</ul>
 						</li>
 						<li>
-							<a class="game-title">MINECRAFT</a>
+							<button class="game-title">MINECRAFT</button>
 							<ul class="member-list" id="fortnite-member-list">
 								<li>
 									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
@@ -332,15 +332,17 @@
 			}
 
 			.game-title {
+				display: block;
 				padding: 16px;
-				width: 88%;
+				width: 92%;
 				margin: 0 auto 24px auto;
 				background-color: white;
 				border: 6px solid #dae7eb;
 				color: black;
 				text-align: left;
+				font-size: 28px;
 				font-weight: 900;
-				transition: .4s ease-out;
+				/* transition: .4s ease-out; */
 			}
 
 			.game-title:hover {
@@ -361,7 +363,7 @@
 				border: #090909 5px solid;
 				transform-origin: top;
 				transform: rotateX(90deg);
-				transition: .5s ease-in;
+				transition: .1s ease-in;
 			}
 
 			.game-title:hover+.member-list,
