@@ -17,6 +17,7 @@ body {
 
 header {
 	position: fixed;
+	z-index: 256;
 }
 
 header img {

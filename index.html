@@ -232,8 +232,8 @@
 				<div class="section-content">
 					<ul class="title-list">
 						<li>
-							<button class="game-title">FORTNITE</button>
-							<ul class="member-list" id="fortnite-member-list">
+							<button onclick="show_member_list(this)" type="button" class="game-title">FORTNITE</button>
+							<ul class="member-list hide" id="fortnite-member-list">
 								<li>
 									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
 										alt="member icon" class="member-icon">
@@ -276,8 +276,8 @@
 							</ul>
 						</li>
 						<li>
-							<button class="game-title">APEX</button>
-							<ul class="member-list" id="fortnite-member-list">
+							<button onclick="show_member_list(this)" type="button" class="game-title">APEX</button>
+							<ul class="member-list hide" id="fortnite-member-list">
 								<li>
 									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
 										alt="member icon" class="member-icon">
@@ -311,8 +311,8 @@
 							</ul>
 						</li>
 						<li>
-							<button class="game-title">MINECRAFT</button>
-							<ul class="member-list" id="fortnite-member-list">
+							<button onclick="show_member_list(this)" type="button" class="game-title">MINECRAFT</button>
+							<ul class="member-list hide" id="fortnite-member-list">
 								<li>
 									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
 										alt="member icon" class="member-icon">
@@ -324,6 +324,15 @@
 				</div>
 			</section>
 		</div>
+
+		<script>
+			function show_member_list(btn) {
+				let member_list = btn.parentElement.getElementsByClassName("member-list")[0];
+				member_list.classList.toggle("show");
+				member_list.classList.toggle("hide");
+				btn.classList.toggle("active");
+			}
+		</script>
 
 		<style>
 			.title-list {
@@ -342,17 +351,15 @@
 				text-align: left;
 				font-size: 28px;
 				font-weight: 900;
-				transition: .4s ease-out;
 			}
 
-			.game-title:hover {
+			.game-title.active {
 				background-color: #bff4ff;
 				border: 6px solid #89cedb;
 			}
 
 			.member-list {
-				display: flex;
-				height: 0;
+				display: flex; /* DEBUG: flex */
 				list-style: none;
 				width: 84%;
 				margin: 0 auto;
@@ -362,17 +369,32 @@
 				top: -24px;
 				border: #090909 5px solid;
 				transform-origin: top;
-				transform: rotateX(90deg);
-				transition: .1s ease-in;
 			}
 
-			.game-title:hover+.member-list,
-			.member-list:hover {
+			.member-list.hide {
+				display: flex;
+				height: 0;
+				transform: rotateX(90deg);
+				animation: withdraw .2s ease-in;
+			}
+
+			@keyframes withdraw {
+				0% {
+					transform: rotateX(0deg);
+					height: 100%;
+				}
+
+				100% {
+					transform: rotateX(90deg);
+					height: 0;
+				}
+			}
+
+			.member-list.show {
 				display: block;
 				height: 100%;
 				transform: rotateX(0deg);
 				animation: dropDown .5s ease-out;
-				transition: 0s;
 			}
 
 			@keyframes dropDown {
