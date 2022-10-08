@@ -351,11 +351,24 @@
 				text-align: left;
 				font-size: 28px;
 				font-weight: 900;
+				transition: .5s;
+			}
+
+			.game-title:not(.active):hover {
+				transform: scale(1.05);
+			}
+
+			.game-title.active {
+				transform: scale(1.0);
 			}
 
 			.game-title.active {
 				background-color: #bff4ff;
 				border: 6px solid #89cedb;
+			}
+
+			.game-title.active:hover {
+				transform: scale(1.025);
 			}
 
 			.member-list {
