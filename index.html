@@ -50,6 +50,22 @@
 				}
 			};
 		};
+
+		function toggle_member_list(btn) {
+			let member_list = btn.parentElement.getElementsByClassName("member-list")[0];
+			member_list.classList.toggle("show");
+			member_list.classList.toggle("hide");
+			btn.classList.toggle("active");
+
+			let member_links = member_list.getElementsByClassName("member-link");
+			let delay = member_list.classList.contains("show") ? 500 : 0;
+			console.log(delay);
+			setTimeout(() => {
+				for (let i = 0; i < member_links.length; i++) {
+					member_links[i].classList.toggle("show");
+				}
+			}, delay);
+		}
 	</script>
 	<style>
 		body {
@@ -150,6 +166,140 @@
 			background-color: firebrick;
 			padding: 0 7px 5px 5px;
 			margin-left: 2px;
+		}
+
+		.title-list {
+			list-style: none;
+			padding-left: 0;
+		}
+
+		.game-title {
+			display: block;
+			padding: 16px;
+			width: 92%;
+			margin: 0 auto 24px auto;
+			background-color: white;
+			border: 6px solid #dae7eb;
+			color: black;
+			text-align: left;
+			font-size: 28px;
+			font-weight: 900;
+			transition: .5s;
+		}
+
+		.game-title:not(.active):hover {
+			transform: scale(1.05);
+		}
+
+		.game-title.active {
+			transform: scale(1.0);
+		}
+
+		.game-title.active {
+			background-color: #bff4ff;
+			border: 6px solid #89cedb;
+		}
+
+		.game-title.active:hover {
+			transform: scale(1.025);
+		}
+
+		.member-list {
+			display: flex;
+			/* DEBUG: flex */
+			list-style: none;
+			width: 84%;
+			margin: 0 auto;
+			background-color: #101010;
+			padding: 16px;
+			position: relative;
+			top: -24px;
+			border: #090909 5px solid;
+			transform-origin: top;
+		}
+
+		.member-list.hide {
+			display: flex;
+			height: 0;
+			transform: rotateX(90deg);
+			animation: withdraw .2s ease-in;
+		}
+
+		@keyframes withdraw {
+			0% {
+				transform: rotateX(0deg);
+				height: 100%;
+			}
+
+			100% {
+				transform: rotateX(90deg);
+				height: 0;
+			}
+		}
+
+		.member-list.show {
+			display: block;
+			height: 100%;
+			transform: rotateX(0deg);
+			animation: dropDown .5s ease-out;
+		}
+
+		@keyframes dropDown {
+			0% {
+				transform: rotateX(90deg);
+			}
+
+			100% {
+				transform: rotateX(0deg);
+			}
+		}
+
+		.member-list li {
+			display: flexbox;
+			align-items: center;
+			margin: 16px auto;
+			width: 100%;
+		}
+
+		.member-list li::before {
+			content: "";
+			display: block;
+			width: 100%;
+			border: 1px solid #dae7eb;
+			margin-bottom: 16px;
+		}
+
+		.member-icon {
+			width: 64px;
+			height: 64px;
+			border-radius: 50%;
+		}
+
+		.member-name {
+			margin: 0 16px;
+			font-size: 24px;
+			font-weight: 900;
+		}
+
+		.member-link {
+			margin: 0 0 0 16px;
+			width: 48px;
+			height: 48px;
+			text-decoration: none;
+			opacity: 0;
+		}
+
+		.member-link.show {
+			opacity: 1;
+		}
+
+		.member-link img {
+			width: 48px;
+		}
+
+		.member-twitch img {
+			width: 38px;
+			transform: translateY(5px);
 		}
 	</style>
 
@@ -326,160 +476,6 @@
 				</div>
 			</section>
 		</div>
-
-		<script>
-			function toggle_member_list(btn) {
-				let member_list = btn.parentElement.getElementsByClassName("member-list")[0];
-				member_list.classList.toggle("show");
-				member_list.classList.toggle("hide");
-				btn.classList.toggle("active");
-
-				let member_links = member_list.getElementsByClassName("member-link");
-				let delay = member_list.classList.contains("show") ? 500 : 0;
-				console.log(delay);
-				setTimeout(() => {
-					for (let i = 0; i < member_links.length; i++) {
-						member_links[i].classList.toggle("show");
-					}
-				}, delay);
-			}
-		</script>
-
-		<style>
-			.title-list {
-				list-style: none;
-				padding-left: 0;
-			}
-
-			.game-title {
-				display: block;
-				padding: 16px;
-				width: 92%;
-				margin: 0 auto 24px auto;
-				background-color: white;
-				border: 6px solid #dae7eb;
-				color: black;
-				text-align: left;
-				font-size: 28px;
-				font-weight: 900;
-				transition: .5s;
-			}
-
-			.game-title:not(.active):hover {
-				transform: scale(1.05);
-			}
-
-			.game-title.active {
-				transform: scale(1.0);
-			}
-
-			.game-title.active {
-				background-color: #bff4ff;
-				border: 6px solid #89cedb;
-			}
-
-			.game-title.active:hover {
-				transform: scale(1.025);
-			}
-
-			.member-list {
-				display: flex;
-				/* DEBUG: flex */
-				list-style: none;
-				width: 84%;
-				margin: 0 auto;
-				background-color: #101010;
-				padding: 16px;
-				position: relative;
-				top: -24px;
-				border: #090909 5px solid;
-				transform-origin: top;
-			}
-
-			.member-list.hide {
-				display: flex;
-				height: 0;
-				transform: rotateX(90deg);
-				animation: withdraw .2s ease-in;
-			}
-
-			@keyframes withdraw {
-				0% {
-					transform: rotateX(0deg);
-					height: 100%;
-				}
-
-				100% {
-					transform: rotateX(90deg);
-					height: 0;
-				}
-			}
-
-			.member-list.show {
-				display: block;
-				height: 100%;
-				transform: rotateX(0deg);
-				animation: dropDown .5s ease-out;
-			}
-
-			@keyframes dropDown {
-				0% {
-					transform: rotateX(90deg);
-				}
-
-				100% {
-					transform: rotateX(0deg);
-				}
-			}
-
-			.member-list li {
-				display: flexbox;
-				align-items: center;
-				margin: 16px auto;
-				width: 100%;
-			}
-
-			.member-list li::before {
-				content: "";
-				display: block;
-				width: 100%;
-				border: 1px solid #dae7eb;
-				margin-bottom: 16px;
-			}
-
-			.member-icon {
-				width: 64px;
-				height: 64px;
-				border-radius: 50%;
-			}
-
-			.member-name {
-				margin: 0 16px;
-				font-size: 24px;
-				font-weight: 900;
-			}
-
-			.member-link {
-				margin: 0 0 0 16px;
-				width: 48px;
-				height: 48px;
-				text-decoration: none;
-				opacity: 0;
-			}
-
-			.member-link.show {
-				opacity: 1;
-			}
-
-			.member-link img {
-				width: 48px;
-			}
-
-			.member-twitch img {
-				width: 38px;
-				transform: translateY(5px);
-			}
-		</style>
 
 		<div class="container">
 			<section class="empty-section"></section>
