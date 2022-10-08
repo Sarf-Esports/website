@@ -69,54 +69,24 @@
 		}
 
 		function set_member_lists() {
-			let member_list = {
-				"fortnite": [],
-				"apex": [],
-				"minecraft": [
-					{
-						"name": "がすたー",
-						"icon": "./assets/images/members/gaster.png",
-						"twitter": "Gaster_EX",
-						"youtube": "UCViGlH4sjq7xQGVLv8SGskw",
-						"twitch": null
-					},
-					{
-						"name": "リョウマ",
-						"icon": "./assets/images/members/ryoma.png",
-						"twitter": "Ryoma_Gaming_MC",
-						"youtube": "UCNsNYYx9Ng4AUAn7d01R6Tg",
-						"twitch": null
-					},
-					{
-						"name": "RetoRuto9900K",
-						"icon": "./assets/images/members/retoruto.png",
-						"twitter": "tutinoko_kusaa",
-						"youtube": "UCJATjksbKV4suknaAjJQHlQ",
-						"twitch": null
-					},
-					{
-						"name": "Rinrin.rs",
-						"icon": "./assets/images/members/rinrin.png",
-						"twitter": "Rinrin_2nd",
-						"youtube": "UCb3U3ovwzmagTBuzkdrsJkQ",
-						"twitch": null
-					},
-					{
-						"name": "れる",
-						"icon": "./assets/images/members/reru.png",
-						"twitter": "LanternCold",
-						"youtube": "UCmfTliSBWXw6bA1BMsm3MzA",
-						"twitch": null
-					}
-				]
-			};
-			// fetch("./assets/data/member_list.json")
-			// 	.then(response => response.json())
-			// 	.then(data => console.log(data));
-
-			set_member_list(document.getElementById("fortnite-member-list"), member_list.fortnite);
-			set_member_list(document.getElementById("apex-member-list"), member_list.apex);
-			set_member_list(document.getElementById("minecraft-member-list"), member_list.minecraft);
+			let path = location.href.replace("index.html", "") + "assets/data/member_list.json";
+			fetch(path)
+				.then(response => response.json())
+				.then(data => {
+					set_member_list(document.getElementById("fortnite-member-list"), data.fortnite);
+					set_member_list(document.getElementById("apex-member-list"), data.apex);
+					set_member_list(document.getElementById("minecraft-member-list"), data.minecraft);
+				})
+				.catch(_ => {
+					// for local environment
+					fetch("https://rinrin0413.github.io/sarfesports-website.dev/assets/data/member_list.json")
+						.then(response => response.json())
+						.then(data => {
+							set_member_list(document.getElementById("fortnite-member-list"), data.fortnite);
+							set_member_list(document.getElementById("apex-member-list"), data.apex);
+							set_member_list(document.getElementById("minecraft-member-list"), data.minecraft);
+						});
+				});
 		}
 
 		function set_member_list(elem, member_list) {
