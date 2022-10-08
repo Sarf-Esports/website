@@ -49,6 +49,8 @@
 					}
 				}
 			};
+
+			set_member_lists();
 		};
 
 		function toggle_member_list(btn) {
@@ -59,12 +61,87 @@
 
 			let member_links = member_list.getElementsByClassName("member-link");
 			let delay = member_list.classList.contains("show") ? 500 : 0;
-			console.log(delay);
 			setTimeout(() => {
 				for (let i = 0; i < member_links.length; i++) {
 					member_links[i].classList.toggle("show");
 				}
 			}, delay);
+		}
+
+		function set_member_lists() {
+			let member_list = {
+				"fortnite": [],
+				"apex": [],
+				"minecraft": [
+					{
+						"name": "がすたー",
+						"icon": "./assets/images/members/gaster.png",
+						"twitter": "Gaster_EX",
+						"youtube": "UCViGlH4sjq7xQGVLv8SGskw",
+						"twitch": null
+					},
+					{
+						"name": "リョウマ",
+						"icon": "./assets/images/members/ryoma.png",
+						"twitter": "Ryoma_Gaming_MC",
+						"youtube": "UCNsNYYx9Ng4AUAn7d01R6Tg",
+						"twitch": null
+					},
+					{
+						"name": "RetoRuto9900K",
+						"icon": "./assets/images/members/retoruto.png",
+						"twitter": "tutinoko_kusaa",
+						"youtube": "UCJATjksbKV4suknaAjJQHlQ",
+						"twitch": null
+					},
+					{
+						"name": "Rinrin.rs",
+						"icon": "./assets/images/members/rinrin.png",
+						"twitter": "Rinrin_2nd",
+						"youtube": "UCb3U3ovwzmagTBuzkdrsJkQ",
+						"twitch": null
+					},
+					{
+						"name": "れる",
+						"icon": "./assets/images/members/reru.png",
+						"twitter": "LanternCold",
+						"youtube": "UCmfTliSBWXw6bA1BMsm3MzA",
+						"twitch": null
+					}
+				]
+			};
+			// fetch("./assets/data/member_list.json")
+			// 	.then(response => response.json())
+			// 	.then(data => console.log(data));
+
+			set_member_list(document.getElementById("fortnite-member-list"), member_list.fortnite);
+			set_member_list(document.getElementById("apex-member-list"), member_list.apex);
+			set_member_list(document.getElementById("minecraft-member-list"), member_list.minecraft);
+		}
+
+		function set_member_list(elem, member_list) {
+			for (let i = 0; i < member_list.length; i++) {
+				let m = member_list[i];
+				let icon = m.icon == null ? "" : `<img src=${m.icon} alt="member icon" class="member-icon">`;
+				let name = `<h2 class="member-name">${m.name}</h2>`;
+				let twitter = m.twitter == null ? "" : `
+					<a href="https://twitter.com/${m.twitter}" class="member-twitter member-link" target="_blank">
+					<img src="./assets/images/logos/twitter_blue.svg" alt="twitter logo">
+					</a>
+				`;
+				let youtube = m.youtube == null ? "" : `
+					<a href="https://youtube.com/channel/${m.youtube}" class="member-youtube member-link" target="_blank">
+					<img src="./assets/images/logos/youtube.png" alt="youtube logo">
+					</a>
+				`;
+				let twitch = m.twitch == null ? "" : `
+					<a href="https://twitch.tv/${m.twitch}" class="member-twitch member-link" target="_blank">
+					<img src="./assets/images/logos/twitch.svg" alt="twitch logo">
+					</a>
+				`;
+				let li = `<li>${icon}${name}${twitter}${youtube}${twitch}</li>`;
+				elem.insertAdjacentHTML("beforeend", li);
+			}
 		}
 	</script>
 	<style>
@@ -206,7 +283,6 @@
 
 		.member-list {
 			display: flex;
-			/* DEBUG: flex */
 			list-style: none;
 			width: 84%;
 			margin: 0 auto;
@@ -428,7 +504,7 @@
 						</li>
 						<li>
 							<button onclick="toggle_member_list(this)" type="button" class="game-title">APEX</button>
-							<ul class="member-list hide" id="fortnite-member-list">
+							<ul class="member-list hide" id="apex-member-list">
 								<li>
 									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
 										alt="member icon" class="member-icon">
@@ -464,13 +540,7 @@
 						<li>
 							<button onclick="toggle_member_list(this)" type="button"
 								class="game-title">MINECRAFT</button>
-							<ul class="member-list hide" id="fortnite-member-list">
-								<li>
-									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
-										alt="member icon" class="member-icon">
-									<h2 class="member-name">ムスカ大佐だ</h2>
-								</li>
-							</ul>
+							<ul class="member-list hide" id="minecraft-member-list"></ul>
 						</li>
 					</ul>
 				</div>
