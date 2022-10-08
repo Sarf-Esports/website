@@ -232,7 +232,8 @@
 				<div class="section-content">
 					<ul class="title-list">
 						<li>
-							<button onclick="show_member_list(this)" type="button" class="game-title">FORTNITE</button>
+							<button onclick="toggle_member_list(this)" type="button"
+								class="game-title">FORTNITE</button>
 							<ul class="member-list hide" id="fortnite-member-list">
 								<li>
 									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
@@ -276,7 +277,7 @@
 							</ul>
 						</li>
 						<li>
-							<button onclick="show_member_list(this)" type="button" class="game-title">APEX</button>
+							<button onclick="toggle_member_list(this)" type="button" class="game-title">APEX</button>
 							<ul class="member-list hide" id="fortnite-member-list">
 								<li>
 									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
@@ -311,7 +312,8 @@
 							</ul>
 						</li>
 						<li>
-							<button onclick="show_member_list(this)" type="button" class="game-title">MINECRAFT</button>
+							<button onclick="toggle_member_list(this)" type="button"
+								class="game-title">MINECRAFT</button>
 							<ul class="member-list hide" id="fortnite-member-list">
 								<li>
 									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
@@ -326,11 +328,20 @@
 		</div>
 
 		<script>
-			function show_member_list(btn) {
+			function toggle_member_list(btn) {
 				let member_list = btn.parentElement.getElementsByClassName("member-list")[0];
 				member_list.classList.toggle("show");
 				member_list.classList.toggle("hide");
 				btn.classList.toggle("active");
+
+				let member_links = member_list.getElementsByClassName("member-link");
+				let delay = member_list.classList.contains("show") ? 500 : 0;
+				console.log(delay);
+				setTimeout(() => {
+					for (let i = 0; i < member_links.length; i++) {
+						member_links[i].classList.toggle("show");
+					}
+				}, delay);
 			}
 		</script>
 
@@ -372,7 +383,8 @@
 			}
 
 			.member-list {
-				display: flex; /* DEBUG: flex */
+				display: flex;
+				/* DEBUG: flex */
 				list-style: none;
 				width: 84%;
 				margin: 0 auto;
@@ -452,6 +464,11 @@
 				width: 48px;
 				height: 48px;
 				text-decoration: none;
+				opacity: 0;
+			}
+
+			.member-link.show {
+				opacity: 1;
 			}
 
 			.member-link img {
