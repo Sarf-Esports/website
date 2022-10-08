@@ -4,35 +4,35 @@
     "minecraft": [
         {
             "name": "がすたー",
-            "icon": "./assets/images/members/gaster.png",
+            "icon": "gaster.png",
             "twitter": "Gaster_EX",
             "youtube": "UCViGlH4sjq7xQGVLv8SGskw",
             "twitch": null
         },
         {
             "name": "リョウマ",
-            "icon": "./assets/images/members/ryoma.png",
+            "icon": "ryoma.png",
             "twitter": "Ryoma_Gaming_MC",
             "youtube": "UCNsNYYx9Ng4AUAn7d01R6Tg",
             "twitch": null
         },
         {
             "name": "RetoRuto9900K",
-            "icon": "./assets/images/members/retoruto.png",
+            "icon": "retoruto.png",
             "twitter": "tutinoko_kusaa",
             "youtube": "UCJATjksbKV4suknaAjJQHlQ",
             "twitch": null
         },
         {
             "name": "Rinrin.rs",
-            "icon": "./assets/images/members/rinrin.png",
+            "icon": "rinrin.png",
             "twitter": "Rinrin_2nd",
             "youtube": "UCb3U3ovwzmagTBuzkdrsJkQ",
             "twitch": null
         },
         {
             "name": "れる",
-            "icon": "./assets/images/members/reru.png",
+            "icon": "reru.png",
             "twitter": "LanternCold",
             "youtube": "UCmfTliSBWXw6bA1BMsm3MzA",
             "twitch": null

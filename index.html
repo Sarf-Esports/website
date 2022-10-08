@@ -92,7 +92,7 @@
 		function set_member_list(elem, member_list) {
 			for (let i = 0; i < member_list.length; i++) {
 				let m = member_list[i];
-				let icon = m.icon == null ? "" : `<img src=${m.icon} alt="member icon" class="member-icon">`;
+				let icon = m.icon == null ? "" : `<img src="./assets/images/members/${m.icon}"" alt="member icon" class="member-icon">`;
 				let name = `<h2 class="member-name">${m.name}</h2>`;
 				let twitter = m.twitter == null ? "" : `
 					<a href="https://twitter.com/${m.twitter}" class="member-twitter member-link" target="_blank">
