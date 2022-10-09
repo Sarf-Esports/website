@@ -69,6 +69,7 @@
 		}
 
 		function set_member_lists() {
+			// TODO: Complete the  member list
 			let path = location.href.replace("index.html", "") + "assets/data/member_list.json";
 			fetch(path)
 				.then(response => response.json())
@@ -268,7 +269,7 @@
 			display: flex;
 			height: 0;
 			transform: rotateX(90deg);
-			animation: withdraw .2s ease-in;
+			/* animation: withdraw .2s ease-in; */
 		}
 
 		@keyframes withdraw {
@@ -287,7 +288,7 @@
 			display: block;
 			height: 100%;
 			transform: rotateX(0deg);
-			animation: dropDown .5s ease-out;
+			/* animation: dropDown .5s ease-out; */
 		}
 
 		@keyframes dropDown {
@@ -430,82 +431,11 @@
 						<li>
 							<button onclick="toggle_member_list(this)" type="button"
 								class="game-title">FORTNITE</button>
-							<ul class="member-list hide" id="fortnite-member-list">
-								<li>
-									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
-										alt="member icon" class="member-icon">
-									<h2 class="member-name">ムスカ大佐だ</h2>
-									<a href="https://twitter.com/musuka_taisa_dadada" class="member-twitter member-link"
-										target="_blank">
-										<img src="./assets/images/logos/twitter_blue.svg" alt="twitter logo">
-									</a>
-									<a href="httos://youtube.com/muskksudmsukdamdadad"
-										class="member-youtube member-link" target="_blank">
-										<img src="./assets/images/logos/youtube.png" alt="youtube logo">
-									</a>
-									<a href="httos://twitch.tv/musukadmsukdamdadad" class="member-twitch member-link"
-										target="_blank">
-										<img src="./assets/images/logos/twitch.svg" alt="twitch logo">
-									</a>
-								</li>
-								<li>
-									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
-										alt="member icon" class="member-icon">
-									<h2 class="member-name">ムスカ大佐だ</h2>
-									<a href="httos://youtube.com/muskksudmsukdamdadad"
-										class="member-youtube member-link" target="_blank">
-										<img src="./assets/images/logos/youtube.png" alt="youtube logo">
-									</a>
-								</li>
-								<li>
-									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
-										alt="member icon" class="member-icon">
-									<h2 class="member-name">ムスカ大佐だ</h2>
-									<a href="https://twitter.com/musuka_taisa_dadada" class="member-twitter member-link"
-										target="_blank">
-										<img src="./assets/images/logos/twitter_blue.svg" alt="twitter logo">
-									</a>
-									<a href="httos://youtube.com/muskksudmsukdamdadad"
-										class="member-youtube member-link" target="_blank">
-										<img src="./assets/images/logos/youtube.png" alt="youtube logo">
-									</a>
-								</li>
-							</ul>
+							<ul class="member-list hide" id="fortnite-member-list"></ul>
 						</li>
 						<li>
 							<button onclick="toggle_member_list(this)" type="button" class="game-title">APEX</button>
-							<ul class="member-list hide" id="apex-member-list">
-								<li>
-									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
-										alt="member icon" class="member-icon">
-									<h2 class="member-name">ムスカ大佐だ</h2>
-									<a href="https://twitter.com/musuka_taisa_dadada" class="member-twitter member-link"
-										target="_blank">
-										<img src="./assets/images/logos/twitter_blue.svg" alt="twitter logo">
-									</a>
-									<a href="httos://youtube.com/muskksudmsukdamdadad"
-										class="member-youtube member-link" target="_blank">
-										<img src="./assets/images/logos/youtube.png" alt="youtube logo">
-									</a>
-								</li>
-								<li>
-									<img src="https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png"
-										alt="member icon" class="member-icon">
-									<h2 class="member-name">ムスカ大佐だ</h2>
-									<a href="https://twitter.com/musuka_taisa_dadada" class="member-twitter member-link"
-										target="_blank">
-										<img src="./assets/images/logos/twitter_blue.svg" alt="twitter logo">
-									</a>
-									<a href="httos://youtube.com/muskksudmsukdamdadad"
-										class="member-youtube member-link" target="_blank">
-										<img src="./assets/images/logos/youtube.png" alt="youtube logo">
-									</a>
-									<a href="httos://twitch.tv/musukadmsukdamdadad" class="member-twitch member-link"
-										target="_blank">
-										<img src="./assets/images/logos/twitch.svg" alt="twitch logo">
-									</a>
-								</li>
-							</ul>
+							<ul class="member-list hide" id="apex-member-list"></ul>
 						</li>
 						<li>
 							<button onclick="toggle_member_list(this)" type="button"
