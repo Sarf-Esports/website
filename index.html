@@ -60,7 +60,7 @@
 			btn.classList.toggle("active");
 
 			let member_links = member_list.getElementsByClassName("member-link");
-			let delay = member_list.classList.contains("show") ? 500 : 0;
+			let delay = member_list.classList.contains("show") ? 200 : 0;
 			setTimeout(() => {
 				for (let i = 0; i < member_links.length; i++) {
 					member_links[i].classList.toggle("show");
@@ -252,6 +252,24 @@
 			transform: scale(1.025);
 		}
 
+		.game-title::after {
+			content: "";
+			display: block;
+			width: .38em;
+			height: .38em;
+			float: right;
+			border-left: 4px solid black;
+			border-bottom: 4px solid black;
+			margin-right: 8px;
+			transform: rotateZ(-45deg);
+			margin-top: 10px;
+		}
+
+		.game-title.active::after {
+			transform: rotateZ(135deg);
+			margin-top: 14px;
+		}
+
 		.member-list {
 			display: flex;
 			list-style: none;
@@ -269,7 +287,7 @@
 			display: flex;
 			height: 0;
 			transform: rotateX(90deg);
-			/* animation: withdraw .2s ease-in; */
+			animation: withdraw .2s ease-in;
 		}
 
 		@keyframes withdraw {
@@ -288,7 +306,7 @@
 			display: block;
 			height: 100%;
 			transform: rotateX(0deg);
-			/* animation: dropDown .5s ease-out; */
+			animation: dropDown .2s ease-out;
 		}
 
 		@keyframes dropDown {
