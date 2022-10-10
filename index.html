@@ -74,7 +74,6 @@
 			fetch(path)
 				.then(response => response.json())
 				.then(data => {
-					console.log(data); // DEBUG
 					set_member_list(document.getElementById("fortnite-member-list"), data.fortnite);
 					set_member_list(document.getElementById("apex-member-list"), data.apex);
 					set_member_list(document.getElementById("minecraft-member-list"), data.minecraft);
@@ -84,7 +83,6 @@
 					fetch("https://rinrin0413.github.io/sarfesports-website.dev/assets/data/member_list.json")
 						.then(response => response.json())
 						.then(data => {
-							console.log(data); // DEBUG
 							set_member_list(document.getElementById("fortnite-member-list"), data.fortnite);
 							set_member_list(document.getElementById("apex-member-list"), data.apex);
 							set_member_list(document.getElementById("minecraft-member-list"), data.minecraft);
