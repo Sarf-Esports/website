@@ -99,7 +99,36 @@
             "twitch": null
         }
     ],
-    "apex": [],
+    "apex": [
+        {
+            "name": "K0xh",
+            "icon": "k0xh.png",
+            "twitter": "Lilx_zZc",
+            "youtube": "UChKBbn86PQJHG1pyceS93OA",
+            "twitch": "k0xh_"
+        },
+        {
+            "name": "キムにぃ",
+            "icon": "kimunii.png",
+            "twitter": "kimunii017",
+            "youtube": null,
+            "twitch": "kimunii0119"
+        },
+        {
+            "name": "Pear",
+            "icon": "pear.png",
+            "twitter": "pear_fps",
+            "youtube": null,
+            "twitch": "pear_fps"
+        },
+        {
+            "name": "シロラ",
+            "icon": "sirora.png",
+            "twitter": "sirora_46pq",
+            "youtube": null,
+            "twitch": "sirora_46pq"
+        }
+    ],
     "minecraft": [
         {
             "name": "がすたー",
