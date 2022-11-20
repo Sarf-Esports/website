@@ -1,0 +1,13 @@
+{
+    "cSpell.words": [
+        "Kaku",
+        "REVATI"
+    ],
+    "cSpell.ignorePaths": [
+        ".git",
+        ".vscode",
+        "assets/data/*.json",
+        "assets/images/*.json",
+        "_typos.toml"
+    ],
+}

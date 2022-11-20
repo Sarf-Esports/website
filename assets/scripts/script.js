@@ -1,3 +1,4 @@
+// © 2022 REVATI
 console.log(`
                                      -*ff
                                             :f*++
