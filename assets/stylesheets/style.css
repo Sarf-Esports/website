@@ -95,12 +95,8 @@ footer {
 }
 
 #twitter div img {
-	width: 32px;
-	height: 32px;
-	color: white;
-	background-color: #1da1f2;
-	border-radius: 50%;
-	padding: 12px;
+	width: 60px;
+	height: 60px;
 }
 
 .show-twitter {
@@ -109,13 +105,8 @@ footer {
 }
 
 @keyframes show {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 /* ▲ Twitter link ▲ */
