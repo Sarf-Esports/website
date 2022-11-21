@@ -20,21 +20,39 @@ body {
 header {
 	position: fixed;
 	z-index: 256;
+	background-color: #d1ff46;
+	width: 100%;
+	box-shadow: 0 0 10px 0 black;
+}
+
+nav > a.has-img {
+	float: left;
+	margin-left: 18px;
+	margin-top: 8px;
 }
 
 header img {
-	width: 64px;
+	width: 86px;
+	transition: .4s ease-out;
 }
 
 header img:hover {
-	transform: rotateZ(360deg);
-	transition: 1s ease-out;
+	transform: translateY(-8px)
+		scale(1.13);
+	filter: drop-shadow(0 -6px 8px #ffffff)
+		drop-shadow(0 6px 4px #000000)
+		invert(100%);
+	transition: .2s ease-in;
 }
 
 header nav ul {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: right;
+}
+
+header nav ul li:last-child {
+	margin-right: 2em;
 }
 
 header nav ul li {
@@ -43,31 +61,29 @@ header nav ul li {
 }
 
 header nav ul li a {
-	color: white;
-	text-shadow: 0 2.5px #191919;
+	color: black;
 	font-size: 16px;
 	text-decoration: none;
 	transition: .3s;
 }
 
 header nav ul li a:hover {
-	color: #83ebff;
-	text-shadow: 0 0 #191919;
+	filter: drop-shadow(0 -6px 8px white)
+		drop-shadow(0 6px 4px black);
 }
 
-header nav ul li a:not(.has-img)::after {
+header nav ul li a::after {
 	content: "";
 	display: block;
 	width: 0;
-	border-bottom: 2px solid #83ebff;
+	border-bottom: 2px solid #394b05;
 	transition: .2s;
 }
 
-header nav ul li a:not(.has-img):hover::after {
+header nav ul li a:hover::after {
 	content: "";
 	display: block;
 	width: 110%;
-	border-bottom: 2px solid #83ebff;
 }
 
 /* ▲ header ▲ */
