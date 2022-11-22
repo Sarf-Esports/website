@@ -28,6 +28,7 @@ header {
 	background-color: #d1ff46;
 	width: 100%;
 	box-shadow: 0 0 10px 0 black;
+	border-bottom: 6px solid #65743b;
 }
 
 nav>a.has-img {
