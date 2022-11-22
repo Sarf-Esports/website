@@ -1,6 +1,6 @@
 /* © 2022 REVATI */
 
-@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap);
 
 html {
 	scroll-behavior: smooth;
@@ -16,8 +16,8 @@ body {
 }
 
 ::selection {
-    background: #d1ff46;
-    color: black;
+	background: #d1ff46;
+	color: black;
 }
 
 /* ▼ header ▼ */
@@ -30,7 +30,7 @@ header {
 	box-shadow: 0 0 10px 0 black;
 }
 
-nav > a.has-img {
+nav>a.has-img {
 	float: left;
 	margin-left: 18px;
 	margin-top: 8px;
@@ -38,16 +38,13 @@ nav > a.has-img {
 
 header img {
 	width: 86px;
-	transition: .4s ease-out;
+	transition: .3s ease-out;
 }
 
 header img:hover {
-	transform: translateY(-8px)
-		scale(1.13);
-	filter: drop-shadow(0 -6px 8px #ffffff)
-		drop-shadow(0 6px 4px #000000)
-		invert(100%);
-	transition: .2s ease-in;
+	transform: translateY(-4px) scale(1.32);
+	filter: drop-shadow(0 8px 0 #00000080);
+	transition: .3s;
 }
 
 header nav ul {
@@ -72,61 +69,42 @@ header nav ul li a {
 	transition: .3s;
 }
 
-header nav ul li a:after{
-  content: "";
-  position: absolute;
-  top: 1.1em;
-  display: inline-block;
-  pointer-events: none;
-  height: 100%;
-}
-
-.hd-about:hover:after{
-  background: url(../images/about.png);
-  background-size: contain; 
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
-.hd-topics:hover:after{
-  background: url(../images/news.png);
-  background-size: contain; 
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
-.hd-member:hover:after{
-  background: url(../images/team.png);
-  background-size: contain; 
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
-.hd-sponsor:hover:after{
-  background: url(../images/sponsor.png);
-  background-size: contain; 
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
-.hd-contact:hover:after{
-  background: url(../images/contact.png);
-  background-size: contain; 
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
 header nav ul li a::after {
 	content: "";
-	display: block;
+	position: absolute;
+	top: 1.1em;
+	pointer-events: none;
+	height: 100%;
 	width: 0;
 	transition: .2s;
 }
 
 header nav ul li a:hover::after {
-	content: "";
-	display: block;
 	width: 90px;
+	display: block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+#hd-about:hover::after {
+	background-image: url(../images/about.png);
+}
+
+#hd-topics:hover::after {
+	background-image: url(../images/news.png);
+}
+
+#hd-member:hover::after {
+	background-image: url(../images/team.png);
+}
+
+#hd-sponsor:hover::after {
+	background-image: url(../images/sponsor.png);
+}
+
+#hd-contact:hover::after {
+	background-image: url(../images/contact.png);
 }
 
 /* ▲ header ▲ */
@@ -164,8 +142,13 @@ footer {
 }
 
 @keyframes show {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 /* ▲ Twitter link ▲ */
