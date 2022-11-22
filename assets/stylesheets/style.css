@@ -19,6 +19,7 @@ body {
     background: #d1ff46;
     color: black;
 }
+
 /* ▼ header ▼ */
 
 header {
@@ -66,28 +67,66 @@ header nav ul li {
 
 header nav ul li a {
 	color: black;
-	font-size: 16px;
+	font-size: 20px;
 	text-decoration: none;
 	transition: .3s;
 }
 
-header nav ul li a:hover {
-	filter: drop-shadow(0 -6px 8px white)
-		drop-shadow(0 6px 4px black);
+header nav ul li a:after{
+  content: "";
+  position: absolute;
+  top: 1.1em;
+  display: inline-block;
+  pointer-events: none;
+  height: 100%;
+}
+
+.hd-about:hover:after{
+  background: url(../images/about.png);
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.hd-topics:hover:after{
+  background: url(../images/news.png);
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.hd-member:hover:after{
+  background: url(../images/team.png);
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.hd-sponsor:hover:after{
+  background: url(../images/sponsor.png);
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.hd-contact:hover:after{
+  background: url(../images/contact.png);
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 header nav ul li a::after {
 	content: "";
 	display: block;
 	width: 0;
-	border-bottom: 2px solid #394b05;
 	transition: .2s;
 }
 
 header nav ul li a:hover::after {
 	content: "";
 	display: block;
-	width: 110%;
+	width: 90px;
 }
 
 /* ▲ header ▲ */
