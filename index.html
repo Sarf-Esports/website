@@ -146,8 +146,8 @@
 			max-width: 768px;
 			margin: 0 auto;
 			display: block;
-			padding-top: 64px;
-			margin-top: -64px;
+			padding-top: 112px;
+			margin-top: -112px;
 		}
 
 		.dropdown-btn {
@@ -163,6 +163,19 @@
 		.dropdown-btn:hover {
 			transform: translateY(4px);
 			color: white;
+		}
+
+		.dropdown-btn::after {
+			display: block;
+			color: gray;
+			font-size: 16px;
+			position: absolute;
+			left: 0;
+			right: 0;
+		}
+
+		.dropdown-btn:hover::after {
+			content: "NEXT";
 		}
 
 		.section-title {
@@ -416,6 +429,7 @@
 						eスポーツの発展を目的として精力的に活動を行っております。
 					</p>
 				</div>
+				<a href="#topics" class="dropdown-btn">▼</a>
 			</section>
 		</div>
 
@@ -439,6 +453,7 @@
 						</li>
 					</ul>
 				</div>
+				<a href="#member" class="dropdown-btn">▼</a>
 			</section>
 		</div>
 
@@ -471,6 +486,7 @@
 						</li>
 					</ul>
 				</div>
+				<a href="#sponsor" class="dropdown-btn">▼</a>
 			</section>
 		</div>
 
