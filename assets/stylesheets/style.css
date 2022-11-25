@@ -92,12 +92,16 @@ header nav ul li a:hover::after {
 	background-image: url(../images/about.png);
 }
 
-#hd-topics:hover::after {
+#hd-news:hover::after {
 	background-image: url(../images/news.png);
 }
 
-#hd-member:hover::after {
+#hd-team:hover::after {
 	background-image: url(../images/team.png);
+}
+
+#hd-store:hover::after {
+	background-image: url(../images/store.png);
 }
 
 #hd-sponsor:hover::after {
