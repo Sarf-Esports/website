@@ -157,6 +157,7 @@
 			display: inline-block;
 			margin: 16px auto 32px auto;
 			font-size: 24px;
+			user-select: none;
 			transition: .4s;
 		}
 
@@ -207,31 +208,129 @@
 			height: 4vw;
 		}
 
-		.topic-list {
+		#news .arrow {
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+			font-family: monospace;
+			font-size: 48px;
+			font-weight: 900;
+			user-select: none;
+			background-color: #00000050;
+			border: none;
+			color: white;
+			z-index: 30;
+			padding: 8px 20px;
+			border-radius: 100%;
+			cursor: pointer;
+			transition: .4s;
+		}
+
+		#news #arrow-left {
+			transform: translateY(144px) translateX(-512%);
+		}
+
+		#news #arrow-right {
+			transform: translateY(144px) translateX(512%);
+		}
+
+		@media screen and (max-width: 750px) {
+			#news .arrow {
+				font-size: 28px;
+				padding: 10px 18px;
+			}
+
+			#news #arrow-left {
+				transform: translateY(18vw) translateX(-42vw);
+			}
+
+			#news #arrow-right {
+				transform: translateY(18vw) translateX(42vw);
+			}
+		}
+
+		#news .arrow:hover {
+			background-color: #000000c0;
+		}
+
+		#news .arrow.inactive {
+			opacity: .3;
+			background: none;
+			cursor: default;
+		}
+
+		#news ul {
 			list-style: none;
 			display: flex;
-			flex-wrap: wrap;
+			padding: 0;
+			margin: 0 0 42px 0;
+			min-height: 50vh;
 		}
 
-		.topic-list li {
-			text-align: left;
-			background-color: #101010;
-			padding: 12px 32px 4px 8px;
-			border-left: #d1ff46 5px solid;
-			margin: 7px;
-			border-radius: 0 4px 4px 0;
+		#news li {
+			position: absolute;
+			margin: 0 auto;
+			padding: 4px;
 		}
 
-		.topic-list li h2 {
-			font-size: 24px;
-			margin-left: 5px;
-			letter-spacing: .06em;
+		#news .hidden {
+			display: none;
 		}
 
-		.topic-list li span {
-			background-color: firebrick;
-			padding: 0 7px 5px 5px;
-			margin-left: 2px;
+		#news .middle-item {
+			margin: 0 auto;
+			position: absolute;
+			left: 0;
+			right: 0;
+			width: 92%;
+		}
+
+		#news li:not(.middle-item) {
+			opacity: .2;
+		}
+
+		#news .right-item {
+			transform: translateX(773px) translateY(86px);
+		}
+
+		#news .left-item {
+			transform: translateX(-390px) translateY(86px);
+		}
+
+		#news li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		#news li img {
+			box-shadow: 0 0 12px black;
+			user-select: none;
+			pointer-events: none;
+		}
+
+		#news .middle-item img {
+			max-width: 753px;
+			object-fit: cover;
+			width: 100%;
+			transition: .4s ease-out;
+		}
+
+		#news .middle-item img:hover {
+			transform: translateY(-8px) scale(1.01);
+			box-shadow: 0 12px 28px black;
+		}
+
+		#news li:not(.middle-item) img {
+			width: 380px;
+		}
+
+		#news li h1 {
+			font-size: 40px;
+		}
+
+		#news li:not(.middle-item) h1 {
+			display: none;
 		}
 
 		.title-list {
@@ -444,13 +543,32 @@
 					<h1>NEWS</h1>
 				</div>
 				<div class="section-content">
-					<ul class="topic-list">
-						<!-- 
-                            Note: We can add the NEW flag by adding `<span>new</span>` after the date. 
-                        -->
-						<li>
-							2022/10/10<span>new</span>
-							<h2>公式サイト開設</h32>
+					<button class="arrow inactive" id="arrow-left">&lt</button>
+					<button class="arrow" id="arrow-right">&gt</button>
+					<ul>
+						<!-- <li class="left-item"><a href="./news/20221125.html">
+								<img src="./assets/images/news/20221125.png" alt="news thumbnail">
+								<h1>パンケーキ襲来PRE</h1>
+							</a>
+						</li> -->
+						<li class="middle-item"><a href="./news/20221125.html">
+								<img src="./assets/images/news/20221125.png" alt="news thumbnail">
+								<h1>パンケーキ襲来</h1>
+							</a>
+						</li>
+						<li class="right-item"><a href="./news/20221125.html">
+								<img src="./assets/images/news/20221125.png" alt="news thumbnail">
+								<h1>パンケーキ襲来II</h1>
+							</a>
+						</li>
+						<li class="hidden"><a href="./news/20221125.html">
+								<img src="./assets/images/news/20221125.png" alt="news thumbnail">
+								<h1>パンケーキ襲来III</h1>
+						</li>
+						<li class="hidden"><a href="./news/20221125.html">
+								<img src="./assets/images/news/20221125.png" alt="news thumbnail">
+								<h1>パンケーキ襲来IV</h1>
+							</a>
 						</li>
 					</ul>
 				</div>
