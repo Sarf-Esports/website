@@ -41,79 +41,50 @@
 	<link rel="stylesheet" href="./assets/stylesheets/style.css">
 	<link rel="stylesheet" href="./assets/stylesheets/util.css">
 	<script src="./assets/scripts/script.js"></script>
+	<script src="./assets/scripts/util.js"></script>
+	<script src="./assets/scripts/member_list.js"></script>
+	<script src="./assets/scripts/news_slider.js"></script>
 	<script>
 		window.onload = function () {
-			let section_title = document.getElementsByClassName("section-title");
-			window.onscroll = () => {
-				for (let i = 0; i < section_title.length; i++) {
-					if (section_title[i].getBoundingClientRect().top < window.innerHeight) {
-						section_title[i].firstElementChild.classList.add("fade-in-right")
-					}
-				}
-			};
-
-			set_member_lists();
+			fade_in_at_scroll(document.getElementsByClassName("section-title"));
+			build_member_lists();
 		};
 
-		function toggle_member_list(btn) {
-			let member_list = btn.parentElement.getElementsByClassName("member-list")[0];
-			member_list.classList.toggle("show");
-			member_list.classList.toggle("hide");
-			btn.classList.toggle("active");
+		let is_twitter_visible = false;
 
-			let member_links = member_list.getElementsByClassName("member-link");
-			let delay = member_list.classList.contains("show") ? 200 : 0;
-			setTimeout(() => {
-				for (let i = 0; i < member_links.length; i++) {
-					member_links[i].classList.toggle("show");
-				}
-			}, delay);
+		window.addEventListener("scroll", function () {
+			if (!is_twitter_visible) {
+				show_twitter_icon();
+				is_twitter_visible = true;
+			}
+		});
+
+		function show_twitter_icon() {
+			document.getElementById("twitter").classList.add("show-twitter");
 		}
 
-		function set_member_lists() {
-			// TODO: Complete the  member list
-			let path = location.href.replace("index.html", "") + "assets/data/member_list.json";
-			fetch(path)
-				.then(response => response.json())
-				.then(data => {
-					set_member_list(document.getElementById("fortnite-member-list"), data.fortnite);
-					set_member_list(document.getElementById("apex-member-list"), data.apex);
-					set_member_list(document.getElementById("minecraft-member-list"), data.minecraft);
-				})
-				.catch(_ => {
-					// for local environment
-					fetch("https://sarf-esports.github.io/website/assets/data/member_list.json")
-						.then(response => response.json())
-						.then(data => {
-							set_member_list(document.getElementById("fortnite-member-list"), data.fortnite);
-							set_member_list(document.getElementById("apex-member-list"), data.apex);
-							set_member_list(document.getElementById("minecraft-member-list"), data.minecraft);
-						});
-				});
+		let is_contact_visible = false;
+
+		function toggle_contact_modal() {
+			let cm_cl = document.getElementById("contact-modal").classList;
+			if (is_contact_visible == true) {
+				cm_cl.add("hide-contact-modal");
+				cm_cl.remove("show-contact-modal");
+				is_contact_visible = false;
+			} else {
+				cm_cl.add("show-contact-modal");
+				cm_cl.remove("hide-contact-modal");
+				is_contact_visible = true;
+			}
 		}
 
-		function set_member_list(elem, member_list) {
-			for (let i = 0; i < member_list.length; i++) {
-				let m = member_list[i];
-				let icon = m.icon == null ? "" : `<img src="./assets/images/members/${m.icon}"" alt="member icon" loading="lazy" class="member-icon">`;
-				let name = `<h2 class="member-name">${m.name}</h2>`;
-				let twitter = m.twitter == null ? "" : `
-					<a href="https://twitter.com/${m.twitter}" class="member-twitter member-link" target="_blank">
-					<img src="./assets/images/logos/twitter-logo-01282021/Twitter logo/SVG/Logo blue.svg" alt="twitter logo" loading="lazy">
-					</a>
-				`;
-				let youtube = m.youtube == null ? "" : `
-					<a href="https://youtube.com/channel/${m.youtube}" class="member-youtube member-link" target="_blank">
-					<img src="./assets/images/logos/youtube.png" alt="youtube logo" loading="lazy">
-					</a>
-				`;
-				let twitch = m.twitch == null ? "" : `
-					<a href="https://twitch.tv/${m.twitch}" class="member-twitch member-link" target="_blank">
-					<img src="./assets/images/logos/twitch.svg" alt="twitch logo" loading="lazy">
-					</a>
-				`;
-				let li = `<li>${icon}${name}${twitter}${youtube}${twitch}</li>`;
-				elem.insertAdjacentHTML("beforeend", li);
+		document.addEventListener("keydown", function (event) {
+			close_modal(event.key);
+		});
+
+		function close_modal(key) {
+			if (key == "Escape" && is_contact_visible) {
+				toggle_contact_modal();
 			}
 		}
 	</script>
@@ -217,7 +188,7 @@
 			font-size: 48px;
 			font-weight: 900;
 			user-select: none;
-			background-color: #00000050;
+			background-color: #00000080;
 			border: none;
 			color: white;
 			z-index: 30;
@@ -251,7 +222,7 @@
 		}
 
 		#news .arrow:hover {
-			background-color: #000000c0;
+			background-color: #000000d0;
 		}
 
 		#news .arrow.inactive {
@@ -544,31 +515,27 @@
 					<h1>NEWS</h1>
 				</div>
 				<div class="section-content">
-					<button class="arrow inactive" id="arrow-left">&lt</button>
-					<button class="arrow" id="arrow-right">&gt</button>
-					<ul>
-						<!-- <li class="left-item"><a href="./news/20221125.html">
-								<img src="./assets/images/news/20221125.png" alt="news thumbnail" loading="lazy">
-								<h1>パンケーキ襲来PRE</h1>
-							</a>
-						</li> -->
+					<button onclick="news_prev(this)" class="arrow inactive" id="arrow-left">&lt</button>
+					<button onclick="news_next(this)" class="arrow" id="arrow-right">&gt</button>
+					<ul id="news-slider">
 						<li class="middle-item"><a href="./news/20221125.html">
 								<img src="./assets/images/news/20221125.png" alt="news thumbnail" loading="lazy">
 								<h1>パンケーキ襲来</h1>
 							</a>
 						</li>
 						<li class="right-item"><a href="./news/20221125.html">
-								<img src="./assets/images/news/20221125.png" alt="news thumbnail" loading="lazy">
-								<h1>パンケーキ襲来II</h1>
+								<img src="./assets/images/news/20221126.png" alt="news thumbnail" loading="lazy">
+								<h1>パンケーキによる侵攻状況</h1>
 							</a>
 						</li>
 						<li class="hidden"><a href="./news/20221125.html">
-								<img src="./assets/images/news/20221125.png" alt="news thumbnail" loading="lazy">
-								<h1>パンケーキ襲来III</h1>
+								<img src="./assets/images/news/202211262.png" alt="news thumbnail" loading="lazy">
+								<h1>Rinrin氏、シェーダーの壊滅に遺憾の意を表明</h1>
+							</a>
 						</li>
 						<li class="hidden"><a href="./news/20221125.html">
-								<img src="./assets/images/news/20221125.png" alt="news thumbnail" loading="lazy">
-								<h1>パンケーキ襲来IV</h1>
+								<img src="./assets/images/news/202211263.png" alt="news thumbnail" loading="lazy">
+								<h1>ﾃﾞｪｪｪｪｪﾝ</h1>
 							</a>
 						</li>
 					</ul>
