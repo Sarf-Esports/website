@@ -96,11 +96,9 @@
 
 		function fuck_news_arrows() {
 			let arrows = document.getElementsByClassName("arrow");
-			for (let i = 0; i < arrows.length; i++) {
-				let a = arrows[i];
-				a.style.width = a.clientHeight + "px";
-			}
+			[...arrows].forEach(a => a.style.width = a.clientHeight + "px");
 		}
+
 	</script>
 	<style>
 		body {

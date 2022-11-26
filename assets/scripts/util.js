@@ -4,13 +4,13 @@
 //
 // # Required:
 // - `assets/stylesheets/util.css`
-function fade_in_at_scroll(elm) {
+function fade_in_at_scroll(elms) {
     window.onscroll = () => {
-        for (let i = 0; i < elm.length; i++) {
-            if (elm[i].getBoundingClientRect().top < window.innerHeight) {
-                elm[i].firstElementChild.classList.add("fade-in-right")
+        [...elms].forEach((e) => {
+            if (e.getBoundingClientRect().top < window.innerHeight) {
+                e.firstElementChild.classList.add("fade-in-right")
             }
-        }
+        });
     };
 }
 

@@ -9,9 +9,7 @@ function toggle_member_list(btn) {
     let member_links = member_list.getElementsByClassName("member-link");
     let delay = member_list.classList.contains("show") ? 200 : 0;
     setTimeout(() => {
-        for (let i = 0; i < member_links.length; i++) {
-            member_links[i].classList.toggle("show");
-        }
+        [...member_links].forEach((l) => l.classList.toggle("show"));
     }, delay);
 }
 
@@ -38,8 +36,7 @@ function build_member_lists() {
 }
 
 function build_member_list(elm, member_list) {
-    for (let i = 0; i < member_list.length; i++) {
-        let m = member_list[i];
+    member_list.forEach((m) => {
         let icon = m.icon == null ? "" : `<img src="./assets/images/members/${m.icon}"" alt="member icon" loading="lazy" class="member-icon">`;
         let name = `<h2 class="member-name">${m.name}</h2>`;
         let twitter = m.twitter == null ? "" : `
@@ -59,5 +56,5 @@ function build_member_list(elm, member_list) {
         `;
         let li = `<li>${icon}${name}${twitter}${youtube}${twitch}</li>`;
         elm.insertAdjacentHTML("beforeend", li);
-    }
+    });
 }

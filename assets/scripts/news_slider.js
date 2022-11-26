@@ -24,7 +24,7 @@ function build_news_slider() {
 function build_news_items(elm, news_list) {
 	let keys = Object.keys(news_list);
 	slider_len = keys.length;
-	keys.forEach(function (id, i) {
+	keys.forEach((id, i) => {
 		let img = `<img src="./assets/images/news/${id}.png" alt="news thumbnail" loading="lazy">`;
 		let h1 = `<h1>${news_list[id]}</h1>`;
 		let a = `<a href="./news/${id}.html">${img}${h1}</a>`;
@@ -55,7 +55,7 @@ function news_prev(btn) {
 		shake(btn_parent);
 	} else {
 		slider_index--;
-		apply_news(slider_index, btn_parent);
+		apply_news(btn_parent);
 	}
 }
 
@@ -68,23 +68,23 @@ function news_next(btn) {
 		shake(btn_parent);
 	} else {
 		slider_index++;
-		apply_news(slider_index, btn_parent);
+		apply_news(btn_parent);
 	}
 }
 
-function apply_news(index, btn_parent) {
+function apply_news(btn_parent) {
 	let news = btn_parent.children[2].children;
 	let allow_left = btn_parent.children[0].classList;
 	let allow_right = btn_parent.children[1].classList;
 
-	let mid = news[index].classList;
+	let mid = news[slider_index].classList;
 	mid.remove("left-item");
 	mid.remove("right-item");
 	mid.add("middle-item");
 
 	// Whether the previous item is exist.
 	if (slider_index != 0) {
-		let left = news[index - 1].classList;
+		let left = news[slider_index - 1].classList;
 		left.remove("middle-item");
 		left.remove("hidden");
 		left.add("left-item");
@@ -95,7 +95,7 @@ function apply_news(index, btn_parent) {
 
 	// Whether the next item is exist.
 	if (slider_index + 1 != slider_len) {
-		let right = news[index + 1].classList;
+		let right = news[slider_index + 1].classList;
 		right.remove("middle-item");
 		right.remove("hidden");
 		right.add("right-item");
@@ -106,14 +106,14 @@ function apply_news(index, btn_parent) {
 
 	// Whether the two previous item is exist.
 	if (1 < slider_index) {
-		let beyond_left = news[index - 2].classList;
+		let beyond_left = news[slider_index - 2].classList;
 		beyond_left.remove("left-item");
 		beyond_left.add("hidden");
 	}
 
 	// Whether the two next item is exist.
 	if (slider_index + 2 < slider_len) {
-		let beyond_right = news[index + 2].classList;
+		let beyond_right = news[slider_index + 2].classList;
 		beyond_right.remove("right-item");
 		beyond_right.add("hidden");
 	}
