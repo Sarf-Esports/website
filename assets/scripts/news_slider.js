@@ -1,7 +1,49 @@
 // © 2022 REVATI
 
-const slider_len = 4;
+let slider_len;
 let slider_index = 0;
+
+function build_news_slider() {
+	// TODO: Add new news.
+	let path = location.href.replace("index.html", "") + "assets/data/news.json";
+	fetch(path)
+		.then(response => response.json())
+		.then(data => {
+			build_news_items(document.getElementById("news-slider"), data);
+		})
+		.catch(_ => {
+			// for local environment
+			fetch("https://sarf-esports.github.io/website/assets/data/news.json")
+				.then(response => response.json())
+				.then(data => {
+					build_news_items(document.getElementById("news-slider"), data);
+				});
+		});
+}
+
+function build_news_items(elm, news_list) {
+	slider_len = news_list.length;
+	Object.keys(news_list).forEach(function (id) {
+		let img = `<img src="./assets/images/news/${id}.png" alt="news thumbnail" loading="lazy">`;
+		let h1 = `<h1>${news_list[id]}</h1>`;
+		let a = `<a href="./news/${id}.html">${img}${h1}</a>`;
+		let li_cls;
+		switch (slider_len) {
+			case 0: cls = "middle-item"; break;
+			case 1: cls = "right-item"; break;
+			default: cls = "hidden";
+		}
+		let li = `<li class="${li_cls}">${a}</li>`;
+		elm.insertAdjacentHTML("beforeend", li);
+	});
+}
+/* 
+<li class="middle-item">
+	<a href="./news/20221125.html">
+		<img src="./assets/images/news/20221125.png" alt="news thumbnail" loading="lazy">
+		<h1>パンケーキ襲来</h1>
+	</a>
+</li> */
 
 function news_prev(btn) {
 	let btn_parent = btn.parentElement;

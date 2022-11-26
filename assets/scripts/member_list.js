@@ -37,7 +37,7 @@ function build_member_lists() {
         });
 }
 
-function build_member_list(elem, member_list) {
+function build_member_list(elm, member_list) {
     for (let i = 0; i < member_list.length; i++) {
         let m = member_list[i];
         let icon = m.icon == null ? "" : `<img src="./assets/images/members/${m.icon}"" alt="member icon" loading="lazy" class="member-icon">`;
@@ -58,6 +58,6 @@ function build_member_list(elem, member_list) {
             </a>
         `;
         let li = `<li>${icon}${name}${twitter}${youtube}${twitch}</li>`;
-        elem.insertAdjacentHTML("beforeend", li);
+        elm.insertAdjacentHTML("beforeend", li);
     }
 }

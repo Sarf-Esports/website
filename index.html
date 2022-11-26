@@ -47,6 +47,7 @@
 	<script>
 		window.onload = function () {
 			fade_in_at_scroll(document.getElementsByClassName("section-title"));
+			build_news_slider();
 			build_member_lists();
 			fuck_news_arrows();
 		};
@@ -631,7 +632,7 @@
 					<button onclick="news_prev(this)" class="arrow inactive" id="arrow-left">&lt</button>
 					<button onclick="news_next(this)" class="arrow" id="arrow-right">&gt</button>
 					<ul id="news-slider">
-						<li class="middle-item"><a href="./news/20221125.html">
+						<!-- <li class="middle-item"><a href="./news/20221125.html">
 								<img src="./assets/images/news/20221125.png" alt="news thumbnail" loading="lazy">
 								<h1>パンケーキ襲来</h1>
 							</a>
@@ -650,7 +651,7 @@
 								<img src="./assets/images/news/202211263.png" alt="news thumbnail" loading="lazy">
 								<h1>ﾃﾞｪｪｪｪｪﾝ</h1>
 							</a>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 				<a href="#team" class="dropdown-btn">▼</a>
