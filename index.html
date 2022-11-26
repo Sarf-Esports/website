@@ -48,6 +48,7 @@
 		window.onload = function () {
 			fade_in_at_scroll(document.getElementsByClassName("section-title"));
 			build_member_lists();
+			fuck_news_arrows();
 		};
 
 		let is_twitter_visible = false;
@@ -57,6 +58,10 @@
 				show_twitter_icon();
 				is_twitter_visible = true;
 			}
+		});
+
+		window.addEventListener("resize", function () {
+			fuck_news_arrows();
 		});
 
 		function show_twitter_icon() {
@@ -85,6 +90,14 @@
 		function close_modal(key) {
 			if (key == "Escape" && is_contact_visible) {
 				toggle_contact_modal();
+			}
+		}
+
+		function fuck_news_arrows() {
+			let arrows = document.getElementsByClassName("arrow");
+			for (let i = 0; i < arrows.length; i++) {
+				let a = arrows[i];
+				a.style.width = a.clientHeight + "px";
 			}
 		}
 	</script>
@@ -199,11 +212,11 @@
 		}
 
 		#news #arrow-left {
-			transform: translateY(144px) translateX(-512%);
+			transform: translateY(144px) translateX(-338px);
 		}
 
 		#news #arrow-right {
-			transform: translateY(144px) translateX(512%);
+			transform: translateY(144px) translateX(338px);
 		}
 
 		@media screen and (max-width: 750px) {
@@ -523,17 +536,17 @@
 								<h1>パンケーキ襲来</h1>
 							</a>
 						</li>
-						<li class="right-item"><a href="./news/20221125.html">
+						<li class="right-item"><a href="./news/20221126.html">
 								<img src="./assets/images/news/20221126.png" alt="news thumbnail" loading="lazy">
 								<h1>パンケーキによる侵攻状況</h1>
 							</a>
 						</li>
-						<li class="hidden"><a href="./news/20221125.html">
+						<li class="hidden"><a href="./news/202211262.html">
 								<img src="./assets/images/news/202211262.png" alt="news thumbnail" loading="lazy">
 								<h1>Rinrin氏、シェーダーの壊滅に遺憾の意を表明</h1>
 							</a>
 						</li>
-						<li class="hidden"><a href="./news/20221125.html">
+						<li class="hidden"><a href="./news/202211263.html">
 								<img src="./assets/images/news/202211263.png" alt="news thumbnail" loading="lazy">
 								<h1>ﾃﾞｪｪｪｪｪﾝ</h1>
 							</a>
