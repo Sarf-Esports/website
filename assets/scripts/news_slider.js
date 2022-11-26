@@ -22,16 +22,17 @@ function build_news_slider() {
 }
 
 function build_news_items(elm, news_list) {
-	slider_len = news_list.length;
-	Object.keys(news_list).forEach(function (id) {
+	let keys = Object.keys(news_list);
+	slider_len = keys.length;
+	keys.forEach(function (id, i) {
 		let img = `<img src="./assets/images/news/${id}.png" alt="news thumbnail" loading="lazy">`;
 		let h1 = `<h1>${news_list[id]}</h1>`;
 		let a = `<a href="./news/${id}.html">${img}${h1}</a>`;
 		let li_cls;
-		switch (slider_len) {
-			case 0: cls = "middle-item"; break;
-			case 1: cls = "right-item"; break;
-			default: cls = "hidden";
+		switch (i) {
+			case 0: li_cls = "middle-item"; break;
+			case 1: li_cls = "right-item"; break;
+			default: li_cls = "hidden";
 		}
 		let li = `<li class="${li_cls}">${a}</li>`;
 		elm.insertAdjacentHTML("beforeend", li);
