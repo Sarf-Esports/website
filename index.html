@@ -206,7 +206,7 @@
 			color: white;
 			z-index: 30;
 			padding: 8px 20px;
-			border-radius: 100%;
+			border-radius: 8px;
 			cursor: pointer;
 			transition: .4s;
 		}
@@ -268,6 +268,7 @@
 			left: 0;
 			right: 0;
 			width: 92%;
+			z-index: 1;
 		}
 
 		#news li:not(.middle-item) {
@@ -292,6 +293,7 @@
 			box-shadow: 0 0 12px black;
 			user-select: none;
 			pointer-events: none;
+			border-radius: 6px;
 		}
 
 		#news .middle-item img {
@@ -639,8 +641,8 @@
 			※返答までにお時間をいただく場合がございます。<br>
 			※お答えできない場合がございます。
 		</p>
-		<!-- TODO: Set the mail address -->
-		<a href="mailto:" class="mail-btn">
+		<!-- TODO: Prepare the google form -->
+		<a href="#" class="mail-btn">
 			メールを送る
 		</a>
 	</div>
