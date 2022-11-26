@@ -471,6 +471,104 @@
 			width: 38px;
 			transform: translateY(5px);
 		}
+		
+		/* ▼ Contact modal ▼ */
+
+		#contact-modal {
+			position: fixed;
+			inset: 0;
+			margin: auto;
+			max-width: 320px;
+			height: 192px;
+			background-color: #202512;
+			border: 3px solid #e9ffa7;
+			padding: 16px;
+			z-index: 255;
+		}
+
+		#contact-modal h1 {
+			color: #e9ffa7;
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 16px;
+		}
+
+		.modal-close-btn {
+			position: absolute;
+			top: 4px;
+			right: 8px;
+			cursor: pointer;
+			font-size: 2rem;
+			font-weight: bold;
+			transition: .2s;
+		}
+
+		.modal-close-btn:hover {
+			color: #ff6347;
+		}
+
+		#contact-modal p {
+			font-size: 12px;
+			margin-bottom: 16px;
+			text-align: left;
+		}
+
+		.mail-btn {
+			display: inline-block;
+			text-decoration: none;
+			border: 3px solid #fff9ee;
+			color: white;
+			font-size: 16px;
+			font-weight: 900;
+			padding: 4px 6px;
+			transition: .3s;
+		}
+
+		.mail-btn:hover {
+			background-color: #fff9ee;
+			color: #191919;
+			box-shadow: 0 5px 0 #cfb27a;
+		}
+
+		.mail-btn:active {
+			box-shadow: 0 1px 0 #cfb27a;
+			transform: translateY(4px);
+		}
+
+		.show-contact-modal {
+			display: block;
+			animation: showModal .6s;
+		}
+
+		@keyframes showModal {
+			0% {
+				opacity: 0;
+				transform: translateY(32px);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.hide-contact-modal {
+			display: none;
+		}
+
+		@keyframes hideModal {
+			0% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+
+			100% {
+				opacity: 0;
+				transform: translateY(32px);
+			}
+		}
+
+		/* ▲ Contact modal ▲ */
 	</style>
 
 	<!-- ▲ Local head ▲ -->
