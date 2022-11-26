@@ -41,13 +41,6 @@ function build_news_items(elm, news_list) {
 		document.getElementById("arrow-right").classList.add("inactive");
 	}
 }
-/* 
-<li class="middle-item">
-	<a href="./news/20221125.html">
-		<img src="./assets/images/news/20221125.png" alt="news thumbnail" loading="lazy">
-		<h1>パンケーキ襲来</h1>
-	</a>
-</li> */
 
 function news_prev(btn) {
 	let btn_parent = btn.parentElement;
