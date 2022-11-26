@@ -37,6 +37,9 @@ function build_news_items(elm, news_list) {
 		let li = `<li class="${li_cls}">${a}</li>`;
 		elm.insertAdjacentHTML("beforeend", li);
 	});
+	if (slider_len == 1) {
+		document.getElementById("arrow-right").classList.add("inactive");
+	}
 }
 /* 
 <li class="middle-item">
