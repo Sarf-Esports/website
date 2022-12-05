@@ -132,34 +132,3 @@ footer {
 }
 
 /* ▲ footer ▲ */
-
-/* ▼ Twitter link ▼ */
-#twitter {
-	text-decoration: none;
-	position: fixed;
-	right: 4vw;
-	bottom: 32px;
-	display: none;
-}
-
-#twitter div img {
-	width: 60px;
-	height: 60px;
-}
-
-.show-twitter {
-	display: inline !important;
-	animation: show .2s;
-}
-
-@keyframes show {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-/* ▲ Twitter link ▲ */

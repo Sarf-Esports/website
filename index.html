@@ -52,15 +52,6 @@
 			fuck_news_arrows();
 		};
 
-		let is_twitter_visible = false;
-
-		window.addEventListener("scroll", function () {
-			if (!is_twitter_visible) {
-				show_twitter_icon();
-				is_twitter_visible = true;
-			}
-		});
-
 		window.addEventListener("resize", function () {
 			fuck_news_arrows();
 		});
@@ -102,7 +93,6 @@
 	</script>
 	<style>
 		body {
-			/* background-image: url(https://cdn.discordapp.com/attachments/725243847793180773/1027382164964261898/2ab5893ddd90b05f.png); */
 			background-attachment: fixed;
 			background-size: cover;
 		}
@@ -120,7 +110,6 @@
 		.container::after {
 			content: "";
 			display: block;
-			border-bottom: 2px solid white;
 			padding-top: 86px;
 		}
 
@@ -679,13 +668,6 @@
 		<!-- TODO: Implement the footer -->
 		<p class="copyright">© 2022 REVATI</p>
 	</footer>
-
-	<a href="https://twitter.com/sarf_esports" target="_blank" title="Twitter (@sarf_esports)" id="twitter">
-		<div>
-			<img src="./assets/images/logos/twitter-logo-01282021/Twitter social icons/Twitter social icons - circle/Twitter social icons - circle - blue.svg"
-				alt="twitter logo">
-		</div>
-	</a>
 
 	<div id="contact-modal" class="hide-contact-modal">
 		<h1>- CONTACT US -</h1>
