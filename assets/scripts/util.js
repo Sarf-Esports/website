@@ -1,9 +1,11 @@
 // © 2022 REVATI
 
-// Fade in from left.
-//
-// # Required:
-// - `assets/stylesheets/util.css`
+/**
+ * Fade in from left.
+ * 
+ * # Required:
+ * - `assets/stylesheets/util.css`
+ */
 function fade_in_at_scroll(elms) {
     window.onscroll = () => {
         [...elms].forEach((e) => {
@@ -13,11 +15,12 @@ function fade_in_at_scroll(elms) {
         });
     };
 }
-
-// Element shaker.
-// 
-// # Required:
-// - `assets/stylesheets/util.css`
+/**
+ * Element shaker.
+ * 
+ * # Required:
+ * - `assets/stylesheets/util.css`
+ */
 function shake(elm) {
 	elm.classList.add("shake");
 	setTimeout(function () {
