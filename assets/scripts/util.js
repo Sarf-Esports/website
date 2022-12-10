@@ -15,6 +15,7 @@ function fade_in_at_scroll(elms) {
         });
     };
 }
+
 /**
  * Element shaker.
  * 
