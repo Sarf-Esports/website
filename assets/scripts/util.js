@@ -3,23 +3,29 @@
 /**
  * Fade in from left.
  * 
- * # Required:
+ * # Example:
+ * 
+ * ```js
+ * window.onscroll = () => {
+ *    fade_in_at_scroll(document.getElementsByClassName("foo"));
+ * };
+ * ```
+ * 
+ * # Dependencies:
  * - `assets/stylesheets/util.css`
  */
 function fade_in_at_scroll(elms) {
-    window.onscroll = () => {
-        [...elms].forEach((e) => {
-            if (e.getBoundingClientRect().top < window.innerHeight) {
-                e.firstElementChild.classList.add("fade-in-right")
-            }
-        });
-    };
+    [...elms].forEach((e) => {
+        if (e.getBoundingClientRect().top < window.innerHeight) {
+            e.classList.add("fade-in-right")
+        }
+    });
 }
 
 /**
  * Element shaker.
  * 
- * # Required:
+ * # Dependencies:
  * - `assets/stylesheets/util.css`
  */
 function shake(elm) {
