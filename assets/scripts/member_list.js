@@ -1,18 +1,5 @@
 // © 2022 REVATI
 
-function toggle_member_list(btn) {
-    let member_list = btn.parentElement.getElementsByClassName("member-list")[0];
-    member_list.classList.toggle("show");
-    member_list.classList.toggle("hide");
-    btn.classList.toggle("active");
-
-    let member_links = member_list.getElementsByClassName("member-link");
-    let delay = member_list.classList.contains("show") ? 200 : 0;
-    setTimeout(() => {
-        [...member_links].forEach((l) => l.classList.toggle("show"));
-    }, delay);
-}
-
 function build_member_lists() {
     // TODO: Complete the  member list
     let path = location.href.replace("index.html", "") + "assets/data/member_list.json";
@@ -37,8 +24,9 @@ function build_member_lists() {
 
 function build_member_list(elm, member_list) {
     member_list.forEach((m) => {
-        let icon = m.icon == null ? "" : `<img src="./assets/images/members/${m.icon}"" alt="member icon" loading="lazy" class="member-icon">`;
-        let name = `<h2 class="member-name">${m.name}</h2>`;
+        let icon_img = m.icon == null ? "noimage.png" : m.icon;
+        let icon = `<img src="./assets/images/members/${icon_img}" alt="member icon" loading="lazy">`;
+        let name = `<h3>${m.name}</h2>`;
         let twitter = m.twitter == null ? "" : `
             <a href="https://twitter.com/${m.twitter}" class="member-twitter member-link" target="_blank">
             <img src="./assets/images/logos/twitter-logo-01282021/Twitter logo/SVG/Logo blue.svg" alt="twitter logo" loading="lazy">
