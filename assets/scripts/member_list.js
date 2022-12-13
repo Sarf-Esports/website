@@ -28,17 +28,17 @@ function build_member_list(elm, member_list) {
         let icon = `<img src="./assets/images/members/${icon_img}" alt="member icon" loading="lazy">`;
         let name = `<h3>${m.name}</h2>`;
         let twitter = m.twitter == null ? "" : `
-            <a href="https://twitter.com/${m.twitter}" class="member-twitter member-link" target="_blank">
+            <a href="https://twitter.com/${m.twitter}" class="member-twitter" target="_blank">
             <img src="./assets/images/logos/twitter-logo-01282021/Twitter logo/SVG/Logo blue.svg" alt="twitter logo" loading="lazy">
             </a>
         `;
         let youtube = m.youtube == null ? "" : `
-            <a href="https://youtube.com/channel/${m.youtube}" class="member-youtube member-link" target="_blank">
+            <a href="https://youtube.com/channel/${m.youtube}" class="member-youtube" target="_blank">
             <img src="./assets/images/logos/youtube.png" alt="youtube logo" loading="lazy">
             </a>
         `;
         let twitch = m.twitch == null ? "" : `
-            <a href="https://twitch.tv/${m.twitch}" class="member-twitch member-link" target="_blank">
+            <a href="https://twitch.tv/${m.twitch}" class="member-twitch" target="_blank">
             <img src="./assets/images/logos/twitch.svg" alt="twitch logo" loading="lazy">
             </a>
         `;
