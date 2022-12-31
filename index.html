@@ -94,6 +94,18 @@
 			[...arrows].forEach(a => a.style.width = a.clientHeight + "px");
 		}
 
+		function op_loop(video) {
+			let container = document.getElementById("op-container").style;
+			container.backgroundImage = "url(./assets/images/logos/revati_large.png)";
+			container.borderColor = "#d1ff46";
+			video.style.opacity = 0;
+			setTimeout(() => {
+				video.style.opacity = 1;
+				video.play();
+				container.borderColor = "#00000000";
+				container.backgroundImage = "none";
+			}, 5000);
+		}
 	</script>
 	<style>
 		body {
@@ -104,6 +116,10 @@
 		#op-container {
 			display: block;
 			height: 90vh;
+			background-image: none;
+			background-repeat: no-repeat;
+			background-position: center;
+			border-bottom: 12px solid #00000000;
 		}
 
 		#op-video {
@@ -538,7 +554,8 @@
 	<main>
 		<div class="container bg-default">
 			<div id="op-container">
-				<video src="./assets/videos/revati_op_muted.mov" id="op-video" muted autoplay playsinline loop></video>
+				<video src="./assets/videos/revati_op_muted.mov" id="op-video" onended="op_loop(this)" muted autoplay
+					playsinline></video>
 			</div>
 			<a href="#about" class="dropdown-btn">▼</a>
 		</div>
