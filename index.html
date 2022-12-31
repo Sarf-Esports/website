@@ -495,7 +495,7 @@
 			text-align: left;
 		}
 
-		.mail-btn {
+		#mail-btn {
 			display: inline-block;
 			text-decoration: none;
 			border: 3px solid #fff9ee;
@@ -503,16 +503,17 @@
 			font-size: 16px;
 			font-weight: 900;
 			padding: 4px 6px;
+			user-select: none;
 			transition: .3s;
 		}
 
-		.mail-btn:hover {
+		#mail-btn:hover {
 			background-color: #fff9ee;
 			color: #191919;
 			box-shadow: 0 5px 0 #cfb27a;
 		}
 
-		.mail-btn:active {
+		#mail-btn:active {
 			box-shadow: 0 1px 0 #cfb27a;
 			transform: translateY(4px);
 		}
@@ -686,7 +687,7 @@
 			※お答えできない場合がございます。
 		</p>
 		<!-- TODO: Prepare the google form -->
-		<a href="#" class="mail-btn">
+		<a href="#" id="mail-btn" draggable="false">
 			メールを送る
 		</a>
 	</div>
