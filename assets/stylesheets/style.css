@@ -2,6 +2,11 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap);
 
+@font-face {
+	font-family: "BebasNeue";
+	src: url("../fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
 html {
 	scroll-behavior: smooth;
 	font-family: "Zen Kaku Gothic Antique", sans-serif;
@@ -30,6 +35,7 @@ header {
 	width: 100%;
 	box-shadow: 0 0 10px 0 black;
 	border-bottom: 6px solid #65743b;
+	font-family: "BebasNeue", "Zen Kaku Gothic Antique", sans-serif;
 }
 
 header img {
@@ -61,12 +67,12 @@ header nav ul li:last-child {
 
 header nav ul li {
 	list-style: none;
-	margin: 10px 16px 10px 10px;
+	margin: 10px 16px 2px 10px;
 }
 
 header nav ul li a {
 	color: black;
-	font-size: 20px;
+	font-size: 28px;
 	text-decoration: none;
 	transition: .3s;
 }
