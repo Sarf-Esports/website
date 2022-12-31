@@ -67,14 +67,36 @@
 		let is_contact_visible = false;
 
 		function toggle_contact_modal() {
-			let cm_cl = document.getElementById("contact-modal").classList;
+			let cm = document.getElementById("contact-modal");
+			let cm_cl = cm.classList;
 			if (is_contact_visible == true) {
 				cm_cl.add("hide-contact-modal");
 				cm_cl.remove("show-contact-modal");
+
+				// Allow scrolling
+				let body = document.getElementsByTagName("body")[0].style;
+				body.height = "auto";
+				body.overflow = "auto";
+
+				// Remove dark background
+				document.getElementById("contact-modal-back").remove();
+
 				is_contact_visible = false;
 			} else {
 				cm_cl.add("show-contact-modal");
 				cm_cl.remove("hide-contact-modal");
+
+				// Prevent scrolling
+				let body = document.getElementsByTagName("body")[0].style;
+				body.height = "100vh";
+				body.overflow = "hidden";
+
+				// Spawn dark background
+				let bg = document.createElement("div");
+				bg.id = "contact-modal-back";
+				bg.onclick = toggle_contact_modal;
+				cm.parentNode.insertBefore(bg, cm);
+
 				is_contact_visible = true;
 			}
 		}
@@ -526,6 +548,13 @@
 				opacity: 0;
 				transform: translateY(32px);
 			}
+		}
+
+		#contact-modal-back {
+			position: fixed;
+			inset: 0;
+			background-color: #000000aa;
+			z-index: 254;
 		}
 
 		/* ▲ Contact modal ▲ */

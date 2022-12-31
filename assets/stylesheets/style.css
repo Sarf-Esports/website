@@ -30,7 +30,7 @@ body {
 
 header {
 	position: fixed;
-	z-index: 256;
+	z-index: 253;
 	background-color: #d1ff46;
 	width: 100%;
 	box-shadow: 0 0 10px 0 black;
