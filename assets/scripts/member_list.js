@@ -34,13 +34,13 @@ function build_member_list(elm, member_list) {
         `;
         let yt_path = m.youtube == null ? undefined : m.youtube[0] == "@" ? m.youtube : `channel/${m.youtube}`;
         let youtube = m.youtube == null ? "" : `
-            <a href="https://youtube.com/${m.youtube}" class="member-youtube" target="_blank">
+            <a href="https://youtube.com/${yt_path}" class="member-youtube" target="_blank">
             <img src="./assets/images/logos/youtube.png" alt="youtube logo" title="/${yt_path}" loading="lazy">
             </a>
         `;
         let twitch = m.twitch == null ? "" : `
             <a href="https://twitch.tv/${m.twitch}" class="member-twitch" target="_blank">
-            <img src="./assets/images/logos/twitch.svg" alt="twitch logo" loading="lazy">
+            <img src="./assets/images/logos/twitch.svg" alt="twitch logo" title="@${m.twitch}" loading="lazy">
             </a>
         `;
         let li = `<li>${icon}${name}${twitter}${youtube}${twitch}</li>`;
