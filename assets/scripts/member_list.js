@@ -29,12 +29,13 @@ function build_member_list(elm, member_list) {
         let name = `<h3>${m.name}</h2>`;
         let twitter = m.twitter == null ? "" : `
             <a href="https://twitter.com/${m.twitter}" class="member-twitter" target="_blank">
-            <img src="./assets/images/logos/twitter-logo-01282021/Twitter logo/SVG/Logo blue.svg" alt="twitter logo" loading="lazy">
+            <img src="./assets/images/logos/twitter-logo-01282021/Twitter logo/SVG/Logo blue.svg" alt="twitter logo" title="@${m.twitter}" loading="lazy">
             </a>
         `;
+        let yt_path = m.youtube == null ? undefined : m.youtube[0] == "@" ? m.youtube : `channel/${m.youtube}`;
         let youtube = m.youtube == null ? "" : `
-            <a href="https://youtube.com/channel/${m.youtube}" class="member-youtube" target="_blank">
-            <img src="./assets/images/logos/youtube.png" alt="youtube logo" loading="lazy">
+            <a href="https://youtube.com/${m.youtube}" class="member-youtube" target="_blank">
+            <img src="./assets/images/logos/youtube.png" alt="youtube logo" title="/${yt_path}" loading="lazy">
             </a>
         `;
         let twitch = m.twitch == null ? "" : `
