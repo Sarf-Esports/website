@@ -1,17 +1,17 @@
 {
     "fortnite": [
         {
-            "name": "あぐのむ",
+            "name": "Retchiri",
             "icon": null,
-            "twitter": "Azelf0627",
+            "twitter": "retchiri1",
             "youtube": null,
             "twitch": null
         },
         {
-            "name": "まいてぃー",
+            "name": "あぐのむ",
             "icon": null,
-            "twitter": "mightydayoo",
-            "youtube": "@cle8amighty952",
+            "twitter": "Azelf0627",
+            "youtube": null,
             "twitch": null
         },
         {
@@ -22,6 +22,20 @@
             "twitch": null
         },
         {
+            "name": "のあ",
+            "icon": null,
+            "twitter": "NOAHhhhhh156",
+            "youtube": "@noahdayo",
+            "twitch": null
+        },
+        {
+            "name": "ぺな",
+            "icon": "pena.png",
+            "twitter": "Penaclip",
+            "youtube": null,
+            "twitch": null
+        },
+        {
             "name": "ぼひ",
             "icon": null,
             "twitter": "WilyGuysBohi",
@@ -29,64 +43,57 @@
             "twitch": null
         },
         {
-            "name": "Lifelex",
+            "name": "まいてぃー",
             "icon": null,
-            "twitter": "Lifelex57",
-            "youtube": "@Lifelex",
-            "twitch": null
-        },
-        {
-            "name": "のあ",
-            "icon": null,
-            "twitter": "NOAHhhhhh156",
-            "youtube": "@noahdayo",
+            "twitter": "mightydayoo",
+            "youtube": "@cle8amighty952",
             "twitch": null
         }
     ],
     "apex": [
         {
             "name": "K0xh",
-            "icon": null,
+            "icon": "k0xh.png",
             "twitter": "Lilx_zZc",
             "youtube": "@k0uh862",
             "twitch": "k0xh_"
         },
         {
-            "name": "キムにぃ",
-            "icon": null,
-            "twitter": "kimunii017",
-            "youtube": null,
-            "twitch": "kimunii0119"
-        },
-        {
             "name": "Pear",
-            "icon": null,
+            "icon": "pear.png",
             "twitter": "pear_fps",
             "youtube": null,
             "twitch": "pear_fps"
         },
         {
+            "name": "キムにぃ",
+            "icon": "kimunii.png",
+            "twitter": "kimunii017",
+            "youtube": null,
+            "twitch": "kimunii0119"
+        },
+        {
             "name": "シロラ",
-            "icon": null,
+            "icon": "sirora.png",
             "twitter": "sirora_46pq",
             "youtube": null,
             "twitch": "sirora_46pq"
+        },
+        {
+            "name": "変なお兄さん",
+            "icon": "henna_onisan.png",
+            "twitter": "@hennaOnisaN6",
+            "youtube": null,
+            "twitch": "jp_hennaonisan "
         }
     ],
     "minecraft": [
         {
-            "name": "がすたー",
-            "icon": "gaster.png",
-            "twitter": "Gaster_EX",
-            "youtube": "@gaster_ch1425",
-            "twitch": null
-        },
-        {
-            "name": "リョウマ",
-            "icon": "ryoma.png",
-            "twitter": "Ryoma_Gaming_MC",
-            "youtube": "@RyomaGaming_MC",
-            "twitch": null
+            "name": "GEN3987",
+            "icon": "gen.png",
+            "twitter": "GEN3987",
+            "youtube": "@GEN3987",
+            "twitch": "gen3987"
         },
         {
             "name": "RetoRuto9900K",
@@ -100,6 +107,34 @@
             "icon": "rinrin.png",
             "twitter": "Rinrin_2nd",
             "youtube": "@rinrin-rs",
+            "twitch": null
+        },
+        {
+            "name": "がすたー",
+            "icon": "gaster.png",
+            "twitter": "Gaster_EX",
+            "youtube": "@gaster_ch1425",
+            "twitch": null
+        },
+        {
+            "name": "バード",
+            "icon": "bird.png",
+            "twitter": "bird132297",
+            "youtube": "@-bird-bird-bird-",
+            "twitch": null
+        },
+        {
+            "name": "リョウマ",
+            "icon": "ryoma.png",
+            "twitter": "Ryoma_Gaming_MC",
+            "youtube": "@RyomaGaming_MC",
+            "twitch": null
+        },
+        {
+            "name": "ルイル",
+            "icon": "ruilu.png",
+            "twitter": "Ruilu_Adora",
+            "youtube": "@Ruilu_Adora",
             "twitch": null
         },
         {
