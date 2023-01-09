@@ -9,6 +9,7 @@ function build_member_lists() {
             build_member_list(document.getElementById("fortnite-member-list"), data.fortnite);
             build_member_list(document.getElementById("apex-member-list"), data.apex);
             build_member_list(document.getElementById("minecraft-member-list"), data.minecraft);
+            build_member_list(document.getElementById("streamer-member-list"), data.streamer);
         })
         .catch(_ => {
             // for local environment
@@ -18,6 +19,7 @@ function build_member_lists() {
                     build_member_list(document.getElementById("fortnite-member-list"), data.fortnite);
                     build_member_list(document.getElementById("apex-member-list"), data.apex);
                     build_member_list(document.getElementById("minecraft-member-list"), data.minecraft);
+                    build_member_list(document.getElementById("streamer-member-list"), data.streamer);
                 });
         });
 }
