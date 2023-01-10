@@ -52,7 +52,6 @@
 		};
 
 		window.onscroll = () => {
-			fade_in_at_scroll(document.getElementsByClassName("section-title"));
 			fade_in_at_scroll(document.getElementsByClassName("game-title"));
 		};
 
@@ -203,14 +202,16 @@
 		}
 
 		.section-title {
-			text-align: left;
+			text-align: center;
+			margin-top: 86px;
+			margin-bottom: 32px;
 		}
 
-		.section-title h1 {
-			font-size: 40px;
-			border-bottom: 2px solid white;
-			display: inline-block;
-			padding-right: 32px;
+		.section-title img {
+			height: 64px;
+			width: auto;
+			user-select: none;
+			pointer-events: none;
 		}
 
 		.section-content {
@@ -428,7 +429,7 @@
 			transform: translateY(4px);
 		}
 
-		#store img {
+		#store .section-content img {
 			max-width: 86%;
 			border: 4px solid #65743b;
 		}
@@ -598,7 +599,7 @@
 		<div class="container bg-default">
 			<section id="about">
 				<div class="section-title">
-					<h1>ABOUT</h1>
+					<img src="./assets/images/abouts.svg" alt="about">
 				</div>
 				<div class="section-content">
 					<p>
@@ -614,7 +615,7 @@
 		<div class="container bg-default">
 			<section id="news">
 				<div class="section-title">
-					<h1>NEWS</h1>
+					<img src="./assets/images/news.svg" alt="news">
 				</div>
 				<div class="section-content">
 					<button onclick="news_prev(this)" class="arrow inactive" id="arrow-left">&lt</button>
@@ -627,7 +628,7 @@
 		<div class="container bg-default">
 			<section id="team">
 				<div class="section-title">
-					<h1>TEAM</h1>
+					<img src="./assets/images/team.svg" alt="team">
 				</div>
 				<div class="section-content">
 					<ul class="title-list">
@@ -656,12 +657,12 @@
 		<div class="container bg-default">
 			<section id="store">
 				<div class="section-title">
-					<h1>STORE</h1>
+					<img src="./assets/images/store.svg" alt="store">
 				</div>
 				<div class="section-content">
 					<img src="https://media.discordapp.net/attachments/851587574631628831/1050400761487568966/kokesi.png"
 						alt="store thumbnail">
-					<a href="./store" class="go-to-store">お買い求めはこちら ></a>
+					<a href="https://suzuri.jp/REVATI" class="go-to-store">お買い求めはこちら ></a>
 				</div>
 				<a href="#sponsor" class="dropdown-btn">▼</a>
 			</section>
@@ -670,7 +671,7 @@
 		<div class="container bg-default">
 			<section id="sponsor">
 				<div class="section-title">
-					<h1>SPONSOR</h1>
+					<img src="./assets/images/sponsor.svg" alt="sponsor">
 				</div>
 				<div class="section-content">
 					...( 'ω')

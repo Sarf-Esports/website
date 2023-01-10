@@ -1,10 +1,14 @@
-# やることりすと
+# Specifications
 
-- OP再生後の点滅の修正 (動画ファイル側)
-- Svelte に移行(?)
-- レスポンシブ対応
-- [メンバーリスト](./assets/data/member_list.json)完成させろ
-- [ニュースどうにかしろ.json](./assets/data/news.json)
-- グッズ販売のやつ(なにかサービスを利用)
+<details>
+<summary>Z-Index</summary>
+<div>
 
-- このリポジトリで `TODO:` で検索するといくつか細かい TODO もあると思うので参照
+| Z-Index | Entity |
+| --: | --- |
+| 253 | Header |
+| 254 | Contact modal background |
+| 255 | Contact modal |
+
+</div>
+</details>
