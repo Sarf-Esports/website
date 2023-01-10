@@ -17,7 +17,7 @@
         {
             "name": "さっさ",
             "icon": null,
-            "twitter": "milidao7",
+            "twitter": "sassa_FN",
             "youtube": "@user-kr5gz2li1y",
             "twitch": null
         },
@@ -145,5 +145,20 @@
             "twitch": null
         }
     ],
-    "streamer": []
+    "streamer": [
+        {
+            "name": "らいふれっくす",
+            "icon": "lifelex.png",
+            "twitter": "@Lifelex57",
+            "youtube": "@Lifelex",
+            "twitch": null
+        },
+        {
+            "name": "りあ",
+            "icon": "ria.png",
+            "twitter": "@Ria1fn",
+            "youtube": "@Ria1fn",
+            "twitch": null
+        }
+    ]
 }
