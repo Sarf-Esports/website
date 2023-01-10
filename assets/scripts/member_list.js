@@ -10,6 +10,7 @@ function build_member_lists() {
             build_member_list(document.getElementById("apex-member-list"), data.apex);
             build_member_list(document.getElementById("minecraft-member-list"), data.minecraft);
             build_member_list(document.getElementById("streamer-member-list"), data.streamer);
+            build_member_list(document.getElementById("owner-member-list"), data.owner);
         })
         .catch(_ => {
             // for local environment
@@ -20,6 +21,7 @@ function build_member_lists() {
                     build_member_list(document.getElementById("apex-member-list"), data.apex);
                     build_member_list(document.getElementById("minecraft-member-list"), data.minecraft);
                     build_member_list(document.getElementById("streamer-member-list"), data.streamer);
+                    build_member_list(document.getElementById("owner-member-list"), data.owner);
                 });
         });
 }

@@ -160,5 +160,14 @@
             "youtube": "@Ria1fn",
             "twitch": null
         }
+    ],
+    "owner": [
+        {
+            "name": "しろねこ",
+            "icon": "shironeko.png",
+            "twitter": "@46nek_0",
+            "youtube": null,
+            "twitch": null
+        }
     ]
 }
