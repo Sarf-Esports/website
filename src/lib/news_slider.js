@@ -8,7 +8,7 @@ let slider_index = 0;
 
 /** Builds news slider. */
 export function build_news_slider() {
-	let path = location.href.replace("index.html", "") + "assets/data/news.json";
+	let path = location.href.replace("index.html", "") + "/data/news.json";
 	fetch(path)
 		.then(response => response.json())
 		.then(data => {
@@ -32,7 +32,7 @@ function build_news_items(elm, news_list) {
 	let keys = Object.keys(news_list);
 	slider_len = keys.length;
 	keys.forEach((id, i) => {
-		let img = `<img src="./assets/images/news/${id}.png" alt="news thumbnail" loading="lazy">`;
+		let img = `<img src="/images/news/${id}.png" alt="news thumbnail" loading="lazy">`;
 		let h1 = `<h1>${news_list[id]}</h1>`;
 		let a = `<a href="./news/${id}.html">${img}${h1}</a>`;
 		let li_cls;

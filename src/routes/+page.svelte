@@ -92,7 +92,7 @@
 		let v = video.target;
 		let container = document.getElementById('op-container')?.style;
 		// @ts-ignore
-		container.backgroundImage = 'url(./assets/images/logos/revati_large_dark.png)';
+		container.backgroundImage = 'url(/images/logos/revati_large_dark.png)';
 		// @ts-ignore
 		v.style.opacity = 0;
 		setTimeout(() => {
@@ -107,7 +107,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href="./assets/images/logos/REVATI_LOGO_BLK_2_square.png" />
+	<link rel="icon" href="/images/logos/REVATI_LOGO_BLK_2_square.png" />
 	<title>REVATI</title>
 	<meta name="title" content="REVATI" />
 	<meta name="description" content="REVATI の公式サイトです。" />
@@ -118,14 +118,14 @@
 	<meta property="og:url" content="https://sarf-esports.github.io/website" />
 	<!-- ↓ website or article -->
 	<meta property="og:type" content="website" />
-	<link rel="stylesheet" href="./assets/stylesheets/style.css" />
-	<link rel="stylesheet" href="./assets/stylesheets/util.css" />
+	<link rel="stylesheet" href="/stylesheets/style.css" />
+	<link rel="stylesheet" href="/stylesheets/util.css" />
 </svelte:head>
 
 <header>
 	<nav>
 		<a href="/" class="has-img"
-			><img src="./assets/images/logos/REVATI_LOGO_BLK_2.png" alt="logo" /></a
+			><img src="/images/logos/REVATI_LOGO_BLK_2.png" alt="logo" /></a
 		>
 		<ul>
 			<li><a href="#about" id="hd-about">ABOUT</a></li>
@@ -151,7 +151,7 @@
 	<div class="container bg-default">
 		<div id="op-container">
 			<video
-				src="./assets/videos/revati_op_muted.mov"
+				src="/videos/revati_op_muted.mov"
 				id="op-video"
 				on:ended={(self) => op_loop(self)}
 				muted
@@ -165,7 +165,7 @@
 	<div class="container bg-default">
 		<section id="about">
 			<div class="section-title">
-				<img src="./assets/images/abouts.svg" alt="about" />
+				<img src="/images/abouts.svg" alt="about" />
 			</div>
 			<div class="section-content">
 				<p>
@@ -181,7 +181,7 @@
 	<div class="container bg-default">
 		<section id="news">
 			<div class="section-title">
-				<img src="./assets/images/news.svg" alt="news" />
+				<img src="/images/news.svg" alt="news" />
 			</div>
 			<div class="section-content">
 				<button on:click={(self) => news_prev(self)} class="arrow inactive" id="arrow-left"
@@ -196,7 +196,7 @@
 	<div class="container bg-default">
 		<section id="team">
 			<div class="section-title">
-				<img src="./assets/images/team.svg" alt="team" />
+				<img src="/images/team.svg" alt="team" />
 			</div>
 			<div class="section-content">
 				<ul class="title-list">
@@ -229,7 +229,7 @@
 	<div class="container bg-default">
 		<section id="store">
 			<div class="section-title">
-				<img src="./assets/images/store.svg" alt="store" />
+				<img src="/images/store.svg" alt="store" />
 			</div>
 			<div class="section-content">
 				<img
@@ -245,7 +245,7 @@
 	<div class="container bg-default">
 		<section id="sponsor">
 			<div class="section-title">
-				<img src="./assets/images/sponsor.svg" alt="sponsor" />
+				<img src="/images/sponsor.svg" alt="sponsor" />
 			</div>
 			<div class="section-content">...( 'ω')</div>
 		</section>
