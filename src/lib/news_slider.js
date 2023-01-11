@@ -1,10 +1,13 @@
 // © 2022 REVATI
 
+import { shake } from "./util";
+
+/** @type {number} */
 let slider_len;
 let slider_index = 0;
 
-function build_news_slider() {
-	// TODO: Add new news.
+/** Builds news slider. */
+export function build_news_slider() {
 	let path = location.href.replace("index.html", "") + "assets/data/news.json";
 	fetch(path)
 		.then(response => response.json())
@@ -21,6 +24,10 @@ function build_news_slider() {
 		});
 }
 
+/**
+ * @param {HTMLElement | null} elm
+ * @param {{ [x: string]: any; }} news_list
+ */
 function build_news_items(elm, news_list) {
 	let keys = Object.keys(news_list);
 	slider_len = keys.length;
@@ -35,15 +42,17 @@ function build_news_items(elm, news_list) {
 			default: li_cls = "hidden";
 		}
 		let li = `<li class="${li_cls}">${a}</li>`;
-		elm.insertAdjacentHTML("beforeend", li);
+		elm?.insertAdjacentHTML("beforeend", li);
 	});
-	if (slider_len == 1) {
-		document.getElementById("arrow-right").classList.add("inactive");
-	}
+	if (slider_len == 1) document.getElementById("arrow-right")?.classList.add("inactive");
 }
 
-function news_prev(btn) {
-	let btn_parent = btn.parentElement;
+/**
+ * @param {MouseEvent & { currentTarget: EventTarget & HTMLButtonElement; }} btn
+ */
+export function news_prev(btn) {
+	// @ts-ignore
+	let btn_parent = btn.target.parentElement;
 
 	// Whether the previous item is not exist.
 	if (slider_index == 0) {
@@ -55,8 +64,12 @@ function news_prev(btn) {
 	}
 }
 
-function news_next(btn) {
-	let btn_parent = btn.parentElement;
+/**
+ * @param {MouseEvent & { currentTarget: EventTarget & HTMLButtonElement; }} btn
+ */
+export function news_next(btn) {
+	// @ts-ignore
+	let btn_parent = btn.target.parentElement;
 
 	// Whether the next item is not exist.
 	if (slider_index + 1 == slider_len) {
@@ -68,7 +81,12 @@ function news_next(btn) {
 	}
 }
 
+/**
+ * @param {{ children: { classList: any; }[]; }} btn_parent
+ */
 function apply_news(btn_parent) {
+	// @ts-ignore
+	// DRBUG
 	let news = btn_parent.children[2].children;
 	let allow_left = btn_parent.children[0].classList;
 	let allow_right = btn_parent.children[1].classList;
@@ -114,3 +132,4 @@ function apply_news(btn_parent) {
 		beyond_right.add("hidden");
 	}
 };
+

@@ -1,27 +1,8 @@
 /* © 2022 REVATI */
 
 @font-face {
-	font-family: "Zen Kaku Gothic Antique";
-	src: url("../fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Regular.ttf");
-}
-
-@font-face {
 	font-family: "Poppins";
 	src: url("../fonts/Poppins/Poppins-Regular.ttf");
-}
-
-html {
-	scroll-behavior: smooth;
-	font-family: "Zen Kaku Gothic Antique", sans-serif;
-}
-
-body {
-	color: #eeeeee;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-	overflow-x: hidden;
 }
 
 ::selection {
@@ -101,33 +82,6 @@ header nav ul li a::after {
 header nav ul li a:hover::after {
 	transform: scaleX(112%);
 }
-
-/*
-header nav ul li a::after {
-	content: "";
-	position: absolute;
-	top: 1.1em;
-	pointer-events: none;
-	width: 0;
-	height: 0;
-	transition: .2s;
-}
-header nav ul li a:hover::after {
-	width: 90px;
-	height: 100%;
-	display: block;
-	opacity: 1.;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center top;
-}
-#hd-about::after{background-image:url(../images/about.png);}
-#hd-news::after{background-image:url(../images/news.png);}
-#hd-team::after{background-image:url(../images/team.png);}
-#hd-store::after{background-image:url(../images/store.png);}
-#hd-sponsor::after{background-image:url(../images/sponsor.png);}
-#hd-contact::after{background-image:url(../images/contact.png);} 
-*/
 
 /* ▲ header ▲ */
 

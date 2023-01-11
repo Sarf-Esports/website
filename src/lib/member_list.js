@@ -1,7 +1,6 @@
 // © 2022 REVATI
 
-function build_member_lists() {
-    // TODO: Complete the  member list
+export function build_member_lists() {
     let path = location.href.replace("index.html", "") + "assets/data/member_list.json";
     fetch(path)
         .then(response => response.json())
@@ -26,6 +25,10 @@ function build_member_lists() {
         });
 }
 
+/**
+ * @param {HTMLElement | null} elm
+ * @param {any[]} member_list
+ */
 function build_member_list(elm, member_list) {
     member_list.forEach((m) => {
         let icon_img = m.icon == null ? "noimage.png" : m.icon;
@@ -48,6 +51,9 @@ function build_member_list(elm, member_list) {
             </a>
         `;
         let li = `<li>${icon}${name}${twitter}${youtube}${twitch}</li>`;
+
+        // @ts-ignore
+        // `*-member-list` is always exist.
         elm.insertAdjacentHTML("beforeend", li);
     });
 }

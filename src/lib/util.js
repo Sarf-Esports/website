@@ -3,6 +3,8 @@
 /**
  * Fade in from left.
  * 
+ * @param {HTMLCollectionOf<Element>} elms
+ * 
  * # Example:
  * 
  * ```js
@@ -14,7 +16,7 @@
  * # Dependencies:
  * - `assets/stylesheets/util.css`
  */
-function fade_in_at_scroll(elms) {
+export function fade_in_at_scroll(elms) {
     [...elms].forEach((e) => {
         if (e.getBoundingClientRect().top < window.innerHeight) {
             e.classList.add("fade-in-right")
@@ -25,10 +27,12 @@ function fade_in_at_scroll(elms) {
 /**
  * Element shaker.
  * 
+ * @param {HTMLElement} elm
+ * 
  * # Dependencies:
  * - `assets/stylesheets/util.css`
  */
-function shake(elm) {
+export function shake(elm) {
 	elm.classList.add("shake");
 	setTimeout(function () {
 		elm.classList.remove("shake");
