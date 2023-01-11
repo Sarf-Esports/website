@@ -14,7 +14,7 @@
  * ```
  * 
  * # Dependencies:
- * - `assets/stylesheets/util.css`
+ * - `/stylesheets/util.css`
  */
 export function fade_in_at_scroll(elms) {
     [...elms].forEach((e) => {
@@ -30,7 +30,7 @@ export function fade_in_at_scroll(elms) {
  * @param {HTMLElement} elm
  * 
  * # Dependencies:
- * - `assets/stylesheets/util.css`
+ * - `/stylesheets/util.css`
  */
 export function shake(elm) {
 	elm.classList.add("shake");

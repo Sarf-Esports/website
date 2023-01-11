@@ -115,7 +115,7 @@
 	<meta property="og:title" content="REVATI" />
 	<meta property="og:description" content="REVATI の公式サイトです。" />
 	<!-- TODO: Input the URL of this page ↓↓ -->
-	<meta property="og:url" content="https://sarf-esports.github.io/website" />
+	<meta property="og:url" content="https://revati.pages.dev" />
 	<!-- ↓ website or article -->
 	<meta property="og:type" content="website" />
 	<link rel="stylesheet" href="/stylesheets/style.css" />

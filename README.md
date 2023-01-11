@@ -1,4 +1,4 @@
-# [REVATI Website](https://sarf-esports.github.io/website)
+# [REVATI Website](https://revati.pages.dev)
 
 [コミットするときのおやくそく☆](./CONTRIBUTING.md)
 

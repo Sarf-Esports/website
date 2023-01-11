@@ -8,7 +8,7 @@ let slider_index = 0;
 
 /** Builds news slider. */
 export function build_news_slider() {
-	let path = location.href.replace("index.html", "") + "/data/news.json";
+	let path = location.href.replace("index.html", "") + "data/news.json";
 	fetch(path)
 		.then(response => response.json())
 		.then(data => {
@@ -16,7 +16,7 @@ export function build_news_slider() {
 		})
 		.catch(_ => {
 			// for local environment
-			fetch("https://sarf-esports.github.io/website/assets/data/news.json")
+			fetch("https://revati.pages.dev/data/news.json")
 				.then(response => response.json())
 				.then(data => {
 					build_news_items(document.getElementById("news-slider"), data);
