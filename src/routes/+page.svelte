@@ -1,6 +1,7 @@
 <!-- © 2022 REVATI -->
 <script>
 	import { browser } from '$app/environment';
+	import { fly } from 'svelte/transition';
 
 	import { build_news_slider, news_prev, news_next } from '$lib/news_slider';
 	import { build_member_lists } from '$lib/member_list';
@@ -30,25 +31,12 @@
 	 * Toggles the visibility of the contact modal.
 	 */
 	function toggle_contact_modal() {
-		let cm = document.getElementById('contact-modal');
-		// @ts-ignore
-		let cm_cl = cm.classList;
 		let body = document.getElementsByTagName('body')[0].classList;
 		if (is_contact_visible == true) {
-			cm_cl.add('hide-contact-modal');
-			cm_cl.remove('show-contact-modal');
-
-			// Allow scrolling
 			body.remove('prevent-scroll');
-
 			is_contact_visible = false;
 		} else {
-			cm_cl.add('show-contact-modal');
-			cm_cl.remove('hide-contact-modal');
-
-			// Prevent scrolling
 			body.add('prevent-scroll');
-
 			is_contact_visible = true;
 		}
 	}
@@ -210,11 +198,14 @@
 				<img src="/images/store.svg" alt="store" />
 			</div>
 			<div class="section-content">
-				<img
-					src="https://media.discordapp.net/attachments/851587574631628831/1050400761487568966/kokesi.png"
-					alt="store thumbnail"
-				/>
-				<a href="https://suzuri.jp/REVATI" class="go-to-store">お買い求めはこちら ></a>
+				<img src="/images/store_thumbnail.png" alt="store thumbnail" />
+				<a
+					href="https://suzuri.jp/REVATI"
+					class="go-to-store"
+					target="_blank"
+					rel="noopener noreferrer"
+					draggable="false">お買い求めはこちら ></a
+				>
 			</div>
 			<a href="#sponsor" class="dropdown-btn">▼</a>
 		</section>
@@ -236,33 +227,28 @@
 </footer>
 
 {#if is_contact_visible}
-	<button id="contact-modal-back" on:click={toggle_contact_modal} />
+	<div id="contact-modal-back" on:click={toggle_contact_modal} on:keypress={() => {}} />
+	<div id="contact-modal" transition:fly={{ y: -64, duration: 240 }}>
+		<h1>- CONTACT US -</h1>
+		<span class="modal-close-btn" on:click={toggle_contact_modal} on:keypress={() => {}}>
+			&times;
+		</span>
+		<p>
+			<nobr>チームに関するお問い合わせはこちらからお願い致します。</nobr><br />
+			※返答までにお時間をいただく場合がございます。<br />
+			※お答えできない場合がございます。
+		</p>
+		<a
+			href="https://docs.google.com/forms/d/e/1FAIpQLSd9P3VCWiCrOpHAvsQpjwZBBLMlznJP4ZW-KWs7rzxXu1ZTMg/viewform?usp=pp_url"
+			id="mail-btn"
+			target="_blank"
+			rel="noopener noreferrer"
+			draggable="false">メールを送る</a
+		>
+	</div>
 {/if}
 
-<div id="contact-modal" class="hide-contact-modal">
-	<h1>- CONTACT US -</h1>
-	<button class="modal-close-btn" on:click={toggle_contact_modal}>&times;</button>
-	<p>
-		<nobr>チームに関するお問い合わせはこちらからお願い致します。</nobr><br />
-		※返答までにお時間をいただく場合がございます。<br />
-		※お答えできない場合がございます。
-	</p>
-	<a
-		href="https://docs.google.com/forms/d/e/1FAIpQLSd9P3VCWiCrOpHAvsQpjwZBBLMlznJP4ZW-KWs7rzxXu1ZTMg/viewform?usp=pp_url"
-		id="mail-btn"
-		target="_blank"
-		draggable="false"
-	>
-		メールを送る
-	</a>
-</div>
-
 <style>
-	body {
-		background-attachment: fixed;
-		background-size: cover;
-	}
-
 	#op-container {
 		display: block;
 		height: 90vh;
@@ -366,7 +352,13 @@
 
 	#store .section-content img {
 		max-width: 86%;
-		border: 4px solid #65743b;
+		border: 4px solid #f8ffb5;
+		transition: 0.18s;
+	}
+
+	#store .section-content img:hover {
+		filter: sepia(28%) saturate(50%);
+		transition: 0.6s;
 	}
 
 	#store .go-to-store {
@@ -455,39 +447,6 @@
 	#mail-btn:active {
 		box-shadow: 0 1px 0 #cfb27a;
 		transform: translateY(4px);
-	}
-
-	.show-contact-modal {
-		display: block;
-		animation: showModal 0.6s;
-	}
-
-	@keyframes showModal {
-		0% {
-			opacity: 0;
-			transform: translateY(32px);
-		}
-
-		100% {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-
-	.hide-contact-modal {
-		display: none;
-	}
-
-	@keyframes hideModal {
-		0% {
-			opacity: 1;
-			transform: translateY(0);
-		}
-
-		100% {
-			opacity: 0;
-			transform: translateY(32px);
-		}
 	}
 
 	#contact-modal-back {
