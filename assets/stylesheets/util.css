@@ -61,3 +61,13 @@
         transform: translateX(0);
     }
 }
+
+.invisible {
+    opacity: 0 !important;
+}
+
+/* Prevent scrolling */
+body.prevent-scroll {
+    height: 100vh;
+    overflow: hidden;
+}

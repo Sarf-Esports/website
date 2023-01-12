@@ -33,17 +33,13 @@
 		let cm = document.getElementById('contact-modal');
 		// @ts-ignore
 		let cm_cl = cm.classList;
+		let body = document.getElementsByTagName('body')[0].classList;
 		if (is_contact_visible == true) {
 			cm_cl.add('hide-contact-modal');
 			cm_cl.remove('show-contact-modal');
 
 			// Allow scrolling
-			let body = document.getElementsByTagName('body')[0].style;
-			body.height = 'auto';
-			body.overflow = 'auto';
-
-			// Remove dark background
-			document.getElementById('contact-modal-back')?.remove();
+			body.remove('prevent-scroll');
 
 			is_contact_visible = false;
 		} else {
@@ -51,18 +47,7 @@
 			cm_cl.remove('hide-contact-modal');
 
 			// Prevent scrolling
-			let body = document.getElementsByTagName('body')[0].style;
-			body.height = '100vh';
-			body.overflow = 'hidden';
-
-			// Spawn dark background
-			let bg = document.createElement('div');
-			bg.id = "contact-modal-back";
-			bg.setAttribute('style', 'position:fixed;inset:0;background-color:#000000aa;z-index:254;');
-			bg.onclick = toggle_contact_modal;
-
-			// @ts-ignore
-			cm.parentNode.insertBefore(bg, cm);
+			body.add('prevent-scroll');
 
 			is_contact_visible = true;
 		}
@@ -80,7 +65,6 @@
 	function fuck_news_arrows() {
 		let arrows = document.getElementsByClassName('arrow');
 		// @ts-ignore
-		// DEBUG
 		[...arrows].forEach((a) => (a.style.width = a.clientHeight + 'px'));
 	}
 
@@ -89,19 +73,15 @@
 	 * @param {Event & { currentTarget: EventTarget & HTMLVideoElement; }} video
 	 */
 	function op_loop(video) {
-		let v = video.target;
-		let container = document.getElementById('op-container')?.style;
+		let v = video.currentTarget;
 		// @ts-ignore
-		container.backgroundImage = 'url(/images/logos/revati_large_dark.png)';
-		// @ts-ignore
-		v.style.opacity = 0;
+		let container = document.getElementById('op-container').classList;
+		container.remove('is-playing');
+		v.classList.add('invisible');
 		setTimeout(() => {
-			// @ts-ignore
-			v.style.opacity = 1;
-			// @ts-ignore
+			v.classList.remove('invisible');
 			v.play();
-			// @ts-ignore
-			container.backgroundImage = 'none';
+			container.add('is-playing');
 		}, 15000);
 	}
 </script>
@@ -124,9 +104,7 @@
 
 <header>
 	<nav>
-		<a href="/" class="has-img"
-			><img src="/images/logos/REVATI_LOGO_BLK_2.png" alt="logo" /></a
-		>
+		<a href="/" class="has-img"><img src="/images/logos/REVATI_LOGO_BLK_2.png" alt="logo" /></a>
 		<ul>
 			<li><a href="#about" id="hd-about">ABOUT</a></li>
 			<li><a href="#news" id="hd-news">NEWS</a></li>
@@ -149,7 +127,7 @@
 
 <main>
 	<div class="container bg-default">
-		<div id="op-container">
+		<div id="op-container" class="is-playing">
 			<video
 				src="/videos/revati_op_muted.mov"
 				id="op-video"
@@ -257,9 +235,13 @@
 	<p class="copyright">© 2022 REVATI</p>
 </footer>
 
+{#if is_contact_visible}
+	<button id="contact-modal-back" on:click={toggle_contact_modal} />
+{/if}
+
 <div id="contact-modal" class="hide-contact-modal">
 	<h1>- CONTACT US -</h1>
-	<span class="modal-close-btn" on:click={toggle_contact_modal}>&times;</span>
+	<button class="modal-close-btn" on:click={toggle_contact_modal}>&times;</button>
 	<p>
 		<nobr>チームに関するお問い合わせはこちらからお願い致します。</nobr><br />
 		※返答までにお時間をいただく場合がございます。<br />
@@ -284,15 +266,20 @@
 	#op-container {
 		display: block;
 		height: 90vh;
-		background-image: none;
 		background-repeat: no-repeat;
 		background-position: center;
+		background-image: url(/images/logos/revati_large_dark.png);
+	}
+
+	#op-container.is-playing {
+		background-image: none;
 	}
 
 	#op-video {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		opacity: 1;
 	}
 
 	.container {
@@ -501,6 +488,13 @@
 			opacity: 0;
 			transform: translateY(32px);
 		}
+	}
+
+	#contact-modal-back {
+		position: fixed;
+		inset: 0;
+		background-color: #000000aa;
+		z-index: 254;
 	}
 	/* ▲ Contact modal ▲ */
 </style>
