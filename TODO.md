@@ -1,6 +1,6 @@
 # やることりすと
 
-- コンタクトモーダルで `is_contact_modal_visible` をちゃんと読ませる
+- [app.css](./assets/stylesheets/app.css) にある余計なものを移動
 - Svelte に完全に最適化させる
 - SNSアカウントへのリンク
 - OP再生後の点滅の修正 (動画ファイル側)

@@ -54,8 +54,6 @@
 	<meta property="og:description" content={head.desc} />
 	<meta property="og:url" content="https://revati.jp" />
 	<meta property="og:type" content="website" />
-	<link rel="stylesheet" href="/stylesheets/style.css" />
-	<link rel="stylesheet" href="/stylesheets/util.css" />
 </svelte:head>
 
 <Header is_home={true} />
@@ -174,6 +172,9 @@
 </footer>
 
 <style>
+	@import "/stylesheets/style.scss";
+	@import "/stylesheets/util.scss";
+
 	#op-container {
 		display: block;
 		height: 90vh;

@@ -16,12 +16,8 @@ li {
         transition: 0.3s;
     }
 
-    $border-thickness: 1.5px;
-    $border-col: #253100;
-
     a:hover {
-        color: #4e640c;
-        text-shadow: $border-thickness 0 0 $border-col, -$border-thickness 0 0 $border-col;
+        filter: drop-shadow(-3px -3px 0 #00000055);
     }
 
     a::after {
