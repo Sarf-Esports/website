@@ -1,0 +1,43 @@
+// © 2022 - 2023 REVATI
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+li {
+    list-style: none;
+    margin: 10px 12px 2px 10px;
+
+    a {
+        color: black;
+        font-size: 28px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    $border-thickness: 1.5px;
+    $border-col: #253100;
+
+    a:hover {
+        color: #4e640c;
+        text-shadow: $border-thickness 0 0 $border-col, -$border-thickness 0 0 $border-col;
+    }
+
+    a::after {
+        content: '';
+        display: block;
+        border-bottom: 2px solid #394907;
+        margin: 0 auto;
+        transform: scaleX(0);
+        transition: 0.2s;
+    }
+
+    a:hover::after {
+        transform: scaleX(112%);
+    }
+}
+
+li:last-child {
+    margin-right: 2.6em;
+}

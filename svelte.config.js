@@ -7,9 +7,9 @@ const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
 	preprocess: [vitePreprocess(), preprocess({
-		scss: { sourceMap: true },
-		sourceMap: true,
-	})],
+        scss: { sourceMap: true },
+        sourceMap: true,
+    })],
 
 	kit: {
 		adapter: adapter(),
