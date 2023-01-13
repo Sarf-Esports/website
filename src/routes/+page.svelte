@@ -54,6 +54,8 @@
 	<meta property="og:description" content={head.desc} />
 	<meta property="og:url" content="https://revati.jp" />
 	<meta property="og:type" content="website" />
+
+	<link rel="stylesheet" href="/stylesheets/util.static.css" />
 </svelte:head>
 
 <Header is_home={true} />
@@ -171,9 +173,9 @@
 	<p class="copyright">© 2022 - 2023 REVATI</p>
 </footer>
 
-<style>
-	@import "/stylesheets/style.scss";
-	@import "/stylesheets/util.scss";
+<style lang="scss">
+	@import "./assets/stylesheets/style.scss";
+	@import "./assets/stylesheets/util.scss";
 
 	#op-container {
 		display: block;

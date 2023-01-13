@@ -1,12 +1,11 @@
-/* © 2022 - 2023 REVATI */
+// © 2022 - 2023 REVATI
 
-/* Background colorings */
+// Background colorings
 .bg-default {
-    /* background-color: #191919; */
     background-color: #111111;
 }
 
-/* Features */
+// Features
 .no-pointer-events {
     pointer-events: none;
     user-select: none;
@@ -42,32 +41,4 @@
         opacity: 1;
         transform: translateX(0);
     }
-}
-
-.shake {
-    animation: shake .2s ease-in-out infinite;
-}
-
-@keyframes shake {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(5px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-.invisible {
-    opacity: 0 !important;
-}
-
-/* Prevent scrolling */
-body.prevent-scroll {
-    height: 100vh;
-    overflow: hidden;
 }
