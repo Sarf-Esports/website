@@ -1,4 +1,4 @@
-// © 2022 REVATI
+// © 2022 - 2023 REVATI
 
 import { shake } from "./util";
 
@@ -16,7 +16,7 @@ export function build_news_slider() {
 		})
 		.catch(_ => {
 			// for local environment
-			fetch("https://revati.pages.dev/data/news.json")
+			fetch("https://revati.jp/data/news.json")
 				.then(response => response.json())
 				.then(data => {
 					build_news_items(document.getElementById("news-slider"), data);
@@ -133,3 +133,8 @@ function apply_news(btn_parent) {
 	}
 };
 
+export function fuck_news_arrows() {
+	let arrows = document.getElementsByClassName('arrow');
+	// @ts-ignore
+	[...arrows].forEach((a) => (a.style.width = a.clientHeight + 'px'));
+}

@@ -1,4 +1,4 @@
-// © 2022 REVATI
+// © 2022 - 2023 REVATI
 
 export function build_member_lists() {
     let path = location.href.replace("index.html", "") + "data/member_list.json";
@@ -13,7 +13,7 @@ export function build_member_lists() {
         })
         .catch(_ => {
             // for local environment
-            fetch("https://revati.pages.dev/data/member_list.json")
+            fetch("https://revati.jp/data/member_list.json")
                 .then(response => response.json())
                 .then(data => {
                     build_member_list(document.getElementById("fortnite-member-list"), data.fortnite);

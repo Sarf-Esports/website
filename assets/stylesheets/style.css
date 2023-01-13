@@ -1,4 +1,4 @@
-/* © 2022 REVATI */
+/* © 2022 - 2023 REVATI */
 
 @font-face {
 	font-family: "Poppins";
@@ -9,81 +9,6 @@
 	background: #d1ff46;
 	color: black;
 }
-
-/* ▼ header ▼ */
-
-header {
-	position: fixed;
-	z-index: 253;
-	background-color: #d1ff46;
-	width: 100%;
-	box-shadow: 0 0 10px 0 black;
-	border-bottom: 6px solid #65743b;
-	font-family: "Poppins";
-	font-weight: 600;
-	letter-spacing: -1px;
-}
-
-header img {
-	width: 86px;
-	transition: .3s ease-out;
-}
-
-nav>a.has-img {
-	float: left;
-	margin-left: 18px;
-	margin-top: 8px;
-}
-
-header img:hover {
-	transform: translateY(-4px) scale(1.32);
-	filter: drop-shadow(0 8px 0 #00000080);
-	transition: .3s;
-}
-
-header nav ul {
-	display: flex;
-	align-items: center;
-	justify-content: right;
-}
-
-header nav ul li:last-child {
-	margin-right: 2.6em;
-}
-
-header nav ul li {
-	list-style: none;
-	margin: 10px 12px 2px 10px;
-}
-
-header nav ul li a {
-	color: black;
-	font-size: 28px;
-	text-decoration: none;
-	transition: .3s;
-}
-
-header nav ul li a:hover {
-	color: #4e640c;
-	text-shadow:
-		.5px 0 0 #7d9c1e,
-		-.5px 0 0 #7d9c1e;
-}
-
-header nav ul li a::after {
-	content: "";
-	display: block;
-	border-bottom: 2px solid #394907;
-	margin: 0 auto;
-	transform: scaleX(0);
-	transition: .2s;
-}
-
-header nav ul li a:hover::after {
-	transform: scaleX(112%);
-}
-
-/* ▲ header ▲ */
 
 /* ▼ footer ▼ */
 

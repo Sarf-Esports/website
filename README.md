@@ -1,10 +1,21 @@
-# [REVATI Website](https://revati.pages.dev)
+# REVATI Website
 
-[コミットするときのおやくそく☆](./CONTRIBUTING.md)
+## Links
 
-[TODO](./TODO.md)
+- [メイン(revati.jp)](https://revati.jp)
+- [開発(revati.pages.dev)](https://revati.pages.dev)
+
+## Project notes
+
+- [コミットするときのおやくそく☆](./CONTRIBUTING.md)
+- [TODO](./TODO.md)
+- [仕様書(雑)](./SPECIFICATION.md)
+
+<br /><br />
 
 ---
+
+<br /><br />
 
 # create-svelte
 

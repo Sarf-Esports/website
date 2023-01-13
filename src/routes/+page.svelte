@@ -1,19 +1,21 @@
-<!-- © 2022 REVATI -->
+<!-- © 2022 - 2023 REVATI -->
 <script>
 	import { browser } from '$app/environment';
 	import { fly } from 'svelte/transition';
 
-	import { build_news_slider, news_prev, news_next } from '$lib/news_slider';
+	import { build_news_slider, news_prev, news_next, fuck_news_arrows } from '$lib/news_slider';
 	import { build_member_lists } from '$lib/member_list';
 	import { fade_in_at_scroll } from '$lib/util';
+	import { is_contact_modal_visible, toggle_contact_modal, close_modal } from '$lib/contact_modal';
+	import Header from '$lib/header.svelte';
 
 	if (browser) {
 		build_news_slider();
 		build_member_lists();
-		fuck_news_arrows();
 
 		window.onscroll = () => {
 			fade_in_at_scroll(document.getElementsByClassName('team-classes-title'));
+			fuck_news_arrows();
 		};
 
 		window.addEventListener('resize', function () {
@@ -23,37 +25,6 @@
 		document.addEventListener('keydown', function (event) {
 			close_modal(event.key);
 		});
-	}
-
-	let is_contact_visible = false;
-
-	/**
-	 * Toggles the visibility of the contact modal.
-	 */
-	function toggle_contact_modal() {
-		let body = document.getElementsByTagName('body')[0].classList;
-		if (is_contact_visible == true) {
-			body.remove('prevent-scroll');
-			is_contact_visible = false;
-		} else {
-			body.add('prevent-scroll');
-			is_contact_visible = true;
-		}
-	}
-
-	/**
-	 * @param {string} key
-	 */
-	function close_modal(key) {
-		if (key == 'Escape' && is_contact_visible) {
-			toggle_contact_modal();
-		}
-	}
-
-	function fuck_news_arrows() {
-		let arrows = document.getElementsByClassName('arrow');
-		// @ts-ignore
-		[...arrows].forEach((a) => (a.style.width = a.clientHeight + 'px'));
 	}
 
 	/**
@@ -72,46 +43,27 @@
 			container.add('is-playing');
 		}, 15000);
 	}
+
+	const head = {
+		title: 'REVATI',
+		desc: 'REVATI の公式サイトです。'
+	};
 </script>
 
 <svelte:head>
-	<link rel="icon" href="/images/logos/REVATI_LOGO_BLK_2_square.png" />
 	<title>REVATI</title>
-	<meta name="title" content="REVATI" />
-	<meta name="description" content="REVATI の公式サイトです。" />
+	<meta name="title" content={head.title} />
+	<meta name="description" content={head.desc} />
 
-	<meta property="og:title" content="REVATI" />
-	<meta property="og:description" content="REVATI の公式サイトです。" />
-	<!-- TODO: Input the URL of this page ↓↓ -->
-	<meta property="og:url" content="https://revati.pages.dev" />
-	<!-- ↓ website or article -->
+	<meta property="og:title" content={head.title} />
+	<meta property="og:description" content={head.desc} />
+	<meta property="og:url" content="https://revati.jp" />
 	<meta property="og:type" content="website" />
 	<link rel="stylesheet" href="/stylesheets/style.css" />
 	<link rel="stylesheet" href="/stylesheets/util.css" />
 </svelte:head>
 
-<header>
-	<nav>
-		<a href="/" class="has-img"><img src="/images/logos/REVATI_LOGO_BLK_2.png" alt="logo" /></a>
-		<ul>
-			<li><a href="#about" id="hd-about">ABOUT</a></li>
-			<li><a href="#news" id="hd-news">NEWS</a></li>
-			<li><a href="#team" id="hd-team">TEAM</a></li>
-			<li><a href="#store" id="hd-store">STORE</a></li>
-			<li><a href="#sponsor" id="hd-sponsor">SPONSOR</a></li>
-			<li>
-				<a
-					href="/"
-					id="hd-contact"
-					on:click={(self) => {
-						self.preventDefault();
-						toggle_contact_modal();
-					}}>CONTACT</a
-				>
-			</li>
-		</ul>
-	</nav>
-</header>
+<Header is_home={true} />
 
 <main>
 	<div class="container bg-default">
@@ -223,10 +175,10 @@
 
 <footer>
 	<!-- TODO: Implement the footer -->
-	<p class="copyright">© 2022 REVATI</p>
+	<p class="copyright">© 2022 - 2023 REVATI</p>
 </footer>
 
-{#if is_contact_visible}
+{#if is_contact_modal_visible}
 	<div id="contact-modal-back" on:click={toggle_contact_modal} on:keypress={() => {}} />
 	<div id="contact-modal" transition:fly={{ y: -64, duration: 240 }}>
 		<h1>- CONTACT US -</h1>
