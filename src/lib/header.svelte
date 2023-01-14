@@ -2,7 +2,10 @@
 <script>
 	import Contact from './contact.svelte';
 
-	/** @type {boolean} */
+	/** 
+	 * Whether the header is site of home.
+	 * @type {boolean} 
+	 * */
 	export let is_home;
 </script>
 
@@ -26,7 +29,7 @@
 
 <style lang="scss">
 	@import '/assets/stylesheets/header.scss';
-	@import '/assets/stylesheets/consts.scss';
+	@import '/assets/stylesheets/variables.scss';
 
 	@font-face {
 		font-family: 'Poppins';

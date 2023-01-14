@@ -7,6 +7,7 @@
 	import { fade_in_at_scroll } from '$lib/util';
 
 	import Header from '$lib/header.svelte';
+	import DropdownBtn from './dropdown_button.svelte';
 
 	if (browser) {
 		build_news_slider();
@@ -55,7 +56,7 @@
 	<meta property="og:url" content="https://revati.jp" />
 	<meta property="og:type" content="website" />
 
-	<link rel="stylesheet" href="/stylesheets/util.static.css" />
+	<link rel="stylesheet" href="/stylesheets/util.mut.css" />
 </svelte:head>
 
 <Header is_home={true} />
@@ -72,7 +73,7 @@
 				playsinline
 			/>
 		</div>
-		<a href="#about" class="dropdown-btn">▼</a>
+		<DropdownBtn to="about" />
 	</div>
 
 	<div class="container bg-default">
@@ -87,7 +88,7 @@
 					eスポーツの発展を目的として精力的に活動を行っております。
 				</p>
 			</div>
-			<a href="#news" class="dropdown-btn">▼</a>
+			<DropdownBtn to="news" />
 		</section>
 	</div>
 
@@ -103,7 +104,7 @@
 				<button on:click={(self) => news_next(self)} class="arrow" id="arrow-right">&gt</button>
 				<ul id="news-slider" />
 			</div>
-			<a href="#team" class="dropdown-btn" style="margin-top:16px;">▼</a>
+			<DropdownBtn to="team" style="margin-top:16px;"/>
 		</section>
 	</div>
 	<div class="container bg-default">
@@ -135,7 +136,7 @@
 					</li>
 				</ul>
 			</div>
-			<a href="#store" class="dropdown-btn">▼</a>
+			<DropdownBtn to="store" />
 		</section>
 	</div>
 
@@ -154,7 +155,7 @@
 					draggable="false">お買い求めはこちら ></a
 				>
 			</div>
-			<a href="#sponsor" class="dropdown-btn">▼</a>
+			<DropdownBtn to="sponsor" />
 		</section>
 	</div>
 
@@ -174,8 +175,8 @@
 </footer>
 
 <style lang="scss">
-	@import "./assets/stylesheets/style.scss";
-	@import "./assets/stylesheets/util.scss";
+	@import './assets/stylesheets/style.scss';
+	@import './assets/stylesheets/util.scss';
 
 	#op-container {
 		display: block;
@@ -220,35 +221,6 @@
 		margin-top: -112px;
 		padding-left: 16px;
 		padding-right: 16px;
-	}
-
-	.dropdown-btn {
-		text-decoration: none;
-		color: white;
-		padding: 1rem 1.25rem;
-		display: inline-block;
-		margin: 16px auto 32px auto;
-		font-size: 24px;
-		user-select: none;
-		transition: 0.4s;
-	}
-
-	.dropdown-btn:hover {
-		transform: translateY(4px);
-		color: white;
-	}
-
-	.dropdown-btn::after {
-		display: block;
-		color: gray;
-		font-size: 16px;
-		position: absolute;
-		left: 0;
-		right: 0;
-	}
-
-	.dropdown-btn:hover::after {
-		content: 'NEXT';
 	}
 
 	.section-title {
