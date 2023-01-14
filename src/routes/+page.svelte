@@ -7,6 +7,7 @@
 	import { fade_in_at_scroll } from '$lib/util';
 
 	import Header from '$lib/header.svelte';
+	import SectionTitle from './section_title.svelte'
 	import DropdownBtn from './dropdown_button.svelte';
 
 	if (browser) {
@@ -78,9 +79,7 @@
 
 	<div class="container bg-default">
 		<section id="about">
-			<div class="section-title">
-				<img src="/images/abouts.svg" alt="about" />
-			</div>
+			<SectionTitle name="about" />
 			<div class="section-content">
 				<p>
 					2022年に設立された大阪を拠点としているアマチュアEスポーツチームです。
@@ -94,9 +93,7 @@
 
 	<div class="container bg-default">
 		<section id="news">
-			<div class="section-title">
-				<img src="/images/news.svg" alt="news" />
-			</div>
+			<SectionTitle name="news" />
 			<div class="section-content">
 				<button on:click={(self) => news_prev(self)} class="arrow inactive" id="arrow-left"
 					>&lt</button
@@ -109,9 +106,7 @@
 	</div>
 	<div class="container bg-default">
 		<section id="team">
-			<div class="section-title">
-				<img src="/images/team.svg" alt="team" />
-			</div>
+			<SectionTitle name="team" />
 			<div class="section-content">
 				<ul class="title-list">
 					<li>
@@ -142,9 +137,7 @@
 
 	<div class="container bg-default">
 		<section id="store">
-			<div class="section-title">
-				<img src="/images/store.svg" alt="store" />
-			</div>
+			<SectionTitle name="store" />
 			<div class="section-content">
 				<img src="/images/store_thumbnail.png" alt="store thumbnail" />
 				<a
@@ -161,9 +154,7 @@
 
 	<div class="container bg-default">
 		<section id="sponsor">
-			<div class="section-title">
-				<img src="/images/sponsor.svg" alt="sponsor" />
-			</div>
+			<SectionTitle name="sponsor" />
 			<div class="section-content">...( 'ω')</div>
 		</section>
 	</div>
@@ -221,19 +212,6 @@
 		margin-top: -112px;
 		padding-left: 16px;
 		padding-right: 16px;
-	}
-
-	.section-title {
-		text-align: center;
-		margin-top: 86px;
-		margin-bottom: 32px;
-	}
-
-	.section-title img {
-		height: 64px;
-		width: auto;
-		user-select: none;
-		pointer-events: none;
 	}
 
 	.section-content {
