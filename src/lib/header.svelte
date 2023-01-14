@@ -30,12 +30,13 @@
 
 	header {
 		position: fixed;
+		top: -0.5px;
 		z-index: 253;
 		background-color: $primary-color;
 		width: 100%;
 		box-shadow: 0 0 10px 0 black;
 		border-bottom: 6px solid #65743b;
-		font-family: 'Poppins';
+		font-family: 'Poppins' sans-serif;
 		font-weight: 600;
 		letter-spacing: -1px;
 
