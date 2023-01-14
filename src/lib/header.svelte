@@ -25,8 +25,13 @@
 {/if}
 
 <style lang="scss">
-	@import './assets/stylesheets/header.scss';
-	@import './assets/stylesheets/consts.scss';
+	@import '/assets/stylesheets/header.scss';
+	@import '/assets/stylesheets/consts.scss';
+
+	@font-face {
+		font-family: 'Poppins';
+		src: url('/fonts/Poppins/Poppins-Regular.ttf');
+	}
 
 	header {
 		position: fixed;
@@ -36,7 +41,7 @@
 		width: 100%;
 		box-shadow: 0 0 10px 0 black;
 		border-bottom: 6px solid #65743b;
-		font-family: 'Poppins' sans-serif;
+		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
 		letter-spacing: -1px;
 
@@ -47,7 +52,7 @@
 			margin-left: 18px;
 			margin-top: 8px;
 		}
-		
+
 		img:hover {
 			transform: translateY(-4px) scale(1.32);
 			filter: drop-shadow(0 8px 0 #00000080);
