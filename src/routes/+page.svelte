@@ -131,12 +131,12 @@
 						<div class="rv-item"><ul class="member-list rv-con" id="minecraft-member-list" /></div>
 					</li>
 					<li>
-						<div class="rv-tem"><h2 class="team-classes-title rv-con">Streamer</h2></div>
-						<div class="rv-tem"><ul class="member-list rv-con" id="streamer-member-list" /></div>
+						<div class="rv-item"><h2 class="team-classes-title rv-con">Streamer</h2></div>
+						<div class="rv-item"><ul class="member-list rv-con" id="streamer-member-list" /></div>
 					</li>
 					<li>
-						<div class="rv-tem"><h2 class="team-classes-title rv-con">Owner</h2></div>
-						<div class="rv-tem"><ul class="member-list rv-con" id="owner-member-list" /></div>
+						<div class="rv-item"><h2 class="team-classes-title rv-con">Owner</h2></div>
+						<div class="rv-item"><ul class="member-list rv-con" id="owner-member-list" /></div>
 					</li>
 				</ul>
 			</div>
@@ -146,14 +146,15 @@
 
 	<div class="container bg-default">
 		<section id="store">
-			<div class="section-title">
-				<img src="/images/store.svg" alt="store" />
+			<div class="rv-item section-title">
+				<img class="rv-con" src="/images/store.svg" alt="store" />
 			</div>
-			<div class="section-content">
-				<img src="/images/store_thumbnail.png" alt="store thumbnail" />
+			<div class="section-content rv-item">
+				<img class="rv-con" src="/images/store_thumbnail.png" alt="store thumbnail" />
+				<div class="rv-item">
 				<a
 					href="https://suzuri.jp/REVATI"
-					class="go-to-store"
+					class="rv-con go-to-store"
 					target="_blank"
 					rel="noopener noreferrer"
 					draggable="false">お買い求めはこちら ></a
@@ -168,7 +169,7 @@
 			<div class="section-title rv-item">
 				<img class="rv-con" src="/images/sponsor.svg" alt="sponsor" />
 			</div>
-			<div class="rv-tem"><div class="section-content rv-con">...( 'ω')</div></div>
+			<div class="rv-item"><div class="section-content rv-con">...( 'ω')</div></div>
 		</section>
 	</div>
 </main>
