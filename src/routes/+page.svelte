@@ -2,26 +2,20 @@
 <script>
 	import { browser } from '$app/environment';
 
-	import { build_news_slider, news_prev, news_next, fuck_news_arrows } from '$lib/news_slider';
 	import { build_member_lists } from '$lib/member_list';
 	import { fade_in_at_scroll } from '$lib/util';
 
 	import Header from '$lib/header.svelte';
-	import SectionTitle from './section_title.svelte'
+	import SectionTitle from './section_title.svelte';
 	import DropdownBtn from './dropdown_button.svelte';
+	import NewsSlider from './news_slider.svelte';
 
 	if (browser) {
-		build_news_slider();
 		build_member_lists();
 
 		window.onscroll = () => {
 			fade_in_at_scroll(document.getElementsByClassName('team-classes-title'));
-			fuck_news_arrows();
 		};
-
-		window.addEventListener('resize', function () {
-			fuck_news_arrows();
-		});
 	}
 
 	/**
@@ -94,14 +88,8 @@
 	<div class="container bg-default">
 		<section id="news">
 			<SectionTitle name="news" />
-			<div class="section-content">
-				<button on:click={(self) => news_prev(self)} class="arrow inactive" id="arrow-left"
-					>&lt</button
-				>
-				<button on:click={(self) => news_next(self)} class="arrow" id="arrow-right">&gt</button>
-				<ul id="news-slider" />
-			</div>
-			<DropdownBtn to="team" style="margin-top:16px;"/>
+			<div class="section-content"><NewsSlider /></div>
+			<DropdownBtn to="team" style="margin-top:16px;" />
 		</section>
 	</div>
 	<div class="container bg-default">
@@ -166,8 +154,8 @@
 </footer>
 
 <style lang="scss">
-	@import './assets/stylesheets/style.scss';
-	@import './assets/stylesheets/util.scss';
+	@import '/assets/stylesheets/style.scss';
+	@import '/assets/stylesheets/util.scss';
 
 	#op-container {
 		display: block;
