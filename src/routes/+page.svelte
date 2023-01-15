@@ -119,24 +119,24 @@
 			<div class="section-content">
 				<ul class="title-list">
 					<li>
-						<div class="rv_item"><h2 class="team-classes-title rv-con">Fortnite</h2></div>
-						<div class="rv_item"><ul class="member-list rv-con" id="fortnite-member-list" /></div>
+						<div class="rv-item"><h2 class="team-classes-title rv-con">Fortnite</h2></div>
+						<div class="rv-item"><ul class="member-list rv-con" id="fortnite-member-list" /></div>
 					</li>
 					<li>
-						<div class="rv_item"><h2 class="team-classes-title rv-con">Apex Legends</h2></div>
-						<div class="rv_item"><ul class="member-list rv-con" id="apex-member-list" /></div>
+						<div class="rv-item"><h2 class="team-classes-title rv-con">Apex Legends</h2></div>
+						<div class="rv-item"><ul class="member-list rv-con" id="apex-member-list" /></div>
 					</li>
 					<li>
-						<div class="rv_item"><h2 class="team-classes-title rv-con">Minecraft</h2></div>
-						<div class="rv_item"><ul class="member-list rv-con" id="minecraft-member-list" /></div>
+						<div class="rv-item"><h2 class="team-classes-title rv-con">Minecraft</h2></div>
+						<div class="rv-item"><ul class="member-list rv-con" id="minecraft-member-list" /></div>
 					</li>
 					<li>
-						<div class="rv_item"><h2 class="team-classes-title rv-con">Streamer</h2></div>
-						<div class="rv_item"><ul class="member-list rv-con" id="streamer-member-list" /></div>
+						<div class="rv-tem"><h2 class="team-classes-title rv-con">Streamer</h2></div>
+						<div class="rv-tem"><ul class="member-list rv-con" id="streamer-member-list" /></div>
 					</li>
 					<li>
-						<div class="rv_item"><h2 class="team-classes-title rv-con">Owner</h2></div>
-						<div class="rv_item"><ul class="member-list rv-con" id="owner-member-list" /></div>
+						<div class="rv-tem"><h2 class="team-classes-title rv-con">Owner</h2></div>
+						<div class="rv-tem"><ul class="member-list rv-con" id="owner-member-list" /></div>
 					</li>
 				</ul>
 			</div>
@@ -168,7 +168,7 @@
 			<div class="section-title rv-item">
 				<img class="rv-con" src="/images/sponsor.svg" alt="sponsor" />
 			</div>
-			<div class="rv_item"><div class="section-content rv-con">...( 'ω')</div></div>
+			<div class="rv-tem"><div class="section-content rv-con">...( 'ω')</div></div>
 		</section>
 	</div>
 </main>
