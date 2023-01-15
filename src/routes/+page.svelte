@@ -95,14 +95,18 @@
 	<div class="container bg-default">
 		<section id="news">
 			<div class="section-title">
-				<img src="/images/news.svg" alt="news" />
+				<div class="rv-item">
+					<img class="rv-con" src="/images/news.svg" alt="news" />
+				</div>
 			</div>
-			<div class="section-content">
+			<div class="rv-item">
+			<div class="section-content rv-con">
 				<button on:click={(self) => news_prev(self)} class="arrow inactive" id="arrow-left"
 					>&lt</button
 				>
 				<button on:click={(self) => news_next(self)} class="arrow" id="arrow-right">&gt</button>
 				<ul id="news-slider" />
+			</div>
 			</div>
 			<a href="#team" class="dropdown-btn" style="margin-top:16px;">▼</a>
 		</section>
