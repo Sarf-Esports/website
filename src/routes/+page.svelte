@@ -56,6 +56,7 @@
 	<meta property="og:type" content="website" />
 
 	<link rel="stylesheet" href="/stylesheets/util.static.css" />
+	<link rel="stylesheet" href="/stylesheets/br.css" />
 </svelte:head>
 
 <Header is_home={true} />
@@ -77,11 +78,11 @@
 
 	<div class="container bg-default">
 		<section id="about">
-			<div class="section-title">
-				<img src="/images/abouts.svg" alt="about" />
+			<div class="section-title rv-item">
+				<img class="rv-con" src="/images/abouts.svg" alt="about" />
 			</div>
-			<div class="section-content">
-				<p>
+			<div class="section-content rv-item">
+				<p class="rv-con">
 					2022年に設立された大阪を拠点としているアマチュアEスポーツチームです。
 					現在「Fortnite部門」「APEX部門」「Minecraft部門」の3部門で活動しており、
 					eスポーツの発展を目的として精力的に活動を行っております。
