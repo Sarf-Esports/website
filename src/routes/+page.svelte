@@ -118,25 +118,25 @@
 			</div>
 			<div class="section-content">
 				<ul class="title-list">
-					<li class="rv-item">
-						<h2 class="team-classes-title rv-con">Fortnite</h2>
-						<ul class="member-list rv-con" id="fortnite-member-list" />
+					<li>
+						<div class="rv_item"><h2 class="team-classes-title rv-con">Fortnite</h2></div>
+						<div class="rv_item"><ul class="member-list rv-con" id="fortnite-member-list" /></div>
 					</li>
 					<li>
-						<h2 class="team-classes-title">Apex Legends</h2>
-						<ul class="member-list" id="apex-member-list" />
+						<div class="rv_item"><h2 class="team-classes-title rv-con">Apex Legends</h2></div>
+						<div class="rv_item"><ul class="member-list rv-con" id="apex-member-list" /></div>
 					</li>
 					<li>
-						<h2 class="team-classes-title">Minecraft</h2>
-						<ul class="member-list" id="minecraft-member-list" />
+						<div class="rv_item"><h2 class="team-classes-title rv-con">Minecraft</h2></div>
+						<div class="rv_item"><ul class="member-list rv-con" id="minecraft-member-list" /></div>
 					</li>
 					<li>
-						<h2 class="team-classes-title">Streamer</h2>
-						<ul class="member-list" id="streamer-member-list" />
+						<div class="rv_item"><h2 class="team-classes-title rv-con">Streamer</h2></div>
+						<div class="rv_item"><ul class="member-list rv-con" id="streamer-member-list" /></div>
 					</li>
 					<li>
-						<h2 class="team-classes-title">Owner</h2>
-						<ul class="member-list" id="owner-member-list" />
+						<div class="rv_item"><h2 class="team-classes-title rv-con">Owner</h2></div>
+						<div class="rv_item"><ul class="member-list rv-con" id="owner-member-list" /></div>
 					</li>
 				</ul>
 			</div>
@@ -165,10 +165,10 @@
 
 	<div class="container bg-default">
 		<section id="sponsor">
-			<div class="section-title">
-				<img src="/images/sponsor.svg" alt="sponsor" />
+			<div class="section-title rv-item">
+				<img class="rv-con" src="/images/sponsor.svg" alt="sponsor" />
 			</div>
-			<div class="section-content">...( 'ω')</div>
+			<div class="rv_item"><div class="section-content rv-con">...( 'ω')</div></div>
 		</section>
 	</div>
 </main>
