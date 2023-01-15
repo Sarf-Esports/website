@@ -113,14 +113,14 @@
 	</div>
 	<div class="container bg-default">
 		<section id="team">
-			<div class="section-title">
-				<img src="/images/team.svg" alt="team" />
+			<div class="section-title rv-item">
+				<img class="rv-con" src="/images/team.svg" alt="team" />
 			</div>
 			<div class="section-content">
 				<ul class="title-list">
-					<li>
-						<h2 class="team-classes-title">Fortnite</h2>
-						<ul class="member-list" id="fortnite-member-list" />
+					<li class="rv-item">
+						<h2 class="team-classes-title rv-con">Fortnite</h2>
+						<ul class="member-list rv-con" id="fortnite-member-list" />
 					</li>
 					<li>
 						<h2 class="team-classes-title">Apex Legends</h2>
