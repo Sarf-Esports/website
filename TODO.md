@@ -1,9 +1,13 @@
 # やることりすと
 
-- [app.css](./assets/stylesheets/app.css) にある余計なものを移動
+- しろねこのプロフィールの実装
 - Svelte に完全に最適化させる
+- [app.css](./assets/stylesheets/app.css) にある余計なものを移動
+- GEN のやつ再現
+- ニュース記事の生成実装
+- レスポンシブ対応
 - SNSアカウントへのリンク
 - OP再生後の点滅の修正 (動画ファイル側)
-- レスポンシブ対応
+- 一般公開したら GitHub Pages を杀す
 
 - このリポジトリで `TODO:` で検索するといくつか細かい TODO もあると思うので参照

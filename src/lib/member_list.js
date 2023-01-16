@@ -1,5 +1,8 @@
 // © 2022 - 2023 REVATI
 
+/** 
+ * Builds and inserts member lists.
+ */
 export function build_member_lists() {
     let path = location.href.replace("index.html", "") + "data/members.json";
     fetch(path)

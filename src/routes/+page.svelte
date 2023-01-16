@@ -2,23 +2,19 @@
 <script>
 	import { browser } from '$app/environment';
 
-	import { build_news_slider, news_prev, news_next, fuck_news_arrows } from '$lib/news_slider';
 	import { build_member_lists } from '$lib/member_list';
-	import { fade_in_at_scroll } from '$lib/util';
+	import { add_class_at_scroll } from '$lib/util';
 
 	import Header from '$lib/header.svelte';
+	import SectionTitle from './section_title.svelte';
+	import DropdownBtn from './dropdown_button.svelte';
+	import NewsSlider from './news_slider.svelte';
 
 	if (browser) {
-		build_news_slider();
 		build_member_lists();
 
-		window.onscroll = () => {
-			fade_in_at_scroll(document.getElementsByClassName('team-classes-title'));
-			fuck_news_arrows();
-		};
-
-		window.addEventListener('resize', function () {
-			fuck_news_arrows();
+		window.addEventListener('scroll', function () {
+			add_class_at_scroll(document.getElementsByClassName('team-classes-title'), 'fade-in-right');
 		});
 	}
 
@@ -54,9 +50,6 @@
 	<meta property="og:description" content={head.desc} />
 	<meta property="og:url" content="https://revati.jp" />
 	<meta property="og:type" content="website" />
-
-	<link rel="stylesheet" href="/stylesheets/util.static.css" />
-	<link rel="stylesheet" href="/stylesheets/br.css" />
 </svelte:head>
 
 <Header is_home={true} />
@@ -73,49 +66,33 @@
 				playsinline
 			/>
 		</div>
-		<a href="#about" class="dropdown-btn">▼</a>
+		<DropdownBtn to="about" />
 	</div>
 
 	<div class="container bg-default">
 		<section id="about">
-			<div class="section-title rv-item">
-				<img class="rv-con" src="/images/abouts.svg" alt="about" />
-			</div>
-			<div class="section-content rv-item">
-				<p class="rv-con">
+			<SectionTitle name="about" />
+			<div class="section-content reveal-anim">
+				<p>
 					2022年に設立された大阪を拠点としているアマチュアEスポーツチームです。
 					現在「Fortnite部門」「APEX部門」「Minecraft部門」の3部門で活動しており、
 					eスポーツの発展を目的として精力的に活動を行っております。
 				</p>
 			</div>
-			<a href="#news" class="dropdown-btn">▼</a>
+			<DropdownBtn to="news" />
 		</section>
 	</div>
 
 	<div class="container bg-default">
 		<section id="news">
-			<div class="section-title">
-				<div class="rv-item">
-					<img class="rv-con" src="/images/news.svg" alt="news" />
-				</div>
-			</div>
-			<div class="rv-item">
-			<div class="section-content rv-con">
-				<button on:click={(self) => news_prev(self)} class="arrow inactive" id="arrow-left"
-					>&lt</button
-				>
-				<button on:click={(self) => news_next(self)} class="arrow" id="arrow-right">&gt</button>
-				<ul id="news-slider" />
-			</div>
-			</div>
-			<a href="#team" class="dropdown-btn" style="margin-top:16px;">▼</a>
+			<SectionTitle name="news" />
+			<div class="section-content"><NewsSlider /></div>
+			<DropdownBtn to="team" style="margin-top:16px;" />
 		</section>
 	</div>
 	<div class="container bg-default">
-		<section id="team">
-			<div class="section-title rv-item">
-				<img class="rv-con" src="/images/team.svg" alt="team" />
-			</div>
+		<section id="teams">
+			<SectionTitle name="teams" />
 			<div class="section-content">
 				<ul class="title-list">
 					<li>
@@ -140,18 +117,15 @@
 					</li>
 				</ul>
 			</div>
-			<a href="#store" class="dropdown-btn">▼</a>
+			<DropdownBtn to="store" />
 		</section>
 	</div>
 
 	<div class="container bg-default">
 		<section id="store">
-			<div class="rv-item section-title">
-				<img class="rv-con" src="/images/store.svg" alt="store" />
-			</div>
-			<div class="section-content rv-item">
-				<img class="rv-con" src="/images/store_thumbnail.png" alt="store thumbnail" />
-				<div class="rv-item">
+			<SectionTitle name="store" />
+			<div class="section-content">
+				<img src="/images/store_thumbnail.png" alt="store thumbnail" />
 				<a
 					href="https://suzuri.jp/REVATI"
 					class="rv-con go-to-store"
@@ -160,16 +134,14 @@
 					draggable="false">お買い求めはこちら ></a
 				>
 			</div>
-			<a href="#sponsor" class="dropdown-btn">▼</a>
+			<DropdownBtn to="sponsor" />
 		</section>
 	</div>
 
 	<div class="container bg-default">
 		<section id="sponsor">
-			<div class="section-title rv-item">
-				<img class="rv-con" src="/images/sponsor.svg" alt="sponsor" />
-			</div>
-			<div class="rv-item"><div class="section-content rv-con">...( 'ω')</div></div>
+			<SectionTitle name="sponsor" />
+			<div class="section-content">...( 'ω')</div>
 		</section>
 	</div>
 </main>
@@ -179,9 +151,9 @@
 	<p class="copyright">© 2022 - 2023 REVATI</p>
 </footer>
 
-<style lang="scss">
-	@import "./assets/stylesheets/style.scss";
-	@import "./assets/stylesheets/util.scss";
+<style lang="scss" global>
+	@import '/assets/stylesheets/style.scss';
+	@import '/assets/stylesheets/util.scss';
 
 	#op-container {
 		display: block;
@@ -226,48 +198,6 @@
 		margin-top: -112px;
 		padding-left: 16px;
 		padding-right: 16px;
-	}
-
-	.dropdown-btn {
-		text-decoration: none;
-		color: white;
-		padding: 1rem 1.25rem;
-		display: inline-block;
-		margin: 16px auto 32px auto;
-		font-size: 24px;
-		user-select: none;
-		transition: 0.4s;
-	}
-
-	.dropdown-btn:hover {
-		transform: translateY(4px);
-		color: white;
-	}
-
-	.dropdown-btn::after {
-		display: block;
-		color: gray;
-		font-size: 16px;
-		position: absolute;
-		left: 0;
-		right: 0;
-	}
-
-	.dropdown-btn:hover::after {
-		content: 'NEXT';
-	}
-
-	.section-title {
-		text-align: center;
-		margin-top: 86px;
-		margin-bottom: 32px;
-	}
-
-	.section-title img {
-		height: 64px;
-		width: auto;
-		user-select: none;
-		pointer-events: none;
 	}
 
 	.section-content {
@@ -318,4 +248,85 @@
 		box-shadow: 0 3px 0 #658111;
 		transform: translateY(9px);
 	}
+
+	.title-list {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.team-classes-title {
+		text-align: left;
+		font-size: 28px;
+		border-bottom: 2px solid white;
+		width: 94%;
+	}
+
+	.member-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.member-list li {
+		align-items: center;
+		margin: 8px 6px;
+		width: 138px;
+		height: 224px;
+		background-color: #e6e6e6;
+		list-style: none;
+		border-radius: 4px;
+		border: 4px solid #c0c0c0;
+		color: #3a490c;
+		font-weight: 900;
+	}
+	.member-list li > img {
+		width: 86px;
+		height: 86px;
+		border-radius: 50%;
+		margin: 20px auto;
+		border: 4px solid #c0c0c0;
+		pointer-events: none;
+		user-select: none;
+	}
+
+	#owner-member-list li {
+		background-color: #b4e7d6;
+		border: 4px solid #318569;
+	}
+
+	#owner-member-list li > img {
+		border: 4px solid #318569;
+	}
+
+	.member-list h3 {
+		font-size: 18px;
+		margin-top: -16px;
+	}
+
+	.member-list a {
+		text-decoration: none;
+		margin: 0 4px;
+	}
+
+	.member-list a img {
+		user-select: none;
+	}
+
+	.member-twitter img {
+		height: 26px;
+		transform: translateY(2px);
+	}
+
+	.member-youtube img {
+		height: 24px;
+	}
+
+	.member-twitch img {
+		height: 30px;
+		transform: translateY(4px);
+	}
+
+	// .reveal-anim {}
 </style>

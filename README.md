@@ -11,47 +11,54 @@
 - [TODO](./TODO.md)
 - [仕様書(雑)](./SPECIFICATION.md)
 
-<br /><br />
-
 ---
 
-<br /><br />
+## SvelteKit万歳
 
-# create-svelte
+このサイトには [SvelteKit](https://kit.svelte.jp/) とかいうフレームワークを使っています。
+詳しくは [SvelteKitのドキュメント](https://kit.svelte.jp/docs/introduction) を参照
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+### 環境構築 !
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+npm で依存関係をインストール:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npm i
 ```
 
-## Building
+### 開発ビルド !
 
-To create a production version of your app:
+なんか変更がすぐに適応されるすごいやつをビルドできる。
 
 ```bash
-npm run build
+$ npm run dev
+
+> revati_website@x.y.z dev
+> vite dev
+
+
+
+  VITE vx.y.z  ready in n ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+  ➜  Network: use --host to expose
+  ➜  press h to show help
 ```
 
-You can preview the production build with `npm run preview`.
+ちなみにここで `O`キーを押下するとブラウザで開いてくれる。
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## ビルド !
+
+リモートリポジトリにプッシュするときは できればこれらを試して崩壊してないか確認してほしい
+
+正レい製品版(?)ビルドをできる:
+
+```bash
+$ npm run build
+```
+
+ビルドしたものは `preview` で確認できる:
+
+```bash
+$ npm run preview
+```
