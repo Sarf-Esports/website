@@ -3,7 +3,7 @@
 	import { browser } from '$app/environment';
 
 	import { build_member_lists } from '$lib/member_list';
-	import { fade_in_at_scroll } from '$lib/util';
+	import { add_class_at_scroll } from '$lib/util';
 
 	import Header from '$lib/header.svelte';
 	import SectionTitle from './section_title.svelte';
@@ -13,9 +13,9 @@
 	if (browser) {
 		build_member_lists();
 
-		window.onscroll = () => {
-			fade_in_at_scroll(document.getElementsByClassName('team-classes-title'));
-		};
+		window.addEventListener('scroll', function () {
+			add_class_at_scroll(document.getElementsByClassName('team-classes-title'), 'fade-in-right');
+		});
 	}
 
 	/**
@@ -50,8 +50,6 @@
 	<meta property="og:description" content={head.desc} />
 	<meta property="og:url" content="https://revati.jp" />
 	<meta property="og:type" content="website" />
-
-	<link rel="stylesheet" href="/stylesheets/util.mut.css" />
 </svelte:head>
 
 <Header is_home={true} />
@@ -74,7 +72,7 @@
 	<div class="container bg-default">
 		<section id="about">
 			<SectionTitle name="about" />
-			<div class="section-content">
+			<div class="section-content reveal-anim">
 				<p>
 					2022年に設立された大阪を拠点としているアマチュアEスポーツチームです。
 					現在「Fortnite部門」「APEX部門」「Minecraft部門」の3部門で活動しており、
@@ -93,8 +91,8 @@
 		</section>
 	</div>
 	<div class="container bg-default">
-		<section id="team">
-			<SectionTitle name="team" />
+		<section id="teams">
+			<SectionTitle name="teams" />
 			<div class="section-content">
 				<ul class="title-list">
 					<li>
@@ -153,7 +151,7 @@
 	<p class="copyright">© 2022 - 2023 REVATI</p>
 </footer>
 
-<style lang="scss">
+<style lang="scss" global>
 	@import '/assets/stylesheets/style.scss';
 	@import '/assets/stylesheets/util.scss';
 
@@ -250,4 +248,85 @@
 		box-shadow: 0 3px 0 #658111;
 		transform: translateY(9px);
 	}
+
+	.title-list {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.team-classes-title {
+		text-align: left;
+		font-size: 28px;
+		border-bottom: 2px solid white;
+		width: 94%;
+	}
+
+	.member-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.member-list li {
+		align-items: center;
+		margin: 8px 6px;
+		width: 138px;
+		height: 224px;
+		background-color: #e6e6e6;
+		list-style: none;
+		border-radius: 4px;
+		border: 4px solid #c0c0c0;
+		color: #3a490c;
+		font-weight: 900;
+	}
+	.member-list li > img {
+		width: 86px;
+		height: 86px;
+		border-radius: 50%;
+		margin: 20px auto;
+		border: 4px solid #c0c0c0;
+		pointer-events: none;
+		user-select: none;
+	}
+
+	#owner-member-list li {
+		background-color: #b4e7d6;
+		border: 4px solid #318569;
+	}
+
+	#owner-member-list li > img {
+		border: 4px solid #318569;
+	}
+
+	.member-list h3 {
+		font-size: 18px;
+		margin-top: -16px;
+	}
+
+	.member-list a {
+		text-decoration: none;
+		margin: 0 4px;
+	}
+
+	.member-list a img {
+		user-select: none;
+	}
+
+	.member-twitter img {
+		height: 26px;
+		transform: translateY(2px);
+	}
+
+	.member-youtube img {
+		height: 24px;
+	}
+
+	.member-twitch img {
+		height: 30px;
+		transform: translateY(4px);
+	}
+
+	// .reveal-anim {}
 </style>

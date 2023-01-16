@@ -1,25 +1,23 @@
 // © 2022 - 2023 REVATI
 
 /**
- * Fade in from left.
+ * Adds a class to an element when it is scrolled into view.
  * 
  * @param {HTMLCollectionOf<Element>} elms
+ * @param {string} cls
  * 
  * # Example:
  * 
  * ```js
  * window.onscroll = () => {
- *    fade_in_at_scroll(document.getElementsByClassName("foo"));
+ *    add_class_at_scroll(document.getElementsByClassName("foo"), "view-anim");
  * };
  * ```
- * 
- * # Dependencies:
- * - `/stylesheets/util.css`
  */
-export function fade_in_at_scroll(elms) {
+export function add_class_at_scroll(elms, cls) {
     [...elms].forEach((e) => {
         if (e.getBoundingClientRect().top < window.innerHeight) {
-            e.classList.add("fade-in-right")
+            e.classList.add(cls)
         }
     });
 }
@@ -33,8 +31,8 @@ export function fade_in_at_scroll(elms) {
  * - `/stylesheets/util.css`
  */
 export function shake(elm) {
-	elm.classList.add("shake");
-	setTimeout(function () {
-		elm.classList.remove("shake");
-	}, 1000);
+    elm.classList.add("shake");
+    setTimeout(function () {
+        elm.classList.remove("shake");
+    }, 1000);
 }
