@@ -96,24 +96,24 @@
 			<div class="section-content">
 				<ul class="title-list">
 					<li>
-						<div class="rv-item"><h2 class="team-classes-title rv-con">Fortnite</h2></div>
-						<div class="rv-item"><ul class="member-list rv-con" id="fortnite-member-list" /></div>
+						<div><h2 class="team-classes-title">Fortnite</h2></div>
+						<div><ul class="member-list" id="fortnite-member-list" /></div>
 					</li>
 					<li>
-						<div class="rv-item"><h2 class="team-classes-title rv-con">Apex Legends</h2></div>
-						<div class="rv-item"><ul class="member-list rv-con" id="apex-member-list" /></div>
+						<div><h2 class="team-classes-title">Apex Legends</h2></div>
+						<div><ul class="member-list" id="apex-member-list" /></div>
 					</li>
 					<li>
-						<div class="rv-item"><h2 class="team-classes-title rv-con">Minecraft</h2></div>
-						<div class="rv-item"><ul class="member-list rv-con" id="minecraft-member-list" /></div>
+						<div><h2 class="team-classes-title">Minecraft</h2></div>
+						<div><ul class="member-list" id="minecraft-member-list" /></div>
 					</li>
 					<li>
-						<div class="rv-item"><h2 class="team-classes-title rv-con">Streamer</h2></div>
-						<div class="rv-item"><ul class="member-list rv-con" id="streamer-member-list" /></div>
+						<div><h2 class="team-classes-title">Streamer</h2></div>
+						<div><ul class="member-list" id="streamer-member-list" /></div>
 					</li>
 					<li>
-						<div class="rv-item"><h2 class="team-classes-title rv-con">Owner</h2></div>
-						<div class="rv-item"><ul class="member-list rv-con" id="owner-member-list" /></div>
+						<div><h2 class="team-classes-title">Owner</h2></div>
+						<div><ul class="member-list" id="owner-member-list" /></div>
 					</li>
 				</ul>
 			</div>
@@ -128,7 +128,7 @@
 				<img src="/images/store_thumbnail.png" alt="store thumbnail" />
 				<a
 					href="https://suzuri.jp/REVATI"
-					class="rv-con go-to-store"
+					class="go-to-store"
 					target="_blank"
 					rel="noopener noreferrer"
 					draggable="false">お買い求めはこちら ></a
