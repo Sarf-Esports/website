@@ -166,12 +166,14 @@
 		opacity: 1;
 	}
 
+	$scroll-offset: 82px;
+
 	section {
 		max-width: 768px;
 		margin: 0 auto;
 		display: block;
-		padding-top: 112px;
-		margin-top: -112px;
+		padding-top: $scroll-offset;
+		margin-top: -$scroll-offset;
 		padding-left: 16px;
 		padding-right: 16px;
 
