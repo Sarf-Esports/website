@@ -113,7 +113,7 @@
 				data-index={i}
 			>
 				<a href="./news/{date}.html">
-					<img src="/images/news/{date}.png" alt="news thumbnail" loading="lazy" />
+					<img src="/images/news/{date}.png" alt="news thumbnail" />
 					<h1>{title}</h1>
 				</a>
 			</li>
