@@ -116,7 +116,7 @@
 
 <button on:click={(self) => news_prev(self)} class="arrow inactive" id="arrow-left">&lt</button>
 <button on:click={(self) => news_next(self)} class="arrow" id="arrow-right">&gt</button>
-<ul id="news-slider">
+<ul id="news-slider" class="reveal-anim-item">
 	{#each news_list as { is_hidden, date, title }, i}
 		{#if !is_hidden}
 			<li

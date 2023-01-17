@@ -3,7 +3,6 @@
 	import { browser } from '$app/environment';
 
 	import { add_class_at_scroll } from '$lib/util';
-	import { reveal_anim } from '$lib/animations';
 
 	import Header from '$lib/header.svelte';
 	import SectionTitle from './section_title.svelte';
@@ -13,6 +12,14 @@
 
 	if (browser) {
 		window.addEventListener('scroll', function () {
+			add_class_at_scroll(
+				document.getElementsByClassName('reveal-anim-con'),
+				'reveal-anim-con-active'
+			);
+			add_class_at_scroll(
+				document.getElementsByClassName('reveal-anim-item'),
+				'reveal-anim-item-active'
+			);
 			add_class_at_scroll(document.getElementsByClassName('team-classes-title'), 'fade-in-right');
 		});
 	}
@@ -71,8 +78,8 @@
 	<div class="container bg-default">
 		<section id="about">
 			<SectionTitle name="about" />
-			<div class="section-content" in:reveal_anim={{}}>
-				<p>
+			<div class="section-content reveal-anim-con">
+				<p class="reveal-anim-item">
 					{head.desc}
 					<!-- 2022年に設立された大阪を拠点としているアマチュアEスポーツチームです。
 					現在「Fortnite部門」「APEX部門」「Minecraft部門」の3部門で活動しており、
@@ -86,7 +93,7 @@
 	<div class="container bg-default">
 		<section id="news">
 			<SectionTitle name="news" />
-			<div class="section-content"><NewsSlider /></div>
+			<div class="section-content reveal-anim-con"><NewsSlider /></div>
 			<DropdownBtn to="teams" style="margin-top:16px;" />
 		</section>
 	</div>
@@ -118,7 +125,9 @@
 	<div class="container bg-default">
 		<section id="sponsor">
 			<SectionTitle name="sponsor" />
-			<div class="section-content">...( 'ω')</div>
+			<div class="section-content reveal-anim-con">
+				<p class="reveal-anim-item">...( 'ω')</p>
+			</div>
 		</section>
 	</div>
 </main>
@@ -130,6 +139,7 @@
 <style lang="scss" global>
 	@import '/assets/stylesheets/util.scss';
 	@import '/assets/stylesheets/variables.scss';
+	@import '/assets/stylesheets/reveal_anim.scss';
 
 	.container {
 		width: 100%;
