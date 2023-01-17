@@ -123,13 +123,28 @@
 </main>
 
 <footer>
-	<!-- TODO: Implement the footer -->
 	<p class="copyright">© 2022 - 2023 REVATI</p>
 </footer>
 
 <style lang="scss" global>
-	@import '/assets/stylesheets/style.scss';
 	@import '/assets/stylesheets/util.scss';
+	@import '/assets/stylesheets/variables.scss';
+
+	.container {
+		width: 100%;
+	}
+
+	.container::before {
+		content: '';
+		display: block;
+		padding-top: 64px;
+	}
+
+	.container::after {
+		content: '';
+		display: block;
+		padding-top: 86px;
+	}
 
 	#op-container {
 		display: block;
@@ -150,22 +165,6 @@
 		opacity: 1;
 	}
 
-	.container {
-		width: 100%;
-	}
-
-	.container::before {
-		content: '';
-		display: block;
-		padding-top: 64px;
-	}
-
-	.container::after {
-		content: '';
-		display: block;
-		padding-top: 86px;
-	}
-
 	section {
 		max-width: 768px;
 		margin: 0 auto;
@@ -174,64 +173,69 @@
 		margin-top: -112px;
 		padding-left: 16px;
 		padding-right: 16px;
+
+		.section-content {
+			margin: 16px 0;
+			p {
+				text-align: left;
+				max-width: 576px;
+				font-size: 22px;
+				margin: 0 auto;
+				font-weight: 1;
+				letter-spacing: 0.075em;
+				line-height: 1.5;
+			}
+		}
 	}
 
-	.section-content {
-		margin: 16px 0;
+	#store {
+		.section-content {
+			img {
+				max-width: 86%;
+				border: 4px solid #f8ffb5;
+				transition: 0.18s;
+			}
+			img:hover {
+				filter: sepia(28%) saturate(50%);
+				transition: 0.6s;
+			}
+		}
+
+		.go-to-store {
+			display: block;
+			max-width: 86%;
+			margin: 16px auto 0 auto;
+			text-decoration: none;
+			color: $primary-color;
+			font-size: 24px;
+			font-weight: 900;
+			padding: 16px;
+			border: 4px solid $primary-color;
+			transition: 0.4s;
+		}
+
+		.go-to-store:hover {
+			background-color: $primary-color;
+			color: #1d1d1d;
+			box-shadow: 0 12px 0 #658111;
+		}
+
+		.go-to-store:active {
+			box-shadow: 0 3px 0 #658111;
+			transform: translateY(9px);
+		}
 	}
 
-	.section-content p {
-		text-align: left;
-		max-width: 576px;
-		font-size: 22px;
-		margin: 0 auto;
-		font-weight: 1;
-		letter-spacing: 0.075em;
-		line-height: 1.5;
-	}
+	footer {
+		height: 24vh;
+		background-color: #0a0a0a;
 
-	#store .section-content img {
-		max-width: 86%;
-		border: 4px solid #f8ffb5;
-		transition: 0.18s;
-	}
-
-	#store .section-content img:hover {
-		filter: sepia(28%) saturate(50%);
-		transition: 0.6s;
-	}
-
-	#store .go-to-store {
-		display: block;
-		max-width: 86%;
-		margin: 16px auto 0 auto;
-		text-decoration: none;
-		color: #d1ff46;
-		font-size: 24px;
-		font-weight: 900;
-		padding: 16px;
-		border: 4px solid #d1ff46;
-		transition: 0.4s;
-	}
-
-	#store .go-to-store:hover {
-		background-color: #d1ff46;
-		color: #1d1d1d;
-		box-shadow: 0 12px 0 #658111;
-	}
-
-	#store .go-to-store:active {
-		box-shadow: 0 3px 0 #658111;
-		transform: translateY(9px);
+		.copyright {
+			margin-top: 2em;
+		}
 	}
 
 	.reveal-anim::after {
 		content: '';
-		position: relative;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: red;
 	}
 </style>

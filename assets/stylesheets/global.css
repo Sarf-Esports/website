@@ -18,3 +18,8 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 }
+
+::selection {
+	background: #d1ff46;
+	color: black;
+}
