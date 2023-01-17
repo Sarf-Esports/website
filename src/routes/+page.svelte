@@ -37,7 +37,7 @@
 
 	const head = {
 		title: 'REVATI',
-		desc: '俺だけ入れる【最強プロeスポーツチーム】で宇宙最強〜 一日中ゲームをして引きこもるニートの俺、実は家族から見放された全一プロeスポーツ選手の生まれ変わりだった。俺にだけ使えるUSSRランク級最強キーボードでと1000円マウスで宇宙で最強のeスポーツ選手となる～俺にだけある神スキルで無双したら垢BAN食らったので引退します～'
+		desc: '俺だけ入れる【最強プロeスポーツチーム】で宇宙最強〜一日中ゲームをして引きこもるニートの俺、実は家族から見放された全一プロeスポーツ選手の生まれ変わりだった。俺にだけ使えるUSSRランク級最強キーボードと1000円マウスで宇宙で最強のeスポーツ選手となる～俺にだけある神スキルで無双したら垢BAN食らったので引退します～'
 	};
 </script>
 
@@ -74,9 +74,10 @@
 			<SectionTitle name="about" />
 			<div class="section-content reveal-anim">
 				<p>
-					2022年に設立された大阪を拠点としているアマチュアEスポーツチームです。
+					{head.desc}
+					<!-- 2022年に設立された大阪を拠点としているアマチュアEスポーツチームです。
 					現在「Fortnite部門」「APEX部門」「Minecraft部門」の3部門で活動しており、
-					eスポーツの発展を目的として精力的に活動を行っております。
+					eスポーツの発展を目的として精力的に活動を行っております。 -->
 				</p>
 			</div>
 			<DropdownBtn to="news" />
@@ -96,24 +97,24 @@
 			<div class="section-content">
 				<ul class="title-list">
 					<li>
-						<div><h2 class="team-classes-title">Fortnite</h2></div>
-						<div><ul class="member-list" id="fortnite-member-list" /></div>
+						<h2 class="team-classes-title">Fortnite</h2>
+						<ul class="member-list" id="fortnite-member-list" />
 					</li>
 					<li>
-						<div><h2 class="team-classes-title">Apex Legends</h2></div>
-						<div><ul class="member-list" id="apex-member-list" /></div>
+						<h2 class="team-classes-title">Apex Legends</h2>
+						<ul class="member-list" id="apex-member-list" />
 					</li>
 					<li>
-						<div><h2 class="team-classes-title">Minecraft</h2></div>
-						<div><ul class="member-list" id="minecraft-member-list" /></div>
+						<h2 class="team-classes-title">Minecraft</h2>
+						<ul class="member-list" id="minecraft-member-list" />
 					</li>
 					<li>
-						<div><h2 class="team-classes-title">Streamer</h2></div>
-						<div><ul class="member-list" id="streamer-member-list" /></div>
+						<h2 class="team-classes-title">Streamer</h2>
+						<ul class="member-list" id="streamer-member-list" />
 					</li>
 					<li>
-						<div><h2 class="team-classes-title">Owner</h2></div>
-						<div><ul class="member-list" id="owner-member-list" /></div>
+						<h2 class="team-classes-title">Owner</h2>
+						<ul class="member-list" id="owner-member-list" />
 					</li>
 				</ul>
 			</div>
