@@ -87,7 +87,7 @@
 		<section id="news">
 			<SectionTitle name="news" />
 			<div class="section-content"><NewsSlider /></div>
-			<DropdownBtn to="team" style="margin-top:16px;" />
+			<DropdownBtn to="teams" style="margin-top:16px;" />
 		</section>
 	</div>
 	<div class="container bg-default">
