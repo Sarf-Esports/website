@@ -2,15 +2,6 @@
 <script>
 	import { member_lists } from '$lib/data/members.js';
 	import { word_to_camel_case } from '$lib/util.js';
-
-	/**
-	 * Format the youtube channel path.
-	 * @param {string} str String to format.
-	 * @returns {string} Formatted string.
-	 */
-	function fmt_yt(str) {
-		return str[0] == '@' ? str : `channel/${str}`;
-	}
 </script>
 
 <ul id="team-list">
@@ -42,8 +33,9 @@
 							</a>
 						{/if}
 						{#if youtube}
+							{@const yt_path = youtube[0] == '@' ? youtube : `channel/${youtube}`}
 							<a
-								href="https://youtube.com/{fmt_yt(youtube)}"
+								href="https://youtube.com/{yt_path}"
 								class="member-youtube"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -51,7 +43,7 @@
 								<img
 									src="/images/logos/youtube.png"
 									alt="youtube logo"
-									title="/{fmt_yt(youtube)}"
+									title="/{yt_path}"
 									loading="lazy"
 								/>
 							</a>
