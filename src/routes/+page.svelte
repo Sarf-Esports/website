@@ -215,15 +215,17 @@
 			transition: 0.4s;
 		}
 
-		.go-to-store:hover {
+		$btn-shadow-col: #658111;
+
+		.go-to-store:hover,
+		.go-to-store:active {
 			background-color: $primary-color;
 			color: #1d1d1d;
-			box-shadow: 0 12px 0 #658111;
+			box-shadow: 0 12px 0 $btn-shadow-col;
 		}
 
 		.go-to-store:active {
-			background-color: $primary-color;
-			box-shadow: 0 3px 0 #658111;
+			box-shadow: 0 3px 0 $btn-shadow-col;
 			transform: translateY(9px);
 		}
 	}
