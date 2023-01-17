@@ -3,6 +3,7 @@
 	import { browser } from '$app/environment';
 	import { news_list } from '$lib/data/news.js';
 	import { shake } from '$lib/util.js';
+	import { fly } from 'svelte/transition';
 
 	if (browser) {
 		window.onscroll = () => {
@@ -15,10 +16,13 @@
 	}
 
 	let slider_index = 0;
+	let slider_index_prev = 0;
 	let slider_len = news_list.filter((n) => !n.is_hidden).length;
 
 	/** @param {MouseEvent & { currentTarget: EventTarget & HTMLButtonElement; }} btn */
 	function news_prev(btn) {
+		slider_index_prev = slider_index;
+
 		// @ts-ignore
 		let btn_parent = btn.target.parentElement;
 
@@ -34,6 +38,8 @@
 
 	/** @param {MouseEvent & { currentTarget: EventTarget & HTMLButtonElement; }} btn*/
 	function news_next(btn) {
+		slider_index_prev = slider_index;
+
 		// @ts-ignore
 		let btn_parent = btn.target.parentElement;
 
@@ -101,6 +107,11 @@
 		// @ts-ignore
 		[...arrows].forEach((a) => (a.style.width = a.clientHeight + 'px'));
 	}
+
+	function counter_fade() {
+		const offset = 28;
+		return offset * (slider_index < slider_index_prev ? 1 : -1);
+	}
 </script>
 
 <button on:click={(self) => news_prev(self)} class="arrow inactive" id="arrow-left">&lt</button>
@@ -120,6 +131,15 @@
 		{/if}
 	{/each}
 </ul>
-<h2>{slider_index + 1}<span>/</span>{slider_len}</h2>
+<h2>
+	{#key slider_index}<span
+			in:fly={{ y: counter_fade() }}
+			out:fly={{ x: 11, y: -counter_fade() }}
+			style="display:inline-block;">{slider_index + 1}</span
+		>{/key}
+	<span class="split-line">/</span>{slider_len}
+</h2>
 
-<style lang="scss">@import '/assets/stylesheets/news_slider.scss';</style>
+<style lang="scss">
+	@import '/assets/stylesheets/news_slider.scss';
+</style>

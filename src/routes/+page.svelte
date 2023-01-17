@@ -3,6 +3,7 @@
 	import { browser } from '$app/environment';
 
 	import { add_class_at_scroll } from '$lib/util';
+	import { reveal_anim } from '$lib/animations';
 
 	import Header from '$lib/header.svelte';
 	import SectionTitle from './section_title.svelte';
@@ -70,7 +71,7 @@
 	<div class="container bg-default">
 		<section id="about">
 			<SectionTitle name="about" />
-			<div class="section-content reveal-anim">
+			<div class="section-content" in:reveal_anim={{}}>
 				<p>
 					{head.desc}
 					<!-- 2022年に設立された大阪を拠点としているアマチュアEスポーツチームです。
@@ -221,6 +222,7 @@
 		}
 
 		.go-to-store:active {
+			background-color: $primary-color;
 			box-shadow: 0 3px 0 #658111;
 			transform: translateY(9px);
 		}
@@ -233,9 +235,5 @@
 		.copyright {
 			margin-top: 2em;
 		}
-	}
-
-	.reveal-anim::after {
-		content: '';
 	}
 </style>
