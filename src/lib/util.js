@@ -36,3 +36,13 @@ export function shake(elm) {
         elm.classList.remove("shake");
     }, 1000);
 }
+
+/**
+ * Converts a string to camel case.
+ * 
+ * @param {string} str String to convert.
+ * @returns {string} Converted string.
+ */
+export function word_to_camel_case(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}

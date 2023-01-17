@@ -2,17 +2,15 @@
 <script>
 	import { browser } from '$app/environment';
 
-	import { build_member_lists } from '$lib/member_list';
 	import { add_class_at_scroll } from '$lib/util';
 
 	import Header from '$lib/header.svelte';
 	import SectionTitle from './section_title.svelte';
 	import DropdownBtn from './dropdown_button.svelte';
 	import NewsSlider from './news_slider.svelte';
+	import MemberLists from './member_lists.svelte';
 
 	if (browser) {
-		build_member_lists();
-
 		window.addEventListener('scroll', function () {
 			add_class_at_scroll(document.getElementsByClassName('team-classes-title'), 'fade-in-right');
 		});
@@ -94,30 +92,7 @@
 	<div class="container bg-default">
 		<section id="teams">
 			<SectionTitle name="teams" />
-			<div class="section-content">
-				<ul class="title-list">
-					<li>
-						<h2 class="team-classes-title">Fortnite</h2>
-						<ul class="member-list" id="fortnite-member-list" />
-					</li>
-					<li>
-						<h2 class="team-classes-title">Apex Legends</h2>
-						<ul class="member-list" id="apex-member-list" />
-					</li>
-					<li>
-						<h2 class="team-classes-title">Minecraft</h2>
-						<ul class="member-list" id="minecraft-member-list" />
-					</li>
-					<li>
-						<h2 class="team-classes-title">Streamer</h2>
-						<ul class="member-list" id="streamer-member-list" />
-					</li>
-					<li>
-						<h2 class="team-classes-title">Owner</h2>
-						<ul class="member-list" id="owner-member-list" />
-					</li>
-				</ul>
-			</div>
+			<div class="section-content"><MemberLists /></div>
 			<DropdownBtn to="store" />
 		</section>
 	</div>
@@ -250,84 +225,13 @@
 		transform: translateY(9px);
 	}
 
-	.title-list {
-		list-style: none;
-		padding-left: 0;
+	.reveal-anim::after {
+		content: '';
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: red;
 	}
-
-	.team-classes-title {
-		text-align: left;
-		font-size: 28px;
-		border-bottom: 2px solid white;
-		width: 94%;
-	}
-
-	.member-list {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		padding: 0;
-		margin: 0 auto;
-	}
-
-	.member-list li {
-		align-items: center;
-		margin: 8px 6px;
-		width: 138px;
-		height: 224px;
-		background-color: #e6e6e6;
-		list-style: none;
-		border-radius: 4px;
-		border: 4px solid #c0c0c0;
-		color: #3a490c;
-		font-weight: 900;
-	}
-	.member-list li > img {
-		width: 86px;
-		height: 86px;
-		border-radius: 50%;
-		margin: 20px auto;
-		border: 4px solid #c0c0c0;
-		pointer-events: none;
-		user-select: none;
-	}
-
-	#owner-member-list li {
-		background-color: #b4e7d6;
-		border: 4px solid #318569;
-	}
-
-	#owner-member-list li > img {
-		border: 4px solid #318569;
-	}
-
-	.member-list h3 {
-		font-size: 18px;
-		margin-top: -16px;
-	}
-
-	.member-list a {
-		text-decoration: none;
-		margin: 0 4px;
-	}
-
-	.member-list a img {
-		user-select: none;
-	}
-
-	.member-twitter img {
-		height: 26px;
-		transform: translateY(2px);
-	}
-
-	.member-youtube img {
-		height: 24px;
-	}
-
-	.member-twitch img {
-		height: 30px;
-		transform: translateY(4px);
-	}
-
-	// .reveal-anim {}
 </style>
