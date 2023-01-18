@@ -185,15 +185,5 @@ export let member_lists = [
             "youtube": "@Ria1fn",
             "twitch": null
         }]
-    },
-    {
-        "kind": "owner",
-        "list": [{
-            "name": "しろねこ",
-            "icon": null,
-            "twitter": "46nek_0",
-            "youtube": null,
-            "twitch": null
-        }]
     }
 ];
