@@ -77,13 +77,21 @@
 	<div class="container bg-default">
 		<section id="about">
 			<SectionTitle name="about" />
-			<div class="section-content reveal-anim-con">
-				<p class="reveal-anim-item">
-					{head.desc}
-					<!-- 2022年に設立された大阪を拠点としているアマチュアEスポーツチームです。
-					現在「Fortnite部門」「APEX部門」「Minecraft部門」の3部門で活動しており、
-					eスポーツの発展を目的として精力的に活動を行っております。 -->
-				</p>
+			<div class="section-content">
+				<div class="slogan reveal-anim-con">
+					<div class="reveal-anim-item">
+						<h1>UNDEFEATED SPIRIT</h1>
+						<h1>「不屈の精神」</h1>
+					</div>
+				</div>
+				<br />
+				<div class="reveal-anim-con">
+					<p class="reveal-anim-item">
+						勝負の世界である以上、 成績が低迷してしまうときもあると思います。
+						<br /><br />
+						そんたときでも私たちは物事の目的達成のために継続的に粘り強く努力することを厭わず 最後までやり遂げる無限のパワー・可能性を秘めています。
+					</p>
+				</div>
 			</div>
 			<DropdownBtn to="news" />
 		</section>
@@ -197,6 +205,27 @@
 				letter-spacing: 0.075em;
 				line-height: 1.5;
 			}
+		}
+	}
+
+	#about {
+		.slogan {
+			// DEBUG:
+			// $border: 3px solid $primary-color;
+			// border-top: $border;
+			// border-bottom: $border;
+			box-shadow: inset 10px 10px 8px #070707, inset -10px -10px 8px #191a18;
+			border-radius: 6px;
+
+			h1 {
+				font-size: 42px;
+				font-weight: 900;
+				letter-spacing: 0.075em;
+			}
+		}
+
+		p {
+			text-align: center;
 		}
 	}
 
