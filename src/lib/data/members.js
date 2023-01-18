@@ -14,7 +14,7 @@
 //     // ただ単にアイコンが無い人や著作権の問題で貼れない人は `null` にして
 //     "icon": "rinrin.png",
 // 
-//     // メンバーの Twitter アカウントID
+//     // メンバーの Twitter アカウントID (アットマークはつけないで)
 //     // ない場合は `null` にしてください
 //     "twitter": "rinrin_2nd",
 // 
@@ -23,7 +23,7 @@
 //     // ない場合は `null` にしてください
 //     "youtube": "@rinrin-rs",
 // 
-//     // メンバーの TwitchアカウントID
+//     // メンバーの TwitchアカウントID (アットマークはつけないで)
 //     // ない場合は `null` にしてください
 //     "twitch": "rinrin0413"
 // }
@@ -105,11 +105,10 @@ export let member_lists = [
         {
             "name": "変なお兄さん",
             "icon": "henna_onisan.png",
-            "twitter": "@hennaOnisaN6",
+            "twitter": "hennaOnisaN6",
             "youtube": null,
             "twitch": "jp_hennaonisan "
-        }
-        ]
+        }]
     },
     {
         "kind": "minecraft",
@@ -168,36 +167,33 @@ export let member_lists = [
             "twitter": "LanternCold",
             "youtube": "@relle3674",
             "twitch": null
-        }
-        ]
+        }]
     },
     {
         "kind": "streamer",
         "list": [{
             "name": "らいふれっくす",
             "icon": "lifelex.png",
-            "twitter": "@Lifelex57",
+            "twitter": "Lifelex57",
             "youtube": "@Lifelex",
             "twitch": null
         },
         {
             "name": "りあ",
             "icon": "ria.png",
-            "twitter": "@Ria1fn",
+            "twitter": "Ria1fn",
             "youtube": "@Ria1fn",
             "twitch": null
-        }
-        ]
+        }]
     },
     {
         "kind": "owner",
         "list": [{
             "name": "しろねこ",
             "icon": null,
-            "twitter": "@46nek_0",
+            "twitter": "46nek_0",
             "youtube": null,
             "twitch": null
-        }
-        ]
+        }]
     }
 ];
