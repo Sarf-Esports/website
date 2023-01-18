@@ -20,7 +20,6 @@
 				document.getElementsByClassName('reveal-anim-item'),
 				'reveal-anim-item-active'
 			);
-			add_class_at_scroll(document.getElementsByClassName('team-classes-title'), 'fade-in-right');
 		});
 	}
 
@@ -93,7 +92,7 @@
 	<div class="container bg-default">
 		<section id="news">
 			<SectionTitle name="news" />
-			<div class="section-content reveal-anim-con"><NewsSlider /></div>
+			<div class="section-content"><NewsSlider /></div>
 			<DropdownBtn to="teams" style="margin-top:16px;" />
 		</section>
 	</div>

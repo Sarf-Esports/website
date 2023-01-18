@@ -116,13 +116,10 @@
 
 <button on:click={(self) => news_prev(self)} class="arrow inactive" id="arrow-left">&lt</button>
 <button on:click={(self) => news_next(self)} class="arrow" id="arrow-right">&gt</button>
-<ul id="news-slider" class="reveal-anim-item">
+<ul id="news-slider">
 	{#each news_list as { is_hidden, date, title }, i}
 		{#if !is_hidden}
-			<li
-				class={i == -1 ? 'left-item' : i == 0 ? 'middle-item' : i == 1 ? 'right-item' : 'hidden'}
-				data-index={i}
-			>
+			<li class={i == -1 ? 'left-item' : i == 0 ? 'middle-item' : i == 1 ? 'right-item' : 'hidden'}>
 				<a href="./news/{date}.html">
 					<img src="/images/news/{date}.png" alt="news thumbnail" />
 					<h1>{title}</h1>

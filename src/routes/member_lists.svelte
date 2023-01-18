@@ -1,13 +1,22 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
+	import { browser } from '$app/environment';
+
 	import { member_lists } from '$lib/data/members.js';
-	import { word_to_camel_case } from '$lib/util.js';
+	import { word_to_camel_case, add_class_at_scroll } from '$lib/util.js';
+
+	if (browser) {
+		window.addEventListener('scroll', function () {
+			add_class_at_scroll(document.getElementsByClassName("kind"), 'fade-in-right');
+		});
+	}
 </script>
 
 <ul id="team-list">
 	{#each member_lists as { kind, list }}
+		{@const kind_camel = word_to_camel_case(kind)}
 		<li>
-			<h2>{word_to_camel_case(kind)}</h2>
+			<h2 class="kind">{kind_camel == "Apex" ? "Apex Legends" : kind_camel}</h2>
 			<ul id="{kind}-member-list">
 				{#each list as { name, icon, twitter, youtube, twitch }}
 					<li class="reveal-anim-con">
