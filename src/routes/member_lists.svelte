@@ -1,7 +1,6 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
 	import { browser } from '$app/environment';
-	import { fly } from 'svelte/transition';
 
 	import { member_lists } from '$lib/data/members.js';
 	import { word_to_camel_case, add_class_at_scroll } from '$lib/util.js';
