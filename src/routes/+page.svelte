@@ -44,6 +44,13 @@
 		title: 'REVATI',
 		desc: '俺だけ入れる【最強プロeスポーツチーム】で宇宙最強〜一日中ゲームをして引きこもる低学歴ニートの俺、実は家族から見放された全一プロeスポーツ選手の生まれ変わりだった。俺にだけ使えるUSSRランク級最強キーボードと1000円マウスで宇宙で最強のeスポーツ選手となる～俺にだけある最強神スキルで無双したら垢BAN食らったので引退します～'
 	};
+
+	const copyright = "© 2022 - 2023 REVATI";
+
+	const socials = {
+		twitter: 'revati_jp',
+		youtube: '@REVATI'
+	};
 </script>
 
 <svelte:head>
@@ -81,7 +88,7 @@
 				<div class="slogan reveal-anim-con">
 					<div class="reveal-anim-item">
 						<h1>UNDEFEATED SPIRIT</h1>
-						<h1>「不屈の精神」</h1>
+						<h2>「不屈の精神」</h2>
 					</div>
 				</div>
 				<br />
@@ -140,7 +147,32 @@
 </main>
 
 <footer>
-	<p class="copyright">© 2022 - 2023 REVATI</p>
+	<p class="copyright">{copyright}</p>
+	<ul>
+		<li>
+			<a
+				href="https://twitter.com/{socials.twitter}"
+				target="_blank"
+				rel="noopener noreferrer"
+				title="@{socials.twitter}"
+			>
+				<img
+					src="/images/logos/twitter-logo-01282021/Twitter logo/SVG/Logo white.svg"
+					alt="twitter"
+				/>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.youtube.com/{socials.youtube}"
+				target="_blank"
+				rel="noopener noreferrer"
+				title="/{socials.youtube}"
+			>
+				<img src="/images/logos/youtube_icon/yt_icon_mono_dark.png" alt="youtube" />
+			</a>
+		</li>
+	</ul>
 </footer>
 
 <style lang="scss" global>
@@ -208,19 +240,35 @@
 		}
 	}
 
+	@font-face {
+		font-family: 'Zen Kaku Gothic Antique Bold';
+		src: url('../fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Bold.ttf');
+	}
+
 	#about {
 		.slogan {
-			// DEBUG:
+			font-family: 'Zen Kaku Gothic Antique Bold';
+
+			// DEBUG: border
 			// $border: 3px solid $primary-color;
 			// border-top: $border;
 			// border-bottom: $border;
+
+			// DEBUG: neumorphism
 			box-shadow: inset 10px 10px 8px #070707, inset -10px -10px 8px #191a18;
 			border-radius: 6px;
 
 			h1 {
 				font-size: 42px;
-				font-weight: 900;
+				font-weight: 700;
 				letter-spacing: 0.075em;
+			}
+
+			h2 {
+				font-size: 32px;
+				font-weight: 900;
+				margin-top: -28px;
+				padding-bottom: 16px;
 			}
 		}
 
@@ -275,7 +323,27 @@
 		background-color: #0a0a0a;
 
 		.copyright {
+			font-size: 16px;
 			margin-top: 2em;
+			text-align: center;
+		}
+
+		ul {
+			margin-top: 64px;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+
+			li {
+				margin: 0 12px;
+
+				img {
+					width: 34px;
+					height: auto;
+				}
+			}
 		}
 	}
 </style>
