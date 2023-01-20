@@ -9,6 +9,7 @@
 	import DropdownBtn from './dropdown_button.svelte';
 	import NewsSlider from './news_slider.svelte';
 	import MemberLists from './member_lists.svelte';
+	import Footer from '$lib/footer.svelte';
 
 	if (browser) {
 		window.addEventListener('scroll', function () {
@@ -44,13 +45,6 @@
 		title: 'REVATI',
 		desc: '俺だけ入れる【最強プロeスポーツチーム】で宇宙最強〜一日中ゲームをして引きこもる低学歴ニートの俺、実は家族から見放された全一プロeスポーツ選手の生まれ変わりだった。俺にだけ使えるUSSRランク級最強キーボードと1000円マウスで宇宙で最強のeスポーツ選手となる～俺にだけある最強神スキルで無双したら垢BAN食らったので引退します～'
 	};
-
-	const copyright = "© 2022 - 2023 REVATI";
-
-	const socials = {
-		twitter: 'revati_jp',
-		youtube: '@REVATI'
-	};
 </script>
 
 <svelte:head>
@@ -64,10 +58,10 @@
 	<meta property="og:type" content="website" />
 </svelte:head>
 
-<Header is_home={true} />
+<Header />
 
 <main>
-	<div class="container bg-default">
+	<div class="container">
 		<div id="op-container" class="is-playing">
 			<video
 				src="/videos/revati_op_muted.mov"
@@ -81,7 +75,7 @@
 		<DropdownBtn to="about" />
 	</div>
 
-	<div class="container bg-default">
+	<div class="container">
 		<section id="about">
 			<SectionTitle name="about" />
 			<div class="section-content">
@@ -104,14 +98,14 @@
 		</section>
 	</div>
 
-	<div class="container bg-default">
+	<div class="container">
 		<section id="news">
 			<SectionTitle name="news" />
 			<div class="section-content"><NewsSlider /></div>
 			<DropdownBtn to="teams" style="margin-top:16px;" />
 		</section>
 	</div>
-	<div class="container bg-default">
+	<div class="container">
 		<section id="teams">
 			<SectionTitle name="teams" />
 			<div class="section-content"><MemberLists /></div>
@@ -119,7 +113,7 @@
 		</section>
 	</div>
 
-	<div class="container bg-default">
+	<div class="container">
 		<section id="store">
 			<SectionTitle name="store" />
 			<div class="section-content">
@@ -136,7 +130,7 @@
 		</section>
 	</div>
 
-	<div class="container bg-default">
+	<div class="container">
 		<section id="sponsor">
 			<SectionTitle name="sponsor" />
 			<div class="section-content reveal-anim-con">
@@ -146,34 +140,7 @@
 	</div>
 </main>
 
-<footer>
-	<p class="copyright">{copyright}</p>
-	<ul>
-		<li>
-			<a
-				href="https://twitter.com/{socials.twitter}"
-				target="_blank"
-				rel="noopener noreferrer"
-				title="@{socials.twitter}"
-			>
-				<img
-					src="/images/logos/twitter-logo-01282021/Twitter logo/SVG/Logo white.svg"
-					alt="twitter"
-				/>
-			</a>
-		</li>
-		<li>
-			<a
-				href="https://www.youtube.com/{socials.youtube}"
-				target="_blank"
-				rel="noopener noreferrer"
-				title="/{socials.youtube}"
-			>
-				<img src="/images/logos/youtube_icon/yt_icon_mono_dark.png" alt="youtube" />
-			</a>
-		</li>
-	</ul>
-</footer>
+<Footer />
 
 <style lang="scss" global>
 	@import '/assets/stylesheets/util.scss';
@@ -182,6 +149,7 @@
 
 	.container {
 		width: 100%;
+		background-color: $secondary-color;
 	}
 
 	.container::before {
@@ -315,35 +283,6 @@
 		.go-to-store:active {
 			box-shadow: 0 3px 0 $btn-shadow-col;
 			transform: translateY(9px);
-		}
-	}
-
-	footer {
-		height: 24vh;
-		background-color: #0a0a0a;
-
-		.copyright {
-			font-size: 16px;
-			margin-top: 2em;
-			text-align: center;
-		}
-
-		ul {
-			margin-top: 64px;
-			padding: 0;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			list-style: none;
-
-			li {
-				margin: 0 12px;
-
-				img {
-					width: 34px;
-					height: auto;
-				}
-			}
 		}
 	}
 </style>

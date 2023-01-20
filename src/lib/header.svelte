@@ -1,31 +1,21 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
 	import Contact from './contact.svelte';
-
-	/** 
-	 * Whether the header is site of home.
-	 * @type {boolean} 
-	 * */
-	export let is_home;
 </script>
 
-{#if is_home}
-	<header>
-		<nav>
-			<a href="/"><img src="/images/logos/REVATI_LOGO_BLK_2.png" alt="logo" /></a>
-			<ul>
-				<li><a href="#about" id="hd-about">ABOUT</a></li>
-				<li><a href="#news" id="hd-news">NEWS</a></li>
-				<li><a href="#teams" id="hd-team">TEAMS</a></li>
-				<li><a href="#store" id="hd-store">STORE</a></li>
-				<li><a href="#sponsor" id="hd-sponsor">SPONSOR</a></li>
-				<Contact />
-			</ul>
-		</nav>
-	</header>
-{:else}
-	<h1>The header is not implemented yet :&#40;</h1>
-{/if}
+<header>
+	<nav>
+		<a href="/"><img src="/images/logos/REVATI_LOGO_BLK_2.png" alt="logo" /></a>
+		<ul>
+			<li><a href="/#about" id="hd-about">ABOUT</a></li>
+			<li><a href="/#news" id="hd-news">NEWS</a></li>
+			<li><a href="/#teams" id="hd-team">TEAMS</a></li>
+			<li><a href="/#store" id="hd-store">STORE</a></li>
+			<li><a href="/#sponsor" id="hd-sponsor">SPONSOR</a></li>
+			<Contact />
+		</ul>
+	</nav>
+</header>
 
 <style lang="scss">
 	@import '/assets/stylesheets/header.scss';
