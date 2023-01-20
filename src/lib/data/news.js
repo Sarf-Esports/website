@@ -23,6 +23,11 @@
 export let news_list = [
     {
         is_hidden: false,
+        date: '202301212',
+        title: '計5名のメンバーが新たに加入'
+    },
+    {
+        is_hidden: false,
         date: '20230121',
         title: 'Sarf Esports リブランディングのお知らせ'
     },

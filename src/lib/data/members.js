@@ -44,7 +44,7 @@ export let member_lists = [
             },
             {
                 "name": "さっさ",
-                "icon": null,
+                "icon": "sassa.png",
                 "twitter": "sassa_FN",
                 "youtube": "@user-kr5gz2li1y",
                 "twitch": null
