@@ -248,7 +248,8 @@
 	#about {
 		.slogan {
 			font-family: 'Zen Kaku Gothic Antique Bold';
-				font-weight: 700;
+			font-weight: 700;
+			padding: 0 16px;
 
 			// DEBUG: border
 			// $border: 3px solid $primary-color;
