@@ -149,23 +149,7 @@
 	@import '/assets/stylesheets/util.scss';
 	@import '/assets/stylesheets/variables.scss';
 	@import '/assets/stylesheets/reveal_anim.scss';
-
-	.container {
-		width: 100%;
-		background-color: $secondary-color;
-	}
-
-	.container::before {
-		content: '';
-		display: block;
-		padding-top: 64px;
-	}
-
-	.container::after {
-		content: '';
-		display: block;
-		padding-top: 86px;
-	}
+	@import '/assets/stylesheets/style.scss';
 
 	#op-container {
 		display: block;
@@ -184,31 +168,6 @@
 		height: 100%;
 		object-fit: cover;
 		opacity: 1;
-	}
-
-	$scroll-offset: 82px;
-
-	section {
-		max-width: 768px;
-		margin: 0 auto;
-		display: block;
-		padding-top: $scroll-offset;
-		margin-top: -$scroll-offset;
-		padding-left: 16px;
-		padding-right: 16px;
-
-		.section-content {
-			margin: 16px 0;
-			p {
-				text-align: left;
-				max-width: 576px;
-				font-size: 22px;
-				margin: 0 auto;
-				font-weight: 1;
-				letter-spacing: 0.075em;
-				line-height: 1.5;
-			}
-		}
 	}
 
 	@font-face {
