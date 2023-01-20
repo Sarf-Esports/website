@@ -120,8 +120,8 @@
 	{#each news_list as { is_hidden, date, title }, i}
 		{#if !is_hidden}
 			<li class={i == -1 ? 'left-item' : i == 0 ? 'middle-item' : i == 1 ? 'right-item' : 'hidden'}>
-				<a href="./news/{date}">
-					<img src="/images/news/articles/{date}.png" alt="news thumbnail" />
+				<a href="./news/articles/{date}">
+					<img src="/images/news/{date}.png" alt="news thumbnail" />
 					<h1>{title}</h1>
 				</a>
 			</li>
