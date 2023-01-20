@@ -8,8 +8,8 @@
 	/** @type {string} */
 	export let date;
 
-    /** @type {string} */
-    export let text;
+	/** @type {string} */
+	export let text;
 
 	let news = news_list.find((a) => a.date === date);
 	let title = news ? news.title : undefined;
@@ -52,32 +52,35 @@
 			<p>{@html text}</p>
 		</div>
 	</div>
+	<a href="/news">ニュース一覧へ戻る<i class="bi bi-box-arrow-up-right"></i></a>
 </main>
 
 <Footer />
 
 <style lang="scss">
 	@import '/assets/stylesheets/variables.scss';
+	
+	@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 	main {
 		min-height: 100vh;
 		background-color: $secondary-color;
 
 		#content {
-			margin: 160px 0 64px 0;
+			margin: 128px 0 64px 0;
 			position: relative;
 			z-index: 1;
 
 			img {
 				max-width: 86%;
-                max-height: 48vh;
+				max-height: 48vh;
 				margin-top: 32px;
 			}
 
 			h1 {
 				font-size: 32px;
 				font-weight: 900;
-                padding: 0 26px;
+				padding: 0 26px;
 			}
 
 			h2 {
@@ -85,14 +88,14 @@
 				font-weight: 100;
 			}
 
-            p {
-                max-width: 512px;
-                margin: 32px auto 0 auto;
-                padding: 0 20px;
-                text-align: left;
-                font-size: 18px;
-                letter-spacing: 1.2px;
-            }
+			p {
+				max-width: 512px;
+				margin: 32px auto 0 auto;
+				padding: 0 20px;
+				text-align: left;
+				font-size: 18px;
+				letter-spacing: 1.2px;
+			}
 		}
 
 		#bg {
@@ -107,6 +110,12 @@
 			background-position: 50%;
 			opacity: 0.2;
 			mask-image: linear-gradient(to bottom, black, transparent);
+		}
+
+		> a {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 64px;
 		}
 	}
 </style>

@@ -18,7 +18,7 @@
 <style lang="scss">
 	a {
 		text-decoration: none;
-		color: white;
+		color: white !important;
 		padding: 1rem 1.25rem;
 		display: inline-block;
 		margin: 16px auto 32px auto;
