@@ -160,13 +160,6 @@ export let member_lists = [
             "twitter": "Ruilu_Adora",
             "youtube": "@Ruilu_Adora",
             "twitch": null
-        },
-        {
-            "name": "れる",
-            "icon": null,
-            "twitter": "LanternCold",
-            "youtube": "@relle3674",
-            "twitch": null
         }]
     },
     {

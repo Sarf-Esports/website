@@ -115,7 +115,7 @@
 </script>
 
 <button on:click={(self) => news_prev(self)} class="arrow inactive" id="arrow-left">&lt</button>
-<button on:click={(self) => news_next(self)} class="arrow" id="arrow-right">&gt</button>
+<button on:click={(self) => news_next(self)} class="arrow{slider_len == 1 ? ' inactive' : ''}" id="arrow-right">&gt</button>
 <ul id="news-slider">
 	{#each news_list as { is_hidden, date, title }, i}
 		{#if !is_hidden}
