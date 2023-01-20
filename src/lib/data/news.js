@@ -15,8 +15,10 @@
 //     title: 'パンケーキによる侵攻状況'
 // }
 // 
-// また、`./assets/images/news/`配下に上記の `date` と同じ名前でサムネイル画像を追加してください。
-// 詳しくは `./assets/images/news/README.md` を参照してください。
+// また、`/assets/images/news/`配下に上記の `date` と同じ名前でサムネイル画像を追加してください。
+// 詳しくは `/assets/images/news/README.md` を参照してください。
+// 
+// 本文は `/src/routes/news/article/[date]/+page.svelte` に記載してください。
 
 export let news_list = [
     {
