@@ -20,6 +20,7 @@
 <style lang="scss">
 	@import '/assets/stylesheets/header.scss';
 	@import '/assets/stylesheets/variables.scss';
+	@import '/assets/stylesheets/mixins.scss';
 
 	@font-face {
 		font-family: 'Poppins';
@@ -56,6 +57,12 @@
 			display: flex;
 			align-items: center;
 			justify-content: right;
+			transition: 1s;
+
+			@include sp {
+				transform: translateY(-50vh);
+				opacity: 0;
+			}
 		}
 	}
 </style>
