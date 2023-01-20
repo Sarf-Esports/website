@@ -35,7 +35,7 @@
 		background-color: $secondary-color;
 		min-height: 86vh;
 
-		>div {
+		> div {
 			background-image: url('/images/logos/revati_large_dark.png');
 			background-repeat: no-repeat;
 			background-position: center;

@@ -24,6 +24,9 @@
 		});
 	}
 
+	/** @type {HTMLDivElement} */
+	let op_container;
+
 	/**
 	 * Loops playback the OP video at intervals.
 	 * @param {Event & { currentTarget: EventTarget & HTMLVideoElement; }} video
@@ -31,7 +34,7 @@
 	function op_loop(video) {
 		let v = video.currentTarget;
 		// @ts-ignore
-		let container = document.getElementById('op-container').classList;
+		let container = op_container.classList;
 		container.remove('is-playing');
 		v.classList.add('invisible');
 		setTimeout(() => {
@@ -62,7 +65,7 @@
 
 <main>
 	<div class="container">
-		<div id="op-container" class="is-playing">
+		<div id="op-container" class="is-playing" bind:this={op_container}>
 			<video
 				src="/videos/revati_op_muted.mov"
 				id="op-video"
