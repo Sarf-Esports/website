@@ -180,16 +180,8 @@
 		.slogan {
 			font-family: 'Zen Kaku Gothic Antique Bold';
 			font-weight: 700;
-			padding: 0 16px;
-
-			// DEBUG: border
-			// $border: 3px solid $primary-color;
-			// border-top: $border;
-			// border-bottom: $border;
-
-			// DEBUG: neumorphism
-			box-shadow: inset 10px 10px 8px #070707, inset -10px -10px 8px #191a18;
-			border-radius: 6px;
+			padding: 0 4px;
+			margin: 0 16px;
 
 			h1 {
 				font-size: 48px;
@@ -201,6 +193,29 @@
 				margin-top: -32px;
 				padding-bottom: 16px;
 			}
+		}
+
+		.slogan::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #d3d3d3;
+			clip-path: polygon(
+				0 16%,
+				0 100%,
+				100% 100%,
+				100% 100%,
+				92% 100%,
+				100% 86%,
+				100% 100%,
+				0 100%,
+				0 0,
+				8% 0
+			);
+			border-radius: 4px;
 		}
 
 		p {
