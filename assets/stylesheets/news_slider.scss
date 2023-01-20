@@ -13,6 +13,19 @@ li {
     margin: 0 auto;
     padding: 4px;
 
+
+    &:not(.middle-item) {
+        opacity: 0.2;
+
+        img {
+            width: 380px;
+        }
+
+        h1 {
+            display: none;
+        }
+    }
+
     a {
         text-decoration: none;
         color: white;
@@ -30,18 +43,6 @@ li {
 
     h1 {
         font-size: 32px;
-    }
-}
-
-li:not(.middle-item) {
-    opacity: 0.2;
-
-    img {
-        width: 380px;
-    }
-
-    h1 {
-        display: none;
     }
 }
 
@@ -95,6 +96,10 @@ li:not(.middle-item) {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.4s;
+
+    &:hover {
+        background-color: #000000d0;
+    }
 }
 
 #arrow-left {
@@ -120,10 +125,6 @@ li:not(.middle-item) {
     }
 }
 
-.arrow:hover {
-    background-color: #000000d0;
-}
-
 .arrow.inactive {
     opacity: 0.3;
     background: none;
@@ -132,7 +133,7 @@ li:not(.middle-item) {
 
 h2 {
     font-size: 20px;
-    font-weight:100;
+    font-weight: 100;
     color: #949494;
 
     .split-line {

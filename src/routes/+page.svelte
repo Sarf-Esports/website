@@ -183,6 +183,29 @@
 			padding: 0 4px;
 			margin: 0 16px;
 
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #d3d3d3;
+				clip-path: polygon(
+					0 16%,
+					0 100%,
+					100% 100%,
+					100% 100%,
+					92% 100%,
+					100% 86%,
+					100% 100%,
+					0 100%,
+					0 0,
+					8% 0
+				);
+				border-radius: 4px;
+			}
+
 			h1 {
 				font-size: 48px;
 				letter-spacing: 0.075em;
@@ -193,29 +216,6 @@
 				margin-top: -32px;
 				padding-bottom: 16px;
 			}
-		}
-
-		.slogan::after {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: #d3d3d3;
-			clip-path: polygon(
-				0 16%,
-				0 100%,
-				100% 100%,
-				100% 100%,
-				92% 100%,
-				100% 86%,
-				100% 100%,
-				0 100%,
-				0 0,
-				8% 0
-			);
-			border-radius: 4px;
 		}
 
 		p {

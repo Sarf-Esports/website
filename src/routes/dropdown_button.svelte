@@ -15,7 +15,7 @@
 
 <a href="#{to}" {style}>▼</a>
 
-<style>
+<style lang="scss">
 	a {
 		text-decoration: none;
 		color: white;
@@ -25,22 +25,23 @@
 		font-size: 24px;
 		user-select: none;
 		transition: 0.4s;
-	}
 
-	a:hover {
-		transform: translateY(4px);
-	}
 
-	a::after {
-		display: block;
-		color: gray;
-		font-size: 16px;
-		position: absolute;
-		left: 0;
-		right: 0;
-	}
+		&:hover {
+			transform: translateY(4px);
+		}
 
-	a:hover::after {
-		content: 'NEXT';
+		&::after {
+			display: block;
+			color: gray;
+			font-size: 16px;
+			position: absolute;
+			left: 0;
+			right: 0;
+		}
+
+		&:hover::after {
+			content: 'NEXT';
+		}
 	}
 </style>

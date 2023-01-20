@@ -51,14 +51,14 @@
 					text-decoration: underline;
 					transition: 0.6s;
 
+					&:hover {
+						filter: drop-shadow(-6px 2px 0 #777777);
+						transition: 0.2s;
+					}
+
 					rt {
 						margin-bottom: -16px;
 					}
-				}
-
-				h1:hover {
-					filter: drop-shadow(-6px 2px 0 #777777);
-					transition: 0.2s;
 				}
 
 				p {
@@ -71,14 +71,14 @@
 						font-weight: 900;
 						text-decoration: underline;
 						transition: 0.2s;
-					}
 
-					a:hover {
-						color: #7effb4;
-					}
+						&:hover {
+							color: #7effb4;
+						}
 
-					a:active {
-						color: #e6ff9a;
+						&:active {
+							color: #e6ff9a;
+						}
 					}
 				}
 			}
