@@ -33,7 +33,7 @@
 	main {
 		text-align: center;
 		background-color: $secondary-color;
-		height: 86vh;
+		min-height: 86vh;
 
 		>div {
 			background-image: url('/images/logos/revati_large_dark.png');
