@@ -70,7 +70,7 @@
 
 			img {
 				max-width: 86%;
-                max-height: 64vh;
+                max-height: 48vh;
 				margin-top: 32px;
 			}
 
