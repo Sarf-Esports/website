@@ -77,7 +77,7 @@
 		</div>
 	</div>
 
-	<!-- <<div class="container">
+	<div class="container">
 		<section id="about">
 			<SectionTitle name="about" />
 			<div class="section-content">
@@ -99,7 +99,7 @@
 		</section>
 	</div>
 
-	<div class="container">
+	<!-- <div class="container">
 		<section id="news">
 			<SectionTitle name="news" />
 			<div class="section-content"><NewsSlider /></div>
