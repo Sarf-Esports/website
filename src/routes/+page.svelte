@@ -61,11 +61,9 @@
 	<meta property="og:type" content="website" />
 </svelte:head>
 
-せめて文字くらい置きますか...
+<Header />
 
-<!-- <Header />
-
-<main>
+<!-- <main>
 	<div class="container">
 		<div id="op-container" class="is-playing" bind:this={op_container}>
 			<video
@@ -138,9 +136,9 @@
 			</div>
 		</section>
 	</div>
-</main>
+</main> -->
 
-<Footer /> -->
+<Footer />
 
 <style lang="scss" global>
 	@import '/assets/stylesheets/util.scss';
