@@ -151,17 +151,34 @@
 	@import '/assets/stylesheets/variables.scss';
 	@import '/assets/stylesheets/reveal_anim.scss';
 	@import '/assets/stylesheets/style.scss';
+	@import '/assets/stylesheets/mixins.scss';
 
 	#op-container {
 		display: block;
-		height: 90vh;
+		background-image: url(/images/logos/revati_large_dark.png);
 		background-repeat: no-repeat;
 		background-position: center;
-		background-image: url(/images/logos/revati_large_dark.png);
+
+		@include pc {
+			height: 90vh;
+		}
+
+		@include sp {
+			height: 128vw;
+			// background-size: 256vw;
+			// margin: 16vw auto;
+		}
 	}
 
 	#op-container.is-playing {
 		background-image: none;
+
+		@include sp {
+			margin: auto;
+			// $border: 16vw solid #0d100b;
+			// border-top: $border;
+			// border-bottom: $border;
+		}
 	}
 
 	#op-video {

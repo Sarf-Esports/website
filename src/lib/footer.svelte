@@ -4,7 +4,7 @@
 
 	const socials = {
 		twitter: 'revati_jp',
-		youtube: '@REVATI'
+		youtube: '@revati_jp'
 	};
 </script>
 

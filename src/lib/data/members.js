@@ -65,7 +65,7 @@ export let member_lists = [
             },
             {
                 "name": "ぼひ",
-                "icon": null,
+                "icon": "bohi.png",
                 "twitter": "WilyGuysBohi",
                 "youtube": "@user-yf4gf8qw8s",
                 "twitch": null

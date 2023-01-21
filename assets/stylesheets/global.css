@@ -17,6 +17,7 @@ body {
 	flex-direction: column;
 	margin: 0;
 	overflow-x: hidden;
+	background: #111111;
 }
 
 ::selection {

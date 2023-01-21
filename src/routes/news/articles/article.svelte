@@ -100,7 +100,7 @@
 
 		#bg {
 			position: absolute;
-			top: 0;
+			top: $scroll-offset;
 			left: 0;
 			width: 100%;
 			height: 100vh;
