@@ -24,6 +24,7 @@
 							<img
 								src="/images/members/{icon == null ? 'noimage.png' : icon}"
 								alt="member icon"
+								loading="lazy"
 							/>
 							<h3>{name}</h3>
 							{#if twitter}
