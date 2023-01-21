@@ -99,7 +99,7 @@
 		</section>
 	</div>
 
-	<!-- <div class="container">
+	<div class="container">
 		<section id="news">
 			<SectionTitle name="news" />
 			<div class="section-content"><NewsSlider /></div>
@@ -135,7 +135,7 @@
 				<p class="reveal-anim-item">...( 'ω')</p>
 			</div>
 		</section>
-	</div> -->
+	</div>
 </main>
 
 <Footer />
