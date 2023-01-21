@@ -17,7 +17,7 @@
 				href="https://twitter.com/{socials.twitter}"
 				target="_blank"
 				rel="noopener noreferrer"
-				title="@{socials.twitter}"
+				title="Twitter: @{socials.twitter}"
 			>
 				<img
 					src="/images/logos/twitter-logo-01282021/Twitter logo/SVG/Logo white.svg"
@@ -30,7 +30,7 @@
 				href="https://www.youtube.com/{socials.youtube}"
 				target="_blank"
 				rel="noopener noreferrer"
-				title="/{socials.youtube}"
+				title="YouTube: /{socials.youtube}"
 			>
 				<img src="/images/logos/youtube_icon/yt_icon_mono_dark.png" alt="youtube" />
 			</a>
@@ -40,7 +40,7 @@
 				href="https://github.com/{socials.github}"
 				target="_blank"
 				rel="noopener noreferrer"
-				title="@{socials.github}"
+				title="GitHub: @{socials.github}"
 			>
 				<img src="/images/logos/github-mark/github-mark-white.svg" alt="github" />
 			</a>
