@@ -66,14 +66,14 @@
 <main>
 	<div class="container">
 		<div id="op-container" class="is-playing" bind:this={op_container}>
-			<video
+			<!-- <video
 				src="/videos/revati_op_muted.mov"
 				id="op-video"
 				on:ended={(self) => op_loop(self)}
 				muted
 				autoplay
 				playsinline
-			/>
+			/> -->
 		</div>
 	</div>
 
@@ -116,7 +116,7 @@
 		<section id="store">
 			<SectionTitle name="store" />
 			<div class="section-content">
-				<img src="/images/store_thumbnail.png" alt="store thumbnail" />
+				<img src="/images/store_thumbnail.png" alt="store thumbnail" loading="lazy" />
 				<a
 					href="https://suzuri.jp/REVATI"
 					class="go-to-store"
