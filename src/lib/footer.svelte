@@ -4,7 +4,8 @@
 
 	const socials = {
 		twitter: 'revati_jp',
-		youtube: '@revati_jp'
+		youtube: '@revati_jp',
+		github: 'Sarf-Esports'
 	};
 </script>
 
@@ -32,6 +33,16 @@
 				title="/{socials.youtube}"
 			>
 				<img src="/images/logos/youtube_icon/yt_icon_mono_dark.png" alt="youtube" />
+			</a>
+		</li>
+		<li>
+			<a 
+				href="https://github.com/{socials.github}"
+				target="_blank"
+				rel="noopener noreferrer"
+				title="@{socials.github}"
+			>
+				<img src="/images/logos/github-mark/github-mark-white.svg" alt="github" />
 			</a>
 		</li>
 	</ul>

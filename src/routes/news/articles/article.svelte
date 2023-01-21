@@ -20,7 +20,7 @@
 	 * Returns a formatted date string.
 	 */
 	function fmt_date() {
-		const y = date.slice(0, 4).replace(/^0+/, '');
+		const y = date.slice(0, 4);
 		const m = date.slice(4, 6).replace(/^0+/, '');
 		const d = date.slice(6, 8).replace(/^0+/, '');
 		return `${y}/${m}/${d}`;
@@ -52,15 +52,15 @@
 			<p>{@html text}</p>
 		</div>
 	</div>
-	<a href="/news">ニュース一覧へ戻る<i class="bi bi-box-arrow-up-right"></i></a>
+	<a href="/news">ニュース一覧へ戻る<i class="bi bi-box-arrow-up-right" /></a>
 </main>
 
 <Footer />
 
 <style lang="scss">
 	@import '/assets/stylesheets/variables.scss';
-	
-	@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+	@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css');
 
 	main {
 		min-height: 100vh;
@@ -71,10 +71,11 @@
 			position: relative;
 			z-index: 1;
 
-			img {
+			> img {
 				max-width: 86%;
 				max-height: 48vh;
 				margin-top: 32px;
+				border-radius: 4px;
 			}
 
 			h1 {
@@ -84,8 +85,14 @@
 			}
 
 			h2 {
+				display: inline-block;
 				font-size: 20px;
 				font-weight: 100;
+				letter-spacing: 2px;
+				background-color: #f0ffff13;
+				padding: 0 16px 4px 16px;
+				border-radius: 2.6px;
+				border: 0.8px solid white;
 			}
 
 			p {

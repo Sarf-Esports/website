@@ -19,7 +19,7 @@
 
 ## SvelteKit万歳
 
-このサイトには [SvelteKit](https://kit.svelte.jp/) とかいうフレームワークを使っています。
+このサイトには [SvelteKit](https://kit.svelte.jp) とかいうフレームワークを使っています。
 詳しくは [SvelteKitのドキュメント](https://kit.svelte.jp/docs/introduction) を参照
 
 ### 環境構築 !
