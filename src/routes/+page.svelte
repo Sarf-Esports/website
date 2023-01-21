@@ -122,7 +122,7 @@
 					class="go-to-store"
 					target="_blank"
 					rel="noopener noreferrer"
-					draggable="false">お買い求めはこちら ></a
+					draggable="false">お買い求めはこちら<i class="bi bi-box-arrow-up-right" /></a
 				>
 			</div>
 		</section>
@@ -146,6 +146,8 @@
 	@import '/assets/stylesheets/reveal_anim.scss';
 	@import '/assets/stylesheets/style.scss';
 	@import '/assets/stylesheets/mixins.scss';
+
+	@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css');
 
 	#op-container {
 		display: block;

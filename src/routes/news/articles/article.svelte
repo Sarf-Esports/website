@@ -52,7 +52,7 @@
 			<p>{@html text}</p>
 		</div>
 	</div>
-	<a href="/news">ニュース一覧へ戻る<i class="bi bi-box-arrow-up-right" /></a>
+	<a href="/news">ニュース一覧へ戻る<i class="bi bi-box-arrow-in-down-left"></i></a>
 </main>
 
 <Footer />
