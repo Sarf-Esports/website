@@ -63,7 +63,7 @@
 
 <Header />
 
-<!-- <main>
+<main>
 	<div class="container">
 		<div id="op-container" class="is-playing" bind:this={op_container}>
 			<video
@@ -77,7 +77,7 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<!-- <<div class="container">
 		<section id="about">
 			<SectionTitle name="about" />
 			<div class="section-content">
@@ -135,8 +135,8 @@
 				<p class="reveal-anim-item">...( 'ω')</p>
 			</div>
 		</section>
-	</div>
-</main> -->
+	</div> -->
+</main>
 
 <Footer />
 
