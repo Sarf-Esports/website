@@ -61,19 +61,19 @@
 	<meta property="og:type" content="website" />
 </svelte:head>
 
-<Header />
+<!-- <Header />
 
 <main>
 	<div class="container">
 		<div id="op-container" class="is-playing" bind:this={op_container}>
-			<!-- <video
+			<video
 				src="/videos/revati_op_muted.mov"
 				id="op-video"
 				on:ended={(self) => op_loop(self)}
 				muted
 				autoplay
 				playsinline
-			/> -->
+			/>
 		</div>
 	</div>
 
@@ -138,7 +138,7 @@
 	</div>
 </main>
 
-<Footer />
+<Footer /> -->
 
 <style lang="scss" global>
 	@import '/assets/stylesheets/util.scss';
