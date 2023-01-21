@@ -61,6 +61,8 @@
 	<meta property="og:type" content="website" />
 </svelte:head>
 
+せめて文字くらい置きますか...
+
 <!-- <Header />
 
 <main>
