@@ -6,7 +6,6 @@
 
 	import Header from '$lib/header.svelte';
 	import SectionTitle from './section_title.svelte';
-	import DropdownBtn from './dropdown_button.svelte';
 	import NewsSlider from './news_slider.svelte';
 	import MemberLists from './member_lists.svelte';
 	import Footer from '$lib/footer.svelte';
@@ -76,7 +75,6 @@
 				playsinline
 			/>
 		</div>
-		<DropdownBtn to="about" />
 	</div>
 
 	<div class="container">
@@ -98,7 +96,6 @@
 					</p>
 				</div>
 			</div>
-			<DropdownBtn to="news" />
 		</section>
 	</div>
 
@@ -106,14 +103,12 @@
 		<section id="news">
 			<SectionTitle name="news" />
 			<div class="section-content"><NewsSlider /></div>
-			<DropdownBtn to="teams" style="margin-top:16px;" />
 		</section>
 	</div>
 	<div class="container">
 		<section id="teams">
 			<SectionTitle name="teams" />
 			<div class="section-content"><MemberLists /></div>
-			<DropdownBtn to="store" />
 		</section>
 	</div>
 
@@ -130,7 +125,6 @@
 					draggable="false">お買い求めはこちら ></a
 				>
 			</div>
-			<DropdownBtn to="sponsor" />
 		</section>
 	</div>
 
