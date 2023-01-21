@@ -152,27 +152,16 @@
 		background-image: url(/images/logos/revati_large_dark.png);
 		background-repeat: no-repeat;
 		background-position: center;
-
-		@include pc {
-			height: 90vh;
-		}
+		height: 100vh;
 
 		@include sp {
-			height: 128vw;
-			// background-size: 256vw;
-			// margin: 16vw auto;
+			background-size: 256vw;
+			background-position: 50% calc(48% - 6vh);
 		}
 	}
 
 	#op-container.is-playing {
 		background-image: none;
-
-		@include sp {
-			margin: auto;
-			// $border: 16vw solid #0d100b;
-			// border-top: $border;
-			// border-bottom: $border;
-		}
 	}
 
 	#op-video {
@@ -180,6 +169,21 @@
 		height: 100%;
 		object-fit: cover;
 		opacity: 1;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+
+		@include pc {
+			height: 90vh;
+		}
+
+		@include sp {
+			height:128vw;
+			background-size: 256vw;
+		}
 	}
 
 	@font-face {
