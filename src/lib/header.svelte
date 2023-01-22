@@ -5,7 +5,7 @@
 
 <header>
 	<nav>
-		<a href="/"><img src="/images/logos/REVATI_LOGO_BLK_2.png" alt="logo" /></a>
+		<a href="/"><img src="/images/logos/REVATI_LOGO_BLK_2.png" alt="logo" draggable="false" /></a>
 		<ul>
 			<li><a href="/#about" id="hd-about">ABOUT</a></li>
 			<li><a href="/#news" id="hd-news">NEWS</a></li>
@@ -46,12 +46,14 @@
 			margin-left: 18px;
 			margin-top: 8px;
 			overflow: visible;
-		}
 
-		img:hover {
-			transform: translateY(-4px) scale(1.32);
-			filter: drop-shadow(0 8px 0 #00000080);
-			transition: 0.3s;
+			@include pc {
+				&:hover {
+					transform: translateY(-4px) scale(1.32);
+					filter: drop-shadow(0 8px 0 #00000080);
+					transition: 0.3s;
+				}
+			}
 		}
 
 		ul {
