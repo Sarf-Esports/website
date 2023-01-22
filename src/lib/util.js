@@ -46,3 +46,16 @@ export function shake(elm) {
 export function word_to_camel_case(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
+
+/**
+ * Returns a formatted date string.
+ * 
+ * @param {string} date
+ */
+export function fmt_date(date) {
+    const y = date.slice(0, 4);
+    const m = date.slice(4, 6).replace(/^0+/, '');
+    const d = date.slice(6, 8).replace(/^0+/, '');
+    return `${y}/${m}/${d}`;
+}

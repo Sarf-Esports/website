@@ -2,7 +2,7 @@
 <script>
 	import { browser } from '$app/environment';
 	import { news_list } from '$lib/data/news.js';
-	import { shake } from '$lib/util.js';
+	import { shake, fmt_date } from '$lib/util.js';
 	import { fly } from 'svelte/transition';
 
 	let is_touch_device = false;
@@ -147,6 +147,7 @@
 				<a href="./news/articles/{date}">
 					<img src="/images/news/{date}.png" alt="news thumbnail" />
 					<h1>{title}</h1>
+					<h3>[ {fmt_date(date)} ]</h3>
 				</a>
 			</li>
 		{/if}

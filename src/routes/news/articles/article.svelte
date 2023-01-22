@@ -1,6 +1,7 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
 	import { news_list } from '$lib/data/news.js';
+	import { fmt_date } from '$lib/util.js';
 
 	import Header from '$lib/header.svelte';
 	import Footer from '$lib/footer.svelte';
@@ -15,16 +16,6 @@
 	let title = news ? news.title : undefined;
 
 	let img_path = `/images/news/${date}.png`;
-
-	/**
-	 * Returns a formatted date string.
-	 */
-	function fmt_date() {
-		const y = date.slice(0, 4);
-		const m = date.slice(4, 6).replace(/^0+/, '');
-		const d = date.slice(6, 8).replace(/^0+/, '');
-		return `${y}/${m}/${d}`;
-	}
 
 	const head = { title: `REVATI | NEWS - ${title}` };
 </script>
@@ -47,7 +38,7 @@
 		<div id="content">
 			<img src={img_path} alt="thumbnail" />
 			<h1>{title}</h1>
-			<h2>{fmt_date()}</h2>
+			<h2>{fmt_date(date)}</h2>
 			<hr />
 			<p>{@html text}</p>
 		</div>

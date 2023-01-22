@@ -21,7 +21,8 @@ li {
             width: 380px;
         }
 
-        h1 {
+        h1,
+        h3 {
             display: none;
         }
 
@@ -53,6 +54,14 @@ li {
         @include sp {
             font-size: 24px;
         }
+    }
+
+    h3 {
+        color: #aeb1a8;
+        font-size: 20px;
+        position: relative;
+        top: -16px;
+        letter-spacing: 2px;
     }
 }
 
