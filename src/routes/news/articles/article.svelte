@@ -43,7 +43,7 @@
 
 <main>
 	<div class="container">
-		<!-- <div id="bg" style={`background-image: url(${img_path});`} /> -->
+		<div id="bg" style={`background-image: url(${img_path});`} />
 		<div id="content">
 			<img src={img_path} alt="thumbnail" />
 			<h1>{title}</h1>
