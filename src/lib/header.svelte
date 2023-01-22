@@ -45,6 +45,7 @@
 			float: left;
 			margin-left: 18px;
 			margin-top: 8px;
+			overflow: visible;
 		}
 
 		img:hover {
