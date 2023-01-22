@@ -19,7 +19,7 @@
 			<p>
 				申し訳御座いません。誠に遺憾。<br />
 				お探しのページは見つかりませんでした。<br />
-				<a href="/">トップページへ戻る<i class="bi bi-box-arrow-up-right"></i></a>
+				<a href="/">トップページへ戻る<i class="bi bi-box-arrow-up-right" /></a>
 			</p>
 		</div>
 	</div>
@@ -29,8 +29,9 @@
 
 <style lang="scss">
 	@import '/assets/stylesheets/variables.scss';
+	@import '/assets/stylesheets/mixins.scss';
 
-	@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+	@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css');
 
 	main {
 		text-align: center;
@@ -49,9 +50,16 @@
 				background-color: #111111cc;
 
 				h1 {
-					font-size: 42px;
 					text-decoration: underline;
 					transition: 0.6s;
+
+					@include pc {
+						font-size: 42px;
+					}
+
+					@include sp {
+						font-size: 28px;
+					}
 
 					&:hover {
 						filter: drop-shadow(-6px 2px 0 #777777);
@@ -64,9 +72,16 @@
 				}
 
 				p {
-					font-size: 24px;
 					margin-top: 32px;
 					filter: drop-shadow(1px 1px 0 #030303) drop-shadow(1px -1px 0 #030303);
+
+					@include pc {
+						font-size: 24px;
+					}
+
+					@include sp {
+						font-size: 18px;
+					}
 
 					a {
 						font-size: 18px;

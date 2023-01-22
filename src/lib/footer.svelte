@@ -50,7 +50,7 @@
 
 <style lang="scss">
 	footer {
-		height: 24vh;
+		min-height: 24vh;
 		background-color: #0a0a0a;
 
 		.copyright {
@@ -60,7 +60,7 @@
 		}
 
 		ul {
-			margin-top: 64px;
+			margin: 64px auto;
 			padding: 0;
 			display: flex;
 			justify-content: center;

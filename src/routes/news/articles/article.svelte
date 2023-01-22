@@ -52,13 +52,14 @@
 			<p>{@html text}</p>
 		</div>
 	</div>
-	<a href="/news">ニュース一覧へ戻る<i class="bi bi-box-arrow-in-down-left"></i></a>
+	<a href="/news">ニュース一覧へ戻る<i class="bi bi-box-arrow-in-down-left" /></a>
 </main>
 
 <Footer />
 
 <style lang="scss">
 	@import '/assets/stylesheets/variables.scss';
+	@import '/assets/stylesheets/mixins.scss';
 
 	@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css');
 
@@ -79,20 +80,34 @@
 			}
 
 			h1 {
-				font-size: 32px;
 				font-weight: 900;
 				padding: 0 26px;
+
+				@include pc {
+					font-size: 32px;
+				}
+
+				@include sp {
+					font-size: 22px;
+				}
 			}
 
 			h2 {
 				display: inline-block;
-				font-size: 20px;
 				font-weight: 100;
 				letter-spacing: 2px;
 				background-color: #f0ffff13;
 				padding: 0 16px 4px 16px;
 				border-radius: 2.6px;
 				border: 0.8px solid white;
+
+				@include pc {
+					font-size: 20px;
+				}
+
+				@include sp {
+					font-size: 17px;
+				}
 			}
 
 			p {
