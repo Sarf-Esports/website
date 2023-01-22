@@ -24,6 +24,10 @@ li {
         h1 {
             display: none;
         }
+
+        @include sp {
+            opacity: 0;
+        }
     }
 
     a {
@@ -42,7 +46,13 @@ li {
     }
 
     h1 {
-        font-size: 32px;
+        @include pc {
+            font-size: 32px;
+        }
+
+        @include sp {
+            font-size: 24px;
+        }
     }
 }
 

@@ -197,7 +197,7 @@
 		.slogan {
 			font-family: 'Zen Kaku Gothic Antique Bold';
 			font-weight: 700;
-			padding: 0 4px;
+			padding: 0 6px;
 			margin: 0 16px;
 
 			&::after {
@@ -224,8 +224,15 @@
 			}
 
 			h1 {
-				font-size: 48px;
 				letter-spacing: 0.075em;
+
+				@include pc {
+					font-size: 48px;
+				}
+
+				@include sp {
+					font-size: 36px;
+				}
 			}
 
 			h2 {

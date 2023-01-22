@@ -138,5 +138,6 @@
 </h2>
 
 <style lang="scss">
+	@import '/assets/stylesheets/mixins.scss';
 	@import '/assets/stylesheets/news_slider.scss';
 </style>
