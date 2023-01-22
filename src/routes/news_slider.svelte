@@ -5,7 +5,19 @@
 	import { shake } from '$lib/util.js';
 	import { fly } from 'svelte/transition';
 
+	let is_touch_device = false;
+
 	if (browser) {
+		if (!is_touch_device) {
+			document.addEventListener(
+				'touchmove',
+				function () {
+					is_touch_device = true;
+				},
+				{ passive: false }
+			);
+		}
+
 		window.onscroll = () => {
 			fuck_news_arrows();
 		};
@@ -115,11 +127,23 @@
 </script>
 
 <button on:click={(self) => news_prev(self)} class="arrow inactive" id="arrow-left">&lt</button>
-<button on:click={(self) => news_next(self)} class="arrow{slider_len == 1 ? ' inactive' : ''}" id="arrow-right">&gt</button>
+<button
+	on:click={(self) => news_next(self)}
+	class="arrow{slider_len == 1 ? ' inactive' : ''}"
+	id="arrow-right">&gt</button
+>
 <ul id="news-slider">
 	{#each news_list as { is_hidden, date, title }, i}
 		{#if !is_hidden}
-			<li class={i == -1 ? 'left-item' : i == 0 ? 'middle-item' : i == 1 ? 'right-item' : 'hidden'}>
+			<li
+				class="{i == -1
+					? 'left-item'
+					: i == 0
+					? 'middle-item'
+					: i == 1
+					? 'right-item'
+					: 'hidden'}{is_touch_device ? ' mobile' : ''}"
+			>
 				<a href="./news/articles/{date}">
 					<img src="/images/news/{date}.png" alt="news thumbnail" />
 					<h1>{title}</h1>

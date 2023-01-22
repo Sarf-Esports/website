@@ -25,10 +25,9 @@ li {
             display: none;
         }
 
-        // DEBUG
-        // @include sp {
-        //     display: none;
-        // }
+        &.mobile {
+            display: none;
+        }
     }
 
     a {
