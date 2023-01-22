@@ -10,7 +10,7 @@
 	if (browser) {
 		if (!is_touch_device) {
 			document.addEventListener(
-				'touchmove',
+				'touchstart',
 				function () {
 					is_touch_device = true;
 				},
