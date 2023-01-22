@@ -27,6 +27,7 @@ li {
 
         @include sp {
             opacity: 0;
+            display: none;
         }
     }
 
