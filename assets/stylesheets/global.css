@@ -5,6 +5,11 @@
 	src: url("../fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Regular.ttf");
 }
 
+
+* {
+	overflow-x: hidden;
+}
+
 html {
 	scroll-behavior: smooth;
 	font-family: "Zen Kaku Gothic Antique", sans-serif;
@@ -16,7 +21,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	overflow-x: hidden;
 	background: #111111;
 }
 

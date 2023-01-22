@@ -25,10 +25,10 @@ li {
             display: none;
         }
 
-        @include sp {
-            opacity: 0;
-            display: none;
-        }
+        // DEBUG
+        // @include sp {
+        //     display: none;
+        // }
     }
 
     a {
