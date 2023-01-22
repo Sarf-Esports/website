@@ -10,6 +10,12 @@ console.log(`
       𝘜 𝘕 𝘋 𝘌 𝘍 𝘌 𝘈 𝘛 𝘌 𝘋   𝘚 𝘗 𝘐 𝘙 𝘐 𝘛 .｡+*
 `);
 
+document.addEventListener(
+	'touchmove', 
+	function (e) { e.preventDefault(); },
+	{ passive: false }
+);
+
 /* Old version AA:
 console.log(`
 									 -*ff

@@ -5,9 +5,9 @@
 	src: url("../fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Regular.ttf");
 }
 
-
-* {
-	overflow-x: hidden;
+html,
+body {
+	overflow-x: hidden
 }
 
 html {
