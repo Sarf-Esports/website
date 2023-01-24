@@ -57,11 +57,6 @@
 		border-style: solid;
 		border-width: 4px;
 		border-color: $border-light;
-		// DEBUG:
-		// border-top-color: $border-light;
-		// border-left-color: $border-light;
-		// border-bottom-color: $border-dark;
-		// border-right-color: $border-dark;
 		cursor: pointer;
 		transition: .18s;
 
@@ -84,20 +79,17 @@
 			span {
 				&:before,
 				&:after {
-					$clip-point: 20%;
-					$lg: $burger-color 0%, $burger-color $clip-point, transparent $clip-point, transparent 100%;
-					background: linear-gradient(to left, $lg), linear-gradient(to right, $lg);
+					opacity: .3;
 				}
 
 				$offset-y: 13.5px;
-				$scale: 1.4;
 
 				&:before {
-					transform: translateY($offset-y) scale($scale) rotate(45deg);
+					transform: translateY($offset-y) rotate(45deg);
 				}
 
 				&:after {
-					transform: translateY(-$offset-y) scale($scale) rotate(-45deg);
+					transform: translateY(-$offset-y) rotate(-45deg);
 				}
 			}
 		}
