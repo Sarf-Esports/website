@@ -42,6 +42,7 @@
 		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
 		letter-spacing: -1px;
+		touch-action: none;
 
 		img {
 			width: 86px;

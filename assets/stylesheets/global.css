@@ -5,6 +5,10 @@
 	src: url("../fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Regular.ttf");
 }
 
+* {
+	scrollbar-color: #65743b transparent;
+}
+
 html {
 	scroll-behavior: smooth;
 	font-family: "Zen Kaku Gothic Antique", sans-serif;
