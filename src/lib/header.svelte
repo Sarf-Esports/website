@@ -1,6 +1,7 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
 	import Contact from './contact.svelte';
+	import Hamburger from './hamburger.svelte';
 </script>
 
 <header>
@@ -14,6 +15,7 @@
 			<li><a href="/#sponsor" id="hd-sponsor">SPONSOR</a></li>
 			<Contact />
 		</ul>
+		<Hamburger />
 	</nav>
 </header>
 
@@ -29,11 +31,13 @@
 
 	header {
 		position: fixed;
-		top: -0.5px;
+		top: -100vh;
 		z-index: 253;
 		background-color: $primary-color;
 		width: 100%;
+		height: 88px;
 		box-shadow: 0 0 10px 0 black;
+		border-top: 100vh solid $primary-color;
 		border-bottom: 6px solid #65743b;
 		font-family: 'Poppins', sans-serif;
 		font-weight: 600;

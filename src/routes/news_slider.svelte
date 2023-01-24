@@ -144,7 +144,7 @@
 					? 'right-item'
 					: 'hidden'}{is_touch_device ? ' mobile' : ''}"
 			>
-				<a href="./news/articles/{date}">
+				<a href="./news/articles/{date}" tabindex="-1">
 					<img src="/images/news/{date}.png" alt="news thumbnail" />
 					<h1>{title}</h1>
 					<h3>[ {fmt_date(date)} ]</h3>

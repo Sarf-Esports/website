@@ -48,7 +48,7 @@
 			※お答えできない場合がございます。
 		</p>
 		<a
-			href="https://docs.google.com/forms/d/e/1FAIpQLSd9P3VCWiCrOpHAvsQpjwZBBLMlznJP4ZW-KWs7rzxXu1ZTMg/viewform?usp=pp_url"
+			href="https://docs.google.com/forms/d/e/1FAIpQLSd9P3VCWiCrOpHAvsQpjwZBBLMlznJP4ZW-KWs7rzxXu1ZTMg/viewform"
 			id="mail-btn"
 			target="_blank"
 			rel="noopener noreferrer"

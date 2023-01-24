@@ -1,12 +1,12 @@
 $breakpoint: 850px;
 
-@mixin pc() {
+@mixin pc {
     @media screen and (min-width: $breakpoint) {
         @content;
     }
 }
 
-@mixin sp() {
+@mixin sp {
     @media screen and (max-width: #{$breakpoint - 1}) {
         @content;
     }
