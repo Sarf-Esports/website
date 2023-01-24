@@ -58,12 +58,13 @@
 		border-width: 4px;
 		border-color: $border-light;
 		cursor: pointer;
-		transition: .18s;
+		border-radius: 8px;
+		transition: 0.18s;
 
 		&:hover {
 			filter: brightness(1.2) saturate(1.2);
 			transform: scale(112%);
-			transition: .3s;
+			transition: 0.3s;
 		}
 
 		&:active {
@@ -79,7 +80,7 @@
 			span {
 				&:before,
 				&:after {
-					opacity: .3;
+					opacity: 0.3;
 				}
 
 				$offset-y: 13.5px;

@@ -1,7 +1,7 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
 	import Contact from './contact.svelte';
-	import Hamburger from './hamburger.svelte';
+	import HbBtn from './hamburger_button.svelte';
 </script>
 
 <header>
@@ -15,7 +15,7 @@
 			<li><a href="/#sponsor" id="hd-sponsor">SPONSOR</a></li>
 			<Contact />
 		</ul>
-		<Hamburger />
+		<HbBtn />
 	</nav>
 </header>
 
