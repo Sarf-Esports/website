@@ -46,6 +46,8 @@
 	</nav>
 </header>
 
+<div id="header2" class:open={is_drawer_menu_opened} />
+
 <style lang="scss">
 	@import '/assets/stylesheets/header.scss';
 	@import '/assets/stylesheets/variables.scss';
@@ -55,6 +57,9 @@
 		font-family: 'Poppins';
 		src: url('/fonts/Poppins/Poppins-Regular.ttf');
 	}
+
+	$opened_header_height: 75vh;
+	$border-thickness: 6px;
 
 	header {
 		$height: 88px;
@@ -69,7 +74,7 @@
 		height: $height;
 		box-shadow: 0 0 10px 0 black;
 		border-top: 100vh solid $primary-color;
-		border-bottom: 6px solid $border-col;
+		border-bottom: $border-thickness solid $border-col;
 		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
 		letter-spacing: -1px;
@@ -141,7 +146,6 @@
 
 		&.open {
 			@include sp {
-				$opened_header_height: 75vh;
 
 				top: calc($opened_header_height - 100vh - $height);
 
@@ -158,6 +162,30 @@
 				h3 {
 					transform: none;
 				}
+			}
+		}
+	}
+
+	#header2 {
+		transform: translateX(101vw);
+		background-color: #a52a2a;
+		border-right: 50vw solid #a52a2a;
+		border-left: $border-thickness solid #520c0c;
+		transition: 0.28s ease-in;
+
+		@include pc {
+		}
+
+		@include sp {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100vw;
+			height: calc(100vh - $opened_header_height - $border-thickness + 2px);
+			z-index: 253;
+
+			&.open {
+				transform: none;
 			}
 		}
 	}
