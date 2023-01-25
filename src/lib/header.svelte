@@ -1,5 +1,7 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
+	import { copyright } from '$lib/variables.js';
+
 	import Contact from './contact.svelte';
 	import HbBtn from './hamburger_button.svelte';
 
@@ -31,6 +33,7 @@
 			<li><a href="/#sponsor" id="hd-sponsor">SPONSOR</a></li>
 			<Contact />
 		</ul>
+		<h3>{copyright}</h3>
 		<HbBtn on:toggle={toggle_menu} />
 	</nav>
 </header>
@@ -101,7 +104,8 @@
 				left: calc(50vw - 112px);
 				opacity: 0;
 
-				&::before, &::after {
+				&::before,
+				&::after {
 					content: '';
 					position: absolute;
 					width: 120%;
@@ -109,6 +113,16 @@
 					background-color: $border-col;
 				}
 			}
+		}
+
+		h3 {
+			display: none;
+			color: #364213;
+			font-size: 17px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
 		}
 
 		&.open {
@@ -123,6 +137,10 @@
 
 				ul {
 					opacity: 1;
+				}
+
+				h3 {
+					display: block;
 				}
 			}
 		}

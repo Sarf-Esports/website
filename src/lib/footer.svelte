@@ -1,6 +1,6 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
-	const copyright = '© 2022 - 2023 REVATI';
+	import { copyright } from '$lib/variables.js';
 
 	const socials = {
 		twitter: 'revati_jp',
