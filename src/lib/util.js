@@ -69,11 +69,11 @@ export function fmt_date(date) {
  * - `/stylesheets/util.scss` (body.prevent-scroll)
 */
 export function toggle_scroll_prevention(prevent) {
-    // let c = "prevent-scroll";
-    // let body = document.getElementsByTagName('body')[0].classList;
-    // if (prevent) {
-    //     body.add(c);
-    // } else {
-    //     body.remove(c);
-    // }
+    let c = "prevent-scroll";
+    let body = document.getElementsByTagName('body')[0].classList;
+    if (prevent) {
+        body.add(c);
+    } else {
+        body.remove(c);
+    }
 }

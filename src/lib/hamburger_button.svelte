@@ -16,7 +16,7 @@
 
 		window.addEventListener('resize', function () {
 			is_hb_button_enabled = bp.matches;
-			toggle_scroll_prevention(is_hb_button_enabled);
+			toggle_scroll_prevention(is_hb_button_enabled && is_opened);
 		});
 	}
 
