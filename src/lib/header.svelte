@@ -117,6 +117,10 @@
 
 				top: calc($opened_header_height - 100vh - $height);
 
+				img {
+					opacity: 0;
+				}
+
 				ul {
 					opacity: 1;
 				}
