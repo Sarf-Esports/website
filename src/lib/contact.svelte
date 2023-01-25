@@ -2,6 +2,7 @@
 <script>
 	import { browser } from '$app/environment';
 	import { fly } from 'svelte/transition';
+	import { toggle_scroll_prevention } from '$lib/util.js';
 
 	let is_contact_modal_visible = false;
 
@@ -15,14 +16,8 @@
 	 * Toggles the visibility of the contact modal.
 	 */
 	function toggle_contact_modal() {
-		let body = document.getElementsByTagName('body')[0].classList;
-		if (is_contact_modal_visible == true) {
-			body.remove('prevent-scroll');
-			is_contact_modal_visible = false;
-		} else {
-			body.add('prevent-scroll');
-			is_contact_modal_visible = true;
-		}
+		is_contact_modal_visible = !is_contact_modal_visible;
+		toggle_scroll_prevention(is_contact_modal_visible);
 	}
 
 	/**

@@ -4,6 +4,7 @@
 	import { fly, scale } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
 	import { breakpoint } from '$lib/variables.js';
+	import { toggle_scroll_prevention } from '$lib/util.js';
 
 	/** @type {boolean} */
 	let is_hb_button_enabled;
@@ -15,10 +16,12 @@
 
 		window.addEventListener('resize', function () {
 			is_hb_button_enabled = bp.matches;
+			toggle_scroll_prevention(is_hb_button_enabled);
 		});
 	}
 
-	let is_opened = false;
+	/** @type {boolean} */
+	export let is_opened;
 
 	const dispatch = createEventDispatcher();
 

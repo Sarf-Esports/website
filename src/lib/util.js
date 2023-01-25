@@ -28,7 +28,7 @@ export function add_class_at_scroll(elms, cls) {
  * @param {HTMLElement} elm
  * 
  * # Dependencies:
- * - `/stylesheets/util.css`
+ * - `/stylesheets/util.scss`
  */
 export function shake(elm) {
     elm.classList.add("shake");
@@ -58,4 +58,22 @@ export function fmt_date(date) {
     const m = date.slice(4, 6).replace(/^0+/, '');
     const d = date.slice(6, 8).replace(/^0+/, '');
     return `${y}/${m}/${d}`;
+}
+
+/**
+ * Toggles body scroll prevention.
+ * 
+ * @param {boolean} prevent
+ * 
+ * # Dependencies:
+ * - `/stylesheets/util.scss` (body.prevent-scroll)
+*/
+export function toggle_scroll_prevention(prevent) {
+    let c = "prevent-scroll";
+    let body = document.getElementsByTagName('body')[0].classList;
+    if (prevent) {
+        body.add(c);
+    } else {
+        body.remove(c);
+    }
 }

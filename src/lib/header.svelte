@@ -1,24 +1,23 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
 	import { copyright } from '$lib/variables.js';
+	import { toggle_scroll_prevention } from '$lib/util.js';
 
 	import Contact from './contact.svelte';
 	import HbBtn from './hamburger_button.svelte';
 
 	let is_drawer_menu_opened = false;
 
-	/**
-	 * @param {CustomEvent} e
-	 */
-	function toggle_menu(e) {
-		is_drawer_menu_opened = e.detail.is_opened;
+	let items = ['about', 'news', 'teams', 'store', 'sponsor'];
 
-		let body = document.getElementsByTagName('body')[0].classList;
-		if (is_drawer_menu_opened == true) {
-			body.add('prevent-scroll');
-		} else {
-			body.remove('prevent-scroll');
-		}
+	/**
+	 * Toggles drawer menu open/close.
+	 *
+	 * @param {boolean} open
+	 */
+	function toggle_drawer_menu(open) {
+		is_drawer_menu_opened = open;
+		toggle_scroll_prevention(is_drawer_menu_opened);
 	}
 </script>
 
@@ -26,15 +25,24 @@
 	<nav>
 		<a href="/"><img src="/images/logos/REVATI_LOGO_BLK_2.png" alt="logo" draggable="false" /></a>
 		<ul>
-			<li><a href="/#about" id="hd-about">ABOUT</a></li>
-			<li><a href="/#news" id="hd-news">NEWS</a></li>
-			<li><a href="/#teams" id="hd-team">TEAMS</a></li>
-			<li><a href="/#store" id="hd-store">STORE</a></li>
-			<li><a href="/#sponsor" id="hd-sponsor">SPONSOR</a></li>
+			{#each items as item}<li>
+					<a
+						href="/#{item}"
+						id="hd-{item}"
+						on:click={() => {
+							toggle_drawer_menu(false);
+						}}>{item.toUpperCase()}</a
+					>
+				</li>{/each}
 			<Contact />
 		</ul>
 		<h3>{copyright}</h3>
-		<HbBtn on:toggle={toggle_menu} />
+		<HbBtn
+			is_opened={is_drawer_menu_opened}
+			on:toggle={(e) => {
+				toggle_drawer_menu(e.detail.is_opened);
+			}}
+		/>
 	</nav>
 </header>
 
@@ -116,13 +124,19 @@
 		}
 
 		h3 {
-			display: none;
+			opacity: 0;
 			color: #364213;
 			font-size: 17px;
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			right: 0;
+			transform: translateY(-86px);
+			transition: 0.27s;
+
+			@include pc {
+				display: none;
+			}
 		}
 
 		&.open {
@@ -132,15 +146,17 @@
 				top: calc($opened_header_height - 100vh - $height);
 
 				img {
+					transform: translateY(-86vh);
 					opacity: 0;
 				}
 
-				ul {
+				ul,
+				h3 {
 					opacity: 1;
 				}
 
 				h3 {
-					display: block;
+					transform: none;
 				}
 			}
 		}
