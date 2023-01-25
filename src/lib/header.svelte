@@ -47,6 +47,8 @@
 
 	header {
 		$height: 88px;
+		$border-col: #65743b;
+		$logo-width: 86px;
 
 		position: fixed;
 		top: -100vh;
@@ -56,7 +58,7 @@
 		height: $height;
 		box-shadow: 0 0 10px 0 black;
 		border-top: 100vh solid $primary-color;
-		border-bottom: 6px solid #65743b;
+		border-bottom: 6px solid $border-col;
 		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
 		letter-spacing: -1px;
@@ -64,7 +66,7 @@
 		transition: 0.28s ease-in;
 
 		img {
-			width: 86px;
+			width: $logo-width;
 			transition: 0.3s ease-out;
 			float: left;
 			margin-left: 18px;
@@ -78,6 +80,10 @@
 					transition: 0.3s;
 				}
 			}
+
+			@include sp {
+				margin-top: 24px;
+			}
 		}
 
 		ul {
@@ -87,16 +93,33 @@
 			transition: 1s;
 
 			@include sp {
+				display: inline-block;
+				text-align: left;
 				transform: translateY(-50vh);
+				padding: 0;
+				position: absolute;
+				left: calc(50vw - 112px);
 				opacity: 0;
+
+				&::before, &::after {
+					content: '';
+					position: absolute;
+					width: 120%;
+					height: 4px;
+					background-color: $border-col;
+				}
 			}
 		}
 
 		&.open {
 			@include sp {
-				$opened_header_height: 70vh;
+				$opened_header_height: 75vh;
 
 				top: calc($opened_header_height - 100vh - $height);
+
+				ul {
+					opacity: 1;
+				}
 			}
 		}
 	}
