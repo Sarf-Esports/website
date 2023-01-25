@@ -2,12 +2,14 @@
 <script>
 	import { browser } from '$app/environment';
 	import { fly, scale } from 'svelte/transition';
+	import { createEventDispatcher } from 'svelte';
+	import { breakpoint } from '$lib/variables.js';
 
 	/** @type {boolean} */
 	let is_hb_button_enabled;
 
 	if (browser) {
-		let bp = window.matchMedia('(max-width: 850px)');
+		let bp = window.matchMedia(breakpoint);
 
 		is_hb_button_enabled = bp.matches;
 
@@ -18,13 +20,18 @@
 
 	let is_opened = false;
 
+	const dispatch = createEventDispatcher();
+
 	const fly_offset = 32;
 </script>
 
 {#if is_hb_button_enabled}
 	<button
 		class:is-opened={is_opened}
-		on:click={() => (is_opened = !is_opened)}
+		on:click={(self) => {
+			is_opened = !is_opened;
+			dispatch('toggle', { is_opened });
+		}}
 		transition:fly={{ x: fly_offset, y: -fly_offset, duration: 600 }}
 	>
 		{#key is_opened}

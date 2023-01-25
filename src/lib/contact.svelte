@@ -62,7 +62,7 @@
 		href="/"
 		id="hd-contact"
 		on:click={(self) => {
-			self.preventDefault();
+			self.preventDefault(); // fuck a-tag href
 			toggle_contact_modal();
 		}}>CONTACT</a
 	>
