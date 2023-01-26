@@ -6,6 +6,7 @@
 
 | Z-Index | Entity |
 | --: | --- |
+| 252 | Header Background |
 | 253 | Header, Header II |
 | 254 | Contact modal background |
 | 255 | Contact modal |

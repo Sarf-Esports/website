@@ -1,6 +1,6 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
-	import { copyright, socials } from '$lib/variables.js';
+	import { copyright } from '$lib/variables.js';
 	import { toggle_scroll_prevention } from '$lib/util.js';
 
 	import Contact from './contact.svelte';
@@ -21,6 +21,8 @@
 		toggle_scroll_prevention(is_drawer_menu_opened);
 	}
 </script>
+
+<div id="header-bg" class:visible={is_drawer_menu_opened} />
 
 <header class:open={is_drawer_menu_opened}>
 	<nav>
@@ -48,7 +50,7 @@
 
 <div id="header2" class:open={is_drawer_menu_opened}>
 	<div>
-		<Socials show_email style="justify-content: left;margin-left: 32px;" />
+		<Socials show_email style="justify-content:left; margin-left:32px;" />
 	</div>
 </div>
 
@@ -198,6 +200,22 @@
 
 		div {
 			transform: scale(0);
+		}
+	}
+
+	#header-bg {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: #000000a0;
+		transform: scale(0);
+		z-index: 252;
+
+		&.visible {
+			transform: scale(1);
+			transition-delay: $tf-duration;
 		}
 	}
 </style>
