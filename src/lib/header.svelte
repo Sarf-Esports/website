@@ -49,7 +49,7 @@
 
 <div id="header2" class:open={is_drawer_menu_opened}>
 	<div>
-		<Socials style="justify-content: left;margin-left: 32px;" />
+		<Socials show_email style="justify-content: left;margin-left: 32px;" />
 	</div>
 </div>
 
@@ -172,16 +172,17 @@
 	}
 
 	#header2 {
+		position: fixed;
+		bottom: 0;
+		left: 0;
 		transform: translateX(101vw);
-		background-color: #a52a2a;
-		border-right: 50vw solid #a52a2a;
-		border-left: $border-thickness solid #520c0c;
+		$header2-primary-col: #283018;
+		background-color: $header2-primary-col;
+		border-right: 50vw solid $header2-primary-col;
+		border-left: $border-thickness solid #141a09;
 		transition: $tf-duration ease-in;
 
 		@include sp {
-			position: fixed;
-			bottom: 0;
-			left: 0;
 			width: 100vw;
 			height: calc(100vh - $opened_header_height - $border-thickness + 2px);
 			z-index: 253;

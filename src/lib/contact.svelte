@@ -3,12 +3,25 @@
 	import { browser } from '$app/environment';
 	import { fly } from 'svelte/transition';
 	import { toggle_scroll_prevention } from '$lib/util.js';
+	import { socials, breakpoint } from '$lib/variables.js';
 
 	let is_contact_modal_visible = false;
+
+	/** @type {boolean} */
+	let is_hb_button_enabled;
 
 	if (browser) {
 		document.addEventListener('keydown', function (event) {
 			close_modal(event.key);
+		});
+
+		let bp = window.matchMedia(breakpoint);
+
+		is_hb_button_enabled = bp.matches;
+
+		window.addEventListener('resize', function () {
+			is_hb_button_enabled = bp.matches;
+			is_contact_modal_visible = false;
 		});
 	}
 
@@ -30,38 +43,40 @@
 	}
 </script>
 
-{#if is_contact_modal_visible}
-	<div id="contact-modal-back" on:click={toggle_contact_modal} on:keypress={() => {}} />
-	<div id="contact-modal" transition:fly={{ y: -64, duration: 240 }}>
-		<h1>- CONTACT US -</h1>
-		<span class="modal-close-btn" on:click={toggle_contact_modal} on:keypress={() => {}}>
-			&times;
-		</span>
-		<p>
-			<nobr>チームに関するお問い合わせはこちらからお願い致します。</nobr><br />
-			※返答までにお時間をいただく場合がございます。<br />
-			※お答えできない場合がございます。
-		</p>
-		<a
-			href="https://docs.google.com/forms/d/e/1FAIpQLSd9P3VCWiCrOpHAvsQpjwZBBLMlznJP4ZW-KWs7rzxXu1ZTMg/viewform"
-			id="mail-btn"
-			target="_blank"
-			rel="noopener noreferrer"
-			draggable="false">メールを送る</a
-		>
-	</div>
-{/if}
+{#if !is_hb_button_enabled}
+	{#if is_contact_modal_visible}
+		<div id="contact-modal-back" on:click={toggle_contact_modal} on:keypress={() => {}} />
+		<div id="contact-modal" transition:fly={{ y: -64, duration: 240 }}>
+			<h1>- CONTACT US -</h1>
+			<span class="modal-close-btn" on:click={toggle_contact_modal} on:keypress={() => {}}>
+				&times;
+			</span>
+			<p>
+				<nobr>チームに関するお問い合わせはこちらからお願い致します。</nobr><br />
+				※返答までにお時間をいただく場合がございます。<br />
+				※お答えできない場合がございます。
+			</p>
+			<a
+				href={socials.email}
+				id="mail-btn"
+				target="_blank"
+				rel="noopener noreferrer"
+				draggable="false">メールを送る</a
+			>
+		</div>
+	{/if}
 
-<li>
-	<a
-		href="/"
-		id="hd-contact"
-		on:click={(self) => {
-			self.preventDefault(); // fuck a-tag href
-			toggle_contact_modal();
-		}}>CONTACT</a
-	>
-</li>
+	<li>
+		<a
+			href="/"
+			id="hd-contact"
+			on:click={(self) => {
+				self.preventDefault(); // fuck a-tag href
+				toggle_contact_modal();
+			}}>CONTACT</a
+		>
+	</li>
+{/if}
 
 <style lang="scss">
 	@import './assets/stylesheets/header.scss';
