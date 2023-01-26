@@ -1,10 +1,11 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
-	import { copyright } from '$lib/variables.js';
+	import { copyright, socials } from '$lib/variables.js';
 	import { toggle_scroll_prevention } from '$lib/util.js';
 
 	import Contact from './contact.svelte';
 	import HbBtn from './hamburger_button.svelte';
+	import Socials from './socials.svelte';
 
 	let is_drawer_menu_opened = false;
 
@@ -46,7 +47,11 @@
 	</nav>
 </header>
 
-<div id="header2" class:open={is_drawer_menu_opened} />
+<div id="header2" class:open={is_drawer_menu_opened}>
+	<div>
+		<Socials style="justify-content: left;margin-left: 32px;" />
+	</div>
+</div>
 
 <style lang="scss">
 	@import '/assets/stylesheets/header.scss';
@@ -58,8 +63,9 @@
 		src: url('/fonts/Poppins/Poppins-Regular.ttf');
 	}
 
-	$opened_header_height: 75vh;
 	$border-thickness: 6px;
+	$tf-duration: 0.28s;
+	$opened_header_height: 75vh;
 
 	header {
 		$height: 88px;
@@ -79,7 +85,7 @@
 		font-weight: 600;
 		letter-spacing: -1px;
 		touch-action: none;
-		transition: 0.28s ease-in;
+		transition: $tf-duration ease-in;
 
 		img {
 			width: $logo-width;
@@ -146,7 +152,6 @@
 
 		&.open {
 			@include sp {
-
 				top: calc($opened_header_height - 100vh - $height);
 
 				img {
@@ -171,10 +176,7 @@
 		background-color: #a52a2a;
 		border-right: 50vw solid #a52a2a;
 		border-left: $border-thickness solid #520c0c;
-		transition: 0.28s ease-in;
-
-		@include pc {
-		}
+		transition: $tf-duration ease-in;
 
 		@include sp {
 			position: fixed;
@@ -186,7 +188,16 @@
 
 			&.open {
 				transform: none;
+
+				div {
+					transform: scale(1);
+					transition-delay: $tf-duration;
+				}
 			}
+		}
+
+		div {
+			transform: scale(0);
 		}
 	}
 </style>

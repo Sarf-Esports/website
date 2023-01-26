@@ -13,3 +13,14 @@ export const breakpoint = '(max-width: 850px)';
  * @constant {string} copyright
  */
 export const copyright = '© 2022 - 2023 REVATI';
+
+/**
+ * Social media links.
+ * 
+ * @constant {object} social
+ */
+export const socials = {
+    twitter: 'revati_jp',
+    youtube: '@revati_jp',
+    github: 'Sarf-Esports'
+};
