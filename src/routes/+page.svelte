@@ -247,11 +247,6 @@
 		}
 	}
 
-	// DEBUG
-	// #news {
-	// 	min-height: 50vh;
-	// }
-
 	#store {
 		.section-content {
 			img {
