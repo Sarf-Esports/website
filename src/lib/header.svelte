@@ -204,18 +204,24 @@
 	}
 
 	#header-bg {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		background-color: #000000a0;
-		transform: scale(0);
-		z-index: 252;
+		@include pc {
+			display: none;
+		}
 
-		&.visible {
-			transform: scale(1);
-			transition-delay: $tf-duration;
+		@include sp {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: #000000a0;
+			transform: scale(0);
+			z-index: 252;
+
+			&.visible {
+				transform: scale(1);
+				transition-delay: $tf-duration;
+			}
 		}
 	}
 </style>
