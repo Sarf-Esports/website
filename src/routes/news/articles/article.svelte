@@ -122,7 +122,9 @@
 			background-repeat: no-repeat;
 			background-position: 50%;
 			opacity: 0.2;
-			mask-image: linear-gradient(to bottom, black, transparent);
+			$mask: linear-gradient(to bottom, black, transparent);
+			mask-image: $mask;
+			-webkit-mask-image: $mask;
 		}
 
 		> a {
