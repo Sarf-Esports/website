@@ -65,18 +65,21 @@
 			>
 		</div>
 	{/if}
-
-	<li>
-		<a
-			href="/"
-			id="hd-contact"
-			on:click={(self) => {
-				self.preventDefault(); // fuck a-tag href
-				toggle_contact_modal();
-			}}>CONTACT</a
-		>
-	</li>
 {/if}
+
+<li>
+	<a
+		href={socials.email}
+		on:click={(self) => {
+			// Prevents href
+			if (!is_hb_button_enabled) self.preventDefault();
+
+			toggle_contact_modal();
+		}}
+		target="_blank"
+		rel="noopener noreferrer">CONTACT</a
+	>
+</li>
 
 <style lang="scss">
 	@import './assets/stylesheets/header.scss';

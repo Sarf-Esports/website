@@ -29,7 +29,6 @@
 			{#each items as item}<li>
 					<a
 						href="/#{item}"
-						id="hd-{item}"
 						on:click={() => {
 							toggle_drawer_menu(false);
 						}}>{item.toUpperCase()}</a
