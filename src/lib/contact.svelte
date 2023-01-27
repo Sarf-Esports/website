@@ -100,6 +100,7 @@
 		z-index: 255;
 		font-family: 'Zen Kaku Gothic Antique', sans-serif;
 		letter-spacing: initial;
+		border-radius: 8px;
 
 		h1 {
 			color: $modal-secondary-color;
@@ -123,6 +124,7 @@
 			font-weight: 900;
 			padding: 4px 10px;
 			user-select: none;
+			border-radius: 4px;
 			transition: 0.3s;
 		}
 

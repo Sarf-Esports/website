@@ -252,6 +252,7 @@
 			img {
 				max-width: 86%;
 				border: 4px solid #f8ffb5;
+				border-radius: 4px;
 				transition: 0.18s;
 			}
 			img:hover {
@@ -270,7 +271,8 @@
 			font-weight: 900;
 			padding: 16px;
 			border: 4px solid $primary-color;
-			transition: 0.4s;
+			border-radius: 6px;
+			transition: 0.3s;
 		}
 
 		$btn-shadow-col: #658111;
