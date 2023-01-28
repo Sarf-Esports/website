@@ -44,7 +44,7 @@ export let member_lists = [
             },
             {
                 "name": "さっさ",
-                "icon": "sassa.png",
+                "icon": "sassa.webp",
                 "twitter": "sassa_FN",
                 "youtube": "@user-kr5gz2li1y",
                 "twitch": null
@@ -58,14 +58,14 @@ export let member_lists = [
             },
             {
                 "name": "ぺな",
-                "icon": "pena.png",
+                "icon": "pena.webp",
                 "twitter": "Penaclip",
                 "youtube": null,
                 "twitch": null
             },
             {
                 "name": "ぼひ",
-                "icon": "bohi.png",
+                "icon": "bohi.webp",
                 "twitter": "WilyGuysBohi",
                 "youtube": "@user-yf4gf8qw8s",
                 "twitch": null
@@ -76,35 +76,35 @@ export let member_lists = [
         "kind": "apex",
         "list": [{
             "name": "K0xh",
-            "icon": "k0xh.png",
+            "icon": "k0xh.webp",
             "twitter": "Lilx_zZc",
             "youtube": "@k0uh862",
             "twitch": "k0xh_"
         },
         {
             "name": "Pear",
-            "icon": "pear.png",
+            "icon": "pear.webp",
             "twitter": "pear_fps",
             "youtube": null,
             "twitch": "pear_fps"
         },
         {
             "name": "キムにぃ",
-            "icon": "kimunii.png",
+            "icon": "kimunii.webp",
             "twitter": "kimunii017",
             "youtube": null,
             "twitch": "kimunii0119"
         },
         {
             "name": "シロラ",
-            "icon": "sirora.png",
+            "icon": "sirora.webp",
             "twitter": "sirora_46pq",
             "youtube": null,
             "twitch": "sirora_46pq"
         },
         {
             "name": "変なお兄さん",
-            "icon": "henna_onisan.png",
+            "icon": "henna_onisan.webp",
             "twitter": "hennaOnisaN6",
             "youtube": null,
             "twitch": "jp_hennaonisan "
@@ -114,49 +114,49 @@ export let member_lists = [
         "kind": "minecraft",
         "list": [{
             "name": "GEN3987",
-            "icon": "gen.png",
+            "icon": "gen.webp",
             "twitter": "GEN3987",
             "youtube": "@GEN3987",
             "twitch": "gen3987"
         },
         {
             "name": "RetoRuto9900K",
-            "icon": "retoruto.png",
+            "icon": "retoruto.webp",
             "twitter": "tutinoko_kusaa",
             "youtube": "@reto9900k",
             "twitch": null
         },
         {
             "name": "Rinrin.rs",
-            "icon": "rinrin.png",
+            "icon": "rinrin.webp",
             "twitter": "Rinrin_2nd",
             "youtube": "@rinrin-rs",
             "twitch": "rinrin0413"
         },
         {
             "name": "がすたー",
-            "icon": "gaster.png",
+            "icon": "gaster.webp",
             "twitter": "Gaster_EX",
             "youtube": "@gaster_ch1425",
             "twitch": null
         },
         {
             "name": "バード",
-            "icon": "bird.png",
+            "icon": "bird.webp",
             "twitter": "bird132297",
             "youtube": "@-bird-bird-bird-",
             "twitch": null
         },
         {
             "name": "リョウマ",
-            "icon": "ryoma.png",
+            "icon": "ryoma.webp",
             "twitter": "Ryoma_Gaming_MC",
             "youtube": "@RyomaGaming_MC",
             "twitch": null
         },
         {
             "name": "ルイル",
-            "icon": "ruilu.png",
+            "icon": "ruilu.webp",
             "twitter": "Ruilu_Adora",
             "youtube": "@Ruilu_Adora",
             "twitch": null
@@ -166,14 +166,14 @@ export let member_lists = [
         "kind": "streamer",
         "list": [{
             "name": "らいふれっくす",
-            "icon": "lifelex.png",
+            "icon": "lifelex.webp",
             "twitter": "Lifelex57",
             "youtube": "@Lifelex",
             "twitch": null
         },
         {
             "name": "りあ",
-            "icon": "ria.png",
+            "icon": "ria.webp",
             "twitter": "Ria1fn",
             "youtube": "@Ria1fn",
             "twitch": null

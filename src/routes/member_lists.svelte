@@ -22,7 +22,7 @@
 					<li class="reveal-anim-con">
 						<div class="reveal-anim-item">
 							<img
-								src="/images/members/{icon == null ? 'noimage.png' : icon}"
+								src="/images/members/{icon == null ? 'noimage.webp' : icon}"
 								alt="member icon"
 								loading="lazy"
 							/>

@@ -116,7 +116,7 @@
 		<section id="store">
 			<SectionTitle name="store" />
 			<div class="section-content">
-				<img src="/images/store_thumbnail.png" alt="store thumbnail" loading="lazy" />
+				<img src="/images/store_thumbnail.webp" alt="store thumbnail" loading="lazy" />
 				<a
 					href="https://suzuri.jp/REVATI"
 					class="go-to-store"
