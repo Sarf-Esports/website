@@ -1,6 +1,7 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
 	import Header from '$lib/header.svelte';
+	import LinkIcon from '$lib/link_icon.svelte';
 	import Footer from '$lib/footer.svelte';
 
 	const head = { title: '404 Not Found' };
@@ -19,7 +20,10 @@
 			<p>
 				申し訳御座いません。誠に遺憾。<br />
 				お探しのページは見つかりませんでした。<br />
-				<a href="/">トップページへ戻る<i class="bi bi-box-arrow-up-right" /></a>
+				<a href="/"
+					>トップページへ戻る
+					<LinkIcon size="18px" />
+				</a>
 			</p>
 		</div>
 	</div>
@@ -30,8 +34,6 @@
 <style lang="scss">
 	@import '/assets/stylesheets/variables.scss';
 	@import '/assets/stylesheets/mixins.scss';
-
-	@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css');
 
 	main {
 		text-align: center;

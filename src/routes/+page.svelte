@@ -8,6 +8,7 @@
 	import SectionTitle from './section_title.svelte';
 	import NewsSlider from './news_slider.svelte';
 	import MemberLists from './member_lists.svelte';
+	import LinkIcon from '$lib/link_icon.svelte';
 	import Footer from '$lib/footer.svelte';
 
 	if (browser) {
@@ -122,8 +123,10 @@
 					class="go-to-store"
 					target="_blank"
 					rel="noopener noreferrer"
-					draggable="false">お買い求めはこちら<i class="bi bi-box-arrow-up-right" /></a
-				>
+					draggable="false"
+					>お買い求めはこちら
+					<LinkIcon size="20px" />
+				</a>
 			</div>
 		</section>
 	</div>
@@ -146,8 +149,6 @@
 	@import '/assets/stylesheets/reveal_anim.scss';
 	@import '/assets/stylesheets/style.scss';
 	@import '/assets/stylesheets/mixins.scss';
-
-	@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css');
 
 	#op-container {
 		display: block;
@@ -183,7 +184,7 @@
 		}
 
 		@include sp {
-			height:128vw;
+			height: 128vw;
 			background-size: 256vw;
 		}
 	}
@@ -273,20 +274,20 @@
 			border: 4px solid $primary-color;
 			border-radius: 6px;
 			transition: 0.3s;
-		}
 
-		$btn-shadow-col: #658111;
+			$btn-shadow-col: #658111;
 
-		.go-to-store:hover,
-		.go-to-store:active {
-			background-color: $primary-color;
-			color: #1d1d1d;
-			box-shadow: 0 12px 0 $btn-shadow-col;
-		}
+			&:hover,
+			&:active {
+				background-color: $primary-color;
+				color: #1d1d1d;
+				box-shadow: 0 12px 0 $btn-shadow-col;
+			}
 
-		.go-to-store:active {
-			box-shadow: 0 3px 0 $btn-shadow-col;
-			transform: translateY(9px);
+			&:active {
+				box-shadow: 0 3px 0 $btn-shadow-col;
+				transform: translateY(9px);
+			}
 		}
 	}
 </style>
