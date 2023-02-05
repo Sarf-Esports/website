@@ -38,7 +38,7 @@
 	@import '/assets/stylesheets/style.scss';
 	@import '/assets/stylesheets/util.scss';
 
-    p {
+    #news p {
         font-size: 24px;
         margin-bottom: 48px;
     }    

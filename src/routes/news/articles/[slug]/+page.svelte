@@ -61,7 +61,7 @@
 	</div>
 </main>
 
-<style lang="scss">
+<style lang="scss" global>
 	@import '/assets/stylesheets/variables.scss';
 	@import '/assets/stylesheets/mixins.scss';
     @import '/assets/stylesheets/style.scss';
@@ -118,7 +118,7 @@
 				margin: 32px auto 0 auto;
 				padding: 0 20px;
 				text-align: left;
-				font-size: 18px;
+				font-size: 19px;
 				letter-spacing: 1.2px;
 			}
 
