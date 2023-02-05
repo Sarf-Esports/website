@@ -1,8 +1,6 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
-	import Header from '$lib/header.svelte';
 	import LinkIcon from '$lib/link_icon.svelte';
-	import Footer from '$lib/footer.svelte';
 
 	const head = { title: '404 Not Found' };
 </script>
@@ -10,8 +8,6 @@
 <svelte:head>
 	<title>REVATI | {head.title}</title>
 </svelte:head>
-
-<Header />
 
 <main>
 	<div>
@@ -28,8 +24,6 @@
 		</div>
 	</div>
 </main>
-
-<Footer />
 
 <style lang="scss">
 	@import '/assets/stylesheets/variables.scss';

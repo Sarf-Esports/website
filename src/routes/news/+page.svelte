@@ -1,9 +1,7 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
-	import Header from '$lib/header.svelte';
 	import SectionTitle from '../section_title.svelte';
 	import NewsSlider from '../news_slider.svelte';
-	import Footer from '$lib/footer.svelte';
 
 	const head = {
 		title: 'REVATI | NEWS',
@@ -23,8 +21,6 @@
 	<meta property="og:type" content="article" />
 </svelte:head>
 
-<Header />
-
 <main>
 	<div class="container">
 		<section id="news">
@@ -36,8 +32,6 @@
 		</section>
 	</div>
 </main>
-
-<Footer />
 
 <style lang="scss" global>
     @import '/assets/stylesheets/variables.scss';

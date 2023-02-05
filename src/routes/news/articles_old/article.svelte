@@ -3,9 +3,6 @@
 	import { news_list } from '$lib/data/news.js';
 	import { fmt_date } from '$lib/util.js';
 
-	import Header from '$lib/header.svelte';
-	import Footer from '$lib/footer.svelte';
-
 	/** @type {string} */
 	export let date;
 
@@ -30,8 +27,6 @@
 	<meta property="og:type" content="article" />
 </svelte:head>
 
-<Header />
-
 <main>
 	<div class="container">
 		<div id="bg" style={`background-image: url(${img_path});`} />
@@ -40,7 +35,9 @@
 			<h1>{title}</h1>
 			<h2>{fmt_date(date)}</h2>
 			<hr />
-			<p>{@html text}</p>
+			<article>
+				{@html text}
+			</article>
 		</div>
 	</div>
 	<a href="/news"
@@ -48,7 +45,7 @@
 		<!-- 
 			Bootstrap Icons - Box arrow in down left
 			https://icons.getbootstrap.com/icons/box-arrow-in-down-left
-		
+			
 			Copyright (c) 2019 The Bootstrap Authors
 			under the MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md
 		-->
@@ -72,8 +69,6 @@
 	>
 </main>
 
-<Footer />
-
 <style lang="scss">
 	@import '/assets/stylesheets/variables.scss';
 	@import '/assets/stylesheets/mixins.scss';
@@ -94,7 +89,7 @@
 				border-radius: 4px;
 			}
 
-			h1 {
+			> h1 {
 				font-weight: 900;
 				padding: 0 26px;
 
@@ -107,7 +102,7 @@
 				}
 			}
 
-			h2 {
+			> h2 {
 				display: inline-block;
 				font-weight: 100;
 				letter-spacing: 2px;
@@ -125,7 +120,7 @@
 				}
 			}
 
-			p {
+			> article {
 				max-width: 512px;
 				margin: 32px auto 0 auto;
 				padding: 0 20px;

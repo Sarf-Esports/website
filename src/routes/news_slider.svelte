@@ -29,7 +29,7 @@
 
 	let slider_index = 0;
 	let slider_index_prev = 0;
-	let slider_len = news_list.filter((n) => !n.is_hidden).length;
+	let slider_len = news_list.filter((n) => n.published).length;
 
 	/** @param {MouseEvent & { currentTarget: EventTarget & HTMLButtonElement; }} btn */
 	function news_prev(btn) {
@@ -133,8 +133,8 @@
 	id="arrow-right">&gt</button
 >
 <ul id="news-slider">
-	{#each news_list as { is_hidden, date, title }, i}
-		{#if !is_hidden}
+	{#each news_list as { published, date, title }, i}
+		{#if published}
 			<li
 				class="{i == -1
 					? 'left-item'

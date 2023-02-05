@@ -5,8 +5,8 @@
 // 追加するときは以下のフォーマットで追加してください:
 // 
 // {
-//     // true にすると非表示になります
-//     is_hidden: false,
+//     // false にすると非表示になります
+//     published: true,
 // 
 //     // 日付は YYYYMMDD の形式で入力してください。同じ日に複数追加するときは日付の末尾でナンバリングしてください。
 //     date: '20221128', 
@@ -18,41 +18,41 @@
 // また、`/assets/images/news/`配下に上記の `date` と同じ名前でサムネイル画像を追加してください。
 // 詳しくは `/assets/images/news/README.md` を参照してください。
 // 
-// 本文は `/src/routes/news/article/[date]/+page.svelte` に記載してください。
+// 本文は `/src/routes/news/article/{date}.svelte` に記載してください。
 
 export let news_list = [
     {
-        is_hidden: false,
+        published: true,
         date: '202301212',
         title: '計5名のメンバーが新たに加入'
     },
     {
-        is_hidden: false,
+        published: true,
         date: '20230121',
         title: 'Sarf Esports リブランディングのお知らせ'
     },
     {
-        is_hidden: true,
+        published: false,
         date: '20221128',
         title: 'パンケーキによる侵攻状況'
     },
     {
-        is_hidden: true,
+        published: false,
         date: '202211262',
         title: 'パンケーキ襲来'
     },
     {
-        is_hidden: true,
+        published: false,
         date: '202211261',
         title: 'Rinrin氏、シェーダーの壊滅に遺憾の意を表明'
     },
     {
-        is_hidden: true,
+        published: false,
         date: '20221126',
         title: 'ﾃﾞｪｪｪｪｪｪｪｪｪﾝ'
     },
     {
-        is_hidden: true,
+        published: false,
         date: '20221103',
         title: '当局により検閲されました。'
     }

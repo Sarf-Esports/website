@@ -4,12 +4,10 @@
 
 	import { add_class_at_scroll } from '$lib/util';
 
-	import Header from '$lib/header.svelte';
 	import SectionTitle from './section_title.svelte';
 	import NewsSlider from './news_slider.svelte';
 	import MemberLists from './member_lists.svelte';
 	import LinkIcon from '$lib/link_icon.svelte';
-	import Footer from '$lib/footer.svelte';
 
 	if (browser) {
 		window.addEventListener('scroll', function () {
@@ -61,8 +59,6 @@
 	<meta property="og:image" content="https://revati.jp/images/logos/revati_large.png" />
 	<meta property="og:type" content="website" />
 </svelte:head>
-
-<Header />
 
 <main>
 	<div class="container">
@@ -140,8 +136,6 @@
 		</section>
 	</div>
 </main>
-
-<Footer />
 
 <style lang="scss" global>
 	@import '/assets/stylesheets/util.scss';

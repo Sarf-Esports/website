@@ -73,7 +73,6 @@
 		on:click={(self) => {
 			// Prevents href
 			if (!is_hb_button_enabled) self.preventDefault();
-
 			toggle_contact_modal();
 		}}
 		target="_blank"
