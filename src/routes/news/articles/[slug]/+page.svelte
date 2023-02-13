@@ -216,7 +216,8 @@
 					color: white;
 				}
 
-				sub, sup {
+				sub,
+				sup {
 					font-size: 12px;
 				}
 			}

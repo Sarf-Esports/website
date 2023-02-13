@@ -25,21 +25,19 @@
 	<div class="container">
 		<section id="news">
 			<SectionTitle name="news" />
-            <p>
-                REVATIの最新情報をお届けします:
-            </p>
+			<p>REVATIの最新情報をお届けします:</p>
 			<div class="section-content"><NewsSlider /></div>
 		</section>
 	</div>
 </main>
 
 <style lang="scss" global>
-    @import '/assets/stylesheets/variables.scss';
+	@import '/assets/stylesheets/variables.scss';
 	@import '/assets/stylesheets/style.scss';
 	@import '/assets/stylesheets/util.scss';
 
-    #news p {
-        font-size: 24px;
-        margin-bottom: 48px;
-    }    
+	#news p {
+		font-size: 24px;
+		margin-bottom: 48px;
+	}
 </style>

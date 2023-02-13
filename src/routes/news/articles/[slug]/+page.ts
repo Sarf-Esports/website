@@ -10,7 +10,7 @@ export const load: PageLoad = async ({ params }) => {
 			metadata: frontmatter
 		} = await import(`../${params.slug}.md`);
 		return { component, frontmatter }
-		
+
 	} catch {
 		throw error(404, 'This article is not found');
 	}
