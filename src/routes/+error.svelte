@@ -1,6 +1,6 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
-	import LinkIcon from '$lib/link_icon.svelte';
+	import LinkIcon from '$lib/components/link_icon.svelte';
 
 	const head = { title: '404 Not Found' };
 </script>

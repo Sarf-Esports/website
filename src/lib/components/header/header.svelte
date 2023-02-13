@@ -5,7 +5,7 @@
 
 	import Contact from './contact.svelte';
 	import HbBtn from './hamburger_button.svelte';
-	import Socials from './socials.svelte';
+	import Socials from '../socials.svelte';
 
 	let is_drawer_menu_opened = false;
 

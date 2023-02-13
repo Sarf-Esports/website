@@ -2,8 +2,8 @@
 <script lang="ts">
 	import { copyright } from '$lib/variables.js';
 
-	import Header from '$lib/header.svelte';
-	import Footer from '$lib/footer.svelte';
+	import Header from '$lib/components/header/header.svelte';
+	import Footer from '$lib/components/footer.svelte';
 </script>
 
 <svelte:head>
