@@ -1,6 +1,6 @@
 # やることりすと
 
 - 総書記による御挨拶
-- package.lock.json をリモートリポジトリに含めると Cloudflare Pages でおかしくなる原因を調査
+- package-lock.json をリモートリポジトリに含めると Cloudflare Pages でおかしくなる原因を調査
 
 - このリポジトリで `TODO:` で検索するといくつか細かい TODO もあると思うので参照
