@@ -1,6 +1,6 @@
 <!-- © 2022 - 2023 REVATI -->
-<script lang="ts">
-	import { copyright } from '$lib/variables.js';
+<script>
+	import { copyright } from '$lib/variables';
 
 	import Header from '$lib/components/header/header.svelte';
 	import Footer from '$lib/components/footer.svelte';

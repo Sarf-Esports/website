@@ -1,7 +1,6 @@
 <!-- © 2022 - 2023 REVATI -->
-<script>
-	/** @type {string} */
-	export let size;
+<script lang="ts">
+	export let size: string;
 </script>
 
 <!-- 

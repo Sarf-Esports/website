@@ -1,7 +1,7 @@
 <!-- © 2022 - 2023 REVATI -->
-<script>
-	import { copyright } from '$lib/variables.js';
-	import { toggle_scroll_prevention } from '$lib/util.js';
+<script lang="ts">
+	import { copyright } from '$lib/variables';
+	import { toggle_scroll_prevention } from '$lib/util';
 
 	import Contact from './contact.svelte';
 	import HbBtn from './hamburger_button.svelte';
@@ -11,12 +11,8 @@
 
 	let items = ['about', 'news', 'teams', 'store', 'sponsor'];
 
-	/**
-	 * Toggles drawer menu open/close.
-	 *
-	 * @param {boolean} open
-	 */
-	function toggle_drawer_menu(open) {
+	/** Toggles drawer menu open/close. */
+	function toggle_drawer_menu(open: boolean) {
 		is_drawer_menu_opened = open;
 		toggle_scroll_prevention(is_drawer_menu_opened);
 	}

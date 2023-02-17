@@ -1,13 +1,12 @@
 <!-- © 2022 - 2023 REVATI -->
-<script>
+<script lang="ts">
 	import { browser } from '$app/environment';
 	import { fly, scale } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
-	import { breakpoint } from '$lib/variables.js';
-	import { toggle_scroll_prevention } from '$lib/util.js';
+	import { breakpoint } from '$lib/variables';
+	import { toggle_scroll_prevention } from '$lib/util';
 
-	/** @type {boolean} */
-	let is_hb_button_enabled;
+	let is_hb_button_enabled: boolean;
 
 	if (browser) {
 		let bp = window.matchMedia(breakpoint);
@@ -20,8 +19,7 @@
 		});
 	}
 
-	/** @type {boolean} */
-	export let is_opened;
+	export let is_opened: boolean;
 
 	const dispatch = createEventDispatcher();
 

@@ -1,10 +1,7 @@
 <!-- © 2022 - 2023 REVATI -->
-<script>
-	/**
-	 * Name of the section.
-	 * @type {string}
-	 */
-	export let name;
+<script lang="ts">
+	/** Name of the section. */
+	export let name: string;
 </script>
 
 <img src="/images/{name}.svg" alt={name} />

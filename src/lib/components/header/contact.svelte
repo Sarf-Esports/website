@@ -1,14 +1,13 @@
 <!-- © 2022 - 2023 REVATI -->
-<script>
+<script lang="ts">
 	import { browser } from '$app/environment';
 	import { fly } from 'svelte/transition';
-	import { toggle_scroll_prevention } from '$lib/util.js';
-	import { socials, breakpoint } from '$lib/variables.js';
+	import { toggle_scroll_prevention } from '$lib/util';
+	import { socials, breakpoint } from '$lib/variables';
 
 	let is_contact_modal_visible = false;
 
-	/** @type {boolean} */
-	let is_hb_button_enabled;
+	let is_hb_button_enabled: boolean;
 
 	if (browser) {
 		document.addEventListener('keydown', function (event) {
@@ -25,18 +24,13 @@
 		});
 	}
 
-	/**
-	 * Toggles the visibility of the contact modal.
-	 */
+	/** Toggles the visibility of the contact modal. */
 	function toggle_contact_modal() {
 		is_contact_modal_visible = !is_contact_modal_visible;
 		toggle_scroll_prevention(is_contact_modal_visible);
 	}
 
-	/**
-	 * @param {string} key
-	 */
-	function close_modal(key) {
+	function close_modal(key: string) {
 		if (key == 'Escape' && is_contact_modal_visible) {
 			toggle_contact_modal();
 		}

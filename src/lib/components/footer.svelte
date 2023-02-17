@@ -1,6 +1,6 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
-	import { copyright } from '$lib/variables.js';
+	import { copyright } from '$lib/variables';
 
 	import Socials from './socials.svelte';
 </script>

@@ -1,6 +1,6 @@
 <!-- © 2022 - 2023 REVATI -->
 <script lang="ts">
-	import { fmt_date } from '$lib/util.js';
+	import { fmt_date } from '$lib/util';
 
 	import type { PageData } from './$types';
 

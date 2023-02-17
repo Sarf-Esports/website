@@ -3,9 +3,6 @@
 /**
  * Adds a class to an element when it is scrolled into view.
  * 
- * @param {HTMLCollectionOf<Element>} elms
- * @param {string} cls
- * 
  * # Example:
  * 
  * ```js
@@ -14,7 +11,7 @@
  * };
  * ```
  */
-export function add_class_at_scroll(elms, cls) {
+export function add_class_at_scroll(elms: HTMLCollectionOf<Element>, cls: string) {
     [...elms].forEach((e) => {
         if (e.getBoundingClientRect().top < window.innerHeight) {
             e.classList.add(cls)
@@ -25,12 +22,10 @@ export function add_class_at_scroll(elms, cls) {
 /**
  * Element shaker.
  * 
- * @param {HTMLElement} elm
- * 
  * # Dependencies:
  * - `/stylesheets/util.scss`
  */
-export function shake(elm) {
+export function shake(elm: HTMLElement) {
     elm.classList.add("shake");
     setTimeout(function () {
         elm.classList.remove("shake");
@@ -40,20 +35,17 @@ export function shake(elm) {
 /**
  * Converts a string to camel case.
  * 
- * @param {string} str String to convert.
  * @returns {string} Converted string.
  */
-export function word_to_camel_case(str) {
+export function word_to_camel_case(str: string) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 
 /**
  * Returns a formatted date string.
- * 
- * @param {string} date
  */
-export function fmt_date(date) {
+export function fmt_date(date: string) {
     const y = date.slice(0, 4);
     const m = date.slice(4, 6).replace(/^0+/, '');
     const d = date.slice(6, 8).replace(/^0+/, '');
@@ -63,12 +55,10 @@ export function fmt_date(date) {
 /**
  * Toggles body scroll prevention.
  * 
- * @param {boolean} prevent
- * 
  * # Dependencies:
  * - `/stylesheets/util.scss` (body.prevent-scroll)
 */
-export function toggle_scroll_prevention(prevent) {
+export function toggle_scroll_prevention(prevent: boolean) {
     let c = "prevent-scroll";
     let body = document.getElementsByTagName('body')[0].classList;
     if (prevent) {

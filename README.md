@@ -16,7 +16,7 @@
 - [仕様書(雑)](./docs/SPECIFICATION.md)
 
 * [ニュース記事の追加方法](./docs/ADDING_NEWS.md)
-* [メンバーのリスト判定への追加](./src/lib/data/members.js)
+* [メンバーのリスト判定への追加](./src/lib/data/members.ts)
 
 ---
 

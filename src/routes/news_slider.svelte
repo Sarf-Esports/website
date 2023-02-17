@@ -1,8 +1,8 @@
 <!-- © 2022 - 2023 REVATI -->
-<script>
+<script lang="ts">
 	import { browser } from '$app/environment';
-	import { news_list } from '$lib/data/news.js';
-	import { shake, fmt_date } from '$lib/util.js';
+	import { news_list } from '$lib/data/news';
+	import { shake, fmt_date } from '$lib/util';
 	import { fly } from 'svelte/transition';
 
 	let is_touch_device = false;
@@ -31,8 +31,7 @@
 	let slider_index_prev = 0;
 	let slider_len = news_list.filter((n) => n.published).length;
 
-	/** @param {MouseEvent & { currentTarget: EventTarget & HTMLButtonElement; }} btn */
-	function news_prev(btn) {
+	function news_prev(btn: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) {
 		slider_index_prev = slider_index;
 
 		// @ts-ignore
@@ -48,8 +47,7 @@
 		}
 	}
 
-	/** @param {MouseEvent & { currentTarget: EventTarget & HTMLButtonElement; }} btn*/
-	function news_next(btn) {
+	function news_next(btn: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) {
 		slider_index_prev = slider_index;
 
 		// @ts-ignore
@@ -65,8 +63,7 @@
 		}
 	}
 
-	/** @param {{ children: { classList: any; }[]; }} btn_parent */
-	function apply_news(btn_parent) {
+	function apply_news(btn_parent: { children: { classList: any }[] }) {
 		// @ts-ignore
 		let news = btn_parent.children[2].children;
 		let allow_left = btn_parent.children[0].classList;

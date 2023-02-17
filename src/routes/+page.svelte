@@ -1,5 +1,5 @@
 <!-- © 2022 - 2023 REVATI -->
-<script>
+<script lang="ts">
 	import { browser } from '$app/environment';
 
 	import { add_class_at_scroll } from '$lib/util';
@@ -22,16 +22,11 @@
 		});
 	}
 
-	/** @type {HTMLDivElement} */
-	let op_container;
+	let op_container: HTMLDivElement;
 
-	/**
-	 * Loops playback the OP video at intervals.
-	 * @param {Event & { currentTarget: EventTarget & HTMLVideoElement; }} video
-	 */
-	function op_loop(video) {
+	/** Loops playback the OP video at intervals. */
+	function op_loop(video: Event & { currentTarget: EventTarget & HTMLVideoElement }) {
 		let v = video.currentTarget;
-		// @ts-ignore
 		let container = op_container.classList;
 		container.remove('is-playing');
 		v.classList.add('invisible');

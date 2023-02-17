@@ -1,20 +1,12 @@
 <!-- © 2022 - 2023 REVATI -->
-<script>
-	import { socials } from '$lib/variables.js';
+<script lang="ts">
+	import { socials } from '$lib/variables';
 
-	/**
-	 * Inline styles.
-	 *
-	 * @type {string}
-	 */
-	export let style = '';
+	/** Inline styles. */
+	export let style: string = '';
 
-	/**
-	 * Whether to show the link to email.
-	 *
-	 * @type {boolean}
-	 */
-	export let show_email = false;
+	/** Whether to show the link to email. */
+	export let show_email: boolean = false;
 </script>
 
 <ul {style}>
