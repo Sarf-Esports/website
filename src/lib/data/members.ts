@@ -43,13 +43,6 @@ export let member_lists = [
                 "twitch": null
             },
             {
-                "name": "さっさ",
-                "icon": "sassa.webp",
-                "twitter": "sassa_FN",
-                "youtube": "@user-kr5gz2li1y",
-                "twitch": null
-            },
-            {
                 "name": "のあ",
                 "icon": null,
                 "twitter": "NOAHhhhhh156",
