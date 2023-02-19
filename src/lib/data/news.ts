@@ -24,6 +24,11 @@
 export let news_list = [
     {
         published: true,
+        date: '20230220',
+        title: '1名のメンバーが脱退'
+    },
+    {
+        published: true,
         date: '202301212',
         title: '計5名のメンバーが新たに加入'
     },
