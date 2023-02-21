@@ -17,7 +17,7 @@
 	fill="currentColor"
 	class="bi bi-box-arrow-up-right"
 	viewBox="0 0 16 16"
-    style={`width:${size}; height:auto;`}
+	style={`width:${size}; height:auto;`}
 >
 	<path
 		fill-rule="evenodd"

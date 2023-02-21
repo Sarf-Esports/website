@@ -1,42 +1,42 @@
 // © 2022 - 2023 REVATI
 
 .container {
-    width: 100%;
-    background-color: $secondary-color;
+	width: 100%;
+	background-color: $secondary-color;
 }
 
 .container::before {
-    content: '';
-    display: block;
-    padding-top: 64px;
+	content: '';
+	display: block;
+	padding-top: 64px;
 }
 
 .container::after {
-    content: '';
-    display: block;
-    padding-top: 86px;
+	content: '';
+	display: block;
+	padding-top: 86px;
 }
 
 section {
-    max-width: 768px;
-    margin: 0 auto;
-    display: block;
-    padding-top: $scroll-offset;
-    margin-top: -$scroll-offset;
-    padding-left: 16px;
-    padding-right: 16px;
+	max-width: 768px;
+	margin: 0 auto;
+	display: block;
+	padding-top: $scroll-offset;
+	margin-top: -$scroll-offset;
+	padding-left: 16px;
+	padding-right: 16px;
 
-    .section-content {
-        margin: 16px 0;
+	.section-content {
+		margin: 16px 0;
 
-        p {
-            text-align: left;
-            max-width: 576px;
-            font-size: 22px;
-            margin: 0 auto;
-            font-weight: 1;
-            letter-spacing: 0.075em;
-            line-height: 1.5;
-        }
-    }
+		p {
+			text-align: left;
+			max-width: 576px;
+			font-size: 22px;
+			margin: 0 auto;
+			font-weight: 1;
+			letter-spacing: 0.075em;
+			line-height: 1.5;
+		}
+	}
 }

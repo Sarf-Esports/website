@@ -1,74 +1,74 @@
 // © 2022 - 2023 REVATI
 
 #team-list {
-    list-style: none;
-    padding-left: 0;
+	list-style: none;
+	padding-left: 0;
 
-    h2 {
-        text-align: left;
-        font-size: 28px;
-        border-bottom: 2px solid white;
-        width: 94%;
-    }
+	h2 {
+		text-align: left;
+		font-size: 28px;
+		border-bottom: 2px solid white;
+		width: 94%;
+	}
 
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0;
-        margin: 0 auto;
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0;
+		margin: 0 auto;
 
-        li {
-            align-items: center;
-            margin: 8px 6px;
-            width: 138px;
-            height: 224px;
-            background-color: #e6e6e6;
-            list-style: none;
-            border-radius: 4px;
-            border: 4px solid #c0c0c0;
-            color: #3a490c;
-            font-weight: 900;
+		li {
+			align-items: center;
+			margin: 8px 6px;
+			width: 138px;
+			height: 224px;
+			background-color: #e6e6e6;
+			list-style: none;
+			border-radius: 4px;
+			border: 4px solid #c0c0c0;
+			color: #3a490c;
+			font-weight: 900;
 
-            div {
-                >img {
-                    width: 86px;
-                    height: 86px;
-                    border-radius: 50%;
-                    margin: 20px auto;
-                    border: 4px solid #c0c0c0;
-                    pointer-events: none;
-                    user-select: none;
-                }
+			div {
+				> img {
+					width: 86px;
+					height: 86px;
+					border-radius: 50%;
+					margin: 20px auto;
+					border: 4px solid #c0c0c0;
+					pointer-events: none;
+					user-select: none;
+				}
 
-                h3 {
-                    font-size: 18px;
-                    margin-top: -16px;
-                }
+				h3 {
+					font-size: 18px;
+					margin-top: -16px;
+				}
 
-                .member-twitter img {
-                    height: 26px;
-                    transform: translateY(2px);
-                }
+				.member-twitter img {
+					height: 26px;
+					transform: translateY(2px);
+				}
 
-                .member-youtube img {
-                    height: 24px;
-                }
+				.member-youtube img {
+					height: 24px;
+				}
 
-                .member-twitch img {
-                    height: 30px;
-                    transform: translateY(4px);
-                }
+				.member-twitch img {
+					height: 30px;
+					transform: translateY(4px);
+				}
 
-                a {
-                    text-decoration: none;
-                    margin: 0 4px;
-                }
+				a {
+					text-decoration: none;
+					margin: 0 4px;
+				}
 
-                a img {
-                    user-select: none;
-                }
-            }
-        }
-    }
+				a img {
+					user-select: none;
+				}
+			}
+		}
+	}
 }

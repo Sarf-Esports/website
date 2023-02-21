@@ -1,3 +1,3 @@
 export default {
-    extensions: [".svelte", ".md"]
+	extensions: ['.svelte', '.md']
 };

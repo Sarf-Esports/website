@@ -1,8 +1,8 @@
 /* © 2022 - 2023 REVATI */
 
 @font-face {
-	font-family: "Zen Kaku Gothic Antique";
-	src: url("../fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Regular.ttf");
+	font-family: 'Zen Kaku Gothic Antique';
+	src: url('../fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Regular.ttf');
 }
 
 * {
@@ -11,7 +11,7 @@
 
 html {
 	scroll-behavior: smooth;
-	font-family: "Zen Kaku Gothic Antique", sans-serif;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
 body {
