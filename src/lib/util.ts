@@ -32,18 +32,12 @@ export function shake(elm: HTMLElement) {
 	}, 1000);
 }
 
-/**
- * Converts a string to camel case.
- *
- * @returns {string} Converted string.
- */
+/** Converts a string to camel case. */
 export function word_to_camel_case(str: string) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-/**
- * Returns a formatted date string.
- */
+/** Returns a formatted date string. */
 export function fmt_date(date: string) {
 	const y = date.slice(0, 4);
 	const m = date.slice(4, 6).replace(/^0+/, '');

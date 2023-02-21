@@ -29,7 +29,7 @@
 {#if is_hb_button_enabled}
 	<button
 		class:is-opened={is_opened}
-		on:click={(self) => {
+		on:click={() => {
 			is_opened = !is_opened;
 			dispatch('toggle', { is_opened });
 		}}
