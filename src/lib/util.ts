@@ -52,8 +52,8 @@ export function fmt_date(date: string) {
  * - `/stylesheets/util.scss` (body.prevent-scroll)
  */
 export function toggle_scroll_prevention(prevent: boolean) {
-	let c = 'prevent-scroll';
-	let body = document.getElementsByTagName('body')[0].classList;
+	const c = 'prevent-scroll';
+	const body = document.getElementsByTagName('body')[0].classList;
 	if (prevent) {
 		body.add(c);
 	} else {

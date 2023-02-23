@@ -3,10 +3,10 @@
 	import { socials } from '$lib/variables';
 
 	/** Inline styles. */
-	export let style: string = '';
+	export let style = '';
 
 	/** Whether to show the link to email. */
-	export let show_email: boolean = false;
+	export let show_email = false;
 </script>
 
 <ul {style}>
