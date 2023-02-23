@@ -32,10 +32,14 @@
 	let slider_len = news_list.filter((n) => n.published).length;
 
 	function news_prev(btn: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) {
+		if (btn.target === null) console.error('button target is null');
+
 		slider_index_prev = slider_index;
 
+		/* eslint-disable @typescript-eslint/ban-ts-comment */
 		// @ts-ignore
 		let btn_parent = btn.target.parentElement;
+		/* eslint-enable @typescript-eslint/ban-ts-comment */
 
 		// Whether the previous item is not exist.
 		if (slider_index == 0) {
@@ -48,10 +52,13 @@
 	}
 
 	function news_next(btn: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) {
+		if (btn.target === null) console.error('button target is null');
 		slider_index_prev = slider_index;
 
+		/* eslint-disable @typescript-eslint/ban-ts-comment */
 		// @ts-ignore
 		let btn_parent = btn.target.parentElement;
+		/* eslint-enable @typescript-eslint/ban-ts-comment */
 
 		// Whether the next item is not exist.
 		if (slider_index + 1 == slider_len) {
@@ -64,8 +71,10 @@
 	}
 
 	function apply_news(btn_parent: { children: { classList: DOMTokenList }[] }) {
+		/* eslint-disable @typescript-eslint/ban-ts-comment */
 		// @ts-ignore
 		let news = btn_parent.children[2].children;
+		/* eslint-enable @typescript-eslint/ban-ts-comment */
 		let allow_left = btn_parent.children[0].classList;
 		let allow_right = btn_parent.children[1].classList;
 
@@ -113,8 +122,13 @@
 
 	function fuck_news_arrows() {
 		let arrows = document.getElementsByClassName('arrow');
-		// @ts-ignore
-		[...arrows].forEach((a) => (a.style.width = a.clientHeight + 'px'));
+		[...arrows].forEach(
+			(a) =>
+				/* eslint-disable @typescript-eslint/ban-ts-comment */
+				// @ts-ignore
+				(a.style.width = a.clientHeight + 'px')
+			/* eslint-enable @typescript-eslint/ban-ts-comment */
+		);
 	}
 
 	function counter_fade() {
