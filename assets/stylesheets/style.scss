@@ -1,5 +1,7 @@
 // © 2022 - 2023 REVATI
 
+@use './variables.scss' as *;
+
 .container {
 	width: 100%;
 	background-color: $secondary-color;

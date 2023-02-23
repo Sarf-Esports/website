@@ -62,9 +62,10 @@
 </main>
 
 <style lang="scss" global>
-	@import '/assets/stylesheets/variables.scss';
-	@import '/assets/stylesheets/mixins.scss';
-	@import '/assets/stylesheets/style.scss';
+	@use '/assets/stylesheets/variables.scss' as *;
+	@use '/assets/stylesheets/mixins.scss' as *;
+
+	@use '/assets/stylesheets/style.scss';
 
 	@font-face {
 		font-family: 'Zen Kaku Gothic Antique Bold';

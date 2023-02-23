@@ -75,7 +75,7 @@
 </li>
 
 <style lang="scss">
-	@import './assets/stylesheets/header.scss';
+	@use './assets/stylesheets/header.scss';
 
 	$modal-secondary-color: #e9ffa7;
 	$modal-edge-color: #fff9ee;

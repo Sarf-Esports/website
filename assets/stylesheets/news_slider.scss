@@ -1,5 +1,7 @@
 // © 2022 - 2023 REVATI
 
+@use '/assets/stylesheets/mixins.scss' as *;
+
 ul {
 	height: 544px;
 	list-style: none;

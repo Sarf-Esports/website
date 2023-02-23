@@ -51,9 +51,10 @@
 </div>
 
 <style lang="scss">
-	@import '/assets/stylesheets/header.scss';
-	@import '/assets/stylesheets/variables.scss';
-	@import '/assets/stylesheets/mixins.scss';
+	@use '/assets/stylesheets/variables.scss' as *;
+	@use '/assets/stylesheets/mixins.scss' as *;
+
+	@use '/assets/stylesheets/header.scss';
 
 	@font-face {
 		font-family: 'Poppins';

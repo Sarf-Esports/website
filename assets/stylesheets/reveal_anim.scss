@@ -12,10 +12,8 @@
 //
 // And add `reveal-anim-con-active` class to element with `reveal-anim-con` class to trigger animation.
 // also don't forget to add `reveal-anim-item-active` class to element with `reveal-anim-item` class to trigger animation.
-//
-// ## Dependencies
-//
-// - `@import '/assets/stylesheets/variables.scss';`
+
+@use './variables.scss' as *;
 
 .reveal-anim-con {
 	position: relative;

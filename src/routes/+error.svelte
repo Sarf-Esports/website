@@ -26,8 +26,8 @@
 </main>
 
 <style lang="scss">
-	@import '/assets/stylesheets/variables.scss';
-	@import '/assets/stylesheets/mixins.scss';
+	@use '/assets/stylesheets/variables.scss' as *;
+	@use '/assets/stylesheets/mixins.scss' as *;
 
 	main {
 		text-align: center;
