@@ -63,7 +63,7 @@
 		}
 	}
 
-	function apply_news(btn_parent: { children: { classList: any }[] }) {
+	function apply_news(btn_parent: { children: { classList: DOMTokenList }[] }) {
 		// @ts-ignore
 		let news = btn_parent.children[2].children;
 		let allow_left = btn_parent.children[0].classList;
