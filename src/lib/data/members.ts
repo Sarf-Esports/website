@@ -90,13 +90,6 @@ export const member_lists = [
 				twitch: 'kimunii0119'
 			},
 			{
-				name: 'シロラ',
-				icon: 'sirora.webp',
-				twitter: 'sirora_46pq',
-				youtube: null,
-				twitch: 'sirora_46pq'
-			},
-			{
 				name: '変なお兄さん',
 				icon: 'henna_onisan.webp',
 				twitter: 'hennaOnisaN6',
@@ -137,6 +130,13 @@ export const member_lists = [
 				twitch: null
 			},
 			{
+				name: '灰猫',
+				icon: 'haineko.webp',
+				twitter: 'haineko0407',
+				youtube: '@haineko0407',
+				twitch: null
+			},
+			{
 				name: 'バード',
 				icon: 'bird.webp',
 				twitter: 'bird132297',
@@ -162,6 +162,13 @@ export const member_lists = [
 	{
 		kind: 'streamer',
 		list: [
+			{
+				name: 'シロラ',
+				icon: 'sirora.webp',
+				twitter: 'sirora_46pq',
+				youtube: null,
+				twitch: 'sirora_46pq'
+			},
 			{
 				name: 'らいふれっくす',
 				icon: 'lifelex.webp',
