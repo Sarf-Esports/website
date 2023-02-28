@@ -34,7 +34,7 @@
 			v.classList.remove('invisible');
 			v.play();
 			container.add('is-playing');
-		}, 15000);
+		}, 8000);
 	}
 
 	const head = {
@@ -146,6 +146,9 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		height: 100vh;
+		position: relative;
+		bottom: 18px;
+
 
 		@include sp {
 			background-size: 256vw;
