@@ -12,13 +12,7 @@
 <ul {style}>
 	{#if show_email}
 		<li>
-			<a
-				href={socials.email}
-				target="_blank"
-				rel="noopener noreferrer"
-				title="Email: (Google Form)"
-				style="color:white"
-			>
+			<a href="mailto:{socials.email}" title={socials.email}>
 				<!-- 
 					Bootstrap Icons - Envelope fill
 					https://icons.getbootstrap.jp/icons/envelope-fill
@@ -92,6 +86,7 @@
 			svg {
 				width: 34px;
 				height: auto;
+				color: white;
 			}
 		}
 	}

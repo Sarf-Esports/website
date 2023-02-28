@@ -52,27 +52,19 @@
 				※返答までにお時間をいただく場合がございます。<br />
 				※お答えできない場合がございます。
 			</p>
-			<a
-				href={socials.email}
-				id="mail-btn"
-				target="_blank"
-				rel="noopener noreferrer"
-				draggable="false">メールを送る</a
-			>
+			<a href="mailto:{socials.email}" id="mail-btn" draggable="false">メールを送る</a>
 		</div>
 	{/if}
 {/if}
 
 <li>
 	<a
-		href={socials.email}
+		href="mailto:{socials.email}"
 		on:click={(self) => {
 			// Prevents href
 			if (!is_hb_button_enabled) self.preventDefault();
 			toggle_contact_modal();
-		}}
-		target="_blank"
-		rel="noopener noreferrer">CONTACT</a
+		}}>CONTACT</a
 	>
 </li>
 
