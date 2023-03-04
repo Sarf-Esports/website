@@ -149,7 +149,6 @@
 		position: relative;
 		bottom: 18px;
 
-
 		@include sp {
 			background-size: 256vw;
 			background-position: 50% calc(48% - 6vh);
