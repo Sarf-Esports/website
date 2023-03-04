@@ -1,15 +1,7 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
-	import { browser } from '$app/environment';
-
 	import { member_lists } from '$lib/data/members';
-	import { word_to_camel_case, add_class_at_scroll } from '$lib/util';
-
-	if (browser) {
-		window.addEventListener('scroll', function () {
-			add_class_at_scroll(document.getElementsByClassName('kind'), 'fade-in-right');
-		});
-	}
+	import { word_to_camel_case } from '$lib/util';
 </script>
 
 <ul id="team-list">
