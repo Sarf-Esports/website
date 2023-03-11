@@ -37,7 +37,7 @@ export const member_lists = [
 		list: [
 			{
 				name: 'Life',
-				icon: null,
+				icon: 'life.webp',
 				twitter: 'l1fefn',
 				youtube: null,
 				twitch: null
