@@ -184,5 +184,17 @@ export const member_lists = [
 				twitch: null
 			}
 		]
+	},
+	{
+		kind: 'creator',
+		list: [
+			{
+				name: 'Suna',
+				icon: 'suna.webp',
+				twitter: 'suna0801',
+				youtube: null,
+				twitch: null
+			}
+		]
 	}
 ];
