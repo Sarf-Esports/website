@@ -36,6 +36,13 @@ export const member_lists = [
 		kind: 'fortnite',
 		list: [
 			{
+				name: 'Life',
+				icon: null,
+				twitter: 'l1fefn',
+				youtube: null,
+				twitch: null
+			},
+			{
 				name: 'Retchiri',
 				icon: null,
 				twitter: 'retchiri1',
