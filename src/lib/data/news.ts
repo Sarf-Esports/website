@@ -51,30 +51,5 @@ export const news_list = [
 		published: true,
 		date: '20230121',
 		title: 'Sarf Esports リブランディングのお知らせ'
-	},
-	{
-		published: false,
-		date: '20221128',
-		title: 'パンケーキによる侵攻状況'
-	},
-	{
-		published: false,
-		date: '202211262',
-		title: 'パンケーキ襲来'
-	},
-	{
-		published: false,
-		date: '202211261',
-		title: 'Rinrin氏、シェーダーの壊滅に遺憾の意を表明'
-	},
-	{
-		published: false,
-		date: '20221126',
-		title: 'ﾃﾞｪｪｪｪｪｪｪｪｪﾝ'
-	},
-	{
-		published: false,
-		date: '20221103',
-		title: '当局により検閲されました。'
 	}
 ];
