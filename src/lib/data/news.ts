@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '202303152',
+		title: '新部門設立と新メンバー加入のお知らせ'
+	},
+	{
+		published: true,
 		date: '202303151',
 		title: 'Fortnite部門に新たに1名のメンバーが加入'
 	},
