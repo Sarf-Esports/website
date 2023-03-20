@@ -101,14 +101,6 @@ export const member_lists = [
 				homepage: null
 			},
 			{
-				name: 'キムにぃ',
-				icon: 'kimunii.webp',
-				twitter: 'kimunii017',
-				youtube: null,
-				twitch: 'kimunii0119',
-				homepage: null
-			},
-			{
 				name: '変なお兄さん',
 				icon: 'henna_onisan.webp',
 				twitter: 'hennaOnisaN6',
