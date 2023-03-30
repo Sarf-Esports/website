@@ -212,6 +212,14 @@ export const member_lists = [
 		kind: 'creator',
 		list: [
 			{
+				name: 'Haise',
+				icon: 'haise.webp',
+				twitter: 'h4ise05',
+				youtube: null,
+				twitch: null,
+				homepage: 'https://behance.net/Haise__00'
+			},
+			{
 				name: 'jin',
 				icon: 'jin.webp',
 				twitter: 'HIGHJEANX',
