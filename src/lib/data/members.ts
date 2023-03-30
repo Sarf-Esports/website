@@ -212,6 +212,14 @@ export const member_lists = [
 		kind: 'creator',
 		list: [
 			{
+				name: 'jin',
+				icon: 'jin.webp',
+				twitter: 'HIGHJEANX',
+				youtube: null,
+				twitch: null,
+				homepage: 'https://foriio.com/HIGHJEANX'
+			},
+			{
 				name: 'Suna',
 				icon: 'suna.webp',
 				twitter: 'suna0801',
