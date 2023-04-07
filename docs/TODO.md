@@ -1,5 +1,6 @@
 # やることりすと
 
+- [このエラー](../tsconfig.json#L13)を最終的に解除する
 - 総書記による御挨拶
 - package-lock.json をリモートリポジトリに含めると Cloudflare Pages でおかしくなる原因を調査
 - style要素に global属性つけるのやめよう(治すの大変)
