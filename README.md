@@ -11,7 +11,7 @@
 
 ## Project notes
 
-- [コミットするときのおやくそく☆](./docs/CONTRIBUTING.md)
+- [変更を加えたい時のおやくそく☆](./docs/CONTRIBUTING.md)
 - [TODO](./docs/TODO.md)
 - [仕様書(雑)](./docs/SPECIFICATION.md)
 
