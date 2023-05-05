@@ -30,7 +30,7 @@ export const news_list = [
 	{
 		published: true,
 		date: '20230331',
-		title: 'クリエイター部門に新た2名のメンバーがに加入'
+		title: 'クリエイター部門に新たに2名のメンバーが加入'
 	},
 	{
 		published: true,

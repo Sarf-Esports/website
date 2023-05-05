@@ -191,6 +191,14 @@ export const member_lists = [
 		kind: 'streamer',
 		list: [
 			{
+				name: 'Kaz9nnN',
+				icon: 'kaz.webp',
+				twitter: 'Kaz9nnN',
+				youtube: '@user-pd5vi9tm9l',
+				twitch: 'kaz9nnn1',
+				homepage: null
+			},
+			{
 				name: 'シロラ',
 				icon: 'sirora.webp',
 				twitter: 'sirora_46pq',
