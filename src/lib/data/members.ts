@@ -194,7 +194,7 @@ export const member_lists = [
 				name: 'Kaz9nnN',
 				icon: 'kaz.webp',
 				twitter: 'Kaz9nnN',
-				youtube: '@user-pd5vi9tm9l',
+				youtube: null,
 				twitch: 'kaz9nnn1',
 				homepage: null
 			},
