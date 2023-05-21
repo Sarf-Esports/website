@@ -27,7 +27,7 @@
 //     // ない場合は `null` にしてください
 //     'twitch': 'rinrin0413'
 //
-//	   // メンバーのホームページの URL
+//     // メンバーのホームページの URL
 //     // ない場合は `null` にしてください
 //     'homepage': 'https://rinrin.pages.dev'
 // }
