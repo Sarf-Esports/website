@@ -207,6 +207,14 @@ export const member_lists = [
 				homepage: null
 			},
 			{
+				name: 'めぬろ',
+				icon: 'menuro.webp',
+				twitter: 'Menuro1230',
+				youtube: '@user-Menuro',
+				twitch: null,
+				hompage: null
+			},
+			{
 				name: 'らいふれっくす',
 				icon: 'lifelex.webp',
 				twitter: 'Lifelex57',
