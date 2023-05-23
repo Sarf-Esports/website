@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20230523',
+		title: 'ストリーマー部門に新メンバーが加入'
+	},
+	{
+		published: true,
 		date: '20230507',
 		title: 'ストリーマー部門に新メンバーが加入'
 	},
