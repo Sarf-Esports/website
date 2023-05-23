@@ -59,7 +59,7 @@ export const member_lists = [
 				name: 'のあ',
 				icon: null,
 				twitter: 'NOAHhhhhh156',
-				youtube: '@noahdayo',
+				youtube: null,
 				twitch: null,
 				homepage: null
 			},
