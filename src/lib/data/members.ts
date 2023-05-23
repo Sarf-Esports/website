@@ -218,7 +218,7 @@ export const member_lists = [
 				name: 'らいふれっくす',
 				icon: 'lifelex.webp',
 				twitter: 'Lifelex57',
-				youtube: '@Lifelex',
+				youtube: '@Lifelex57',
 				twitch: null,
 				homepage: null
 			}
