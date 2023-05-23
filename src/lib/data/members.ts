@@ -156,8 +156,8 @@ export const member_lists = [
 			{
 				name: '灰猫',
 				icon: 'haineko.webp',
-				twitter: 'haineko0407',
-				youtube: '@haineko0407',
+				twitter: 'Nui_256_',
+				youtube: '@Nu1_256',
 				twitch: null,
 				homepage: null
 			},
