@@ -97,7 +97,7 @@ export const member_lists = [
 				icon: 'k0xh.webp',
 				twitter: 'Lilx_zZc',
 				youtube: '@k0uh862',
-				twitch: 'k0xh_',
+				twitch: 'revati___kxuh',
 				homepage: null
 			},
 			{
