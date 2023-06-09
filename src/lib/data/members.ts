@@ -78,14 +78,6 @@ export const member_lists = [
 				youtube: '@user-yf4gf8qw8s',
 				twitch: null,
 				homepage: null
-			},
-			{
-				name: 'りあ',
-				icon: 'ria.webp',
-				twitter: 'Ria1fn',
-				youtube: '@Ria1fn',
-				twitch: null,
-				homepage: null
 			}
 		]
 	},
