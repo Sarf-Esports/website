@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20230609',
+		title: 'Fortnite部門 -りあ脱退のお知らせ'
+	},
+	{
+		published: true,
 		date: '20230523',
 		title: 'ストリーマー部門に新メンバーが加入'
 	},
