@@ -56,6 +56,14 @@ export const member_lists = [
 				homepage: null
 			},
 			{
+				name: 'いえいり',
+				icon: null,
+				twitter: 'yexluz',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				name: 'のあ',
 				icon: null,
 				twitter: 'NOAHhhhhh156',
