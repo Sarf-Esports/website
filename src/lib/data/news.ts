@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20230613',
+		title: 'APEX部門に新メンバー加入'
+	},
+	{
+		published: true,
 		date: '20230611',
 		title: 'フォートナイト部門に新メンバー加入'
 	},
