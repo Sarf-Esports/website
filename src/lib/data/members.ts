@@ -109,6 +109,14 @@ export const member_lists = [
 				homepage: null
 			},
 			{
+				name: 'Tekunoro',
+				icon: 'tekunoro.webp',
+				twitter: 'TekunoroGT',
+				youtube: null,
+				twitch: 'tekunoro_ttv',
+				homepage: null
+			},
+			{
 				name: '変なお兄さん',
 				icon: 'henna_onisan.webp',
 				twitter: 'hennaOnisaN6',
