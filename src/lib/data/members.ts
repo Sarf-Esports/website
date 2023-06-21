@@ -93,14 +93,6 @@ export const member_lists = [
 		kind: 'apex',
 		list: [
 			{
-				name: 'K0xh',
-				icon: 'k0xh.webp',
-				twitter: 'Lilx_zZc',
-				youtube: '@k0uh862',
-				twitch: 'revati___kxuh',
-				homepage: null
-			},
-			{
 				name: 'Pear',
 				icon: 'pear.webp',
 				twitter: 'pear_fps',
