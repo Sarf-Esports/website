@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20230625',
+		title: 'クリエイター部門に新メンバー加入'
+	},
+	{
+		published: true,
 		date: '20230621',
 		title: 'Apex部門 -Kxuh脱退のお知らせ'
 	},
