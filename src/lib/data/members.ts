@@ -203,7 +203,7 @@ export const member_lists = [
 				icon: 'menuro.webp',
 				twitter: 'Menuro1230',
 				youtube: '@user-Menuro',
-				twitch: null,
+				twitch: 'menuro',
 				hompage: null
 			},
 			{
