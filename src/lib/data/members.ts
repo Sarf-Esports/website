@@ -85,14 +85,6 @@ export const member_lists = [
 		kind: 'apex',
 		list: [
 			{
-				name: 'Pear',
-				icon: 'pear.webp',
-				twitter: 'pear_fps',
-				youtube: null,
-				twitch: 'pear_fps',
-				homepage: null
-			},
-			{
 				name: '変なお兄さん',
 				icon: 'henna_onisan.webp',
 				twitter: 'hennaOnisaN6',
