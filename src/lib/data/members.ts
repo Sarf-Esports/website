@@ -102,7 +102,7 @@ export const member_lists = [
 				icon: 'gen.webp',
 				twitter: 'GEN3987',
 				youtube: '@GEN3987',
-				twitch: 'gen3987',
+				twitch: '2ndgen3987',
 				homepage: null
 			},
 			{
