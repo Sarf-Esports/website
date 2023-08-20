@@ -43,7 +43,7 @@
 									rel="noopener noreferrer"
 								>
 									<img
-										src="/images/logos/youtube_icon/yt_icon_rgb.png"
+										src="/images/logos/yt_icon_rgb.png"
 										alt="youtube logo"
 										title="/{yt_path}"
 										loading="lazy"

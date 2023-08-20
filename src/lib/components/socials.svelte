@@ -52,7 +52,7 @@
 			rel="noopener noreferrer"
 			title="YouTube: /{socials.youtube}"
 		>
-			<img src="/images/logos/youtube_icon/yt_icon_mono_dark.png" alt="youtube" />
+			<img src="/images/logos/yt_icon_mono_dark.png" alt="youtube" />
 		</a>
 	</li>
 	<li>
@@ -62,7 +62,7 @@
 			rel="noopener noreferrer"
 			title="GitHub: @{socials.github}"
 		>
-			<img src="/images/logos/github-mark/github-mark-white.svg" alt="github" />
+			<img src="/images/logos/github-mark-white.svg" alt="github" />
 		</a>
 	</li>
 </ul>
