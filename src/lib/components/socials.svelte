@@ -42,11 +42,7 @@
 			rel="noopener noreferrer"
 			title="X: @{socials.twitter}"
 		>
-			<img
-				src="/images/logos/x_logo-white.png"
-				alt="x"
-				id="x-logo"
-			/>
+			<img src="/images/logos/x_logo-white.png" alt="x" id="x-logo" />
 		</a>
 	</li>
 	<li>
