@@ -37,14 +37,15 @@
 	{/if}
 	<li>
 		<a
-			href="https://twitter.com/{socials.twitter}"
+			href="https://x.com/{socials.twitter}"
 			target="_blank"
 			rel="noopener noreferrer"
-			title="Twitter: @{socials.twitter}"
+			title="X: @{socials.twitter}"
 		>
 			<img
-				src="/images/logos/twitter-logo-01282021/Twitter logo/SVG/Logo white.svg"
-				alt="twitter"
+				src="/images/logos/x_logo-white.png"
+				alt="x"
+				id="x-logo"
 			/>
 		</a>
 	</li>
@@ -89,5 +90,9 @@
 				color: white;
 			}
 		}
+	}
+
+	#x-logo {
+		width: 28px;
 	}
 </style>

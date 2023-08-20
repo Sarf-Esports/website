@@ -21,14 +21,14 @@
 							<h3>{name}</h3>
 							{#if twitter}
 								<a
-									href="https://twitter.com/{twitter}"
+									href="https://x.com/{twitter}"
 									class="member-twitter"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
 									<img
-										src="/images/logos/twitter-logo-01282021/Twitter logo/SVG/Logo blue.svg"
-										alt="twitter logo"
+										src="/images/logos/x_logo-black.png"
+										alt="x logo"
 										title="@{twitter}"
 										loading="lazy"
 									/>
