@@ -5,6 +5,12 @@
 	src: url('../fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Regular.ttf');
 }
 
+
+@font-face {
+	font-family: 'Zen Kaku Gothic Antique Bold';
+	src: url('/fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Bold.ttf');
+}
+
 * {
 	scrollbar-color: #65743b transparent;
 }

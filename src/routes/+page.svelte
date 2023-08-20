@@ -181,11 +181,6 @@
 		}
 	}
 
-	@font-face {
-		font-family: 'Zen Kaku Gothic Antique Bold';
-		src: url('/fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Bold.ttf');
-	}
-
 	#about {
 		.slogan {
 			font-family: 'Zen Kaku Gothic Antique Bold';
