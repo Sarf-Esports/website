@@ -38,7 +38,7 @@
 export const member_lists = [
 	{
 		kind: 'fortnite',
-		list: [
+		members: [
 			{
 				name: 'Life',
 				icon: 'life.webp',
@@ -83,7 +83,7 @@ export const member_lists = [
 	},
 	{
 		kind: 'apex',
-		list: [
+		members: [
 			{
 				name: '変なお兄さん',
 				icon: 'henna_onisan.webp',
@@ -96,7 +96,7 @@ export const member_lists = [
 	},
 	{
 		kind: 'minecraft',
-		list: [
+		members: [
 			{
 				name: 'GEN3987',
 				icon: 'gen.webp',
@@ -165,7 +165,7 @@ export const member_lists = [
 	},
 	{
 		kind: 'streamer',
-		list: [
+		members: [
 			{
 				name: 'Kaz9nnN',
 				icon: 'kaz.webp',
@@ -202,7 +202,7 @@ export const member_lists = [
 	},
 	{
 		kind: 'creator',
-		list: [
+		members: [
 			{
 				name: 'Greed',
 				icon: 'greed.webp',

@@ -5,12 +5,12 @@
 </script>
 
 <ul id="team-list">
-	{#each member_lists as { kind, list }}
+	{#each member_lists as { kind, members }}
 		{@const kind_camel = word_to_camel_case(kind)}
 		<li>
 			<h2 class="kind">{kind_camel == 'Apex' ? 'Apex Legends' : kind_camel}</h2>
 			<ul id="{kind}-member-list">
-				{#each list as { name, icon, twitter, youtube, twitch, homepage }}
+				{#each members as { name, icon, twitter, youtube, twitch, homepage }}
 					<li class="reveal-anim-con">
 						<div class="reveal-anim-item">
 							<img
