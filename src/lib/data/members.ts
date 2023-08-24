@@ -95,6 +95,75 @@ export const member_lists = [
 		]
 	},
 	{
+		kind: 'overwatch',
+		members: [
+			{
+				name: 'An2',
+				icon: null,
+				twitter: 'An2indae',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'EVAN',
+				icon: null,
+				twitter: 'seungbin9511',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'Junnyang',
+				icon: null,
+				twitter: 'junnyang77_ow',
+				youtube: null,
+				twitch: 'junnyang77',
+				homepage: null
+			},
+			{
+				name: 'Reverse',
+				icon: null,
+				twitter: 'reverse094',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'STRIKE',
+				icon: null,
+				twitter: '_Strikeow_',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'Vax',
+				icon: null,
+				twitter: 'vaxtru',
+				youtube: null,
+				twitch: 'vaxtru',
+				homepage: null
+			},
+			{
+				name: 'Vectiz',
+				icon: null,
+				twitter: 'Vectiz_',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'Witty',
+				icon: null,
+				twitter: 'OwWitty',
+				youtube: null,
+				twitch: 'witty_ow',
+				homepage: null
+			},
+		]
+	},
+	{
 		kind: 'minecraft',
 		members: [
 			{
