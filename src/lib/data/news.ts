@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20230825',
+		title: 'Overwatch部門設立のお知らせ'
+	},
+	{
+		published: true,
 		date: '20230803',
 		title: 'Apex部門 -pear脱退のお知らせ'
 	},
