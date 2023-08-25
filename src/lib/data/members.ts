@@ -168,7 +168,7 @@ export const member_lists = [
 				youtube: null,
 				twitch: 'witty_ow',
 				homepage: null
-			},
+			}
 		]
 	},
 	{
