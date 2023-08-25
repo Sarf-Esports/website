@@ -122,6 +122,14 @@ export const member_lists = [
 				homepage: null
 			},
 			{
+				name: 'Korppin',
+				icon: null,
+				twitter: null,
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				name: 'Reverse',
 				icon: null,
 				twitter: 'reverse094',
