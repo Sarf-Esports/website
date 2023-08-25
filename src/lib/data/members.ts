@@ -131,7 +131,7 @@ export const member_lists = [
 			},
 			{
 				name: 'STRIKE',
-				icon: null,
+				icon: 'strike.webp',
 				twitter: '_Strikeow_',
 				youtube: null,
 				twitch: null,
@@ -155,7 +155,7 @@ export const member_lists = [
 			},
 			{
 				name: 'Witty',
-				icon: null,
+				icon: 'witty.webp',
 				twitter: 'OwWitty',
 				youtube: null,
 				twitch: 'witty_ow',
