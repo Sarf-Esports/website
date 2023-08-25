@@ -124,7 +124,7 @@ export const member_lists = [
 			{
 				name: 'Korppin',
 				icon: null,
-				twitter: null,
+				twitter: 'ow_KORPPIN',
 				youtube: null,
 				twitch: null,
 				homepage: null
