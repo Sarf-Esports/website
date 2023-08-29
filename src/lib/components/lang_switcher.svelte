@@ -3,7 +3,11 @@
 
     let lang = $locale;
 
+    // Update the locale when the language is changed here.
     $: locale.set(lang);
+    
+    // Update the selected language when locale is changed in OTHER places.
+    $: lang = $locale;
 </script>
 
 <span>Language</span><select bind:value={lang}>
