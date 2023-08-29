@@ -13,5 +13,8 @@
             "* It may not be able to answer."
         ],
         "button": "Send email"
+    },
+    "news": {
+        "back": "Back to news list"
     }
 }

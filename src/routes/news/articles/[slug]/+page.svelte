@@ -1,8 +1,8 @@
 <!-- © 2022 - 2023 REVATI -->
 <script lang="ts">
-	import { fmt_date } from '$lib/util';
-
 	import type { PageData } from './$types';
+	import { fmt_date } from '$lib/util';
+	import { _ } from 'svelte-i18n';
 
 	export let data: PageData;
 	const metadata = data.frontmatter;
@@ -31,7 +31,7 @@
 			<hr />
 			<article><svelte:component this={data.component} /></article>
 			<a href="/news"
-				>ニュース一覧へ戻る
+				>{$_('news.back')}
 				<!-- 
                     Bootstrap Icons - Box arrow in down left
                     https://icons.getbootstrap.com/icons/box-arrow-in-down-left
