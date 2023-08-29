@@ -15,6 +15,7 @@
         "button": "Send email"
     },
     "news": {
+        "desc": "Latest news from REVATI:",
         "back": "Back to news list"
     }
 }
