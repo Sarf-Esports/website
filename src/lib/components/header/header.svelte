@@ -6,6 +6,7 @@
 	import Contact from './contact.svelte';
 	import HbBtn from './hamburger_button.svelte';
 	import Socials from '../socials.svelte';
+	import LangSwitcher from '../lang_switcher.svelte';
 
 	let is_drawer_menu_opened = false;
 
@@ -45,9 +46,10 @@
 </header>
 
 <div id="header2" class:open={is_drawer_menu_opened}>
-	<div>
+	<div class="socials">
 		<Socials show_email style="justify-content:left; margin-left:32px;" />
 	</div>
+	<div class="lang-switcher"><LangSwitcher /></div>
 </div>
 
 <style lang="scss">
@@ -188,15 +190,20 @@
 			&.open {
 				transform: none;
 
-				div {
+				.socials {
 					transform: scale(1);
 					transition-delay: $tf-duration;
 				}
 			}
 		}
 
-		div {
+		.socials {
 			transform: scale(0);
+		}
+
+		.lang-switcher {
+			float: right;
+			margin-right: 32px;
 		}
 	}
 
