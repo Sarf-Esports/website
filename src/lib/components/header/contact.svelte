@@ -3,6 +3,7 @@
 	import { browser } from '$app/environment';
 	import { fly } from 'svelte/transition';
 	import { toggle_scroll_prevention } from '$lib/util';
+	import { _ } from 'svelte-i18n';
 	import { socials, breakpoint } from '$lib/variables';
 
 	let is_contact_modal_visible = false;
@@ -48,11 +49,11 @@
 				&times;
 			</span>
 			<p>
-				<nobr>チームに関するお問い合わせはこちらからお願い致します。</nobr><br />
-				※返答までにお時間をいただく場合がございます。<br />
-				※お答えできない場合がございます。
+				<nobr>{$_('contact.desc')}</nobr><br />
+				{$_('contact.note.0')}<br />
+				{$_('contact.note.1')}
 			</p>
-			<a href="mailto:{socials.email}" id="mail-btn" draggable="false">メールを送る</a>
+			<a href="mailto:{socials.email}" id="mail-btn" draggable="false">{$_('contact.button')}</a>
 		</div>
 	{/if}
 {/if}
