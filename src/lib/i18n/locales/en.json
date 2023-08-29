@@ -1,21 +1,18 @@
 {
-    "top": {
-        "about.undefeatedSpirit": " ",
-        "about": [
-            "As long as it is a world of competition, the result may not be good.",
-            "But even then, we have infinite power and potential to achieve goals, and we will continue perseverant effort through to the end."
-        ]
-    },
-    "contact": {
-        "desc": "If you have any questions or requests, please send an email.",
-        "note": [
-            "* It may take some time to respond.",
-            "* It may not be able to answer."
-        ],
-        "button": "Send email"
-    },
-    "news": {
-        "desc": "Latest news from REVATI:",
-        "back": "Back to news list"
-    }
+	"top": {
+		"about.undefeatedSpirit": " ",
+		"about": [
+			"As long as it is a world of competition, the result may not be good.",
+			"But even then, we have infinite power and potential to achieve goals, and we will continue perseverant effort through to the end."
+		]
+	},
+	"contact": {
+		"desc": "If you have any questions or requests, please send an email.",
+		"note": ["* It may take some time to respond.", "* It may not be able to answer."],
+		"button": "Send email"
+	},
+	"news": {
+		"desc": "Latest news from REVATI:",
+		"back": "Back to news list"
+	}
 }
