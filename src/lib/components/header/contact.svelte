@@ -69,7 +69,7 @@
 </li>
 
 <style lang="scss">
-	@use './assets/stylesheets/header.scss';
+	@use './assets/stylesheets/header';
 
 	$modal-secondary-color: #e9ffa7;
 	$modal-edge-color: #fff9ee;

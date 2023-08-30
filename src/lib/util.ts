@@ -23,7 +23,7 @@ export function add_class_at_scroll(elms: HTMLCollectionOf<Element>, cls: string
  * Element shaker.
  *
  * # Dependencies:
- * - `/stylesheets/util.scss`
+ * - `/stylesheets/util`
  */
 export function shake(elm: HTMLElement) {
 	elm.classList.add('shake');
@@ -49,7 +49,7 @@ export function fmt_date(date: string) {
  * Toggles body scroll prevention.
  *
  * # Dependencies:
- * - `/stylesheets/util.scss` (body.prevent-scroll)
+ * - `/stylesheets/util` (body.prevent-scroll)
  */
 export function toggle_scroll_prevention(prevent: boolean) {
 	const c = 'prevent-scroll';

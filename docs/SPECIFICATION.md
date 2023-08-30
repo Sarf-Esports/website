@@ -13,3 +13,14 @@
 
 </div>
 </details>
+
+<details>
+<summary>CSS Variables</summary>
+<div>
+
+| Name | Description | Usable area |
+| --: | --- | --- |
+| `--vh001` | viewport height * 0.01 (realtime update) | all |
+
+</div>
+</details>

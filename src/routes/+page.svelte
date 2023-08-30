@@ -133,12 +133,12 @@
 </main>
 
 <style lang="scss" global>
-	@use '/assets/stylesheets/variables.scss' as *;
-	@use '/assets/stylesheets/mixins.scss' as *;
+	@use '/assets/stylesheets/variables/color' as *;
+	@use '/assets/stylesheets/variables/mixin' as *;
 
-	@use '/assets/stylesheets/util.scss';
-	@use '/assets/stylesheets/reveal_anim.scss';
-	@use '/assets/stylesheets/style.scss';
+	@use '/assets/stylesheets/util';
+	@use '/assets/stylesheets/reveal_anim';
+	@use '/assets/stylesheets/style';
 
 	#op-container {
 		display: block;

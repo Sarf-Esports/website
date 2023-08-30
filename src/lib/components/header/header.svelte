@@ -15,6 +15,8 @@
 	function toggle_drawer_menu(open: boolean) {
 		is_drawer_menu_opened = open;
 		toggle_scroll_prevention(is_drawer_menu_opened);
+
+		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
 	}
 </script>
 
@@ -51,19 +53,21 @@
 </div>
 
 <style lang="scss">
-	@use '/assets/stylesheets/variables.scss' as *;
-	@use '/assets/stylesheets/mixins.scss' as *;
+	@use '/assets/stylesheets/variables/dimension' as *;
+	@use '/assets/stylesheets/variables/color' as *;
+	@use '/assets/stylesheets/variables/mixin' as *;
 
-	@use '/assets/stylesheets/header.scss';
+	@use '/assets/stylesheets/header';
 
 	@font-face {
 		font-family: 'Poppins';
 		src: url('/fonts/Poppins/Poppins-Regular.ttf');
 	}
 
+	$vh100: calc($vh001 * 100);
 	$border-thickness: 6px;
 	$tf-duration: 0.28s;
-	$opened_header_height: 75vh;
+	$opened_header_height: calc($vh001 * 75);
 
 	header {
 		$height: 88px;
@@ -71,13 +75,13 @@
 		$logo-width: 86px;
 
 		position: fixed;
-		top: -100vh;
+		top: calc($vh001 * -100);
 		z-index: 253;
 		background-color: $primary-color;
 		width: 100%;
 		height: $height;
 		box-shadow: 0 0 10px 0 black;
-		border-top: 100vh solid $primary-color;
+		border-top: $vh100 solid $primary-color;
 		border-bottom: $border-thickness solid $border-col;
 		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
@@ -115,7 +119,7 @@
 			@include sp {
 				display: inline-block;
 				text-align: left;
-				transform: translateY(-50vh);
+				transform: translateY(calc($vh001 * -50));
 				padding: 0;
 				position: absolute;
 				left: calc(50vw - 112px);
@@ -150,10 +154,10 @@
 
 		&.open {
 			@include sp {
-				top: calc($opened_header_height - 100vh - $height);
+				top: calc($opened_header_height - $vh100 - $height);
 
 				img {
-					transform: translateY(-86vh);
+					transform: translateY(calc($vh001 * -86));
 					opacity: 0;
 				}
 
@@ -182,7 +186,7 @@
 
 		@include sp {
 			width: 100vw;
-			height: calc(100vh - $opened_header_height - $border-thickness + 2px);
+			height: calc($vh100 - $opened_header_height - $border-thickness + 2px);
 			z-index: 253;
 
 			&.open {
@@ -210,7 +214,7 @@
 			top: 0;
 			left: 0;
 			width: 100vw;
-			height: 100vh;
+			height: $vh100;
 			background-color: #000000a0;
 			transform: scale(0);
 			z-index: 252;

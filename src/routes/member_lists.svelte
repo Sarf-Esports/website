@@ -107,5 +107,5 @@
 </ul>
 
 <style lang="scss">
-	@use '/assets/stylesheets/member_lists.scss';
+	@use '/assets/stylesheets/member_lists';
 </style>
