@@ -62,10 +62,11 @@
 </main>
 
 <style lang="scss" global>
-	@use '/assets/stylesheets/variables.scss' as *;
-	@use '/assets/stylesheets/mixins.scss' as *;
+	@use '/assets/stylesheets/variables/color' as *;
+	@use '/assets/stylesheets/variables/mixin' as *;
+	@use '/assets/stylesheets/variables/dimension' as *;
 
-	@use '/assets/stylesheets/style.scss';
+	@use '/assets/stylesheets/style';
 
 	main {
 		min-height: 100vh;

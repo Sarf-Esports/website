@@ -1,6 +1,7 @@
 // © 2022 - 2023 REVATI
 
-@use './variables.scss' as *;
+@use './variables/color' as *;
+@use './variables/dimension' as *;
 
 .container {
 	width: 100%;

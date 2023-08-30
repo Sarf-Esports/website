@@ -173,5 +173,5 @@
 </h2>
 
 <style lang="scss">
-	@use '/assets/stylesheets/news_slider.scss';
+	@use '/assets/stylesheets/news_slider';
 </style>

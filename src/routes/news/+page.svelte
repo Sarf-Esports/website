@@ -32,10 +32,8 @@
 </main>
 
 <style lang="scss" global>
-	@use '/assets/stylesheets/variables.scss' as *;
-
-	@use '/assets/stylesheets/style.scss';
-	@use '/assets/stylesheets/util.scss';
+	@use '/assets/stylesheets/style';
+	@use '/assets/stylesheets/util';
 
 	#news p {
 		font-size: 24px;
