@@ -15,6 +15,8 @@
 	function toggle_drawer_menu(open: boolean) {
 		is_drawer_menu_opened = open;
 		toggle_scroll_prevention(is_drawer_menu_opened);
+
+		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
 	}
 </script>
 
