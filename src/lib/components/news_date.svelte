@@ -7,7 +7,7 @@
 		const y = date.slice(0, 4);
 		const m = date.slice(4, 6).replace(/^0+/, '');
 		const d = date.slice(6, 8).replace(/^0+/, '');
-		return new Date(`${y}-${m}-${d}`);
+		return Date.UTC(+y, +m - 1, +d);
 	}
 </script>
 
