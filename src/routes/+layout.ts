@@ -1,3 +1,5 @@
+// © 2022 - 2023 REVATI
+
 import type { LayoutLoad } from './$types';
 import { browser } from '$app/environment';
 import { locale, waitLocale } from 'svelte-i18n';
