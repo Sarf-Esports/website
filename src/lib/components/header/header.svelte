@@ -64,10 +64,10 @@
 		src: url('/fonts/Poppins/Poppins-Regular.ttf');
 	}
 
-	$vh100: calc($vh001*100);
+	$vh100: calc($vh001 * 100);
 	$border-thickness: 6px;
 	$tf-duration: 0.28s;
-	$opened_header_height: calc($vh001*75);
+	$opened_header_height: calc($vh001 * 75);
 
 	header {
 		$height: 88px;
@@ -75,7 +75,7 @@
 		$logo-width: 86px;
 
 		position: fixed;
-		top: calc($vh001*-100);
+		top: calc($vh001 * -100);
 		z-index: 253;
 		background-color: $primary-color;
 		width: 100%;
@@ -119,7 +119,7 @@
 			@include sp {
 				display: inline-block;
 				text-align: left;
-				transform: translateY(calc($vh001*-50));
+				transform: translateY(calc($vh001 * -50));
 				padding: 0;
 				position: absolute;
 				left: calc(50vw - 112px);
@@ -157,7 +157,7 @@
 				top: calc($opened_header_height - $vh100 - $height);
 
 				img {
-					transform: translateY(calc($vh001*-86));
+					transform: translateY(calc($vh001 * -86));
 					opacity: 0;
 				}
 
