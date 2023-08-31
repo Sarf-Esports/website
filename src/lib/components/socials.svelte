@@ -69,7 +69,7 @@
 
 <style lang="scss">
 	ul {
-		margin: 64px auto;
+		margin-top: 64px;
 		padding: 0;
 		display: flex;
 		justify-content: center;

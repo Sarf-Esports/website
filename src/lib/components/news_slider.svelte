@@ -1,8 +1,10 @@
 <!-- © 2022 - 2023 REVATI -->
 <script lang="ts">
+	import NewsDate from '$lib/components/news_date.svelte';
+
 	import { browser } from '$app/environment';
 	import { news_list } from '$lib/data/news';
-	import { shake, fmt_date } from '$lib/util';
+	import { shake } from '$lib/util';
 	import { fly } from 'svelte/transition';
 
 	let is_touch_device = false;
@@ -158,7 +160,7 @@
 				<a href="./news/articles/{date}" tabindex="-1">
 					<img src="/images/news/{date}.png" alt="news thumbnail" />
 					<h1>{title}</h1>
-					<h3>[ {fmt_date(date)} ]</h3>
+					<h3><NewsDate {date} /></h3>
 				</a>
 			</li>
 		{/if}
@@ -173,5 +175,5 @@
 </h2>
 
 <style lang="scss">
-	@use '/assets/stylesheets/news_slider.scss';
+	@use '/assets/stylesheets/news_slider';
 </style>

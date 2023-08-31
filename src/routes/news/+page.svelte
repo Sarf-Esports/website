@@ -1,7 +1,9 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
 	import SectionTitle from '../section_title.svelte';
-	import NewsSlider from '../news_slider.svelte';
+	import NewsSlider from '$lib/components/news_slider.svelte';
+
+	import { _ } from 'svelte-i18n';
 
 	const head = {
 		title: 'REVATI | NEWS',
@@ -25,17 +27,15 @@
 	<div class="container">
 		<section id="news">
 			<SectionTitle name="news" />
-			<p>REVATIの最新情報をお届けします:</p>
+			<p>{$_('news.desc')}</p>
 			<div class="section-content"><NewsSlider /></div>
 		</section>
 	</div>
 </main>
 
 <style lang="scss" global>
-	@use '/assets/stylesheets/variables.scss' as *;
-
-	@use '/assets/stylesheets/style.scss';
-	@use '/assets/stylesheets/util.scss';
+	@use '/assets/stylesheets/style';
+	@use '/assets/stylesheets/util';
 
 	#news p {
 		font-size: 24px;

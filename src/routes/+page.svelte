@@ -1,12 +1,12 @@
 <!-- © 2022 - 2023 REVATI -->
 <script lang="ts">
-	import { browser } from '$app/environment';
-
-	import { add_class_at_scroll } from '$lib/util';
-
 	import SectionTitle from './section_title.svelte';
-	import NewsSlider from './news_slider.svelte';
+	import NewsSlider from '$lib/components/news_slider.svelte';
 	import MemberLists from './member_lists.svelte';
+
+	import { browser } from '$app/environment';
+	import { add_class_at_scroll } from '$lib/util';
+	import { _ } from 'svelte-i18n';
 
 	if (browser) {
 		window.addEventListener('scroll', function () {
@@ -75,15 +75,15 @@
 				<div class="slogan reveal-anim-con">
 					<div class="reveal-anim-item">
 						<h1>UNDEFEATED SPIRIT</h1>
-						<h2>「不屈の精神」</h2>
+						<h2>{$_('top.about.undefeatedSpirit')}</h2>
 					</div>
 				</div>
 				<br />
 				<div class="reveal-anim-con">
 					<p class="reveal-anim-item">
-						勝負の世界である以上、成績が低迷してしまうこともあると思います。
+						{$_('top.about.0')}
 						<br /><br />
-						そんなときでも私たちは物事の目的達成のために継続的に粘り強く努力することを厭わず 最後までやり遂げる無限のパワー・可能性を秘めています。
+						{$_('top.about.1')}
 					</p>
 				</div>
 			</div>
@@ -133,12 +133,12 @@
 </main>
 
 <style lang="scss" global>
-	@use '/assets/stylesheets/variables.scss' as *;
-	@use '/assets/stylesheets/mixins.scss' as *;
+	@use '/assets/stylesheets/variables/color' as *;
+	@use '/assets/stylesheets/variables/mixin' as *;
 
-	@use '/assets/stylesheets/util.scss';
-	@use '/assets/stylesheets/reveal_anim.scss';
-	@use '/assets/stylesheets/style.scss';
+	@use '/assets/stylesheets/util';
+	@use '/assets/stylesheets/reveal_anim';
+	@use '/assets/stylesheets/style';
 
 	#op-container {
 		display: block;

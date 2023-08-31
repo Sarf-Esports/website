@@ -1,13 +1,15 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
-	import { copyright } from '$lib/variables';
-
 	import Socials from './socials.svelte';
+	import LangSwitcher from './lang_switcher.svelte';
+
+	import { copyright } from '$lib/variables';
 </script>
 
 <footer>
 	<p class="copyright">{copyright}</p>
-	<Socials />
+	<div class="socials"><Socials /></div>
+	<div class="lang-btn"><LangSwitcher /></div>
 </footer>
 
 <style lang="scss">
@@ -19,6 +21,15 @@
 			font-size: 16px;
 			margin-top: 2em;
 			text-align: center;
+		}
+
+		.socials {
+			margin-bottom: 16px;
+		}
+
+		.lang-btn {
+			margin: 0 32px 24px 0;
+			float: right;
 		}
 	}
 </style>
