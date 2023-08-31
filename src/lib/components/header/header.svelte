@@ -4,7 +4,7 @@
 	import HbBtn from './hamburger_button.svelte';
 	import Socials from '../socials.svelte';
 	import LangSwitcher from '../lang_switcher.svelte';
-	
+
 	import { copyright } from '$lib/variables';
 	import { toggle_scroll_prevention } from '$lib/util';
 
