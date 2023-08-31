@@ -2,13 +2,13 @@
 <script lang="ts">
 	import { locale } from 'svelte-i18n';
 
-	let lang = $locale;
+	let lang = $locale?.slice(0, 2);
 
 	// Update the locale when the language is changed here.
 	$: locale.set(lang);
 
 	// Update the selected language when locale is changed in OTHER places.
-	$: lang = $locale;
+	$: lang = $locale?.slice(0, 2);
 </script>
 
 <span>Language</span><select bind:value={lang}>
