@@ -1,8 +1,9 @@
 <!-- © 2022 - 2023 REVATI -->
 <script lang="ts">
-	import { fmt_date } from '$lib/util';
-
 	import type { PageData } from './$types';
+	import { _ } from 'svelte-i18n';
+
+	import NewsDate from '$lib/components/news_date.svelte';
 
 	export let data: PageData;
 	const metadata = data.frontmatter;
@@ -27,11 +28,11 @@
 		<div id="content">
 			<img src={thumbnail_path} alt="thumbnail" />
 			<h1>{metadata.title}</h1>
-			<h2>{fmt_date(metadata.date)}</h2>
+			<h2><NewsDate date={metadata.date} /></h2>
 			<hr />
 			<article><svelte:component this={data.component} /></article>
 			<a href="/news"
-				>ニュース一覧へ戻る
+				>{$_('news.back')}
 				<!-- 
                     Bootstrap Icons - Box arrow in down left
                     https://icons.getbootstrap.com/icons/box-arrow-in-down-left

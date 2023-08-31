@@ -37,14 +37,6 @@ export function word_to_camel_case(str: string) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-/** Returns a formatted date string. */
-export function fmt_date(date: string) {
-	const y = date.slice(0, 4);
-	const m = date.slice(4, 6).replace(/^0+/, '');
-	const d = date.slice(6, 8).replace(/^0+/, '');
-	return `${y}/${m}/${d}`;
-}
-
 /**
  * Toggles body scroll prevention.
  *
