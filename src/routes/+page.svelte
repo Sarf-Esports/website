@@ -5,7 +5,7 @@
 	import { _ } from 'svelte-i18n';
 
 	import SectionTitle from './section_title.svelte';
-	import NewsSlider from './news_slider.svelte';
+	import NewsSlider from '$lib/components/news_slider.svelte';
 	import MemberLists from './member_lists.svelte';
 
 	if (browser) {
