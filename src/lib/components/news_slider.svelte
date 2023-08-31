@@ -160,7 +160,7 @@
 				<a href="./news/articles/{date}" tabindex="-1">
 					<img src="/images/news/{date}.png" alt="news thumbnail" />
 					<h1>{title}</h1>
-					<h3>[ <NewsDate {date} /> ]</h3>
+					<h3><NewsDate {date} /></h3>
 				</a>
 			</li>
 		{/if}

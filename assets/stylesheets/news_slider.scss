@@ -65,6 +65,14 @@ li {
 		position: relative;
 		top: -16px;
 		letter-spacing: 2px;
+
+		&::before {
+			content: '[ ';
+		}
+
+		&::after {
+			content: ' ]';
+		}
 	}
 }
 
