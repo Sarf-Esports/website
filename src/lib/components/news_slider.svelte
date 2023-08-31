@@ -1,11 +1,11 @@
 <!-- © 2022 - 2023 REVATI -->
 <script lang="ts">
+	import NewsDate from '$lib/components/news_date.svelte';
+
 	import { browser } from '$app/environment';
 	import { news_list } from '$lib/data/news';
 	import { shake } from '$lib/util';
 	import { fly } from 'svelte/transition';
-
-	import NewsDate from '$lib/components/news_date.svelte';
 
 	let is_touch_device = false;
 

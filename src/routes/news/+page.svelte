@@ -1,9 +1,9 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
-	import { _ } from 'svelte-i18n';
-
 	import SectionTitle from '../section_title.svelte';
 	import NewsSlider from '$lib/components/news_slider.svelte';
+
+	import { _ } from 'svelte-i18n';
 
 	const head = {
 		title: 'REVATI | NEWS',

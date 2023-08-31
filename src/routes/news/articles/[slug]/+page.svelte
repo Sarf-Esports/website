@@ -1,9 +1,9 @@
 <!-- © 2022 - 2023 REVATI -->
 <script lang="ts">
+	import NewsDate from '$lib/components/news_date.svelte';
+
 	import type { PageData } from './$types';
 	import { _ } from 'svelte-i18n';
-
-	import NewsDate from '$lib/components/news_date.svelte';
 
 	export let data: PageData;
 	const metadata = data.frontmatter;

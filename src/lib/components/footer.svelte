@@ -1,9 +1,9 @@
 <!-- © 2022 - 2023 REVATI -->
 <script>
-	import { copyright } from '$lib/variables';
-
 	import Socials from './socials.svelte';
 	import LangSwitcher from './lang_switcher.svelte';
+
+	import { copyright } from '$lib/variables';
 </script>
 
 <footer>

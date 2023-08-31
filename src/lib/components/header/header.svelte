@@ -1,12 +1,12 @@
 <!-- © 2022 - 2023 REVATI -->
 <script lang="ts">
-	import { copyright } from '$lib/variables';
-	import { toggle_scroll_prevention } from '$lib/util';
-
 	import Contact from './contact.svelte';
 	import HbBtn from './hamburger_button.svelte';
 	import Socials from '../socials.svelte';
 	import LangSwitcher from '../lang_switcher.svelte';
+	
+	import { copyright } from '$lib/variables';
+	import { toggle_scroll_prevention } from '$lib/util';
 
 	let is_drawer_menu_opened = false;
 
