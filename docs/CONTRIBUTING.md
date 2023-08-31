@@ -35,9 +35,9 @@ wow! 貢献したいんだね!!
 1. `npm i` とかで依存関係をインストール
 1. `npm run check` が自分の環境で通るか確認  
 なにか問題があったら [Issue](https://github.com/Sarf-Esports/website/issues) 立てて
-1. `git checkout dev` で devブランチに移動
-1. `git checkout -b ブランチ名` で作業用ブランチを切る  
-命名は `feat/*` の形にしないとプレビューがデプロイされないよ
+1. `git switch dev` で devブランチに移動
+1. `git switch -c ブランチ名` で作業用ブランチを切る  
+命名は基本的に `feat/*` とか `fix/*` の形にしてね
 1. 作業する
 1. 作業が完了したら次のコマンドがすべて通るか確認:  
     - `npm run check`
@@ -48,7 +48,7 @@ wow! 貢献したいんだね!!
 
 ### その他注意事項
 
-- プレビューがデプロイされるブランチは `dev`, `feat/*`, `hotfix/*` のみです
-- hotfix系ブランチは基本的にメインリポジトリで作成します
-- 破壊的変更になりそうだったら事前に [Issue](https://github.com/Sarf-Esports/website/issues) 立てた方が賢明
+- プレビューがデプロイされるブランチは `dev`, `feat/*`, `fix/*`, `hotfix/*` のみです
+- hotfix系ブランチは基本的にメインリポジトリで masterブランチから生やします
+- 破壊的または大規模な変更になりそうだったら事前に [Issue](https://github.com/Sarf-Esports/website/issues) 立てた方が賢明
 - 何かわからないことがあれば [Discussions](https://github.com/Sarf-Esports/website/discussions) なりで聞いてね
