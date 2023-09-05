@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20230905',
+		title: 'Fortnite部門-ぺな脱退のお知らせ'
+	},
+	{
+		published: true,
 		date: '20230825',
 		title: 'Overwatch部門設立のお知らせ'
 	},
