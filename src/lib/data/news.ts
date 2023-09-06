@@ -24,7 +24,7 @@
 export const news_list = [
 	{
 		published: true,
-		date: '20230905',
+		date: '20230906',
 		title: 'Fortnite部門-ぺな脱退のお知らせ'
 	},
 	{
