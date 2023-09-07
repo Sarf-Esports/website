@@ -77,6 +77,38 @@ export const member_lists = [
 		kind: 'apex',
 		members: [
 			{
+				name: 'Kxuh',
+				icon: 'kxuh.webp',
+				twitter: 'Lilx_zZc',
+				youtube: '@k0uh862',
+				twitch: 'k0xh_',
+				homepage: null
+			},
+			{
+				name: 'Pear',
+				icon: 'pear.webp',
+				twitter: 'pear_fps',
+				youtube: null,
+				twitch: 'pear_fps',
+				homepage: null
+			},
+			{
+				name: 'きむにぃ',
+				icon: 'kimunii.webp',
+				twitter: 'kimunii017',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'りーと',
+				icon: 'ri_to.webp',
+				twitter: 'ri_tokun',
+				youtube: '@user-nt8ls6tl3g',
+				twitch: null,
+				homepage: null
+			},
+			{
 				name: '変なお兄さん',
 				icon: 'henna_onisan.webp',
 				twitter: 'hennaOnisaN6',
