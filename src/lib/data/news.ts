@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20230907',
+		title: 'Apex部門に新メンバー加入'
+	},
+	{
+		published: true,
 		date: '20230906',
 		title: 'Fortnite部門-ぺな脱退のお知らせ'
 	},
