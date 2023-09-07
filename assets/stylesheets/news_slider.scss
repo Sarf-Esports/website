@@ -43,7 +43,6 @@ li {
 	}
 
 	img {
-		box-shadow: 0 0 12px black;
 		user-select: none;
 		pointer-events: none;
 		border-radius: 6px;
@@ -93,7 +92,6 @@ li {
 
 	a:hover img {
 		transform: translateY(-8px) scale(1.01);
-		box-shadow: 0 12px 28px black;
 	}
 }
 
