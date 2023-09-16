@@ -305,14 +305,6 @@ export const member_lists = [
 		kind: 'creator',
 		members: [
 			{
-				name: 'Greed',
-				icon: 'greed.webp',
-				twitter: 'Grdvisuals',
-				youtube: null,
-				twitch: null,
-				homepage: 'https://behance.net/GrdCreate'
-			},
-			{
 				name: 'jin',
 				icon: 'jin.webp',
 				twitter: 'HIGHJEANX',
