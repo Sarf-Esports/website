@@ -101,6 +101,14 @@ export const member_lists = [
 				homepage: null
 			},
 			{
+				name: 'シュガー',
+				icon: 'sugar.webp',
+				twitter: 'SQ0356',
+				youtube: null,
+				twitch: null,
+				hompage: null
+			},
+			{
 				name: '変なお兄さん',
 				icon: 'henna_onisan.webp',
 				twitter: 'hennaOnisaN6',
