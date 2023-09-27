@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20230927',
+		title: 'Apex部門再編のお知らせ'
+	},
+	{
+		published: true,
 		date: '20230907',
 		title: 'Apex部門に新メンバー加入'
 	},
