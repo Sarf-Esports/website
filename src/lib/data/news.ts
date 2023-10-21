@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20231021',
+		title: 'Fortnite部門-のあ脱退のお知らせ'
+	},
+	{
+		published: true,
 		date: '20231019',
 		title: 'Fortnite部門-Rialy加入のお知らせ'
 	},
