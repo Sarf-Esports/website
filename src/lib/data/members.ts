@@ -81,7 +81,7 @@ export const member_lists = [
 				icon: 'kxuh.webp',
 				twitter: 'Lilx_zZc',
 				youtube: '@k0uh862',
-				twitch: 'k0xh_',
+				twitch: 'revati_kxuh',
 				homepage: null
 			},
 			{
@@ -97,7 +97,7 @@ export const member_lists = [
 				icon: 'kimunii.webp',
 				twitter: 'kimunii017',
 				youtube: null,
-				twitch: null,
+				twitch: 'kimunii_twitch',
 				homepage: null
 			},
 			{
@@ -124,7 +124,7 @@ export const member_lists = [
 			{
 				name: 'EVAN',
 				icon: null,
-				twitter: 'seungbin9511',
+				twitter: '_evanow',
 				youtube: null,
 				twitch: null,
 				homepage: null
@@ -211,7 +211,7 @@ export const member_lists = [
 				icon: 'haineko.webp',
 				twitter: 'Nui_256_',
 				youtube: '@Nu1_256',
-				twitch: null,
+				twitch: 'nui_256',
 				homepage: null
 			},
 			{
@@ -235,7 +235,7 @@ export const member_lists = [
 				icon: 'ruilu.webp',
 				twitter: 'Ruilu_Adora',
 				youtube: '@Ruilu_Adora',
-				twitch: null,
+				twitch: 'ruiluadora',
 				homepage: null
 			}
 		]
@@ -272,7 +272,7 @@ export const member_lists = [
 				icon: 'lifelex.webp',
 				twitter: 'Lifelex06',
 				youtube: '@Lifelex57',
-				twitch: null,
+				twitch: 'lilex7',
 				homepage: null
 			}
 		]
@@ -283,7 +283,7 @@ export const member_lists = [
 			{
 				name: 'jin',
 				icon: 'jin.webp',
-				twitter: 'HIGHJEANX',
+				twitter: 'fIuffyVibes',
 				youtube: null,
 				twitch: null,
 				homepage: 'https://foriio.com/HIGHJEANX'
