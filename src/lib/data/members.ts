@@ -199,6 +199,14 @@ export const member_lists = [
 				homepage: 'https://rinrin.pages.dev'
 			},
 			{
+				name: 'Tow',
+				icon: 'tow.webp',
+				twitter: 'Towdayo',
+				youtube: '@ToW-da4',
+				twitch: 'tow1113',
+				homepage: null
+			},
+			{
 				name: 'がすたー',
 				icon: 'gaster.webp',
 				twitter: 'Gaster_EX',
