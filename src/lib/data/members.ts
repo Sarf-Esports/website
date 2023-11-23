@@ -115,14 +115,6 @@ export const member_lists = [
 				youtube: null,
 				twitch: null,
 				hompage: null
-			},
-			{
-				name: '変なお兄さん',
-				icon: 'henna_onisan.webp',
-				twitter: 'hennaOnisaN6',
-				youtube: null,
-				twitch: 'jp_hennaonisan ',
-				homepage: null
 			}
 		]
 	},
