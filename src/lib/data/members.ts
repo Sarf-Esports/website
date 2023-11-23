@@ -307,10 +307,10 @@ export const member_lists = [
 			{
 				name: 'Suna',
 				icon: 'suna.webp',
-				twitter: 'suna0801',
+				twitter: '_nexc',
 				youtube: null,
 				twitch: null,
-				homepage: 'https://suna-video.com'
+				homepage: null
 			}
 		]
 	}
