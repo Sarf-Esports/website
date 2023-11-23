@@ -133,7 +133,7 @@ export const member_lists = [
 				name: 'Junnyang',
 				icon: null,
 				twitter: 'junnyang77_ow',
-				youtube: null,
+				youtube: '@JunnyangInSeoul',
 				twitch: 'junnyang77',
 				homepage: null
 			},
