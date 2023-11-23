@@ -289,6 +289,14 @@ export const member_lists = [
 		kind: 'creator',
 		members: [
 			{
+				name: 'marlone',
+				icon: null,
+				twitter: 'marloneKR',
+				youtube: null,
+				twitch: null,
+				homepage: 'https://foriio.com/marlone'
+			},
+			{
 				name: 'jin',
 				icon: 'jin.webp',
 				twitter: 'fIuffyVibes',
