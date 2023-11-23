@@ -142,7 +142,7 @@ export const member_lists = [
 				icon: null,
 				twitter: 'reverse094',
 				youtube: null,
-				twitch: null,
+				twitch: 'reverse094',
 				homepage: null
 			},
 			{
