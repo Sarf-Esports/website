@@ -115,14 +115,6 @@ export const member_lists = [
 				youtube: null,
 				twitch: null,
 				hompage: null
-			},
-			{
-				name: '変なお兄さん',
-				icon: 'henna_onisan.webp',
-				twitter: 'hennaOnisaN6',
-				youtube: null,
-				twitch: 'jp_hennaonisan ',
-				homepage: null
 			}
 		]
 	},
@@ -133,15 +125,15 @@ export const member_lists = [
 				name: 'EVAN',
 				icon: null,
 				twitter: '_evanow',
-				youtube: null,
-				twitch: null,
+				youtube: '@PlayTheEvan',
+				twitch: 'c9511a',
 				homepage: null
 			},
 			{
 				name: 'Junnyang',
 				icon: null,
 				twitter: 'junnyang77_ow',
-				youtube: null,
+				youtube: '@JunnyangInSeoul',
 				twitch: 'junnyang77',
 				homepage: null
 			},
@@ -150,7 +142,7 @@ export const member_lists = [
 				icon: null,
 				twitter: 'reverse094',
 				youtube: null,
-				twitch: null,
+				twitch: 'reverse094',
 				homepage: null
 			},
 			{
@@ -205,6 +197,14 @@ export const member_lists = [
 				youtube: '@rinrin-rs',
 				twitch: 'rinrin0413',
 				homepage: 'https://rinrin.pages.dev'
+			},
+			{
+				name: 'Tow',
+				icon: 'tow.webp',
+				twitter: 'Towdayo',
+				youtube: '@ToW-da4',
+				twitch: 'tow1113',
+				homepage: null
 			},
 			{
 				name: 'がすたー',
@@ -289,6 +289,14 @@ export const member_lists = [
 		kind: 'creator',
 		members: [
 			{
+				name: 'marlone',
+				icon: null,
+				twitter: 'marloneKR',
+				youtube: null,
+				twitch: null,
+				homepage: 'https://foriio.com/marlone'
+			},
+			{
 				name: 'jin',
 				icon: 'jin.webp',
 				twitter: 'fIuffyVibes',
@@ -299,10 +307,10 @@ export const member_lists = [
 			{
 				name: 'Suna',
 				icon: 'suna.webp',
-				twitter: 'suna0801',
+				twitter: '_nexc',
 				youtube: null,
 				twitch: null,
-				homepage: 'https://suna-video.com'
+				homepage: null
 			}
 		]
 	}
