@@ -125,8 +125,8 @@ export const member_lists = [
 				name: 'EVAN',
 				icon: null,
 				twitter: '_evanow',
-				youtube: null,
-				twitch: null,
+				youtube: '@PlayTheEvan',
+				twitch: 'c9511a',
 				homepage: null
 			},
 			{
