@@ -77,14 +77,6 @@ export const member_lists = [
 		kind: 'apex',
 		members: [
 			{
-				name: 'ex',
-				icon: null,
-				twitter: 'extellaaa',
-				youtube: null,
-				twitch: 'extella_fps',
-				homepage: null
-			},
-			{
 				name: 'Kxuh',
 				icon: 'kxuh.webp',
 				twitter: 'Lilx_zZc',
