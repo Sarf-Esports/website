@@ -13,7 +13,7 @@
 	{#if show_email}
 		<li>
 			<a href="mailto:{socials.email}" title={socials.email}>
-				<!-- 
+				<!--
 					Bootstrap Icons - Envelope fill
 					https://icons.getbootstrap.jp/icons/envelope-fill
 					
