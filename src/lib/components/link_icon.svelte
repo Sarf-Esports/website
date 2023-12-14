@@ -3,12 +3,12 @@
 	export let size: string;
 </script>
 
-<!-- 
-    Bootstrap Icons - Box arrow up-right
-    https://icons.getbootstrap.jp/icons/box-arrow-up-right
-
-    Copyright (c) 2019 The Bootstrap Authors
-    under the MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md
+<!--
+	Bootstrap Icons - Box arrow up-right
+	https://icons.getbootstrap.jp/icons/box-arrow-up-right
+	
+	Copyright (c) 2019 The Bootstrap Authors
+	under the MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md
 -->
 <svg
 	xmlns="http://www.w3.org/2000/svg"

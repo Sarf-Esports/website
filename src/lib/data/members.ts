@@ -237,6 +237,14 @@ export const member_lists = [
 				youtube: '@Ruilu_Adora',
 				twitch: 'ruiluadora',
 				homepage: null
+			},
+			{
+				name: 'れる',
+				icon: 'relle.webp',
+				twitter: 'LanternCold',
+				youtube: '@relle3674',
+				twitch: null,
+				homepage: null
 			}
 		]
 	},

@@ -74,7 +74,7 @@
 									rel="noopener noreferrer"
 									title={homepage}
 								>
-									<!-- 
+									<!--
 										Bootstrap Icons - Link 45deg
 										https://icons.getbootstrap.jp/icons/link-45deg
 										

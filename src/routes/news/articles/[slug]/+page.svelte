@@ -33,13 +33,13 @@
 			<article><svelte:component this={data.component} /></article>
 			<a href="/news"
 				>{$_('news.back')}
-				<!-- 
-                    Bootstrap Icons - Box arrow in down left
-                    https://icons.getbootstrap.com/icons/box-arrow-in-down-left
-                    
-                    Copyright (c) 2019 The Bootstrap Authors
-                    under the MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md
-                -->
+				<!--
+					Bootstrap Icons - Box arrow in down left
+					https://icons.getbootstrap.com/icons/box-arrow-in-down-left
+					
+					Copyright (c) 2019 The Bootstrap Authors
+					under the MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md
+				-->
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="16"
