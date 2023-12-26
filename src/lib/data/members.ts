@@ -48,14 +48,6 @@ export const member_lists = [
 				homepage: null
 			},
 			{
-				name: 'Retchiri',
-				icon: null,
-				twitter: 'retchiri1',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
 				name: 'Rialy',
 				icon: null,
 				twitter: 'Ria1fn',
