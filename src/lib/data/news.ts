@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20231227',
+		title: 'Minecraft部門-れる加入のお知らせ'
+	},
+	{
+		published: true,
 		date: '20231224',
 		title: 'Fortnite部門-れっちりーと脱退のお知らせ'
 	},
