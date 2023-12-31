@@ -1,4 +1,4 @@
-<!-- © 2022 - 2023 REVATI -->
+<!-- © 2022 - 2024 REVATI -->
 <script>
 	import LinkIcon from '$lib/components/link_icon.svelte';
 

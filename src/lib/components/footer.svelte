@@ -1,4 +1,4 @@
-<!-- © 2022 - 2023 REVATI -->
+<!-- © 2022 - 2024 REVATI -->
 <script>
 	import Socials from './socials.svelte';
 	import LangSwitcher from './lang_switcher.svelte';
