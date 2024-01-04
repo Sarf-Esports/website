@@ -106,14 +106,6 @@ export const member_lists = [
 		kind: 'overwatch',
 		members: [
 			{
-				name: 'EVAN',
-				icon: null,
-				twitter: '_evanow',
-				youtube: '@PlayTheEvan',
-				twitch: 'c9511a',
-				homepage: null
-			},
-			{
 				name: 'Junnyang',
 				icon: null,
 				twitter: 'junnyang77_ow',
@@ -122,33 +114,9 @@ export const member_lists = [
 				homepage: null
 			},
 			{
-				name: 'Reverse',
-				icon: null,
-				twitter: 'reverse094',
-				youtube: null,
-				twitch: 'reverse094',
-				homepage: null
-			},
-			{
 				name: 'STRIKE',
 				icon: 'strike.webp',
 				twitter: '_Strikeow_',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				name: 'Vax',
-				icon: null,
-				twitter: 'vaxtru',
-				youtube: null,
-				twitch: 'vaxtru',
-				homepage: null
-			},
-			{
-				name: 'Vectiz',
-				icon: null,
-				twitter: 'Vectiz_',
 				youtube: null,
 				twitch: null,
 				homepage: null
