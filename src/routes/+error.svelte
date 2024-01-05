@@ -42,7 +42,7 @@
 			background-position: center;
 			padding-bottom: 1px;
 			position: relative;
-			top: 130px;
+			top: 28px;
 
 			div {
 				width: 100%;
