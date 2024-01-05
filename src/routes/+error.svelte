@@ -31,19 +31,24 @@
 
 	main {
 		text-align: center;
-		background-color: $secondary-color;
+		// background-color: $secondary-color;
 		min-height: 86vh;
 
 		> div {
-			background-image: url('/images/logos/revati_large_dark.png');
+			background:
+				linear-gradient($secondary-color, rgba($secondary-color, 0.84), $secondary-color),
+				url('/images/logos/revati/header_mini.png');
 			background-repeat: no-repeat;
+			background-size: cover;
 			background-position: center;
+			padding-bottom: 1px;
+			position: relative;
+			top: 130px;
 
 			div {
 				width: 100%;
 				height: 100%;
 				padding-top: 40vh;
-				background-color: #111111cc;
 
 				h1 {
 					text-decoration: underline;
