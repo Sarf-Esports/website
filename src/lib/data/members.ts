@@ -278,7 +278,7 @@ export const member_lists = [
 				twitter: 'h4ise05',
 				youtube: null,
 				twitch: null,
-				homepage: null
+				homepage: 'https://behance.net/Haise__00'
 			}
 		]
 	}
