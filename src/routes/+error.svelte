@@ -31,7 +31,6 @@
 
 	main {
 		text-align: center;
-		// background-color: $secondary-color;
 		min-height: 86vh;
 
 		> div {
