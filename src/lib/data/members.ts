@@ -271,6 +271,14 @@ export const member_lists = [
 				youtube: null,
 				twitch: null,
 				homepage: null
+			},
+			{
+				name: 'はいせ',
+				icon: null,
+				twitter: 'h4ise05',
+				youtube: null,
+				twitch: null,
+				homepage: null
 			}
 		]
 	}
