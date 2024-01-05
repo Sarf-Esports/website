@@ -11,21 +11,23 @@ li {
 	}
 
 	a {
-		color: black;
+		color: white;
 		font-size: 28px;
 		text-decoration: none;
+		opacity: 0.7;
 		transition: 0.3s;
 
 		&:hover {
-			color: $primary-color-darker-2;
+			opacity: 1;
 		}
 
 		&::after {
 			content: '';
 			display: block;
-			border-bottom: 2px solid $primary-color-darker;
+			border-bottom: 2px solid white;
 			margin: 0 auto;
 			transform: scaleX(0);
+			opacity: 0.8;
 			transition: 0.2s;
 		}
 

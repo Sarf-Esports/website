@@ -162,12 +162,12 @@
 					opacity: 0;
 				}
 
-				ul,
-				h3 {
-					opacity: 0.58;
+				ul {
+					opacity: 1;
 				}
 
 				h3 {
+					opacity: 0.5;
 					transform: none;
 				}
 			}
