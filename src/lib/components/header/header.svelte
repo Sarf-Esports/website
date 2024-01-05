@@ -25,7 +25,7 @@
 
 <header class:open={is_drawer_menu_opened}>
 	<nav>
-		<a href="/"><img src="/images/logos/REVATI_LOGO_BLK_2.png" alt="logo" draggable="false" /></a>
+		<a href="/"><img src="/images/logos/revati/logo_white.svg" alt="logo" draggable="false" /></a>
 		<ul>
 			{#each items as item}<li>
 					<a
@@ -73,7 +73,6 @@
 
 	header {
 		$height: 88px;
-		$logo-width: 86px;
 
 		position: fixed;
 		top: calc($vh001 * -100);
@@ -91,23 +90,22 @@
 		transition: $tf-duration ease-in;
 
 		img {
-			width: $logo-width;
+			height: 62px;
 			transition: 0.3s ease-out;
 			float: left;
 			margin-left: 18px;
-			margin-top: 8px;
 			overflow: visible;
 
 			@include pc {
 				&:hover {
-					transform: translateY(-4px) scale(1.32);
-					filter: drop-shadow(0 8px 0 #00000080);
+					transform: translateY(-4px) scale(1.14);
+					filter: drop-shadow(0 10px 0 #000000a0);
 					transition: 0.3s;
 				}
 			}
 
 			@include sp {
-				margin-top: 24px;
+				margin-top: 16px;
 			}
 		}
 
