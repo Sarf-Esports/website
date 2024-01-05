@@ -73,7 +73,6 @@
 
 	header {
 		$height: 88px;
-		$border-col: #65743b;
 		$logo-width: 86px;
 
 		position: fixed;
@@ -84,7 +83,7 @@
 		height: $height;
 		box-shadow: 0 0 10px 0 black;
 		border-top: $vh100 solid $primary-color;
-		border-bottom: $border-thickness solid $border-col;
+		border-bottom: $border-thickness solid $primary-color-darker-2;
 		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
 		letter-spacing: -1px;
@@ -133,14 +132,14 @@
 					position: absolute;
 					width: 120%;
 					height: 4px;
-					background-color: $border-col;
+					background-color: $primary-color-darker;
 				}
 			}
 		}
 
 		h3 {
 			opacity: 0;
-			color: #364213;
+			color: white;
 			font-size: 17px;
 			position: absolute;
 			bottom: 0;
@@ -165,7 +164,7 @@
 
 				ul,
 				h3 {
-					opacity: 1;
+					opacity: 0.58;
 				}
 
 				h3 {
@@ -180,10 +179,10 @@
 		bottom: 0;
 		left: 0;
 		transform: translateX(101vw);
-		$header2-primary-col: #283018;
+		$header2-primary-col: #122a33;
 		background-color: $header2-primary-col;
 		border-right: 50vw solid $header2-primary-col;
-		border-left: $border-thickness solid #141a09;
+		border-left: $border-thickness solid $primary-color-darker-2;
 		transition: $tf-duration ease-in;
 
 		@include sp {

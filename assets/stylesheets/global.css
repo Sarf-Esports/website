@@ -11,7 +11,8 @@
 }
 
 * {
-	scrollbar-color: #65743b transparent;
+	/* ($primary-color-darker) */
+	scrollbar-color: #0d2e51 transparent;
 }
 
 html {
@@ -30,7 +31,7 @@ body {
 }
 
 ::selection {
-	background: #d1ff46;
+	background: #154c83;
 	color: black;
 }
 
