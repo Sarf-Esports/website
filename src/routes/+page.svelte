@@ -126,7 +126,7 @@
 		<section id="sponsor">
 			<SectionTitle name="sponsor" />
 			<div class="section-content reveal-anim-con">
-				<p class="reveal-anim-item"><center>...( 'ω')</center></p>
+				<p class="reveal-anim-item"><center>{$_('w.inPreparation')}</center></p>
 			</div>
 		</section>
 	</div>
