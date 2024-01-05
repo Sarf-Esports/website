@@ -28,7 +28,8 @@
 	<meta property="og:locale" content="ja_JP" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="https://revati.jp" />
-	<meta name="theme-color" content="#d1ff46" />
+	<!-- ↓ $primary-color -->
+	<meta name="theme-color" content="#154c83" />
 
 	<meta name="keywords" content="sarf,revati" />
 	<meta name="author" content="Rinrin.rs <rinrin0413.valley@gmail.com>, GEN3987" />
