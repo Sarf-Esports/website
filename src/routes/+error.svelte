@@ -35,8 +35,7 @@
 		min-height: 86vh;
 
 		> div {
-			background:
-				linear-gradient($secondary-color, rgba($secondary-color, 0.84), $secondary-color),
+			background: linear-gradient($secondary-color, rgba($secondary-color, 0.84), $secondary-color),
 				url('/images/logos/revati/header_mini.png');
 			background-repeat: no-repeat;
 			background-size: cover;
