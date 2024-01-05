@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20240103',
+		title: 'Creator部門-はいせ加入のお知らせ'
+	},
+	{
+		published: true,
 		date: '20231227',
 		title: 'Minecraft部門-れる加入のお知らせ'
 	},
