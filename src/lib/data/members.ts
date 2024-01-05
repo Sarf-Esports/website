@@ -265,7 +265,7 @@ export const member_lists = [
 				homepage: 'https://foriio.com/HIGHJEANX'
 			},
 			{
-				name: 'たいち',
+				name: 'Nkyn',
 				icon: 'suna.webp',
 				twitter: 'nkyn_oshi',
 				youtube: null,
