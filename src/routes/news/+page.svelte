@@ -1,4 +1,4 @@
-<!-- © 2022 - 2023 REVATI -->
+<!-- © 2022 - 2024 REVATI -->
 <script>
 	import SectionTitle from '../section_title.svelte';
 	import NewsSlider from '$lib/components/news_slider.svelte';

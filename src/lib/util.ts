@@ -1,4 +1,4 @@
-// © 2022 - 2023 REVATI
+// © 2022 - 2024 REVATI
 
 /**
  * Adds a class to an element when it is scrolled into view.

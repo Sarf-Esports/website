@@ -1,4 +1,4 @@
-<!-- © 2022 - 2023 REVATI -->
+<!-- © 2022 - 2024 REVATI -->
 <script lang="ts">
 	import NewsDate from '$lib/components/news_date.svelte';
 

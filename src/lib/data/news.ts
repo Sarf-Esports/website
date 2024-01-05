@@ -1,4 +1,4 @@
-// © 2022 - 2023 REVATI
+// © 2022 - 2024 REVATI
 
 // # News 追加する人へ
 //
@@ -22,6 +22,11 @@
 // 細かい書き方は `/src/routes/news/article/20230206_test.md` を参照してください。
 
 export const news_list = [
+	{
+		published: true,
+		date: '20240103',
+		title: 'Creator部門-はいせ加入のお知らせ'
+	},
 	{
 		published: true,
 		date: '20231227',

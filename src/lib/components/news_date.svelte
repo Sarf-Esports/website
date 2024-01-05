@@ -1,4 +1,4 @@
-<!-- © 2022 - 2023 REVATI -->
+<!-- © 2022 - 2024 REVATI -->
 <script lang="ts">
 	import { date as date_i18n } from 'svelte-i18n';
 
