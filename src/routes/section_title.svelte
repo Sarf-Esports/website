@@ -15,5 +15,6 @@
 		margin-bottom: 32px;
 		user-select: none;
 		pointer-events: none;
+		filter: hue-rotate(156deg) saturate(2.4) brightness(0.77);
 	}
 </style>

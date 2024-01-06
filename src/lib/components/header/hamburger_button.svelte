@@ -47,12 +47,12 @@
 	button {
 		$size: 58px;
 		$btn-offset: math.div(88px, 2) - math.div($size, 2);
-		$bg-default: #445220;
-		$bg-dark: #303b13;
-		$border-light: #667938;
-		$border-dark: #253009;
+		$bg-default: #1f4b51;
+		$bg-dark: #13353a;
+		$border-light: #38717a;
+		$border-dark: #092b2f;
 		$font-size: 12px;
-		$burger-color: #e8ffa4;
+		$burger-color: #a3f7ff;
 		$buns-margin: 4px;
 
 		display: block;
@@ -70,7 +70,7 @@
 		transition: 0.18s;
 
 		&:hover {
-			filter: brightness(1.2) saturate(1.2);
+			filter: brightness(1.1) saturate(0.7);
 			transform: scale(112%);
 			transition: 0.3s;
 		}

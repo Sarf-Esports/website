@@ -25,7 +25,7 @@
 
 <header class:open={is_drawer_menu_opened}>
 	<nav>
-		<a href="/"><img src="/images/logos/REVATI_LOGO_BLK_2.png" alt="logo" draggable="false" /></a>
+		<a href="/"><img src="/images/logos/revati/logo_white.svg" alt="logo" draggable="false" /></a>
 		<ul>
 			{#each items as item}<li>
 					<a
@@ -73,8 +73,6 @@
 
 	header {
 		$height: 88px;
-		$border-col: #65743b;
-		$logo-width: 86px;
 
 		position: fixed;
 		top: calc($vh001 * -100);
@@ -84,7 +82,7 @@
 		height: $height;
 		box-shadow: 0 0 10px 0 black;
 		border-top: $vh100 solid $primary-color;
-		border-bottom: $border-thickness solid $border-col;
+		border-bottom: $border-thickness solid $primary-color-darker-2;
 		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
 		letter-spacing: -1px;
@@ -92,23 +90,22 @@
 		transition: $tf-duration ease-in;
 
 		img {
-			width: $logo-width;
+			height: 62px;
 			transition: 0.3s ease-out;
 			float: left;
 			margin-left: 18px;
-			margin-top: 8px;
 			overflow: visible;
 
 			@include pc {
 				&:hover {
-					transform: translateY(-4px) scale(1.32);
-					filter: drop-shadow(0 8px 0 #00000080);
+					transform: translateY(-4px) scale(1.14);
+					filter: drop-shadow(0 10px 0 #000000a0);
 					transition: 0.3s;
 				}
 			}
 
 			@include sp {
-				margin-top: 24px;
+				margin-top: 16px;
 			}
 		}
 
@@ -133,14 +130,14 @@
 					position: absolute;
 					width: 120%;
 					height: 4px;
-					background-color: $border-col;
+					background-color: $primary-color-darker;
 				}
 			}
 		}
 
 		h3 {
 			opacity: 0;
-			color: #364213;
+			color: white;
 			font-size: 17px;
 			position: absolute;
 			bottom: 0;
@@ -163,12 +160,12 @@
 					opacity: 0;
 				}
 
-				ul,
-				h3 {
+				ul {
 					opacity: 1;
 				}
 
 				h3 {
+					opacity: 0.5;
 					transform: none;
 				}
 			}
@@ -180,10 +177,10 @@
 		bottom: 0;
 		left: 0;
 		transform: translateX(101vw);
-		$header2-primary-col: #283018;
+		$header2-primary-col: #122a33;
 		background-color: $header2-primary-col;
 		border-right: 50vw solid $header2-primary-col;
-		border-left: $border-thickness solid #141a09;
+		border-left: $border-thickness solid $primary-color-darker-2;
 		transition: $tf-duration ease-in;
 
 		@include sp {
