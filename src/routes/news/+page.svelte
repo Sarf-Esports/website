@@ -19,7 +19,7 @@
 	<meta property="og:title" content={head.title} />
 	<meta property="og:description" content={head.desc} />
 	<meta property="og:url" content="https://revati.jp/news" />
-	<meta property="og:image" content="https://revati.jp/images/logos/revati_large.png" />
+	<meta property="og:image" content="https://revati.jp/images/logos/revati/header_mini.png" />
 	<meta property="og:type" content="article" />
 </svelte:head>
 

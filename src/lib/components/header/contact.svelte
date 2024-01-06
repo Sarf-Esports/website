@@ -72,9 +72,9 @@
 <style lang="scss">
 	@use './assets/stylesheets/header';
 
-	$modal-secondary-color: #e9ffa7;
-	$modal-edge-color: #fff9ee;
-	$modal-edge-color-dark: #cfb27a;
+	$modal-secondary-color: #a8f8ff;
+	$modal-edge-color: #f0fff7;
+	$modal-edge-color-dark: #689490;
 
 	#contact-modal {
 		position: fixed;
@@ -82,7 +82,7 @@
 		margin: auto;
 		max-width: 320px;
 		height: 192px;
-		background-color: #202512;
+		background-color: #122426;
 		border: 3px solid $modal-secondary-color;
 		padding: 16px;
 		z-index: 255;
