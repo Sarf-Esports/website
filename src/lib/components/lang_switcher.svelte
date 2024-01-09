@@ -19,7 +19,7 @@
 
 <style lang="scss">
 	span {
-		color: #f6ffdb;
+		color: #dbfcff;
 		font-size: 14px;
 		font-weight: 900;
 		margin-right: 4px;
@@ -31,11 +31,11 @@
 	}
 
 	select {
-		color: #e8ffa4;
+		color: #a3f7ff;
 		font-size: 16px;
 		font-weight: 600;
-		background-color: #363f21;
-		border: 4px solid #151b03;
+		background-color: #213b3f;
+		border: 4px solid #021a1e;
 		border-radius: 4px;
 		padding: 3px 0 3px 5px;
 		cursor: pointer;
