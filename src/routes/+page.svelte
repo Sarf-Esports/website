@@ -3,6 +3,7 @@
 	import SectionTitle from './section_title.svelte';
 	import NewsSlider from '$lib/components/news_slider.svelte';
 	import MemberLists from './member_lists.svelte';
+	import LinkButton from '$lib/components/link_button.svelte';
 
 	import { browser } from '$app/environment';
 	import { add_class_at_scroll } from '$lib/util';
@@ -111,12 +112,11 @@
 				<!-- <img src="/images/store_thumbnail.webp" alt="store thumbnail" loading="lazy" />
 				<a
 					href="https://suzuri.jp/REVATI"
-					class="go-to-store"
 					target="_blank"
 					rel="noopener noreferrer"
 					draggable="false"
-					>お買い求めはこちら
-					<LinkIcon size="20px" />
+				>
+					<LinkButton text="お買い求めはこちら" />
 				</a> -->
 			</div>
 		</section>
@@ -128,7 +128,7 @@
 			<div class="section-content">
 				<a href="https://gachisup.com" target="_blank" rel="noopener noreferrer">
 					<img src="/images/logos/gachisup_oxipng.png" alt=" " />
-					ガチサプ ONLINE STORE
+					<LinkButton text="ガチサプ ONLINE STORE" />
 				</a>
 			</div>
 		</section>
@@ -252,54 +252,23 @@
 			}
 		}
 
-		.go-to-store {
-			display: block;
-			max-width: 86%;
-			margin: 16px auto 0 auto;
+		a {
 			text-decoration: none;
-			color: $primary-color;
-			font-size: 24px;
-			font-weight: 900;
-			padding: 16px;
-			border: 4px solid $primary-color;
-			border-radius: 6px;
-			transition: 0.3s;
-
-			$btn-shadow-col: #658111;
-
-			&:hover,
-			&:active {
-				background-color: $primary-color;
-				color: #1d1d1d;
-				box-shadow: 0 12px 0 $btn-shadow-col;
-			}
-
-			&:active {
-				box-shadow: 0 3px 0 $btn-shadow-col;
-				transform: translateY(9px);
-			}
 		}
 	}
 
 	#sponsor {
 		a {
 			display: block;
-			padding: 20px 0;
 			text-align: center;
 			font-size: 22px;
-			border: 4px solid rgba($primary-color, 0.75);
-			border-radius: 2px;
-			transition: 0.2s;
-
-			&:hover {
-				background-color: #ffffff10;
-			}
+			text-decoration: none;
 
 			img {
 				display: block;
 				max-width: 86%;
 				margin: 0 auto;
-				margin-bottom: 18px;
+				margin-bottom: 40px;
 			}
 		}
 	}
