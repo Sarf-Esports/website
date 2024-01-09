@@ -125,8 +125,11 @@
 	<div class="container">
 		<section id="sponsor">
 			<SectionTitle name="sponsor" />
-			<div class="section-content reveal-anim-con">
-				<p class="reveal-anim-item"><center>{$_('w.inPreparation')}</center></p>
+			<div class="section-content">
+				<a href="https://gachisup.com" target="_blank" rel="noopener noreferrer">
+					<img src="/images/logos/gachisup_oxipng.png" alt=" " />
+					ガチサプ ONLINE STORE
+				</a>
 			</div>
 		</section>
 	</div>
@@ -274,6 +277,29 @@
 			&:active {
 				box-shadow: 0 3px 0 $btn-shadow-col;
 				transform: translateY(9px);
+			}
+		}
+	}
+
+	#sponsor {
+		a {
+			display: block;
+			padding: 20px 0;
+			text-align: center;
+			font-size: 22px;
+			border: 4px solid rgba($primary-color, 0.75);
+			border-radius: 2px;
+			transition: 0.2s;
+
+			&:hover {
+				background-color: #ffffff10;
+			}
+
+			img {
+				display: block;
+				max-width: 86%;
+				margin: 0 auto;
+				margin-bottom: 18px;
 			}
 		}
 	}
