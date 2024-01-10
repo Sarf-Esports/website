@@ -109,7 +109,7 @@ export const member_lists = [
 				hompage: null
 			},
 			{
-				name: 'れん',
+				name: 'れんだよ',
 				icon: null,
 				twitter: 'RECT_2434',
 				youtube: null,
