@@ -1,4 +1,8 @@
 {
+	"w": {
+		"inPreparation": "준비 중...",
+		"backToTop": "상단 페이지로 돌아 가기"
+	},
 	"top": {
 		"about.undefeatedSpirit": "'불굴의 정신'",
 		"about": [
@@ -14,5 +18,6 @@
 	"news": {
 		"desc": "REVATI 의 최신 소식을 전해드립니다:",
 		"back": "뉴스 목록으로 돌아가기"
-	}
+	},
+	"error.404": "찾고 계신 페이지를 찾을 수 없습니다."
 }

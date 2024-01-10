@@ -2,22 +2,21 @@
 <script>
 	import LinkIcon from '$lib/components/link_icon.svelte';
 
-	const head = { title: '404 Not Found' };
+	import { _ } from 'svelte-i18n';
 </script>
 
 <svelte:head>
-	<title>REVATI | {head.title}</title>
+	<title>REVATI | 404 Not Found</title>
 </svelte:head>
 
 <main>
 	<div>
 		<div>
-			<h1>404 <ruby>Page<rt>パゲ</rt></ruby> Not Found</h1>
+			<h1>404 Page Not Found</h1>
+			<p>{$_('error.404')}</p>
 			<p>
-				申し訳御座いません。誠に遺憾。<br />
-				お探しのページは見つかりませんでした。<br />
-				<a href="/"
-					>トップページへ戻る
+				<a href="/">
+					{$_('w.backToTop')}
 					<LinkIcon size="18px" />
 				</a>
 			</p>
@@ -63,10 +62,6 @@
 					&:hover {
 						filter: drop-shadow(-6px 2px 0 #777777);
 						transition: 0.2s;
-					}
-
-					rt {
-						margin-bottom: -16px;
 					}
 				}
 

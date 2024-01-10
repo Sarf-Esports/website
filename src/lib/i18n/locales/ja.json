@@ -1,4 +1,8 @@
 {
+	"w": {
+		"inPreparation": "準備中...",
+		"backToTop": "トップページへ戻る"
+	},
 	"top": {
 		"about.undefeatedSpirit": "「不屈の精神」",
 		"about": [
@@ -14,5 +18,6 @@
 	"news": {
 		"desc": "REVATI の最新情報をお届けします:",
 		"back": "ニュース一覧へ戻る"
-	}
+	},
+	"error.404": "お探しのページは見つかりませんでした。"
 }
