@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20240105',
+		title: 'ガチサプとのスポンサー契約締結のお知らせ'
+	},
+	{
+		published: true,
 		date: '20240103',
 		title: 'Creator部門-はいせ加入のお知らせ'
 	},
