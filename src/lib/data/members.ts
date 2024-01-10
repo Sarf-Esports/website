@@ -85,6 +85,14 @@ export const member_lists = [
 				homepage: null
 			},
 			{
+				name: 'yuki7',
+				icon: 'yuki.webp',
+				twitter: 'yuki_fpsGG',
+				youtube: '@yuki7_',
+				twitch: 'yuki7_fps',
+				homepage: null
+			},
+			{
 				name: 'きむにぃ',
 				icon: 'kimunii.webp',
 				twitter: 'kimunii017',
@@ -99,6 +107,14 @@ export const member_lists = [
 				youtube: null,
 				twitch: null,
 				hompage: null
+			},
+			{
+				name: 'れん',
+				icon: null,
+				twitter: 'RECT_2434',
+				youtube: null,
+				twitch: null,
+				homepage: null
 			}
 		]
 	},
