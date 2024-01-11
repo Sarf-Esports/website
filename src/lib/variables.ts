@@ -1,4 +1,4 @@
-// © 2022 - 2024 REVATI
+// © 2022 REVATI
 
 /** Breakpoint for media queries. */
 export const breakpoint = '(max-width: 850px)';

@@ -1,4 +1,4 @@
-<!-- © 2022 - 2024 REVATI -->
+<!-- © 2022 REVATI -->
 <script lang="ts">
 	import { locale } from 'svelte-i18n';
 

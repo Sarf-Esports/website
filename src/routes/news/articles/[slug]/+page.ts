@@ -1,4 +1,4 @@
-// © 2022 - 2024 REVATI
+// © 2022 REVATI
 
 import type { PageLoad } from './$types';
 import { error } from '@sveltejs/kit';
