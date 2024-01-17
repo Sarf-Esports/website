@@ -1,4 +1,4 @@
-<!-- © 2022 - 2024 REVATI -->
+<!-- © 2022 REVATI -->
 <script>
 	import Header from '$lib/components/header/header.svelte';
 	import Footer from '$lib/components/footer.svelte';

@@ -1,4 +1,4 @@
-// © 2022 - 2024 REVATI
+// © 2022 REVATI
 
 // # News 追加する人へ
 //
@@ -22,6 +22,11 @@
 // 細かい書き方は `/src/routes/news/article/20230206_test.md` を参照してください。
 
 export const news_list = [
+	{
+		published: true,
+		date: '20240117',
+		title: 'ストリーマー部門-きむにぃ脱退のお知らせ'
+	},
 	{
 		published: true,
 		date: '20240110',

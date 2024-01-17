@@ -1,4 +1,4 @@
-<!-- © 2022 - 2024 REVATI -->
+<!-- © 2022 REVATI -->
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { fly } from 'svelte/transition';

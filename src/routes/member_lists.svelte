@@ -1,4 +1,4 @@
-<!-- © 2022 - 2024 REVATI -->
+<!-- © 2022 REVATI -->
 <script>
 	import { member_lists } from '$lib/data/members';
 	import { word_to_camel_case } from '$lib/util';

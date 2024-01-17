@@ -1,4 +1,4 @@
-// © 2022 - 2024 REVATI
+// © 2022 REVATI
 
 // # メンバーを追加する人へ
 //
@@ -90,14 +90,6 @@ export const member_lists = [
 				twitter: 'yuki_fpsGG',
 				youtube: '@yuki7_',
 				twitch: 'yuki7_fps',
-				homepage: null
-			},
-			{
-				name: 'きむにぃ',
-				icon: 'kimunii.webp',
-				twitter: 'kimunii017',
-				youtube: null,
-				twitch: 'kimunii_twitch',
 				homepage: null
 			},
 			{

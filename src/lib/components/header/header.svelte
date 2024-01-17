@@ -1,4 +1,4 @@
-<!-- © 2022 - 2024 REVATI -->
+<!-- © 2022 REVATI -->
 <script lang="ts">
 	import Contact from './contact.svelte';
 	import HbBtn from './hamburger_button.svelte';
