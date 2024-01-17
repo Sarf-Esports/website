@@ -93,14 +93,6 @@ export const member_lists = [
 				homepage: null
 			},
 			{
-				name: 'きむにぃ',
-				icon: 'kimunii.webp',
-				twitter: 'kimunii017',
-				youtube: null,
-				twitch: 'kimunii_twitch',
-				homepage: null
-			},
-			{
 				name: 'シュガー',
 				icon: 'sugar.webp',
 				twitter: 'SQ0356',
