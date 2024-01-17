@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20240117',
+		title: 'ストリーマー部門-きむにぃ脱退のお知らせ'
+	},
+	{
+		published: true,
 		date: '20240110',
 		title: 'Apex部門-れんだよ,Yuki加入のお知らせ'
 	},
