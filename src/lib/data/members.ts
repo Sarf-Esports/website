@@ -250,7 +250,15 @@ export const member_lists = [
 				youtube: '@Lifelex57',
 				twitch: 'lilex7',
 				homepage: null
-			}
+			},
+			{
+				name: '碧海まっちゃ',
+				icon: 'aomi_matcha.webp',
+				twitter: 'aomi_matcha',
+				youtube: '@aomi_matcha',
+				twitch: 'aomi_matcha',
+				homepage: null
+			},
 		]
 	},
 	{
