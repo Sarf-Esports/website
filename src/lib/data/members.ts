@@ -258,7 +258,7 @@ export const member_lists = [
 				youtube: '@aomi_matcha',
 				twitch: 'aomi_matcha',
 				homepage: null
-			},
+			}
 		]
 	},
 	{
