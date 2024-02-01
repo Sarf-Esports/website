@@ -222,9 +222,9 @@ export const member_lists = [
 			{
 				name: 'Kaz9nnN',
 				icon: 'kaz.webp',
-				twitter: 'Kaz9nnN',
+				twitter: 'KAZKUN_TSUYOI',
 				youtube: null,
-				twitch: 'kaz9nnn1',
+				twitch: 'rev_kazkun',
 				homepage: null
 			},
 			{
