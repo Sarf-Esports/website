@@ -232,7 +232,7 @@ export const member_lists = [
 				icon: 'sirora.webp',
 				twitter: 'sirora_46pq',
 				youtube: null,
-				twitch: 'sirora_46pq',
+				twitch: 'sirora46',
 				homepage: null
 			},
 			{
