@@ -145,7 +145,7 @@ export const member_lists = [
 			{
 				name: 'RetoRuto9900K',
 				icon: 'retoruto.webp',
-				twitter: 'tutinoko_kusaa',
+				twitter: 'Reto9900TN',
 				youtube: '@reto9900k',
 				twitch: null,
 				homepage: null
