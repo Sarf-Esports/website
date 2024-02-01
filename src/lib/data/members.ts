@@ -51,7 +51,7 @@ export const member_lists = [
 				name: 'Rialy',
 				icon: null,
 				twitter: 'Ria1fn',
-				youtube: '@Ria1fn',
+				youtube: '@Riayfps',
 				twitch: null,
 				homepage: null
 			},
