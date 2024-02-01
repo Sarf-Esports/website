@@ -278,7 +278,7 @@ export const member_lists = [
 				twitter: 'fIuffyVibes',
 				youtube: null,
 				twitch: null,
-				homepage: 'https://foriio.com/HIGHJEANX'
+				homepage: null
 			},
 			{
 				name: 'Nkyn',
