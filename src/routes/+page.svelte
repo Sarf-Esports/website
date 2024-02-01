@@ -59,7 +59,7 @@
 	<div class="container">
 		<div id="op-container" class="is-playing" bind:this={op_container}>
 			<video
-				src="/videos/revati_op_muted.mov"
+				src="/videos/revati_op_muted.mp4"
 				id="op-video"
 				on:ended={(self) => op_loop(self)}
 				muted
@@ -145,7 +145,7 @@
 
 	#op-container {
 		display: block;
-		background-image: url(/images/logos/revati_large_dark.png);
+		background-image: url(/images/logos/revati/title_oxipng.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		height: 100vh;
@@ -153,8 +153,8 @@
 		bottom: 18px;
 
 		@include sp {
-			background-size: 256vw;
-			background-position: 50% calc(48% - 6vh);
+			background-size: 72vw;
+			background-position: 50% 52%;
 		}
 	}
 
@@ -179,7 +179,7 @@
 		}
 
 		@include sp {
-			height: 128vw;
+			height: 134vw;
 			background-size: 256vw;
 		}
 	}

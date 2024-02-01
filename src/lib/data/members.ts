@@ -51,7 +51,7 @@ export const member_lists = [
 				name: 'Rialy',
 				icon: null,
 				twitter: 'Ria1fn',
-				youtube: '@Ria1fn',
+				youtube: '@Riayfps',
 				twitch: null,
 				homepage: null
 			},
@@ -145,7 +145,7 @@ export const member_lists = [
 			{
 				name: 'RetoRuto9900K',
 				icon: 'retoruto.webp',
-				twitter: 'tutinoko_kusaa',
+				twitter: 'Reto9900TN',
 				youtube: '@reto9900k',
 				twitch: null,
 				homepage: null
@@ -222,9 +222,9 @@ export const member_lists = [
 			{
 				name: 'Kaz9nnN',
 				icon: 'kaz.webp',
-				twitter: 'Kaz9nnN',
+				twitter: 'KAZKUN_TSUYOI',
 				youtube: null,
-				twitch: 'kaz9nnn1',
+				twitch: 'rev_kazkun',
 				homepage: null
 			},
 			{
@@ -232,7 +232,7 @@ export const member_lists = [
 				icon: 'sirora.webp',
 				twitter: 'sirora_46pq',
 				youtube: null,
-				twitch: 'sirora_46pq',
+				twitch: 'sirora46',
 				homepage: null
 			},
 			{
@@ -258,7 +258,7 @@ export const member_lists = [
 				youtube: '@aomi_matcha',
 				twitch: 'aomi_matcha',
 				homepage: null
-			},
+			}
 		]
 	},
 	{
@@ -278,7 +278,7 @@ export const member_lists = [
 				twitter: 'fIuffyVibes',
 				youtube: null,
 				twitch: null,
-				homepage: 'https://foriio.com/HIGHJEANX'
+				homepage: null
 			},
 			{
 				name: 'Nkyn',
