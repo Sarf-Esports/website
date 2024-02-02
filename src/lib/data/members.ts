@@ -37,7 +37,7 @@
 
 export const member_lists = [
 	{
-		kind: 'fortnite',
+		name: 'Fortnite',
 		members: [
 			{
 				name: 'Life',
@@ -66,7 +66,7 @@ export const member_lists = [
 		]
 	},
 	{
-		kind: 'apex',
+		name: 'Apex Legends',
 		members: [
 			{
 				name: 'Kxuh',
@@ -111,16 +111,12 @@ export const member_lists = [
 		]
 	},
 	{
-		kind: 'overwatch',
+		name: 'Overwatch (JP)',
+		members: []
+	},
+	{
+		name: 'Overwatch (EMEA)',
 		members: [
-			{
-				name: 'Junnyang',
-				icon: null,
-				twitter: 'junnyang77_ow',
-				youtube: '@JunnyangInSeoul',
-				twitch: 'junnyang77',
-				homepage: null
-			},
 			{
 				name: 'STRIKE',
 				icon: 'strike.webp',
@@ -132,7 +128,7 @@ export const member_lists = [
 		]
 	},
 	{
-		kind: 'minecraft',
+		name: 'Minecraft',
 		members: [
 			{
 				name: 'GEN3987',
@@ -217,8 +213,16 @@ export const member_lists = [
 		]
 	},
 	{
-		kind: 'streamer',
+		name: 'Streamer',
 		members: [
+			{
+				name: 'Junnyang',
+				icon: null,
+				twitter: 'junnyang77_ow',
+				youtube: '@JunnyangInSeoul',
+				twitch: 'junnyang77',
+				homepage: null
+			},
 			{
 				name: 'Kaz9nnN',
 				icon: 'kaz.webp',
@@ -262,7 +266,7 @@ export const member_lists = [
 		]
 	},
 	{
-		kind: 'creator',
+		name: 'Creator',
 		members: [
 			{
 				name: 'marlone',

@@ -10,7 +10,6 @@
 	img {
 		height: 64px;
 		width: auto;
-		text-align: center;
 		margin-top: 86px;
 		margin-bottom: 32px;
 		user-select: none;

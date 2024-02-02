@@ -1,15 +1,16 @@
 <!-- © 2022 REVATI -->
 <script>
 	import { member_lists } from '$lib/data/members';
-	import { word_to_camel_case } from '$lib/util';
 </script>
 
 <ul id="team-list">
-	{#each member_lists as { kind, members }}
-		{@const kind_camel = word_to_camel_case(kind)}
+	{#each member_lists as { name, members }}
 		<li>
-			<h2 class="kind">{kind_camel == 'Apex' ? 'Apex Legends' : kind_camel}</h2>
-			<ul id="{kind}-member-list">
+			<h2>{name}</h2>
+			{#if members.length == 0}
+				<p>Coming soon...</p>
+			{/if}
+			<ul>
 				{#each members as { name, icon, twitter, youtube, twitch, homepage }}
 					<li class="reveal-anim-con">
 						<div class="reveal-anim-item">
