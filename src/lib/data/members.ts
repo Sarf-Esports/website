@@ -37,7 +37,7 @@
 
 export const member_lists = [
 	{
-		kind: 'fortnite',
+		name: 'Fortnite',
 		members: [
 			{
 				name: 'Life',
@@ -66,7 +66,7 @@ export const member_lists = [
 		]
 	},
 	{
-		kind: 'apex',
+		name: 'Apex Legends',
 		members: [
 			{
 				name: 'Kxuh',
@@ -111,7 +111,7 @@ export const member_lists = [
 		]
 	},
 	{
-		kind: 'overwatch',
+		name: 'Overwatch',
 		members: [
 			{
 				name: 'STRIKE',
@@ -124,7 +124,7 @@ export const member_lists = [
 		]
 	},
 	{
-		kind: 'minecraft',
+		name: 'Minecraft',
 		members: [
 			{
 				name: 'GEN3987',
@@ -209,7 +209,7 @@ export const member_lists = [
 		]
 	},
 	{
-		kind: 'streamer',
+		name: 'Streamer',
 		members: [
 			{
 				name: 'Junnyang',
@@ -262,7 +262,7 @@ export const member_lists = [
 		]
 	},
 	{
-		kind: 'creator',
+		name: 'Creator',
 		members: [
 			{
 				name: 'marlone',
