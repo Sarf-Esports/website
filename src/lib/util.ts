@@ -32,11 +32,6 @@ export function shake(elm: HTMLElement) {
 	}, 1000);
 }
 
-/** Converts a string to camel case. */
-export function word_to_camel_case(str: string) {
-	return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
 /**
  * Toggles body scroll prevention.
  *

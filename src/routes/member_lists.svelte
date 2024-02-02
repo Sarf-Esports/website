@@ -1,7 +1,6 @@
 <!-- © 2022 REVATI -->
 <script>
 	import { member_lists } from '$lib/data/members';
-	import { word_to_camel_case } from '$lib/util';
 </script>
 
 <ul id="team-list">
