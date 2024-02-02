@@ -108,7 +108,7 @@
 		<section id="store">
 			<SectionTitle name="store" />
 			<div class="section-content reveal-anim-con">
-				<p class="reveal-anim-item"><center>Coming soon...</center></p>
+				<p class="reveal-anim-item">Coming soon...</p>
 				<!-- <img src="/images/store_thumbnail.webp" alt="store thumbnail" loading="lazy" />
 				<a
 					href="https://suzuri.jp/REVATI"
@@ -232,10 +232,6 @@
 				padding-bottom: 16px;
 			}
 		}
-
-		p {
-			text-align: center;
-		}
 	}
 
 	#store {
@@ -260,7 +256,6 @@
 	#sponsor {
 		a {
 			display: block;
-			text-align: center;
 			font-size: 22px;
 			text-decoration: none;
 

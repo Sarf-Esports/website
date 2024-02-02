@@ -29,7 +29,6 @@
 	@use '/assets/stylesheets/variables/mixin' as *;
 
 	main {
-		text-align: center;
 		min-height: 86vh;
 
 		> div {

@@ -20,7 +20,6 @@
 		.copyright {
 			font-size: 16px;
 			margin-top: 2em;
-			text-align: center;
 		}
 
 		.socials {
