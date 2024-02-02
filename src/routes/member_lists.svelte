@@ -7,6 +7,9 @@
 	{#each member_lists as { name, members }}
 		<li>
 			<h2>{name}</h2>
+			{#if members.length == 0}
+				<p>Coming soon...</p>
+			{/if}
 			<ul>
 				{#each members as { name, icon, twitter, youtube, twitch, homepage }}
 					<li class="reveal-anim-con">
