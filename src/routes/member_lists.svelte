@@ -7,7 +7,7 @@
 <ul id="team-list">
 	{#each member_lists as { name, members }}
 		<li>
-			<h2 class="kind">{name}</h2>
+			<h2>{name}</h2>
 			<ul>
 				{#each members as { name, icon, twitter, youtube, twitch, homepage }}
 					<li class="reveal-anim-con">
