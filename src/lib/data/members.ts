@@ -111,7 +111,7 @@ export const member_lists = [
 		]
 	},
 	{
-		name: 'Overwatch',
+		name: 'Overwatch (EMEA)',
 		members: [
 			{
 				name: 'STRIKE',
