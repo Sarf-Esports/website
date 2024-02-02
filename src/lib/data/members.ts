@@ -114,14 +114,6 @@ export const member_lists = [
 		kind: 'overwatch',
 		members: [
 			{
-				name: 'Junnyang',
-				icon: null,
-				twitter: 'junnyang77_ow',
-				youtube: '@JunnyangInSeoul',
-				twitch: 'junnyang77',
-				homepage: null
-			},
-			{
 				name: 'STRIKE',
 				icon: 'strike.webp',
 				twitter: '_Strikeow_',
@@ -219,6 +211,14 @@ export const member_lists = [
 	{
 		kind: 'streamer',
 		members: [
+			{
+				name: 'Junnyang',
+				icon: null,
+				twitter: 'junnyang77_ow',
+				youtube: '@JunnyangInSeoul',
+				twitch: 'junnyang77',
+				homepage: null
+			},
 			{
 				name: 'Kaz9nnN',
 				icon: 'kaz.webp',
