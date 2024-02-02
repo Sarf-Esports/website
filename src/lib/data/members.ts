@@ -111,6 +111,10 @@ export const member_lists = [
 		]
 	},
 	{
+		name: 'Overwatch (JP)',
+		members: []
+	},
+	{
 		name: 'Overwatch (EMEA)',
 		members: [
 			{
