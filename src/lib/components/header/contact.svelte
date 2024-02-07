@@ -45,9 +45,9 @@
 		<div id="contact-modal-back" on:click={toggle_contact_modal} on:keypress={empty} role="none" />
 		<div id="contact-modal" transition:fly|global={{ y: -64, duration: 240 }}>
 			<h1>- CONTACT US -</h1>
-			<span class="modal-close-btn" on:click={toggle_contact_modal} on:keypress={empty} role="button">
+			<button class="modal-close-btn" on:click={toggle_contact_modal}>
 				&times;
-			</span>
+			</button>
 			<p>
 				<nobr>{$_('contact.desc')}</nobr><br />
 				{$_('contact.note.0')}<br />
@@ -134,6 +134,10 @@
 			cursor: pointer;
 			font-size: 2rem;
 			font-weight: bold;
+			background: none;
+			border: none;
+			color: inherit;
+			font-family: inherit;
 			transition: 0.2s;
 		}
 
