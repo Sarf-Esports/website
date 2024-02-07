@@ -8,8 +8,8 @@
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lnt": "prettier --plugin-search-dir . --check . && eslint .",
-		"fmt": "prettier --plugin-search-dir . --write ."
+		"lnt": "prettier --check . && eslint .",
+		"fmt": "prettier --write ."
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-cloudflare": "^2.3.4",
