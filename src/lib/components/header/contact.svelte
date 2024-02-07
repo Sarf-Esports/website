@@ -45,9 +45,7 @@
 		<div id="contact-modal-back" on:click={toggle_contact_modal} on:keypress={empty} role="none" />
 		<div id="contact-modal" transition:fly|global={{ y: -64, duration: 240 }}>
 			<h1>- CONTACT US -</h1>
-			<button class="modal-close-btn" on:click={toggle_contact_modal}>
-				&times;
-			</button>
+			<button class="modal-close-btn" on:click={toggle_contact_modal}> &times; </button>
 			<p>
 				<nobr>{$_('contact.desc')}</nobr><br />
 				{$_('contact.note.0')}<br />
