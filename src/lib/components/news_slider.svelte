@@ -152,10 +152,10 @@
 				class="{i == -1
 					? 'left-item'
 					: i == 0
-					? 'middle-item'
-					: i == 1
-					? 'right-item'
-					: 'hidden'}{is_touch_device ? ' mobile' : ''}"
+						? 'middle-item'
+						: i == 1
+							? 'right-item'
+							: 'hidden'}{is_touch_device ? ' mobile' : ''}"
 			>
 				<a href="./news/articles/{date}" tabindex="-1">
 					<img src="/images/news/{date}.png" alt="news thumbnail" />
