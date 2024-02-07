@@ -43,7 +43,7 @@
 {#if !is_hb_button_enabled}
 	{#if is_contact_modal_visible}
 		<div id="contact-modal-back" on:click={toggle_contact_modal} on:keypress={empty} />
-		<div id="contact-modal" transition:fly={{ y: -64, duration: 240 }}>
+		<div id="contact-modal" transition:fly|global={{ y: -64, duration: 240 }}>
 			<h1>- CONTACT US -</h1>
 			<span class="modal-close-btn" on:click={toggle_contact_modal} on:keypress={empty}>
 				&times;

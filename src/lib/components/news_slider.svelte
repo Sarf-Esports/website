@@ -168,8 +168,8 @@
 </ul>
 <h2>
 	{#key slider_index}<span
-			in:fly={{ y: counter_fade() }}
-			out:fly={{ x: 11, y: -counter_fade() }}
+			in:fly|global={{ y: counter_fade() }}
+			out:fly|global={{ x: 11, y: -counter_fade() }}
 			style="display:inline-block;">{slider_index + 1}</span
 		>{/key}<span class="split-line">/</span>{slider_len}
 </h2>

@@ -33,10 +33,10 @@
 			is_opened = !is_opened;
 			dispatch('toggle', { is_opened });
 		}}
-		transition:fly={{ x: fly_offset, y: -fly_offset, duration: 600 }}
+		transition:fly|global={{ x: fly_offset, y: -fly_offset, duration: 600 }}
 	>
 		{#key is_opened}
-			<span transition:scale={{ duration: 300 }}>{is_opened ? 'CLOSE' : 'MENU'}</span>
+			<span transition:scale|global={{ duration: 300 }}>{is_opened ? 'CLOSE' : 'MENU'}</span>
 		{/key}
 	</button>
 {/if}
