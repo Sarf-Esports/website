@@ -6,7 +6,7 @@ import mdsvex_conf from './mdsvex.config.js';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: [vitePreprocess(), preprocess({ sourceMap: true }), mdsvex(mdsvex_conf)],
+	preprocess: [mdsvex(mdsvex_conf), vitePreprocess(), preprocess({ sourceMap: true })],
 
 	kit: {
 		adapter: adapter(),
