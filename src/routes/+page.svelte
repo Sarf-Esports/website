@@ -189,7 +189,7 @@
 			font-family: 'Zen Kaku Gothic Antique Bold';
 			font-weight: 700;
 			padding: 0 6px;
-			margin: 0 16px;
+			margin: 0 auto;
 
 			&::after {
 				content: '';
@@ -216,20 +216,33 @@
 
 			h1 {
 				letter-spacing: 0.075em;
-
-				@include pc {
-					font-size: 48px;
-				}
-
-				@include sp {
-					font-size: 36px;
-				}
+				font-size: 48px;
 			}
 
 			h2 {
 				font-size: 36px;
 				margin-top: -32px;
 				padding-bottom: 16px;
+			}
+
+			@include sp {
+				max-width: 448px;
+
+				h1, h2 {
+					display: inline-block;
+				}
+
+				h1 {
+					font-size: 30px;
+					line-height: 1.2;
+					padding: 0 5px;
+				}
+
+				h2 {
+					font-size: 30px;
+					margin-top: -18px;
+					padding-bottom: 8px;
+				}
 			}
 		}
 	}
