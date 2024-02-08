@@ -38,7 +38,8 @@ $reveal-anim-last-point: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 	height: 100%;
 	background-color: $primary-color;
 	clip-path: $reveal-anim-first-point;
-	animation: fadeInFromLeftTop $reveal-anim-duration forwards $reveal-anim-delay,
+	animation:
+		fadeInFromLeftTop $reveal-anim-duration forwards $reveal-anim-delay,
 		fadeOutToRight $reveal-anim-duration forwards $reveal-anim-duration + $reveal-anim-delay;
 
 	// # USSR version ☭

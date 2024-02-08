@@ -42,12 +42,10 @@
 
 {#if !is_hb_button_enabled}
 	{#if is_contact_modal_visible}
-		<div id="contact-modal-back" on:click={toggle_contact_modal} on:keypress={empty} />
-		<div id="contact-modal" transition:fly={{ y: -64, duration: 240 }}>
+		<div id="contact-modal-back" on:click={toggle_contact_modal} on:keypress={empty} role="none" />
+		<div id="contact-modal" transition:fly|global={{ y: -64, duration: 240 }}>
 			<h1>- CONTACT US -</h1>
-			<span class="modal-close-btn" on:click={toggle_contact_modal} on:keypress={empty}>
-				&times;
-			</span>
+			<button class="modal-close-btn" on:click={toggle_contact_modal}>&times;</button>
 			<p>
 				<nobr>{$_('contact.desc')}</nobr><br />
 				{$_('contact.note.0')}<br />
@@ -134,6 +132,10 @@
 			cursor: pointer;
 			font-size: 2rem;
 			font-weight: bold;
+			background: none;
+			border: none;
+			color: inherit;
+			font-family: inherit;
 			transition: 0.2s;
 		}
 
