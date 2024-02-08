@@ -49,12 +49,15 @@
 
 <div id="header2" class:open={is_drawer_menu_opened}>
 	<div class="socials">
-		<Socials show_email style="
-			justify-content: left;
-			margin-top: 5vh;
-			margin-left: 5vh;
-			margin-bottom: calc(13vh - 56px);
-		" />
+		<Socials
+			show_email
+			style="
+				justify-content: left;
+				margin-top: 5vh;
+				margin-left: 5vh;
+				margin-bottom: calc(13vh - 56px);
+			"
+		/>
 	</div>
 	<div class="lang-switcher"><LangSwitcher /></div>
 </div>
