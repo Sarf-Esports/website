@@ -11,6 +11,7 @@
 
 <style lang="scss">
 	@use '/assets/stylesheets/variables/color' as *;
+	@use '/assets/stylesheets/variables/mixin' as *;
 
 	span {
 		$btn-side-height: 12px;
@@ -38,6 +39,10 @@
 		&:active {
 			box-shadow: 0 3px 0 $primary-color-pale-darker;
 			transform: translateY(9px);
+		}
+
+		@include sp {
+			font-size: 18px;
 		}
 	}
 </style>
