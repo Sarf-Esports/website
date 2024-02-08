@@ -35,15 +35,9 @@ li {
 		&:hover::after {
 			transform: scaleX(112%);
 		}
-	}
-}
 
-@media screen and (max-height: 618px) {
-	ul {
-		left: calc(50vw - 95px) !important;
-	}
-
-	li a {
-		font-size: 23px;
+		@include low-height {
+			font-size: 23px;
+		}
 	}
 }
