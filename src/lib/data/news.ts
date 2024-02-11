@@ -24,6 +24,11 @@
 export const news_list = [
 	{
 		published: true,
+		date: '20240211',
+		title: 'Apex部門-Pear,Kou脱退のお知らせ'
+	},
+	{
+		published: true,
 		date: '20240118',
 		title: 'ストリーマー部門- 碧海まっちゃ 加入のお知らせ'
 	},
