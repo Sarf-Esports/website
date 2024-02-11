@@ -69,22 +69,6 @@ export const member_lists = [
 		name: 'Apex Legends',
 		members: [
 			{
-				name: 'Kxuh',
-				icon: 'kxuh.webp',
-				twitter: 'Lilx_zZc',
-				youtube: '@k0uh862',
-				twitch: 'revati_kxuh',
-				homepage: null
-			},
-			{
-				name: 'Pear',
-				icon: 'pear.webp',
-				twitter: 'pear_fps',
-				youtube: null,
-				twitch: 'pear_fps',
-				homepage: null
-			},
-			{
 				name: 'yuki7',
 				icon: 'yuki.webp',
 				twitter: 'yuki_fpsGG',
