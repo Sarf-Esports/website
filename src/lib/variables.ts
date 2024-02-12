@@ -13,3 +13,6 @@ export const socials = {
 	youtube: '@revati_jp',
 	github: 'Sarf-Esports'
 };
+
+/** URL of the site. */
+export const SITE_URL = 'https://revati.jp';

@@ -3,6 +3,7 @@
 	import NewsDate from '$lib/components/news_date.svelte';
 
 	import type { PageData } from './$types';
+	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
 
 	export let data: PageData;
@@ -17,8 +18,8 @@
 	<meta name="title" content={head.title} />
 
 	<meta property="og:title" content={head.title} />
-	<meta property="og:url" content="https://revati.jp/news/articles/{metadata.date}" />
-	<meta property="og:image" content="https://revati.jp{thumbnail_path}" />
+	<meta property="og:url" content="{SITE_URL}/news/articles/{metadata.date}" />
+	<meta property="og:image" content="{SITE_URL}{thumbnail_path}" />
 	<meta property="og:type" content="article" />
 </svelte:head>
 

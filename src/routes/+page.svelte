@@ -7,6 +7,7 @@
 
 	import { browser } from '$app/environment';
 	import { add_class_at_scroll } from '$lib/util';
+	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
 
 	if (browser) {
@@ -50,8 +51,8 @@
 
 	<meta property="og:title" content={head.title} />
 	<meta property="og:description" content={head.desc} />
-	<meta property="og:url" content="https://revati.jp" />
-	<meta property="og:image" content="https://revati.jp/images/logos/revati/header_mini.png" />
+	<meta property="og:url" content={SITE_URL} />
+	<meta property="og:image" content="{SITE_URL}/images/logos/revati/header_mini.png" />
 	<meta property="og:type" content="website" />
 </svelte:head>
 

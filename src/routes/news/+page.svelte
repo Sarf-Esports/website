@@ -3,6 +3,7 @@
 	import SectionTitle from '../section_title.svelte';
 	import NewsSlider from '$lib/components/news_slider.svelte';
 
+	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
 
 	const head = {
@@ -18,8 +19,8 @@
 
 	<meta property="og:title" content={head.title} />
 	<meta property="og:description" content={head.desc} />
-	<meta property="og:url" content="https://revati.jp/news" />
-	<meta property="og:image" content="https://revati.jp/images/logos/revati/header_mini.png" />
+	<meta property="og:url" content="{SITE_URL}/news" />
+	<meta property="og:image" content="{SITE_URL}/images/logos/revati/header_mini.png" />
 	<meta property="og:type" content="article" />
 </svelte:head>
 

@@ -3,7 +3,7 @@
 	import Header from '$lib/components/header/header.svelte';
 	import Footer from '$lib/components/footer.svelte';
 
-	import { copyright } from '$lib/variables';
+	import { copyright, SITE_URL } from '$lib/variables';
 	import { browser } from '$app/environment';
 
 	if (browser) {
@@ -27,7 +27,7 @@
 	<meta property="og:site_name" content="REVATI" />
 	<meta property="og:locale" content="ja_JP" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="https://revati.jp" />
+	<meta name="twitter:site" content={SITE_URL} />
 	<!-- ↓ $primary-color -->
 	<meta name="theme-color" content="#154c83" />
 
