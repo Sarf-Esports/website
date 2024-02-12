@@ -53,7 +53,7 @@ $ npm run dev
   ➜  press h + enter to show help
 ```
 
-## ビルド
+### ビルド
 
 リモートにプッシュするときはビルドして崩壊してないか確認してほしい:
 
