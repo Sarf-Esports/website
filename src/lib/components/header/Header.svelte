@@ -1,9 +1,9 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import Contact from './contact.svelte';
-	import HbBtn from './hamburger_button.svelte';
-	import Socials from '../socials.svelte';
-	import LangSwitcher from '../lang_switcher.svelte';
+	import Contact from './Contact.svelte';
+	import HbBtn from './HamburgerButton.svelte';
+	import Socials from '../Socials.svelte';
+	import LangSwitcher from '../LangSwitcher.svelte';
 
 	import { COPYRIGHT } from '$lib/variables';
 	import { toggleScrollPrevention } from '$lib/util';

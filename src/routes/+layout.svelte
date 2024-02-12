@@ -1,7 +1,7 @@
 <!-- © 2022 REVATI -->
 <script>
-	import Header from '$lib/components/header/header.svelte';
-	import Footer from '$lib/components/footer.svelte';
+	import Header from '$lib/components/header/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	import { COPYRIGHT, SITE_URL } from '$lib/variables';
 	import { browser } from '$app/environment';

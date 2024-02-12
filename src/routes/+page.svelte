@@ -1,9 +1,9 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import SectionTitle from './section_title.svelte';
-	import NewsSlider from '$lib/components/news_slider.svelte';
-	import MemberLists from './member_lists.svelte';
-	import LinkButton from '$lib/components/link_button.svelte';
+	import SectionTitle from './SectionTitle.svelte';
+	import NewsSlider from '$lib/components/newsSlider.svelte';
+	import MemberLists from './MemberLists.svelte';
+	import LinkButton from '$lib/components/LinkButton.svelte';
 
 	import { browser } from '$app/environment';
 	import { addClassAtScroll } from '$lib/util';

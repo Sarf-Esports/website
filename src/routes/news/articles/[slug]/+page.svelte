@@ -1,6 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import NewsDate from '$lib/components/news_date.svelte';
+	import NewsDate from '$lib/components/NewsDate.svelte';
 
 	import type { PageData } from './$types';
 	import { SITE_URL } from '$lib/variables';

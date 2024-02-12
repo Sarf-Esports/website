@@ -1,7 +1,7 @@
 <!-- © 2022 REVATI -->
 <script>
-	import SectionTitle from '../section_title.svelte';
-	import NewsSlider from '$lib/components/news_slider.svelte';
+	import SectionTitle from '../SectionTitle.svelte';
+	import NewsSlider from '$lib/components/newsSlider.svelte';
 
 	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';

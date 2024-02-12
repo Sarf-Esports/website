@@ -1,7 +1,7 @@
 <!-- © 2022 REVATI -->
 <script>
-	import Socials from './socials.svelte';
-	import LangSwitcher from './lang_switcher.svelte';
+	import Socials from './Socials.svelte';
+	import LangSwitcher from './LangSwitcher.svelte';
 
 	import { COPYRIGHT } from '$lib/variables';
 </script>
