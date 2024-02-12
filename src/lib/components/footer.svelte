@@ -3,11 +3,11 @@
 	import Socials from './socials.svelte';
 	import LangSwitcher from './lang_switcher.svelte';
 
-	import { copyright } from '$lib/variables';
+	import { COPYRIGHT } from '$lib/variables';
 </script>
 
 <footer>
-	<p class="copyright">{copyright}</p>
+	<p class="copyright">{COPYRIGHT}</p>
 	<div class="socials"><Socials /></div>
 	<div class="lang-btn"><LangSwitcher /></div>
 </footer>

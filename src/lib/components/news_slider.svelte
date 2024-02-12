@@ -3,126 +3,126 @@
 	import NewsDate from '$lib/components/news_date.svelte';
 
 	import { browser } from '$app/environment';
-	import { news_list } from '$lib/data/news';
+	import { NEWS_LIST } from '$lib/data/news';
 	import { shake } from '$lib/util';
 	import { fly } from 'svelte/transition';
 
-	let is_touch_device = false;
+	let isTouchDevice = false;
 
 	if (browser) {
-		if (!is_touch_device) {
+		if (!isTouchDevice) {
 			document.addEventListener(
 				'touchstart',
 				function () {
-					is_touch_device = true;
+					isTouchDevice = true;
 				},
 				{ passive: false }
 			);
 		}
 
 		window.onscroll = () => {
-			fuck_news_arrows();
+			fuckNewsArrows();
 		};
 
 		window.addEventListener('resize', function () {
-			fuck_news_arrows();
+			fuckNewsArrows();
 		});
 	}
 
-	let slider_index = 0;
-	let slider_index_prev = 0;
-	let slider_len = news_list.filter((n) => n.published).length;
+	let sliderIndex = 0;
+	let sliderIndexPrev = 0;
+	let sliderLen = NEWS_LIST.filter((n) => n.published).length;
 
-	function news_prev(btn: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) {
+	function flipPrev(btn: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) {
 		if (btn.target === null) console.error('button target is null');
 
-		slider_index_prev = slider_index;
+		sliderIndexPrev = sliderIndex;
 
 		/* eslint-disable @typescript-eslint/ban-ts-comment */
 		// @ts-ignore
-		let btn_parent = btn.target.parentElement;
+		let btnParent = btn.target.parentElement;
 		/* eslint-enable @typescript-eslint/ban-ts-comment */
 
 		// Whether the previous item is not exist.
-		if (slider_index == 0) {
-			btn_parent.children[0].classList.add('inactive');
-			shake(btn_parent);
+		if (sliderIndex == 0) {
+			btnParent.children[0].classList.add('inactive');
+			shake(btnParent);
 		} else {
-			slider_index--;
-			apply_news(btn_parent);
+			sliderIndex--;
+			applyNews(btnParent);
 		}
 	}
 
-	function news_next(btn: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) {
+	function flipNext(btn: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) {
 		if (btn.target === null) console.error('button target is null');
-		slider_index_prev = slider_index;
+		sliderIndexPrev = sliderIndex;
 
 		/* eslint-disable @typescript-eslint/ban-ts-comment */
 		// @ts-ignore
-		let btn_parent = btn.target.parentElement;
+		let btnParent = btn.target.parentElement;
 		/* eslint-enable @typescript-eslint/ban-ts-comment */
 
 		// Whether the next item is not exist.
-		if (slider_index + 1 == slider_len) {
-			btn_parent.children[1].classList.add('inactive');
-			shake(btn_parent);
+		if (sliderIndex + 1 == sliderLen) {
+			btnParent.children[1].classList.add('inactive');
+			shake(btnParent);
 		} else {
-			slider_index++;
-			apply_news(btn_parent);
+			sliderIndex++;
+			applyNews(btnParent);
 		}
 	}
 
-	function apply_news(btn_parent: { children: { classList: DOMTokenList }[] }) {
+	function applyNews(btn_parent: { children: { classList: DOMTokenList }[] }) {
 		/* eslint-disable @typescript-eslint/ban-ts-comment */
 		// @ts-ignore
 		let news = btn_parent.children[2].children;
 		/* eslint-enable @typescript-eslint/ban-ts-comment */
-		let allow_left = btn_parent.children[0].classList;
-		let allow_right = btn_parent.children[1].classList;
+		let allowLeft = btn_parent.children[0].classList;
+		let allowRight = btn_parent.children[1].classList;
 
-		let mid = news[slider_index].classList;
+		let mid = news[sliderIndex].classList;
 		mid.remove('left-item');
 		mid.remove('right-item');
 		mid.add('middle-item');
 
 		// Whether the previous item is exist.
-		if (slider_index != 0) {
-			let left = news[slider_index - 1].classList;
+		if (sliderIndex != 0) {
+			let left = news[sliderIndex - 1].classList;
 			left.remove('middle-item');
 			left.remove('hidden');
 			left.add('left-item');
-			allow_left.remove('inactive');
+			allowLeft.remove('inactive');
 		} else {
-			allow_left.add('inactive');
+			allowLeft.add('inactive');
 		}
 
 		// Whether the next item is exist.
-		if (slider_index + 1 != slider_len) {
-			let right = news[slider_index + 1].classList;
+		if (sliderIndex + 1 != sliderLen) {
+			let right = news[sliderIndex + 1].classList;
 			right.remove('middle-item');
 			right.remove('hidden');
 			right.add('right-item');
-			allow_right.remove('inactive');
+			allowRight.remove('inactive');
 		} else {
-			allow_right.add('inactive');
+			allowRight.add('inactive');
 		}
 
 		// Whether the two previous item is exist.
-		if (1 < slider_index) {
-			let beyond_left = news[slider_index - 2].classList;
-			beyond_left.remove('left-item');
-			beyond_left.add('hidden');
+		if (1 < sliderIndex) {
+			let beyondLeft = news[sliderIndex - 2].classList;
+			beyondLeft.remove('left-item');
+			beyondLeft.add('hidden');
 		}
 
 		// Whether the two next item is exist.
-		if (slider_index + 2 < slider_len) {
-			let beyond_right = news[slider_index + 2].classList;
-			beyond_right.remove('right-item');
-			beyond_right.add('hidden');
+		if (sliderIndex + 2 < sliderLen) {
+			let beyondRight = news[sliderIndex + 2].classList;
+			beyondRight.remove('right-item');
+			beyondRight.add('hidden');
 		}
 	}
 
-	function fuck_news_arrows() {
+	function fuckNewsArrows() {
 		let arrows = document.getElementsByClassName('arrow');
 		[...arrows].forEach(
 			(a) =>
@@ -133,20 +133,20 @@
 		);
 	}
 
-	function counter_fade() {
+	function counterFade() {
 		const offset = 28;
-		return offset * (slider_index < slider_index_prev ? 1 : -1);
+		return offset * (sliderIndex < sliderIndexPrev ? 1 : -1);
 	}
 </script>
 
-<button on:click={(self) => news_prev(self)} class="arrow inactive" id="arrow-left">&lt</button>
+<button on:click={(self) => flipPrev(self)} class="arrow inactive" id="arrow-left">&lt</button>
 <button
-	on:click={(self) => news_next(self)}
-	class="arrow{slider_len == 1 ? ' inactive' : ''}"
+	on:click={(self) => flipNext(self)}
+	class="arrow{sliderLen == 1 ? ' inactive' : ''}"
 	id="arrow-right">&gt</button
 >
 <ul id="news-slider">
-	{#each news_list as { published, date, title }, i}
+	{#each NEWS_LIST as { published, date, title }, i}
 		{#if published}
 			<li
 				class="{i == -1
@@ -155,7 +155,7 @@
 						? 'middle-item'
 						: i == 1
 							? 'right-item'
-							: 'hidden'}{is_touch_device ? ' mobile' : ''}"
+							: 'hidden'}{isTouchDevice ? ' mobile' : ''}"
 			>
 				<a href="./news/articles/{date}" tabindex="-1">
 					<img src="/images/news/{date}.png" alt="news thumbnail" />
@@ -167,11 +167,11 @@
 	{/each}
 </ul>
 <h2>
-	{#key slider_index}<span
-			in:fly|global={{ y: counter_fade() }}
-			out:fly|global={{ x: 11, y: -counter_fade() }}
-			style="display:inline-block;">{slider_index + 1}</span
-		>{/key}<span class="split-line">/</span>{slider_len}
+	{#key sliderIndex}<span
+			in:fly|global={{ y: counterFade() }}
+			out:fly|global={{ x: 11, y: -counterFade() }}
+			style="display:inline-block;">{sliderIndex + 1}</span
+		>{/key}<span class="split-line">/</span>{sliderLen}
 </h2>
 
 <style lang="scss">

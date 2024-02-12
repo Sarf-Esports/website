@@ -3,40 +3,40 @@
 	import { browser } from '$app/environment';
 	import { fly, scale } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
-	import { breakpoint } from '$lib/variables';
-	import { toggle_scroll_prevention } from '$lib/util';
+	import { BREAKPOINT } from '$lib/variables';
+	import { toggleScrollPrevention } from '$lib/util';
 
-	let is_hb_button_enabled: boolean;
+	let isHbButtonEnabled: boolean;
 
 	if (browser) {
-		let bp = window.matchMedia(breakpoint);
+		let bp = window.matchMedia(BREAKPOINT);
 
-		is_hb_button_enabled = bp.matches;
+		isHbButtonEnabled = bp.matches;
 
 		window.addEventListener('resize', function () {
-			is_hb_button_enabled = bp.matches;
-			toggle_scroll_prevention(is_hb_button_enabled && is_opened);
+			isHbButtonEnabled = bp.matches;
+			toggleScrollPrevention(isHbButtonEnabled && isOpened);
 		});
 	}
 
-	export let is_opened: boolean;
+	export let isOpened: boolean;
 
 	const dispatch = createEventDispatcher();
 
-	const fly_offset = 32;
+	const FLY_OFFSET = 32;
 </script>
 
-{#if is_hb_button_enabled}
+{#if isHbButtonEnabled}
 	<button
-		class:is-opened={is_opened}
+		class:is-opened={isOpened}
 		on:click={() => {
-			is_opened = !is_opened;
-			dispatch('toggle', { is_opened });
+			isOpened = !isOpened;
+			dispatch('toggle', { is_opened: isOpened });
 		}}
-		transition:fly|global={{ x: fly_offset, y: -fly_offset, duration: 600 }}
+		transition:fly|global={{ x: FLY_OFFSET, y: -FLY_OFFSET, duration: 600 }}
 	>
-		{#key is_opened}
-			<span transition:scale|global={{ duration: 300 }}>{is_opened ? 'CLOSE' : 'MENU'}</span>
+		{#key isOpened}
+			<span transition:scale|global={{ duration: 300 }}>{isOpened ? 'CLOSE' : 'MENU'}</span>
 		{/key}
 	</button>
 {/if}

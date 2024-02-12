@@ -6,29 +6,29 @@
 	import LinkButton from '$lib/components/link_button.svelte';
 
 	import { browser } from '$app/environment';
-	import { add_class_at_scroll } from '$lib/util';
+	import { addClassAtScroll } from '$lib/util';
 	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
 
 	if (browser) {
 		window.addEventListener('scroll', function () {
-			add_class_at_scroll(
+			addClassAtScroll(
 				document.getElementsByClassName('reveal-anim-con'),
 				'reveal-anim-con-active'
 			);
-			add_class_at_scroll(
+			addClassAtScroll(
 				document.getElementsByClassName('reveal-anim-item'),
 				'reveal-anim-item-active'
 			);
 		});
 	}
 
-	let op_container: HTMLDivElement;
+	let opContainer: HTMLDivElement;
 
 	/** Loops playback the OP video at intervals. */
-	function op_loop(video: Event & { currentTarget: EventTarget & HTMLVideoElement }) {
+	function opLoop(video: Event & { currentTarget: EventTarget & HTMLVideoElement }) {
 		let v = video.currentTarget;
-		let container = op_container.classList;
+		let container = opContainer.classList;
 		container.remove('is-playing');
 		v.classList.add('invisible');
 		setTimeout(() => {
@@ -38,7 +38,7 @@
 		}, 8000);
 	}
 
-	const head = {
+	const HEAD = {
 		title: 'REVATI',
 		desc: '勝負の世界である以上、成績が低迷してしまうこともあると思います。そんなときでも私たちは物事の目的達成のために継続的に粘り強く努力することを厭わず 最後までやり遂げる無限のパワー・可能性を秘めています。'
 	};
@@ -46,11 +46,11 @@
 
 <svelte:head>
 	<title>REVATI</title>
-	<meta name="title" content={head.title} />
-	<meta name="description" content={head.desc} />
+	<meta name="title" content={HEAD.title} />
+	<meta name="description" content={HEAD.desc} />
 
-	<meta property="og:title" content={head.title} />
-	<meta property="og:description" content={head.desc} />
+	<meta property="og:title" content={HEAD.title} />
+	<meta property="og:description" content={HEAD.desc} />
 	<meta property="og:url" content={SITE_URL} />
 	<meta property="og:image" content="{SITE_URL}/images/logos/revati/header_mini.png" />
 	<meta property="og:type" content="website" />
@@ -58,11 +58,11 @@
 
 <main>
 	<div class="container">
-		<div id="op-container" class="is-playing" bind:this={op_container}>
+		<div id="op-container" class="is-playing" bind:this={opContainer}>
 			<video
 				src="/videos/revati_op_muted.mp4"
 				id="op-video"
-				on:ended={(self) => op_loop(self)}
+				on:ended={(self) => opLoop(self)}
 				muted
 				autoplay
 				playsinline

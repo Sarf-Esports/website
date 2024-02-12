@@ -1,18 +1,18 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import { socials } from '$lib/variables';
+	import { SOCIALS } from '$lib/variables';
 
 	/** Inline styles. */
 	export let style = '';
 
 	/** Whether to show the link to email. */
-	export let show_email = false;
+	export let showEmail = false;
 </script>
 
 <ul {style}>
-	{#if show_email}
+	{#if showEmail}
 		<li>
-			<a href="mailto:{socials.email}" title={socials.email}>
+			<a href="mailto:{SOCIALS.email}" title={SOCIALS.email}>
 				<!--
 					Bootstrap Icons - Envelope fill
 					https://icons.getbootstrap.jp/icons/envelope-fill
@@ -37,30 +37,30 @@
 	{/if}
 	<li>
 		<a
-			href="https://x.com/{socials.twitter}"
+			href="https://x.com/{SOCIALS.twitter}"
 			target="_blank"
 			rel="noopener noreferrer"
-			title="X: @{socials.twitter}"
+			title="X: @{SOCIALS.twitter}"
 		>
 			<img src="/images/logos/x_logo-white.png" alt="x" id="x-logo" />
 		</a>
 	</li>
 	<li>
 		<a
-			href="https://www.youtube.com/{socials.youtube}"
+			href="https://www.youtube.com/{SOCIALS.youtube}"
 			target="_blank"
 			rel="noopener noreferrer"
-			title="YouTube: /{socials.youtube}"
+			title="YouTube: /{SOCIALS.youtube}"
 		>
 			<img src="/images/logos/yt_icon_mono_dark.png" alt="youtube" />
 		</a>
 	</li>
 	<li>
 		<a
-			href="https://github.com/{socials.github}"
+			href="https://github.com/{SOCIALS.github}"
 			target="_blank"
 			rel="noopener noreferrer"
-			title="GitHub: @{socials.github}"
+			title="GitHub: @{SOCIALS.github}"
 		>
 			<img src="/images/logos/github-mark-white.svg" alt="github" />
 		</a>
