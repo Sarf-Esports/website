@@ -1,21 +1,21 @@
 <!-- © 2022 REVATI -->
 <script>
-	import Header from '$lib/components/header/header.svelte';
-	import Footer from '$lib/components/footer.svelte';
+	import Header from '$lib/components/header/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
-	import { copyright, SITE_URL } from '$lib/variables';
+	import { COPYRIGHT, SITE_URL } from '$lib/variables';
 	import { browser } from '$app/environment';
 
 	if (browser) {
-		window.addEventListener('resize', set_vh001);
-		set_vh001();
+		window.addEventListener('resize', setVh001);
+		setVh001();
 	}
 
 	/**
 	 * Sets CSS variable `--vh001`.
 	 * Must be called in the browser.
 	 */
-	function set_vh001() {
+	function setVh001() {
 		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
 	}
 </script>
@@ -33,7 +33,7 @@
 
 	<meta name="keywords" content="sarf,revati" />
 	<meta name="author" content="Rinrin.rs <rinrin0413.valley@gmail.com>, GEN3987" />
-	<meta name="copyright" content={copyright} />
+	<meta name="copyright" content={COPYRIGHT} />
 
 	<link rel="icon" href="/images/logos/revati/icon_180px_oxipng.png?v=3" />
 </svelte:head>

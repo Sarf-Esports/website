@@ -11,7 +11,7 @@
  * };
  * ```
  */
-export function add_class_at_scroll(elms: HTMLCollectionOf<Element>, cls: string) {
+export function addClassAtScroll(elms: HTMLCollectionOf<Element>, cls: string) {
 	[...elms].forEach((e) => {
 		if (e.getBoundingClientRect().top < window.innerHeight) {
 			e.classList.add(cls);
@@ -38,7 +38,7 @@ export function shake(elm: HTMLElement) {
  * # Dependencies:
  * - `/stylesheets/util` (body.prevent-scroll)
  */
-export function toggle_scroll_prevention(prevent: boolean) {
+export function toggleScrollPrevention(prevent: boolean) {
 	const c = 'prevent-scroll';
 	const body = document.getElementsByTagName('body')[0].classList;
 	if (prevent) {

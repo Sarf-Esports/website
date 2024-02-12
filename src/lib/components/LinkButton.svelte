@@ -1,5 +1,5 @@
 <script lang="ts">
-	import LinkIcon from '$lib/components/link_icon.svelte';
+	import LinkIcon from '$lib/components/LinkIcon.svelte';
 
 	export let text: string;
 </script>

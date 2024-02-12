@@ -1,6 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import NewsDate from '$lib/components/news_date.svelte';
+	import NewsDate from '$lib/components/NewsDate.svelte';
 
 	import type { PageData } from './$types';
 	import { SITE_URL } from '$lib/variables';
@@ -10,7 +10,7 @@
 	const metadata = data.frontmatter;
 
 	const head = { title: `REVATI | NEWS - ${metadata.title}` };
-	let thumbnail_path = `/images/news/${metadata.date}.png`;
+	let thumbnailPath = `/images/news/${metadata.date}.png`;
 </script>
 
 <svelte:head>
@@ -19,15 +19,15 @@
 
 	<meta property="og:title" content={head.title} />
 	<meta property="og:url" content="{SITE_URL}/news/articles/{metadata.date}" />
-	<meta property="og:image" content="{SITE_URL}{thumbnail_path}" />
+	<meta property="og:image" content="{SITE_URL}{thumbnailPath}" />
 	<meta property="og:type" content="article" />
 </svelte:head>
 
 <main>
 	<div class="container">
-		<div id="bg" style={`background-image: url(${thumbnail_path});`} />
+		<div id="bg" style={`background-image: url(${thumbnailPath});`} />
 		<div id="content">
-			<img src={thumbnail_path} alt="thumbnail" />
+			<img src={thumbnailPath} alt="thumbnail" />
 			<h1>{metadata.title}</h1>
 			<h2><NewsDate date={metadata.date} /></h2>
 			<hr />

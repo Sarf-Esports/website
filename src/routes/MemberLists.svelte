@@ -1,10 +1,10 @@
 <!-- © 2022 REVATI -->
 <script>
-	import { member_lists } from '$lib/data/members';
+	import { MEMBER_LISTS } from '$lib/data/members';
 </script>
 
 <ul id="team-list">
-	{#each member_lists as { name, members }}
+	{#each MEMBER_LISTS as { name, members }}
 		<li>
 			<h2>{name}</h2>
 			{#if members.length == 0}
