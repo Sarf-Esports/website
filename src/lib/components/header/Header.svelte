@@ -50,7 +50,12 @@
 
 <div id="header2" class:open={is_drawer_menu_opened}>
 	<div class="socials">
-		<Socials showEmail style="justify-content:left; margin-left:32px;" />
+		<Socials showEmail style="
+			justify-content: left;
+			margin-top: 5vh;
+			margin-left: 5vh;
+			margin-bottom: calc(13vh - 56px);
+		" />
 	</div>
 	<div class="lang-switcher"><LangSwitcher /></div>
 </div>
@@ -125,14 +130,31 @@
 				left: calc(50vw - 112px);
 				opacity: 0;
 
+				$ul-border-thickness: 4px;
+
 				&::before,
 				&::after {
 					content: '';
 					position: absolute;
 					width: 120%;
-					height: 4px;
+					height: $ul-border-thickness;
 					background-color: $primary-color-darker;
+					margin: 0;
 				}
+
+				$ul-padding: 4px;
+
+				&::before {
+					margin-top: -$ul-padding - $ul-border-thickness;
+				}
+
+				&::after {
+					margin-top: $ul-padding;
+				}
+			}
+
+			@include low-height {
+				left: calc(50vw - 95px) !important;
 			}
 		}
 
