@@ -6,7 +6,9 @@
 
 <img src="/images/{name}.svg" alt={name} />
 
-<style>
+<style lang="scss">
+	@use '/assets/stylesheets/variables/mixin' as *;
+
 	img {
 		height: 64px;
 		width: auto;
@@ -15,5 +17,9 @@
 		user-select: none;
 		pointer-events: none;
 		filter: hue-rotate(156deg) saturate(2.4) brightness(0.77);
+
+		@include sp {
+			height: 50px;
+		}
 	}
 </style>
