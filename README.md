@@ -6,8 +6,9 @@
 
 ## Links
 
-- [メイン(revati.jp)](https://revati.jp)
-- [開発(revati.pages.dev)](https://revati.pages.dev)
+- プロダクト: https://revati.jp
+- 開発: https://{ブランチ名|デプロイコミット}.revati.pages.dev
+  - dev: https://dev.revati.pages.dev
 
 ## Project notes
 
@@ -25,17 +26,17 @@
 このサイトには [SvelteKit](https://kit.svelte.jp) とかいうすごい Svelteフレームワークを使っています。
 詳しくは [SvelteKitのドキュメント](https://kit.svelte.jp/docs/introduction) を参照
 
-### 環境構築 !
+### 環境構築
 
-npm で依存関係をインストール:
+npm とかで依存関係をインストール:
 
 ```bash
 npm i
 ```
 
-### 開発ビルド !
+### 開発サーバー
 
-なんか変更がすぐに適応されるすごいやつをビルドできる。
+開発サーバーを立ち上げる:
 
 ```bash
 $ npm run dev
@@ -47,25 +48,21 @@ $ npm run dev
 
   VITE vx.y.z  ready in n ms
 
-  ➜  Local:   http://127.0.0.1:5173/
+  ➜  Local:   http://localhost:5173/
   ➜  Network: use --host to expose
-  ➜  press h to show help
+  ➜  press h + enter to show help
 ```
 
-ちなみにここで `O`キーを押下するとブラウザで開いてくれる。
+### ビルド
 
-## ビルド !
-
-リモートリポジトリにプッシュするときは できればこれらを試して崩壊してないか確認してほしい
-
-正レい製品版(?)ビルドをできる:
+リモートにプッシュするときはビルドして崩壊してないか確認してほしい:
 
 ```bash
-$ npm run build
+npm run build
 ```
 
 ビルドしたものは `preview` で確認できる:
 
 ```bash
-$ npm run preview
+npm run preview
 ```

@@ -1,10 +1,10 @@
 <!-- © 2022 REVATI -->
 <script>
-	import { member_lists } from '$lib/data/members';
+	import { MEMBER_LISTS } from '$lib/data/members';
 </script>
 
 <ul id="team-list">
-	{#each member_lists as { name, members }}
+	{#each MEMBER_LISTS as { name, members }}
 		<li>
 			<h2>{name}</h2>
 			{#if members.length == 0}
@@ -16,7 +16,7 @@
 						<div class="reveal-anim-item">
 							<img
 								src="/images/members/{icon == null ? 'noimage.webp' : icon}"
-								alt="member icon"
+								alt=""
 								loading="lazy"
 							/>
 							<h3>{name}</h3>
@@ -29,7 +29,7 @@
 								>
 									<img
 										src="/images/logos/x_logo-black.png"
-										alt="x logo"
+										alt="X"
 										title="@{twitter}"
 										loading="lazy"
 									/>
@@ -45,7 +45,7 @@
 								>
 									<img
 										src="/images/logos/yt_icon_rgb.png"
-										alt="youtube logo"
+										alt="YouTube"
 										title="/{yt_path}"
 										loading="lazy"
 									/>
@@ -60,7 +60,7 @@
 								>
 									<img
 										src="/images/logos/twitch.svg"
-										alt="twitch logo"
+										alt="Twitch"
 										title="@{twitch}"
 										loading="lazy"
 									/>

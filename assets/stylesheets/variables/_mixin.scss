@@ -13,3 +13,9 @@ $breakpoint: 850px;
 		@content;
 	}
 }
+
+@mixin low-height {
+	@media screen and (max-height: 618px) {
+		@content;
+	}
+}

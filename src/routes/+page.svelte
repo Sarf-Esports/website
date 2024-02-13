@@ -1,33 +1,34 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import SectionTitle from './section_title.svelte';
-	import NewsSlider from '$lib/components/news_slider.svelte';
-	import MemberLists from './member_lists.svelte';
-	import LinkButton from '$lib/components/link_button.svelte';
+	import SectionTitle from './SectionTitle.svelte';
+	import NewsSlider from '$lib/components/newsSlider.svelte';
+	import MemberLists from './MemberLists.svelte';
+	import LinkButton from '$lib/components/LinkButton.svelte';
 
 	import { browser } from '$app/environment';
-	import { add_class_at_scroll } from '$lib/util';
+	import { addClassAtScroll } from '$lib/util';
+	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
 
 	if (browser) {
 		window.addEventListener('scroll', function () {
-			add_class_at_scroll(
+			addClassAtScroll(
 				document.getElementsByClassName('reveal-anim-con'),
 				'reveal-anim-con-active'
 			);
-			add_class_at_scroll(
+			addClassAtScroll(
 				document.getElementsByClassName('reveal-anim-item'),
 				'reveal-anim-item-active'
 			);
 		});
 	}
 
-	let op_container: HTMLDivElement;
+	let opContainer: HTMLDivElement;
 
 	/** Loops playback the OP video at intervals. */
-	function op_loop(video: Event & { currentTarget: EventTarget & HTMLVideoElement }) {
+	function opLoop(video: Event & { currentTarget: EventTarget & HTMLVideoElement }) {
 		let v = video.currentTarget;
-		let container = op_container.classList;
+		let container = opContainer.classList;
 		container.remove('is-playing');
 		v.classList.add('invisible');
 		setTimeout(() => {
@@ -37,7 +38,7 @@
 		}, 8000);
 	}
 
-	const head = {
+	const HEAD = {
 		title: 'REVATI',
 		desc: '勝負の世界である以上、成績が低迷してしまうこともあると思います。そんなときでも私たちは物事の目的達成のために継続的に粘り強く努力することを厭わず 最後までやり遂げる無限のパワー・可能性を秘めています。'
 	};
@@ -45,23 +46,23 @@
 
 <svelte:head>
 	<title>REVATI</title>
-	<meta name="title" content={head.title} />
-	<meta name="description" content={head.desc} />
+	<meta name="title" content={HEAD.title} />
+	<meta name="description" content={HEAD.desc} />
 
-	<meta property="og:title" content={head.title} />
-	<meta property="og:description" content={head.desc} />
-	<meta property="og:url" content="https://revati.jp" />
-	<meta property="og:image" content="https://revati.jp/images/logos/revati/header_mini.png" />
+	<meta property="og:title" content={HEAD.title} />
+	<meta property="og:description" content={HEAD.desc} />
+	<meta property="og:url" content={SITE_URL} />
+	<meta property="og:image" content="{SITE_URL}/images/logos/revati/header_mini.png" />
 	<meta property="og:type" content="website" />
 </svelte:head>
 
 <main>
 	<div class="container">
-		<div id="op-container" class="is-playing" bind:this={op_container}>
+		<div id="op-container" class="is-playing" bind:this={opContainer}>
 			<video
 				src="/videos/revati_op_muted.mp4"
 				id="op-video"
-				on:ended={(self) => op_loop(self)}
+				on:ended={(self) => opLoop(self)}
 				muted
 				autoplay
 				playsinline
@@ -109,7 +110,7 @@
 			<SectionTitle name="store" />
 			<div class="section-content reveal-anim-con">
 				<p class="reveal-anim-item">Coming soon...</p>
-				<!-- <img src="/images/store_thumbnail.webp" alt="store thumbnail" loading="lazy" />
+				<!-- <img src="/images/store_thumbnail.webp" alt="" loading="lazy" />
 				<a
 					href="https://suzuri.jp/REVATI"
 					target="_blank"
@@ -127,7 +128,7 @@
 			<SectionTitle name="sponsor" />
 			<div class="section-content">
 				<a href="https://gachisup.com" target="_blank" rel="noopener noreferrer">
-					<img src="/images/logos/gachisup_oxipng.png" alt=" " />
+					<img src="/images/logos/gachisup_oxipng.png" alt="" />
 					<LinkButton text="ガチサプ ONLINE STORE" />
 				</a>
 			</div>
@@ -189,7 +190,7 @@
 			font-family: 'Zen Kaku Gothic Antique Bold';
 			font-weight: 700;
 			padding: 0 6px;
-			margin: 0 16px;
+			margin: 0 auto;
 
 			&::after {
 				content: '';
@@ -216,20 +217,34 @@
 
 			h1 {
 				letter-spacing: 0.075em;
-
-				@include pc {
-					font-size: 48px;
-				}
-
-				@include sp {
-					font-size: 36px;
-				}
+				font-size: 48px;
 			}
 
 			h2 {
 				font-size: 36px;
 				margin-top: -32px;
 				padding-bottom: 16px;
+			}
+
+			@include sp {
+				max-width: 448px;
+
+				h1,
+				h2 {
+					display: inline-block;
+				}
+
+				h1 {
+					font-size: 30px;
+					line-height: 1.2;
+					padding: 0 5px;
+				}
+
+				h2 {
+					font-size: 30px;
+					margin-top: -18px;
+					padding-bottom: 8px;
+				}
 			}
 		}
 	}

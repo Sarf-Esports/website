@@ -1,6 +1,6 @@
 <!-- © 2022 REVATI -->
 <script>
-	import LinkIcon from '$lib/components/link_icon.svelte';
+	import LinkIcon from '$lib/components/LinkIcon.svelte';
 
 	import { _ } from 'svelte-i18n';
 </script>

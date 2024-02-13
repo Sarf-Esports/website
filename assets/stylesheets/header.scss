@@ -1,6 +1,7 @@
 // © 2022 REVATI
 
 @use '/assets/stylesheets/variables/color' as *;
+@use '/assets/stylesheets/variables/mixin' as *;
 
 li {
 	list-style: none;
@@ -33,6 +34,14 @@ li {
 
 		&:hover::after {
 			transform: scaleX(112%);
+		}
+	}
+
+	@include low-height {
+		margin: 1px 12px 3px 10px;
+
+		a {
+			font-size: 23px;
 		}
 	}
 }

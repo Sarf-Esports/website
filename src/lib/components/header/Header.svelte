@@ -1,12 +1,13 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import Contact from './contact.svelte';
-	import HbBtn from './hamburger_button.svelte';
-	import Socials from '../socials.svelte';
-	import LangSwitcher from '../lang_switcher.svelte';
+	import Contact from './Contact.svelte';
+	import HbBtn from './HamburgerButton.svelte';
+	import Socials from '../Socials.svelte';
+	import LangSwitcher from '../LangSwitcher.svelte';
 
-	import { copyright } from '$lib/variables';
-	import { toggle_scroll_prevention } from '$lib/util';
+	import { _ } from 'svelte-i18n';
+	import { COPYRIGHT } from '$lib/variables';
+	import { toggleScrollPrevention } from '$lib/util';
 
 	let is_drawer_menu_opened = false;
 
@@ -15,7 +16,7 @@
 	/** Toggles drawer menu open/close. */
 	function toggle_drawer_menu(open: boolean) {
 		is_drawer_menu_opened = open;
-		toggle_scroll_prevention(is_drawer_menu_opened);
+		toggleScrollPrevention(is_drawer_menu_opened);
 
 		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
 	}
@@ -25,7 +26,13 @@
 
 <header class:open={is_drawer_menu_opened}>
 	<nav>
-		<a href="/"><img src="/images/logos/revati/logo_white.svg" alt="logo" draggable="false" /></a>
+		<a href="/"
+			><img
+				src="/images/logos/revati/logo_white.svg"
+				alt={$_('header.back')}
+				draggable="false"
+			/></a
+		>
 		<ul>
 			{#each items as item}<li>
 					<a
@@ -37,9 +44,9 @@
 				</li>{/each}
 			<Contact />
 		</ul>
-		<h3>{copyright}</h3>
+		<h3>{COPYRIGHT}</h3>
 		<HbBtn
-			is_opened={is_drawer_menu_opened}
+			isOpened={is_drawer_menu_opened}
 			on:toggle={(e) => {
 				toggle_drawer_menu(e.detail.is_opened);
 			}}
@@ -49,7 +56,15 @@
 
 <div id="header2" class:open={is_drawer_menu_opened}>
 	<div class="socials">
-		<Socials show_email style="justify-content:left; margin-left:32px;" />
+		<Socials
+			showEmail
+			style="
+			justify-content: left;
+			margin-top: 5vh;
+			margin-left: 5vh;
+			margin-bottom: calc(13vh - 56px);
+		"
+		/>
 	</div>
 	<div class="lang-switcher"><LangSwitcher /></div>
 </div>
@@ -124,14 +139,31 @@
 				left: calc(50vw - 112px);
 				opacity: 0;
 
+				$ul-border-thickness: 4px;
+
 				&::before,
 				&::after {
 					content: '';
 					position: absolute;
 					width: 120%;
-					height: 4px;
+					height: $ul-border-thickness;
 					background-color: $primary-color-darker;
+					margin: 0;
 				}
+
+				$ul-padding: 4px;
+
+				&::before {
+					margin-top: -$ul-padding - $ul-border-thickness;
+				}
+
+				&::after {
+					margin-top: $ul-padding;
+				}
+			}
+
+			@include low-height {
+				left: calc(50vw - 95px) !important;
 			}
 		}
 

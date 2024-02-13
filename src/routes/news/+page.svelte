@@ -1,25 +1,26 @@
 <!-- © 2022 REVATI -->
 <script>
-	import SectionTitle from '../section_title.svelte';
-	import NewsSlider from '$lib/components/news_slider.svelte';
+	import SectionTitle from '../SectionTitle.svelte';
+	import NewsSlider from '$lib/components/newsSlider.svelte';
 
+	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
 
-	const head = {
+	const HEAD = {
 		title: 'REVATI | NEWS',
 		desc: 'REVATIの最新情報をお届けします。'
 	};
 </script>
 
 <svelte:head>
-	<title>{head.title}</title>
-	<meta name="title" content={head.title} />
-	<meta name="description" content={head.desc} />
+	<title>{HEAD.title}</title>
+	<meta name="title" content={HEAD.title} />
+	<meta name="description" content={HEAD.desc} />
 
-	<meta property="og:title" content={head.title} />
-	<meta property="og:description" content={head.desc} />
-	<meta property="og:url" content="https://revati.jp/news" />
-	<meta property="og:image" content="https://revati.jp/images/logos/revati/header_mini.png" />
+	<meta property="og:title" content={HEAD.title} />
+	<meta property="og:description" content={HEAD.desc} />
+	<meta property="og:url" content="{SITE_URL}/news" />
+	<meta property="og:image" content="{SITE_URL}/images/logos/revati/header_mini.png" />
 	<meta property="og:type" content="article" />
 </svelte:head>
 

@@ -1,15 +1,18 @@
 // © 2022 REVATI
 
 /** Breakpoint for media queries. */
-export const breakpoint = '(max-width: 850px)';
+export const BREAKPOINT = '(max-width: 850px)';
 
 /** Copyright notice. */
-export const copyright = '© 2022 - 2024 REVATI';
+export const COPYRIGHT = '© 2022 - 2024 REVATI';
 
 /** Social media links. */
-export const socials = {
+export const SOCIALS = {
 	email: 'contact.revati@gmail.com',
 	twitter: 'revati_jp',
 	youtube: '@revati_jp',
 	github: 'Sarf-Esports'
 };
+
+/** URL of the site. */
+export const SITE_URL = 'https://revati.jp';

@@ -21,7 +21,7 @@
 // 本文は `/src/routes/news/article/{date}.md` に記載してください。
 // 細かい書き方は `/src/routes/news/article/20230206_test.md` を参照してください。
 
-export const news_list = [
+export const NEWS_LIST = [
 	{
 		published: true,
 		date: '20240211',

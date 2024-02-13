@@ -2,67 +2,67 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { fly } from 'svelte/transition';
-	import { toggle_scroll_prevention } from '$lib/util';
+	import { toggleScrollPrevention } from '$lib/util';
 	import { _ } from 'svelte-i18n';
-	import { socials, breakpoint } from '$lib/variables';
+	import { SOCIALS, BREAKPOINT } from '$lib/variables';
 
-	let is_contact_modal_visible = false;
+	let isContactModalVisible = false;
 
-	let is_hb_button_enabled: boolean;
+	let isHbButtonEnabled: boolean;
 
 	if (browser) {
 		document.addEventListener('keydown', function (event) {
-			close_modal(event.key);
+			closeModal(event.key);
 		});
 
-		let bp = window.matchMedia(breakpoint);
+		let bp = window.matchMedia(BREAKPOINT);
 
-		is_hb_button_enabled = bp.matches;
+		isHbButtonEnabled = bp.matches;
 
 		window.addEventListener('resize', function () {
-			is_hb_button_enabled = bp.matches;
-			is_contact_modal_visible = false;
+			isHbButtonEnabled = bp.matches;
+			isContactModalVisible = false;
 		});
 	}
 
 	/** Toggles the visibility of the contact modal. */
-	function toggle_contact_modal() {
-		is_contact_modal_visible = !is_contact_modal_visible;
-		toggle_scroll_prevention(is_contact_modal_visible);
+	function toggleContactModal() {
+		isContactModalVisible = !isContactModalVisible;
+		toggleScrollPrevention(isContactModalVisible);
 	}
 
-	function close_modal(key: string) {
-		if (key == 'Escape' && is_contact_modal_visible) {
-			toggle_contact_modal();
+	function closeModal(key: string) {
+		if (key == 'Escape' && isContactModalVisible) {
+			toggleContactModal();
 		}
 	}
 
 	function empty() {} // eslint-disable-line @typescript-eslint/no-empty-function
 </script>
 
-{#if !is_hb_button_enabled}
-	{#if is_contact_modal_visible}
-		<div id="contact-modal-back" on:click={toggle_contact_modal} on:keypress={empty} role="none" />
+{#if !isHbButtonEnabled}
+	{#if isContactModalVisible}
+		<div id="contact-modal-back" on:click={toggleContactModal} on:keypress={empty} role="none" />
 		<div id="contact-modal" transition:fly|global={{ y: -64, duration: 240 }}>
 			<h1>- CONTACT US -</h1>
-			<button class="modal-close-btn" on:click={toggle_contact_modal}>&times;</button>
+			<button class="modal-close-btn" on:click={toggleContactModal}>&times;</button>
 			<p>
 				<nobr>{$_('contact.desc')}</nobr><br />
 				{$_('contact.note.0')}<br />
 				{$_('contact.note.1')}
 			</p>
-			<a href="mailto:{socials.email}" id="mail-btn" draggable="false">{$_('contact.button')}</a>
+			<a href="mailto:{SOCIALS.email}" id="mail-btn" draggable="false">{$_('contact.button')}</a>
 		</div>
 	{/if}
 {/if}
 
 <li>
 	<a
-		href="mailto:{socials.email}"
+		href="mailto:{SOCIALS.email}"
 		on:click={(self) => {
 			// Prevents href
-			if (!is_hb_button_enabled) self.preventDefault();
-			toggle_contact_modal();
+			if (!isHbButtonEnabled) self.preventDefault();
+			toggleContactModal();
 		}}>CONTACT</a
 	>
 </li>

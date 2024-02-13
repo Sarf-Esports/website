@@ -2,6 +2,7 @@
 
 @use './variables/color' as *;
 @use './variables/dimension' as *;
+@use './variables/mixin' as *;
 
 .container {
 	width: 100%;
@@ -39,6 +40,10 @@ section {
 			font-weight: 1;
 			letter-spacing: 0.075em;
 			line-height: 1.5;
+
+			@include sp {
+				font-size: 18px;
+			}
 		}
 	}
 }

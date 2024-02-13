@@ -35,7 +35,7 @@
 // 並びは名前の `数字順 -> アルファベット順 -> 五十音順 -> その他(ここまで着たら追加順)` でお願いします。
 // また、メンバーのアイコン画像を指定した場合は `/assets/images/members/` 配下に置くのを忘れないでください。
 
-export const member_lists = [
+export const MEMBER_LISTS = [
 	{
 		name: 'Fortnite',
 		members: [
