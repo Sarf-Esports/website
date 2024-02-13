@@ -189,8 +189,8 @@
 		.slogan {
 			font-family: 'Zen Kaku Gothic Antique Bold';
 			font-weight: 700;
+			padding: 0 6px;
 			margin: 0 auto;
-			margin: 0 16px;
 
 			&::after {
 				content: '';
