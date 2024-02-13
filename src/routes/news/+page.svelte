@@ -20,8 +20,6 @@
 	<meta property="og:title" content={HEAD.title} />
 	<meta property="og:description" content={HEAD.desc} />
 	<meta property="og:url" content="{SITE_URL}/news" />
-	<meta property="og:image" content="{SITE_URL}/images/logos/revati/header_mini.png" />
-	<meta property="og:type" content="article" />
 </svelte:head>
 
 <main>
