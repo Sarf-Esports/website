@@ -152,6 +152,10 @@
 					margin-top: $ul-padding;
 				}
 			}
+
+			@include low-height {
+				left: calc(50vw - 95px) !important;
+			}
 		}
 
 		h3 {
