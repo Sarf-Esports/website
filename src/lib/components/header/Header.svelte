@@ -5,6 +5,7 @@
 	import Socials from '../Socials.svelte';
 	import LangSwitcher from '../LangSwitcher.svelte';
 
+	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/variables';
 	import { toggleScrollPrevention } from '$lib/util';
 
@@ -25,7 +26,7 @@
 
 <header class:open={is_drawer_menu_opened}>
 	<nav>
-		<a href="/"><img src="/images/logos/revati/logo_white.svg" alt="logo" draggable="false" /></a>
+		<a href="/"><img src="/images/logos/revati/logo_white.svg" alt={$_('header.back')} draggable="false" /></a>
 		<ul>
 			{#each items as item}<li>
 					<a

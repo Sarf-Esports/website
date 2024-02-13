@@ -42,7 +42,7 @@
 			rel="noopener noreferrer"
 			title="X: @{SOCIALS.twitter}"
 		>
-			<img src="/images/logos/x_logo-white.png" alt="x" id="x-logo" />
+			<img src="/images/logos/x_logo-white.png" alt="X" id="x-logo" />
 		</a>
 	</li>
 	<li>
@@ -52,7 +52,7 @@
 			rel="noopener noreferrer"
 			title="YouTube: /{SOCIALS.youtube}"
 		>
-			<img src="/images/logos/yt_icon_mono_dark.png" alt="youtube" />
+			<img src="/images/logos/yt_icon_mono_dark.png" alt="YouTube" />
 		</a>
 	</li>
 	<li>
@@ -62,7 +62,7 @@
 			rel="noopener noreferrer"
 			title="GitHub: @{SOCIALS.github}"
 		>
-			<img src="/images/logos/github-mark-white.svg" alt="github" />
+			<img src="/images/logos/github-mark-white.svg" alt="GitHub" />
 		</a>
 	</li>
 </ul>

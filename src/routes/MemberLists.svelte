@@ -29,7 +29,7 @@
 								>
 									<img
 										src="/images/logos/x_logo-black.png"
-										alt="x logo"
+										alt="X"
 										title="@{twitter}"
 										loading="lazy"
 									/>
@@ -45,7 +45,7 @@
 								>
 									<img
 										src="/images/logos/yt_icon_rgb.png"
-										alt="youtube logo"
+										alt="YouTube"
 										title="/{yt_path}"
 										loading="lazy"
 									/>
@@ -60,7 +60,7 @@
 								>
 									<img
 										src="/images/logos/twitch.svg"
-										alt="twitch logo"
+										alt="Twitch"
 										title="@{twitch}"
 										loading="lazy"
 									/>
