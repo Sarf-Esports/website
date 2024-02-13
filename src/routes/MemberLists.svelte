@@ -16,7 +16,7 @@
 						<div class="reveal-anim-item">
 							<img
 								src="/images/members/{icon == null ? 'noimage.webp' : icon}"
-								alt="member icon"
+								alt=""
 								loading="lazy"
 							/>
 							<h3>{name}</h3>

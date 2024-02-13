@@ -110,7 +110,7 @@
 			<SectionTitle name="store" />
 			<div class="section-content reveal-anim-con">
 				<p class="reveal-anim-item">Coming soon...</p>
-				<!-- <img src="/images/store_thumbnail.webp" alt="store thumbnail" loading="lazy" />
+				<!-- <img src="/images/store_thumbnail.webp" alt="" loading="lazy" />
 				<a
 					href="https://suzuri.jp/REVATI"
 					target="_blank"
@@ -128,7 +128,7 @@
 			<SectionTitle name="sponsor" />
 			<div class="section-content">
 				<a href="https://gachisup.com" target="_blank" rel="noopener noreferrer">
-					<img src="/images/logos/gachisup_oxipng.png" alt=" " />
+					<img src="/images/logos/gachisup_oxipng.png" alt="" />
 					<LinkButton text="ガチサプ ONLINE STORE" />
 				</a>
 			</div>

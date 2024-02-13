@@ -27,7 +27,7 @@
 	<div class="container">
 		<div id="bg" style={`background-image: url(${thumbnailPath});`} />
 		<div id="content">
-			<img src={thumbnailPath} alt="thumbnail" />
+			<img src={thumbnailPath} alt="" />
 			<h1>{metadata.title}</h1>
 			<h2><NewsDate date={metadata.date} /></h2>
 			<hr />
