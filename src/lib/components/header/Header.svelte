@@ -26,7 +26,13 @@
 
 <header class:open={is_drawer_menu_opened}>
 	<nav>
-		<a href="/"><img src="/images/logos/revati/logo_white.svg" alt={$_('header.back')} draggable="false" /></a>
+		<a href="/"
+			><img
+				src="/images/logos/revati/logo_white.svg"
+				alt={$_('header.back')}
+				draggable="false"
+			/></a
+		>
 		<ul>
 			{#each items as item}<li>
 					<a
@@ -50,12 +56,15 @@
 
 <div id="header2" class:open={is_drawer_menu_opened}>
 	<div class="socials">
-		<Socials showEmail style="
+		<Socials
+			showEmail
+			style="
 			justify-content: left;
 			margin-top: 5vh;
 			margin-left: 5vh;
 			margin-bottom: calc(13vh - 56px);
-		" />
+		"
+		/>
 	</div>
 	<div class="lang-switcher"><LangSwitcher /></div>
 </div>

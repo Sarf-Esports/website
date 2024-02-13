@@ -229,7 +229,8 @@
 			@include sp {
 				max-width: 448px;
 
-				h1, h2 {
+				h1,
+				h2 {
 					display: inline-block;
 				}
 
