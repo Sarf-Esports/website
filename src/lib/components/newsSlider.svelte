@@ -77,8 +77,8 @@
 		// @ts-ignore
 		let news = btn_parent.children[2].children;
 		/* eslint-enable @typescript-eslint/ban-ts-comment */
-		let allowLeft = btn_parent.children[0].classList;
-		let allowRight = btn_parent.children[1].classList;
+		let arrowLeft = btn_parent.children[0].classList;
+		let arrowRight = btn_parent.children[1].classList;
 
 		let mid = news[sliderIndex].classList;
 		mid.remove('left-item');
@@ -91,9 +91,9 @@
 			left.remove('middle-item');
 			left.remove('hidden');
 			left.add('left-item');
-			allowLeft.remove('inactive');
+			arrowLeft.remove('inactive');
 		} else {
-			allowLeft.add('inactive');
+			arrowLeft.add('inactive');
 		}
 
 		// Whether the next item is exist.
@@ -102,9 +102,9 @@
 			right.remove('middle-item');
 			right.remove('hidden');
 			right.add('right-item');
-			allowRight.remove('inactive');
+			arrowRight.remove('inactive');
 		} else {
-			allowRight.add('inactive');
+			arrowRight.add('inactive');
 		}
 
 		// Whether the two previous item is exist.
