@@ -1,4 +1,4 @@
-# 令和最新版ニュース記事の作成手順
+# 令和改良最新版ニュース記事の作成手順
 
 まず、全ての変更において [`CONTRIBUTING.md`](./CONTRIBUTING.md) に準じてください。
 
@@ -7,7 +7,7 @@
 そこに色々書いてあるので従ってください。
 ここに追加するとニューススライダーに表示されるようになります。
 
-2. `/src/routes/news/article/{date}.md` を作成する
+2. `/article/{date}.md` を作成する
 
 `{date}` 部分は `news.ts` で指定した `date` に合わせてください。
 必ず冒頭にフロントメタを書いてください:
@@ -24,4 +24,4 @@ date: "20230206_test"
 `title` と `date` は `news.ts` で指定したものに合わせてください。
 
 このフロントメタの下に本文を書いてください。  
-基本的な書式は Markdown です。詳しくは [`/src/routes/news/article/20230206_test.md`](../src/routes/news/articles/20230206_test.md) を参照されたい。
+基本的な書式は Markdown です。詳しくは [`/article/20230206_test.md`](../articles/20230206_test.md) を参照されたい。
