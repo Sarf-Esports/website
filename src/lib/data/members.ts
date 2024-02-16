@@ -101,7 +101,7 @@ export const MEMBER_LISTS = [
 		members: [
 			{
 				name: 'DROWSY',
-				icon: null,
+				icon: 'drowsy.webp',
 				twitter: 'drowsy4150',
 				youtube: 'UCm-Yd-aYSagMqVdMZSYiKLQ',
 				twitch: 'drowsy4150',
@@ -125,7 +125,7 @@ export const MEMBER_LISTS = [
 			},
 			{
 				name: 'Hesty',
-				icon: null,
+				icon: 'hesty.webp',
 				twitter: '__Hestyow',
 				youtube: null,
 				twitch: null,
@@ -141,7 +141,7 @@ export const MEMBER_LISTS = [
 			},
 			{
 				name: 'MinHyouk',
-				icon: null,
+				icon: 'minhyouk.webp',
 				twitter: 'JeonMinHyouk_ow',
 				youtube: null,
 				twitch: null,
@@ -149,7 +149,7 @@ export const MEMBER_LISTS = [
 			},
 			{
 				name: '破壊神こたろ',
-				icon: null,
+				icon: 'hakaisinkotaro.webp',
 				twitter: 'mareku1212',
 				youtube: '@hakaisinkotaro',
 				twitch: 'hakaisinnkotaro',
@@ -169,7 +169,7 @@ export const MEMBER_LISTS = [
 			// ▼ マネージャー
 			{
 				name: 'みるふぃーゆ',
-				icon: null,
+				icon: 'millfy.webp',
 				twitter: 'miru_fiiyu',
 				youtube: null,
 				twitch: null,
