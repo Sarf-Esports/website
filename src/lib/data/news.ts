@@ -24,6 +24,11 @@
 export const NEWS_LIST = [
 	{
 		published: true,
+		date: '20240216',
+		title: 'Overwatch JP 部門に7名の新メンバーが加入'
+	},
+	{
+		published: true,
 		date: '20240211',
 		title: 'Apex部門-Pear,Kou脱退のお知らせ'
 	},

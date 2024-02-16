@@ -20,7 +20,6 @@
 	<meta property="og:title" content={head.title} />
 	<meta property="og:url" content="{SITE_URL}/news/articles/{metadata.date}" />
 	<meta property="og:image" content="{SITE_URL}{thumbnailPath}" />
-	<meta property="og:type" content="article" />
 </svelte:head>
 
 <main>
