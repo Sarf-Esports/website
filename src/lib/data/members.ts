@@ -96,7 +96,64 @@ export const MEMBER_LISTS = [
 	},
 	{
 		name: 'Overwatch (JP)',
-		members: []
+		members: [
+			{
+				name: 'DROWSY',
+				icon: null,
+				twitter: 'drowsy4150',
+				youtube: 'UCm-Yd-aYSagMqVdMZSYiKLQ',
+				twitch: 'drowsy4150',
+				homepage: null
+			},
+			{
+				name: 'epic',
+				icon: null,
+				twitter: 'ep11111123',
+				youtube: null,
+				twitch: 'ep1c_ow',
+				homepage: null
+			},
+			{
+				name: 'harutoon',
+				icon: null,
+				twitter: 'harutoon_FN',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'Hesty',
+				icon: null,
+				twitter: '__Hestyow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'HoFac',
+				icon: null,
+				twitter: 'HoneyFactory_OW',
+				youtube: '@ahoneyfactory9887',
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'MinHyouk',
+				icon: null,
+				twitter: 'JeonMinHyouk_ow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: '破壊神こたろ',
+				icon: null,
+				twitter: 'mareku1212',
+				youtube: '@hakaisinkotaro',
+				twitch: 'hakaisinnkotaro',
+				homepage: null
+			}
+		]
 	},
 	{
 		name: 'Overwatch (EMEA)',
