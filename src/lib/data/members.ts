@@ -33,6 +33,8 @@
 // }
 //
 // 並びは名前の `数字順 -> アルファベット順 -> 五十音順 -> その他(ここまで着たら追加順)` でお願いします。
+// どうしても並びを変えたい場合はコメントアウトでその旨を記載してください。
+//
 // また、メンバーのアイコン画像を指定した場合は `/assets/images/members/` 配下に置くのを忘れないでください。
 
 export const MEMBER_LISTS = [
@@ -151,6 +153,26 @@ export const MEMBER_LISTS = [
 				twitter: 'mareku1212',
 				youtube: '@hakaisinkotaro',
 				twitch: 'hakaisinnkotaro',
+				homepage: null
+			},
+			// ▲ 選手
+			// ▼ コーチ
+			{
+				name: 'STRIKE',
+				icon: 'strike.webp',
+				twitter: '_Strikeow_',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			// ▲ コーチ
+			// ▼ マネージャー
+			{
+				name: 'みるふぃーゆ',
+				icon: null,
+				twitter: 'miru_fiiyu',
+				youtube: null,
+				twitch: null,
 				homepage: null
 			}
 		]
