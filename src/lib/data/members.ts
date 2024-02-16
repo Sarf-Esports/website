@@ -156,19 +156,6 @@ export const MEMBER_LISTS = [
 		]
 	},
 	{
-		name: 'Overwatch (EMEA)',
-		members: [
-			{
-				name: 'STRIKE',
-				icon: 'strike.webp',
-				twitter: '_Strikeow_',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			}
-		]
-	},
-	{
 		name: 'Minecraft',
 		members: [
 			{
