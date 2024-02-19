@@ -88,6 +88,10 @@ li {
 		object-fit: contain;
 		width: 100%;
 		transition: 0.4s ease-out;
+
+		@media screen and (max-width: 750px) {
+			height: calc(28vw + 90px);
+		}
 	}
 
 	a:hover img {
