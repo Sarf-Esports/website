@@ -21,7 +21,7 @@ li {
 		opacity: 0.2;
 
 		img {
-			width: 380px;
+			height: 190px;
 		}
 
 		h1,
@@ -84,8 +84,8 @@ li {
 	z-index: 1;
 
 	img {
-		max-width: 753px;
-		object-fit: cover;
+		max-height: 376.5px;
+		object-fit: contain;
 		width: 100%;
 		transition: 0.4s ease-out;
 	}
