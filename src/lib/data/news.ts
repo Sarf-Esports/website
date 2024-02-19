@@ -24,6 +24,31 @@
 export const NEWS_LIST = [
 	{
 		published: true,
+		date: '20240219_tmp11',
+		title: 'アスペクト比1:1'
+	},
+	{
+		published: true,
+		date: '20240219_tmp12',
+		title: 'アスペクト比1:2'
+	},
+	{
+		published: true,
+		date: '20240219_tmp21',
+		title: 'アスペクト比2:1'
+	},
+	{
+		published: true,
+		date: '20240219_tmp169',
+		title: 'アスペクト比16:9'
+	},
+	{
+		published: true,
+		date: '20240219_tmp181256',
+		title: 'アスペクト比181:256'
+	},
+	{
+		published: true,
 		date: '20240216',
 		title: 'Overwatch JP 部門に7名の新メンバーが加入'
 	},
