@@ -3,32 +3,48 @@
 	import NewsDate from '$lib/components/NewsDate.svelte';
 
 	import type { PageData } from './$types';
+	import { page } from '$app/stores';
 	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
 
 	export let data: PageData;
-	const metadata = data.frontmatter;
+	let metadata = data.frontmatter;
+	$: metadata = data.frontmatter;
 
-	const head = { title: `REVATI | NEWS - ${metadata.title}` };
-	let thumbnailPath = `/images/news/${metadata.date}.png`;
+	$: paths = $page.url.pathname.split('/');
+	$: pathnameLength = paths.length;
+	$: isPathnameEndsWithSlash = paths[pathnameLength - 1] === '';
+	$: slug = paths[pathnameLength - (isPathnameEndsWithSlash ? 2 : 1)];
+
+	$: currentUrl = SITE_URL + '/news/articles/' + slug;
+
+	$: thumbnailImgPath = `/images/news/${slug}.png`;
+
+	$: HEAD = {
+		title: 'REVATI | NEWS - ' + metadata.title
+	};
 </script>
 
 <svelte:head>
-	<title>{head.title}</title>
-	<meta name="title" content={head.title} />
+	<title>{HEAD.title}</title>
+	<meta name="title" content={HEAD.title} />
 
-	<meta property="og:title" content={head.title} />
-	<meta property="og:url" content="{SITE_URL}/news/articles/{metadata.date}" />
-	<meta property="og:image" content="{SITE_URL}{thumbnailPath}" />
+	<meta property="og:title" content={HEAD.title} />
+	<meta property="og:url" content={currentUrl} />
+	<meta property="og:image" content={SITE_URL + thumbnailImgPath} />
+
+	{#if !metadata.indexed}
+		<meta name="robots" content="noindex" />
+	{/if}
 </svelte:head>
 
 <main>
 	<div class="container">
-		<div id="bg" style={`background-image: url(${thumbnailPath});`} />
+		<div id="bg" style={`background-image: url(${thumbnailImgPath});`} />
 		<div id="content">
-			<img src={thumbnailPath} alt="" />
+			<img src={thumbnailImgPath} alt="" />
 			<h1>{metadata.title}</h1>
-			<h2><NewsDate date={metadata.date} /></h2>
+			<h2><NewsDate date={slug} /></h2>
 			<hr />
 			<article><svelte:component this={data.component} /></article>
 			<a href="/news"

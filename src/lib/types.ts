@@ -2,6 +2,7 @@
 
 export interface ArticleMetadata {
 	published: boolean;
+	indexed: boolean;
 	title: string;
-	date: string;
+	slug?: string;
 }
