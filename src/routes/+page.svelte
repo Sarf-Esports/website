@@ -5,10 +5,13 @@
 	import MemberLists from './MemberLists.svelte';
 	import LinkButton from '$lib/components/LinkButton.svelte';
 
+	import type { PageData } from './$types';
 	import { browser } from '$app/environment';
 	import { addClassAtScroll } from '$lib/util';
 	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
+
+	export let data: PageData;
 
 	if (browser) {
 		window.addEventListener('scroll', function () {
@@ -93,7 +96,7 @@
 	<div class="container">
 		<section id="news">
 			<SectionTitle name="news" />
-			<div class="section-content"><NewsSlider /></div>
+			<div class="section-content"><NewsSlider articles={data.articles} /></div>
 		</section>
 	</div>
 	<div class="container">

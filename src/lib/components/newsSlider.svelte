@@ -2,10 +2,12 @@
 <script lang="ts">
 	import NewsDate from '$lib/components/NewsDate.svelte';
 
+	import type { ArticleMetadata } from '$lib/types';
 	import { browser } from '$app/environment';
-	import { NEWS_LIST } from '$lib/data/news';
 	import { shake } from '$lib/util';
 	import { fly } from 'svelte/transition';
+
+	export let articles: ArticleMetadata[];
 
 	let isTouchDevice = false;
 
@@ -31,7 +33,7 @@
 
 	let sliderIndex = 0;
 	let sliderIndexPrev = 0;
-	let sliderLen = NEWS_LIST.filter((n) => n.published).length;
+	$: sliderLen = articles.length;
 
 	function flipPrev(btn: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) {
 		if (btn.target === null) console.error('button target is null');
@@ -146,24 +148,22 @@
 	id="arrow-right">&gt</button
 >
 <ul id="news-slider">
-	{#each NEWS_LIST as { published, date, title }, i}
-		{#if published}
-			<li
-				class="{i == -1
-					? 'left-item'
-					: i == 0
-						? 'middle-item'
-						: i == 1
-							? 'right-item'
-							: 'hidden'}{isTouchDevice ? ' mobile' : ''}"
-			>
-				<a href="./news/articles/{date}" tabindex="-1">
-					<img src="/images/news/{date}.png" alt="" />
-					<h1>{title}</h1>
-					<h3><NewsDate {date} /></h3>
-				</a>
-			</li>
-		{/if}
+	{#each articles as { title, slug }, i}
+		<li
+			class="{i == -1
+				? 'left-item'
+				: i == 0
+					? 'middle-item'
+					: i == 1
+						? 'right-item'
+						: 'hidden'}{isTouchDevice ? ' mobile' : ''}"
+		>
+			<a href="./news/articles/{slug}" tabindex="-1">
+				<img src="/images/news/{slug}.png" alt="" />
+				<h1>{title}</h1>
+				<h3><NewsDate date={slug ?? 'unreachable'} /></h3>
+			</a>
+		</li>
 	{/each}
 </ul>
 <h2>
