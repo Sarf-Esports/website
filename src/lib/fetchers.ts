@@ -2,7 +2,7 @@
 
 import type { ArticleMetadata } from './types';
 
-/** Fetches and sorts all articles. */
+/** Fetches and sorts articles. */
 export async function fetchArticles() {
 	// Fetch all articles.
 	let articles = await Promise.all(
@@ -15,7 +15,7 @@ export async function fetchArticles() {
 	);
 
 	// Filtering
-	articles = articles.filter((a) => a.published && a.indexed);
+	articles = articles.filter((a) => a.redirect === undefined && a.published && a.indexed);
 
 	// Sort by newest.
 	articles.sort((a, b) => {

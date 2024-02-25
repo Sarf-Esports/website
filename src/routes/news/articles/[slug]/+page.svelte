@@ -3,18 +3,23 @@
 	import NewsDate from '$lib/components/NewsDate.svelte';
 
 	import type { PageData } from './$types';
+	import { onMount } from 'svelte';
+	import { goto } from "$app/navigation";
 	import { page } from '$app/stores';
 	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
 
 	export let data: PageData;
-	let metadata = data.frontmatter;
 	$: metadata = data.frontmatter;
+
+	$: redirectTo = metadata.redirect;
+	$: willRedirect = redirectTo !== undefined;
+	onMount(() => { if (redirectTo !== undefined) goto(redirectTo); });
 
 	$: paths = $page.url.pathname.split('/');
 	$: pathnameLength = paths.length;
 	$: isPathnameEndsWithSlash = paths[pathnameLength - 1] === '';
-	$: slug = paths[pathnameLength - (isPathnameEndsWithSlash ? 2 : 1)];
+	$: slug = redirectTo ?? paths[pathnameLength - (isPathnameEndsWithSlash ? 2 : 1)];
 
 	$: currentUrl = SITE_URL + '/news/articles/' + slug;
 
@@ -33,7 +38,7 @@
 	<meta property="og:url" content={currentUrl} />
 	<meta property="og:image" content={SITE_URL + thumbnailImgPath} />
 
-	{#if !metadata.indexed}
+	{#if !metadata.indexed || willRedirect}
 		<meta name="robots" content="noindex" />
 	{/if}
 </svelte:head>
@@ -44,9 +49,13 @@
 		<div id="content">
 			<img src={thumbnailImgPath} alt="" />
 			<h1>{metadata.title}</h1>
-			<h2><NewsDate date={slug} /></h2>
-			<hr />
-			<article><svelte:component this={data.component} /></article>
+			{#if willRedirect}
+				<p>{$_('news.wasRedirect.0')}<a href={redirectTo}>/news/articles/{redirectTo}</a>{$_('news.wasRedirect.1')}</p>
+			{:else}
+				<h2><NewsDate date={slug} /></h2>
+				<hr />
+				<article><svelte:component this={data.component} /></article>
+			{/if}
 			<a href="/news"
 				>{$_('news.back')}
 				<!--
