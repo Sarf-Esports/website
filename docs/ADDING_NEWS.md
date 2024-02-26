@@ -45,7 +45,7 @@ title: ニュース記事のテスト
 
 ## サムネイル画像の設定方法
 
-以下の制約に従った上で [/assets/images/news/](../assets/images/news/) に画像を配置するだけ。
+以下の制約に従った上で [/assets/images/news/thumbnails/](../assets/images/news/thumbnails/) に画像を配置するだけ。
 
 ### サムネイル画像の制約
 

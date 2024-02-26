@@ -159,7 +159,7 @@
 						: 'hidden'}{isTouchDevice ? ' mobile' : ''}"
 		>
 			<a href="./news/articles/{slug}" tabindex="-1">
-				<img src="/images/news/{slug}.png" alt="" />
+				<img src="/images/news/thumbnails/{slug}.png" alt="" />
 				<h1>{title}</h1>
 				<h3><NewsDate date={slug ?? 'unreachable'} /></h3>
 			</a>

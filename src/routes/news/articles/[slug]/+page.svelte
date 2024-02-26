@@ -25,7 +25,7 @@
 
 	$: currentUrl = SITE_URL + '/news/articles/' + slug;
 
-	$: thumbnailImgPath = `/images/news/${slug}.png`;
+	$: thumbnailImgPath = `/images/news/thumbnails/${slug}.png`;
 
 	$: HEAD = {
 		title: 'REVATI | NEWS - ' + metadata.title
