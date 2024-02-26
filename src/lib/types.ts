@@ -7,3 +7,7 @@ export interface ArticleMetadata {
 	title: string;
 	slug?: string;
 }
+
+export interface ArticleThumbnailImgFmts {
+	[slug: string]: string;
+}

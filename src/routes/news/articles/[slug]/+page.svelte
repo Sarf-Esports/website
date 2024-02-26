@@ -25,7 +25,9 @@
 
 	$: currentUrl = SITE_URL + '/news/articles/' + slug;
 
-	$: thumbnailImgPath = `/images/news/thumbnails/${slug}.png`;
+	$: thumbnailImgFmt = data.thumbnailImgFmt;
+	$: hasThumbnailImg = thumbnailImgFmt !== null;
+	$: thumbnailImgPath = hasThumbnailImg ? `/images/news/thumbnails/${slug}.` + thumbnailImgFmt : null;
 
 	$: HEAD = {
 		title: 'REVATI | NEWS - ' + metadata.title

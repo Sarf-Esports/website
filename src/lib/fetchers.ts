@@ -1,6 +1,6 @@
 // © 2022 REVATI
 
-import type { ArticleMetadata } from './types';
+import type { ArticleMetadata, ArticleThumbnailImgFmts } from './types';
 
 /** Fetches and sorts articles. */
 export async function fetchArticles() {
@@ -32,4 +32,24 @@ function calcOrder(slug: string) {
 	// It is alignment for slugs without numbering.
 	n *= n < 100000000 ? 100 : 1;
 	return n;
+}
+
+/** Returns the file formats of the each article's thumbnail images (articles without thumbnail images will not be listed). */
+export async function fetchThumbnailImgFmt() {
+	const thumbnailImgs = Object.keys(import.meta.glob(`/assets/images/news/thumbnails/*.*`)).map(
+		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+		(path) => path.split('/').pop()!
+	);
+	return (await Promise.all(Object.keys(import.meta.glob('/articles/*.md')))).reduce(
+		(acc: ArticleThumbnailImgFmts, path) => {
+			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+			const slug = path.split('/').pop()!.split('.')[0];
+			for (const img of thumbnailImgs) {
+				const [name, fmt] = img.split('.');
+				if (name == slug) acc[slug] = fmt;
+			}
+			return acc;
+		},
+		{}
+	);
 }
