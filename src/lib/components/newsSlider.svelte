@@ -2,12 +2,13 @@
 <script lang="ts">
 	import NewsDate from '$lib/components/NewsDate.svelte';
 
-	import type { ArticleMetadata } from '$lib/types';
+	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/types';
 	import { browser } from '$app/environment';
 	import { shake } from '$lib/util';
 	import { fly } from 'svelte/transition';
 
 	export let articles: ArticleMetadata[];
+	export let thumbnailImgFmts: ArticleThumbnailImgFmts;
 
 	let isTouchDevice = false;
 
@@ -159,7 +160,7 @@
 						: 'hidden'}{isTouchDevice ? ' mobile' : ''}"
 		>
 			<a href="./news/articles/{slug}" tabindex="-1">
-				<img src="/images/news/thumbnails/{slug}.png" alt="" />
+				<img src="/images/news/thumbnails/{slug}.{thumbnailImgFmts?.[slug ?? 'unreachable'] ?? null}" alt="" />
 				<h1>{title}</h1>
 				<h3><NewsDate date={slug ?? 'unreachable'} /></h3>
 			</a>
