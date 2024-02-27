@@ -30,7 +30,9 @@
 		<section id="news">
 			<SectionTitle name="news" />
 			<p>{$_('news.desc')}</p>
-			<div class="section-content"><NewsSlider articles={data.articles} /></div>
+			<div class="section-content">
+				<NewsSlider articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
+			</div>
 		</section>
 	</div>
 </main>

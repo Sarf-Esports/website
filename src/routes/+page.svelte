@@ -96,7 +96,9 @@
 	<div class="container">
 		<section id="news">
 			<SectionTitle name="news" />
-			<div class="section-content"><NewsSlider articles={data.articles} /></div>
+			<div class="section-content">
+				<NewsSlider articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
+			</div>
 		</section>
 	</div>
 	<div class="container">
