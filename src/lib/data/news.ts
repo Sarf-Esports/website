@@ -24,6 +24,11 @@
 export const NEWS_LIST = [
 	{
 		published: true,
+		date: '20240227',
+		title: 'Overwatch部門-Byeolha,Fickle加入のお知らせ'
+	},
+	{
+		published: true,
 		date: '20240216',
 		title: 'Overwatch JP 部門に7名の新メンバーが加入'
 	},

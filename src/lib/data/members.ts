@@ -158,6 +158,22 @@ export const MEMBER_LISTS = [
 			// ▲ 選手
 			// ▼ コーチ
 			{
+				name: 'Byeolha',
+				icon: 'byeolha.webp',
+				twitter: 'ow_byeolha',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'Fickle',
+				icon: 'fickle.webp',
+				twitter: 'Fickle_OW',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				name: 'STRIKE',
 				icon: 'strike.webp',
 				twitter: '_Strikeow_',
