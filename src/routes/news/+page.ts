@@ -1,7 +1,9 @@
 import type { PageLoad } from './$types';
 import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/types';
 
-export const load: PageLoad = async ({ fetch }): Promise<{
+export const load: PageLoad = async ({
+	fetch
+}): Promise<{
 	articles: ArticleMetadata[];
 	thumbnailImgFmts: ArticleThumbnailImgFmts;
 }> => {
