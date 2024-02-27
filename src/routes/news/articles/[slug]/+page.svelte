@@ -1,6 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import NewsDate from '$lib/components/NewsDate.svelte';
+	import Article from './Article.svelte';
 
 	import type { PageData } from './$types';
 	import { onMount } from 'svelte';
@@ -64,7 +65,7 @@
 			{:else}
 				<h2><NewsDate date={slug} /></h2>
 				<hr />
-				<article><svelte:component this={data.component} /></article>
+				<Article body={data.component} />
 			{/if}
 			<a href="/news"
 				>{$_('news.back')}
@@ -148,110 +149,6 @@
 
 				@include sp {
 					font-size: 17px;
-				}
-			}
-
-			> article {
-				max-width: 512px;
-				margin: 32px auto 0 auto;
-				padding: 0 20px;
-				text-align: left;
-				font-size: 19px;
-				letter-spacing: 1.2px;
-
-				h1,
-				h2,
-				h3,
-				h4,
-				h5,
-				h6 {
-					font-weight: 900;
-					letter-spacing: 1.2px;
-				}
-
-				h1 {
-					font-size: 32px;
-				}
-
-				h2 {
-					font-size: 28px;
-				}
-
-				h3 {
-					font-size: 24px;
-				}
-
-				h4 {
-					font-size: 20px;
-				}
-
-				h5 {
-					font-size: 16px;
-				}
-
-				h6 {
-					font-size: 14px;
-				}
-
-				img {
-					max-width: 100%;
-				}
-
-				blockquote {
-					margin: 0;
-					border-left: 4px solid #808080;
-					padding-left: 20px;
-					border-radius: 2px;
-				}
-
-				code {
-					background-color: #0c0c0c;
-					padding: 6px;
-					font-size: 16px;
-					border-radius: 4px;
-					font-family: monospace;
-					color: #ffedc7;
-				}
-
-				pre code {
-					display: block;
-					padding: 16px 20px;
-					border-radius: 2px;
-					border: 2px solid #2b2b2b;
-					color: #d8e6db;
-				}
-
-				table {
-					margin: 12px auto;
-					border: 2px solid #2b2b2b;
-					border-radius: 2px;
-					background-color: #2b2b2b;
-					overflow: hidden;
-
-					th,
-					td {
-						padding: 6px 8px;
-						border: 1px solid #2b2b2b;
-					}
-
-					th {
-						background-color: #1a1a1a;
-					}
-
-					td {
-						background-color: $secondary-color;
-					}
-				}
-
-				strong {
-					font-family: 'Zen Kaku Gothic Antique Bold';
-					font-weight: bold;
-					color: white;
-				}
-
-				sub,
-				sup {
-					font-size: 12px;
 				}
 			}
 
