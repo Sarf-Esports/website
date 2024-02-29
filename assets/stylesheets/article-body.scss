@@ -4,11 +4,11 @@
 @use '/assets/stylesheets/variables/mixin' as *;
 
 .article-body {
-	max-width: 512px;
+	max-width: 544px;
 	margin: 32px auto 0 auto;
-	padding: 0 20px;
+	padding: 0 18px;
 	text-align: left;
-	font-size: 19px;
+	font-size: 20px;
 	letter-spacing: 1.2px;
 
 	p {
@@ -147,5 +147,9 @@
 	iframe {
 		max-width: 100%;
 		border-radius: 4px;
+	}
+
+	@include sp {
+		font-size: 18px;
 	}
 }
