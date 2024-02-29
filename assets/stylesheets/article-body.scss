@@ -24,6 +24,7 @@
 		font-weight: 900;
 		letter-spacing: 1.2px;
 		text-wrap: balance;
+		font-weight: bold;
 	}
 
 	h1 {
@@ -126,5 +127,25 @@
 	sub,
 	sup {
 		font-size: 12px;
+	}
+
+	hr {
+		border: none;
+		border-bottom: 1px solid white;
+		margin: 1.25em 0;
+		opacity: 0.5;
+	}
+
+	details summary {
+		cursor: pointer;
+		text-decoration: underline;
+		font-family: 'Zen Kaku Gothic Antique Bold';
+		font-weight: bold;
+		color: white;
+	}
+
+	iframe {
+		max-width: 100%;
+		border-radius: 4px;
 	}
 }

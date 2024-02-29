@@ -157,14 +157,6 @@
 				font-size: 18px;
 				margin-top: 64px;
 			}
-
-			@include sp {
-				iframe {
-					width: 100%;
-					height: auto;
-					min-height: 256px;
-				}
-			}
 		}
 
 		#bg {
