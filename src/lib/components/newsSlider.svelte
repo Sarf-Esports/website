@@ -1,9 +1,9 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import NewsDate from '$lib/components/NewsDate.svelte';
-
 	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/types';
 	import { browser } from '$app/environment';
+	import { idToDate } from '$lib/util';
+	import { date as dateI18n } from 'svelte-i18n';
 	import { shake } from '$lib/util';
 	import { fly } from 'svelte/transition';
 
@@ -150,6 +150,8 @@
 >
 <ul id="news-slider">
 	{#each articles as { title, slug }, i}
+		{@const nonUndefinedSlug = slug ?? 'unreachable'}
+		{@const date = idToDate(nonUndefinedSlug)}
 		<li
 			class="{i == -1
 				? 'left-item'
@@ -161,11 +163,11 @@
 		>
 			<a href="./news/articles/{slug}" tabindex="-1">
 				<img
-					src="/images/news/thumbnails/{slug}.{thumbnailImgFmts?.[slug ?? 'unreachable'] ?? null}"
+					src="/images/news/thumbnails/{slug}.{thumbnailImgFmts?.[nonUndefinedSlug] ?? null}"
 					alt=""
 				/>
 				<h1>{title}</h1>
-				<h3><NewsDate date={slug ?? 'unreachable'} /></h3>
+				<h3><time datetime={date.toISOString()}>{$dateI18n(date, { format: 'long' })}</time></h3>
 			</a>
 		</li>
 	{/each}

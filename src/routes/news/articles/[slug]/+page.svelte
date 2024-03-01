@@ -1,6 +1,5 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import NewsDate from '$lib/components/NewsDate.svelte';
 	import Article from './Article.svelte';
 
 	import type { PageData } from './$types';
@@ -8,7 +7,8 @@
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { SITE_URL } from '$lib/variables';
-	import { _ } from 'svelte-i18n';
+	import { idToDate } from '$lib/util';
+	import { _, date as dateI18n } from 'svelte-i18n';
 
 	export let data: PageData;
 	$: metadata = data.frontmatter;
@@ -31,6 +31,8 @@
 	$: thumbnailImgPath = hasThumbnailImg
 		? `/images/news/thumbnails/${slug}.` + thumbnailImgFmt
 		: null;
+
+	$: date = idToDate(slug);
 
 	$: HEAD = {
 		title: 'REVATI | NEWS - ' + metadata.title
@@ -63,7 +65,7 @@
 					)}
 				</p>
 			{:else}
-				<h2><NewsDate date={slug} /></h2>
+				<h2><time datetime={date.toISOString()}>{$dateI18n(date, { format: 'long' })}</time></h2>
 				<hr />
 				<Article body={data.component} />
 			{/if}
