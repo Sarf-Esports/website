@@ -127,6 +127,7 @@ li {
 	padding: 8px 20px;
 	border-radius: 8px;
 	cursor: pointer;
+	touch-action: manipulation;
 	transition: 0.4s;
 
 	&:hover {
