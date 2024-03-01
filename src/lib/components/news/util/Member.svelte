@@ -1,5 +1,5 @@
 <script lang="ts">
-import MaterialIcon from "$lib/components/MaterialIcon.svelte";
+	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
 	export let members: {
 		name: string;
@@ -51,7 +51,11 @@ import MaterialIcon from "$lib/components/MaterialIcon.svelte";
 						/></a
 					>{/if}{#if other}
 					<a href={other} target="_blank" rel="noopener noreferrer">
-						<MaterialIcon kind="link-45deg" width="30px" style="color: #98c0e7; vertical-align: middle;" />
+						<MaterialIcon
+							kind="link-45deg"
+							width="30px"
+							style="color: #98c0e7; vertical-align: middle;"
+						/>
 					</a>
 				{/if}
 			{/if}

@@ -70,10 +70,7 @@
 				<hr />
 				<Article body={data.component} />
 			{/if}
-			<a href="/news"
-				>{$_('news.back')
-				}<MaterialIcon kind="box-arrow-in-down-left" /></a
-			>
+			<a href="/news">{$_('news.back')}<MaterialIcon kind="box-arrow-in-down-left" /></a>
 		</div>
 	</div>
 </main>

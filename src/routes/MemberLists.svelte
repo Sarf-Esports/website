@@ -79,11 +79,9 @@
 									<MaterialIcon
 										kind="link-45deg"
 										width="30px"
-										style="color: #021222; transform: translateY(6px);{
-											twitter && youtube && twitch ?
-												' transform: translateY(0);' :
-												''
-										}"
+										style="color: #021222; transform: translateY(6px);{twitter && youtube && twitch
+											? ' transform: translateY(0);'
+											: ''}"
 									/>
 								</a>
 							{/if}
