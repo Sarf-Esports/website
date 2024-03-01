@@ -152,6 +152,10 @@
 		border-radius: 4px;
 	}
 
+	ul, ol {
+		padding-left: 24px;
+	}
+
 	@include sp {
 		font-size: 18px;
 	}
