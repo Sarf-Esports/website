@@ -1,6 +1,6 @@
 <!-- © 2022 REVATI -->
 <script>
-	import LinkIcon from '$lib/components/LinkIcon.svelte';
+	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
 	import { _ } from 'svelte-i18n';
 </script>
@@ -17,7 +17,7 @@
 			<p>
 				<a href="/">
 					{$_('w.backToTop')}
-					<LinkIcon size="18px" />
+					<MaterialIcon kind="box-arrow-up-right" width="18px" />
 				</a>
 			</p>
 		</div>

@@ -1,5 +1,7 @@
 <!-- © 2022 REVATI -->
 <script>
+	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
+
 	import { MEMBER_LISTS } from '$lib/data/members';
 </script>
 
@@ -70,33 +72,19 @@
 								<a
 									href={homepage}
 									class="member-homepage"
-									class:new-lined={twitter && youtube && twitch}
 									target="_blank"
 									rel="noopener noreferrer"
 									title={homepage}
 								>
-									<!--
-										Bootstrap Icons - Link 45deg
-										https://icons.getbootstrap.jp/icons/link-45deg
-										
-										Copyright (c) 2019 The Bootstrap Authors
-										under the MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md
-									-->
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="32"
-										height="32"
-										fill="currentColor"
-										class="bi bi-link-45deg"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"
-										/>
-										<path
-											d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"
-										/>
-									</svg>
+									<MaterialIcon
+										kind="link-45deg"
+										width="30px"
+										style="color: #021222; transform: translateY(6px);{
+											twitter && youtube && twitch ?
+												' transform: translateY(0);' :
+												''
+										}"
+									/>
 								</a>
 							{/if}
 						</div>

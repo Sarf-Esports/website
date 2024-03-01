@@ -1,12 +1,12 @@
 <script lang="ts">
-	import LinkIcon from '$lib/components/LinkIcon.svelte';
+	import MaterialIcon from './MaterialIcon.svelte';
 
 	export let text: string;
 </script>
 
 <span>
 	{text}
-	<LinkIcon size="20px" />
+	<MaterialIcon kind="box-arrow-up-right" width="20px" />
 </span>
 
 <style lang="scss">

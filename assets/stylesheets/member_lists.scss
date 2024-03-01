@@ -74,15 +74,6 @@
 					img {
 						user-select: none;
 					}
-
-					svg {
-						color: $primary-color-darker-2;
-						transform: translateY(6px);
-					}
-
-					&.new-lined svg {
-						transform: translateY(0);
-					}
 				}
 			}
 		}
