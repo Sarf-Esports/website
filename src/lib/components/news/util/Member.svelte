@@ -19,20 +19,35 @@
 				-
 				{#if twitter}
 					<a href={`https://x.com/${twitter}`} target="_blank" rel="noopener noreferrer">
-						<img src="/images/logos/x_logo-white.png" alt="X" class="vertical-icn" title="@{twitter}" loading="lazy"
-					/></a
-				>{/if
-				}{#if youtube}
+						<img
+							src="/images/logos/x_logo-white.png"
+							alt="X"
+							class="vertical-icn"
+							title="@{twitter}"
+							loading="lazy"
+						/></a
+					>{/if}{#if youtube}
 					<a href={`https://youtube.com/${youtube}`} target="_blank" rel="noopener noreferrer"
-						><img src="/images/logos/yt_icon_rgb.png" alt="YouTube" title="/${youtube}" loading="lazy"
-					/></a
-				>{/if
-				}{#if twitch}
-					<a href={`https://twitch.tv/${twitch}`} class="twitch-icn-a" target="_blank" rel="noopener noreferrer"
-						><img src="/images/logos/twitch.svg" alt="Twitch" class="vertical-icn" title="@{twitch}" loading="lazy"
-					/></a
-				>{/if
-				}{#if other}
+						><img
+							src="/images/logos/yt_icon_rgb.png"
+							alt="YouTube"
+							title="/${youtube}"
+							loading="lazy"
+						/></a
+					>{/if}{#if twitch}
+					<a
+						href={`https://twitch.tv/${twitch}`}
+						class="twitch-icn-a"
+						target="_blank"
+						rel="noopener noreferrer"
+						><img
+							src="/images/logos/twitch.svg"
+							alt="Twitch"
+							class="vertical-icn"
+							title="@{twitch}"
+							loading="lazy"
+						/></a
+					>{/if}{#if other}
 					<a href={other} target="_blank" rel="noopener noreferrer">
 						<!--
 							Bootstrap Icons - Link 45deg
@@ -49,8 +64,12 @@
 							class="bi bi-link-45deg"
 							viewBox="0 0 16 16"
 						>
-							<path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-							<path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+							<path
+								d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"
+							/>
+							<path
+								d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"
+							/>
 						</svg>
 					</a>
 				{/if}
@@ -74,14 +93,15 @@
 		margin-right: 0.45rem;
 	}
 
-	img, svg {
+	img,
+	svg {
 		width: 27px;
 		height: auto;
 		color: $primary-color-pale;
 		vertical-align: middle;
 	}
 
-	.vertical-icn{
+	.vertical-icn {
 		width: 22px;
 	}
 
