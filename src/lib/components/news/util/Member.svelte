@@ -10,13 +10,17 @@
 			twitch?: string;
 			other?: string;
 		};
+		additional?: string;
 	}[];
 </script>
 
 <ul>
-	{#each members as { name, socials }}
+	{#each members as { name, socials, additional }}
 		<li>
 			<strong>{name}</strong>
+			{#if additional !== undefined}
+				{additional}
+			{/if}
 			{#if socials}
 				{@const { twitter, youtube, twitch, other } = socials}
 				-
