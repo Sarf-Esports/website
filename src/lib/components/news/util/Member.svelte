@@ -29,12 +29,12 @@
 							title="@{twitter}"
 							loading="lazy"
 						/></a
-					>{/if}{#if youtube}
-					<a href={`https://youtube.com/${youtube}`} target="_blank" rel="noopener noreferrer"
+					>{/if}{#if youtube}{@const path = youtube[0] == '@' ? youtube : `channel/${youtube}`}
+					<a href={`https://youtube.com/${path}`} target="_blank" rel="noopener noreferrer"
 						><img
 							src="/images/logos/yt_icon_rgb.png"
 							alt="YouTube"
-							title="/${youtube}"
+							title="/{path}"
 							loading="lazy"
 						/></a
 					>{/if}{#if twitch}
