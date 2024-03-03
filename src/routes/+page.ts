@@ -1,3 +1,4 @@
+// © 2022 REVATI
 import type { PageLoad } from './$types';
 import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/types';
 
