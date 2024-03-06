@@ -41,12 +41,6 @@ $reveal-anim-last-point: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 	animation:
 		fadeInFromLeftTop $reveal-anim-duration forwards $reveal-anim-delay,
 		fadeOutToRight $reveal-anim-duration forwards $reveal-anim-duration + $reveal-anim-delay;
-
-	// # USSR version ☭
-	// background-image: url(/images/news/20221126.png);
-	// background-repeat: no-repeat;
-	// background-position: top left;
-	// background-size: cover;
 }
 
 @keyframes fadeInFromLeftTop {
