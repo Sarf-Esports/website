@@ -1,10 +1,13 @@
 <!-- © 2022 REVATI -->
-<script>
+<script lang="ts">
 	import SectionTitle from '../SectionTitle.svelte';
-	import NewsSlider from '$lib/components/newsSlider.svelte';
+	import NewsSlider from '$lib/components/news/NewsSlider.svelte';
 
+	import type { PageData } from './$types';
 	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
+
+	export let data: PageData;
 
 	const HEAD = {
 		title: 'REVATI | NEWS',
@@ -27,7 +30,9 @@
 		<section id="news">
 			<SectionTitle name="news" />
 			<p>{$_('news.desc')}</p>
-			<div class="section-content"><NewsSlider /></div>
+			<div class="section-content">
+				<NewsSlider articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
+			</div>
 		</section>
 	</div>
 </main>
