@@ -13,6 +13,7 @@
 * {
 	/* ($primary-color-darker) */
 	scrollbar-color: #0d2e51 transparent;
+	scroll-margin-top: 104px;
 }
 
 html {

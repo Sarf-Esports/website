@@ -12,7 +12,7 @@
 	img {
 		height: 64px;
 		width: auto;
-		margin-top: 86px;
+		margin-top: 64px;
 		margin-bottom: 32px;
 		user-select: none;
 		pointer-events: none;

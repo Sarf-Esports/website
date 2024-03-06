@@ -1,14 +1,17 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import SectionTitle from './SectionTitle.svelte';
-	import NewsSlider from '$lib/components/newsSlider.svelte';
+	import NewsSlider from '$lib/components/news/NewsSlider.svelte';
 	import MemberLists from './MemberLists.svelte';
 	import LinkButton from '$lib/components/LinkButton.svelte';
 
+	import type { PageData } from './$types';
 	import { browser } from '$app/environment';
 	import { addClassAtScroll } from '$lib/util';
 	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
+
+	export let data: PageData;
 
 	if (browser) {
 		window.addEventListener('scroll', function () {
@@ -93,7 +96,9 @@
 	<div class="container">
 		<section id="news">
 			<SectionTitle name="news" />
-			<div class="section-content"><NewsSlider /></div>
+			<div class="section-content">
+				<NewsSlider articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
+			</div>
 		</section>
 	</div>
 	<div class="container">

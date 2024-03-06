@@ -1,6 +1,6 @@
 {
 	"name": "revati_website",
-	"version": "1.3.4",
+	"version": "1.3.5",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
@@ -9,7 +9,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lnt": "prettier --check . && eslint .",
-		"fmt": "prettier --write ."
+		"fmt": "prettier --write .",
+		"article": "node assets/scripts/create-article.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-cloudflare": "^3.0.0",
