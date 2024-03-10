@@ -71,14 +71,6 @@ export const MEMBER_LISTS = [
 		name: 'Apex Legends',
 		members: [
 			{
-				name: 'yuki7',
-				icon: 'yuki.webp',
-				twitter: 'yuki_fpsGG',
-				youtube: '@yuki7_',
-				twitch: 'yuki7_fps',
-				homepage: null
-			},
-			{
 				name: 'シュガー',
 				icon: 'sugar.webp',
 				twitter: 'SQ0356',
