@@ -38,10 +38,12 @@ li {
 	}
 
 	@include low-height {
-		margin: 1px 12px 3px 10px;
+		@include sp {
+			margin: 1px 12px 3px 10px;
 
-		a {
-			font-size: 23px;
+			a {
+				font-size: 23px;
+			}
 		}
 	}
 }
