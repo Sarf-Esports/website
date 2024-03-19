@@ -5,10 +5,18 @@
 	import { MEMBER_LISTS } from '$lib/data/members';
 </script>
 
+<ul class="div-list">
+	{#each MEMBER_LISTS as division}
+		<li>
+			<a href="#{division.name}">{division.name}</a>
+		</li>
+	{/each}
+</ul>
+
 <ul id="team-list">
 	{#each MEMBER_LISTS as { name, members }}
 		<li>
-			<h2>{name}</h2>
+			<h2 id={name}>{name}</h2>
 			{#if members.length == 0}
 				<p>Coming soon...</p>
 			{/if}
