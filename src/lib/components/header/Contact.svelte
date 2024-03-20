@@ -59,6 +59,7 @@
 <li>
 	<a
 		href="mailto:{SOCIALS.email}"
+		class:active={false}
 		on:click={(self) => {
 			// Prevents href
 			if (!isHbButtonEnabled) self.preventDefault();
