@@ -36,20 +36,20 @@
 			}
 		});
 
-	let is_drawer_menu_opened = false;
+	let isDrawerMenuOpened = false;
 
 	/** Toggles drawer menu open/close. */
-	function toggle_drawer_menu(open: boolean) {
-		is_drawer_menu_opened = open;
-		toggleScrollPrevention(is_drawer_menu_opened);
+	function toggleDrawerMenu(open: boolean) {
+		isDrawerMenuOpened = open;
+		toggleScrollPrevention(isDrawerMenuOpened);
 
 		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
 	}
 </script>
 
-<div id="header-bg" class:visible={is_drawer_menu_opened} />
+<div id="header-bg" class:visible={isDrawerMenuOpened} />
 
-<header class:open={is_drawer_menu_opened}>
+<header class:open={isDrawerMenuOpened}>
 	<nav>
 		<a href="/"
 			><img
@@ -67,7 +67,7 @@
 							? url.hash == '#' + item || url.pathname.split('/')[1] == item
 							: currentSection == item}
 						on:click={() => {
-							toggle_drawer_menu(false);
+							toggleDrawerMenu(false);
 						}}>{item.toUpperCase()}</a
 					>
 				</li>
@@ -76,15 +76,15 @@
 		</ul>
 		<h3>{COPYRIGHT}</h3>
 		<HbBtn
-			isOpened={is_drawer_menu_opened}
+			isOpened={isDrawerMenuOpened}
 			on:toggle={(e) => {
-				toggle_drawer_menu(e.detail.is_opened);
+				toggleDrawerMenu(e.detail.isOpened);
 			}}
 		/>
 	</nav>
 </header>
 
-<div id="header2" class:open={is_drawer_menu_opened}>
+<div id="header2" class:open={isDrawerMenuOpened}>
 	<div class="socials">
 		<Socials
 			showEmail

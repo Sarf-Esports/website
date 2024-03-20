@@ -7,7 +7,7 @@
  *
  * ```js
  * window.onscroll = () => {
- *    add_class_at_scroll(document.getElementsByClassName("foo"), "view-anim");
+ *    addClassAtScroll(document.getElementsByClassName("foo"), "view-anim");
  * };
  * ```
  */
