@@ -32,8 +32,14 @@ li {
 			transition: 0.2s;
 		}
 
-		&:hover::after {
-			transform: scaleX(112%);
+		&:hover, &.active {
+			&::after {
+				transform: scaleX(112%);
+
+				@include sp {
+					transform: scaleX(0);
+				}
+			}
 		}
 	}
 

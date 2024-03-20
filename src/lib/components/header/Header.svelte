@@ -5,13 +5,35 @@
 	import Socials from '../Socials.svelte';
 	import LangSwitcher from '../LangSwitcher.svelte';
 
+	import { browser } from '$app/environment';
 	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/variables';
 	import { toggleScrollPrevention } from '$lib/util';
+	import { page } from '$app/stores';
+
+	const ITEMS = ['about', 'news', 'teams', 'store', 'sponsor'];
+
+	$: url = $page.url;
+	let currentSection = '';
+
+	if (browser) window.addEventListener('scroll', function () {
+		if (url !== undefined && url.pathname == '/') {
+			let sectionPositions = ITEMS.map((item) => {
+				return {
+					item,
+					relPos: document.getElementById(item)!.getBoundingClientRect().top! - (window.innerHeight * 0.45)
+				};
+			});
+			sectionPositions.forEach(({ item, relPos }) => {
+				if (relPos < 0) currentSection = item;
+			});
+			if (0 <= sectionPositions[0].relPos) currentSection = 'top';
+		} else {
+			currentSection = '';
+		}
+	});
 
 	let is_drawer_menu_opened = false;
-
-	let items = ['about', 'news', 'teams', 'store', 'sponsor'];
 
 	/** Toggles drawer menu open/close. */
 	function toggle_drawer_menu(open: boolean) {
@@ -34,14 +56,21 @@
 			/></a
 		>
 		<ul>
-			{#each items as item}<li>
+			{#each ITEMS as item}
+				<li>
 					<a
 						href="/#{item}"
+						class:active={
+							currentSection == '' ?
+								url.hash == '#' + item || url.pathname.split('/')[1] == item :
+								currentSection == item
+						}
 						on:click={() => {
 							toggle_drawer_menu(false);
 						}}>{item.toUpperCase()}</a
 					>
-				</li>{/each}
+				</li>
+			{/each}
 			<Contact />
 		</ul>
 		<h3>{COPYRIGHT}</h3>
