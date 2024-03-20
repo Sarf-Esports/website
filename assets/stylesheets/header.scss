@@ -32,7 +32,8 @@ li {
 			transition: 0.2s;
 		}
 
-		&:hover, &.active {
+		&:hover,
+		&.active {
 			&::after {
 				transform: scaleX(112%);
 

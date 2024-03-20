@@ -16,22 +16,25 @@
 	$: url = $page.url;
 	let currentSection = '';
 
-	if (browser) window.addEventListener('scroll', function () {
-		if (url !== undefined && url.pathname == '/') {
-			let sectionPositions = ITEMS.map((item) => {
-				return {
-					item,
-					relPos: document.getElementById(item)!.getBoundingClientRect().top! - (window.innerHeight * 0.45)
-				};
-			});
-			sectionPositions.forEach(({ item, relPos }) => {
-				if (relPos < 0) currentSection = item;
-			});
-			if (0 <= sectionPositions[0].relPos) currentSection = 'top';
-		} else {
-			currentSection = '';
-		}
-	});
+	if (browser)
+		window.addEventListener('scroll', function () {
+			if (url !== undefined && url.pathname == '/') {
+				let sectionPositions = ITEMS.map((item) => {
+					return {
+						item,
+						relPos:
+							document.getElementById(item)!.getBoundingClientRect().top! -
+							window.innerHeight * 0.45
+					};
+				});
+				sectionPositions.forEach(({ item, relPos }) => {
+					if (relPos < 0) currentSection = item;
+				});
+				if (0 <= sectionPositions[0].relPos) currentSection = 'top';
+			} else {
+				currentSection = '';
+			}
+		});
 
 	let is_drawer_menu_opened = false;
 
@@ -60,11 +63,9 @@
 				<li>
 					<a
 						href="/#{item}"
-						class:active={
-							currentSection == '' ?
-								url.hash == '#' + item || url.pathname.split('/')[1] == item :
-								currentSection == item
-						}
+						class:active={currentSection == ''
+							? url.hash == '#' + item || url.pathname.split('/')[1] == item
+							: currentSection == item}
 						on:click={() => {
 							toggle_drawer_menu(false);
 						}}>{item.toUpperCase()}</a
