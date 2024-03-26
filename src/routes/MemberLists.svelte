@@ -5,10 +5,18 @@
 	import { MEMBER_LISTS } from '$lib/data/members';
 </script>
 
+<ul class="div-list">
+	{#each MEMBER_LISTS as division}
+		<li>
+			<a href="#{division.name}">{division.name}</a>
+		</li>
+	{/each}
+</ul>
+
 <ul id="team-list">
 	{#each MEMBER_LISTS as { name, members }}
 		<li>
-			<h2>{name}</h2>
+			<h2 id={name}>{name}</h2>
 			{#if members.length == 0}
 				<p>Coming soon...</p>
 			{/if}
@@ -38,9 +46,9 @@
 								</a>
 							{/if}
 							{#if youtube}
-								{@const yt_path = youtube[0] == '@' ? youtube : `channel/${youtube}`}
+								{@const ytPath = youtube[0] == '@' ? youtube : `channel/${youtube}`}
 								<a
-									href="https://youtube.com/{yt_path}"
+									href="https://youtube.com/{ytPath}"
 									class="member-youtube"
 									target="_blank"
 									rel="noopener noreferrer"
@@ -48,7 +56,7 @@
 									<img
 										src="/images/logos/yt_icon_rgb.png"
 										alt="YouTube"
-										title="/{yt_path}"
+										title="/{ytPath}"
 										loading="lazy"
 									/>
 								</a>

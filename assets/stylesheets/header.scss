@@ -32,16 +32,25 @@ li {
 			transition: 0.2s;
 		}
 
-		&:hover::after {
-			transform: scaleX(112%);
+		&:hover,
+		&.active {
+			&::after {
+				transform: scaleX(112%);
+
+				@include sp {
+					transform: scaleX(0);
+				}
+			}
 		}
 	}
 
 	@include low-height {
-		margin: 1px 12px 3px 10px;
+		@include sp {
+			margin: 1px 12px 3px 10px;
 
-		a {
-			font-size: 23px;
+			a {
+				font-size: 23px;
+			}
 		}
 	}
 }

@@ -31,7 +31,7 @@
 		class:is-opened={isOpened}
 		on:click={() => {
 			isOpened = !isOpened;
-			dispatch('toggle', { is_opened: isOpened });
+			dispatch('toggle', { isOpened });
 		}}
 		transition:fly|global={{ x: FLY_OFFSET, y: -FLY_OFFSET, duration: 600 }}
 	>

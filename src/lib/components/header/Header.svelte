@@ -5,26 +5,51 @@
 	import Socials from '../Socials.svelte';
 	import LangSwitcher from '../LangSwitcher.svelte';
 
+	import { browser } from '$app/environment';
 	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/variables';
 	import { toggleScrollPrevention } from '$lib/util';
+	import { page } from '$app/stores';
 
-	let is_drawer_menu_opened = false;
+	const ITEMS = ['about', 'news', 'teams', 'store', 'sponsor'];
 
-	let items = ['about', 'news', 'teams', 'store', 'sponsor'];
+	$: url = $page.url;
+	let currentSection = '';
+
+	if (browser)
+		window.addEventListener('scroll', function () {
+			if (url !== undefined && url.pathname == '/') {
+				let sectionPositions = ITEMS.map((item) => {
+					return {
+						item,
+						relPos:
+							document.getElementById(item)!.getBoundingClientRect().top! -
+							window.innerHeight * 0.45
+					};
+				});
+				sectionPositions.forEach(({ item, relPos }) => {
+					if (relPos < 0) currentSection = item;
+				});
+				if (0 <= sectionPositions[0].relPos) currentSection = 'top';
+			} else {
+				currentSection = '';
+			}
+		});
+
+	let isDrawerMenuOpened = false;
 
 	/** Toggles drawer menu open/close. */
-	function toggle_drawer_menu(open: boolean) {
-		is_drawer_menu_opened = open;
-		toggleScrollPrevention(is_drawer_menu_opened);
+	function toggleDrawerMenu(open: boolean) {
+		isDrawerMenuOpened = open;
+		toggleScrollPrevention(isDrawerMenuOpened);
 
 		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
 	}
 </script>
 
-<div id="header-bg" class:visible={is_drawer_menu_opened} />
+<div id="header-bg" class:visible={isDrawerMenuOpened} />
 
-<header class:open={is_drawer_menu_opened}>
+<header class:open={isDrawerMenuOpened}>
 	<nav>
 		<a href="/"
 			><img
@@ -34,27 +59,32 @@
 			/></a
 		>
 		<ul>
-			{#each items as item}<li>
+			{#each ITEMS as item}
+				<li>
 					<a
 						href="/#{item}"
+						class:active={currentSection == ''
+							? url.hash == '#' + item || url.pathname.split('/')[1] == item
+							: currentSection == item}
 						on:click={() => {
-							toggle_drawer_menu(false);
+							toggleDrawerMenu(false);
 						}}>{item.toUpperCase()}</a
 					>
-				</li>{/each}
+				</li>
+			{/each}
 			<Contact />
 		</ul>
 		<h3>{COPYRIGHT}</h3>
 		<HbBtn
-			isOpened={is_drawer_menu_opened}
+			isOpened={isDrawerMenuOpened}
 			on:toggle={(e) => {
-				toggle_drawer_menu(e.detail.is_opened);
+				toggleDrawerMenu(e.detail.isOpened);
 			}}
 		/>
 	</nav>
 </header>
 
-<div id="header2" class:open={is_drawer_menu_opened}>
+<div id="header2" class:open={isDrawerMenuOpened}>
 	<div class="socials">
 		<Socials
 			showEmail

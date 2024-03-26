@@ -75,13 +75,13 @@
 		}
 	}
 
-	function applyNews(btn_parent: { children: { classList: DOMTokenList }[] }) {
+	function applyNews(btnParent: { children: { classList: DOMTokenList }[] }) {
 		/* eslint-disable @typescript-eslint/ban-ts-comment */
 		// @ts-ignore
-		let news = btn_parent.children[2].children;
+		let news = btnParent.children[2].children;
 		/* eslint-enable @typescript-eslint/ban-ts-comment */
-		let arrowLeft = btn_parent.children[0].classList;
-		let arrowRight = btn_parent.children[1].classList;
+		let arrowLeft = btnParent.children[0].classList;
+		let arrowRight = btnParent.children[1].classList;
 
 		let mid = news[sliderIndex].classList;
 		mid.remove('left-item');
