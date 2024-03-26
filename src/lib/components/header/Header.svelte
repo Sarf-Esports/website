@@ -166,16 +166,16 @@
 			justify-content: right;
 			transition: 1s;
 
+			$ul-border-thickness: 4px;
+
 			@include sp {
 				display: inline-block;
 				text-align: left;
-				transform: translateY(calc($vh001 * -50));
+				transform: translateY(calc($vh001 * -48));
 				padding: 0;
 				position: absolute;
 				left: calc(50vw - 112px);
 				opacity: 0;
-
-				$ul-border-thickness: 4px;
 
 				&::before,
 				&::after {
@@ -187,7 +187,7 @@
 					margin: 0;
 				}
 
-				$ul-padding: 4px;
+				$ul-padding: 14px;
 
 				&::before {
 					margin-top: -$ul-padding - $ul-border-thickness;
@@ -199,7 +199,17 @@
 			}
 
 			@include low-height {
-				left: calc(50vw - 95px) !important;
+				left: calc(50vw - 99px) !important;
+
+				$ul-padding: 4px;
+
+				&::before {
+					margin-top: -$ul-padding - $ul-border-thickness;
+				}
+
+				&::after {
+					margin-top: $ul-padding;
+				}
 			}
 		}
 

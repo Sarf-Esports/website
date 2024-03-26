@@ -15,7 +15,7 @@ $breakpoint: 742px;
 }
 
 @mixin low-height {
-	@media screen and (max-height: 618px) {
+	@media screen and (max-height: 566px) {
 		@content;
 	}
 }
