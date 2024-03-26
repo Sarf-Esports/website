@@ -11,7 +11,13 @@
 	import { toggleScrollPrevention } from '$lib/util';
 	import { page } from '$app/stores';
 
-	const ITEMS = ['about', 'news', 'teams', 'store', 'sponsor'];
+	const ITEMS = [
+		'about',
+		'news',
+		'teams',
+		// 'store',
+		'sponsor'
+	];
 
 	$: url = $page.url;
 	let currentSection = '';
