@@ -57,13 +57,7 @@
 
 <header class:open={isDrawerMenuOpened}>
 	<nav>
-		<a href="/"
-			><img
-				src="/images/logos/revati/logo_white.svg"
-				alt={$_('header.back')}
-				draggable="false"
-			/></a
-		>
+		<a href="/" draggable="false"><span title={$_('header.back')} /></a>
 		<ul>
 			{#each ITEMS as item}
 				<li>
@@ -140,23 +134,38 @@
 		touch-action: none;
 		transition: $tf-duration ease-in;
 
-		img {
+		span {
+			background-image: url('/images/logos/revati/logo_white.svg');
+			background-size: contain;
+			width: 66px;
 			height: 62px;
-			transition: 0.3s ease-out;
 			float: left;
 			margin-left: 18px;
+			$transition: 0.3s ease-out;
+			transition:
+				transform $transition,
+				filter $transition,
+				opacity $transition;
 			overflow: visible;
 
 			@include pc {
 				&:hover {
 					transform: translateY(-4px) scale(1.14);
 					filter: drop-shadow(0 10px 0 #000000a0);
-					transition: 0.3s;
 				}
 			}
 
 			@include sp {
 				margin-top: 16px;
+			}
+
+			@include wide-width {
+				background-image: url('/images/logos/revati/title_full-without-slogan.webp');
+				width: 226px;
+
+				&:hover {
+					transform: translateY(-5px) scale(1.1);
+				}
 			}
 		}
 
@@ -233,7 +242,7 @@
 			@include sp {
 				top: calc($opened_header_height - $vh100 - $height);
 
-				img {
+				span {
 					transform: translateY(calc($vh001 * -86));
 					opacity: 0;
 				}

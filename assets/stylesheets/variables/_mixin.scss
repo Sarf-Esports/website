@@ -19,3 +19,9 @@ $breakpoint: 742px;
 		@content;
 	}
 }
+
+@mixin wide-width {
+	@media screen and (min-width: 894px) {
+		@content;
+	}
+}
