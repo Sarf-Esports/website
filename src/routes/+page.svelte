@@ -1,7 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import SectionTitle from './SectionTitle.svelte';
-	import NewsSlider from '$lib/components/news/NewsSlider.svelte';
+	import NewsList from '$lib/components/news/NewsList.svelte';
 	import MemberLists from './MemberLists.svelte';
 	import LinkButton from '$lib/components/LinkButton.svelte';
 
@@ -97,10 +97,11 @@
 		<section id="news">
 			<SectionTitle name="news" />
 			<div class="section-content">
-				<NewsSlider articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
+				<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
 			</div>
 		</section>
 	</div>
+
 	<div class="container">
 		<section id="teams">
 			<SectionTitle name="teams" />
