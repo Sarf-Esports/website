@@ -98,6 +98,7 @@
 			<SectionTitle name="news" />
 			<div class="section-content">
 				<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
+				<a href="/news">ALL</a>
 			</div>
 		</section>
 	</div>

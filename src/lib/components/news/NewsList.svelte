@@ -14,8 +14,6 @@
 	{/each}
 </ul>
 
-<a href="/news">ALL</a>
-
 <style lang="scss">
 	ul {
 		display: flex;
