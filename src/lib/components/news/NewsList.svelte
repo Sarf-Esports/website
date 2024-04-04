@@ -48,6 +48,7 @@
 		background: none;
 		border: none;
 		cursor: pointer;
+		opacity: 0.7;
 		transition: 0.2s;
 
 		// 1090px(threshold) * 0.28 - 233px = 72px
@@ -60,6 +61,10 @@
 		&:nth-child(2) {
 			$arrow-width: 94px;
 			right: calc(($arrow-margin + $arrow-width) * -1);
+		}
+
+		&:hover {
+			opacity: 1;
 		}
 
 		&.inactive {
