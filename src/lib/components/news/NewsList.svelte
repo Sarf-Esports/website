@@ -13,18 +13,21 @@
 </script>
 
 <div class="arrows">
-	<button on:click={
-		() => { currentPage--; }
-	} class="back-arrow"><ChevronArrow direction="left" /></button><button on:click={
-		() => { currentPage++; }
-	} class="forward-arrow"><ChevronArrow direction="right" /></button>
+	<button
+		on:click={() => {
+			currentPage--;
+		}}
+		class="back-arrow"><ChevronArrow direction="left" /></button
+	><button
+		on:click={() => {
+			currentPage++;
+		}}
+		class="forward-arrow"><ChevronArrow direction="right" /></button
+	>
 </div>
 
 <ul>
-	{#each articles.slice(
-		currentPage * MAX_ARTICLES,
-		(currentPage + 1) * MAX_ARTICLES
-	) as meta (meta.slug)}
+	{#each articles.slice(currentPage * MAX_ARTICLES, (currentPage + 1) * MAX_ARTICLES) as meta (meta.slug)}
 		<li><ArticleCard {meta} {thumbnailImgFmts} /></li>
 	{/each}
 </ul>
