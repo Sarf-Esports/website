@@ -10,19 +10,23 @@
 
 	const MAX_ARTICLES = 4;
 	let currentPage = 0;
+	$: isFirstPage = currentPage <= 0;
+	$: isLastPage = Math.floor(articles.length / MAX_ARTICLES) - 1 <= currentPage;
 </script>
 
 <div class="arrows">
 	<button
 		on:click={() => {
-			currentPage--;
+			if (!isFirstPage) currentPage--;
 		}}
-		class="back-arrow"><ChevronArrow direction="left" /></button
+		class="back-arrow"
+		class:inactive={isFirstPage}><ChevronArrow direction="left" /></button
 	><button
 		on:click={() => {
-			currentPage++;
+			if (!isLastPage) currentPage++;
 		}}
-		class="forward-arrow"><ChevronArrow direction="right" /></button
+		class="forward-arrow"
+		class:inactive={isLastPage}><ChevronArrow direction="right" /></button
 	>
 </div>
 
@@ -44,6 +48,7 @@
 		background: none;
 		border: none;
 		cursor: pointer;
+		transition: 0.2s;
 
 		// 1090px(threshold) * 0.28 - 233px = 72px
 		$arrow-margin: min(28vw - 233px, 72px);
@@ -55,6 +60,11 @@
 		&:nth-child(2) {
 			$arrow-width: 94px;
 			right: calc(($arrow-margin + $arrow-width) * -1);
+		}
+
+		&.inactive {
+			opacity: 0;
+			cursor: default;
 		}
 	}
 
