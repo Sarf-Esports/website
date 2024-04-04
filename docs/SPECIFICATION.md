@@ -10,6 +10,7 @@
 | 253 | Header, Header II |
 | 254 | Contact modal background |
 | 255 | Contact modal |
+| 32 | News list arrows (`NewsList.svelte>style button`) |
 
 </div>
 </details>
