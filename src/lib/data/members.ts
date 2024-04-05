@@ -306,14 +306,6 @@ export const MEMBER_LISTS = [
 				hompage: null
 			},
 			{
-				name: 'らいふれっくす',
-				icon: 'lifelex.webp',
-				twitter: 'Lifelex06',
-				youtube: '@Lifelex57',
-				twitch: 'lilex7',
-				homepage: null
-			},
-			{
 				name: '碧海まっちゃ',
 				icon: 'aomi_matcha.webp',
 				twitter: 'aomi_matcha',
@@ -341,6 +333,14 @@ export const MEMBER_LISTS = [
 				youtube: null,
 				twitch: null,
 				homepage: 'https://behance.net/Haise__00'
+			},
+			{
+				name: 'らいふれっくす',
+				icon: 'lifelex.webp',
+				twitter: 'Lifelex06',
+				youtube: '@Lifelex57',
+				twitch: 'lilex7',
+				homepage: null
 			}
 		]
 	}
