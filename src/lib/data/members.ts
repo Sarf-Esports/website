@@ -327,22 +327,6 @@ export const MEMBER_LISTS = [
 		name: 'Creator',
 		members: [
 			{
-				name: 'marlone',
-				icon: null,
-				twitter: 'marloneKR',
-				youtube: null,
-				twitch: null,
-				homepage: 'https://foriio.com/marlone'
-			},
-			{
-				name: 'jin',
-				icon: 'jin.webp',
-				twitter: 'fIuffyVibes',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
 				name: 'Nkyn',
 				icon: 'suna.webp',
 				twitter: 'nkyn_oshi',
