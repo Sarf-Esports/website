@@ -68,27 +68,6 @@ export const MEMBER_LISTS = [
 		]
 	},
 	{
-		name: 'Apex Legends',
-		members: [
-			{
-				name: 'シュガー',
-				icon: 'sugar.webp',
-				twitter: 'SQ0356',
-				youtube: null,
-				twitch: null,
-				hompage: null
-			},
-			{
-				name: 'れんだよ',
-				icon: null,
-				twitter: 'RECT_2434',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			}
-		]
-	},
-	{
 		name: 'Overwatch (JP)',
 		members: [
 			{
