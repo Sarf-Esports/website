@@ -20,19 +20,6 @@ export function addClassAtScroll(elms: HTMLCollectionOf<Element>, cls: string) {
 }
 
 /**
- * Element shaker.
- *
- * # Dependencies:
- * - `/stylesheets/util`
- */
-export function shake(elm: HTMLElement) {
-	elm.classList.add('shake');
-	setTimeout(function () {
-		elm.classList.remove('shake');
-	}, 1000);
-}
-
-/**
  * Toggles body scroll prevention.
  *
  * # Dependencies:
