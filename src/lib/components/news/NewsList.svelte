@@ -56,58 +56,5 @@
 </ul>
 
 <style lang="scss">
-	.arrows {
-		position: relative;
-		top: 232px;
-		right: 44px;
-	}
-
-	button {
-		position: absolute;
-		background: none;
-		border: none;
-		cursor: pointer;
-		opacity: 0.7;
-		z-index: 1;
-
-		// 1090px(threshold) * 0.28 - 233px = 72px
-		$arrow-margin: min(28vw - 233px, 72px);
-
-		&:nth-child(1) {
-			left: calc($arrow-margin * -1);
-		}
-
-		&:nth-child(2) {
-			$arrow-width: 94px;
-			right: calc(($arrow-margin + $arrow-width) * -1);
-		}
-
-		&.inactive {
-			cursor: default;
-		}
-	}
-
-	.back-arrow {
-		padding-left: 26px;
-		transform: translateY(-1.5px);
-	}
-
-	.forward-arrow {
-		padding: 0 15px;
-	}
-
-	ul {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		padding: 0;
-		height: 630px;
-		overflow: hidden;
-	}
-
-	li {
-		display: inline-block;
-		margin: 0 auto;
-		list-style: none;
-	}
+	@use '/assets/stylesheets/news/news_list';
 </style>
