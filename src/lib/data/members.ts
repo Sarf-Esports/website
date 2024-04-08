@@ -118,14 +118,6 @@ export const MEMBER_LISTS = [
 				twitch: null,
 				homepage: null
 			},
-			{
-				name: '破壊神こたろ',
-				icon: 'hakaisinkotaro.webp',
-				twitter: 'mareku1212',
-				youtube: '@hakaisinkotaro',
-				twitch: 'hakaisinnkotaro',
-				homepage: null
-			},
 			// ▲ 選手
 			// ▼ コーチ
 			{
@@ -283,6 +275,14 @@ export const MEMBER_LISTS = [
 				youtube: '@user-Menuro',
 				twitch: 'menuro',
 				hompage: null
+			},
+			{
+				name: '破壊神こたろ',
+				icon: 'hakaisinkotaro.webp',
+				twitter: 'mareku1212',
+				youtube: '@hakaisinkotaro',
+				twitch: 'hakaisinnkotaro',
+				homepage: null
 			},
 			{
 				name: '碧海まっちゃ',
