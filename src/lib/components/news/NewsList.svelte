@@ -36,14 +36,14 @@
 			if (!isFirstPage) currentPage--;
 		}}
 		class="back-arrow"
-		class:inactive={isFirstPage}><ChevronArrow direction="left" /></button
+		class:inactive={isFirstPage}><ChevronArrow direction="left" invisible={isFirstPage} /></button
 	><button
 		on:click={() => {
 			flipTo = 1;
 			if (!isLastPage) currentPage++;
 		}}
 		class="forward-arrow"
-		class:inactive={isLastPage}><ChevronArrow direction="right" /></button
+		class:inactive={isLastPage}><ChevronArrow direction="right" invisible={isLastPage} /></button
 	>
 </div>
 
@@ -67,7 +67,6 @@
 		cursor: pointer;
 		opacity: 0.7;
 		z-index: 1;
-		transition: 0.2s;
 
 		// 1090px(threshold) * 0.28 - 233px = 72px
 		$arrow-margin: min(28vw - 233px, 72px);
@@ -81,12 +80,7 @@
 			right: calc(($arrow-margin + $arrow-width) * -1);
 		}
 
-		&:hover {
-			opacity: 1;
-		}
-
 		&.inactive {
-			opacity: 0;
 			cursor: default;
 		}
 	}
