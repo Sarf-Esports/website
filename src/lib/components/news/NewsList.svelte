@@ -49,7 +49,9 @@
 
 <ul>
 	{#each articles.slice(currentPage * MAX_ARTICLES, (currentPage + 1) * MAX_ARTICLES) as meta (meta.slug)}
-		<li in:pageFlip={'in'} out:pageFlip={'out'}><ArticleCard {meta} {thumbnailImgFmts} /></li>
+		<li in:pageFlip|global={'in'} out:pageFlip|global={'out'}>
+			<ArticleCard {meta} {thumbnailImgFmts} />
+		</li>
 	{/each}
 </ul>
 
