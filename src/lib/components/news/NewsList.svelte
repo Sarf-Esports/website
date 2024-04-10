@@ -8,6 +8,7 @@
 
 	export let articles: ArticleMetadata[];
 	export let thumbnailImgFmts: ArticleThumbnailImgFmts;
+	export let showAll: boolean = false;
 
 	const MAX_ARTICLES = 4;
 	let currentPage = 0;
@@ -17,6 +18,8 @@
 	let flipTo: 1 | -1 = 1;
 
 	function pageFlip(node: Element, inOrOut: 'in' | 'out') {
+		if (showAll) return fly(node, { duration: 300, y: 128 });
+
 		const ANIM = {
 			duration: { in: 700, out: 200 },
 			offset: { in: 1024, out: -256 }
@@ -29,26 +32,28 @@
 	}
 </script>
 
-<div class="arrows">
-	<button
-		on:click={() => {
-			flipTo = -1;
-			if (!isFirstPage) currentPage--;
-		}}
-		class="back-arrow"
-		class:inactive={isFirstPage}><ChevronArrow direction="left" invisible={isFirstPage} /></button
-	><button
-		on:click={() => {
-			flipTo = 1;
-			if (!isLastPage) currentPage++;
-		}}
-		class="forward-arrow"
-		class:inactive={isLastPage}><ChevronArrow direction="right" invisible={isLastPage} /></button
-	>
-</div>
+{#if !showAll}
+	<div class="arrows">
+		<button
+			on:click={() => {
+				flipTo = -1;
+				if (!isFirstPage) currentPage--;
+			}}
+			class="back-arrow"
+			class:inactive={isFirstPage}><ChevronArrow direction="left" invisible={isFirstPage} /></button
+		><button
+			on:click={() => {
+				flipTo = 1;
+				if (!isLastPage) currentPage++;
+			}}
+			class="forward-arrow"
+			class:inactive={isLastPage}><ChevronArrow direction="right" invisible={isLastPage} /></button
+		>
+	</div>
+{/if}
 
-<ul>
-	{#each articles.slice(currentPage * MAX_ARTICLES, (currentPage + 1) * MAX_ARTICLES) as meta (meta.slug)}
+<ul class:show-all={showAll}>
+	{#each showAll ? articles : articles.slice(currentPage * MAX_ARTICLES, (currentPage + 1) * MAX_ARTICLES) as meta (meta.slug)}
 		<li in:pageFlip|global={'in'} out:pageFlip|global={'out'}>
 			<ArticleCard {meta} {thumbnailImgFmts} />
 		</li>
