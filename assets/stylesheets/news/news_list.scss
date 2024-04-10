@@ -43,7 +43,6 @@ button {
 ul {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	padding: 0;
 	height: 630px;
 	overflow: hidden;
@@ -51,6 +50,6 @@ ul {
 
 li {
 	display: inline-block;
-	margin: 0 auto;
+	margin: 0 17px;
 	list-style: none;
 }
