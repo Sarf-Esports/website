@@ -31,7 +31,7 @@
 			<SectionTitle name="news" />
 			<p>{$_('news.desc')}</p>
 			<div class="section-content">
-				<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
+				<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} showAll />
 			</div>
 		</section>
 	</div>
