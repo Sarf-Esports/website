@@ -12,8 +12,11 @@
 
 	const MAX_ARTICLES = 4;
 	let currentPage = 0;
+
+	const pages = Math.ceil(articles.length / MAX_ARTICLES);
+
 	$: isFirstPage = currentPage <= 0;
-	$: isLastPage = Math.floor(articles.length / MAX_ARTICLES) - 1 <= currentPage;
+	$: isLastPage = pages - 1 <= currentPage;
 
 	let flipTo: 1 | -1 = 1;
 
@@ -39,26 +42,45 @@
 				flipTo = -1;
 				if (!isFirstPage) currentPage--;
 			}}
-			class="back-arrow"
+			class="arrow back-arrow"
 			class:inactive={isFirstPage}><ChevronArrow direction="left" invisible={isFirstPage} /></button
 		><button
 			on:click={() => {
 				flipTo = 1;
 				if (!isLastPage) currentPage++;
 			}}
-			class="forward-arrow"
+			class="arrow forward-arrow"
 			class:inactive={isLastPage}><ChevronArrow direction="right" invisible={isLastPage} /></button
 		>
 	</div>
 {/if}
 
-<ul class:show-all={showAll}>
+<ul class="articles" class:show-all={showAll}>
 	{#each showAll ? articles : articles.slice(currentPage * MAX_ARTICLES, (currentPage + 1) * MAX_ARTICLES) as meta (meta.slug)}
-		<li in:pageFlip|global={'in'} out:pageFlip|global={'out'}>
+		<li class="article" in:pageFlip|global={'in'} out:pageFlip|global={'out'}>
 			<ArticleCard {meta} {thumbnailImgFmts} />
 		</li>
 	{/each}
 </ul>
+
+{#if !showAll}
+	<ul class="indicators">
+		<!-- ↓ Wait until Svelte become can omit the `as` clause. See: https://github.com/sveltejs/svelte/issues/8348 -->
+		<!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
+		{#each Array(pages) as _, i}
+			<li>
+				<button
+					class="indicator"
+					class:active={i == currentPage}
+					on:click={() => {
+						flipTo = currentPage < i ? 1 : -1;
+						currentPage = i;
+					}}
+				/>
+			</li>
+		{/each}
+	</ul>
+{/if}
 
 <style lang="scss">
 	@use '/assets/stylesheets/news/news_list';

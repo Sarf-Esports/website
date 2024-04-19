@@ -6,7 +6,7 @@
 	right: 44px;
 }
 
-button {
+.arrow {
 	position: absolute;
 	background: none;
 	border: none;
@@ -40,7 +40,7 @@ button {
 	padding: 0 15px;
 }
 
-ul {
+.articles {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
@@ -52,8 +52,41 @@ ul {
 	height: auto;
 }
 
-li {
+.article {
 	display: inline-block;
 	margin: 0 17px;
 	list-style: none;
+}
+
+.indicators {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 32px;
+	justify-content: center;
+}
+
+.indicator {
+	background: none;
+	border: none;
+	padding: 7px;
+	margin: 1px;
+	cursor: pointer;
+	opacity: 0.3;
+	transition: 0.2s;
+
+	&.active {
+		opacity: 1;
+	}
+
+	&::before {
+		content: '';
+		display: inline-block;
+		$size: 13px;
+		width: $size;
+		height: $size;
+		border-radius: 50%;
+		background-color: white;
+	}
 }
