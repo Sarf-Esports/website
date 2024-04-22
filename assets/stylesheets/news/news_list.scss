@@ -16,6 +16,7 @@ $arrow-width: 94px;
 	border: none;
 	cursor: pointer;
 	opacity: 0.7;
+	touch-action: manipulation;
 	z-index: 1;
 
 	// 1090px(threshold) * 0.28 - 233px = 72px
@@ -80,6 +81,7 @@ $arrow-width: 94px;
 	margin: 1px;
 	cursor: pointer;
 	opacity: 0.3;
+	touch-action: manipulation;
 	transition: 0.2s;
 
 	&.active {
