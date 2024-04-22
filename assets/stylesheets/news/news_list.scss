@@ -125,9 +125,9 @@ $arrow-width: 94px;
 	}
 }
 
-@include mini-news-list {
-	$list-width: 288px;
+$list-width: 288px;
 
+@include mini-news-list {
 	@include pc {
 		.article {
 			margin: 0;
@@ -175,44 +175,44 @@ $arrow-width: 94px;
 			}
 		}
 	}
+}
 
-	@include sp {
-		@include mini;
+@include sp {
+	@include mini;
 
-		.news-list-container {
-			margin-bottom: 22px;
+	.news-list-container {
+		margin-bottom: 22px;
+	}
+
+	.arrows {
+		top: 306px;
+		max-width: 138px;
+	}
+
+	.arrow {
+		&:nth-child(1) {
+			left: 0;
 		}
 
-		.arrows {
-			top: 306px;
-			max-width: 138px;
+		&:nth-child(2) {
+			right: -$arrow-width;
 		}
+	}
 
-		.arrow {
-			&:nth-child(1) {
-				left: 0;
-			}
+	// 0px <= (100vw-396px)*.2 <= 14px
+	$article-side-margin: min(max(0px, calc(100vw - 325px) * 0.2), 16px);
 
-			&:nth-child(2) {
-				right: -$arrow-width;
-			}
-		}
+	.articles {
+		height: 294px;
+		max-width: calc($list-width + $article-side-margin * 4);
+	}
 
-		// 0px <= (100vw-396px)*.2 <= 14px
-		$article-side-margin: min(max(0px, calc(100vw - 325px) * 0.2), 16px);
+	.article {
+		margin: 0 $article-side-margin;
+	}
 
-		.articles {
-			height: 294px;
-			max-width: calc($list-width + $article-side-margin * 4);
-		}
-
-		.article {
-			margin: 0 $article-side-margin;
-		}
-
-		.indicators {
-			margin: 0 1px;
-			margin-top: 68px;
-		}
+	.indicators {
+		margin: 0 1px;
+		margin-top: 68px;
 	}
 }
