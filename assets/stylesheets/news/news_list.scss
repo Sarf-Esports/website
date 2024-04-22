@@ -111,11 +111,6 @@ $arrow-width: 94px;
 
 	.articles {
 		margin: 0 auto;
-		max-width: 288px;
-	}
-
-	.article {
-		margin: 0;
 	}
 
 	.indicator {
@@ -131,15 +126,17 @@ $arrow-width: 94px;
 }
 
 @include mini-news-list {
+	$list-width: 288px;
+
 	@include pc {
+		.article {
+			margin: 0;
+		}
+
 		.show-all {
 			.articles {
 				margin: 0 auto;
 				max-width: 700px;
-			}
-
-			.article {
-				margin: 0;
 			}
 		}
 
@@ -169,6 +166,7 @@ $arrow-width: 94px;
 
 			.articles {
 				height: 271px;
+				max-width: $list-width;
 			}
 
 			.indicators {
@@ -200,8 +198,16 @@ $arrow-width: 94px;
 			}
 		}
 
+		// 0px <= 100vw-396px <= 14px
+		$article-side-margin: min(max(0px, calc(100vw - 396px)), 16px);
+
 		.articles {
 			height: 294px;
+			max-width: calc($list-width + $article-side-margin * 4);
+		}
+
+		.article {
+			margin: 0 $article-side-margin;
 		}
 
 		.indicators {
