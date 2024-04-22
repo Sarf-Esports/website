@@ -51,39 +51,41 @@
 	}}
 />
 
-{#if !showAll}
-	<div class="arrows">
-		<button on:click={() => pageFlip(-1)} class="arrow back-arrow" class:inactive={isFirstPage}
-			><ChevronArrow direction="left" transparent={isFirstPage} /></button
-		><button on:click={() => pageFlip(1)} class="arrow forward-arrow" class:inactive={isLastPage}
-			><ChevronArrow direction="right" transparent={isLastPage} /></button
-		>
-	</div>
-{/if}
+<div class="news-list-container">
+	{#if !showAll}
+		<div class="arrows">
+			<button on:click={() => pageFlip(-1)} class="arrow back-arrow" class:inactive={isFirstPage}
+				><ChevronArrow direction="left" transparent={isFirstPage} /></button
+			><button on:click={() => pageFlip(1)} class="arrow forward-arrow" class:inactive={isLastPage}
+				><ChevronArrow direction="right" transparent={isLastPage} /></button
+			>
+		</div>
+	{/if}
 
-<ul class="articles" class:show-all={showAll}>
-	{#each showAll ? articles : articles.slice(currentPage * MAX_ARTICLES, (currentPage + 1) * MAX_ARTICLES) as meta (meta.slug)}
-		<li class="article" in:pageFlipAnim|global={'in'} out:pageFlipAnim|global={'out'}>
-			<ArticleCard {meta} {thumbnailImgFmts} />
-		</li>
-	{/each}
-</ul>
-
-{#if !showAll}
-	<ul class="indicators">
-		<!-- ↓ Wait until Svelte become can omit the `as` clause. See: https://github.com/sveltejs/svelte/issues/8348 -->
-		<!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
-		{#each Array(pages) as _, i}
-			<li>
-				<button
-					class="indicator"
-					class:active={i == currentPage}
-					on:click={() => pageFlip(i, true)}
-				/>
+	<ul class="articles" class:show-all={showAll}>
+		{#each showAll ? articles : articles.slice(currentPage * MAX_ARTICLES, (currentPage + 1) * MAX_ARTICLES) as meta (meta.slug)}
+			<li class="article" in:pageFlipAnim|global={'in'} out:pageFlipAnim|global={'out'}>
+				<ArticleCard {meta} {thumbnailImgFmts} />
 			</li>
 		{/each}
 	</ul>
-{/if}
+
+	{#if !showAll}
+		<ul class="indicators">
+			<!-- ↓ Wait until Svelte become can omit the `as` clause. See: https://github.com/sveltejs/svelte/issues/8348 -->
+			<!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
+			{#each Array(pages) as _, i}
+				<li>
+					<button
+						class="indicator"
+						class:active={i == currentPage}
+						on:click={() => pageFlip(i, true)}
+					/>
+				</li>
+			{/each}
+		</ul>
+	{/if}
+</div>
 
 <style lang="scss">
 	@use '/assets/stylesheets/news/news_list';

@@ -53,13 +53,8 @@ time {
 @include mini-news-list {
 	article {
 		width: 136px;
-		height: 147px;
+		height: 134px;
 		margin: 0 4px;
-		transition: initial;
-
-		&:hover {
-			opacity: 1;
-		}
 	}
 
 	.thumbnail-img {
@@ -67,14 +62,30 @@ time {
 	}
 
 	h2 {
-		font-size: 13px;
+		font-size: 9px;
 		max-height: 72px;
 		margin: 0;
 		margin-top: 3px;
+		margin-bottom: -6px;
 		line-height: 1.2;
 	}
 
 	time {
-		font-size: 11px;
+		font-size: 8px;
+	}
+
+	@include sp {
+		article {
+			height: 147px;
+		}
+
+		h2 {
+			font-size: 13px;
+			margin-bottom: 0;
+		}
+
+		time {
+			font-size: 11px;
+		}
 	}
 }

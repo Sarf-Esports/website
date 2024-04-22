@@ -100,19 +100,27 @@ $arrow-width: 94px;
 }
 
 @include mini-news-list {
+	.news-list-container {
+		scale: 1.9;
+		max-width: 294px;
+		margin: 0 auto;
+		margin-top: 158px;
+	}
+
 	.arrows {
-		top: 306px;
-		max-width: 138px;
+		top: 102px;
 		margin: 0 auto;
 	}
 
 	.arrow {
+		$arrow-margin: 10px;
+
 		&:nth-child(1) {
-			left: 0;
+			left: -$arrow-margin;
 		}
 
 		&:nth-child(2) {
-			right: -$arrow-width;
+			right: calc(($arrow-margin + $arrow-width) * -1);
 		}
 	}
 
@@ -122,7 +130,7 @@ $arrow-width: 94px;
 
 	.articles {
 		margin: 0 auto;
-		height: 294px;
+		height: 271px;
 		max-width: 340px;
 		justify-content: space-between;
 	}
@@ -136,9 +144,8 @@ $arrow-width: 94px;
 	}
 
 	.indicators {
-		margin-top: 68px;
-		margin-right: auto;
-		margin-left: auto;
+		scale: 0.68;
+		margin: -10px auto 146px auto;
 	}
 
 	.indicator {
@@ -149,6 +156,39 @@ $arrow-width: 94px;
 			$size: 10px;
 			width: $size;
 			height: $size;
+		}
+	}
+
+	@include sp {
+		.news-list-container {
+			scale: initial;
+			max-width: initial;
+			margin-top: 0;
+		}
+
+		.arrows {
+			top: 306px;
+			max-width: 138px;
+		}
+
+		.arrow {
+			&:nth-child(1) {
+				left: 0;
+			}
+
+			&:nth-child(2) {
+				right: -$arrow-width;
+			}
+		}
+
+		.articles {
+			height: 294px;
+		}
+
+		.indicators {
+			scale: initial;
+			margin: 0;
+			margin-top: 68px;
 		}
 	}
 }
