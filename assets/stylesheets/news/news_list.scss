@@ -198,8 +198,8 @@ $arrow-width: 94px;
 			}
 		}
 
-		// 0px <= 100vw-396px <= 14px
-		$article-side-margin: min(max(0px, calc(100vw - 396px)), 16px);
+		// 0px <= (100vw-396px)*.2 <= 14px
+		$article-side-margin: min(max(0px, calc(100vw - 325px) * 0.2), 16px);
 
 		.articles {
 			height: 294px;
