@@ -111,7 +111,7 @@ $arrow-width: 94px;
 
 	.articles {
 		margin: 0 auto;
-		max-width: 340px;
+		max-width: 288px;
 	}
 
 	.article {
@@ -134,7 +134,6 @@ $arrow-width: 94px;
 	@include pc {
 		.show-all {
 			.articles {
-				max-width: 700px;
 				margin: 0 auto;
 			}
 
@@ -202,7 +201,6 @@ $arrow-width: 94px;
 
 		.articles {
 			height: 294px;
-			max-width: 288px;
 		}
 
 		.indicators {
