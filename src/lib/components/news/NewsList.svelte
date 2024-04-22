@@ -20,7 +20,18 @@
 
 	let flipTo: 1 | -1 = 1;
 
-	function pageFlip(node: Element, inOrOut: 'in' | 'out') {
+	function pageFlip(to: number, isAbsolute = false) {
+		const toAbs = isAbsolute ? to : currentPage + to;
+		if (
+			(toAbs < currentPage && !isFirstPage) ||
+			(currentPage < toAbs && !isLastPage)
+		) {
+			flipTo = toAbs < currentPage ? -1 : 1;
+			currentPage = toAbs;
+		}
+	}
+
+	function pageFlipAnim(node: Element, inOrOut: 'in' | 'out') {
 		if (showAll) return fly(node, { duration: 300, y: 128 });
 
 		const ANIM = {
@@ -38,17 +49,11 @@
 {#if !showAll}
 	<div class="arrows">
 		<button
-			on:click={() => {
-				flipTo = -1;
-				if (!isFirstPage) currentPage--;
-			}}
+			on:click={() => pageFlip(-1)}
 			class="arrow back-arrow"
 			class:inactive={isFirstPage}><ChevronArrow direction="left" invisible={isFirstPage} /></button
 		><button
-			on:click={() => {
-				flipTo = 1;
-				if (!isLastPage) currentPage++;
-			}}
+			on:click={() => pageFlip(1)}
 			class="arrow forward-arrow"
 			class:inactive={isLastPage}><ChevronArrow direction="right" invisible={isLastPage} /></button
 		>
@@ -57,7 +62,7 @@
 
 <ul class="articles" class:show-all={showAll}>
 	{#each showAll ? articles : articles.slice(currentPage * MAX_ARTICLES, (currentPage + 1) * MAX_ARTICLES) as meta (meta.slug)}
-		<li class="article" in:pageFlip|global={'in'} out:pageFlip|global={'out'}>
+		<li class="article" in:pageFlipAnim|global={'in'} out:pageFlipAnim|global={'out'}>
 			<ArticleCard {meta} {thumbnailImgFmts} />
 		</li>
 	{/each}
@@ -72,10 +77,7 @@
 				<button
 					class="indicator"
 					class:active={i == currentPage}
-					on:click={() => {
-						flipTo = currentPage < i ? 1 : -1;
-						currentPage = i;
-					}}
+					on:click={() => pageFlip(i, true)}
 				/>
 			</li>
 		{/each}
