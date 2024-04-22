@@ -73,7 +73,7 @@
 	<ul class="indicators">
 		<!-- ↓ Wait until Svelte become can omit the `as` clause. See: https://github.com/sveltejs/svelte/issues/8348 -->
 		<!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
-		{#each articles as _, i}
+		{#each Array(pages) as _, i}
 			<li>
 				<button
 					class="indicator"
