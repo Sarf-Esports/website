@@ -55,7 +55,7 @@ $arrow-width: 94px;
 }
 
 .show-all {
-	height: auto;
+	height: auto !important;
 }
 
 .article {
@@ -100,28 +100,8 @@ $arrow-width: 94px;
 }
 
 @include mini-news-list {
-	.news-list-container {
-		scale: 1.9;
-		max-width: 294px;
-		margin: 0 auto;
-		margin-top: 158px;
-	}
-
 	.arrows {
-		top: 102px;
 		margin: 0 auto;
-	}
-
-	.arrow {
-		$arrow-margin: 10px;
-
-		&:nth-child(1) {
-			left: -$arrow-margin;
-		}
-
-		&:nth-child(2) {
-			right: calc(($arrow-margin + $arrow-width) * -1);
-		}
 	}
 
 	.back-arrow {
@@ -130,22 +110,12 @@ $arrow-width: 94px;
 
 	.articles {
 		margin: 0 auto;
-		height: 271px;
 		max-width: 340px;
 		justify-content: space-around;
 	}
 
-	.show-all {
-		height: auto;
-	}
-
 	.article {
 		margin: 0;
-	}
-
-	.indicators {
-		scale: 0.68;
-		margin: -10px auto 146px auto;
 	}
 
 	.indicator {
@@ -159,11 +129,42 @@ $arrow-width: 94px;
 		}
 	}
 
+	@include pc {
+		.news-list-container {
+			scale: 1.9;
+			max-width: 294px;
+			margin: 0 auto;
+			margin-top: 158px;
+		}
+
+		.arrows {
+			top: 102px;
+		}
+
+		.arrow {
+			$arrow-margin: 10px;
+
+			&:nth-child(1) {
+				left: -$arrow-margin;
+			}
+
+			&:nth-child(2) {
+				right: calc(($arrow-margin + $arrow-width) * -1);
+			}
+		}
+
+		.articles {
+			height: 271px;
+		}
+
+		.indicators {
+			scale: 0.68;
+			margin: -10px auto 146px auto;
+		}
+	}
+
 	@include sp {
 		.news-list-container {
-			scale: initial;
-			max-width: initial;
-			margin-top: 0;
 			margin-bottom: 22px;
 		}
 
@@ -187,8 +188,6 @@ $arrow-width: 94px;
 		}
 
 		.indicators {
-			scale: initial;
-			margin: 0;
 			margin-top: 68px;
 		}
 	}
