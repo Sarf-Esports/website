@@ -54,9 +54,9 @@
 {#if !showAll}
 	<div class="arrows">
 		<button on:click={() => pageFlip(-1)} class="arrow back-arrow" class:inactive={isFirstPage}
-			><ChevronArrow direction="left" invisible={isFirstPage} /></button
+			><ChevronArrow direction="left" transparent={isFirstPage} /></button
 		><button on:click={() => pageFlip(1)} class="arrow forward-arrow" class:inactive={isLastPage}
-			><ChevronArrow direction="right" invisible={isLastPage} /></button
+			><ChevronArrow direction="right" transparent={isLastPage} /></button
 		>
 	</div>
 {/if}
@@ -73,7 +73,7 @@
 	<ul class="indicators">
 		<!-- ↓ Wait until Svelte become can omit the `as` clause. See: https://github.com/sveltejs/svelte/issues/8348 -->
 		<!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
-		{#each Array(pages) as _, i}
+		{#each articles as _, i}
 			<li>
 				<button
 					class="indicator"

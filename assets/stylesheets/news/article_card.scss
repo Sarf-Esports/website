@@ -1,5 +1,7 @@
 // © 2022 REVATI
 
+@use '/assets/stylesheets/variables/mixin' as *;
+
 a {
 	color: inherit;
 	text-decoration: none;
@@ -46,4 +48,33 @@ h2 {
 time {
 	font-size: 14px;
 	opacity: 0.8;
+}
+
+@include mini-news-list {
+	article {
+		width: 136px;
+		height: 147px;
+		margin: 0 4px;
+		transition: initial;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.thumbnail-img {
+		height: 80px;
+	}
+
+	h2 {
+		font-size: 13px;
+		max-height: 72px;
+		margin: 0;
+		margin-top: 3px;
+		line-height: 1.2;
+	}
+
+	time {
+		font-size: 11px;
+	}
 }

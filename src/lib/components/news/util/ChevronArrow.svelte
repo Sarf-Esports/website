@@ -1,9 +1,9 @@
 <script lang="ts">
 	export let direction: 'left' | 'right';
-	export let invisible = false;
+	export let transparent = false;
 </script>
 
-<div class:invisible>
+<div class:transparent>
 	{#if direction == 'left'}
 		<!--
 			Google Material Symbols and Icons - Arrow Back iOS
@@ -32,7 +32,9 @@
 </div>
 
 <style lang="scss">
-	.invisible {
+	@use '/assets/stylesheets/variables/mixin' as *;
+
+	.transparent {
 		opacity: 0;
 	}
 
@@ -41,5 +43,15 @@
 		width: 64px;
 		height: auto;
 		transition: 0.2s;
+	}
+
+	@include mini-news-list {
+		.transparent {
+			opacity: 0.15;
+		}
+
+		svg {
+			width: 39px;
+		}
 	}
 </style>

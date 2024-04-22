@@ -25,3 +25,9 @@ $breakpoint: 742px;
 		@content;
 	}
 }
+
+@mixin mini-news-list {
+	@media screen and (max-width: 842px) {
+		@content;
+	}
+}

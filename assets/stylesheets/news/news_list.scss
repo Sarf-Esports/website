@@ -1,10 +1,14 @@
 // © 2022 REVATI
 
+@use '/assets/stylesheets/variables/mixin' as *;
+
 .arrows {
 	position: relative;
 	top: 232px;
 	right: 44px;
 }
+
+$arrow-width: 94px;
 
 .arrow {
 	position: absolute;
@@ -22,7 +26,6 @@
 	}
 
 	&:nth-child(2) {
-		$arrow-width: 94px;
 		right: calc(($arrow-margin + $arrow-width) * -1);
 	}
 
@@ -33,7 +36,7 @@
 
 .back-arrow {
 	padding-left: 26px;
-	transform: translateY(-1.5px);
+	translate: 0 -1.5px;
 }
 
 .forward-arrow {
@@ -67,6 +70,7 @@
 	margin-top: 0;
 	margin-bottom: 32px;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .indicator {
@@ -90,5 +94,59 @@
 		height: $size;
 		border-radius: 50%;
 		background-color: white;
+	}
+}
+
+@include mini-news-list {
+	.arrows {
+		top: 306px;
+		max-width: 138px;
+		margin: 0 auto;
+	}
+
+	.arrow {
+		&:nth-child(1) {
+			left: 0;
+		}
+
+		&:nth-child(2) {
+			right: -$arrow-width;
+		}
+	}
+
+	.back-arrow {
+		padding-left: 20px;
+	}
+
+	.articles {
+		margin: 0 auto;
+		height: 294px;
+		max-width: 340px;
+		justify-content: space-between;
+	}
+
+	.show-all {
+		height: auto;
+	}
+
+	.article {
+		margin: 0;
+	}
+
+	.indicators {
+		margin-top: 68px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.indicator {
+		padding: 6px;
+		margin: 0;
+
+		&::before {
+			$size: 10px;
+			width: $size;
+			height: $size;
+		}
 	}
 }
