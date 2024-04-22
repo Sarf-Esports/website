@@ -22,10 +22,7 @@
 
 	function pageFlip(to: number, isAbsolute = false) {
 		const toAbs = isAbsolute ? to : currentPage + to;
-		if (
-			(toAbs < currentPage && !isFirstPage) ||
-			(currentPage < toAbs && !isLastPage)
-		) {
+		if ((toAbs < currentPage && !isFirstPage) || (currentPage < toAbs && !isLastPage)) {
 			flipTo = toAbs < currentPage ? -1 : 1;
 			currentPage = toAbs;
 		}
@@ -46,16 +43,20 @@
 	}
 </script>
 
+<svelte:window
+	on:keydown={(e) => {
+		const key = e.key;
+		if (key == 'ArrowLeft') pageFlip(-1);
+		else if (key == 'ArrowRight') pageFlip(1);
+	}}
+/>
+
 {#if !showAll}
 	<div class="arrows">
-		<button
-			on:click={() => pageFlip(-1)}
-			class="arrow back-arrow"
-			class:inactive={isFirstPage}><ChevronArrow direction="left" invisible={isFirstPage} /></button
-		><button
-			on:click={() => pageFlip(1)}
-			class="arrow forward-arrow"
-			class:inactive={isLastPage}><ChevronArrow direction="right" invisible={isLastPage} /></button
+		<button on:click={() => pageFlip(-1)} class="arrow back-arrow" class:inactive={isFirstPage}
+			><ChevronArrow direction="left" invisible={isFirstPage} /></button
+		><button on:click={() => pageFlip(1)} class="arrow forward-arrow" class:inactive={isLastPage}
+			><ChevronArrow direction="right" invisible={isLastPage} /></button
 		>
 	</div>
 {/if}
