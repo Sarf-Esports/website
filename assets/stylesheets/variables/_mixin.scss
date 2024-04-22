@@ -27,7 +27,7 @@ $breakpoint: 742px;
 }
 
 @mixin mini-news-list {
-	@media screen and (max-width: 842px) {
+	@media screen and (max-width: 888px) {
 		@content;
 	}
 }
