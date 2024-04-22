@@ -6,6 +6,7 @@
 
 	export let meta: ArticleMetadata;
 	export let thumbnailImgFmts: ArticleThumbnailImgFmts;
+	export let forceDesktopVerOnSemiNarrow = false;
 
 	const slug = meta.slug ?? 'unreachable';
 	const thumbnailImgFmt = thumbnailImgFmts[slug];
@@ -13,7 +14,7 @@
 </script>
 
 <a href="/news/articles/{slug}"
-	><article>
+	><article class:force-pc-v-on-semi-narrow={forceDesktopVerOnSemiNarrow}>
 		<div class="thumbnail-img">
 			<img
 				src="/images/news/thumbnails/{slug}.{thumbnailImgFmt}"

@@ -50,12 +50,10 @@ time {
 	opacity: 0.8;
 }
 
-@include mini-news-list {
-	article {
-		width: 136px;
-		height: 134px;
-		margin: 0 4px;
-	}
+@mixin mini {
+	width: 136px;
+	height: 134px;
+	margin: 0 4px;
 
 	.thumbnail-img {
 		height: 80px;
@@ -73,19 +71,30 @@ time {
 	time {
 		font-size: 8px;
 	}
+}
+
+@include mini-news-list {
+	article:not(.force-pc-v-on-semi-narrow) {
+		@include pc {
+			@include mini;
+		}
+	}
 
 	@include sp {
 		article {
+			@include mini;
+
 			height: 147px;
-		}
+			margin-bottom: 2px;
 
-		h2 {
-			font-size: 13px;
-			margin-bottom: 0;
-		}
+			h2 {
+				font-size: 13px;
+				margin-bottom: 0;
+			}
 
-		time {
-			font-size: 11px;
+			time {
+				font-size: 11px;
+			}
 		}
 	}
 }

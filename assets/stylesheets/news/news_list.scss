@@ -52,9 +52,10 @@ $arrow-width: 94px;
 	margin-bottom: 4px;
 	height: 630px;
 	overflow: hidden;
+	justify-content: left;
 }
 
-.show-all {
+.show-all .articles {
 	height: auto !important;
 }
 
@@ -99,7 +100,7 @@ $arrow-width: 94px;
 	}
 }
 
-@include mini-news-list {
+@mixin mini {
 	.arrows {
 		margin: 0 auto;
 	}
@@ -111,7 +112,6 @@ $arrow-width: 94px;
 	.articles {
 		margin: 0 auto;
 		max-width: 340px;
-		justify-content: space-around;
 	}
 
 	.article {
@@ -128,42 +128,59 @@ $arrow-width: 94px;
 			height: $size;
 		}
 	}
+}
 
+@include mini-news-list {
 	@include pc {
-		.news-list-container {
+		.show-all {
+			.articles {
+				max-width: 700px;
+				margin: 0 auto;
+			}
+
+			.article {
+				margin: 0;
+			}
+		}
+
+		.news-list-container:not(.show-all) {
+			@include mini;
+
 			scale: 1.9;
 			max-width: 294px;
 			margin: 0 auto;
 			margin-top: 158px;
-		}
 
-		.arrows {
-			top: 102px;
-		}
-
-		.arrow {
-			$arrow-margin: 10px;
-
-			&:nth-child(1) {
-				left: -$arrow-margin;
+			.arrows {
+				top: 102px;
 			}
 
-			&:nth-child(2) {
-				right: calc(($arrow-margin + $arrow-width) * -1);
+			.arrow {
+				$arrow-margin: 10px;
+
+				&:nth-child(1) {
+					left: -$arrow-margin;
+				}
+
+				&:nth-child(2) {
+					right: calc(($arrow-margin + $arrow-width) * -1);
+				}
 			}
-		}
 
-		.articles {
-			height: 271px;
-		}
+			.articles {
+				height: 271px;
+			}
 
-		.indicators {
-			scale: 0.68;
-			margin: -10px auto 146px auto;
+			.indicators {
+				scale: 0.68;
+				margin: -10px auto 146px auto;
+			}
 		}
 	}
 
 	@include sp {
+		@include mini;
+
 		.news-list-container {
 			margin-bottom: 22px;
 		}
@@ -185,9 +202,11 @@ $arrow-width: 94px;
 
 		.articles {
 			height: 294px;
+			max-width: 288px;
 		}
 
 		.indicators {
+			margin: 0 1px;
 			margin-top: 68px;
 		}
 	}
