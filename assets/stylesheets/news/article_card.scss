@@ -73,7 +73,7 @@ time {
 	}
 }
 
-@include mini-news-list {
+@include not-wide-width {
 	article:not(.force-pc-v-on-semi-narrow) {
 		@include pc {
 			@include mini;

@@ -45,7 +45,7 @@
 		transition: 0.2s;
 	}
 
-	@include mini-news-list {
+	@include not-wide-width {
 		.transparent {
 			opacity: 0.15;
 		}
