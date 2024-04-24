@@ -1,7 +1,8 @@
 {
 	"w": {
 		"inPreparation": "In preparation...",
-		"backToTop": "Back to top page"
+		"backToTop": "Back to top page",
+		"articleThumbnailImg": "Article thumbnail image"
 	},
 	"header.back": "Back to top page",
 	"top": {

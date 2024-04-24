@@ -1,7 +1,8 @@
 {
 	"w": {
 		"inPreparation": "準備中...",
-		"backToTop": "トップページへ戻る"
+		"backToTop": "トップページへ戻る",
+		"articleThumbnailImg": "記事のサムネイル画像"
 	},
 	"header.back": "トップページへ戻る",
 	"top": {

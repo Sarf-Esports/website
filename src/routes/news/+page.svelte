@@ -1,7 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import SectionTitle from '../SectionTitle.svelte';
-	import NewsSlider from '$lib/components/news/NewsSlider.svelte';
+	import NewsList from '$lib/components/news/NewsList.svelte';
 
 	import type { PageData } from './$types';
 	import { SITE_URL } from '$lib/variables';
@@ -31,7 +31,7 @@
 			<SectionTitle name="news" />
 			<p>{$_('news.desc')}</p>
 			<div class="section-content">
-				<NewsSlider articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
+				<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} showAll />
 			</div>
 		</section>
 	</div>

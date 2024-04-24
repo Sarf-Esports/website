@@ -6,24 +6,6 @@
 	user-select: none;
 }
 
-.shake {
-	animation: shake 0.2s ease-in-out infinite;
-}
-
-@keyframes shake {
-	0% {
-		transform: translateX(0);
-	}
-
-	50% {
-		transform: translateX(5px);
-	}
-
-	100% {
-		transform: translateX(0);
-	}
-}
-
 .invisible {
 	opacity: 0 !important;
 }

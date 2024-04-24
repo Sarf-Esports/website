@@ -1,6 +1,7 @@
 // © 2022 REVATI
 
 $breakpoint: 742px;
+$bp-wide: 894px;
 
 @mixin pc {
 	@media screen and (min-width: $breakpoint) {
@@ -14,6 +15,12 @@ $breakpoint: 742px;
 	}
 }
 
+@mixin ultimate-narrow {
+	@media screen and (max-width: 319px) {
+		@content;
+	}
+}
+
 @mixin low-height {
 	@media screen and (max-height: 566px) {
 		@content;
@@ -21,7 +28,13 @@ $breakpoint: 742px;
 }
 
 @mixin wide-width {
-	@media screen and (min-width: 894px) {
+	@media screen and (min-width: $bp-wide) {
+		@content;
+	}
+}
+
+@mixin not-wide-width {
+	@media screen and (max-width: #{$bp-wide - 1}) {
 		@content;
 	}
 }
