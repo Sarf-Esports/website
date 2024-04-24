@@ -68,27 +68,6 @@ export const MEMBER_LISTS = [
 		]
 	},
 	{
-		name: 'Apex Legends',
-		members: [
-			{
-				name: 'シュガー',
-				icon: 'sugar.webp',
-				twitter: 'SQ0356',
-				youtube: null,
-				twitch: null,
-				hompage: null
-			},
-			{
-				name: 'れんだよ',
-				icon: null,
-				twitter: 'RECT_2434',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			}
-		]
-	},
-	{
 		name: 'Overwatch (JP)',
 		members: [
 			{
@@ -137,14 +116,6 @@ export const MEMBER_LISTS = [
 				twitter: 'JeonMinHyouk_ow',
 				youtube: null,
 				twitch: null,
-				homepage: null
-			},
-			{
-				name: '破壊神こたろ',
-				icon: 'hakaisinkotaro.webp',
-				twitter: 'mareku1212',
-				youtube: '@hakaisinkotaro',
-				twitch: 'hakaisinnkotaro',
 				homepage: null
 			},
 			// ▲ 選手
@@ -306,11 +277,11 @@ export const MEMBER_LISTS = [
 				hompage: null
 			},
 			{
-				name: 'らいふれっくす',
-				icon: 'lifelex.webp',
-				twitter: 'Lifelex06',
-				youtube: '@Lifelex57',
-				twitch: 'lilex7',
+				name: '破壊神こたろ',
+				icon: 'hakaisinkotaro.webp',
+				twitter: 'mareku1212',
+				youtube: '@hakaisinkotaro',
+				twitch: 'hakaisinnkotaro',
 				homepage: null
 			},
 			{
@@ -327,22 +298,6 @@ export const MEMBER_LISTS = [
 		name: 'Creator',
 		members: [
 			{
-				name: 'marlone',
-				icon: null,
-				twitter: 'marloneKR',
-				youtube: null,
-				twitch: null,
-				homepage: 'https://foriio.com/marlone'
-			},
-			{
-				name: 'jin',
-				icon: 'jin.webp',
-				twitter: 'fIuffyVibes',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
 				name: 'Nkyn',
 				icon: 'suna.webp',
 				twitter: 'nkyn_oshi',
@@ -357,6 +312,14 @@ export const MEMBER_LISTS = [
 				youtube: null,
 				twitch: null,
 				homepage: 'https://behance.net/Haise__00'
+			},
+			{
+				name: 'らいふれっくす',
+				icon: 'lifelex.webp',
+				twitter: 'Lifelex06',
+				youtube: '@Lifelex57',
+				twitch: 'lilex7',
+				homepage: null
 			}
 		]
 	}
