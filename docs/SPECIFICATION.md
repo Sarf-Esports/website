@@ -11,6 +11,7 @@
 | 254 | Contact modal background |
 | 255 | Contact modal |
 | 32 | News list arrows (`NewsList.svelte>style button`) |
+| -1 | Background | (`style.scss>main::before`) |
 
 </div>
 </details>

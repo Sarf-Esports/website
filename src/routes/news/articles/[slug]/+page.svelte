@@ -84,7 +84,6 @@
 
 	main {
 		min-height: 100vh;
-		background-color: $secondary-color;
 
 		#content {
 			margin: 128px 0 64px 0;

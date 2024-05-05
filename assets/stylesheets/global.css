@@ -19,6 +19,8 @@
 html {
 	scroll-behavior: smooth;
 	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	/* ($secondary-color) */
+	background: #111111;
 }
 
 body {
@@ -27,8 +29,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	background: #111111;
 	overflow-x: hidden;
+	/* Anti Dark reader */
+	background: none;
 }
 
 ::selection {
