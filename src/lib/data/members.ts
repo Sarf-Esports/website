@@ -184,7 +184,7 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: null,
 				homepage: 'https://behance.net/Haise__00'
-			},
+			}
 		]
 	},
 	{

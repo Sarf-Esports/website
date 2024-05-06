@@ -10,12 +10,14 @@
 
 <ul class="divisions">
 	{#each MEMBER_LISTS as division, i}
-		<li class="division"><button
-			class:active={i == currentDivisionIndex}
-			on:click={() => {
-				currentDivisionIndex = i;
-			}}
-		>{division.name}</button></li>
+		<li class="division">
+			<button
+				class:active={i == currentDivisionIndex}
+				on:click={() => {
+					currentDivisionIndex = i;
+				}}>{division.name}</button
+			>
+		</li>
 	{/each}
 </ul>
 
