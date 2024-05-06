@@ -37,16 +37,18 @@
 			<div class="info">
 				<span class="role">役職</span>
 				<h2>{name}</h2>
-				<table><tbody>
-					<tr>
-						<td>Age:</td>
-						<td>?</td>
-					</tr>
-					<tr>
-						<td>Birthday:</td>
-						<td>????/??/??</td>
-					</tr>
-				</tbody></table>
+				<table>
+					<tbody>
+						<tr>
+							<td>Age:</td>
+							<td>?</td>
+						</tr>
+						<tr>
+							<td>Birthday:</td>
+							<td>????/??/??</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 			<ul class="socials"></ul>
 		</li>
