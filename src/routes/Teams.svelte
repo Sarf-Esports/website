@@ -42,7 +42,9 @@
 				<div class="details">
 					Age:
 					{#if age == null && birthday !== null && birthday.year !== null}
-						{@const calculatedAge = calcAge(new Date(birthday.year, birthday.month -1, birthday.day))}
+						{@const calculatedAge = calcAge(
+							new Date(birthday.year, birthday.month - 1, birthday.day)
+						)}
 						{isNaN(calculatedAge) ? '' : calculatedAge}
 					{:else}
 						{age ?? ''}
@@ -51,7 +53,7 @@
 					Birthday:
 					{#if birthday !== null}
 						{#if birthday.year !== null}
-							{$date(new Date(birthday.year, birthday.month -1, birthday.day), {
+							{$date(new Date(birthday.year, birthday.month - 1, birthday.day), {
 								year: 'numeric',
 								month: '2-digit',
 								day: '2-digit'
