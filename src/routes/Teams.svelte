@@ -27,30 +27,28 @@
 
 <ul class="members">
 	{#each MEMBER_LISTS[currentDivisionIndex].members as { name, icon, twitter, youtube, twitch, homepage }}
-		<li>
-			<div class="member">
-				<img
-					src="/images/members/{icon == null ? 'noimage.webp' : icon}"
-					alt=""
-					loading="lazy"
-					class="icon"
-				/>
-				<div class="info">
-					<span class="role">役職</span>
-					<h2>{name}</h2>
-					<table><tbody>
-						<tr>
-							<td>Age:</td>
-							<td>?</td>
-						</tr>
-						<tr>
-							<td>Birthday:</td>
-							<td>????/??/??</td>
-						</tr>
-					</tbody></table>
-				</div>
-				<ul class="socials"></ul>
+		<li class="member">
+			<img
+				src="/images/members/{icon == null ? 'noimage.webp' : icon}"
+				alt=""
+				loading="lazy"
+				class="icon"
+			/>
+			<div class="info">
+				<span class="role">役職</span>
+				<h2>{name}</h2>
+				<table><tbody>
+					<tr>
+						<td>Age:</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<td>Birthday:</td>
+						<td>????/??/??</td>
+					</tr>
+				</tbody></table>
 			</div>
+			<ul class="socials"></ul>
 		</li>
 	{/each}
 </ul>
