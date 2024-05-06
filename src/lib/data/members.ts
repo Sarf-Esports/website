@@ -260,6 +260,17 @@ export const MEMBER_LISTS: {
 		name: 'Operator',
 		members: [
 			{
+				name: '2止',
+				icon: 'haineko.webp',
+				role: null,
+				birthday: { year: 2004, month: 4, day: 7 },
+				age: null,
+				twitter: 'zitome22',
+				youtube: '@zitome2',
+				twitch: 'zitome2',
+				homepage: null
+			},
+			{
 				name: 'Kaz9nnN',
 				icon: 'kaz.webp',
 				role: null,
@@ -291,17 +302,6 @@ export const MEMBER_LISTS: {
 				youtube: '@rinrin-rs',
 				twitch: 'rinrin0413',
 				homepage: 'https://rinrin.pages.dev'
-			},
-			{
-				name: '2止',
-				icon: 'haineko.webp',
-				role: null,
-				birthday: { year: 2004, month: 4, day: 7 },
-				age: null,
-				twitter: 'zitome22',
-				youtube: '@zitome2',
-				twitch: 'zitome2',
-				homepage: null
 			}
 		]
 	}
