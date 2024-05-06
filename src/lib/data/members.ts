@@ -136,7 +136,7 @@ export const MEMBER_LISTS = [
 				twitter: 'Menuro1230',
 				youtube: '@user-Menuro',
 				twitch: 'menuro',
-				hompage: null
+				homepage: null
 			},
 			{
 				name: 'れるにゃ',
