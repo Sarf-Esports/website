@@ -18,6 +18,23 @@
 //     // 指定しない場合は `null` にしてください
 //     'role': 'Web Developer',
 //
+//     // メンバーの生年月日 (YYYY-MM-DD)
+//     // ┏━ 生年月日を一切指定しない場合は `null` にしてください
+//     // ┃
+//     // ┃          ┏━ 年は必ず4桁の整数で西暦を指定してください
+//     // ┃          ┃  誕生日の月日のみを指定する場合はこれは `null` にしてください
+//     // ┃          ┃
+//     // ┃          ┃           ┏━ 月は1から12までの整数で指定してください
+//     // ┃          ┃           ┃
+//     // ┃          ┃           ┃         ┏━ 日は1から31までの整数で指定してください
+//     'birthday': { year: 2006, month: 4, day: 13 },
+//
+//     // メンバーの年齢
+//     // 上記で誕生日を年まで指定している場合は、
+//     // 自動で計算(誤差約1日)されるので `null` で良いが、上書も可能
+//     // 指定しない場合は `null` にしてください
+//     'age': null,
+//
 //     // メンバーの X(旧Twitter)アカウントID (アットマークはつけないで)
 //     // ない場合は `null` にしてください
 //     'twitter': 'rinrin_2nd',
@@ -47,6 +64,8 @@ export const MEMBER_LISTS: {
 		name: string;
 		icon: string | null;
 		role: string | null;
+		birthday: { year: number | null; month: number; day: number } | null;
+		age: number | null;
 		twitter: string | null;
 		youtube: string | null;
 		twitch: string | null;
@@ -60,6 +79,8 @@ export const MEMBER_LISTS: {
 				name: 'epic',
 				icon: null,
 				role: 'Player',
+				birthday: { year: null, month: 4, day: 6 },
+				age: null,
 				twitter: 'ep11111123',
 				youtube: null,
 				twitch: 'ep1c_ow',
@@ -69,6 +90,8 @@ export const MEMBER_LISTS: {
 				name: 'harutoon',
 				icon: null,
 				role: 'Player',
+				birthday: null,
+				age: null,
 				twitter: 'harutoon_FN',
 				youtube: null,
 				twitch: null,
@@ -78,6 +101,8 @@ export const MEMBER_LISTS: {
 				name: 'Hesty',
 				icon: 'hesty.webp',
 				role: 'Player',
+				birthday: null,
+				age: null,
 				twitter: '__Hestyow',
 				youtube: null,
 				twitch: null,
@@ -87,6 +112,8 @@ export const MEMBER_LISTS: {
 				name: 'HoFac',
 				icon: null,
 				role: 'Player',
+				birthday: null,
+				age: null,
 				twitter: 'HoneyFactory_OW',
 				youtube: '@ahoneyfactory9887',
 				twitch: null,
@@ -96,6 +123,8 @@ export const MEMBER_LISTS: {
 				name: 'MinHyouk',
 				icon: 'minhyouk.webp',
 				role: 'Player',
+				birthday: null,
+				age: null,
 				twitter: 'JeonMinHyouk_ow',
 				youtube: null,
 				twitch: null,
@@ -107,6 +136,8 @@ export const MEMBER_LISTS: {
 				name: 'Byeolha',
 				icon: 'byeolha.webp',
 				role: 'Coach',
+				birthday: null,
+				age: null,
 				twitter: 'ow_byeolha',
 				youtube: null,
 				twitch: null,
@@ -116,6 +147,8 @@ export const MEMBER_LISTS: {
 				name: 'Fickle',
 				icon: 'fickle.webp',
 				role: 'Coach',
+				birthday: null,
+				age: null,
 				twitter: 'Fickle_OW',
 				youtube: null,
 				twitch: null,
@@ -125,6 +158,8 @@ export const MEMBER_LISTS: {
 				name: 'STRIKE',
 				icon: 'strike.webp',
 				role: 'Coach',
+				birthday: null,
+				age: null,
 				twitter: '_Strikeow_',
 				youtube: null,
 				twitch: null,
@@ -136,6 +171,8 @@ export const MEMBER_LISTS: {
 				name: 'みるふぃーゆ',
 				icon: 'millfy.webp',
 				role: 'Manager',
+				birthday: { year: null, month: 12, day: 12 },
+				age: null,
 				twitter: 'miru_fiiyu',
 				youtube: null,
 				twitch: null,
@@ -150,6 +187,8 @@ export const MEMBER_LISTS: {
 				name: 'DROWSY',
 				icon: 'drowsy.webp',
 				role: null,
+				birthday: null,
+				age: null,
 				twitter: 'drowsy4150',
 				youtube: 'UCm-Yd-aYSagMqVdMZSYiKLQ',
 				twitch: 'drowsy4150',
@@ -159,6 +198,8 @@ export const MEMBER_LISTS: {
 				name: 'めぬろ',
 				icon: 'menuro.webp',
 				role: null,
+				birthday: null,
+				age: null,
 				twitter: 'Menuro1230',
 				youtube: '@user-Menuro',
 				twitch: 'menuro',
@@ -168,6 +209,8 @@ export const MEMBER_LISTS: {
 				name: 'れるにゃ',
 				icon: 'relle.webp',
 				role: null,
+				birthday: { year: 2002, month: 7, day: 23 },
+				age: null,
 				twitter: 'LanternCold',
 				youtube: '@relle3674',
 				twitch: null,
@@ -177,6 +220,8 @@ export const MEMBER_LISTS: {
 				name: '破壊神こたろ',
 				icon: 'hakaisinkotaro.webp',
 				role: null,
+				birthday: null,
+				age: null,
 				twitter: 'mareku1212',
 				youtube: '@hakaisinkotaro',
 				twitch: 'hakaisinnkotaro',
@@ -186,6 +231,8 @@ export const MEMBER_LISTS: {
 				name: '碧海まっちゃ',
 				icon: 'aomi_matcha.webp',
 				role: null,
+				birthday: null,
+				age: null,
 				twitter: 'aomi_matcha',
 				youtube: '@aomi_matcha',
 				twitch: 'aomi_matcha',
@@ -200,6 +247,8 @@ export const MEMBER_LISTS: {
 				name: 'はいせ',
 				icon: null,
 				role: null,
+				birthday: { year: null, month: 5, day: 30 },
+				age: null,
 				twitter: 'h4ise05',
 				youtube: null,
 				twitch: null,
@@ -214,6 +263,8 @@ export const MEMBER_LISTS: {
 				name: 'Kaz9nnN',
 				icon: 'kaz.webp',
 				role: null,
+				birthday: { year: null, month: 4, day: 23 },
+				age: null,
 				twitter: 'KAZKUN_TSUYOI',
 				youtube: null,
 				twitch: 'rev_kazkun',
@@ -223,6 +274,8 @@ export const MEMBER_LISTS: {
 				name: 'Life',
 				icon: 'life.webp',
 				role: null,
+				birthday: null,
+				age: null,
 				twitter: 'l1fefn',
 				youtube: null,
 				twitch: null,
@@ -232,6 +285,8 @@ export const MEMBER_LISTS: {
 				name: 'Rinrin.rs',
 				icon: 'rinrin.webp',
 				role: 'Web Developer',
+				birthday: { year: 2006, month: 4, day: 13 },
+				age: null,
 				twitter: 'Rinrin_2nd',
 				youtube: '@rinrin-rs',
 				twitch: 'rinrin0413',
@@ -241,6 +296,8 @@ export const MEMBER_LISTS: {
 				name: '2止',
 				icon: 'haineko.webp',
 				role: null,
+				birthday: { year: 2004, month: 4, day: 7 },
+				age: null,
 				twitter: 'zitome22',
 				youtube: '@zitome2',
 				twitch: 'zitome2',

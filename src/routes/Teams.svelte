@@ -1,6 +1,8 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import { MEMBER_LISTS } from '$lib/data/members';
+	import { calcAge, zeroPad } from '$lib/util';
+	import { date } from 'svelte-i18n';
 
 	let currentDivisionIndex = 0;
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
@@ -24,7 +26,7 @@
 {/if}
 
 <ul class="members">
-	{#each currentDivisionMembers as { name, icon, role, twitter, youtube, twitch, homepage }}
+	{#each currentDivisionMembers as { name, icon, role, birthday, age, twitter, youtube, twitch, homepage }}
 		<li class="member">
 			<img
 				src="/images/members/{icon == null ? 'noimage.webp' : icon}"
@@ -37,18 +39,28 @@
 					{role ?? '　'}
 				</span>
 				<h2>{name}</h2>
-				<table>
-					<tbody>
-						<tr>
-							<td>Age:</td>
-							<td>?</td>
-						</tr>
-						<tr>
-							<td>Birthday:</td>
-							<td>????/??/??</td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="details">
+					Age:
+					{#if age == null && birthday !== null && birthday.year !== null}
+						{@const calculatedAge = calcAge(new Date(birthday.year, birthday.month -1, birthday.day))}
+						{isNaN(calculatedAge) ? '' : calculatedAge}
+					{:else}
+						{age ?? ''}
+					{/if}
+					<br />
+					Birthday:
+					{#if birthday !== null}
+						{#if birthday.year !== null}
+							{$date(new Date(birthday.year, birthday.month -1, birthday.day), {
+								year: 'numeric',
+								month: '2-digit',
+								day: '2-digit'
+							})}
+						{:else}
+							{zeroPad(birthday.month, 2)}/{zeroPad(birthday.day, 2)}
+						{/if}
+					{/if}
+				</div>
 			</div>
 			<ul class="socials"></ul>
 		</li>
