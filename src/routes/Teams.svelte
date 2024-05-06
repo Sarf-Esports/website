@@ -1,19 +1,33 @@
 <!-- © 2022 REVATI -->
-<script>
+<script lang="ts">
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
 	import { MEMBER_LISTS } from '$lib/data/members';
+
+	let currentDivisionIndex = 0;
+	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
 </script>
 
-<ul class="div-list">
-	{#each MEMBER_LISTS as division}
-		<li>
-			<a href="#{division.name}">{division.name}</a>
-		</li>
+<ul class="divisions">
+	{#each MEMBER_LISTS as division, i}
+		<li class="division"><button
+			class:active={i == currentDivisionIndex}
+			on:click={() => {
+				currentDivisionIndex = i;
+			}}
+		>{division.name}</button></li>
 	{/each}
 </ul>
 
-<ul id="team-list">
+{#if currentDivisionMembers.length <= 0}
+	<p>Coming soon...</p>
+{/if}
+
+{#each MEMBER_LISTS[currentDivisionIndex].members as member}
+	<p>{member.name}</p>
+{/each}
+
+<!-- <ul id="team-list">
 	{#each MEMBER_LISTS as { name, members }}
 		<li>
 			<h2 id={name}>{name}</h2>
@@ -99,7 +113,7 @@
 			</ul>
 		</li>
 	{/each}
-</ul>
+</ul> -->
 
 <style lang="scss">
 	@use '/assets/stylesheets/member_lists';
