@@ -173,56 +173,55 @@ export const MEMBER_LISTS: {
 				homepage: null
 			}
 		]
+	},
+	{
+		name: 'Creator',
+		members: [
+			{
+				name: 'はいせ',
+				icon: null,
+				twitter: 'h4ise05',
+				youtube: null,
+				twitch: null,
+				homepage: 'https://behance.net/Haise__00'
+			},
+		]
+	},
+	{
+		name: 'Operator',
+		members: [
+			{
+				name: 'Kaz9nnN',
+				icon: 'kaz.webp',
+				twitter: 'KAZKUN_TSUYOI',
+				youtube: null,
+				twitch: 'rev_kazkun',
+				homepage: null
+			},
+			{
+				name: 'Life',
+				icon: 'life.webp',
+				twitter: 'l1fefn',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'Rinrin.rs',
+				icon: 'rinrin.webp',
+				twitter: 'Rinrin_2nd',
+				youtube: '@rinrin-rs',
+				twitch: 'rinrin0413',
+				homepage: 'https://rinrin.pages.dev'
+			},
+			{
+				name: '2止',
+				icon: 'haineko.webp',
+				twitter: 'zitome22',
+				youtube: '@zitome2',
+				twitch: 'zitome2',
+				homepage: null
+			}
+		]
 	}
-
-	// {
-	// 	name: 'Creator',
-	// 	members: [
-	// 		{
-	// 			name: 'はいせ',
-	// 			icon: null,
-	// 			twitter: 'h4ise05',
-	// 			youtube: null,
-	// 			twitch: null,
-	// 			homepage: 'https://behance.net/Haise__00'
-	// 		},
-	// 	]
-	// },
-	// {
-	// 	name: 'Operator',
-	// 	members: [
-	// 		{
-	// 			name: 'Kaz9nnN',
-	// 			icon: 'kaz.webp',
-	// 			twitter: 'KAZKUN_TSUYOI',
-	// 			youtube: null,
-	// 			twitch: 'rev_kazkun',
-	// 			homepage: null
-	// 		},
-	// 		{
-	// 			name: 'Life',
-	// 			icon: 'life.webp',
-	// 			twitter: 'l1fefn',
-	// 			youtube: null,
-	// 			twitch: null,
-	// 			homepage: null
-	// 		},
-	// 		{
-	// 			name: 'Rinrin.rs',
-	// 			icon: 'rinrin.webp',
-	// 			twitter: 'Rinrin_2nd',
-	// 			youtube: '@rinrin-rs',
-	// 			twitch: 'rinrin0413',
-	// 			homepage: 'https://rinrin.pages.dev'
-	// 		},
-	// 		{
-	// 			name: '2止',
-	// 			icon: 'haineko.webp',
-	// 			twitter: 'zitome22',
-	// 			youtube: '@zitome2',
-	// 			twitch: 'zitome2',
-	// 			homepage: null
-	// 		}
-	// 	]
-	// }
 ];
