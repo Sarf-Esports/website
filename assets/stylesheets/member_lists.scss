@@ -1,5 +1,8 @@
 // © 2022 REVATI
 
+@use '/assets/stylesheets/variables/color' as *;
+@use '/assets/stylesheets/variables/mixin' as *;
+
 ul {
 	list-style: none;
 	padding: 0;
@@ -19,16 +22,29 @@ button {
 	font-family: inherit;
 	color: inherit;
 	background: none;
-	border: solid 1px white;
-	border-radius: 18px;
+	border: solid 1px #ffffff5a;
+	border-radius: 20px;
 	cursor: pointer;
-	font-size: 18px;
-	padding: 3px 11px;
-	letter-spacing: -0.3px;
+	font-size: 17px;
+	font-weight: 900;
+	padding: 4px 12px;
+	letter-spacing: -0.4px;
 
 	&.active {
-		background-color: white;
-		color: black;
+		background-color: $primary-color-pale-lighter;
+		color: $primary-color-darker-2;
+	}
+}
+
+@include sp {
+	.division {
+		margin: 5px 3px;
+	}
+
+	button {
+		font-size: 15px;
+		padding: 3px 10px;
+		letter-spacing: -0.6px;
 	}
 }
 
