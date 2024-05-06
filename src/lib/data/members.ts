@@ -260,6 +260,17 @@ export const MEMBER_LISTS: {
 		name: 'Operator',
 		members: [
 			{
+				name: 'しろねこ',
+				icon: '46nek_0.webp',
+				role: 'President',
+				birthday: { year: 2005, month: 3, day: 23 },
+				age: null,
+				twitter: '46nek_0',
+				youtube: '@gentei-koukai',
+				twitch: '46nek_0',
+				homepage: null
+			},
+			{
 				name: '2止',
 				icon: 'haineko.webp',
 				role: null,
