@@ -1,9 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
-
 	import { MEMBER_LISTS } from '$lib/data/members';
-	import { scale } from 'svelte/transition';
 
 	let currentDivisionIndex = 0;
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
@@ -27,7 +24,7 @@
 {/if}
 
 <ul class="members">
-	{#each currentDivisionMembers as { name, icon, twitter, youtube, twitch, homepage }}
+	{#each currentDivisionMembers as { name, icon, role, twitter, youtube, twitch, homepage }}
 		<li class="member">
 			<img
 				src="/images/members/{icon == null ? 'noimage.webp' : icon}"
@@ -36,7 +33,9 @@
 				class="icon"
 			/>
 			<div class="info">
-				<span class="role">役職</span>
+				<span class="role" class:no-role={role === null}>
+					{role ?? '　'}
+				</span>
 				<h2>{name}</h2>
 				<table>
 					<tbody>
