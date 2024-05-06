@@ -37,7 +37,17 @@
 //
 // また、メンバーのアイコン画像を指定した場合は `/assets/images/members/` 配下に置くのを忘れないでください。
 
-export const MEMBER_LISTS = [
+export const MEMBER_LISTS: {
+	name: string;
+	members: {
+		name: string;
+		icon: string | null;
+		twitter: string | null;
+		youtube: string | null;
+		twitch: string | null;
+		homepage: string | null;
+	}[];
+}[] = [
 	{
 		name: 'Overwatch (JP)',
 		members: [
