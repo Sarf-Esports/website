@@ -3,6 +3,7 @@
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
 	import { MEMBER_LISTS } from '$lib/data/members';
+	import { scale } from 'svelte/transition';
 
 	let currentDivisionIndex = 0;
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
@@ -26,7 +27,7 @@
 {/if}
 
 <ul class="members">
-	{#each MEMBER_LISTS[currentDivisionIndex].members as { name, icon, twitter, youtube, twitch, homepage }}
+	{#each currentDivisionMembers as { name, icon, twitter, youtube, twitch, homepage }}
 		<li class="member">
 			<img
 				src="/images/members/{icon == null ? 'noimage.webp' : icon}"
