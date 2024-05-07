@@ -39,7 +39,7 @@
 
 export const MEMBER_LISTS = [
 	{
-		name: 'Overwatch (JP)',
+		name: 'Overwatch',
 		members: [
 			{
 				name: 'epic',
