@@ -1,5 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
+	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
+
 	import { MEMBER_LISTS } from '$lib/data/members';
 	import { calcAge, zeroPad } from '$lib/util';
 	import { date } from 'svelte-i18n';
@@ -64,7 +66,78 @@
 					{/if}
 				</div>
 			</div>
-			<ul class="socials"></ul>
+			<ul class="socials">
+				{#if twitter !== null}
+					<li>
+						<a
+							href="https://x.com/{twitter}"
+							class="member-twitter"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img
+								src="/images/logos/x_logo-white.png"
+								alt="X"
+								title="@{twitter}"
+								loading="lazy"
+							/>
+						</a>
+					</li>
+				{/if}
+				{#if youtube !== null}
+					{@const path = youtube[0] == '@' ? youtube : `channel/${youtube}`}
+					<li>
+						<a
+							href="https://youtube.com/{path}"
+							class="member-youtube"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img
+								src="/images/logos/yt_icon_rgb.png"
+								alt="YouTube"
+								title="/{path}"
+								loading="lazy"
+								class="wide-icn"
+							/>
+						</a>
+					</li>
+				{/if}
+				{#if twitch !== null}
+					<li>
+						<a
+							href="https://twitch.tv/{twitch}"
+							class="member-twitch"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img
+								src="/images/logos/twitch.svg"
+								alt="Twitch"
+								title="@{twitch}"
+								loading="lazy"
+							/>
+						</a>
+					</li>
+				{/if}
+				{#if homepage !== null}
+					<li>
+						<a
+							href={homepage}
+							class="member-homepage"
+							target="_blank"
+							rel="noopener noreferrer"
+							title={homepage}
+						>
+							<MaterialIcon
+								kind="link-45deg"
+								width="34px"
+								style="color: #eeeeee; margin-top: 11px;"
+							/>
+						</a>
+					</li>
+				{/if}
+			</ul>
 		</li>
 	{/each}
 </ul>
