@@ -273,7 +273,7 @@ export const MEMBER_LISTS: {
 			{
 				name: 'しろねこ',
 				icon: '46nek_0.webp',
-				role: 'President',
+				role: 'Owner',
 				birthday: { year: 2005, month: 3, day: 23 },
 				age: null,
 				twitter: '46nek_0',
