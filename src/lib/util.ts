@@ -46,7 +46,6 @@ export function idToDate(articleId: string) {
 /** Calculates the age of a person from their birthday. */
 export function calcAge(birthday: Date) {
 	const today = new Date();
-	console.log(today);
 	const year = today.getFullYear();
 	const month = today.getMonth() + 1;
 	const date = today.getDate();
