@@ -241,7 +241,7 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
-		name: 'Creator',
+		name: 'Other',
 		members: [
 			{
 				name: 'はいせ',
