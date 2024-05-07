@@ -6,18 +6,24 @@
 	import { calcAge, zeroPad } from '$lib/util';
 	import { date } from 'svelte-i18n';
 
+	export let division: string | null;
+
 	let currentDivisionIndex = 0;
+
+	if (division !== null) currentDivisionIndex = MEMBER_LISTS.findIndex(({ name }) => name == division);
+
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
 </script>
 
 <ul class="divisions">
-	{#each MEMBER_LISTS as division, i}
+	{#each MEMBER_LISTS as { name }, i}
 		<li class="division">
 			<button
 				class:active={i == currentDivisionIndex}
 				on:click={() => {
 					currentDivisionIndex = i;
-				}}>{division.name}</button
+					history.replaceState(null, '', `?div=${name.replace(' ', '+')}#teams`);
+				}}>{name}</button
 			>
 		</li>
 	{/each}

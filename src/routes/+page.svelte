@@ -106,7 +106,7 @@
 	<div class="container">
 		<section id="teams">
 			<SectionTitle name="teams" />
-			<div class="section-content"><Teams /></div>
+			<div class="section-content"><Teams division={data.division} /></div>
 		</section>
 	</div>
 
