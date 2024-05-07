@@ -10,7 +10,8 @@
 
 	let currentDivisionIndex = 0;
 
-	if (division !== null) currentDivisionIndex = MEMBER_LISTS.findIndex(({ name }) => name == division);
+	if (division !== null)
+		currentDivisionIndex = MEMBER_LISTS.findIndex(({ name }) => name == division);
 
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
 </script>
