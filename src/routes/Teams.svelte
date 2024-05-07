@@ -75,12 +75,7 @@
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img
-								src="/images/logos/x_logo-white.png"
-								alt="X"
-								title="@{twitter}"
-								loading="lazy"
-							/>
+							<img src="/images/logos/x_logo-white.png" alt="X" title="@{twitter}" loading="lazy" />
 						</a>
 					</li>
 				{/if}
@@ -111,12 +106,7 @@
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img
-								src="/images/logos/twitch.svg"
-								alt="Twitch"
-								title="@{twitch}"
-								loading="lazy"
-							/>
+							<img src="/images/logos/twitch.svg" alt="Twitch" title="@{twitch}" loading="lazy" />
 						</a>
 					</li>
 				{/if}
