@@ -253,6 +253,17 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: null,
 				homepage: 'https://behance.net/Haise__00'
+			},
+			{
+				name: 'らいふれっくす',
+				icon: 'lifelex.webp',
+				role: null,
+				birthday: null,
+				age: null,
+				twitter: 'Lifelex06',
+				youtube: '@Lifelex57',
+				twitch: 'lilex7',
+				homepage: null
 			}
 		]
 	},
