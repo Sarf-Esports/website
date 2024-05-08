@@ -1,105 +1,153 @@
 // © 2022 REVATI
 
 @use '/assets/stylesheets/variables/color' as *;
+@use '/assets/stylesheets/variables/mixin' as *;
 
-.div-list,
-#team-list {
+ul {
 	list-style: none;
-	padding-left: 0;
+	padding: 0;
 }
 
-.div-list {
-	display: inline-block;
+.divisions {
 	margin: 0 auto;
-	padding: 8px 30px;
-	$border: 3px solid #ffffff4a;
-	border-top: $border;
-	border-bottom: $border;
+	margin-bottom: 24px;
+}
 
-	li {
-		margin: 4px auto;
+.division {
+	display: inline-block;
+	margin: 6px 4px;
+}
 
-		a {
-			font-family: 'Poppins', sans-serif;
-			font-size: 22px;
-			font-weight: 100;
-			text-decoration: none;
-			letter-spacing: 1px;
-		}
+button {
+	font-family: inherit;
+	color: inherit;
+	background: none;
+	border: solid 1px #ffffff5a;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 17px;
+	font-weight: 900;
+	padding: 4px 12px;
+	letter-spacing: -0.4px;
+}
+
+.active {
+	background-color: $primary-color-pale-lighter;
+	color: $primary-color-darker-2;
+}
+
+.members {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+$icn-size: 88px;
+
+.member {
+	display: inline-grid;
+	grid-template-rows: auto;
+	grid-template-columns: $icn-size auto;
+	width: 246px;
+	padding: 4px 12px;
+	margin: 6px;
+	text-align: left;
+	background-color: $primary-color;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 0 #0000005a;
+	$border-light: solid 1px #ffffff30;
+	border-top: $border-light;
+	border-left: $border-light;
+	$border-shade: solid 1px #00000050;
+	border-bottom: $border-shade;
+	border-right: $border-shade;
+	overflow: hidden;
+
+	::selection {
+		background: white;
+		color: $primary-color-darker;
 	}
 }
 
-#team-list {
-	h2 {
-		text-align: left;
-		font-size: 28px;
-		border-bottom: 2px solid white;
-		width: 94%;
+.icon {
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+	width: $icn-size;
+	height: $icn-size;
+	pointer-events: none;
+	user-select: none;
+	position: relative;
+	top: 50%;
+	transform: translateY(-45%);
+	box-sizing: border-box;
+	border-radius: 1px;
+	$border-shade: solid 2px #00000060;
+	border-top: $border-shade;
+	border-left: $border-shade;
+	$border-light: solid 2px #ffffff30;
+	border-bottom: $border-light;
+	border-right: $border-light;
+}
+
+.info {
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+	margin-left: 5px;
+	white-space: nowrap;
+}
+
+.role,
+.details {
+	opacity: 0.85;
+}
+
+.role {
+	font-size: 13px;
+	margin-bottom: -4px;
+}
+
+.no-role {
+	user-select: none;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 0;
+	margin-top: -4px;
+	margin-left: 1px;
+	color: white;
+	font-weight: 900;
+}
+
+.details {
+	font-size: 16px;
+	line-height: 1.1;
+}
+
+.socials {
+	grid-row: 2 / 3;
+	grid-column: 1 / 3;
+	display: flex;
+	height: 52px;
+
+	img {
+		width: 23px;
+		height: auto;
+		vertical-align: middle;
+		margin: 17px 7px 10px 5px;
+		user-select: none;
 	}
 
-	p {
-		margin: 48px auto;
+	.wide-icn {
+		height: 20px;
+		width: auto;
+		position: relative;
+		top: 1px;
 	}
+}
 
-	ul {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		padding: 0;
-		margin: 0 auto;
-
-		li {
-			align-items: center;
-			margin: 8px 6px;
-			width: 138px;
-			height: 224px;
-			background-color: #e6e6e6;
-			list-style: none;
-			border-radius: 4px;
-			border: 4px solid #c0c0c0;
-			color: $primary-color-darker-2;
-			font-weight: 900;
-
-			div {
-				> img {
-					width: 86px;
-					height: 86px;
-					border-radius: 50%;
-					margin: 20px auto;
-					border: 4px solid #c0c0c0;
-					pointer-events: none;
-					user-select: none;
-				}
-
-				h3 {
-					font-size: 16px;
-					margin-top: -16px;
-					margin-bottom: 9px;
-				}
-
-				.member-twitter img {
-					height: 26px;
-					transform: translateY(2px);
-				}
-
-				.member-youtube img {
-					height: 24px;
-				}
-
-				.member-twitch img {
-					height: 30px;
-					transform: translateY(4px);
-				}
-
-				a {
-					text-decoration: none;
-					margin: 0 4px;
-
-					img {
-						user-select: none;
-					}
-				}
-			}
-		}
-	}
+@include sp {
+	.division {
+		margin: 5px 7px;
+  }
 }

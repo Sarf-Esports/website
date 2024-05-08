@@ -2,7 +2,7 @@
 <script lang="ts">
 	import SectionTitle from './SectionTitle.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
-	import MemberLists from './MemberLists.svelte';
+	import Teams from './Teams.svelte';
 	import LinkButton from '$lib/components/LinkButton.svelte';
 
 	import type { PageData } from './$types';
@@ -106,7 +106,7 @@
 	<div class="container">
 		<section id="teams">
 			<SectionTitle name="teams" />
-			<div class="section-content"><MemberLists /></div>
+			<div class="section-content"><Teams division={data.division} /></div>
 		</section>
 	</div>
 

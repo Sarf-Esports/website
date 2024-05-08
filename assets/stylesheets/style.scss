@@ -6,19 +6,18 @@
 
 main::before {
 	content: '';
-    $dark: rgba($secondary-color, 0.75);
-    background:
-        linear-gradient($dark, $dark),
-        linear-gradient(
-            165deg,
-            #4e8091 13%,
-            #154c84 22%,
-            #0f5372 44%,
-            #326e86 50%,
-            #132f6b 62%,
-            #132f6b 73%,
-            #050946 90%
-        );
+	$dark: rgba($secondary-color, 0.75);
+	background: linear-gradient($dark, $dark),
+		linear-gradient(
+			165deg,
+			#4e8091 13%,
+			#154c84 22%,
+			#0f5372 44%,
+			#326e86 50%,
+			#132f6b 62%,
+			#132f6b 73%,
+			#050946 90%
+		);
 	background-size: 100% 100vh;
 	display: block;
 	position: fixed;
