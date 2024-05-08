@@ -39,7 +39,7 @@
 
 export const MEMBER_LISTS = [
 	{
-		name: 'Overwatch (JP)',
+		name: 'Overwatch',
 		members: [
 			{
 				name: 'epic',
@@ -47,6 +47,14 @@ export const MEMBER_LISTS = [
 				twitter: 'ep11111123',
 				youtube: null,
 				twitch: 'ep1c_ow',
+				homepage: null
+			},
+			{
+				name: 'Fearful',
+				icon: 'fearful.webp',
+				twitter: 'fearful0405',
+				youtube: null,
+				twitch: null,
 				homepage: null
 			},
 			{
@@ -74,12 +82,20 @@ export const MEMBER_LISTS = [
 				homepage: null
 			},
 			{
-				name: 'MinHyouk',
-				icon: 'minhyouk.webp',
-				twitter: 'JeonMinHyouk_ow',
+				name: 'solace',
+				icon: null,
+				twitter: 'sorryimsolace',
 				youtube: null,
 				twitch: null,
 				homepage: null
+			},
+			{
+				name: 'にんじゃはむぞー',
+				icon: 'ninja_hamuzo.webp',
+				twitter: 'ninja_hamuzo',
+				youtube: null,
+				twitch: null,
+				homepage: 'https://liquipedia.net/overwatch/NHZ'
 			},
 			// // ▲ 選手
 			// // ▼ コーチ
@@ -95,6 +111,14 @@ export const MEMBER_LISTS = [
 				name: 'Fickle',
 				icon: 'fickle.webp',
 				twitter: 'Fickle_OW',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'MinHyouk',
+				icon: 'minhyouk.webp',
+				twitter: 'JeonMinHyouk_ow',
 				youtube: null,
 				twitch: null,
 				homepage: null
