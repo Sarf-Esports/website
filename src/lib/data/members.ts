@@ -130,7 +130,7 @@ export const MEMBER_LISTS: {
 				twitch: null,
 				homepage: null
 			},
-      {
+			{
 				name: 'solace',
 				icon: null,
 				role: 'Player',
