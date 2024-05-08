@@ -73,7 +73,7 @@ export const MEMBER_LISTS: {
 	}[];
 }[] = [
 	{
-		name: 'Overwatch (JP)',
+		name: 'Overwatch',
 		members: [
 			{
 				name: 'epic',
@@ -84,6 +84,17 @@ export const MEMBER_LISTS: {
 				twitter: 'ep11111123',
 				youtube: null,
 				twitch: 'ep1c_ow',
+				homepage: null
+			},
+			{
+				name: 'Fearful',
+				icon: 'fearful.webp',
+				role: 'Player',
+				birthday: null,
+				age: null,
+				twitter: 'fearful0405',
+				youtube: null,
+				twitch: null,
 				homepage: null
 			},
 			{
@@ -119,16 +130,24 @@ export const MEMBER_LISTS: {
 				twitch: null,
 				homepage: null
 			},
-			{
-				name: 'MinHyouk',
-				icon: 'minhyouk.webp',
+      {
+				name: 'solace',
+				icon: null,
 				role: 'Player',
 				birthday: null,
 				age: null,
-				twitter: 'JeonMinHyouk_ow',
+				twitter: 'sorryimsolace',
 				youtube: null,
 				twitch: null,
 				homepage: null
+			},
+			{
+				name: 'にんじゃはむぞー',
+				icon: 'ninja_hamuzo.webp',
+				twitter: 'ninja_hamuzo',
+				youtube: null,
+				twitch: null,
+				homepage: 'https://liquipedia.net/overwatch/NHZ'
 			},
 			// // ▲ 選手
 			// // ▼ コーチ
@@ -150,6 +169,17 @@ export const MEMBER_LISTS: {
 				birthday: null,
 				age: null,
 				twitter: 'Fickle_OW',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				name: 'MinHyouk',
+				icon: 'minhyouk.webp',
+				role: 'Coach',
+				birthday: null,
+				age: null,
+				twitter: 'JeonMinHyouk_ow',
 				youtube: null,
 				twitch: null,
 				homepage: null
