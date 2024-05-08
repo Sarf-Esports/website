@@ -144,6 +144,9 @@ export const MEMBER_LISTS: {
 			{
 				name: 'にんじゃはむぞー',
 				icon: 'ninja_hamuzo.webp',
+				role: 'Player',
+				birthday: null,
+				age: null,
 				twitter: 'ninja_hamuzo',
 				youtube: null,
 				twitch: null,
