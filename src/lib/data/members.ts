@@ -219,6 +219,9 @@ export const MEMBER_LISTS: {
 			{
 				name: 'CLANK',
 				icon: 'clank.webp',
+				role: null,
+				birthday: { year: 1998, month: 7, day: 10 },
+				age: null,
 				twitter: 'clank_ccc',
 				youtube: null,
 				twitch: 'clank_owl',
@@ -282,6 +285,9 @@ export const MEMBER_LISTS: {
 			{
 				name: '宮城大豆',
 				icon: 'ow_zundamon.webp',
+				role: null,
+				birthday: null,
+				age: null,
 				twitter: 'OWzundamon',
 				youtube: '@overwatch9753',
 				twitch: null,
