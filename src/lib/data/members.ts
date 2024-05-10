@@ -148,7 +148,7 @@ export const MEMBER_LISTS = [
 		members: [
 			{
 				name: 'CLANK',
-				icon: null,
+				icon: 'clank.webp',
 				twitter: 'clank_ccc',
 				youtube: null,
 				twitch: 'clank_owl',
@@ -196,7 +196,7 @@ export const MEMBER_LISTS = [
 			},
 			{
 				name: '宮城大豆',
-				icon: null,
+				icon: 'ow_zundamon.webp',
 				twitter: 'OWzundamon',
 				youtube: '@overwatch9753',
 				twitch: null,
