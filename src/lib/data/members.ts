@@ -147,6 +147,14 @@ export const MEMBER_LISTS = [
 		name: 'Content Creator',
 		members: [
 			{
+				name: 'CLANK',
+				icon: null,
+				twitter: 'clank_ccc',
+				youtube: null,
+				twitch: 'clank_owl',
+				homepage: null
+			},
+			{
 				name: 'DROWSY',
 				icon: 'drowsy.webp',
 				twitter: 'drowsy4150',
@@ -184,6 +192,14 @@ export const MEMBER_LISTS = [
 				twitter: 'aomi_matcha',
 				youtube: '@aomi_matcha',
 				twitch: 'aomi_matcha',
+				homepage: null
+			},
+			{
+				name: '宮城大豆',
+				icon: null,
+				twitter: 'OWzundamon',
+				youtube: '@overwatch9753',
+				twitch: null,
 				homepage: null
 			}
 		]
