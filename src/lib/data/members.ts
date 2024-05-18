@@ -301,7 +301,7 @@ export const MEMBER_LISTS: {
 			{
 				name: 'はいせ',
 				icon: null,
-				role: null,
+				role: 'Designer',
 				birthday: { year: null, month: 5, day: 30 },
 				age: null,
 				twitter: 'h4ise05',
@@ -312,7 +312,7 @@ export const MEMBER_LISTS: {
 			{
 				name: 'らいふれっくす',
 				icon: 'lifelex.webp',
-				role: null,
+				role: 'Video Editor',
 				birthday: null,
 				age: null,
 				twitter: 'Lifelex06',
