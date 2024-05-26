@@ -231,7 +231,7 @@ export const MEMBER_LISTS: {
 				name: 'DROWSY',
 				icon: 'drowsy.webp',
 				role: null,
-				birthday: null,
+				birthday: { year: 2001, month: 2, day: 22 },
 				age: null,
 				twitter: 'drowsy4150',
 				youtube: 'UCm-Yd-aYSagMqVdMZSYiKLQ',
