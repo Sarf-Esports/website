@@ -315,7 +315,7 @@ export const MEMBER_LISTS: {
 				role: 'Video Editor',
 				birthday: { year: 2006, month: 12, day: 24 },
 				age: null,
-				twitter: 'lex57D',
+				twitter: 'Lifelex57',
 				youtube: '@Lifelex57',
 				twitch: 'lilex7',
 				homepage: null
