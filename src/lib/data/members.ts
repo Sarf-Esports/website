@@ -150,7 +150,7 @@ export const MEMBER_LISTS: {
 				twitter: 'ninja_hamuzo',
 				youtube: null,
 				twitch: null,
-				homepage: 'https://liquipedia.net/overwatch/NHZ'
+				homepage: null
 			},
 			// // ▲ 選手
 			// // ▼ コーチ
