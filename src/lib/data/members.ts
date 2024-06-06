@@ -236,7 +236,7 @@ export const MEMBER_LISTS: {
 				twitter: 'drowsy4150',
 				youtube: 'UCm-Yd-aYSagMqVdMZSYiKLQ',
 				twitch: 'drowsy4150',
-				homepage: null
+				homepage: 'https://chzzk.naver.com/bc7110b6e2e16456e32cc6d5bb939a3b'
 			},
 			{
 				name: 'めぬろ',
