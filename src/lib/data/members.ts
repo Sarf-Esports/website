@@ -286,7 +286,7 @@ export const MEMBER_LISTS: {
 				name: '宮城大豆',
 				icon: 'ow_zundamon.webp',
 				role: 'YouTuber',
-				birthday: null,
+				birthday: { year: null, month: 1, day: 7 },
 				age: null,
 				twitter: 'OWzundamon',
 				youtube: '@overwatch9753',
