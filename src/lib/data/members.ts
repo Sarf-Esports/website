@@ -219,7 +219,7 @@ export const MEMBER_LISTS: {
 			{
 				name: 'CLANK',
 				icon: 'clank.webp',
-				role: null,
+				role: 'Streamer',
 				birthday: { year: 1998, month: 7, day: 10 },
 				age: null,
 				twitter: 'clank_ccc',
@@ -230,7 +230,7 @@ export const MEMBER_LISTS: {
 			{
 				name: 'DROWSY',
 				icon: 'drowsy.webp',
-				role: null,
+				role: 'Streamer',
 				birthday: { year: 2001, month: 2, day: 22 },
 				age: null,
 				twitter: 'drowsy4150',
@@ -241,7 +241,7 @@ export const MEMBER_LISTS: {
 			{
 				name: 'めぬろ',
 				icon: 'menuro.webp',
-				role: null,
+				role: 'Streamer',
 				birthday: { year: 1999, month: 12, day: 30 },
 				age: null,
 				twitter: 'Menuro1230',
@@ -252,7 +252,7 @@ export const MEMBER_LISTS: {
 			{
 				name: 'れるにゃ',
 				icon: 'relle.webp',
-				role: null,
+				role: 'MCBE Map Creator',
 				birthday: { year: 2002, month: 7, day: 23 },
 				age: null,
 				twitter: 'LanternCold',
@@ -263,7 +263,7 @@ export const MEMBER_LISTS: {
 			{
 				name: '破壊神こたろ',
 				icon: 'hakaisinkotaro.webp',
-				role: null,
+				role: 'Streamer',
 				birthday: null,
 				age: null,
 				twitter: 'mareku1212',
@@ -274,7 +274,7 @@ export const MEMBER_LISTS: {
 			{
 				name: '碧海まっちゃ',
 				icon: 'aomi_matcha.webp',
-				role: null,
+				role: 'Streamer',
 				birthday: { year: null, month: 2, day: 28 },
 				age: null,
 				twitter: 'aomi_matcha',
@@ -285,7 +285,7 @@ export const MEMBER_LISTS: {
 			{
 				name: '宮城大豆',
 				icon: 'ow_zundamon.webp',
-				role: null,
+				role: 'YouTuber',
 				birthday: null,
 				age: null,
 				twitter: 'OWzundamon',
