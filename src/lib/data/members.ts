@@ -130,7 +130,7 @@ export const MEMBER_LISTS: {
 				twitch: null,
 				homepage: null
 			},
-      {
+			{
 				name: 'solace',
 				icon: null,
 				role: 'Player',
@@ -144,10 +144,13 @@ export const MEMBER_LISTS: {
 			{
 				name: 'にんじゃはむぞー',
 				icon: 'ninja_hamuzo.webp',
+				role: 'Player',
+				birthday: null,
+				age: null,
 				twitter: 'ninja_hamuzo',
 				youtube: null,
 				twitch: null,
-				homepage: 'https://liquipedia.net/overwatch/NHZ'
+				homepage: null
 			},
 			// // ▲ 選手
 			// // ▼ コーチ
@@ -216,6 +219,9 @@ export const MEMBER_LISTS: {
 			{
 				name: 'CLANK',
 				icon: 'clank.webp',
+				role: 'Streamer',
+				birthday: { year: 1998, month: 7, day: 10 },
+				age: null,
 				twitter: 'clank_ccc',
 				youtube: null,
 				twitch: 'clank_owl',
@@ -224,19 +230,19 @@ export const MEMBER_LISTS: {
 			{
 				name: 'DROWSY',
 				icon: 'drowsy.webp',
-				role: null,
-				birthday: null,
+				role: 'Streamer',
+				birthday: { year: 2001, month: 2, day: 22 },
 				age: null,
 				twitter: 'drowsy4150',
 				youtube: 'UCm-Yd-aYSagMqVdMZSYiKLQ',
 				twitch: 'drowsy4150',
-				homepage: null
+				homepage: 'https://chzzk.naver.com/bc7110b6e2e16456e32cc6d5bb939a3b'
 			},
 			{
 				name: 'めぬろ',
 				icon: 'menuro.webp',
-				role: null,
-				birthday: null,
+				role: 'Streamer',
+				birthday: { year: 1999, month: 12, day: 30 },
 				age: null,
 				twitter: 'Menuro1230',
 				youtube: '@user-Menuro',
@@ -246,7 +252,7 @@ export const MEMBER_LISTS: {
 			{
 				name: 'れるにゃ',
 				icon: 'relle.webp',
-				role: null,
+				role: 'MCBE Map Creator',
 				birthday: { year: 2002, month: 7, day: 23 },
 				age: null,
 				twitter: 'LanternCold',
@@ -257,7 +263,7 @@ export const MEMBER_LISTS: {
 			{
 				name: '破壊神こたろ',
 				icon: 'hakaisinkotaro.webp',
-				role: null,
+				role: 'Streamer',
 				birthday: null,
 				age: null,
 				twitter: 'mareku1212',
@@ -268,8 +274,8 @@ export const MEMBER_LISTS: {
 			{
 				name: '碧海まっちゃ',
 				icon: 'aomi_matcha.webp',
-				role: null,
-				birthday: null,
+				role: 'Streamer',
+				birthday: { year: null, month: 2, day: 28 },
 				age: null,
 				twitter: 'aomi_matcha',
 				youtube: '@aomi_matcha',
@@ -279,6 +285,9 @@ export const MEMBER_LISTS: {
 			{
 				name: '宮城大豆',
 				icon: 'ow_zundamon.webp',
+				role: 'YouTuber',
+				birthday: { year: null, month: 1, day: 7 },
+				age: null,
 				twitter: 'OWzundamon',
 				youtube: '@overwatch9753',
 				twitch: null,
@@ -292,7 +301,7 @@ export const MEMBER_LISTS: {
 			{
 				name: 'はいせ',
 				icon: null,
-				role: null,
+				role: 'Designer',
 				birthday: { year: null, month: 5, day: 30 },
 				age: null,
 				twitter: 'h4ise05',
@@ -303,10 +312,10 @@ export const MEMBER_LISTS: {
 			{
 				name: 'らいふれっくす',
 				icon: 'lifelex.webp',
-				role: null,
-				birthday: null,
+				role: 'Video Editor',
+				birthday: { year: 2006, month: 12, day: 24 },
 				age: null,
-				twitter: 'Lifelex06',
+				twitter: 'Lifelex57',
 				youtube: '@Lifelex57',
 				twitch: 'lilex7',
 				homepage: null
@@ -323,8 +332,8 @@ export const MEMBER_LISTS: {
 				birthday: { year: 2005, month: 3, day: 23 },
 				age: null,
 				twitter: '46nek_0',
-				youtube: '@gentei-koukai',
-				twitch: '46nek_0',
+				youtube: null,
+				twitch: null,
 				homepage: null
 			},
 			{
@@ -353,7 +362,7 @@ export const MEMBER_LISTS: {
 				name: 'Life',
 				icon: 'life.webp',
 				role: null,
-				birthday: null,
+				birthday: { year: 2007, month: 8, day: 9 },
 				age: null,
 				twitter: 'l1fefn',
 				youtube: null,
@@ -370,6 +379,17 @@ export const MEMBER_LISTS: {
 				youtube: '@rinrin-rs',
 				twitch: 'rinrin0413',
 				homepage: 'https://rinrin.pages.dev'
+			},
+			{
+				name: 'ひなこ',
+				icon: null,
+				role: null,
+				birthday: { year: 2004, month: 10, day: 14 },
+				age: null,
+				twitter: 'hinakunaiueo',
+				youtube: '@hinakox9220',
+				twitch: 'hinakoooo_fn',
+				homepage: null
 			}
 		]
 	}
