@@ -332,8 +332,8 @@ export const MEMBER_LISTS: {
 				birthday: { year: 2005, month: 3, day: 23 },
 				age: null,
 				twitter: '46nek_0',
-				youtube: '@gentei-koukai',
-				twitch: '46nek_0',
+				youtube: null,
+				twitch: null,
 				homepage: null
 			},
 			{
