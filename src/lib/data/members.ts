@@ -379,6 +379,17 @@ export const MEMBER_LISTS: {
 				youtube: '@rinrin-rs',
 				twitch: 'rinrin0413',
 				homepage: 'https://rinrin.pages.dev'
+			},
+			{
+				name: 'ひなこ',
+				icon: null,
+				role: null,
+				birthday: { year: 2004, month: 10, day: 14 },
+				age: null,
+				twitter: 'hinakunaiueo',
+				youtube: '@hinakox9220',
+				twitch: 'hinakoooo_fn',
+				homepage: null
 			}
 		]
 	}
