@@ -1,5 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
+	import MainVisual from './MainVisual.svelte';
 	import SectionTitle from './SectionTitle.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
 	import Teams from './Teams.svelte';
@@ -43,7 +44,7 @@
 </svelte:head>
 
 <main>
-	<div class="container"><div class="main-visual" /></div>
+	<div class="container"><MainVisual /></div>
 
 	<div class="container">
 		<section id="about">
@@ -122,21 +123,6 @@
 	@use '/assets/stylesheets/util';
 	@use '/assets/stylesheets/reveal_anim';
 	@use '/assets/stylesheets/style';
-
-	.main-visual {
-		display: block;
-		background-image: url(/images/logos/revati/title_oxipng.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		height: 100vh;
-		position: relative;
-		bottom: 18px;
-
-		@include sp {
-			background-size: 72vw;
-			background-position: 50% 52%;
-		}
-	}
 
 	#about {
 		.slogan {
