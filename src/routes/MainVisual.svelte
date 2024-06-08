@@ -28,8 +28,7 @@
 		translate: 0 -50%;
 		user-select: none;
 		pointer-events: none;
-		filter: sepia(2) hue-rotate(154deg) saturate(4)
-			drop-shadow(0 0 36px #caffff59)
+		filter: sepia(2) hue-rotate(154deg) saturate(4) drop-shadow(0 0 36px #caffff59)
 			drop-shadow(0 0 128px #75ffff99);
 
 		@include sp {
