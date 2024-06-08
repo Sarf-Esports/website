@@ -26,21 +26,6 @@
 		});
 	}
 
-	let opContainer: HTMLDivElement;
-
-	/** Loops playback the OP video at intervals. */
-	function opLoop(video: Event & { currentTarget: EventTarget & HTMLVideoElement }) {
-		let v = video.currentTarget;
-		let container = opContainer.classList;
-		container.remove('is-playing');
-		v.classList.add('invisible');
-		setTimeout(() => {
-			v.classList.remove('invisible');
-			v.play();
-			container.add('is-playing');
-		}, 8000);
-	}
-
 	const HEAD = {
 		title: 'REVATI',
 		desc: '勝負の世界である以上、成績が低迷してしまうこともあると思います。そんなときでも私たちは物事の目的達成のために継続的に粘り強く努力することを厭わず 最後までやり遂げる無限のパワー・可能性を秘めています。'
@@ -58,18 +43,7 @@
 </svelte:head>
 
 <main>
-	<div class="container">
-		<div id="op-container" class="is-playing" bind:this={opContainer}>
-			<video
-				src="/videos/revati_op_muted.mp4"
-				id="op-video"
-				on:ended={(self) => opLoop(self)}
-				muted
-				autoplay
-				playsinline
-			/>
-		</div>
-	</div>
+	<div class="container"><div class="main-visual" /></div>
 
 	<div class="container">
 		<section id="about">
@@ -149,7 +123,7 @@
 	@use '/assets/stylesheets/reveal_anim';
 	@use '/assets/stylesheets/style';
 
-	#op-container {
+	.main-visual {
 		display: block;
 		background-image: url(/images/logos/revati/title_oxipng.png);
 		background-repeat: no-repeat;
@@ -161,32 +135,6 @@
 		@include sp {
 			background-size: 72vw;
 			background-position: 50% 52%;
-		}
-	}
-
-	#op-container.is-playing {
-		background-image: none;
-	}
-
-	#op-video {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		opacity: 1;
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		margin: auto;
-
-		@include pc {
-			height: 90vh;
-		}
-
-		@include sp {
-			height: 134vw;
-			background-size: 256vw;
 		}
 	}
 
