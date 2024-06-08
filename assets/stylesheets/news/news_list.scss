@@ -55,10 +55,6 @@ $arrow-width: 94px;
 	justify-content: left;
 }
 
-.show-all .articles {
-	height: auto !important;
-}
-
 .article {
 	display: inline-block;
 	margin: 0 17px;
@@ -97,6 +93,14 @@ $arrow-width: 94px;
 		height: $size;
 		border-radius: 50%;
 		background-color: white;
+	}
+}
+
+.show-all {
+	.articles {
+		max-width: none;
+		height: auto;
+		justify-content: center;
 	}
 }
 

@@ -27,7 +27,7 @@
 
 <main>
 	<div class="container">
-		<section id="news">
+		<section class="no-max-width" id="news">
 			<SectionTitle name="news" />
 			<p>{$_('news.desc')}</p>
 			<div class="section-content">
@@ -40,9 +40,18 @@
 <style lang="scss" global>
 	@use '/assets/stylesheets/style';
 	@use '/assets/stylesheets/util';
+	@use '/assets/stylesheets/variables/mixin' as *;
 
-	#news p {
-		font-size: 24px;
-		margin-bottom: 48px;
+	.no-max-width {
+		max-width: none !important;
+
+		p {
+			font-size: 24px;
+			margin-bottom: 48px;
+
+			@include sp {
+				font-size: 18px;
+			}
+		}
 	}
 </style>
