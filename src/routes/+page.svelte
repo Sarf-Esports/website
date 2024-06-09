@@ -1,6 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import MainVisual from './MainVisual.svelte';
+	import SponsorBanner from '$lib/components/sponsor_banner/SponsorBanner.svelte';
 	import SectionTitle from './SectionTitle.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
 	import Teams from './Teams.svelte';
@@ -44,7 +45,7 @@
 </svelte:head>
 
 <main>
-	<div class="container"><MainVisual /></div>
+	<div class="container"><MainVisual /><SponsorBanner /></div>
 
 	<div class="container">
 		<section id="about">
