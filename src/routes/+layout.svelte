@@ -1,5 +1,5 @@
 <!-- © 2022 REVATI -->
-<script>
+<script lang="ts">
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
@@ -7,17 +7,34 @@
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 
+	let maxVh1: number;
+
 	if (browser) {
-		window.addEventListener('resize', setVh001);
+		window.addEventListener('resize', () => {
+			setVh001();
+			if (maxVh1 < window.innerHeight) setMaxVh001();
+		});
 		setVh001();
+		setMaxVh001();
 	}
 
 	/**
 	 * Sets CSS variable `--vh001`.
-	 * Must be called in the browser.
+	 *
+	 * **＊ This function is intended to be used in the browser environment.**
 	 */
 	function setVh001() {
 		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
+	}
+
+	/**
+	 * Sets css variable `--max-vh001`.
+	 *
+	 * **＊ This function is intended to be used in the browser environment.**
+	 */
+	function setMaxVh001() {
+		maxVh1 = window.innerHeight;
+		document.documentElement.style.setProperty('--max-vh001', maxVh1 * 0.01 + 'px');
 	}
 </script>
 
