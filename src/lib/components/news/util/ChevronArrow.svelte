@@ -1,3 +1,4 @@
+<!-- © 2022 REVATI -->
 <script lang="ts">
 	export let direction: 'left' | 'right';
 	export let transparent = false;
