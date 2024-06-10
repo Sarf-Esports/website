@@ -1,14 +1,30 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
+    import { SPONSORS } from '$lib/data/sponsors';
     import LinkButton from '$lib/components/LinkButton.svelte';
 </script>
 
-<a href="https://gachisup.com" target="_blank" rel="noopener noreferrer">
-    <img src="/images/logos/gachisup_oxipng.png" alt="" />
-    <LinkButton text="ガチサプ ONLINE STORE" />
-</a>
+{#if 0 < SPONSORS.length}
+    <ul>
+        {#each SPONSORS as { name, website, logo }}
+            <li>
+                <a href={website.url} target="_blank" rel="noopener noreferrer">
+                    <img src="/images/logos/{logo}" alt={name} />
+                    <LinkButton text={website.name} />
+                </a>
+            </li>
+        {/each}
+    </ul>
+{:else}
+    <p>...( 'ω')</p>
+{/if}
 
 <style lang="scss">
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+
     a {
         display: block;
         font-size: 22px;
