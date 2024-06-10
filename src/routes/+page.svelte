@@ -105,7 +105,7 @@
 	</div> -->
 
 	<div class="container">
-		<section id="sponsor">
+		<section id="sponsors">
 			<SectionTitle name="sponsor" />
 			<div class="section-content">
 				<a href="https://gachisup.com" target="_blank" rel="noopener noreferrer">
@@ -208,7 +208,7 @@
 		}
 	} */
 
-	#sponsor {
+	#sponsors {
 		a {
 			display: block;
 			font-size: 22px;

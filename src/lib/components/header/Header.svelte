@@ -16,7 +16,7 @@
 		'news',
 		'teams',
 		// 'store',
-		'sponsor'
+		'sponsors'
 	];
 
 	$: url = $page.url;
