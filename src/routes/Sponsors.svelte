@@ -25,6 +25,10 @@
         list-style: none;
     }
 
+    li {
+        margin: 64px 0;
+    }
+
     a {
         display: block;
         font-size: 22px;
