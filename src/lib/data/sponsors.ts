@@ -9,12 +9,18 @@
 
 export const SPONSORS: {
 	name: string;
-	url: string;
 	logo: string;
+	website: {
+		name: string;
+		url: string;
+	};
 }[] = [
 	{
 		name: 'ガチサプ',
-		url: 'https://gachisup.com',
-		logo: 'gachisup_oxipng.png'
+		logo: 'gachisup_oxipng.png',
+		website: {
+			name: 'ガチサプ ONLINE STORE',
+			url: 'https://gachisup.com'
+		}
 	}
 ];

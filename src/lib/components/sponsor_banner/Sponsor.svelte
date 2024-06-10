@@ -1,12 +1,15 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	export let name: string;
-	export let url: string;
 	export let logo: string;
+	export let website: {
+		name: string;
+		url: string;
+	};
 </script>
 
 <li>
-	<a href={url} target="_blank" rel="noopener noreferrer" title={name}>
+	<a href={website.url} target="_blank" rel="noopener noreferrer" title={website.name}>
 		<img src="images/logos/{logo}" alt={name} />
 	</a>
 </li>
