@@ -1,14 +1,11 @@
 <script lang="ts">
 	export let name: string;
+	export let url: string;
 	export let logo: string;
-	export let website: {
-		name: string;
-		url: string;
-	};
 </script>
 
 <li>
-	<a href={website.url} target="_blank" rel="noopener noreferrer" title={website.name}>
+	<a href={url} target="_blank" rel="noopener noreferrer" title={name}>
 		<img src="images/logos/{logo}" alt={name} />
 	</a>
 </li>
