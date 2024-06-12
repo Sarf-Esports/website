@@ -31,7 +31,7 @@
 	}
 
 	a {
-		text-decoration-color: white;
+		color: inherit;
 	}
 
 	img {
