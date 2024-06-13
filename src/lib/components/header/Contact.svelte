@@ -85,7 +85,6 @@
 		border: 3px solid $modal-secondary-color;
 		padding: 16px;
 		z-index: 255;
-		font-family: 'Zen Kaku Gothic Antique', sans-serif;
 		letter-spacing: initial;
 		border-radius: 8px;
 
