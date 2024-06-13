@@ -6,23 +6,23 @@
 	export let name: typeof SECTIONS[number];
 </script>
 
-<img src="/images/{name}.svg" alt={name} />
+<h1>{name.toUpperCase()}</h1>
 
 <style lang="scss">
 	@use '/assets/stylesheets/variables/mixin' as *;
 
-	img {
-		height: 64px;
-		width: auto;
-		margin-top: 64px;
+	h1 {
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 700;
+		font-size: 70px;
+		color: #d6ffff;
 		margin-bottom: 32px;
-		user-select: none;
-		pointer-events: none;
-		filter: hue-rotate(156deg) brightness(1.15) drop-shadow(0 0 36px #caffff59)
-			drop-shadow(0 0 86px #7fffff8a);
+		padding-top: 64px;
+		filter: drop-shadow(0 0 36px #caffffa0)
+			drop-shadow(0 0 86px #7fffffa0);
 
 		@include sp {
-			height: 50px;
+			font-size: 48px;
 		}
 	}
 </style>
