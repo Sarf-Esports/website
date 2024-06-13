@@ -1,7 +1,9 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
+	import { SECTIONS } from "$lib/data/SECTIONS";
+
 	/** Name of the section. */
-	export let name: string;
+	export let name: typeof SECTIONS[number];
 </script>
 
 <img src="/images/{name}.svg" alt={name} />
