@@ -27,11 +27,17 @@
 
 	li {
 		margin: 0;
-		margin-bottom: 64px;
+		transition: 0.1s;
+
+		&:hover {
+			background-color: #ffffff12;
+		}
 	}
 
 	a {
+		display: inline-block;
 		color: inherit;
+		padding: 44px 0;
 	}
 
 	img {
