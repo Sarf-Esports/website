@@ -5,6 +5,7 @@
 
 	import { COPYRIGHT, SITE_URL } from '$lib/variables';
 	import { browser } from '$app/environment';
+	import { HEADER_ITEMS } from '$lib/data/HEADER_ITEMS';
 	import { page } from '$app/stores';
 
 	let maxVh1: number;
@@ -46,6 +47,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 	<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;900&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap&text={
+		HEADER_ITEMS.join('').toUpperCase()
+	}" rel="stylesheet" />
 	<!-- ▲ Google Fonts ▲ -->
 
 	<meta property="og:site_name" content="REVATI" />

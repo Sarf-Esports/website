@@ -102,11 +102,6 @@
 
 	@use '/assets/stylesheets/header';
 
-	@font-face {
-		font-family: 'Poppins';
-		src: url('/fonts/Poppins/Poppins-Regular.ttf');
-	}
-
 	$vh100: calc($vh001 * 100);
 	$border-thickness: 6px;
 	$tf-duration: 0.28s;
@@ -125,7 +120,7 @@
 		border-top: $vh100 solid $primary-color;
 		border-bottom: $border-thickness solid $primary-color-darker-2;
 		font-family: 'Poppins', sans-serif;
-		font-weight: 600;
+		font-weight: 500;
 		letter-spacing: -1px;
 		touch-action: none;
 		transition: $tf-duration ease-in;
