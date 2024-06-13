@@ -3,5 +3,5 @@ export const SECTIONS = [
 	'news',
 	'teams',
 	// 'store',
-	'sponsor'
+	'sponsors'
 ] as const;
