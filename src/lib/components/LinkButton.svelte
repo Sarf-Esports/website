@@ -25,7 +25,6 @@
 		text-decoration: none;
 		color: $primary-color-pale;
 		font-size: 24px;
-		font-weight: bold;
 		border: 4px solid $primary-color-pale;
 		border-radius: 6px;
 		transition: 0.3s;

@@ -53,7 +53,7 @@
 		$border-dark: #092b2f;
 		$font-size: 12px;
 		$burger-color: #a3f7ff;
-		$buns-margin: 4px;
+		$buns-margin: 3px;
 
 		display: block;
 		position: fixed;
@@ -112,8 +112,10 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			font-size: $font-size;
-			font-weight: 800;
+			font-family: 'Zen Kaku Gothic New', sans-serif;
+			font-weight: 900;
 			color: $burger-color;
+			letter-spacing: 0.4px;
 
 			&:before,
 			&:after {

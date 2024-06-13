@@ -6,18 +6,11 @@
 	import LangSwitcher from '../LangSwitcher.svelte';
 
 	import { browser } from '$app/environment';
+	import { HEADER_ITEMS } from '$lib/data/HEADER_ITEMS';
 	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/variables';
 	import { toggleScrollPrevention } from '$lib/util';
 	import { page } from '$app/stores';
-
-	const ITEMS = [
-		'about',
-		'news',
-		'teams',
-		// 'store',
-		'sponsors'
-	];
 
 	$: url = $page.url;
 	let currentSection = '';
@@ -25,7 +18,7 @@
 	if (browser)
 		window.addEventListener('scroll', function () {
 			if (url !== undefined && url.pathname == '/') {
-				let sectionPositions = ITEMS.map((item) => {
+				let sectionPositions = HEADER_ITEMS.map((item) => {
 					return {
 						item,
 						relPos:
@@ -59,20 +52,23 @@
 	<nav>
 		<a href="/" draggable="false"><span title={$_('header.back')} /></a>
 		<ul>
-			{#each ITEMS as item}
-				<li>
-					<a
-						href="/#{item}"
-						class:active={currentSection == ''
-							? url.hash == '#' + item || url.pathname.split('/')[1] == item
-							: currentSection == item}
-						on:click={() => {
-							toggleDrawerMenu(false);
-						}}>{item.toUpperCase()}</a
-					>
-				</li>
+			{#each HEADER_ITEMS as item}
+				{#if item == 'contact'}
+					<Contact />
+				{:else}
+					<li>
+						<a
+							href="/#{item}"
+							class:active={currentSection == ''
+								? url.hash == '#' + item || url.pathname.split('/')[1] == item
+								: currentSection == item}
+							on:click={() => {
+								toggleDrawerMenu(false);
+							}}>{item.toUpperCase()}</a
+						>
+					</li>
+				{/if}
 			{/each}
-			<Contact />
 		</ul>
 		<h3>{COPYRIGHT}</h3>
 		<HbBtn
@@ -106,11 +102,6 @@
 
 	@use '/assets/stylesheets/header';
 
-	@font-face {
-		font-family: 'Poppins';
-		src: url('/fonts/Poppins/Poppins-Regular.ttf');
-	}
-
 	$vh100: calc($vh001 * 100);
 	$border-thickness: 6px;
 	$tf-duration: 0.28s;
@@ -129,7 +120,7 @@
 		border-top: $vh100 solid $primary-color;
 		border-bottom: $border-thickness solid $primary-color-darker-2;
 		font-family: 'Poppins', sans-serif;
-		font-weight: 600;
+		font-weight: 500;
 		letter-spacing: -1px;
 		touch-action: none;
 		transition: $tf-duration ease-in;

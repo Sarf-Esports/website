@@ -80,7 +80,6 @@
 					a {
 						font-size: 18px;
 						color: #17d8d8;
-						font-weight: 900;
 					}
 				}
 			}
