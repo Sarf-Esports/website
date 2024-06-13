@@ -6,6 +6,7 @@
 	import { COPYRIGHT, SITE_URL } from '$lib/variables';
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/data/HEADER_ITEMS';
+	import { SECTIONS } from '$lib/data/SECTIONS';
 	import { page } from '$app/stores';
 
 	let maxVh1: number;
@@ -52,6 +53,12 @@
 	/>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap&text={HEADER_ITEMS.join(
+			''
+		).toUpperCase()}"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap&text={SECTIONS.join(
 			''
 		).toUpperCase()}"
 		rel="stylesheet"
