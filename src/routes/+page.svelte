@@ -106,7 +106,7 @@
 
 	<div class="container">
 		<section id="sponsors">
-			<SectionTitle name="sponsor" />
+			<SectionTitle name="sponsors" />
 			<div class="section-content"><Sponsors /></div>
 		</section>
 	</div>
