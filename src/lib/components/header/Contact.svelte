@@ -91,7 +91,6 @@
 		h1 {
 			color: $modal-secondary-color;
 			font-size: 24px;
-			font-weight: bold;
 			margin-bottom: 16px;
 		}
 
@@ -107,7 +106,6 @@
 			border: 3px solid $modal-edge-color;
 			color: $modal-edge-color;
 			font-size: 16px;
-			font-weight: 900;
 			padding: 4px 10px;
 			user-select: none;
 			border-radius: 4px;
@@ -131,7 +129,6 @@
 			right: 8px;
 			cursor: pointer;
 			font-size: 2rem;
-			font-weight: bold;
 			background: none;
 			border: none;
 			color: inherit;
