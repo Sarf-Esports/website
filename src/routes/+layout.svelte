@@ -42,6 +42,12 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="format-detection" content="telephone=no,address=no,email=no" />
 
+	<!-- ▼ Google Fonts ▼ -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;900&display=swap" rel="stylesheet" />
+	<!-- ▲ Google Fonts ▲ -->
+
 	<meta property="og:site_name" content="REVATI" />
 	{#if $page.url.pathname.startsWith('/news/articles/')}
 		<meta property="og:type" content="article" />
