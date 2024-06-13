@@ -53,7 +53,7 @@
 		<a href="/" draggable="false"><span title={$_('header.back')} /></a>
 		<ul>
 			{#each HEADER_ITEMS as item}
-				{#if item == "contact"}
+				{#if item == 'contact'}
 					<Contact />
 				{:else}
 					<li>
