@@ -1,9 +1,9 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import { SECTIONS } from "$lib/data/SECTIONS";
+	import { SECTIONS } from '$lib/data/SECTIONS';
 
 	/** Name of the section. */
-	export let name: typeof SECTIONS[number];
+	export let name: (typeof SECTIONS)[number];
 </script>
 
 <h1>{name.toUpperCase()}</h1>
@@ -18,8 +18,7 @@
 		color: #d6ffff;
 		margin-bottom: 32px;
 		padding-top: 64px;
-		filter: drop-shadow(0 0 36px #caffffa0)
-			drop-shadow(0 0 86px #7fffffa0);
+		filter: drop-shadow(0 0 36px #caffffa0) drop-shadow(0 0 86px #7fffffa0);
 
 		@include sp {
 			font-size: 48px;
