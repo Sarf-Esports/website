@@ -49,10 +49,18 @@
 			<!--
 				Google Material Symbols and Icons - Close
 				https://fonts.google.com/icons?selected=Material+Symbols+Outlined:close:FILL@0;wght@400;GRAD@200;opsz@24&icon.query=close&icon.size=24&icon.color=%23e8eaed
-				
 				This icon is licensed under the Apache License Version 2.0: https://github.com/google/material-design-icons/blob/master/README.md
 			-->
-			<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m252-176-74-76 227-228-227-230 74-76 229 230 227-230 74 76-227 230 227 228-74 76-227-230-229 230Z"/></svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				height="24px"
+				viewBox="0 -960 960 960"
+				width="24px"
+				fill="#e8eaed"
+				><path
+					d="m252-176-74-76 227-228-227-230 74-76 229 230 227-230 74 76-227 230 227 228-74 76-227-230-229 230Z"
+				/></svg
+			>
 		</button>
 	</div>
 {/if}
@@ -79,8 +87,7 @@
 		border: 4px solid $secondary-color;
 		padding: 18px 32px;
 		border-radius: 6px;
-		filter:
-			drop-shadow(0 0 128px rgba($bloom-color, 0.08))
+		filter: drop-shadow(0 0 128px rgba($bloom-color, 0.08))
 			drop-shadow(0 0 28px rgba($secondary-color, 0.2));
 		z-index: 255;
 	}
@@ -91,7 +98,8 @@
 		font-weight: 900;
 		filter: drop-shadow(0 0 14px rgba($bloom-color, 0.5));
 
-		&::before, &::after {
+		&::before,
+		&::after {
 			content: ' - ';
 			position: relative;
 			top: -2px;
