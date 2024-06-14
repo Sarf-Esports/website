@@ -25,7 +25,7 @@
 		height: 170px;
 		width: auto;
 		position: relative;
-		top: 50%;
+		top: calc(50% - 20px);
 		translate: 0 -50%;
 		user-select: none;
 		pointer-events: none;
