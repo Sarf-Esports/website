@@ -66,6 +66,8 @@
 {/if}
 
 <style lang="scss">
+	@use '/assets/stylesheets/variables/mixin' as *;
+
 	.modal-bg {
 		position: fixed;
 		inset: 0;
@@ -109,6 +111,7 @@
 	p {
 		display: inline-block;
 		font-size: 16px;
+		margin: 0 auto;
 		margin-bottom: 26px;
 		text-align: left;
 		white-space: nowrap;
@@ -162,5 +165,35 @@
 		width: 36px;
 		height: auto;
 		transition: 0.1s;
+	}
+
+	@include sp {
+		.modal {
+			min-width: initial;
+			max-width: 90vw;
+			padding: 12px 12px;
+			border: 2px solid $secondary-color;
+		}
+
+		h1 {
+			font-size: 24px;
+		}
+
+		p {
+			font-size: 11px;
+		}
+
+		a {
+			font-size: 15px;
+		}
+
+		button {
+			top: 15px;
+			right: 13px;
+		}
+
+		svg {
+			width: 27px;
+		}
 	}
 </style>
