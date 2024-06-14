@@ -86,24 +86,6 @@
 		</section>
 	</div>
 
-	<!-- <div class="container">
-		<section id="store">
-			<SectionTitle name="store" />
-			<div class="section-content reveal-anim-con">
-				<p class="reveal-anim-item">Coming soon...</p>
-				<img src="/images/store_thumbnail.webp" alt="" loading="lazy" />
-				<a
-					href="https://suzuri.jp/REVATI"
-					target="_blank"
-					rel="noopener noreferrer"
-					draggable="false"
-				>
-					<LinkButton text="お買い求めはこちら" />
-				</a>
-			</div>
-		</section>
-	</div> -->
-
 	<div class="container">
 		<section id="sponsors">
 			<SectionTitle name="sponsors" />
@@ -182,23 +164,4 @@
 			}
 		}
 	}
-
-	/*#store {
-		.section-content {
-			img {
-				max-width: 86%;
-				border: 4px solid #f8ffb5;
-				border-radius: 4px;
-				transition: 0.18s;
-			}
-			img:hover {
-				filter: sepia(28%) saturate(50%);
-				transition: 0.6s;
-			}
-		}
-
-		a {
-			text-decoration: none;
-		}
-	} */
 </style>
