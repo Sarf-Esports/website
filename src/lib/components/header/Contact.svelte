@@ -1,38 +1,31 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import { browser } from '$app/environment';
+	import { createEventDispatcher } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { toggleScrollPrevention } from '$lib/util';
 	import { _ } from 'svelte-i18n';
-	import { SOCIALS, BREAKPOINT } from '$lib/variables';
+	import { SOCIALS } from '$lib/variables';
 
-	let isContactModalVisible = false;
-
-	let isHbButtonEnabled: boolean;
+	export let isOpened: boolean;
 
 	if (browser) {
-		document.addEventListener('keydown', function (event) {
+		document.addEventListener('keydown', (event) => {
 			closeModal(event.key);
 		});
-
-		let bp = window.matchMedia(BREAKPOINT);
-
-		isHbButtonEnabled = bp.matches;
-
-		window.addEventListener('resize', function () {
-			isHbButtonEnabled = bp.matches;
-			isContactModalVisible = false;
-		});
 	}
+
+	const dispatch = createEventDispatcher();
 
 	/** Toggles the visibility of the contact modal. */
 	function toggleContactModal() {
-		isContactModalVisible = !isContactModalVisible;
-		toggleScrollPrevention(isContactModalVisible);
+		isOpened = !isOpened;
+		dispatch('toggle', { isOpened });
+		toggleScrollPrevention(isOpened);
 	}
 
 	function closeModal(key: string) {
-		if (key == 'Escape' && isContactModalVisible) {
+		if (key == 'Escape' && isOpened) {
 			toggleContactModal();
 		}
 	}
@@ -40,37 +33,21 @@
 	function empty() {} // eslint-disable-line @typescript-eslint/no-empty-function
 </script>
 
-{#if !isHbButtonEnabled}
-	{#if isContactModalVisible}
-		<div id="contact-modal-back" on:click={toggleContactModal} on:keypress={empty} role="none" />
-		<div id="contact-modal" transition:fly|global={{ y: -64, duration: 240 }}>
-			<h1>- CONTACT US -</h1>
-			<button class="modal-close-btn" on:click={toggleContactModal}>&times;</button>
-			<p>
-				<nobr>{$_('contact.desc')}</nobr><br />
-				{$_('contact.note.0')}<br />
-				{$_('contact.note.1')}
-			</p>
-			<a href="mailto:{SOCIALS.email}" id="mail-btn" draggable="false">{$_('contact.button')}</a>
-		</div>
-	{/if}
+{#if isOpened}
+	<div id="contact-modal-back" on:click={toggleContactModal} on:keypress={empty} role="none" />
+	<div id="contact-modal" transition:fly|global={{ y: -64, duration: 240 }}>
+		<h1>- CONTACT US -</h1>
+		<button class="modal-close-btn" on:click={toggleContactModal}>&times;</button>
+		<p>
+			<nobr>{$_('contact.desc')}</nobr><br />
+			{$_('contact.note.0')}<br />
+			{$_('contact.note.1')}
+		</p>
+		<a href="mailto:{SOCIALS.email}" id="mail-btn" draggable="false">{$_('contact.button')}</a>
+	</div>
 {/if}
 
-<li>
-	<a
-		href="mailto:{SOCIALS.email}"
-		class:active={false}
-		on:click={(self) => {
-			// Prevents href
-			if (!isHbButtonEnabled) self.preventDefault();
-			toggleContactModal();
-		}}>CONTACT</a
-	>
-</li>
-
 <style lang="scss">
-	@use './assets/stylesheets/header';
-
 	$modal-secondary-color: #a8f8ff;
 	$modal-edge-color: #f0fff7;
 	$modal-edge-color-dark: #689490;
