@@ -1,7 +1,1 @@
-export const HEADER_ITEMS = [
-	'about',
-	'news',
-	'teams',
-	'sponsors',
-	'contact'
-];
+export const HEADER_ITEMS = ['about', 'news', 'teams', 'sponsors', 'contact'];

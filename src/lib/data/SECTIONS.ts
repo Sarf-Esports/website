@@ -1,6 +1,1 @@
-export const SECTIONS = [
-	'about',
-	'news',
-	'teams',
-	'sponsors'
-] as const;
+export const SECTIONS = ['about', 'news', 'teams', 'sponsors'] as const;
