@@ -64,11 +64,7 @@
 			{#each HEADER_ITEMS as item}
 				{#if item == 'contact'}
 					<li class="item-contact">
-						<button
-							class:active={false}
-							on:click={toggleContactModal}
-						>CONTACT</button
-						>
+						<button class:active={false} on:click={toggleContactModal}>CONTACT</button>
 					</li>
 				{:else}
 					<li>
@@ -273,7 +269,8 @@
 			margin-right: 2.6em;
 		}
 
-		a, button {
+		a,
+		button {
 			font-family: inherit;
 			background: none;
 			border: none;
@@ -316,7 +313,8 @@
 			@include sp {
 				margin: 6px 12px 3px 10px;
 
-				a, button {
+				a,
+				button {
 					font-size: 24px;
 				}
 			}
