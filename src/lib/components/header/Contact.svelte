@@ -89,9 +89,14 @@
 		border: 4px solid $secondary-color;
 		padding: 18px 32px;
 		border-radius: 6px;
-		filter: drop-shadow(0 0 128px rgba($bloom-color, 0.08))
-			drop-shadow(0 0 28px rgba($secondary-color, 0.2));
+		$bloom-color-large: rgba($bloom-color, 0.08);
+		$bloom-color-small: rgba($secondary-color, 0.2);
+		filter: drop-shadow(0 0 128px $bloom-color-large) drop-shadow(0 0 28ox $bloom-color-small);
 		z-index: 255;
+
+		@include sp {
+			filter: drop-shadow(0 0 32px $bloom-color-large) drop-shadow(0 0 14px $bloom-color-small);
+		}
 	}
 
 	h1 {
