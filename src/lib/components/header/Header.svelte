@@ -227,12 +227,15 @@
 		h3 {
 			opacity: 0;
 			color: white;
+			font-family: 'Zen Kaku Gothic New', sans-serif;
+			font-weight: 900;
 			font-size: 17px;
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			right: 0;
 			transform: translateY(-86px);
+			letter-spacing: 0.4px;
 			transition: 0.27s;
 
 			@include pc {
