@@ -1,9 +1,9 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import Contact from './Contact.svelte';
 	import HbBtn from './HamburgerButton.svelte';
 	import Socials from '../Socials.svelte';
 	import LangSwitcher from '../LangSwitcher.svelte';
+	import Contact from './Contact.svelte';
 
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/data/HEADER_ITEMS';
@@ -15,7 +15,9 @@
 	$: url = $page.url;
 	let currentSection = '';
 
-	if (browser)
+	let isContactModalVisible = false;
+
+	if (browser) {
 		window.addEventListener('scroll', function () {
 			if (url !== undefined && url.pathname == '/') {
 				let sectionPositions = HEADER_ITEMS.map((item) => {
@@ -34,8 +36,15 @@
 				currentSection = '';
 			}
 		});
+	}
 
 	let isDrawerMenuOpened = false;
+
+	/** Toggles the visibility of the contact modal. */
+	function toggleContactModal() {
+		isContactModalVisible = !isContactModalVisible;
+		toggleScrollPrevention(isContactModalVisible);
+	}
 
 	/** Toggles drawer menu open/close. */
 	function toggleDrawerMenu(open: boolean) {
@@ -54,7 +63,9 @@
 		<ul>
 			{#each HEADER_ITEMS as item}
 				{#if item == 'contact'}
-					<Contact />
+					<li class="item-contact">
+						<button class:active={false} on:click={toggleContactModal}>CONTACT</button>
+					</li>
 				{:else}
 					<li>
 						<a
@@ -95,12 +106,12 @@
 	<div class="lang-switcher"><LangSwitcher /></div>
 </div>
 
+<Contact isOpened={isContactModalVisible} on:toggle={toggleContactModal} />
+
 <style lang="scss">
 	@use '/assets/stylesheets/variables/dimension' as *;
 	@use '/assets/stylesheets/variables/color' as *;
 	@use '/assets/stylesheets/variables/mixin' as *;
-
-	@use '/assets/stylesheets/header';
 
 	$vh100: calc($vh001 * 100);
 	$border-thickness: 6px;
@@ -248,6 +259,70 @@
 				}
 			}
 		}
+	}
+
+	li {
+		list-style: none;
+		margin: 10px 12px 2px 10px;
+
+		&:last-child {
+			margin-right: 2.6em;
+		}
+
+		a,
+		button {
+			font-family: inherit;
+			background: none;
+			border: none;
+			padding: 0;
+			letter-spacing: inherit;
+			cursor: pointer;
+			color: white;
+			font-size: 28px;
+			text-decoration: none;
+			opacity: 0.7;
+			transition: 0.3s;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			&::after {
+				content: '';
+				display: block;
+				border-bottom: 2px solid white;
+				margin: 0 auto;
+				transform: scaleX(0);
+				opacity: 0.8;
+				transition: 0.2s;
+			}
+
+			&:hover,
+			&.active {
+				&::after {
+					transform: scaleX(112%);
+
+					@include sp {
+						transform: scaleX(0);
+					}
+				}
+			}
+		}
+
+		@include low-height {
+			@include sp {
+				margin: 6px 12px 3px 10px;
+
+				a,
+				button {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+
+	.item-contact {
+		margin-right: 2.6em;
 	}
 
 	#header2 {
