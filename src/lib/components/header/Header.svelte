@@ -20,16 +20,16 @@
 	if (browser) {
 		window.addEventListener('scroll', function () {
 			if (url !== undefined && url.pathname == '/') {
-				let sectionPositions = HEADER_ITEMS
-					.filter(i => !NON_SECTION_ITEMS.includes(i))
-					.map((item) => {
+				let sectionPositions = HEADER_ITEMS.filter((i) => !NON_SECTION_ITEMS.includes(i)).map(
+					(item) => {
 						return {
 							item,
 							relPos:
 								document.getElementById(item)!.getBoundingClientRect().top! -
 								window.innerHeight * 0.45
 						};
-					});
+					}
+				);
 				sectionPositions.forEach(({ item, relPos }) => {
 					if (relPos < 0) currentSection = item;
 				});
