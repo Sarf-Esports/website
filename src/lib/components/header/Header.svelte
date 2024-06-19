@@ -6,7 +6,7 @@
 	import Contact from './Contact.svelte';
 
 	import { browser } from '$app/environment';
-	import { HEADER_ITEMS } from '$lib/data/HEADER_ITEMS';
+	import { HEADER_ITEMS, NON_SECTION_ITEMS } from '$lib/data/HEADER_ITEMS';
 	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/variables';
 	import { toggleScrollPrevention } from '$lib/util';
@@ -20,14 +20,16 @@
 	if (browser) {
 		window.addEventListener('scroll', function () {
 			if (url !== undefined && url.pathname == '/') {
-				let sectionPositions = HEADER_ITEMS.map((item) => {
-					return {
-						item,
-						relPos:
-							document.getElementById(item)!.getBoundingClientRect().top! -
-							window.innerHeight * 0.45
-					};
-				});
+				let sectionPositions = HEADER_ITEMS
+					.filter(i => !NON_SECTION_ITEMS.includes(i))
+					.map((item) => {
+						return {
+							item,
+							relPos:
+								document.getElementById(item)!.getBoundingClientRect().top! -
+								window.innerHeight * 0.45
+						};
+					});
 				sectionPositions.forEach(({ item, relPos }) => {
 					if (relPos < 0) currentSection = item;
 				});
