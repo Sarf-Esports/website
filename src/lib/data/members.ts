@@ -81,7 +81,7 @@ export const MEMBER_LISTS: {
 		members: [
 			{
 				name: 'epic',
-				icon: null,
+				icon: 'epic.webp',
 				role: 'Player',
 				birthday: { year: 2002, month: 4, day: 6 },
 				age: null,
@@ -103,7 +103,7 @@ export const MEMBER_LISTS: {
 			},
 			{
 				name: 'harutoon',
-				icon: null,
+				icon: 'harutoon.webp',
 				role: 'Player',
 				birthday: null,
 				age: null,
@@ -125,7 +125,7 @@ export const MEMBER_LISTS: {
 			},
 			{
 				name: 'HoFac',
-				icon: null,
+				icon: 'hofac.webp',
 				role: 'Player',
 				birthday: { year: 2005, month: 1, day: 27 },
 				age: null,
