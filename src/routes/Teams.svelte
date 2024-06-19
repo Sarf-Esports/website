@@ -141,5 +141,5 @@
 </ul>
 
 <style lang="scss">
-	@use '/assets/stylesheets/member_lists';
+	@use '/assets/stylesheets/teams';
 </style>
