@@ -18,6 +18,13 @@
 //     // 指定しない場合は `null` にしてください
 //     'role': 'Web Developer',
 //
+//     // メンバーの国旗
+//     // 'jp' が日本国、`us` がアメリカ合衆国、'kr' が大韓民国です
+//     // 新しい国旗を追加する場合は `static/images/flags/` 配下に SVG で追加して、
+//     // このファイル80行目あたりの `country` の型に追加してください
+//     // 指定しない場合は `null` にしてください
+//     // 'country': 'jp',
+//
 //     // メンバーの生年月日 (YYYY-MM-DD)
 //     // ┏━ 生年月日を一切指定しない場合は `null` にしてください
 //     // ┃
@@ -68,6 +75,7 @@ export const MEMBER_LISTS: {
 		memberName: string;
 		icon: string | null;
 		role: string | null;
+		country: 'jp' | 'us' | 'kr' | null;
 		birthday: { year: number | null; month: number; day: number } | null;
 		age: number | null;
 		twitter: string | null;
@@ -83,6 +91,7 @@ export const MEMBER_LISTS: {
 				memberName: 'epic',
 				icon: 'epic.webp',
 				role: 'Player',
+				country: 'jp',
 				birthday: { year: 2002, month: 4, day: 6 },
 				age: null,
 				twitter: 'ep11111123',
@@ -94,6 +103,7 @@ export const MEMBER_LISTS: {
 				memberName: 'Fearful',
 				icon: 'fearful.webp',
 				role: 'Player',
+				country: 'kr',
 				birthday: { year: 2005, month: 4, day: 5 },
 				age: null,
 				twitter: 'fearful0405',
@@ -105,6 +115,7 @@ export const MEMBER_LISTS: {
 				memberName: 'harutoon',
 				icon: 'harutoon.webp',
 				role: 'Player',
+				country: 'jp',
 				birthday: null,
 				age: null,
 				twitter: 'harutoon_FN',
@@ -116,6 +127,7 @@ export const MEMBER_LISTS: {
 				memberName: 'Hesty',
 				icon: 'hesty.webp',
 				role: 'Player',
+				country: 'jp',
 				birthday: null,
 				age: null,
 				twitter: '__Hestyow',
@@ -127,6 +139,7 @@ export const MEMBER_LISTS: {
 				memberName: 'HoFac',
 				icon: 'hofac.webp',
 				role: 'Player',
+				country: 'kr',
 				birthday: { year: 2005, month: 1, day: 27 },
 				age: null,
 				twitter: 'HoneyFactory_OW',
@@ -138,6 +151,7 @@ export const MEMBER_LISTS: {
 				memberName: 'solace',
 				icon: null,
 				role: 'Player',
+				country: 'jp',
 				birthday: { year: 2005, month: 3, day: 22 },
 				age: null,
 				twitter: 'sorryimsolace',
@@ -149,6 +163,7 @@ export const MEMBER_LISTS: {
 				memberName: 'にんじゃはむぞー',
 				icon: 'ninja_hamuzo.webp',
 				role: 'Player',
+				country: 'jp',
 				birthday: { year: 2002, month: 11, day: 3 },
 				age: null,
 				twitter: 'ninja_hamuzo',
@@ -162,6 +177,7 @@ export const MEMBER_LISTS: {
 				memberName: 'Byeolha',
 				icon: 'byeolha.webp',
 				role: 'Coach',
+				country: 'kr',
 				birthday: null,
 				age: null,
 				twitter: 'ow_byeolha',
@@ -173,6 +189,7 @@ export const MEMBER_LISTS: {
 				memberName: 'Fickle',
 				icon: 'fickle.webp',
 				role: 'Coach',
+				country: 'kr',
 				birthday: null,
 				age: null,
 				twitter: 'Fickle_OW',
@@ -184,6 +201,7 @@ export const MEMBER_LISTS: {
 				memberName: 'MinHyouk',
 				icon: 'minhyouk.webp',
 				role: 'Coach',
+				country: 'kr',
 				birthday: { year: 2005, month: 11, day: 19 },
 				age: null,
 				twitter: 'JeonMinHyouk_ow',
@@ -195,6 +213,7 @@ export const MEMBER_LISTS: {
 				memberName: 'STRIKE',
 				icon: 'strike.webp',
 				role: 'Coach',
+				country: 'kr',
 				birthday: null,
 				age: null,
 				twitter: '_Strikeow_',
@@ -208,6 +227,7 @@ export const MEMBER_LISTS: {
 				memberName: 'みるふぃーゆ',
 				icon: 'millfy.webp',
 				role: 'Manager',
+				country: 'jp',
 				birthday: { year: null, month: 12, day: 12 },
 				age: null,
 				twitter: 'miru_fiiyu',
@@ -224,6 +244,7 @@ export const MEMBER_LISTS: {
 				memberName: 'CLANK',
 				icon: 'clank.webp',
 				role: 'Streamer',
+				country: 'jp',
 				birthday: { year: 1998, month: 7, day: 10 },
 				age: null,
 				twitter: 'clank_ccc',
@@ -235,6 +256,7 @@ export const MEMBER_LISTS: {
 				memberName: 'DROWSY',
 				icon: 'drowsy.webp',
 				role: 'Streamer',
+				country: 'kr',
 				birthday: { year: 2001, month: 2, day: 22 },
 				age: null,
 				twitter: 'drowsy4150',
@@ -246,6 +268,7 @@ export const MEMBER_LISTS: {
 				memberName: 'めぬろ',
 				icon: 'menuro.webp',
 				role: 'Streamer',
+				country: 'jp',
 				birthday: { year: 1999, month: 12, day: 30 },
 				age: null,
 				twitter: 'Menuro1230',
@@ -257,6 +280,7 @@ export const MEMBER_LISTS: {
 				memberName: 'れるにゃ',
 				icon: 'relle.webp',
 				role: 'MCBE Map Creator',
+				country: 'jp',
 				birthday: { year: 2002, month: 7, day: 23 },
 				age: null,
 				twitter: 'LanternCold',
@@ -268,6 +292,7 @@ export const MEMBER_LISTS: {
 				memberName: '破壊神こたろ',
 				icon: 'hakaisinkotaro.webp',
 				role: 'Streamer',
+				country: 'jp',
 				birthday: null,
 				age: null,
 				twitter: 'mareku1212',
@@ -279,6 +304,7 @@ export const MEMBER_LISTS: {
 				memberName: '碧海まっちゃ',
 				icon: 'aomi_matcha.webp',
 				role: 'Streamer',
+				country: 'jp',
 				birthday: { year: null, month: 2, day: 28 },
 				age: null,
 				twitter: 'aomi_matcha',
@@ -290,6 +316,7 @@ export const MEMBER_LISTS: {
 				memberName: '宮城大豆',
 				icon: 'ow_zundamon.webp',
 				role: 'YouTuber',
+				country: 'jp',
 				birthday: { year: null, month: 1, day: 7 },
 				age: null,
 				twitter: 'OWzundamon',
@@ -306,6 +333,7 @@ export const MEMBER_LISTS: {
 				memberName: 'はいせ',
 				icon: null,
 				role: 'Designer',
+				country: 'jp',
 				birthday: { year: null, month: 5, day: 30 },
 				age: null,
 				twitter: 'h4ise05',
@@ -317,6 +345,7 @@ export const MEMBER_LISTS: {
 				memberName: 'らいふれっくす',
 				icon: 'lifelex.webp',
 				role: 'Video Editor',
+				country: 'jp',
 				birthday: { year: 2006, month: 12, day: 24 },
 				age: null,
 				twitter: 'Lifelex57',
@@ -333,6 +362,7 @@ export const MEMBER_LISTS: {
 				memberName: 'しろねこ',
 				icon: '46nek_0.webp',
 				role: 'Owner',
+				country: 'jp',
 				birthday: { year: 2005, month: 3, day: 23 },
 				age: null,
 				twitter: '46nek_0',
@@ -344,6 +374,7 @@ export const MEMBER_LISTS: {
 				memberName: '2止',
 				icon: 'haineko.webp',
 				role: null,
+				country: 'jp',
 				birthday: { year: 2004, month: 4, day: 7 },
 				age: null,
 				twitter: 'zitome22',
@@ -355,6 +386,7 @@ export const MEMBER_LISTS: {
 				memberName: 'Kaz9nnN',
 				icon: 'kaz.webp',
 				role: null,
+				country: 'jp',
 				birthday: { year: null, month: 4, day: 23 },
 				age: null,
 				twitter: 'KAZKUN_TSUYOI',
@@ -366,6 +398,7 @@ export const MEMBER_LISTS: {
 				memberName: 'Life',
 				icon: 'life.webp',
 				role: null,
+				country: 'jp',
 				birthday: { year: 2007, month: 8, day: 9 },
 				age: null,
 				twitter: 'l1fefn',
@@ -377,6 +410,7 @@ export const MEMBER_LISTS: {
 				memberName: 'Rinrin.rs',
 				icon: 'rinrin.webp',
 				role: 'Web Developer',
+				country: 'jp',
 				birthday: { year: 2006, month: 4, day: 13 },
 				age: null,
 				twitter: 'Rinrin_2nd',
@@ -388,6 +422,7 @@ export const MEMBER_LISTS: {
 				memberName: 'ひなこ',
 				icon: null,
 				role: null,
+				country: 'jp',
 				birthday: { year: 2004, month: 10, day: 14 },
 				age: null,
 				twitter: 'hinakunaiueo',

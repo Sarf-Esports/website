@@ -5,7 +5,7 @@
 	import { MEMBER_LISTS } from '$lib/data/members';
 	import { replaceState } from '$app/navigation';
 	import { calcAge, zeroPad } from '$lib/util';
-	import { date } from 'svelte-i18n';
+	import { date, _ } from 'svelte-i18n';
 
 	export let division: string | null;
 
@@ -36,7 +36,7 @@
 {/if}
 
 <ul class="members">
-	{#each currentDivisionMembers as { memberName, icon, role, birthday, age, twitter, youtube, twitch, homepage }}
+	{#each currentDivisionMembers as { memberName, icon, role, country, birthday, age, twitter, youtube, twitch, homepage }}
 		<li class="member">
 			<img
 				src="/images/members/{icon == null ? 'noimage.webp' : icon}"
@@ -45,9 +45,12 @@
 				class="icon"
 			/>
 			<div class="info">
-				<span class="role" class:no-role={role === null}>
-					{role ?? '　'}
-				</span>
+				<div class="role-and-country">
+					<span class="role" class:inactive={role == null}>{role ?? '　'}</span>
+					{#if country !== null}
+						<img src="/images/flags/{country}.svg" alt={$_('w.nationalFlag')} class="flag" />
+					{/if}
+				</div>
 				<h2>{memberName}</h2>
 				<div class="details">
 					Age:

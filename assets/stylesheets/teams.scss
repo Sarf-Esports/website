@@ -100,12 +100,23 @@ $icn-size: 88px;
 	opacity: 0.85;
 }
 
-.role {
+.role-and-country {
 	font-size: 13px;
 	margin-bottom: -4px;
 }
 
-.no-role {
+.role.inactive {
+	user-select: none;
+}
+
+.flag {
+	float: right;
+	max-width: 38px;
+	max-height: 21px;
+	position: relative;
+	top: 4px;
+	left: 1px;
+	pointer-events: none;
 	user-select: none;
 }
 

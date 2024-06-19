@@ -2,7 +2,8 @@
 	"w": {
 		"inPreparation": "準備中...",
 		"backToTop": "トップページへ戻る",
-		"articleThumbnailImg": "記事のサムネイル画像"
+		"articleThumbnailImg": "記事のサムネイル画像",
+		"nationalFlag": "国旗"
 	},
 	"header.back": "トップページへ戻る",
 	"top": {
