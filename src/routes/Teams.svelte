@@ -12,20 +12,20 @@
 	let currentDivisionIndex = 0;
 
 	if (division !== null)
-		currentDivisionIndex = MEMBER_LISTS.findIndex(({ name }) => name == division);
+		currentDivisionIndex = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName == division);
 
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
 </script>
 
 <ul class="divisions">
-	{#each MEMBER_LISTS as { name }, i}
+	{#each MEMBER_LISTS as { divisionName }, i}
 		<li class="division">
 			<button
 				class:active={i == currentDivisionIndex}
 				on:click={() => {
 					currentDivisionIndex = i;
-					replaceState(`?div=${name.replace(' ', '+')}#teams`, {});
-				}}>{name}</button
+					replaceState(`?div=${divisionName.replace(' ', '+')}#teams`, {});
+				}}>{divisionName}</button
 			>
 		</li>
 	{/each}
@@ -36,7 +36,7 @@
 {/if}
 
 <ul class="members">
-	{#each currentDivisionMembers as { name, icon, role, birthday, age, twitter, youtube, twitch, homepage }}
+	{#each currentDivisionMembers as { memberName, icon, role, birthday, age, twitter, youtube, twitch, homepage }}
 		<li class="member">
 			<img
 				src="/images/members/{icon == null ? 'noimage.webp' : icon}"
@@ -48,7 +48,7 @@
 				<span class="role" class:no-role={role === null}>
 					{role ?? '　'}
 				</span>
-				<h2>{name}</h2>
+				<h2>{memberName}</h2>
 				<div class="details">
 					Age:
 					{#if age == null && birthday !== null && birthday.year !== null}

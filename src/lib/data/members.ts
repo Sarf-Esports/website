@@ -63,9 +63,9 @@
 // - 推奨画像比率: 1:1 (正方形以外は押し込まれて表示される)
 
 export const MEMBER_LISTS: {
-	name: string;
+	divisionName: string;
 	members: {
-		name: string;
+		memberName: string;
 		icon: string | null;
 		role: string | null;
 		birthday: { year: number | null; month: number; day: number } | null;
@@ -77,10 +77,10 @@ export const MEMBER_LISTS: {
 	}[];
 }[] = [
 	{
-		name: 'Overwatch',
+		divisionName: 'Overwatch',
 		members: [
 			{
-				name: 'epic',
+				memberName: 'epic',
 				icon: 'epic.webp',
 				role: 'Player',
 				birthday: { year: 2002, month: 4, day: 6 },
@@ -91,7 +91,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'Fearful',
+				memberName: 'Fearful',
 				icon: 'fearful.webp',
 				role: 'Player',
 				birthday: { year: 2005, month: 4, day: 5 },
@@ -102,7 +102,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'harutoon',
+				memberName: 'harutoon',
 				icon: 'harutoon.webp',
 				role: 'Player',
 				birthday: null,
@@ -113,7 +113,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'Hesty',
+				memberName: 'Hesty',
 				icon: 'hesty.webp',
 				role: 'Player',
 				birthday: null,
@@ -124,7 +124,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'HoFac',
+				memberName: 'HoFac',
 				icon: 'hofac.webp',
 				role: 'Player',
 				birthday: { year: 2005, month: 1, day: 27 },
@@ -135,7 +135,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'solace',
+				memberName: 'solace',
 				icon: null,
 				role: 'Player',
 				birthday: { year: 2005, month: 3, day: 22 },
@@ -146,7 +146,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'にんじゃはむぞー',
+				memberName: 'にんじゃはむぞー',
 				icon: 'ninja_hamuzo.webp',
 				role: 'Player',
 				birthday: { year: 2002, month: 11, day: 3 },
@@ -159,7 +159,7 @@ export const MEMBER_LISTS: {
 			// // ▲ 選手
 			// // ▼ コーチ
 			{
-				name: 'Byeolha',
+				memberName: 'Byeolha',
 				icon: 'byeolha.webp',
 				role: 'Coach',
 				birthday: null,
@@ -170,7 +170,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'Fickle',
+				memberName: 'Fickle',
 				icon: 'fickle.webp',
 				role: 'Coach',
 				birthday: null,
@@ -181,7 +181,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'MinHyouk',
+				memberName: 'MinHyouk',
 				icon: 'minhyouk.webp',
 				role: 'Coach',
 				birthday: { year: 2005, month: 11, day: 19 },
@@ -192,7 +192,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'STRIKE',
+				memberName: 'STRIKE',
 				icon: 'strike.webp',
 				role: 'Coach',
 				birthday: null,
@@ -205,7 +205,7 @@ export const MEMBER_LISTS: {
 			// ▲ コーチ
 			// ▼ マネージャー
 			{
-				name: 'みるふぃーゆ',
+				memberName: 'みるふぃーゆ',
 				icon: 'millfy.webp',
 				role: 'Manager',
 				birthday: { year: null, month: 12, day: 12 },
@@ -218,10 +218,10 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
-		name: 'Content Creator',
+		divisionName: 'Content Creator',
 		members: [
 			{
-				name: 'CLANK',
+				memberName: 'CLANK',
 				icon: 'clank.webp',
 				role: 'Streamer',
 				birthday: { year: 1998, month: 7, day: 10 },
@@ -232,7 +232,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'DROWSY',
+				memberName: 'DROWSY',
 				icon: 'drowsy.webp',
 				role: 'Streamer',
 				birthday: { year: 2001, month: 2, day: 22 },
@@ -243,7 +243,7 @@ export const MEMBER_LISTS: {
 				homepage: 'https://chzzk.naver.com/bc7110b6e2e16456e32cc6d5bb939a3b'
 			},
 			{
-				name: 'めぬろ',
+				memberName: 'めぬろ',
 				icon: 'menuro.webp',
 				role: 'Streamer',
 				birthday: { year: 1999, month: 12, day: 30 },
@@ -254,7 +254,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'れるにゃ',
+				memberName: 'れるにゃ',
 				icon: 'relle.webp',
 				role: 'MCBE Map Creator',
 				birthday: { year: 2002, month: 7, day: 23 },
@@ -265,7 +265,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: '破壊神こたろ',
+				memberName: '破壊神こたろ',
 				icon: 'hakaisinkotaro.webp',
 				role: 'Streamer',
 				birthday: null,
@@ -276,7 +276,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: '碧海まっちゃ',
+				memberName: '碧海まっちゃ',
 				icon: 'aomi_matcha.webp',
 				role: 'Streamer',
 				birthday: { year: null, month: 2, day: 28 },
@@ -287,7 +287,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: '宮城大豆',
+				memberName: '宮城大豆',
 				icon: 'ow_zundamon.webp',
 				role: 'YouTuber',
 				birthday: { year: null, month: 1, day: 7 },
@@ -300,10 +300,10 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
-		name: 'Other',
+		divisionName: 'Other',
 		members: [
 			{
-				name: 'はいせ',
+				memberName: 'はいせ',
 				icon: null,
 				role: 'Designer',
 				birthday: { year: null, month: 5, day: 30 },
@@ -314,7 +314,7 @@ export const MEMBER_LISTS: {
 				homepage: 'https://behance.net/Haise__00'
 			},
 			{
-				name: 'らいふれっくす',
+				memberName: 'らいふれっくす',
 				icon: 'lifelex.webp',
 				role: 'Video Editor',
 				birthday: { year: 2006, month: 12, day: 24 },
@@ -327,10 +327,10 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
-		name: 'Operator',
+		divisionName: 'Operator',
 		members: [
 			{
-				name: 'しろねこ',
+				memberName: 'しろねこ',
 				icon: '46nek_0.webp',
 				role: 'Owner',
 				birthday: { year: 2005, month: 3, day: 23 },
@@ -341,7 +341,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: '2止',
+				memberName: '2止',
 				icon: 'haineko.webp',
 				role: null,
 				birthday: { year: 2004, month: 4, day: 7 },
@@ -352,7 +352,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'Kaz9nnN',
+				memberName: 'Kaz9nnN',
 				icon: 'kaz.webp',
 				role: null,
 				birthday: { year: null, month: 4, day: 23 },
@@ -363,7 +363,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'Life',
+				memberName: 'Life',
 				icon: 'life.webp',
 				role: null,
 				birthday: { year: 2007, month: 8, day: 9 },
@@ -374,7 +374,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				name: 'Rinrin.rs',
+				memberName: 'Rinrin.rs',
 				icon: 'rinrin.webp',
 				role: 'Web Developer',
 				birthday: { year: 2006, month: 4, day: 13 },
@@ -385,7 +385,7 @@ export const MEMBER_LISTS: {
 				homepage: 'https://rinrin.pages.dev'
 			},
 			{
-				name: 'ひなこ',
+				memberName: 'ひなこ',
 				icon: null,
 				role: null,
 				birthday: { year: 2004, month: 10, day: 14 },
