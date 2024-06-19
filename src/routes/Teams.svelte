@@ -3,6 +3,7 @@
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
 	import { MEMBER_LISTS } from '$lib/data/members';
+	import { replaceState } from '$app/navigation';
 	import { calcAge, zeroPad } from '$lib/util';
 	import { date } from 'svelte-i18n';
 
@@ -23,7 +24,7 @@
 				class:active={i == currentDivisionIndex}
 				on:click={() => {
 					currentDivisionIndex = i;
-					history.replaceState(null, '', `?div=${name.replace(' ', '+')}#teams`);
+					replaceState(`?div=${name.replace(' ', '+')}#teams`, {});
 				}}>{name}</button
 			>
 		</li>
