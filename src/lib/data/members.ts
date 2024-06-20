@@ -116,7 +116,7 @@ export const MEMBER_LISTS: {
 				icon: 'harutoon.webp',
 				role: 'Player',
 				country: 'jp',
-				birthday: null,
+				birthday: { year: 2005, month: 3, day: 14 },
 				age: null,
 				twitter: 'harutoon_FN',
 				youtube: null,
