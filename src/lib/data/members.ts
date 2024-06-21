@@ -149,7 +149,7 @@ export const MEMBER_LISTS: {
 			},
 			{
 				memberName: 'solace',
-				icon: null,
+				icon: 'solace.webp',
 				role: 'Player',
 				country: 'jp',
 				birthday: { year: 2005, month: 3, day: 22 },
