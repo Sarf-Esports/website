@@ -120,7 +120,7 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: 'harutoon_FN',
 				youtube: null,
-				twitch: null,
+				twitch: 'harutoon_',
 				homepage: null
 			},
 			{
@@ -132,7 +132,7 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: '__Hestyow',
 				youtube: null,
-				twitch: null,
+				twitch: 'hesty_ow',
 				homepage: null
 			},
 			{
@@ -144,7 +144,7 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: 'HoneyFactory_OW',
 				youtube: '@ahoneyfactory9887',
-				twitch: null,
+				twitch: 'hofac_ow',
 				homepage: null
 			},
 			{
@@ -156,7 +156,7 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: 'sorryimsolace',
 				youtube: null,
-				twitch: null,
+				twitch: 'sorryimsolace',
 				homepage: null
 			},
 			{
@@ -168,7 +168,7 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: 'ninja_hamuzo',
 				youtube: null,
-				twitch: null,
+				twitch: 'nhzow',
 				homepage: null
 			},
 			// // ▲ 選手
@@ -194,7 +194,7 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: 'Fickle_OW',
 				youtube: null,
-				twitch: null,
+				twitch: 'fickle_ow',
 				homepage: null
 			},
 			{
@@ -206,7 +206,7 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: 'JeonMinHyouk_ow',
 				youtube: null,
-				twitch: null,
+				twitch: 'jeonminhyouk_ow',
 				homepage: null
 			},
 			{
