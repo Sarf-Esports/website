@@ -1,7 +1,7 @@
 // © 2022 REVATI
 
 /** Breakpoint for media queries. */
-export const BREAKPOINT = '(max-width: 850px)';
+export const BREAKPOINT = '(max-width: 741px)';
 
 /** Copyright notice. */
 export const COPYRIGHT = '© 2022 - 2024 REVATI';

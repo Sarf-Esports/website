@@ -20,19 +20,6 @@ export function addClassAtScroll(elms: HTMLCollectionOf<Element>, cls: string) {
 }
 
 /**
- * Element shaker.
- *
- * # Dependencies:
- * - `/stylesheets/util`
- */
-export function shake(elm: HTMLElement) {
-	elm.classList.add('shake');
-	setTimeout(function () {
-		elm.classList.remove('shake');
-	}, 1000);
-}
-
-/**
  * Toggles body scroll prevention.
  *
  * # Dependencies:
@@ -54,4 +41,21 @@ export function idToDate(articleId: string) {
 	const m = articleId.slice(4, 6);
 	const d = articleId.slice(6, 8);
 	return new Date(`${y}-${m}-${d}`);
+}
+
+/** Calculates the age of a person from their birthday. */
+export function calcAge(birthday: Date) {
+	const today = new Date();
+	const year = today.getFullYear();
+	const month = today.getMonth() + 1;
+	const date = today.getDate();
+	let age = year - birthday.getFullYear();
+	const birthMonth = birthday.getMonth() + 1;
+	age -= month < birthMonth || (month == birthMonth && date < birthday.getDate()) ? 1 : 0;
+	return age;
+}
+
+/** Pads a number with zeros. */
+export function zeroPad(num: number, len: number) {
+	return num.toString().padStart(len, '0');
 }
