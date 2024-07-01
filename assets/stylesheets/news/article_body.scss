@@ -1,0 +1,184 @@
+// © 2022 REVATI
+
+@use '/assets/stylesheets/variables/color' as *;
+@use '/assets/stylesheets/variables/mixin' as *;
+
+.article-body {
+	max-width: 544px;
+	margin: 32px auto 0 auto;
+	padding: 0 18px;
+	text-align: left;
+	font-size: 20px;
+	letter-spacing: 1.2px;
+
+	p {
+		margin: 1.25em 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 900;
+		letter-spacing: 1.2px;
+		text-wrap: balance;
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	h5 {
+		font-size: 16px;
+	}
+
+	h6 {
+		font-size: 14px;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	blockquote {
+		margin: 0.8em 0;
+		padding: 1px 20px;
+		border-left: 5px solid #808080;
+		border-radius: 4px;
+	}
+
+	code {
+		background-color: #0c0c0c;
+		padding: 6px;
+		font-size: 16px;
+		border-radius: 3px;
+		font-family: monospace;
+		color: #fffcf5;
+		word-break: break-all;
+	}
+
+	pre code {
+		display: block;
+		padding: 16px 20px;
+		border-radius: 2px;
+		border: 2px solid #2b2b2b;
+		color: #d8e6db;
+		overflow-x: scroll;
+		word-break: break-all;
+		line-height: 1.28;
+	}
+
+	table {
+		$border: 1px solid #2b2b2b;
+		margin: 24px 0;
+		border: $border;
+		border-radius: 2px;
+		background-color: #2b2b2b;
+		font-size: 16px;
+		border-collapse: collapse;
+		overflow-x: scroll;
+		word-break: break-all;
+
+		@include sp {
+			display: block;
+			font-size: 14px;
+			white-space: nowrap;
+		}
+
+		th,
+		td {
+			max-width: 383px;
+			padding: 8px 10px;
+			border: $border;
+
+			@include sp {
+				max-width: initial;
+				width: 100vw;
+			}
+		}
+
+		th {
+			background-color: #1a1a1a;
+		}
+
+		td {
+			background-color: $secondary-color;
+		}
+	}
+
+	strong {
+		font-weight: 900;
+		color: white;
+	}
+
+	sub,
+	sup {
+		font-size: 12px;
+	}
+
+	hr {
+		border: none;
+		border-bottom: 1px solid white;
+		margin: 1.25em 0;
+		opacity: 0.5;
+	}
+
+	details summary {
+		cursor: pointer;
+		text-decoration: underline;
+		font-weight: 900;
+		color: white;
+	}
+
+	iframe {
+		max-width: 100%;
+		border-radius: 4px;
+	}
+
+	ul,
+	ol {
+		padding-left: 24px;
+	}
+
+	@include sp {
+		font-size: 18px;
+
+		h1 {
+			font-size: 26px;
+		}
+
+		h2 {
+			font-size: 23px;
+		}
+
+		h3 {
+			font-size: 20px;
+		}
+
+		h4 {
+			font-size: 18px;
+		}
+
+		h5 {
+			font-size: 16px;
+		}
+
+		h6 {
+			font-size: 14px;
+		}
+	}
+}

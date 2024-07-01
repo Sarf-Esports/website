@@ -1,0 +1,101 @@
+// © 2022 REVATI
+
+@use '/assets/stylesheets/variables/mixin' as *;
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+article {
+	width: 334px;
+	height: 283px;
+	margin: 16px 8px;
+	transition: 0.2s;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.thumbnail-img {
+	height: 187px;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.meta {
+	text-align: left;
+}
+
+h2 {
+	font-size: 20px;
+	max-height: 72px;
+	margin: 10px 0;
+	line-height: 1.3;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	font-weight: 400;
+}
+
+time {
+	font-size: 14px;
+	opacity: 0.8;
+}
+
+@mixin mini {
+	width: 136px;
+	height: 134px;
+	margin: 0 4px;
+
+	.thumbnail-img {
+		height: 80px;
+	}
+
+	h2 {
+		font-size: 9px;
+		max-height: 72px;
+		margin: 0;
+		margin-top: 3px;
+		margin-bottom: -6px;
+		line-height: 1.2;
+	}
+
+	time {
+		font-size: 8px;
+	}
+}
+
+@include not-wide-width {
+	article:not(.force-pc-v-on-semi-narrow) {
+		@include pc {
+			@include mini;
+		}
+	}
+
+	@include sp {
+		article {
+			@include mini;
+
+			height: 147px;
+			margin-bottom: 2px;
+
+			h2 {
+				font-size: 13px;
+				margin-bottom: 0;
+			}
+
+			time {
+				font-size: 11px;
+			}
+		}
+	}
+}

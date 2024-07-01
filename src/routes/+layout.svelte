@@ -1,29 +1,69 @@
 <!-- © 2022 REVATI -->
-<script>
+<script lang="ts">
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
 	import { COPYRIGHT, SITE_URL } from '$lib/variables';
 	import { browser } from '$app/environment';
+	import { HEADER_ITEMS } from '$lib/data/HEADER_ITEMS';
+	import { SECTIONS } from '$lib/data/SECTIONS';
 	import { page } from '$app/stores';
 
+	let maxVh1: number;
+
 	if (browser) {
-		window.addEventListener('resize', setVh001);
+		window.addEventListener('resize', () => {
+			setVh001();
+			if (maxVh1 < window.innerHeight) setMaxVh001();
+		});
 		setVh001();
+		setMaxVh001();
 	}
 
 	/**
 	 * Sets CSS variable `--vh001`.
-	 * Must be called in the browser.
+	 *
+	 * **＊ This function is intended to be used in the browser environment.**
 	 */
 	function setVh001() {
 		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
+	}
+
+	/**
+	 * Sets css variable `--max-vh001`.
+	 *
+	 * **＊ This function is intended to be used in the browser environment.**
+	 */
+	function setMaxVh001() {
+		maxVh1 = window.innerHeight;
+		document.documentElement.style.setProperty('--max-vh001', maxVh1 * 0.01 + 'px');
 	}
 </script>
 
 <svelte:head>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="format-detection" content="telephone=no,address=no,email=no" />
+
+	<!-- ▼ Google Fonts ▼ -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;900&display=swap"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap&text={HEADER_ITEMS.join(
+			''
+		).toUpperCase()}"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap&text={SECTIONS.join(
+			''
+		).toUpperCase()}"
+		rel="stylesheet"
+	/>
+	<!-- ▲ Google Fonts ▲ -->
 
 	<meta property="og:site_name" content="REVATI" />
 	{#if $page.url.pathname.startsWith('/news/articles/')}

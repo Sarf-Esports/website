@@ -84,7 +84,6 @@
 
 	main {
 		min-height: 100vh;
-		background-color: $secondary-color;
 
 		#content {
 			margin: 128px 0 64px 0;
@@ -98,8 +97,12 @@
 				border-radius: 4px;
 			}
 
+			> h1,
+			> h2 {
+				font-weight: 400 !important;
+			}
+
 			> h1 {
-				font-weight: 900;
 				padding: 0 26px;
 
 				@include pc {
@@ -113,7 +116,6 @@
 
 			> h2 {
 				display: inline-block;
-				font-weight: 100;
 				letter-spacing: 2px;
 				background-color: #f0ffff13;
 				padding: 0 16px 4px 16px;

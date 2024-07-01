@@ -33,7 +33,7 @@
 	select {
 		color: #a3f7ff;
 		font-size: 16px;
-		font-weight: 600;
+		font-family: inherit;
 		background-color: #213b3f;
 		border: 4px solid #021a1e;
 		border-radius: 4px;

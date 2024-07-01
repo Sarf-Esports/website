@@ -1,7 +1,9 @@
 {
 	"w": {
 		"inPreparation": "준비 중...",
-		"backToTop": "상단 페이지로 돌아 가기"
+		"backToTop": "상단 페이지로 돌아 가기",
+		"articleThumbnailImg": "기사의 썸네일 이미지",
+		"nationalFlag": "국기"
 	},
 	"header.back": "톱 페이지로 돌아가기",
 	"top": {

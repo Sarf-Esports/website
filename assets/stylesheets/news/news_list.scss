@@ -1,0 +1,236 @@
+// © 2022 REVATI
+
+@use '/assets/stylesheets/variables/mixin' as *;
+
+.arrows {
+	position: relative;
+	top: 232px;
+	right: 44px;
+}
+
+$arrow-width: 94px;
+
+.arrow {
+	position: absolute;
+	background: none;
+	border: none;
+	cursor: pointer;
+	opacity: 0.7;
+	touch-action: manipulation;
+	z-index: 1;
+
+	// 1090px(threshold) * 0.28 - 233px = 72px
+	$arrow-margin: min(28vw - 233px, 72px);
+
+	&:nth-child(1) {
+		left: calc($arrow-margin * -1);
+	}
+
+	&:nth-child(2) {
+		right: calc(($arrow-margin + $arrow-width) * -1);
+	}
+
+	&.inactive {
+		cursor: default;
+	}
+}
+
+.back-arrow {
+	padding-left: 26px;
+	translate: 0 -1.5px;
+}
+
+.forward-arrow {
+	padding: 0 15px;
+}
+
+.articles {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin-top: -10px;
+	margin-bottom: 4px;
+	height: 630px;
+	overflow: hidden;
+	justify-content: left;
+}
+
+.article {
+	display: inline-block;
+	margin: 0 17px;
+	list-style: none;
+}
+
+.indicators {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 32px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.indicator {
+	background: none;
+	border: none;
+	padding: 7px;
+	margin: 1px;
+	cursor: pointer;
+	opacity: 0.3;
+	touch-action: manipulation;
+	transition: 0.2s;
+
+	&.active {
+		opacity: 1;
+	}
+
+	&::before {
+		content: '';
+		display: inline-block;
+		$size: 13px;
+		width: $size;
+		height: $size;
+		border-radius: 50%;
+		background-color: white;
+	}
+}
+
+.show-all {
+	.articles {
+		max-width: none;
+		height: auto;
+		justify-content: center;
+	}
+}
+
+@mixin mini {
+	.arrows {
+		margin: 0 auto;
+	}
+
+	.back-arrow {
+		padding-left: 20px;
+	}
+
+	.articles {
+		margin: 0 auto;
+	}
+
+	.indicator {
+		padding: 5px 7px;
+		margin: 0;
+
+		&::before {
+			$size: 10px;
+			width: $size;
+			height: $size;
+		}
+	}
+}
+
+$list-width: 288px;
+
+@include not-wide-width {
+	@include pc {
+		.article {
+			margin: 0;
+		}
+
+		.show-all {
+			.articles {
+				margin: 0 auto;
+				max-width: 700px;
+			}
+		}
+
+		.news-list-container:not(.show-all) {
+			@include mini;
+
+			scale: 1.9;
+			max-width: 294px;
+			margin: 0 auto;
+			margin-top: 158px;
+
+			.arrows {
+				top: 102px;
+			}
+
+			.arrow {
+				$arrow-margin: 10px;
+
+				&:nth-child(1) {
+					left: -$arrow-margin;
+				}
+
+				&:nth-child(2) {
+					right: calc(($arrow-margin + $arrow-width) * -1);
+				}
+			}
+
+			.articles {
+				height: 271px;
+				max-width: $list-width;
+			}
+
+			.indicators {
+				scale: 0.68;
+				margin: -10px auto 146px auto;
+			}
+		}
+	}
+}
+
+@include sp {
+	@include mini;
+
+	.news-list-container {
+		margin-bottom: 22px;
+	}
+
+	.arrows {
+		top: 306px;
+		max-width: 138px;
+	}
+
+	.arrow {
+		&:nth-child(1) {
+			left: 0;
+		}
+
+		&:nth-child(2) {
+			right: -$arrow-width;
+		}
+	}
+
+	// 0px <= (100vw-396px)*.2 <= 14px
+	$article-side-margin: min(max(0px, calc(100vw - 325px) * 0.2), 16px);
+
+	.articles {
+		height: 294px;
+		max-width: calc($list-width + $article-side-margin * 4);
+	}
+
+	.article {
+		margin: 0 $article-side-margin;
+	}
+
+	.indicators {
+		margin: 0 1px;
+		margin-top: 68px;
+	}
+}
+
+@include ultimate-narrow {
+	.arrows {
+		top: 604px;
+	}
+
+	.articles {
+		height: auto;
+	}
+
+	.article {
+		margin: 0 auto;
+	}
+}
