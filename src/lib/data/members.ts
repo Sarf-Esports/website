@@ -387,7 +387,7 @@ export const MEMBER_LISTS: {
 				icon: 'kaz.webp',
 				role: null,
 				country: 'jp',
-				birthday: { year: null, month: 4, day: 23 },
+				birthday: { year: 2003, month: 4, day: 23 },
 				age: null,
 				twitter: 'KAZKUN_TSUYOI',
 				youtube: null,
