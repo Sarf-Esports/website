@@ -178,7 +178,7 @@ export const MEMBER_LISTS: {
 				icon: 'byeolha.webp',
 				role: 'Coach',
 				country: 'kr',
-				birthday: { year: null, month: 1, day: 3 },
+				birthday: { year: 2001, month: 1, day: 3 },
 				age: null,
 				twitter: 'ow_byeolha',
 				youtube: null,
