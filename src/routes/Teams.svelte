@@ -62,12 +62,10 @@
 					Age:
 					{#if age == null && birthday !== null && birthday.year !== null}
 						{calcAge(new Date(birthday.year, birthday.month - 1, birthday.day))}
+					{:else if age !== null}
+						{age}
 					{:else}
-						{#if age !== null}
-							{age}
-						{:else}
-							<MaterialIcon {...LOCK_ICON} />
-						{/if}
+						<MaterialIcon {...LOCK_ICON} />
 					{/if}
 					<br />
 					Birthday:

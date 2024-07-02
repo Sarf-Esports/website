@@ -117,5 +117,10 @@
 		/>
 	</svg>
 {:else if kind == 'lock-fill_inline'}
-	<img src="/images/google-material-design-icons/lock_24dp_FILL1_wght400_GRAD0_opsz24.svg" alt="Private" loading="lazy" {style} />
+	<img
+		src="/images/google-material-design-icons/lock_24dp_FILL1_wght400_GRAD0_opsz24.svg"
+		alt="Private"
+		loading="lazy"
+		{style}
+	/>
 {/if}
