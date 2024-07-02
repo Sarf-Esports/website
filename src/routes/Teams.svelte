@@ -15,6 +15,12 @@
 		currentDivisionIndex = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName == division);
 
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
+
+	const LOCK_ICON = {
+		kind: 'lock-fill_inline',
+		height: '15px',
+		style: 'position: relative; top: 2px; pointer-events: none;'
+	};
 </script>
 
 <ul class="divisions">
@@ -55,12 +61,13 @@
 				<div class="details">
 					Age:
 					{#if age == null && birthday !== null && birthday.year !== null}
-						{@const calculatedAge = calcAge(
-							new Date(birthday.year, birthday.month - 1, birthday.day)
-						)}
-						{isNaN(calculatedAge) ? '' : calculatedAge}
+						{calcAge(new Date(birthday.year, birthday.month - 1, birthday.day))}
 					{:else}
-						{age ?? ''}
+						{#if age !== null}
+							{age}
+						{:else}
+							<MaterialIcon {...LOCK_ICON} />
+						{/if}
 					{/if}
 					<br />
 					Birthday:
@@ -74,6 +81,8 @@
 						{:else}
 							{zeroPad(birthday.month, 2)}/{zeroPad(birthday.day, 2)}
 						{/if}
+					{:else}
+						<MaterialIcon {...LOCK_ICON} />
 					{/if}
 				</div>
 			</div>
