@@ -4,9 +4,32 @@
 @use './variables/dimension' as *;
 @use './variables/mixin' as *;
 
+main::before {
+	content: '';
+	$dark: rgba($secondary-color, 0.75);
+	background: linear-gradient($dark, $dark),
+		linear-gradient(
+			165deg,
+			#4e8091 13%,
+			#154c84 22%,
+			#0f5372 44%,
+			#326e86 50%,
+			#132f6b 62%,
+			#132f6b 73%,
+			#050946 90%
+		);
+	background-size: 100% 100%;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc($vh001 * 100);
+	z-index: -1;
+}
+
 .container {
 	width: 100%;
-	background-color: $secondary-color;
 }
 
 .container::before {
@@ -35,7 +58,6 @@ section {
 			max-width: 576px;
 			font-size: 22px;
 			margin: 0 auto;
-			font-weight: 1;
 			letter-spacing: 0.075em;
 			line-height: 1.5;
 

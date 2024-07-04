@@ -4,7 +4,8 @@
 	 * Valid values:
 	 * `box-arrow-up-right`,
 	 * `link-45deg`,
-	 * `envelope-fill`
+	 * `envelope-fill`,
+	 * `lock-fill_inline`
 	 * */
 	export let kind: string;
 
@@ -115,4 +116,11 @@
 			d="M5 10.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1H6.707l8.147-8.146a.5.5 0 0 0-.708-.708L6 9.293V5.5a.5.5 0 0 0-1 0v5z"
 		/>
 	</svg>
+{:else if kind == 'lock-fill_inline'}
+	<img
+		src="/images/google-material-design-icons/lock_24dp_FILL1_wght400_GRAD0_opsz24.svg"
+		alt="Private"
+		loading="lazy"
+		{style}
+	/>
 {/if}

@@ -30,6 +30,7 @@
 
 	main {
 		min-height: 86vh;
+		background: $secondary-color;
 
 		> div {
 			background: linear-gradient($secondary-color, rgba($secondary-color, 0.84), $secondary-color),
@@ -79,7 +80,6 @@
 					a {
 						font-size: 18px;
 						color: #17d8d8;
-						font-weight: 900;
 					}
 				}
 			}
