@@ -331,10 +331,10 @@ export const MEMBER_LISTS: {
 		members: [
 			{
 				memberName: 'はいせ',
-				icon: null,
+				icon: 'haise.webp',
 				role: 'Designer',
 				country: 'jp',
-				birthday: { year: null, month: 5, day: 30 },
+				birthday: { year: 2005, month: 5, day: 30 },
 				age: null,
 				twitter: 'h4ise05',
 				youtube: null,
