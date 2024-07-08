@@ -190,7 +190,7 @@ export const MEMBER_LISTS: {
 				icon: 'fickle.webp',
 				role: 'Coach',
 				country: 'kr',
-				birthday: { year: 1998, month: 7, day: 7 },
+				birthday: { year: 1998, month: 7, day: 9 },
 				age: null,
 				twitter: 'Fickle_OW',
 				youtube: null,
