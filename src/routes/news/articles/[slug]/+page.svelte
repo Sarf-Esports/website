@@ -33,7 +33,7 @@
 		? `/images/news/thumbnails/${slug}.` + thumbnailImgFmt
 		: null;
 
-	$: date = willRedirect ? null : idToDate(slug);
+	$: date = idToDate(slug);
 
 	$: HEAD = {
 		title: 'REVATI | NEWS - ' + metadata.title
@@ -66,9 +66,7 @@
 					)}
 				</p>
 			{:else}
-				{#if date !== null}
-					<h2><time datetime={date.toISOString()}>{$dateI18n(date, { format: 'long' })}</time></h2>
-				{/if}
+				<h2><time datetime={date.toISOString()}>{$dateI18n(date, { format: 'long' })}</time></h2>
 				<hr />
 				<Article body={data.component} />
 			{/if}
