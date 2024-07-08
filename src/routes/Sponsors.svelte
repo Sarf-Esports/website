@@ -1,7 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
-	import { SPONSORS } from '$lib/data/sponsors';
+	import { SPONSORS } from '$lib/data/SPONSORS';
 </script>
 
 {#if 0 < SPONSORS.length}

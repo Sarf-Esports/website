@@ -1,6 +1,5 @@
 # Rinrin
 .vscode/
-merge-dev.sh
 
 # by SvelteKit
 .DS_Store
