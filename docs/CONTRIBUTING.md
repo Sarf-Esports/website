@@ -12,7 +12,7 @@
 
 ## 環境構築等
 
-[README.md](../README.md#SvelteKit万歳) 参照。
+[README.md](../README.md#SvelteKit) 参照。
 
 ## 手順
 
