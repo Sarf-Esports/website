@@ -2,7 +2,7 @@
 <script lang="ts">
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
-	import { MEMBER_LISTS } from '$lib/data/members';
+	import { MEMBER_LISTS } from '$lib/data/MEMBERS';
 	import { replaceState } from '$app/navigation';
 	import { calcAge, zeroPad } from '$lib/util';
 	import { date, _ } from 'svelte-i18n';
