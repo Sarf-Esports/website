@@ -9,20 +9,18 @@
 	<title>REVATI | 404 Not Found</title>
 </svelte:head>
 
-<main>
+<div>
 	<div>
-		<div>
-			<h1>404 Page Not Found</h1>
-			<p>{$_('error.404')}</p>
-			<p>
-				<a href="/">
-					{$_('w.backToTop')}
-					<MaterialIcon kind="box-arrow-up-right" width="18px" />
-				</a>
-			</p>
-		</div>
+		<h1>404 Page Not Found</h1>
+		<p>{$_('error.404')}</p>
+		<p>
+			<a href="/">
+				{$_('w.backToTop')}
+				<MaterialIcon kind="box-arrow-up-right" width="18px" />
+			</a>
+		</p>
 	</div>
-</main>
+</div>
 
 <style lang="scss">
 	@use '/assets/stylesheets/variables/color' as *;

@@ -44,55 +44,53 @@
 	<meta property="og:url" content={SITE_URL} />
 </svelte:head>
 
-<main>
-	<div class="container"><MainVisual /><SponsorBanner /></div>
+<div class="container"><MainVisual /><SponsorBanner /></div>
 
-	<div class="container">
-		<section id="about">
-			<SectionTitle name="about" />
-			<div class="content">
-				<div class="slogan reveal-anim-con">
-					<div class="reveal-anim-item">
-						<h1>UNDEFEATED SPIRIT</h1>
-						<h2>{$_('top.about.undefeatedSpirit')}</h2>
-					</div>
-				</div>
-				<br />
-				<div class="reveal-anim-con">
-					<p class="reveal-anim-item">
-						{$_('top.about.0')}
-						<br /><br />
-						{$_('top.about.1')}
-					</p>
+<div class="container">
+	<section id="about">
+		<SectionTitle name="about" />
+		<div class="content">
+			<div class="slogan reveal-anim-con">
+				<div class="reveal-anim-item">
+					<h1>UNDEFEATED SPIRIT</h1>
+					<h2>{$_('top.about.undefeatedSpirit')}</h2>
 				</div>
 			</div>
-		</section>
-	</div>
-
-	<div class="container">
-		<section id="news">
-			<SectionTitle name="news" />
-			<div class="content">
-				<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
-				<p><a href="/news">ALL</a></p>
+			<br />
+			<div class="reveal-anim-con">
+				<p class="reveal-anim-item">
+					{$_('top.about.0')}
+					<br /><br />
+					{$_('top.about.1')}
+				</p>
 			</div>
-		</section>
-	</div>
+		</div>
+	</section>
+</div>
 
-	<div class="container">
-		<section id="teams">
-			<SectionTitle name="teams" />
-			<div class="content"><Teams division={data.division} /></div>
-		</section>
-	</div>
+<div class="container">
+	<section id="news">
+		<SectionTitle name="news" />
+		<div class="content">
+			<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
+			<p><a href="/news">ALL</a></p>
+		</div>
+	</section>
+</div>
 
-	<div class="container">
-		<section id="sponsors">
-			<SectionTitle name="sponsors" />
-			<div class="content"><Sponsors /></div>
-		</section>
-	</div>
-</main>
+<div class="container">
+	<section id="teams">
+		<SectionTitle name="teams" />
+		<div class="content"><Teams division={data.division} /></div>
+	</section>
+</div>
+
+<div class="container">
+	<section id="sponsors">
+		<SectionTitle name="sponsors" />
+		<div class="content"><Sponsors /></div>
+	</section>
+</div>
 
 <style lang="scss" global>
 	@use '/assets/stylesheets/variables/color' as *;
