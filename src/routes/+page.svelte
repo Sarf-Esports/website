@@ -50,7 +50,7 @@
 	<div class="container">
 		<section id="about">
 			<SectionTitle name="about" />
-			<div class="section-content">
+			<div class="content">
 				<div class="slogan reveal-anim-con">
 					<div class="reveal-anim-item">
 						<h1>UNDEFEATED SPIRIT</h1>
@@ -72,7 +72,7 @@
 	<div class="container">
 		<section id="news">
 			<SectionTitle name="news" />
-			<div class="section-content">
+			<div class="content">
 				<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
 				<p><a href="/news">ALL</a></p>
 			</div>
@@ -82,14 +82,14 @@
 	<div class="container">
 		<section id="teams">
 			<SectionTitle name="teams" />
-			<div class="section-content"><Teams division={data.division} /></div>
+			<div class="content"><Teams division={data.division} /></div>
 		</section>
 	</div>
 
 	<div class="container">
 		<section id="sponsors">
 			<SectionTitle name="sponsors" />
-			<div class="section-content"><Sponsors /></div>
+			<div class="content"><Sponsors /></div>
 		</section>
 	</div>
 </main>

@@ -30,7 +30,7 @@
 		<section class="no-max-width" id="news">
 			<SectionTitle name="news" />
 			<p>{$_('news.desc')}</p>
-			<div class="section-content">
+			<div class="content">
 				<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} showAll />
 			</div>
 		</section>
