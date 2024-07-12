@@ -25,6 +25,11 @@ body {
 	background: none;
 }
 
+/* Prevent scrolling */
+body.prevent-scroll {
+	overflow: hidden;
+}
+
 ::selection {
 	background: #154c83;
 	color: white;

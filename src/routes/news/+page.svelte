@@ -36,7 +36,6 @@
 </div>
 
 <style lang="scss" global>
-	@use '/assets/stylesheets/util';
 	@use '/assets/stylesheets/variables/mixin' as *;
 
 	.no-max-width {

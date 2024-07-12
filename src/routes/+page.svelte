@@ -96,7 +96,6 @@
 	@use '/assets/stylesheets/variables/color' as *;
 	@use '/assets/stylesheets/variables/mixin' as *;
 
-	@use '/assets/stylesheets/util';
 	@use '/assets/stylesheets/reveal_anim';
 
 	#about {

@@ -19,12 +19,7 @@ export function addClassAtScroll(elms: HTMLCollectionOf<Element>, cls: string) {
 	});
 }
 
-/**
- * Toggles body scroll prevention.
- *
- * # Dependencies:
- * - `/stylesheets/util` (body.prevent-scroll)
- */
+/** Toggles body scroll prevention. */
 export function toggleScrollPrevention(prevent: boolean) {
 	const c = 'prevent-scroll';
 	const body = document.getElementsByTagName('body')[0].classList;
