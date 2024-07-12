@@ -1,71 +1,43 @@
 // © 2022 REVATI
 
-@use './variables/color' as *;
-@use './variables/dimension' as *;
 @use './variables/mixin' as *;
 
-main {
-	&::before {
+main > div.container {
+	width: 100%;
+
+	&::before,
+	&::after {
 		content: '';
-		$dark: rgba($secondary-color, 0.75);
-		background: linear-gradient($dark, $dark),
-			linear-gradient(
-				165deg,
-				#4e8091 13%,
-				#154c84 22%,
-				#0f5372 44%,
-				#326e86 50%,
-				#132f6b 62%,
-				#132f6b 73%,
-				#050946 90%
-			);
-		background-size: 100% 100%;
 		display: block;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: calc($vh001 * 100);
-		z-index: -1;
 	}
 
-	> div.container {
-		width: 100%;
+	&::before {
+		padding-top: 64px;
+	}
 
-		&::before,
-		&::after {
-			content: '';
-			display: block;
-		}
+	&::after {
+		padding-top: 86px;
+	}
 
-		&::before {
-			padding-top: 64px;
-		}
+	section {
+		max-width: 768px;
+		margin: 0 auto;
+		display: block;
+		padding-left: 16px;
+		padding-right: 16px;
 
-		&::after {
-			padding-top: 86px;
-		}
+		.content {
+			margin: 16px 0;
 
-		section {
-			max-width: 768px;
-			margin: 0 auto;
-			display: block;
-			padding-left: 16px;
-			padding-right: 16px;
+			p {
+				max-width: 576px;
+				font-size: 22px;
+				margin: 0 auto;
+				letter-spacing: 0.075em;
+				line-height: 1.5;
 
-			.content {
-				margin: 16px 0;
-
-				p {
-					max-width: 576px;
-					font-size: 22px;
-					margin: 0 auto;
-					letter-spacing: 0.075em;
-					line-height: 1.5;
-
-					@include sp {
-						font-size: 18px;
-					}
+				@include sp {
+					font-size: 18px;
 				}
 			}
 		}
