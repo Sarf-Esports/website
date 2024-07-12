@@ -15,7 +15,7 @@ const config = {
 		files: { assets: 'assets' }
 	},
 
-	extensions: [...mdsvexConf.extensions]
+	extensions: ['.svelte', ...mdsvexConf.extensions]
 };
 
 export default config;
