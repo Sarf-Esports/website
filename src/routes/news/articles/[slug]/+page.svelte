@@ -82,8 +82,6 @@
 	@use '/assets/stylesheets/variables/mixin' as *;
 	@use '/assets/stylesheets/variables/dimension' as *;
 
-	@use '/assets/stylesheets/style';
-
 	main {
 		min-height: 100vh;
 

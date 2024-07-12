@@ -90,3 +90,7 @@
 <slot />
 
 <Footer />
+
+<style lang="scss" global>
+	@use '/assets/stylesheets/style';
+</style>

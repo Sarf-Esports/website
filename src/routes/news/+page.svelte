@@ -38,7 +38,6 @@
 </main>
 
 <style lang="scss" global>
-	@use '/assets/stylesheets/style';
 	@use '/assets/stylesheets/util';
 	@use '/assets/stylesheets/variables/mixin' as *;
 

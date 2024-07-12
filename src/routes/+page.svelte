@@ -100,7 +100,6 @@
 
 	@use '/assets/stylesheets/util';
 	@use '/assets/stylesheets/reveal_anim';
-	@use '/assets/stylesheets/style';
 
 	#about {
 		.slogan {
