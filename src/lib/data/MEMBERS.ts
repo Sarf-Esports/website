@@ -348,7 +348,7 @@ export const MEMBER_LISTS: {
 				country: 'jp',
 				birthday: { year: 2006, month: 12, day: 24 },
 				age: null,
-				twitter: 'Lifelex57',
+				twitter: 'lex57D',
 				youtube: '@Lifelex57',
 				twitch: 'lilex7',
 				homepage: null

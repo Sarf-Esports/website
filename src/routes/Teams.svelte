@@ -44,12 +44,7 @@
 <ul class="members">
 	{#each currentDivisionMembers as { memberName, icon, role, country, birthday, age, twitter, youtube, twitch, homepage }}
 		<li class="member">
-			<img
-				src="/images/members/{icon == null ? 'noimage.webp' : icon}"
-				alt=""
-				loading="lazy"
-				class="icon"
-			/>
+			<img src="/images/members/{icon ?? 'noimage.webp'}" alt="" loading="lazy" class="icon" />
 			<div class="info">
 				<div class="role-and-country">
 					<span class="role" class:inactive={role == null}>{role ?? '　'}</span>

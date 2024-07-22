@@ -55,7 +55,7 @@
 
 <main>
 	<div class="container">
-		<div id="bg" style={`background-image: url(${thumbnailImgPath});`} />
+		<div id="bg" style="background-image: url({thumbnailImgPath});" />
 		<div id="content">
 			<img src={thumbnailImgPath} alt="" />
 			<h1>{metadata.title}</h1>
