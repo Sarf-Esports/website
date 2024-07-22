@@ -33,7 +33,7 @@
  */
 export function addClassOnVisible(
 	elements:
-		HTMLElement[]
+		| HTMLElement[]
 		| HTMLCollectionOf<Element>
 		| NodeListOf<Element>
 		| HTMLElement
@@ -52,10 +52,7 @@ export function addClassOnVisible(
 }
 
 /** **＊ Must be called in the browser environment.** */
-function addClassOnVisible_(
-	element: Element | HTMLElement,
-	className: string
-) {
+function addClassOnVisible_(element: Element | HTMLElement, className: string) {
 	if (element.getBoundingClientRect().top < window.innerHeight) element.classList.add(className);
 }
 
