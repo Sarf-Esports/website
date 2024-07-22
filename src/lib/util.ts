@@ -1,25 +1,6 @@
 // © 2022 REVATI
 
 /**
- * Adds a class to an element when it is scrolled into view.
- *
- * # Example:
- *
- * ```js
- * window.onscroll = () => {
- *    addClassAtScroll(document.getElementsByClassName("foo"), "view-anim");
- * };
- * ```
- */
-export function addClassAtScroll(elms: HTMLCollectionOf<Element>, cls: string) {
-	[...elms].forEach((e) => {
-		if (e.getBoundingClientRect().top < window.innerHeight) {
-			e.classList.add(cls);
-		}
-	});
-}
-
-/**
  * Adds a specified class to specified elements when they are scrolled into view.
  *
  * @param elements - The elements to be observed.

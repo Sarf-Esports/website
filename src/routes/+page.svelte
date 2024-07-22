@@ -3,30 +3,16 @@
 	import MainVisual from './MainVisual.svelte';
 	import SponsorBanner from '$lib/components/sponsor_banner/SponsorBanner.svelte';
 	import SectionTitle from './SectionTitle.svelte';
+	import RevealFadeIn from '$lib/components/RevealFadeIn.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
 	import Teams from './Teams.svelte';
 	import Sponsors from './Sponsors.svelte';
 
 	import type { PageData } from './$types';
-	import { browser } from '$app/environment';
-	import { addClassAtScroll } from '$lib/util';
 	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
 
 	export let data: PageData;
-
-	if (browser) {
-		window.addEventListener('scroll', function () {
-			addClassAtScroll(
-				document.getElementsByClassName('reveal-anim-con'),
-				'reveal-anim-con-active'
-			);
-			addClassAtScroll(
-				document.getElementsByClassName('reveal-anim-item'),
-				'reveal-anim-item-active'
-			);
-		});
-	}
 
 	const HEAD = {
 		title: 'REVATI',
@@ -50,20 +36,20 @@
 	<section id="about">
 		<SectionTitle name="about" />
 		<div class="content">
-			<div class="slogan reveal-anim-con">
-				<div class="reveal-anim-item">
+			<RevealFadeIn>
+				<div class="slogan">
 					<h1>UNDEFEATED SPIRIT</h1>
 					<h2>{$_('top.about.undefeatedSpirit')}</h2>
 				</div>
-			</div>
+			</RevealFadeIn>
 			<br />
-			<div class="reveal-anim-con">
-				<p class="reveal-anim-item">
+			<RevealFadeIn>
+				<p>
 					{$_('top.about.0')}
 					<br /><br />
 					{$_('top.about.1')}
 				</p>
-			</div>
+			</RevealFadeIn>
 		</div>
 	</section>
 </div>
@@ -95,8 +81,6 @@
 <style lang="scss" global>
 	@use '/assets/stylesheets/variables/color' as *;
 	@use '/assets/stylesheets/variables/mixin' as *;
-
-	@use '/assets/stylesheets/reveal_anim';
 
 	#about {
 		.slogan {
