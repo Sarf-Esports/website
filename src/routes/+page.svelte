@@ -78,8 +78,7 @@
 	</section>
 </div>
 
-<style lang="scss" global>
-	@use '/assets/stylesheets/variables/color' as *;
+<style lang="scss">
 	@use '/assets/stylesheets/variables/mixin' as *;
 
 	#about {
