@@ -35,7 +35,7 @@
 	</section>
 </div>
 
-<style lang="scss" global>
+<style lang="scss">
 	@use '/assets/stylesheets/variables/mixin' as *;
 
 	.no-max-width {
