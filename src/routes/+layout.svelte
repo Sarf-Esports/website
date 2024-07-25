@@ -87,6 +87,11 @@
 
 <Header />
 
-<slot />
+<main><slot /></main>
 
 <Footer />
+
+<style lang="scss" global>
+	@use '/assets/stylesheets/layout';
+	@use '/assets/stylesheets/style';
+</style>

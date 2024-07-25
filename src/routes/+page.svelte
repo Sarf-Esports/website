@@ -3,30 +3,16 @@
 	import MainVisual from './MainVisual.svelte';
 	import SponsorBanner from '$lib/components/sponsor_banner/SponsorBanner.svelte';
 	import SectionTitle from './SectionTitle.svelte';
+	import RevealFadeIn from '$lib/components/RevealFadeIn.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
 	import Teams from './Teams.svelte';
 	import Sponsors from './Sponsors.svelte';
 
 	import type { PageData } from './$types';
-	import { browser } from '$app/environment';
-	import { addClassAtScroll } from '$lib/util';
 	import { SITE_URL } from '$lib/variables';
 	import { _ } from 'svelte-i18n';
 
 	export let data: PageData;
-
-	if (browser) {
-		window.addEventListener('scroll', function () {
-			addClassAtScroll(
-				document.getElementsByClassName('reveal-anim-con'),
-				'reveal-anim-con-active'
-			);
-			addClassAtScroll(
-				document.getElementsByClassName('reveal-anim-item'),
-				'reveal-anim-item-active'
-			);
-		});
-	}
 
 	const HEAD = {
 		title: 'REVATI',
@@ -44,63 +30,56 @@
 	<meta property="og:url" content={SITE_URL} />
 </svelte:head>
 
-<main>
-	<div class="container"><MainVisual /><SponsorBanner /></div>
+<div class="container"><MainVisual /><SponsorBanner /></div>
 
-	<div class="container">
-		<section id="about">
-			<SectionTitle name="about" />
-			<div class="section-content">
-				<div class="slogan reveal-anim-con">
-					<div class="reveal-anim-item">
-						<h1>UNDEFEATED SPIRIT</h1>
-						<h2>{$_('top.about.undefeatedSpirit')}</h2>
-					</div>
+<div class="container">
+	<section id="about">
+		<SectionTitle name="about" />
+		<div class="content">
+			<RevealFadeIn>
+				<div class="slogan">
+					<h1>UNDEFEATED SPIRIT</h1>
+					<h2>{$_('top.about.undefeatedSpirit')}</h2>
 				</div>
-				<br />
-				<div class="reveal-anim-con">
-					<p class="reveal-anim-item">
-						{$_('top.about.0')}
-						<br /><br />
-						{$_('top.about.1')}
-					</p>
-				</div>
-			</div>
-		</section>
-	</div>
+			</RevealFadeIn>
+			<br />
+			<RevealFadeIn>
+				<p>
+					{$_('top.about.0')}
+					<br /><br />
+					{$_('top.about.1')}
+				</p>
+			</RevealFadeIn>
+		</div>
+	</section>
+</div>
 
-	<div class="container">
-		<section id="news">
-			<SectionTitle name="news" />
-			<div class="section-content">
-				<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
-				<p><a href="/news">ALL</a></p>
-			</div>
-		</section>
-	</div>
+<div class="container">
+	<section id="news">
+		<SectionTitle name="news" />
+		<div class="content">
+			<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} />
+			<p><a href="/news">ALL</a></p>
+		</div>
+	</section>
+</div>
 
-	<div class="container">
-		<section id="teams">
-			<SectionTitle name="teams" />
-			<div class="section-content"><Teams division={data.division} /></div>
-		</section>
-	</div>
+<div class="container">
+	<section id="teams">
+		<SectionTitle name="teams" />
+		<div class="content"><Teams division={data.division} /></div>
+	</section>
+</div>
 
-	<div class="container">
-		<section id="sponsors">
-			<SectionTitle name="sponsors" />
-			<div class="section-content"><Sponsors /></div>
-		</section>
-	</div>
-</main>
+<div class="container">
+	<section id="sponsors">
+		<SectionTitle name="sponsors" />
+		<div class="content"><Sponsors /></div>
+	</section>
+</div>
 
-<style lang="scss" global>
-	@use '/assets/stylesheets/variables/color' as *;
+<style lang="scss">
 	@use '/assets/stylesheets/variables/mixin' as *;
-
-	@use '/assets/stylesheets/util';
-	@use '/assets/stylesheets/reveal_anim';
-	@use '/assets/stylesheets/style';
 
 	#about {
 		.slogan {

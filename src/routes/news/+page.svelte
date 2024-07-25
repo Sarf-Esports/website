@@ -25,21 +25,17 @@
 	<meta property="og:url" content="{SITE_URL}/news" />
 </svelte:head>
 
-<main>
-	<div class="container">
-		<section class="no-max-width" id="news">
-			<SectionTitle name="news" />
-			<p>{$_('news.desc')}</p>
-			<div class="section-content">
-				<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} showAll />
-			</div>
-		</section>
-	</div>
-</main>
+<div class="container">
+	<section class="no-max-width" id="news">
+		<SectionTitle name="news" />
+		<p>{$_('news.desc')}</p>
+		<div class="content">
+			<NewsList articles={data.articles} thumbnailImgFmts={data.thumbnailImgFmts} showAll />
+		</div>
+	</section>
+</div>
 
-<style lang="scss" global>
-	@use '/assets/stylesheets/style';
-	@use '/assets/stylesheets/util';
+<style lang="scss">
 	@use '/assets/stylesheets/variables/mixin' as *;
 
 	.no-max-width {

@@ -1,30 +1,62 @@
 // © 2022 REVATI
 
 /**
- * Adds a class to an element when it is scrolled into view.
+ * Adds a specified class to specified elements when they are scrolled into view.
+ *
+ * @param elements - The elements to be observed.
+ * @param className - The class to be added.
+ *
+ * **＊ Must be called in the browser environment.**
  *
  * # Example:
  *
- * ```js
- * window.onscroll = () => {
- *    addClassAtScroll(document.getElementsByClassName("foo"), "view-anim");
- * };
+ * ```svelte
+ * <script lang="ts">
+ *     import { onMount } from 'svelte';
+ *     import { browser } from '$app/environment';
+ *     import { addClassOnVisible } from '$lib/util';
+ *
+ *     onMount(fadeIn);
+ *     if (browser) window.addEventListener('scroll', fadeIn);
+ *
+ *     function fadeIn() {
+ *         addClassOnVisible(
+ *             document.getElementsByClassName('foo'),
+ *             'fade-in-up'
+ *         );
+ *     }
+ * </script>
+ *
+ * <div class="foo" class:fade-in-up={false} />
+ * <a class="foo" class:fade-in-up={false} />
  * ```
  */
-export function addClassAtScroll(elms: HTMLCollectionOf<Element>, cls: string) {
-	[...elms].forEach((e) => {
-		if (e.getBoundingClientRect().top < window.innerHeight) {
-			e.classList.add(cls);
-		}
-	});
+export function addClassOnVisible(
+	elements:
+		| HTMLElement[]
+		| HTMLCollectionOf<Element>
+		| NodeListOf<Element>
+		| HTMLElement
+		| Element
+		| null
+		| undefined,
+	className: string
+) {
+	if (elements instanceof Array) {
+		elements.forEach((e) => addClassOnVisible_(e, className));
+	} else if (elements instanceof HTMLCollection || elements instanceof NodeList) {
+		[...elements].forEach((e) => addClassOnVisible_(e, className));
+	} else if (elements instanceof HTMLElement || elements instanceof Element) {
+		addClassOnVisible_(elements, className);
+	}
 }
 
-/**
- * Toggles body scroll prevention.
- *
- * # Dependencies:
- * - `/stylesheets/util` (body.prevent-scroll)
- */
+/** **＊ Must be called in the browser environment.** */
+function addClassOnVisible_(element: Element | HTMLElement, className: string) {
+	if (element.getBoundingClientRect().top < window.innerHeight) element.classList.add(className);
+}
+
+/** Toggles body scroll prevention. */
 export function toggleScrollPrevention(prevent: boolean) {
 	const c = 'prevent-scroll';
 	const body = document.getElementsByTagName('body')[0].classList;
