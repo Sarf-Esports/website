@@ -75,7 +75,7 @@
 	</div>
 </div>
 
-<style lang="scss" global>
+<style lang="scss">
 	@use '/assets/stylesheets/variables/color' as *;
 	@use '/assets/stylesheets/variables/mixin' as *;
 	@use '/assets/stylesheets/variables/dimension' as *;
