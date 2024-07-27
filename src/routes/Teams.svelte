@@ -146,5 +146,5 @@
 </ul>
 
 <style lang="scss">
-	@use '/assets/stylesheets/teams';
+	@use '$lib/stylesheets/teams';
 </style>

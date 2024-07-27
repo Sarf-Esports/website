@@ -88,5 +88,5 @@
 </div>
 
 <style lang="scss">
-	@use '/assets/stylesheets/news/news_list';
+	@use '$lib/stylesheets/news/news_list';
 </style>

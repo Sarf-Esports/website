@@ -22,7 +22,7 @@
 </div>
 
 <style lang="scss">
-	@use '/assets/stylesheets/variables/color' as *;
+	@use '$lib/stylesheets/variables/color' as *;
 
 	$delay: 0.5s;
 

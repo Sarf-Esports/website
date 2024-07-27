@@ -2,7 +2,7 @@
 <div><img src="/images/logos/revati/title_oxipng.png" alt="REVATI - UNDEFINED SPIRIT" /></div>
 
 <style lang="scss">
-	@use '/assets/stylesheets/variables/mixin' as *;
+	@use '$lib/stylesheets/variables/mixin' as *;
 
 	div {
 		height: 100vh;

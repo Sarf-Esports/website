@@ -36,7 +36,7 @@
 </div>
 
 <style lang="scss">
-	@use '/assets/stylesheets/variables/mixin' as *;
+	@use '$lib/stylesheets/variables/mixin' as *;
 
 	.no-max-width {
 		max-width: none !important;

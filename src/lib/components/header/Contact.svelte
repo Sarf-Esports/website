@@ -66,7 +66,7 @@
 {/if}
 
 <style lang="scss">
-	@use '/assets/stylesheets/variables/mixin' as *;
+	@use '$lib/stylesheets/variables/mixin' as *;
 
 	.modal-bg {
 		position: fixed;

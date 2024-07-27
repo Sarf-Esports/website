@@ -22,8 +22,8 @@
 {/if}
 
 <style lang="scss">
-	@use '/assets/stylesheets/variables/dimension' as *;
-	@use '/assets/stylesheets/variables/mixin' as *;
+	@use '$lib/stylesheets/variables/dimension' as *;
+	@use '$lib/stylesheets/variables/mixin' as *;
 
 	.banner-container {
 		background-color: #111111;

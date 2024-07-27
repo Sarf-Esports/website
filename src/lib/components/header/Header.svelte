@@ -111,9 +111,9 @@
 <Contact isOpened={isContactModalVisible} on:toggle={toggleContactModal} />
 
 <style lang="scss">
-	@use '/assets/stylesheets/variables/dimension' as *;
-	@use '/assets/stylesheets/variables/color' as *;
-	@use '/assets/stylesheets/variables/mixin' as *;
+	@use '$lib/stylesheets/variables/dimension' as *;
+	@use '$lib/stylesheets/variables/color' as *;
+	@use '$lib/stylesheets/variables/mixin' as *;
 
 	$vh100: calc($vh001 * 100);
 	$border-thickness: 6px;
