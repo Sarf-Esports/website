@@ -4,7 +4,7 @@
 	import NewsList from '$lib/components/news/NewsList.svelte';
 
 	import type { PageData } from './$types';
-	import { SITE_URL } from '$lib/variables';
+	import { SITE_URL } from '$lib/scripts/variables';
 	import { _ } from 'svelte-i18n';
 
 	export let data: PageData;

@@ -75,7 +75,7 @@ Default font weight is `400`.
 - Black Italic: `900` + `italic` -->
 
 **Must specify the `font-weight` to `500`**.  
-**We can use only uppercase letters of [`HEADER_ITEMS`](/src/lib/data/HEADER_ITEMS.ts) constant.**
+**We can use only uppercase letters of [`HEADER_ITEMS`](/src/lib/scripts/data/HEADER_ITEMS.ts) constant.**
 
 ---
 
@@ -97,7 +97,7 @@ Default font weight is `400`.
 <!-- - Bold Italic: `700` + `italic` -->
 
 **Must specify the `font-weight` to `700`**.  
-**We can use only uppercase letters of [`HEADER_ITEMS`](/src/lib/data/HEADER_ITEMS.ts) constant.**
+**We can use only uppercase letters of [`HEADER_ITEMS`](/src/lib/scripts/data/HEADER_ITEMS.ts) constant.**
 
 ---
 

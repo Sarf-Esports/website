@@ -1,7 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/types';
-	import { idToDate } from '$lib/util';
+	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
+	import { idToDate } from '$lib/scripts/util';
 	import { _, date as dateI18n } from 'svelte-i18n';
 
 	export let meta: ArticleMetadata;

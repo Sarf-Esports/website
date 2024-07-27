@@ -3,8 +3,8 @@
 	import { browser } from '$app/environment';
 	import { fly, scale } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
-	import { BREAKPOINT } from '$lib/variables';
-	import { toggleScrollPrevention } from '$lib/util';
+	import { BREAKPOINT } from '$lib/scripts/variables';
+	import { toggleScrollPrevention } from '$lib/scripts/util';
 
 	let isHbButtonEnabled: boolean;
 

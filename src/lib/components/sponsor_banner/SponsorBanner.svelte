@@ -1,6 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import { SPONSORS } from '$lib/data/SPONSORS';
+	import { SPONSORS } from '$lib/scripts/data/SPONSORS';
 	import Sponsor from './Sponsor.svelte';
 </script>
 

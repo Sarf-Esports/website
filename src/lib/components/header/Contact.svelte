@@ -3,9 +3,9 @@
 	import { browser } from '$app/environment';
 	import { createEventDispatcher } from 'svelte';
 	import { fly } from 'svelte/transition';
-	import { toggleScrollPrevention } from '$lib/util';
+	import { toggleScrollPrevention } from '$lib/scripts/util';
 	import { _ } from 'svelte-i18n';
-	import { SOCIALS } from '$lib/variables';
+	import { SOCIALS } from '$lib/scripts/variables';
 
 	export let isOpened: boolean;
 

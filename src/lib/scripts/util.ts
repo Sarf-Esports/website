@@ -14,7 +14,7 @@
  * <script lang="ts">
  *     import { onMount } from 'svelte';
  *     import { browser } from '$app/environment';
- *     import { addClassOnVisible } from '$lib/util';
+ *     import { addClassOnVisible } from '$lib/scripts/util';
  *
  *     onMount(fadeIn);
  *     if (browser) window.addEventListener('scroll', fadeIn);

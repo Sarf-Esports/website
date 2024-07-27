@@ -1,6 +1,6 @@
 // © 2022 REVATI
 
-import { fetchThumbnailImgFmt } from '$lib/fetchers';
+import { fetchThumbnailImgFmt } from '$lib/scripts/fetchers';
 import { json } from '@sveltejs/kit';
 
 export const prerender = true;

@@ -7,8 +7,8 @@
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
-	import { SITE_URL } from '$lib/variables';
-	import { idToDate } from '$lib/util';
+	import { SITE_URL } from '$lib/scripts/variables';
+	import { idToDate } from '$lib/scripts/util';
 	import { _, date as dateI18n } from 'svelte-i18n';
 
 	export let data: PageData;

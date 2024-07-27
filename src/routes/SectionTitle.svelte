@@ -1,6 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import { SECTIONS } from '$lib/data/SECTIONS';
+	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
 
 	/** Name of the section. */
 	export let name: (typeof SECTIONS)[number];

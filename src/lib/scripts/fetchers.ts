@@ -1,6 +1,6 @@
 // © 2022 REVATI
 
-import type { ArticleMetadata, ArticleThumbnailImgFmts } from './types';
+import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
 
 /** Fetches and sorts articles. */
 export async function fetchArticles() {

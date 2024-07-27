@@ -3,10 +3,10 @@
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
-	import { COPYRIGHT, SITE_URL } from '$lib/variables';
+	import { COPYRIGHT, SITE_URL } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
-	import { HEADER_ITEMS } from '$lib/data/HEADER_ITEMS';
-	import { SECTIONS } from '$lib/data/SECTIONS';
+	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
+	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
 	import { page } from '$app/stores';
 
 	let maxVh1: number;

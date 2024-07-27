@@ -3,7 +3,7 @@
 	import Socials from './Socials.svelte';
 	import LangSwitcher from './LangSwitcher.svelte';
 
-	import { COPYRIGHT } from '$lib/variables';
+	import { COPYRIGHT } from '$lib/scripts/variables';
 </script>
 
 <footer>
