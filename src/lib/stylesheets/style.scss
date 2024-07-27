@@ -1,7 +1,7 @@
 // © 2022 REVATI
 
-@use './variables/color' as *;
-@use './variables/mixin' as *;
+@use '$lib/stylesheets/variables/color' as *;
+@use '$lib/stylesheets/variables/mixin' as *;
 
 * {
 	scrollbar-color: $primary-color-darker transparent;
