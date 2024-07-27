@@ -21,8 +21,8 @@
 </div>
 
 <style lang="scss">
-	@use '/assets/stylesheets/variables/color' as *;
-	@use '/assets/stylesheets/variables/mixin' as *;
+	@use '$lib/stylesheets/variables/color' as *;
+	@use '$lib/stylesheets/variables/mixin' as *;
 
 	div {
 		min-height: 36vh;

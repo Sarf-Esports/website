@@ -30,5 +30,5 @@
 >
 
 <style lang="scss">
-	@use '/assets/stylesheets/news/article_card';
+	@use '$lib/stylesheets/news/article_card';
 </style>
