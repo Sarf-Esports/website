@@ -36,7 +36,7 @@ function calcOrder(slug: string) {
 
 /** Returns the file formats of the each article's thumbnail images (articles without thumbnail images will not be listed). */
 export async function fetchThumbnailImgFmt() {
-	const thumbnailImgs = Object.keys(import.meta.glob(`/assets/images/news/thumbnails/*.*`)).map(
+	const thumbnailImgs = Object.keys(import.meta.glob(`/static/images/news/thumbnails/*.*`)).map(
 		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 		(path) => path.split('/').pop()!
 	);
