@@ -32,7 +32,7 @@ title: ここにタイトル
 
 日付を変えたい場合は[記事IDのルール(ファイル)](/docs/ADDING_NEWS.md#記事IDのルール)に従った上でファイル名を変更する
 
-画像を新しくアップロードする場合は [/assets/images/blog/](/assets/images/news/) に配置する
+画像を新しくアップロードする場合は [/static/images/blog/](/static/images/news/) に配置する
 
 その他の詳細についてはドキュメントやテスト記事参照:
 

@@ -10,10 +10,7 @@ import mdsvexConf from './mdsvex.config.js';
 const config = {
 	preprocess: [mdsvex(mdsvexConf), vitePreprocess(), preprocess({ sourceMap: true })],
 
-	kit: {
-		adapter: adapter(),
-		files: { assets: 'assets' }
-	},
+	kit: { adapter: adapter() },
 
 	extensions: ['.svelte', ...mdsvexConf.extensions]
 };
