@@ -1,5 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
+	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
 	import Article from './Article.svelte';
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
@@ -25,28 +26,27 @@
 	$: isPathnameEndsWithSlash = paths[pathnameLength - 1] === '';
 	$: slug = redirectTo ?? paths[pathnameLength - (isPathnameEndsWithSlash ? 2 : 1)];
 
-	$: currentUrl = SITE_URL + '/news/articles/' + slug;
-
 	$: thumbnailImgFmt = data.thumbnailImgFmt;
 	$: hasThumbnailImg = thumbnailImgFmt !== null;
 	$: thumbnailImgPath = hasThumbnailImg
 		? `/images/news/thumbnails/${slug}.` + thumbnailImgFmt
 		: null;
+	$: absThumbnailImgPath = SITE_URL + thumbnailImgPath;
 
 	$: date = willRedirect ? null : idToDate(slug);
-
-	$: HEAD = {
-		title: 'REVATI | NEWS - ' + metadata.title
-	};
 </script>
 
-<svelte:head>
-	<title>{HEAD.title}</title>
-	<meta name="title" content={HEAD.title} />
+<HeadMetadata
+	title="NEWS - {metadata.title}"
+	desc=""
+	canonicalUrl={SITE_URL + '/news/articles/' + slug}
+	ogType="article"
+	doesNotSetThumbnailImg
+/>
 
-	<meta property="og:title" content={HEAD.title} />
-	<meta property="og:url" content={currentUrl} />
-	<meta property="og:image" content={SITE_URL + thumbnailImgPath} />
+<svelte:head>
+	<meta property="og:image" content={absThumbnailImgPath} />
+	<meta name="thumbnail" content={absThumbnailImgPath} />
 
 	{#if !metadata.indexed || willRedirect}
 		<meta name="robots" content="noindex" />
