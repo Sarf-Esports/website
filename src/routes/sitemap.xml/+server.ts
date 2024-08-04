@@ -37,6 +37,6 @@ async function body() {
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-	${articles}
+    ${articles}
 </urlset>`;
 }
