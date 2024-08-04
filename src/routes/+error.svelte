@@ -1,12 +1,13 @@
 <!-- © 2022 REVATI -->
 <script>
+	import { PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
 	import { _ } from 'svelte-i18n';
 </script>
 
 <svelte:head>
-	<title>REVATI | 404 Not Found</title>
+	<title>{PAGE_FULL_TITLE_PART}404 Not Found</title>
 </svelte:head>
 
 <div>

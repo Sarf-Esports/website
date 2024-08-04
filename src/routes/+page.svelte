@@ -1,5 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
+	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
 	import MainVisual from './MainVisual.svelte';
 	import SponsorBanner from '$lib/components/sponsor_banner/SponsorBanner.svelte';
 	import SectionTitle from './SectionTitle.svelte';
@@ -13,22 +14,12 @@
 	import { _ } from 'svelte-i18n';
 
 	export let data: PageData;
-
-	const HEAD = {
-		title: 'REVATI',
-		desc: '勝負の世界である以上、成績が低迷してしまうこともあると思います。そんなときでも私たちは物事の目的達成のために継続的に粘り強く努力することを厭わず 最後までやり遂げる無限のパワー・可能性を秘めています。'
-	};
 </script>
 
-<svelte:head>
-	<title>REVATI</title>
-	<meta name="title" content={HEAD.title} />
-	<meta name="description" content={HEAD.desc} />
-
-	<meta property="og:title" content={HEAD.title} />
-	<meta property="og:description" content={HEAD.desc} />
-	<meta property="og:url" content={SITE_URL} />
-</svelte:head>
+<HeadMetadata
+	desc="勝負の世界である以上、成績が低迷してしまうこともあると思います。そんなときでも私たちは物事の目的達成のために継続的に粘り強く努力することを厭わず 最後までやり遂げる無限のパワー・可能性を秘めています。"
+	canonicalUrl={SITE_URL}
+/>
 
 <div class="container"><MainVisual /><SponsorBanner /></div>
 

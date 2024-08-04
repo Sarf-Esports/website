@@ -1,5 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
+	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
 	import SectionTitle from '../SectionTitle.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
 
@@ -8,22 +9,13 @@
 	import { _ } from 'svelte-i18n';
 
 	export let data: PageData;
-
-	const HEAD = {
-		title: 'REVATI | NEWS',
-		desc: 'REVATIの最新情報をお届けします。'
-	};
 </script>
 
-<svelte:head>
-	<title>{HEAD.title}</title>
-	<meta name="title" content={HEAD.title} />
-	<meta name="description" content={HEAD.desc} />
-
-	<meta property="og:title" content={HEAD.title} />
-	<meta property="og:description" content={HEAD.desc} />
-	<meta property="og:url" content="{SITE_URL}/news" />
-</svelte:head>
+<HeadMetadata
+	title="NEWS"
+	desc="REVATIの最新情報をお届けします。"
+	canonicalUrl="{SITE_URL}/news"
+/>
 
 <div class="container">
 	<section class="no-max-width" id="news">
