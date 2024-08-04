@@ -18,7 +18,8 @@ const CLOUDFLARE_ROUTES_EXCLUDE = [
 
 	// ▼ Pre-rendered Pages ▼
 	// "<prerendered>",
-	'/api/articles/thumbnail-imgs'
+	'/api/articles/thumbnail-imgs',
+	'/sitemap.xml'
 ];
 
 /** @type {import('@sveltejs/kit').Config} */
