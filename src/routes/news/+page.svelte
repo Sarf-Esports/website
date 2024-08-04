@@ -11,11 +11,7 @@
 	export let data: PageData;
 </script>
 
-<HeadMetadata
-	title="NEWS"
-	desc="REVATIの最新情報をお届けします。"
-	canonicalUrl="{SITE_URL}/news"
-/>
+<HeadMetadata title="NEWS" desc="REVATIの最新情報をお届けします。" canonicalUrl="{SITE_URL}/news" />
 
 <div class="container">
 	<section class="no-max-width" id="news">
