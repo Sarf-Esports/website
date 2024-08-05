@@ -7,7 +7,6 @@
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
 	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
-	import { page } from '$app/stores';
 
 	let maxVh1: number;
 
