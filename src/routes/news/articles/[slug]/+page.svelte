@@ -34,6 +34,11 @@
 	$: absThumbnailImgPath = SITE_URL + thumbnailImgPath;
 
 	$: date = willRedirect ? null : idToDate(slug);
+	let datePlus9h: Date;
+	$: if (date !== null) {
+		datePlus9h = new Date(date);
+		datePlus9h.setHours(datePlus9h.getHours() + 9);
+	}
 </script>
 
 <HeadMetadata
@@ -66,7 +71,7 @@
 			</p>
 		{:else}
 			{#if date !== null}
-				<h2><time datetime={date.toISOString()}>{$dateI18n(date, { format: 'long' })}</time></h2>
+				<h2><time datetime={datePlus9h.toISOString()}>{$dateI18n(date, { format: 'long' })}</time></h2>
 			{/if}
 			<hr />
 			<Article body={data.component} />

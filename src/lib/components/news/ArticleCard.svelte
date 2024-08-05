@@ -11,6 +11,8 @@
 	const slug = meta.slug ?? 'unreachable';
 	const thumbnailImgFmt = thumbnailImgFmts[slug];
 	const date = idToDate(slug);
+	let datePlus9h = new Date(date);
+	datePlus9h.setHours(datePlus9h.getHours() + 9);
 </script>
 
 <a href="/news/articles/{slug}"
@@ -24,7 +26,7 @@
 		</div>
 		<div class="meta">
 			<h2>{meta.title}</h2>
-			<time datetime={date.toISOString()}>{$dateI18n(date, { format: 'long' })}</time>
+			<time datetime={datePlus9h.toISOString()}>{$dateI18n(date, { format: 'long' })}</time>
 		</div>
 	</article></a
 >
