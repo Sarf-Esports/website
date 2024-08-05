@@ -71,7 +71,9 @@
 			</p>
 		{:else}
 			{#if date !== null}
-				<h2><time datetime={datePlus9h.toISOString()}>{$dateI18n(date, { format: 'long' })}</time></h2>
+				<h2>
+					<time datetime={datePlus9h.toISOString()}>{$dateI18n(date, { format: 'long' })}</time>
+				</h2>
 			{/if}
 			<hr />
 			<Article body={data.component} />
