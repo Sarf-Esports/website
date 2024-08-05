@@ -8,5 +8,5 @@
 <article class="article-body"><svelte:component this={body} /></article>
 
 <style lang="scss" global>
-	@use '/assets/stylesheets/news/article_body';
+	@use '$lib/stylesheets/news/article_body';
 </style>

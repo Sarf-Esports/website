@@ -2,9 +2,9 @@
 <script lang="ts">
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
-	import { MEMBER_LISTS } from '$lib/data/MEMBERS';
+	import { MEMBER_LISTS } from '$lib/scripts/data/MEMBERS';
 	import { replaceState } from '$app/navigation';
-	import { calcAge, zeroPad } from '$lib/util';
+	import { calcAge, zeroPad } from '$lib/scripts/util';
 	import { date, _ } from 'svelte-i18n';
 
 	export let division: string | null;
@@ -146,5 +146,5 @@
 </ul>
 
 <style lang="scss">
-	@use '/assets/stylesheets/teams';
+	@use '$lib/stylesheets/teams';
 </style>

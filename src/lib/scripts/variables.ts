@@ -16,3 +16,15 @@ export const SOCIALS = {
 
 /** URL of the site. */
 export const SITE_URL = 'https://revati.jp';
+
+/**
+ * The part of the full title of the pages.
+ *
+ * Usage:
+ *
+ * ```ts
+ * import { PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
+ * const FULL_TITLE = PAGE_FULL_TITLE_PART + 'Home';
+ * ```
+ */
+export const PAGE_FULL_TITLE_PART = 'REVATI | ';

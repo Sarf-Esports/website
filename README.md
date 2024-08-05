@@ -22,5 +22,5 @@
 - [雑な仕様書 / SPECIFICATION](./docs/SPECIFICATION.md)
 
 * [ニュース記事の追加方法](./docs/ADDING_NEWS.md)
-* [メンバーの追加方法](./src/lib/data/MEMBERS.ts)
+* [メンバーの追加方法](./src/lib/scripts/data/MEMBERS.ts)
 

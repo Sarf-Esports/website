@@ -3,7 +3,7 @@
 	import ChevronArrow from './util/ChevronArrow.svelte';
 	import ArticleCard from './ArticleCard.svelte';
 
-	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/types';
+	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
 	import { fly } from 'svelte/transition';
 
 	export let articles: ArticleMetadata[];
@@ -88,5 +88,5 @@
 </div>
 
 <style lang="scss">
-	@use '/assets/stylesheets/news/news_list';
+	@use '$lib/stylesheets/news/news_list';
 </style>

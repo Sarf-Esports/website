@@ -1,0 +1,92 @@
+// © 2022 REVATI
+
+@use '$lib/stylesheets/variables/color' as *;
+@use '$lib/stylesheets/variables/mixin' as *;
+
+* {
+	scrollbar-color: $primary-color-darker transparent;
+	scroll-margin-top: 104px;
+}
+
+::selection {
+	background: $primary-color;
+	color: white;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-family: 'Zen Kaku Gothic New', sans-serif;
+	font-weight: 400;
+	background: $secondary-color;
+}
+
+body {
+	color: #eeeeee;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	overflow-x: hidden;
+	// Anti Dark reader
+	background: none;
+
+	&.prevent-scroll {
+		overflow: hidden;
+	}
+}
+
+main > div.container {
+	width: 100%;
+
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+	}
+
+	&::before {
+		padding-top: 64px;
+	}
+
+	&::after {
+		padding-top: 86px;
+	}
+
+	section {
+		max-width: 768px;
+		margin: 0 auto;
+		display: block;
+		padding-left: 16px;
+		padding-right: 16px;
+
+		.content {
+			margin: 16px 0;
+
+			p {
+				max-width: 576px;
+				font-size: 22px;
+				margin: 0 auto;
+				letter-spacing: 0.075em;
+				line-height: 1.5;
+
+				@include sp {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+a {
+	color: #17d8d8;
+	text-decoration: underline;
+	transition: 0.2s;
+
+	&:hover {
+		color: #7effb4;
+	}
+
+	&:active {
+		color: #e6ff9a;
+	}
+}

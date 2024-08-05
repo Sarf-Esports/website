@@ -6,10 +6,10 @@
 	import Contact from './Contact.svelte';
 
 	import { browser } from '$app/environment';
-	import { HEADER_ITEMS, NON_SECTION_ITEMS } from '$lib/data/HEADER_ITEMS';
+	import { HEADER_ITEMS, NON_SECTION_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
 	import { _ } from 'svelte-i18n';
-	import { COPYRIGHT } from '$lib/variables';
-	import { toggleScrollPrevention } from '$lib/util';
+	import { COPYRIGHT } from '$lib/scripts/variables';
+	import { toggleScrollPrevention } from '$lib/scripts/util';
 	import { page } from '$app/stores';
 
 	$: url = $page.url;
@@ -111,9 +111,9 @@
 <Contact isOpened={isContactModalVisible} on:toggle={toggleContactModal} />
 
 <style lang="scss">
-	@use '/assets/stylesheets/variables/dimension' as *;
-	@use '/assets/stylesheets/variables/color' as *;
-	@use '/assets/stylesheets/variables/mixin' as *;
+	@use '$lib/stylesheets/variables/dimension' as *;
+	@use '$lib/stylesheets/variables/color' as *;
+	@use '$lib/stylesheets/variables/mixin' as *;
 
 	$vh100: calc($vh001 * 100);
 	$border-thickness: 6px;

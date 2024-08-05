@@ -2,7 +2,7 @@
 <script lang="ts">
 	import MaterialIcon from './MaterialIcon.svelte';
 
-	import { SOCIALS } from '$lib/variables';
+	import { SOCIALS } from '$lib/scripts/variables';
 
 	/** Inline styles. */
 	export let style = '';

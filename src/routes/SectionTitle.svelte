@@ -1,6 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import { SECTIONS } from '$lib/data/SECTIONS';
+	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
 
 	/** Name of the section. */
 	export let name: (typeof SECTIONS)[number];
@@ -9,7 +9,7 @@
 <h1>{name.toUpperCase()}</h1>
 
 <style lang="scss">
-	@use '/assets/stylesheets/variables/mixin' as *;
+	@use '$lib/stylesheets/variables/mixin' as *;
 
 	h1 {
 		font-family: 'Josefin Sans', sans-serif;

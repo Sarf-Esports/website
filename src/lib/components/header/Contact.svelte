@@ -3,9 +3,9 @@
 	import { browser } from '$app/environment';
 	import { createEventDispatcher } from 'svelte';
 	import { fly } from 'svelte/transition';
-	import { toggleScrollPrevention } from '$lib/util';
+	import { toggleScrollPrevention } from '$lib/scripts/util';
 	import { _ } from 'svelte-i18n';
-	import { SOCIALS } from '$lib/variables';
+	import { SOCIALS } from '$lib/scripts/variables';
 
 	export let isOpened: boolean;
 
@@ -66,7 +66,7 @@
 {/if}
 
 <style lang="scss">
-	@use '/assets/stylesheets/variables/mixin' as *;
+	@use '$lib/stylesheets/variables/mixin' as *;
 
 	.modal-bg {
 		position: fixed;

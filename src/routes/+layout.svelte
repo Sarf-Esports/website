@@ -3,11 +3,10 @@
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
-	import { COPYRIGHT, SITE_URL } from '$lib/variables';
+	import { COPYRIGHT, SITE_URL } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
-	import { HEADER_ITEMS } from '$lib/data/HEADER_ITEMS';
-	import { SECTIONS } from '$lib/data/SECTIONS';
-	import { page } from '$app/stores';
+	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
+	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
 
 	let maxVh1: number;
 
@@ -66,13 +65,6 @@
 	<!-- ▲ Google Fonts ▲ -->
 
 	<meta property="og:site_name" content="REVATI" />
-	{#if $page.url.pathname.startsWith('/news/articles/')}
-		<meta property="og:type" content="article" />
-	{:else}
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content="{SITE_URL}/images/logos/revati/header_mini.png" />
-	{/if}
-	<meta name="twitter:card" content="summary_large_image" />
 	<meta property="og:locale" content="ja_JP" />
 	<meta name="twitter:site" content={SITE_URL} />
 	<!-- ↓ $primary-color -->
@@ -87,6 +79,11 @@
 
 <Header />
 
-<slot />
+<main><slot /></main>
 
 <Footer />
+
+<style lang="scss" global>
+	@use '$lib/stylesheets/layout';
+	@use '$lib/stylesheets/style';
+</style>

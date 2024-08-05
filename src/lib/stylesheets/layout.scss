@@ -1,0 +1,28 @@
+// © 2022 REVATI
+
+@use '$lib/stylesheets/variables/color' as *;
+@use '$lib/stylesheets/variables/dimension' as *;
+
+main::before {
+	content: '';
+	$dark: rgba($secondary-color, 0.75);
+	background: linear-gradient($dark, $dark),
+		linear-gradient(
+			165deg,
+			#4e8091 13%,
+			#154c84 22%,
+			#0f5372 44%,
+			#326e86 50%,
+			#132f6b 62%,
+			#132f6b 73%,
+			#050946 90%
+		);
+	background-size: 100% 100%;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc($vh001 * 100);
+	z-index: -1;
+}
