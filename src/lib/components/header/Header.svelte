@@ -42,13 +42,21 @@
 
 	let isDrawerMenuOpened = false;
 
-	/** Toggles the visibility of the contact modal. */
+	/**
+	 * Toggles the visibility of the contact modal.
+	 *
+	 * **＊ Must be called in the browser environment.**
+	 */
 	function toggleContactModal() {
 		isContactModalVisible = !isContactModalVisible;
 		toggleScrollPrevention(isContactModalVisible);
 	}
 
-	/** Toggles drawer menu open/close. */
+	/**
+	 * Toggles drawer menu open/close.
+	 *
+	 * **＊ Must be called in the browser environment.**
+	 */
 	function toggleDrawerMenu(open: boolean) {
 		isDrawerMenuOpened = open;
 		toggleScrollPrevention(isDrawerMenuOpened);

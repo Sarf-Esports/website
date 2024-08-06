@@ -22,7 +22,7 @@
 	/**
 	 * Sets CSS variable `--vh001`.
 	 *
-	 * **＊ This function is intended to be used in the browser environment.**
+	 * **＊ Must be called in the browser environment.**
 	 */
 	function setVh001() {
 		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
@@ -31,7 +31,7 @@
 	/**
 	 * Sets css variable `--max-vh001`.
 	 *
-	 * **＊ This function is intended to be used in the browser environment.**
+	 * **＊ Must be called in the browser environment.**
 	 */
 	function setMaxVh001() {
 		maxVh1 = window.innerHeight;

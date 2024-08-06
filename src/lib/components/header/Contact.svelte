@@ -17,7 +17,11 @@
 
 	const dispatch = createEventDispatcher();
 
-	/** Toggles the visibility of the contact modal. */
+	/**
+	 * Toggles the visibility of the contact modal.
+	 *
+	 * **＊ Must be called in the browser environment.**
+	 */
 	function toggleContactModal() {
 		isOpened = !isOpened;
 		dispatch('toggle', { isOpened });
