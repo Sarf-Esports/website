@@ -59,7 +59,7 @@ function addClassOnVisible_(element: Element | HTMLElement, className: string) {
 /** Toggles body scroll prevention. */
 export function toggleScrollPrevention(prevent: boolean) {
 	const c = 'prevent-scroll';
-	const body = document.getElementsByTagName('body')[0].classList;
+	const body = document.body.classList;
 	if (prevent) {
 		body.add(c);
 	} else {
