@@ -315,7 +315,7 @@
 
 		@include low-height {
 			@include sp {
-				margin: 6px 12px 3px 10px;
+				margin: 4px 12px 0px 10px;
 
 				a,
 				button {
