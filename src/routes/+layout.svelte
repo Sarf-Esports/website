@@ -3,6 +3,7 @@
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
+	import { closeAllModals } from '$lib/scripts/util';
 	import { isContactModalOpened, isFeesModalOpened, isCoachesModalOpened } from '$lib/scripts/stores';
 	import { COPYRIGHT, SITE_URL } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
@@ -39,12 +40,6 @@
 	function setMaxVh001() {
 		maxVh1 = window.innerHeight;
 		document.documentElement.style.setProperty('--max-vh001', maxVh1 * 0.01 + 'px');
-	}
-
-	function closeAllModals() {
-		isContactModalOpened.update(() => false);
-		isFeesModalOpened.update(() => false);
-		isCoachesModalOpened.update(() => false);
 	}
 
 	function empty() {} // eslint-disable-line @typescript-eslint/no-empty-function

@@ -1,5 +1,7 @@
 // © 2022 REVATI
 
+import { isContactModalOpened, isFeesModalOpened, isCoachesModalOpened } from '$lib/scripts/stores';
+
 /**
  * Adds a specified class to specified elements when they are scrolled into view.
  *
@@ -94,4 +96,11 @@ export function calcAge(birthday: Date) {
 /** Pads a number with zeros. */
 export function zeroPad(num: number, len: number) {
 	return num.toString().padStart(len, '0');
+}
+
+/** Closes all the modals. */
+export function closeAllModals() {
+	isContactModalOpened.update(() => false);
+	isFeesModalOpened.update(() => false);
+	isCoachesModalOpened.update(() => false);
 }
