@@ -63,7 +63,9 @@
 			{#each HEADER_ITEMS as item}
 				{#if item == 'contact'}
 					<li class="item-contact">
-						<button class:active={false} on:click={() => isContactModalOpened.update(() => true)}>CONTACT</button>
+						<button class:active={false} on:click={() => isContactModalOpened.update(() => true)}
+							>CONTACT</button
+						>
 					</li>
 				{:else}
 					<li>

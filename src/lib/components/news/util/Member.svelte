@@ -25,7 +25,12 @@
 				{@const { twitter, youtube, twitch, other } = socials}
 				-
 				{#if twitter}
-					<a href="https://x.com/{twitter}" target="_blank" rel="noopener noreferrer" class="no-after-icn">
+					<a
+						href="https://x.com/{twitter}"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="no-after-icn"
+					>
 						<img
 							src="/images/logos/x_logo-white.png"
 							alt="X"
@@ -34,7 +39,11 @@
 							class="vertical-icn"
 						/></a
 					>{/if}{#if youtube}{@const path = youtube[0] == '@' ? youtube : `channel/${youtube}`}
-					<a href="https://youtube.com/{path}" target="_blank" rel="noopener noreferrer" class="no-after-icn"
+					<a
+						href="https://youtube.com/{path}"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="no-after-icn"
 						><img
 							src="/images/logos/yt_icon_rgb.png"
 							alt="YouTube"
