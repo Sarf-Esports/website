@@ -22,7 +22,7 @@ $bp-wide: 1058px;
 }
 
 @mixin low-height {
-	@media screen and (max-height: 566px) {
+	@media screen and (max-height: 674px) {
 		@content;
 	}
 }
