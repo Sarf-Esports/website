@@ -1,7 +1,7 @@
 // © 2022 REVATI
 
-$breakpoint: 742px;
-$bp-wide: 894px;
+$breakpoint: 908px;
+$bp-wide: 1058px;
 
 @mixin pc {
 	@media screen and (min-width: $breakpoint) {
