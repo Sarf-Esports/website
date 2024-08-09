@@ -127,30 +127,10 @@
 	}
 
 	a {
-		$edge-color: #f0fff7;
-		$edge-color-dark: #689490;
 		display: inline-block;
-		color: $edge-color;
-		font-size: 19px;
 		margin-bottom: 16px;
-		padding: 5px 18px;
-		padding-bottom: 6px;
-		text-decoration: none;
-		border: 3px solid $edge-color;
-		user-select: none;
-		border-radius: 5px;
-		transition: 0.2s;
 
-		&:hover {
-			background-color: $edge-color;
-			color: #191919;
-			box-shadow: 0 5px 0 $edge-color-dark;
-		}
-
-		&:active {
-			box-shadow: 0 1px 0 $edge-color-dark;
-			transform: translateY(4px);
-		}
+		@include btn(19px);
 	}
 
 	.mail-btn-container {

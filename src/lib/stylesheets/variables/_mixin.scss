@@ -38,3 +38,33 @@ $bp-wide: 1058px;
 		@content;
 	}
 }
+
+@mixin btn ($font-size: 19px) {
+	$edge-color: #f0fff7;
+	$edge-color-dark: #689490;
+	font-family: inherit;
+	background: none;
+	color: $edge-color;
+	font-size: $font-size;
+	padding: $font-size*0.26 $font-size*0.95;
+	padding-bottom: $font-size*0.32;
+	text-decoration: none;
+	border: $font-size*0.16 solid $edge-color;
+	border-radius: $font-size*0.26;
+	cursor: pointer;
+	user-select: none;
+	transition: 0.2s;
+
+	$btn-side-height: $font-size*0.26;
+
+	&:hover {
+		background-color: $edge-color;
+		color: #191919;
+		box-shadow: 0 $btn-side-height 0 $edge-color-dark;
+	}
+
+	&:active {
+		box-shadow: 0 $font-size*0.05 0 $edge-color-dark;
+		transform: translateY($btn-side-height);
+	}
+}
