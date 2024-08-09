@@ -1,6 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import { _ } from "svelte-i18n";
+	import { _ } from 'svelte-i18n';
 </script>
 
 <img src="/images/coaching-poster.webp" alt={$_('coaching.poster')} />
