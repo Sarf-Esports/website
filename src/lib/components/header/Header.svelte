@@ -10,12 +10,11 @@
 	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/scripts/variables';
 	import { toggleScrollPrevention } from '$lib/scripts/util';
+	import { isContactModalOpened } from '$lib/scripts/stores';
 	import { page } from '$app/stores';
 
 	$: url = $page.url;
 	let currentSection = '';
-
-	let isContactModalVisible = false;
 
 	if (browser) {
 		window.addEventListener('scroll', function () {
@@ -43,16 +42,6 @@
 	let isDrawerMenuOpened = false;
 
 	/**
-	 * Toggles the visibility of the contact modal.
-	 *
-	 * **＊ Must be called in the browser environment.**
-	 */
-	function toggleContactModal() {
-		isContactModalVisible = !isContactModalVisible;
-		toggleScrollPrevention(isContactModalVisible);
-	}
-
-	/**
 	 * Toggles drawer menu open/close.
 	 *
 	 * **＊ Must be called in the browser environment.**
@@ -74,7 +63,7 @@
 			{#each HEADER_ITEMS as item}
 				{#if item == 'contact'}
 					<li class="item-contact">
-						<button class:active={false} on:click={toggleContactModal}>CONTACT</button>
+						<button class:active={false} on:click={() => isContactModalOpened.update(() => true)}>CONTACT</button>
 					</li>
 				{:else}
 					<li>
@@ -116,7 +105,7 @@
 	<div class="lang-switcher"><LangSwitcher /></div>
 </div>
 
-<Contact isOpened={isContactModalVisible} on:toggle={toggleContactModal} />
+<Contact />
 
 <style lang="scss">
 	@use '$lib/stylesheets/variables/dimension' as *;

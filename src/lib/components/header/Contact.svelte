@@ -1,44 +1,12 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import { browser } from '$app/environment';
-	import { createEventDispatcher } from 'svelte';
+	import { isContactModalOpened as isOpened } from '$lib/scripts/stores';
 	import { fly } from 'svelte/transition';
-	import { toggleScrollPrevention } from '$lib/scripts/util';
 	import { _ } from 'svelte-i18n';
 	import { SOCIALS } from '$lib/scripts/variables';
-
-	export let isOpened: boolean;
-
-	if (browser) {
-		document.addEventListener('keydown', (event) => {
-			closeModal(event.key);
-		});
-	}
-
-	const dispatch = createEventDispatcher();
-
-	/**
-	 * Toggles the visibility of the contact modal.
-	 *
-	 * **＊ Must be called in the browser environment.**
-	 */
-	function toggleContactModal() {
-		isOpened = !isOpened;
-		dispatch('toggle', { isOpened });
-		toggleScrollPrevention(isOpened);
-	}
-
-	function closeModal(key: string) {
-		if (key == 'Escape' && isOpened) {
-			toggleContactModal();
-		}
-	}
-
-	function empty() {} // eslint-disable-line @typescript-eslint/no-empty-function
 </script>
 
-{#if isOpened}
-	<div class="modal-bg" on:click={toggleContactModal} on:keypress={empty} role="none" />
+{#if $isOpened}
 	<div class="modal" transition:fly|global={{ y: -64, duration: 240 }}>
 		<h1>CONTACT US</h1>
 		<p>
@@ -49,7 +17,7 @@
 		<div class="mail-btn-container">
 			<a href="mailto:{SOCIALS.email}" draggable="false">{$_('contact.button')}</a>
 		</div>
-		<button on:click={toggleContactModal}>
+		<button on:click={() => isOpened.update(() => false)}>
 			<!--
 				Google Material Symbols and Icons - Close
 				https://fonts.google.com/icons?selected=Material+Symbols+Outlined:close:FILL@0;wght@400;GRAD@200;opsz@24&icon.query=close&icon.size=24&icon.color=%23e8eaed
@@ -71,13 +39,6 @@
 
 <style lang="scss">
 	@use '$lib/stylesheets/variables/mixin' as *;
-
-	.modal-bg {
-		position: fixed;
-		inset: 0;
-		background-color: #000000aa;
-		z-index: 254;
-	}
 
 	$secondary-color: #ccfbff;
 	$bloom-color: #63f2ff;
