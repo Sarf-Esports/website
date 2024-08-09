@@ -51,7 +51,7 @@
 		border-radius: 6px;
 		$bloom-color-large: rgba($bloom-color, 0.08);
 		$bloom-color-small: rgba($secondary-color, 0.2);
-		filter: drop-shadow(0 0 128px $bloom-color-large) drop-shadow(0 0 28ox $bloom-color-small);
+		filter: drop-shadow(0 0 128px $bloom-color-large) drop-shadow(0 0 28px $bloom-color-small);
 		overflow: scroll;
 		z-index: 255;
 
