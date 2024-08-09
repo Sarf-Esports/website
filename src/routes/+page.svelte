@@ -7,6 +7,7 @@
 	import RevealFadeIn from '$lib/components/RevealFadeIn.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
 	import Teams from './Teams.svelte';
+	import Coaching from './Coaching.svelte';
 	import Sponsors from './Sponsors.svelte';
 
 	import type { PageData } from './$types';
@@ -59,6 +60,13 @@
 	<section id="teams">
 		<SectionTitle name="teams" />
 		<div class="content"><Teams division={data.division} /></div>
+	</section>
+</div>
+
+<div class="container">
+	<section id="coaching">
+		<SectionTitle name="coaching" />
+		<div class="content"><Coaching /></div>
 	</section>
 </div>
 
