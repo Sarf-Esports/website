@@ -1,5 +1,7 @@
 // © 2022 REVATI
 
+// If update `$breakpoint` Sass variable, also update `BREAKPOINT` JS constant in `src/lib/scripts/variables.ts`.
+// ＊ `$breakpoint` = (numerical value of `BREAKPOINT`) + 1
 $breakpoint: 908px;
 $bp-wide: 1058px;
 
