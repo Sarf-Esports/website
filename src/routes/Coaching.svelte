@@ -42,4 +42,18 @@
 	a {
 		font-size: 22px;
 	}
+
+	@include sp {
+		div {
+			gap: 16px;
+		}
+
+		button {
+			@include btn(22px);
+		}
+
+		a {
+			font-size: 19px;
+		}
+	}
 </style>
