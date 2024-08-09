@@ -25,16 +25,16 @@
 				{@const { twitter, youtube, twitch, other } = socials}
 				-
 				{#if twitter}
-					<a href="https://x.com/{twitter}" target="_blank" rel="noopener noreferrer">
+					<a href="https://x.com/{twitter}" target="_blank" rel="noopener noreferrer" class="no-after-icn">
 						<img
 							src="/images/logos/x_logo-white.png"
 							alt="X"
-							class="vertical-icn"
 							title="@{twitter}"
 							loading="lazy"
+							class="vertical-icn"
 						/></a
 					>{/if}{#if youtube}{@const path = youtube[0] == '@' ? youtube : `channel/${youtube}`}
-					<a href="https://youtube.com/{path}" target="_blank" rel="noopener noreferrer"
+					<a href="https://youtube.com/{path}" target="_blank" rel="noopener noreferrer" class="no-after-icn"
 						><img
 							src="/images/logos/yt_icon_rgb.png"
 							alt="YouTube"
@@ -44,9 +44,9 @@
 					>{/if}{#if twitch}
 					<a
 						href="https://twitch.tv/{twitch}"
-						class="twitch-icn-a"
 						target="_blank"
 						rel="noopener noreferrer"
+						class="no-after-icn twitch-icn-a"
 						><img
 							src="/images/logos/twitch.svg"
 							alt="Twitch"
@@ -55,7 +55,7 @@
 							loading="lazy"
 						/></a
 					>{/if}{#if other}
-					<a href={other} target="_blank" rel="noopener noreferrer">
+					<a href={other} target="_blank" rel="noopener noreferrer" class="no-after-icn">
 						<MaterialIcon
 							kind="link-45deg"
 							width="30px"

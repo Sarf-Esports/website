@@ -10,7 +10,7 @@
 			<li>
 				<a href={url} target="_blank" rel="noopener noreferrer">
 					<img src="/images/logos/{logo}" alt={name} />
-					<span>{name}<MaterialIcon kind="box-arrow-up-right" width="16px" /></span>
+					<span>{name}</span>
 				</a>
 			</li>
 		{/each}
@@ -38,6 +38,10 @@
 		display: inline-block;
 		color: inherit;
 		padding: 44px 0;
+
+		&::after {
+			filter: grayscale(1) brightness(1.3);
+		}
 	}
 
 	img {
