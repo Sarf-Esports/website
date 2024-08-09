@@ -11,9 +11,7 @@
 	<button>料金表</button><button>コーチ一覧</button>
 </div>
 <div>
-	<a href="/" target="_blank" rel="noopener noreferrer">
-		応募フォームはこちら
-	</a>
+	<a href="/" target="_blank" rel="noopener noreferrer">応募フォームはこちら</a>
 </div>
 
 <style lang="scss">
