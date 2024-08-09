@@ -1,6 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
+	import { isFeesModalOpened, isCoachesModalOpened } from '$lib/scripts/stores';
 </script>
 
 <img src="/images/coaching-poster.webp" alt={$_('coaching.poster')} />
@@ -8,7 +9,11 @@
 <p>説明ほへとちりぬるをわかよたれそつねならむ</p>
 
 <div>
-	<button>料金表</button><button>コーチ一覧</button>
+	<button on:click={
+		() => isFeesModalOpened.update(() => true)
+	}>料金表</button><button on:click={
+		() => isCoachesModalOpened.update(() => true)
+	}>コーチ一覧</button>
 </div>
 <div>
 	<a href="/" target="_blank" rel="noopener noreferrer">応募フォームはこちら</a>
