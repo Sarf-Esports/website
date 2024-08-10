@@ -42,7 +42,8 @@
 
 	img {
 		display: block;
-		max-width: 86%;
+		max-width: 100%;
+		max-height: 94px;
 		margin: 0 auto;
 		margin-bottom: 22px;
 	}
