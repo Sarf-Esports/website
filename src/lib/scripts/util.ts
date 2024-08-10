@@ -56,10 +56,14 @@ function addClassOnVisible_(element: Element | HTMLElement, className: string) {
 	if (element.getBoundingClientRect().top < window.innerHeight) element.classList.add(className);
 }
 
-/** Toggles body scroll prevention. */
+/**
+ * Toggles body scroll prevention.
+ *
+ * **＊ Must be called in the browser environment.**
+ */
 export function toggleScrollPrevention(prevent: boolean) {
 	const c = 'prevent-scroll';
-	const body = document.getElementsByTagName('body')[0].classList;
+	const body = document.body.classList;
 	if (prevent) {
 		body.add(c);
 	} else {

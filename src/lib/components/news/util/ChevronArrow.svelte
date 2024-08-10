@@ -9,7 +9,6 @@
 		<!--
 			Google Material Symbols and Icons - Arrow Back iOS
 			https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Aarrow_back_ios%3AFILL%400%3Bwght%40500%3BGRAD%400%3Bopsz%4040
-			
 			This icon is licensed under the Apache License Version 2.0: https://github.com/google/material-design-icons/blob/master/README.md
 		-->
 		<svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"
@@ -21,7 +20,6 @@
 		<!--
 			Google Material Symbols and Icons - Arrow Forward iOS
 			https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Aarrow_forward_ios%3AFILL%400%3Bwght%40500%3BGRAD%400%3Bopsz%4040
-			
 			This icon is licensed under the Apache License Version 2.0: https://github.com/google/material-design-icons/blob/master/README.md
 		-->
 		<svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"

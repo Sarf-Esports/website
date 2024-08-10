@@ -23,7 +23,6 @@
 	<!--
 		Bootstrap Icons - Box arrow up-right
 		https://icons.getbootstrap.jp/icons/box-arrow-up-right
-		
 		Copyright (c) 2019 The Bootstrap Authors
 		under the MIT License: https://github.com/twbs/icons/blob/main/LICENSE
 	-->
@@ -49,7 +48,6 @@
 	<!--
 		Bootstrap Icons - Link 45deg
 		https://icons.getbootstrap.jp/icons/link-45deg
-		
 		Copyright (c) 2019 The Bootstrap Authors
 		under the MIT License: https://github.com/twbs/icons/blob/main/LICENSE
 	-->
@@ -73,7 +71,6 @@
 	<!--
 		Bootstrap Icons - Envelope fill
 		https://icons.getbootstrap.jp/icons/envelope-fill
-		
 		Copyright (c) 2019 The Bootstrap Authors
 		under the MIT License: https://github.com/twbs/icons/blob/main/LICENSE
 	-->
@@ -94,7 +91,6 @@
 	<!--
 		Bootstrap Icons - Box arrow in down left
 		https://icons.getbootstrap.com/icons/box-arrow-in-down-left
-		
 		Copyright (c) 2019 The Bootstrap Authors
 		under the MIT License: https://github.com/twbs/icons/blob/main/LICENSE
 	-->

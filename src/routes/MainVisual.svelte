@@ -1,5 +1,7 @@
 <!-- © 2022 REVATI -->
-<div><img src="/images/logos/revati/title_oxipng.png" alt="REVATI - UNDEFINED SPIRIT" /></div>
+<div>
+	<img src="/images/logos/revati/title_without-logo_oxipng.png" alt="REVATI - UNDEFINED SPIRIT" />
+</div>
 
 <style lang="scss">
 	@use '$lib/stylesheets/variables/mixin' as *;

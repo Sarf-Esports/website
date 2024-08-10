@@ -41,6 +41,7 @@
 		}
 
 		@include sp {
+			width: 295%;
 			height: 70px;
 		}
 	}
