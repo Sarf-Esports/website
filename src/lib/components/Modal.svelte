@@ -4,9 +4,15 @@
 	import { closeAllModals } from '$lib/scripts/util';
 
 	export let title: string | null = null;
+	// The minimum width of the modal (`px`)
+	export let minWidth: number = 358;
 </script>
 
-<div class="modal" transition:fly|global={{ y: -64, duration: 240 }}>
+<div
+	class="modal"
+	style="min-width: {minWidth}px"
+	transition:fly|global={{ y: -64, duration: 240 }}
+>
 	{#if title !== null}
 		<h1>{title}</h1>
 	{/if}
@@ -41,7 +47,6 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		min-width: 358px;
 		max-height: 80%;
 		margin: auto;
 		background-color: #122426;
