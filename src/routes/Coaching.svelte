@@ -128,11 +128,9 @@
 		background-color: #121826;
 	}
 
-	td {
-		span {
-			display: block;
-			font-size: 16px;
-		}
+	td span {
+		display: block;
+		font-size: 16px;
 	}
 
 	a {
@@ -146,6 +144,25 @@
 
 		button {
 			@include btn(22px);
+		}
+
+		table {
+			font-size: 19px;
+			letter-spacing: -0.3px;
+		}
+
+		tr:first-child {
+			font-size: 18px;
+		}
+
+		th,
+		td {
+			padding: 2px 12px;
+		}
+
+		td span {
+			font-size: 12px;
+			letter-spacing: -0.1px;
 		}
 
 		a {
