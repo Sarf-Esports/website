@@ -51,7 +51,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		max-height: 80%;
+		max-height: 85%;
 		margin: auto;
 		background-color: #122426;
 		border: 4px solid $secondary-color;
