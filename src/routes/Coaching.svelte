@@ -11,60 +11,58 @@
 <p class="desc">説明ほへとちりぬるをわかよたれそつねならむ</p>
 
 <div>
-	<button on:click={
-		() => isFeesModalOpened.update(() => true)
-	}>料金表</button>{#if $isFeesModalOpened}<Modal title="料金表" minWidth={485}>
-		<table>
-			<tr>
-				<th colspan="2">個人で受ける場合</th>
-			</tr>
-			<tr>
-				<th>プラン</th>
-				<th>料金</th>
-			</tr>
-			<tr>
-				<td>通常プラン</td>
-				<td>3,000円 / 1時間</td>
-			</tr>
-			<tr>
-				<td>3回まとめてプラン</td>
-				<td>7,500円 / 3時間<span>(1時間あたり500円お得)</span></td>
-			</tr>
-			<tr>
-				<td>1ヶ月定額プラン</td>
-				<td>16,000円 / 1ヶ月<span>(1時間あたり1,000円お得)</span></td>
-			</tr>
-		</table>
-		<table>
-			<tr>
-				<th colspan="2">チーム単位で受ける場合</th>
-			</tr>
-			<tr>
-				<th>プラン</th>
-				<th>料金</th>
-			</tr>
-			<tr>
-				<td>通常プラン</td>
-				<td>6,000円 / 1時間</td>
-			</tr>
-			<tr>
-				<td>3回まとめてプラン</td>
-				<td>15,000円 / 3時間<span>(1時間あたり1,000円お得)</span></td>
-			</tr>
-			<tr>
-				<td>1ヶ月定額プラン</td>
-				<td>32,000円 / 1ヶ月<span>(1時間あたり2,000円お得)</span></td>
-			</tr>
-		</table>
-	</Modal>{/if}<button on:click={
-		() => isCoachesModalOpened.update(() => true)
-	}>コーチ一覧</button>{#if $isCoachesModalOpened}<Modal title="コーチ一覧">
-		<table>
-			<tr>
-				<td>ここにコーチ一覧を置く予定</td>
-			</tr>
-		</table>
-	</Modal>{/if}
+	<button on:click={() => isFeesModalOpened.update(() => true)}>料金表</button
+	>{#if $isFeesModalOpened}<Modal title="料金表" minWidth={485}>
+			<table>
+				<tr>
+					<th colspan="2">個人で受ける場合</th>
+				</tr>
+				<tr>
+					<th>プラン</th>
+					<th>料金</th>
+				</tr>
+				<tr>
+					<td>通常プラン</td>
+					<td>3,000円 / 1時間</td>
+				</tr>
+				<tr>
+					<td>3回まとめてプラン</td>
+					<td>7,500円 / 3時間<span>(1時間あたり500円お得)</span></td>
+				</tr>
+				<tr>
+					<td>1ヶ月定額プラン</td>
+					<td>16,000円 / 1ヶ月<span>(1時間あたり1,000円お得)</span></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th colspan="2">チーム単位で受ける場合</th>
+				</tr>
+				<tr>
+					<th>プラン</th>
+					<th>料金</th>
+				</tr>
+				<tr>
+					<td>通常プラン</td>
+					<td>6,000円 / 1時間</td>
+				</tr>
+				<tr>
+					<td>3回まとめてプラン</td>
+					<td>15,000円 / 3時間<span>(1時間あたり1,000円お得)</span></td>
+				</tr>
+				<tr>
+					<td>1ヶ月定額プラン</td>
+					<td>32,000円 / 1ヶ月<span>(1時間あたり2,000円お得)</span></td>
+				</tr>
+			</table>
+		</Modal>{/if}<button on:click={() => isCoachesModalOpened.update(() => true)}>コーチ一覧</button
+	>{#if $isCoachesModalOpened}<Modal title="コーチ一覧">
+			<table>
+				<tr>
+					<td>ここにコーチ一覧を置く予定</td>
+				</tr>
+			</table>
+		</Modal>{/if}
 </div>
 <div>
 	<a href="/" target="_blank" rel="noopener noreferrer">応募フォームはこちら</a>
@@ -120,7 +118,8 @@
 		}
 	}
 
-	th, td {
+	th,
+	td {
 		padding: 5px 16px;
 	}
 

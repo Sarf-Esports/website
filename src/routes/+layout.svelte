@@ -4,7 +4,11 @@
 	import Footer from '$lib/components/Footer.svelte';
 
 	import { closeAllModals } from '$lib/scripts/util';
-	import { isContactModalOpened, isFeesModalOpened, isCoachesModalOpened } from '$lib/scripts/stores';
+	import {
+		isContactModalOpened,
+		isFeesModalOpened,
+		isCoachesModalOpened
+	} from '$lib/scripts/stores';
 	import { COPYRIGHT, SITE_URL } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
@@ -20,7 +24,9 @@
 		setVh001();
 		setMaxVh001();
 
-		document.addEventListener('keydown', (event) => { if (event.key == 'Escape') closeAllModals() });
+		document.addEventListener('keydown', (event) => {
+			if (event.key == 'Escape') closeAllModals();
+		});
 	}
 
 	/**
