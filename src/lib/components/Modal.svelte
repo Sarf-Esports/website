@@ -4,13 +4,17 @@
 	import { closeAllModals } from '$lib/scripts/util';
 
 	export let title: string | null = null;
-	// The minimum width of the modal (`px`)
+	/**
+	 * The minimum width of the modal. (`px`)
+	 *
+	 * But it will be `100vw - 29px` if it is bigger than `100vw - 29px`.
+	 */
 	export let minWidth: number = 358;
 </script>
 
 <div
 	class="modal"
-	style="min-width: {minWidth}px"
+	style="min-width: min({minWidth}px, 100vw - 29px);"
 	transition:fly|global={{ y: -64, duration: 240 }}
 >
 	{#if title !== null}
