@@ -2,6 +2,7 @@
 <script lang="ts">
 	import Modal from '$lib/components/Modal.svelte';
 	import Fees from './Fees.svelte';
+	import Coaches from './Coaches.svelte';
 
 	import { _ } from 'svelte-i18n';
 	import { isFeesModalOpened, isCoachesModalOpened } from '$lib/scripts/stores';
@@ -15,13 +16,7 @@
 	<button on:click={() => isFeesModalOpened.update(() => true)}>料金表</button
 	>{#if $isFeesModalOpened}<Modal title="料金表" minWidth={485}><Fees
 	/></Modal>{/if}<button on:click={() => isCoachesModalOpened.update(() => true)}>コーチ一覧</button
-	>{#if $isCoachesModalOpened}<Modal title="コーチ一覧">
-			<table>
-				<tr>
-					<td>ここにコーチ一覧を置く予定</td>
-				</tr>
-			</table>
-		</Modal>{/if}
+	>{#if $isCoachesModalOpened}<Modal title="コーチ一覧"><Coaches /></Modal>{/if}
 </div>
 <div>
 	<a href="/" target="_blank" rel="noopener noreferrer">応募フォームはこちら</a>
