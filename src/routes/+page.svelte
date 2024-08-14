@@ -7,7 +7,7 @@
 	import RevealFadeIn from '$lib/components/RevealFadeIn.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
 	import Teams from './Teams.svelte';
-	import Coaching from './Coaching.svelte';
+	import Coaching from '$lib/components/coaching/Coaching.svelte';
 	import Sponsors from './Sponsors.svelte';
 
 	import type { PageData } from './$types';
