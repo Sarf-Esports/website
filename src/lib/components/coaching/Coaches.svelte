@@ -10,8 +10,19 @@
 			<span>{affiliation} 所属</span>
 			<h2>{name}</h2>
 			{#if twitter !== null}
-				<a href="https://x.com/{twitter}" target="_blank" rel="noopener noreferrer" class="no-after-icn">
-					<img src="/images/logos/x_logo-white.png" alt="X" title="@{twitter}" loading="lazy" class="social-logo" />
+				<a
+					href="https://x.com/{twitter}"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="no-after-icn"
+				>
+					<img
+						src="/images/logos/x_logo-white.png"
+						alt="X"
+						title="@{twitter}"
+						loading="lazy"
+						class="social-logo"
+					/>
 				</a>
 			{/if}
 		</li>

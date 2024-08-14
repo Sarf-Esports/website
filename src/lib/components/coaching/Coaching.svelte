@@ -14,8 +14,8 @@
 
 <div>
 	<button on:click={() => isFeesModalOpened.update(() => true)}>料金表</button
-	>{#if $isFeesModalOpened}<Modal title="料金表" minWidth={485}><Fees
-	/></Modal>{/if}<button on:click={() => isCoachesModalOpened.update(() => true)}>コーチ一覧</button
+	>{#if $isFeesModalOpened}<Modal title="料金表" minWidth={485}><Fees /></Modal>{/if}<button
+		on:click={() => isCoachesModalOpened.update(() => true)}>コーチ一覧</button
 	>{#if $isCoachesModalOpened}<Modal title="コーチ一覧"><Coaches /></Modal>{/if}
 </div>
 <div>
