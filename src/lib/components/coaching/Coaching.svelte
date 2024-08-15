@@ -19,7 +19,7 @@
 	>{#if $isCoachesModalOpened}<Modal title="コーチ一覧"><Coaches /></Modal>{/if}
 </div>
 <div>
-	<a href="/" target="_blank" rel="noopener noreferrer">応募フォームはこちら</a>
+	<a href="https://docs.google.com/forms/d/1JYIZisa4b3QKSjmn9k6r94_D5xjhszNxu2xUPkywH38/prefill" target="_blank" rel="noopener noreferrer">応募フォームはこちら</a>
 </div>
 
 <style lang="scss">
