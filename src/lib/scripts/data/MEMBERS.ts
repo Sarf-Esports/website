@@ -155,7 +155,7 @@ export const MEMBER_LISTS: {
 				birthday: { year: 2005, month: 3, day: 22 },
 				age: null,
 				twitter: 'sorryimsolace',
-				youtube: null,
+				youtube: '@sorryimsolace',
 				twitch: 'sorryimsolace',
 				homepage: null
 			},
