@@ -265,18 +265,6 @@ export const MEMBER_LISTS: {
 				homepage: 'https://chzzk.naver.com/bc7110b6e2e16456e32cc6d5bb939a3b'
 			},
 			{
-				memberName: 'めぬろ',
-				icon: 'menuro.webp',
-				role: 'Streamer',
-				country: 'jp',
-				birthday: { year: 1999, month: 12, day: 30 },
-				age: null,
-				twitter: 'Menuro1230',
-				youtube: '@user-Menuro',
-				twitch: 'menuro',
-				homepage: null
-			},
-			{
 				memberName: 'れるにゃ',
 				icon: 'relle.webp',
 				role: 'MCBE Map Creator',
