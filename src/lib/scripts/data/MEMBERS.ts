@@ -155,7 +155,7 @@ export const MEMBER_LISTS: {
 				birthday: { year: 2005, month: 3, day: 22 },
 				age: null,
 				twitter: 'sorryimsolace',
-				youtube: null,
+				youtube: '@sorryimsolace',
 				twitch: 'sorryimsolace',
 				homepage: null
 			},
@@ -263,18 +263,6 @@ export const MEMBER_LISTS: {
 				youtube: 'UCm-Yd-aYSagMqVdMZSYiKLQ',
 				twitch: 'drowsy4150',
 				homepage: 'https://chzzk.naver.com/bc7110b6e2e16456e32cc6d5bb939a3b'
-			},
-			{
-				memberName: 'めぬろ',
-				icon: 'menuro.webp',
-				role: 'Streamer',
-				country: 'jp',
-				birthday: { year: 1999, month: 12, day: 30 },
-				age: null,
-				twitter: 'Menuro1230',
-				youtube: '@user-Menuro',
-				twitch: 'menuro',
-				homepage: null
 			},
 			{
 				memberName: 'れるにゃ',

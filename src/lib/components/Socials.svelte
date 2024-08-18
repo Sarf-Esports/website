@@ -25,6 +25,7 @@
 			target="_blank"
 			rel="noopener noreferrer"
 			title="X: @{SOCIALS.twitter}"
+			class="no-after-icn"
 		>
 			<img src="/images/logos/x_logo-white.png" alt="X" id="x-logo" />
 		</a>
@@ -35,6 +36,7 @@
 			target="_blank"
 			rel="noopener noreferrer"
 			title="YouTube: /{SOCIALS.youtube}"
+			class="no-after-icn"
 		>
 			<img src="/images/logos/yt_icon_mono_dark.png" alt="YouTube" />
 		</a>
@@ -45,6 +47,7 @@
 			target="_blank"
 			rel="noopener noreferrer"
 			title="GitHub: @{SOCIALS.github}"
+			class="no-after-icn"
 		>
 			<img src="/images/logos/github-mark-white.svg" alt="GitHub" />
 		</a>

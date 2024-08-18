@@ -4,7 +4,8 @@
 		"backToTop": "상단 페이지로 돌아 가기",
 		"articleThumbnailImg": "기사의 썸네일 이미지",
 		"nationalFlag": "국기",
-		"selfStyled": "자칭"
+		"selfStyled": "자칭",
+		"poster": "포스터"
 	},
 	"header.back": "톱 페이지로 돌아가기",
 	"top": {
@@ -23,6 +24,15 @@
 		"desc": "REVATI 의 최신 소식을 전해드립니다:",
 		"back": "뉴스 목록으로 돌아가기",
 		"wasRedirect": ["이 기사는 ", " 로 이동되었습니다."]
+	},
+	"coaching": {
+		"desc": [
+			"이 프로젝트는 Nyam Gaming & REVATI 의 Overwatch2 코칭 프로젝트입니다.",
+			"※현재, 수강료와 코치 목록은 일본어로만 제공됩니다. 결제는 일본 엔화(JPY)로만 가능합니다."
+		],
+		"fees": "수강료",
+		"coaches": "코치 목록",
+		"form": "참여 신청 양식은 여기"
 	},
 	"error.404": "찾고 계신 페이지를 찾을 수 없습니다."
 }
