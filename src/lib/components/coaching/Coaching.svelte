@@ -6,6 +6,11 @@
 
 	import { _ } from 'svelte-i18n';
 	import { isFeesModalOpened, isCoachesModalOpened } from '$lib/scripts/stores';
+
+	$: modalTitles = {
+		fees: $_('coaching.fees'),
+		coaches: $_('coaching.coaches')
+	};
 </script>
 
 <img src="/images/coaching-poster.webp" alt={$_('w.poster')} />
@@ -19,16 +24,16 @@
 </p>
 
 <div>
-	<button on:click={() => isFeesModalOpened.update(() => true)}>料金表</button
-	>{#if $isFeesModalOpened}<Modal title="料金表" minWidth={485} doesNotHaveBloom><Fees /></Modal
-		>{/if}<button on:click={() => isCoachesModalOpened.update(() => true)}>コーチ一覧</button
-	>{#if $isCoachesModalOpened}<Modal title="コーチ一覧" doesNotHaveBloom><Coaches /></Modal>{/if}
+	<button on:click={() => isFeesModalOpened.update(() => true)}>{modalTitles.fees}</button
+	>{#if $isFeesModalOpened}<Modal title={modalTitles.fees} minWidth={485} doesNotHaveBloom><Fees /></Modal
+		>{/if}<button on:click={() => isCoachesModalOpened.update(() => true)}>{modalTitles.coaches}</button
+	>{#if $isCoachesModalOpened}<Modal title={modalTitles.coaches} doesNotHaveBloom><Coaches /></Modal>{/if}
 </div>
 <div>
 	<a
 		href="https://docs.google.com/forms/d/1JYIZisa4b3QKSjmn9k6r94_D5xjhszNxu2xUPkywH38/prefill"
 		target="_blank"
-		rel="noopener noreferrer">応募フォームはこちら</a
+		rel="noopener noreferrer">{$_('coaching.form')}</a
 	>
 </div>
 
