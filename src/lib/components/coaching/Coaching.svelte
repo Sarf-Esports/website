@@ -23,15 +23,19 @@
 	{$_('coaching.desc.1')}
 </p>
 
-<div>
-	<button on:click={() => isFeesModalOpened.update(() => true)}>{modalTitles.fees}</button>
-	{#if $isFeesModalOpened}
-		<Modal title={modalTitles.fees} minWidth={485} doesNotHaveBloom><Fees /></Modal>
-	{/if}
-	<button on:click={() => isCoachesModalOpened.update(() => true)}>{modalTitles.coaches}</button>
-	{#if $isCoachesModalOpened}
-		<Modal title={modalTitles.coaches} doesNotHaveBloom><Coaches /></Modal>
-	{/if}
+<div class="buttons">
+	<div>
+		<button on:click={() => isFeesModalOpened.update(() => true)}>{modalTitles.fees}</button>
+		{#if $isFeesModalOpened}
+			<Modal title={modalTitles.fees} minWidth={485} doesNotHaveBloom><Fees /></Modal>
+		{/if}
+	</div>
+	<div>
+		<button on:click={() => isCoachesModalOpened.update(() => true)}>{modalTitles.coaches}</button>
+		{#if $isCoachesModalOpened}
+			<Modal title={modalTitles.coaches} doesNotHaveBloom><Coaches /></Modal>
+		{/if}
+	</div>
 </div>
 
 <div>
@@ -57,7 +61,7 @@
 		letter-spacing: -0.5px !important;
 	}
 
-	div {
+	.buttons {
 		display: flex;
 		justify-content: center;
 		gap: 120px;
