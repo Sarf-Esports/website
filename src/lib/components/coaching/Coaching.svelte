@@ -14,12 +14,16 @@
 
 <div>
 	<button on:click={() => isFeesModalOpened.update(() => true)}>料金表</button
-	>{#if $isFeesModalOpened}<Modal title="料金表" minWidth={485} doesNotHaveBloom><Fees /></Modal>{/if}<button
-		on:click={() => isCoachesModalOpened.update(() => true)}>コーチ一覧</button
+	>{#if $isFeesModalOpened}<Modal title="料金表" minWidth={485} doesNotHaveBloom><Fees /></Modal
+		>{/if}<button on:click={() => isCoachesModalOpened.update(() => true)}>コーチ一覧</button
 	>{#if $isCoachesModalOpened}<Modal title="コーチ一覧" doesNotHaveBloom><Coaches /></Modal>{/if}
 </div>
 <div>
-	<a href="https://docs.google.com/forms/d/1JYIZisa4b3QKSjmn9k6r94_D5xjhszNxu2xUPkywH38/prefill" target="_blank" rel="noopener noreferrer">応募フォームはこちら</a>
+	<a
+		href="https://docs.google.com/forms/d/1JYIZisa4b3QKSjmn9k6r94_D5xjhszNxu2xUPkywH38/prefill"
+		target="_blank"
+		rel="noopener noreferrer">応募フォームはこちら</a
+	>
 </div>
 
 <style lang="scss">
