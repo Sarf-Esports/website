@@ -24,11 +24,16 @@
 </p>
 
 <div>
-	<button on:click={() => isFeesModalOpened.update(() => true)}>{modalTitles.fees}</button
-	>{#if $isFeesModalOpened}<Modal title={modalTitles.fees} minWidth={485} doesNotHaveBloom><Fees /></Modal
-		>{/if}<button on:click={() => isCoachesModalOpened.update(() => true)}>{modalTitles.coaches}</button
-	>{#if $isCoachesModalOpened}<Modal title={modalTitles.coaches} doesNotHaveBloom><Coaches /></Modal>{/if}
+	<button on:click={() => isFeesModalOpened.update(() => true)}>{modalTitles.fees}</button>
+	{#if $isFeesModalOpened}
+		<Modal title={modalTitles.fees} minWidth={485} doesNotHaveBloom><Fees /></Modal>
+	{/if}
+	<button on:click={() => isCoachesModalOpened.update(() => true)}>{modalTitles.coaches}</button>
+	{#if $isCoachesModalOpened}
+		<Modal title={modalTitles.coaches} doesNotHaveBloom><Coaches /></Modal>
+	{/if}
 </div>
+
 <div>
 	<a
 		href="https://docs.google.com/forms/d/1JYIZisa4b3QKSjmn9k6r94_D5xjhszNxu2xUPkywH38/prefill"
