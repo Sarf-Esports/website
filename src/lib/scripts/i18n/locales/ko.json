@@ -4,7 +4,8 @@
 		"backToTop": "상단 페이지로 돌아 가기",
 		"articleThumbnailImg": "기사의 썸네일 이미지",
 		"nationalFlag": "국기",
-		"selfStyled": "자칭"
+		"selfStyled": "자칭",
+		"poster": "포스터"
 	},
 	"header.back": "톱 페이지로 돌아가기",
 	"top": {
@@ -25,7 +26,6 @@
 		"wasRedirect": ["이 기사는 ", " 로 이동되었습니다."]
 	},
 	"coaching": {
-		"poster": "포스터",
 		"desc": [
 			"이 프로젝트는 Nyam Gaming & REVATI 의 Overwatch2 코칭 프로젝트입니다.",
 			"※현재, 수강료와 코치 목록은 일본어로만 제공됩니다. 결제는 일본 엔화(JPY)로만 가능합니다."

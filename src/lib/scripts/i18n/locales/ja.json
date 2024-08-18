@@ -4,7 +4,8 @@
 		"backToTop": "トップページへ戻る",
 		"articleThumbnailImg": "記事のサムネイル画像",
 		"nationalFlag": "国旗",
-		"selfStyled": "自称"
+		"selfStyled": "自称",
+		"poster": "ポスター"
 	},
 	"header.back": "トップページへ戻る",
 	"top": {
@@ -25,7 +26,6 @@
 		"wasRedirect": ["こちらの記事は ", " に移動しました。"]
 	},
 	"coaching": {
-		"poster": "ポスター",
 		"desc": [
 			"Nyam Gaming × REVATI による Overwatch2 コーチングプロジェクトです。",
 			"※現時点におきましては、料金表およびコーチ一覧は日本語のみの対応となっており、料金も日本円でのお支払いのみとなっております。"

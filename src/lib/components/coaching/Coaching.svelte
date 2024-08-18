@@ -8,7 +8,7 @@
 	import { isFeesModalOpened, isCoachesModalOpened } from '$lib/scripts/stores';
 </script>
 
-<img src="/images/coaching-poster.webp" alt={$_('coaching.poster')} />
+<img src="/images/coaching-poster.webp" alt={$_('w.poster')} />
 
 <p class="desc">
 	{$_('coaching.desc.0')}

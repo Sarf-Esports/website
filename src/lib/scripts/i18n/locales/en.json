@@ -4,7 +4,8 @@
 		"backToTop": "Back to top page",
 		"articleThumbnailImg": "Article thumbnail image",
 		"nationalFlag": "National flag",
-		"selfStyled": "self-styled"
+		"selfStyled": "self-styled",
+		"poster": "Poster"
 	},
 	"header.back": "Back to top page",
 	"top": {
@@ -25,7 +26,6 @@
 		"wasRedirect": ["This article has been moved to ", "."]
 	},
 	"coaching": {
-		"poster": "Poster",
 		"desc": [
 			"This is an Overwatch 2 coaching project by Nyam Gaming & REVATI.",
 			"* Please note that, as of now, the fee schedules and coach list are available only in Japanese language. And payments are accepted in Japanese Yen (JPY) only."
