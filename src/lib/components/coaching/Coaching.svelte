@@ -10,7 +10,13 @@
 
 <img src="/images/coaching-poster.webp" alt={$_('coaching.poster')} />
 
-<p class="desc">説明ほへとちりぬるをわかよたれそつねならむ</p>
+<p class="desc">
+	{$_('coaching.desc.0')}
+</p>
+
+<p class="desc">
+	{$_('coaching.desc.1')}
+</p>
 
 <div>
 	<button on:click={() => isFeesModalOpened.update(() => true)}>料金表</button
@@ -36,7 +42,9 @@
 	}
 
 	.desc {
-		margin-top: 20px !important;
+		margin-top: 10px !important;
+		font-size: 17px !important;
+		letter-spacing: -0.5px !important;
 	}
 
 	div {
