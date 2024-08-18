@@ -10,10 +10,13 @@
 	 * But it will be `100vw - 29px` if it is bigger than `100vw - 29px`.
 	 */
 	export let minWidth: number = 358;
+	/** Whether the modal does not have a bloom effect. */
+	export let doesNotHaveBloom: boolean = false;
 </script>
 
 <div
 	class="modal"
+	class:no-bloom={doesNotHaveBloom}
 	style="min-width: min({minWidth}px, 100vw - 29px);"
 	transition:fly|global={{ y: -64, duration: 240 }}
 >
@@ -66,6 +69,10 @@
 
 		@include sp {
 			filter: drop-shadow(0 0 32px $bloom-color-large) drop-shadow(0 0 14px $bloom-color-small);
+		}
+
+		&.no-bloom {
+			filter: none;
 		}
 	}
 
