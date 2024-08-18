@@ -4,7 +4,8 @@
 		"backToTop": "Back to top page",
 		"articleThumbnailImg": "Article thumbnail image",
 		"nationalFlag": "National flag",
-		"selfStyled": "self-styled"
+		"selfStyled": "self-styled",
+		"poster": "Poster"
 	},
 	"header.back": "Back to top page",
 	"top": {
@@ -23,6 +24,15 @@
 		"desc": "Latest news from REVATI:",
 		"back": "Back to news list",
 		"wasRedirect": ["This article has been moved to ", "."]
+	},
+	"coaching": {
+		"desc": [
+			"This is an Overwatch 2 coaching project by Nyam Gaming & REVATI.",
+			"* Please note that, as of now, the fee schedules and coach list are available only in Japanese language. And payments are accepted in Japanese Yen (JPY) only."
+		],
+		"fees": "Fees",
+		"coaches": "Coaches",
+		"form": "Participation form here"
 	},
 	"error.404": "The page you are looking for could not be found."
 }

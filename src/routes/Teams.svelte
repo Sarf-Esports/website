@@ -84,7 +84,7 @@
 					<li>
 						<a
 							href="https://x.com/{twitter}"
-							class="member-twitter"
+							class="no-after-icn member-twitter"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -97,7 +97,7 @@
 					<li>
 						<a
 							href="https://youtube.com/{path}"
-							class="member-youtube"
+							class="no-after-icn member-youtube"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -115,7 +115,7 @@
 					<li>
 						<a
 							href="https://twitch.tv/{twitch}"
-							class="member-twitch"
+							class="no-after-icn member-twitch"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -127,7 +127,7 @@
 					<li>
 						<a
 							href={homepage}
-							class="member-homepage"
+							class="no-after-icn member-homepage"
 							target="_blank"
 							rel="noopener noreferrer"
 							title={homepage}

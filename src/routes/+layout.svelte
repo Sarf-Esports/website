@@ -3,6 +3,12 @@
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
+	import { closeAllModals } from '$lib/scripts/util';
+	import {
+		isContactModalOpened,
+		isFeesModalOpened,
+		isCoachesModalOpened
+	} from '$lib/scripts/stores';
 	import { COPYRIGHT, SITE_URL } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
@@ -17,6 +23,10 @@
 		});
 		setVh001();
 		setMaxVh001();
+
+		document.addEventListener('keydown', (event) => {
+			if (event.key == 'Escape') closeAllModals();
+		});
 	}
 
 	/**
@@ -37,6 +47,8 @@
 		maxVh1 = window.innerHeight;
 		document.documentElement.style.setProperty('--max-vh001', maxVh1 * 0.01 + 'px');
 	}
+
+	function empty() {} // eslint-disable-line @typescript-eslint/no-empty-function
 </script>
 
 <svelte:head>
@@ -76,6 +88,10 @@
 
 	<link rel="icon" href="/images/logos/revati/icon_180px_oxipng.png?v=3" />
 </svelte:head>
+
+{#if $isContactModalOpened || $isFeesModalOpened || $isCoachesModalOpened}
+	<div class="modal-bg" on:click={closeAllModals} on:keypress={empty} role="none" />
+{/if}
 
 <Header />
 

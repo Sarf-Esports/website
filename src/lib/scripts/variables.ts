@@ -1,7 +1,10 @@
 // © 2022 REVATI
 
+// If update `BREAKPOINT` JS constant, also update `$breakpoint` Sass variable in `src/lib/stylesheets/variables/_mixin.scss`.
+// ＊ `BREAKPOINT = $breakpoint - 1`
+// ＊ numerical value of `BREAKPOINT` = `$breakpoint` - 1
 /** Breakpoint for media queries. */
-export const BREAKPOINT = '(max-width: 741px)';
+export const BREAKPOINT = '(max-width: 907px)';
 
 /** Copyright notice. */
 export const COPYRIGHT = '© 2022 - 2024 REVATI';

@@ -6,7 +6,7 @@
 </script>
 
 <li>
-	<a href={url} target="_blank" rel="noopener noreferrer" title={name}>
+	<a href={url} target="_blank" rel="noopener noreferrer" title={name} class="no-after-icn">
 		<img src="images/logos/{logo}" alt={name} />
 	</a>
 </li>
