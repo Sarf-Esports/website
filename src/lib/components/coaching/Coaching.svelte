@@ -58,7 +58,7 @@
 
 <div>
 	<a
-		href="https://docs.google.com/forms/d/1JYIZisa4b3QKSjmn9k6r94_D5xjhszNxu2xUPkywH38/prefill"
+		href="https://forms.gle/3QAXzbQSeh9i6118A"
 		target="_blank"
 		rel="noopener noreferrer">{$_('coaching.form')}</a
 	>
