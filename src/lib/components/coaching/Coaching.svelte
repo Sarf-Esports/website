@@ -57,10 +57,8 @@
 </div>
 
 <div>
-	<a
-		href="https://forms.gle/3QAXzbQSeh9i6118A"
-		target="_blank"
-		rel="noopener noreferrer">{$_('coaching.form')}</a
+	<a href="https://forms.gle/3QAXzbQSeh9i6118A" target="_blank" rel="noopener noreferrer"
+		>{$_('coaching.form')}</a
 	>
 </div>
 
