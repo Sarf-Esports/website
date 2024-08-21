@@ -1,6 +1,11 @@
 // © 2022 REVATI
 
-import { isContactModalOpened, isFeesModalOpened, isCoachesModalOpened, gearAndSensModalState } from '$lib/scripts/stores';
+import {
+	isContactModalOpened,
+	isFeesModalOpened,
+	isCoachesModalOpened,
+	gearAndSensModalState
+} from '$lib/scripts/stores';
 
 /**
  * Adds a specified class to specified elements when they are scrolled into view.

@@ -145,16 +145,20 @@
 				{/if}
 				{#if gearAndSens !== undefined}
 					<li class="gear-and-sens">
-						<button on:click={() => {
-							gearAndSensModalState.update(() => {
-								return {
-									isOpened: true,
-									content: {
-										id: gearAndSens.id
-									}
-								};
-							})
-						}} class="gear-and-sens-btn" title={$_('teams.gearsAndGameSettingsOfThisPlayer')}>
+						<button
+							on:click={() => {
+								gearAndSensModalState.update(() => {
+									return {
+										isOpened: true,
+										content: {
+											id: gearAndSens.id
+										}
+									};
+								});
+							}}
+							class="gear-and-sens-btn"
+							title={$_('teams.gearsAndGameSettingsOfThisPlayer')}
+						>
 							<MaterialIcon kind="stadia-controller" width="28px" />
 						</button>
 					</li>
