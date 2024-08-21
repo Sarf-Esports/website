@@ -5,7 +5,8 @@
 	 * `box-arrow-up-right`,
 	 * `link-45deg`,
 	 * `envelope-fill`,
-	 * `lock-fill_inline`
+	 * `lock-fill_inline`,
+	 * `stadia-controller`
 	 * */
 	export let kind: string;
 
@@ -17,6 +18,8 @@
 	/** Inline styles. */
 	export let style = '';
 	style = `width: ${width}; height: ${height}; ${style}`;
+
+	const GOOGLE_MATERIAL_DESIGN_ICONS_PATH = '/images/google-material-design-icons/';
 </script>
 
 {#if kind == 'box-arrow-up-right'}
@@ -114,8 +117,15 @@
 	</svg>
 {:else if kind == 'lock-fill_inline'}
 	<img
-		src="/images/google-material-design-icons/lock_24dp_FILL1_wght400_GRAD0_opsz24.svg"
+		src="{GOOGLE_MATERIAL_DESIGN_ICONS_PATH}lock_24dp_FILL1_wght400_GRAD0_opsz24.svg"
 		alt="Private"
+		loading="lazy"
+		{style}
+	/>
+{:else if kind == 'stadia-controller'}
+	<img
+		src="{GOOGLE_MATERIAL_DESIGN_ICONS_PATH}stadia_controller_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+		alt="Stadia Controller"
 		loading="lazy"
 		{style}
 	/>

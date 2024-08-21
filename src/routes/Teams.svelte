@@ -27,6 +27,7 @@
 	{#each MEMBER_LISTS as { divisionName }, i}
 		<li class="division">
 			<button
+				class="div-btn"
 				class:active={i == currentDivisionIndex}
 				on:click={() => {
 					currentDivisionIndex = i;
@@ -42,7 +43,7 @@
 {/if}
 
 <ul class="members">
-	{#each currentDivisionMembers as { memberName, icon, role, country, birthday, age, twitter, youtube, twitch, homepage }}
+	{#each currentDivisionMembers as { memberName, icon, role, country, birthday, age, twitter, youtube, twitch, homepage, gearAndSens }}
 		<li class="member">
 			<img src="/images/members/{icon ?? 'noimage.webp'}" alt="" loading="lazy" class="icon" />
 			<div class="info">
@@ -138,6 +139,16 @@
 								style="color: #eeeeee; margin-top: 11px;"
 							/>
 						</a>
+					</li>
+				{/if}
+				{#if gearAndSens !== undefined}
+					<li class="gear-and-sens">
+						<button class="gear-and-sens-btn">
+							<MaterialIcon
+								kind="stadia-controller"
+								width="28px"
+							/>
+						</button>
 					</li>
 				{/if}
 			</ul>

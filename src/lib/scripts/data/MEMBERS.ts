@@ -82,6 +82,9 @@ export const MEMBER_LISTS: {
 		youtube: string | null;
 		twitch: string | null;
 		homepage: string | null;
+		gearAndSens?: {
+			id: string;
+		};
 	}[];
 }[] = [
 	{
@@ -97,7 +100,10 @@ export const MEMBER_LISTS: {
 				twitter: 'ep11111123',
 				youtube: null,
 				twitch: 'ep1c_ow',
-				homepage: null
+				homepage: null,
+				gearAndSens: {
+					id: 'TEST'
+				}
 			},
 			{
 				memberName: 'Fearful',
