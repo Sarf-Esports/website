@@ -1,11 +1,13 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
+	import Modal from '$lib/components/Modal.svelte';
 
 	import { MEMBER_LISTS } from '$lib/scripts/data/MEMBERS';
 	import { replaceState } from '$app/navigation';
 	import { calcAge, zeroPad } from '$lib/scripts/util';
 	import { date, _ } from 'svelte-i18n';
+	import { gearAndSensModalState } from '$lib/scripts/stores';
 
 	export let division: string | null;
 
@@ -143,7 +145,16 @@
 				{/if}
 				{#if gearAndSens !== undefined}
 					<li class="gear-and-sens">
-						<button class="gear-and-sens-btn" title={$_('teams.gearsAndGameSettingsOfThisPlayer')}>
+						<button on:click={() => {
+							gearAndSensModalState.update(() => {
+								return {
+									isOpened: true,
+									content: {
+										id: gearAndSens.id
+									}
+								};
+							})
+						}} class="gear-and-sens-btn" title={$_('teams.gearsAndGameSettingsOfThisPlayer')}>
 							<MaterialIcon kind="stadia-controller" width="28px" />
 						</button>
 					</li>
@@ -152,6 +163,12 @@
 		</li>
 	{/each}
 </ul>
+
+{#if $gearAndSensModalState.isOpened && $gearAndSensModalState.content !== null}
+	<Modal>
+		{$gearAndSensModalState.content.id}
+	</Modal>
+{/if}
 
 <style lang="scss">
 	@use '$lib/stylesheets/teams';

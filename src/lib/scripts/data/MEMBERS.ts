@@ -102,7 +102,7 @@ export const MEMBER_LISTS: {
 				twitch: 'ep1c_ow',
 				homepage: null,
 				gearAndSens: {
-					id: 'TEST'
+					id: 'TEST_epic'
 				}
 			},
 			{
@@ -115,7 +115,10 @@ export const MEMBER_LISTS: {
 				twitter: 'fearful0405',
 				youtube: null,
 				twitch: null,
-				homepage: null
+				homepage: null,
+				gearAndSens: {
+					id: 'TEST_fearful'
+				}
 			},
 			{
 				memberName: 'harutoon',
