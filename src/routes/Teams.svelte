@@ -151,7 +151,8 @@
 									return {
 										isOpened: true,
 										content: {
-											id: gearAndSens.id
+											playerName: memberName,
+											gearsAndSettings: gearAndSens
 										}
 									};
 								});
@@ -170,7 +171,7 @@
 
 {#if $gearAndSensModalState.isOpened && $gearAndSensModalState.content !== null}
 	<Modal>
-		{$gearAndSensModalState.content.id}
+		<h2>{$gearAndSensModalState.content.playerName} の使用デバイスとゲーム設定</h2>
 	</Modal>
 {/if}
 

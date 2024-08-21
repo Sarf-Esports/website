@@ -69,6 +69,8 @@
 // - 推奨画像サイズ: 256x256
 // - 推奨画像比率: 1:1 (正方形以外は押し込まれて表示される)
 
+import type { GearsAndSettings } from '$lib/scripts/types';
+
 export const MEMBER_LISTS: {
 	divisionName: string;
 	members: {
@@ -82,9 +84,7 @@ export const MEMBER_LISTS: {
 		youtube: string | null;
 		twitch: string | null;
 		homepage: string | null;
-		gearAndSens?: {
-			id: string;
-		};
+		gearAndSens?: GearsAndSettings;
 	}[];
 }[] = [
 	{
@@ -102,7 +102,32 @@ export const MEMBER_LISTS: {
 				twitch: 'ep1c_ow',
 				homepage: null,
 				gearAndSens: {
-					id: 'TEST_epic'
+					imageId: 'epic',
+					dpi: 800,
+					sens: 4.5,
+					mouse: 'Logicool G PRO X Superlight',
+					mousepad: 'Padsmith Crucible - Temple of Dreams V2',
+					keyboard: 'Logicool G PRO',
+					crosshair: {
+						type: 'default',
+						showsAccuracy: true,
+						color: 0x00fefe,
+						thickness: 1.0,
+						centerGap: 0.0,
+						opacity: 0,
+						outline: {
+							color: 0x000000,
+							opacity: 0,
+							thickness: 0.0,
+							shift: 0.0
+						},
+						dot: {
+							type: 'default',
+							size: 5.0,
+							opacity: 100
+						},
+						scaleWithResolution: true
+					}
 				}
 			},
 			{
@@ -115,10 +140,7 @@ export const MEMBER_LISTS: {
 				twitter: 'fearful0405',
 				youtube: null,
 				twitch: null,
-				homepage: null,
-				gearAndSens: {
-					id: 'TEST_fearful'
-				}
+				homepage: null
 			},
 			{
 				memberName: 'harutoon',

@@ -1,6 +1,7 @@
 // © 2022 REVATI
 
 import { writable, type Writable } from 'svelte/store';
+import type { GearsAndSettings } from './types';
 import { browser } from '$app/environment';
 import { toggleScrollPrevention } from '$lib/scripts/util';
 
@@ -12,7 +13,10 @@ export const isCoachesModalOpened = writable(false);
 isCoachesModalOpened.subscribe(updateScrollPrevention);
 export const gearAndSensModalState: Writable<{
 	isOpened: boolean;
-	content: { id: string } | null;
+	content: {
+		playerName: string;
+		gearsAndSettings: GearsAndSettings;
+	} | null;
 }> = writable({ isOpened: false, content: null });
 gearAndSensModalState.subscribe(({ isOpened }) => updateScrollPrevention(isOpened));
 
