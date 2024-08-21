@@ -144,10 +144,7 @@
 				{#if gearAndSens !== undefined}
 					<li class="gear-and-sens">
 						<button class="gear-and-sens-btn">
-							<MaterialIcon
-								kind="stadia-controller"
-								width="28px"
-							/>
+							<MaterialIcon kind="stadia-controller" width="28px" />
 						</button>
 					</li>
 				{/if}
