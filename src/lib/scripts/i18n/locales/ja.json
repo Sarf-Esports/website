@@ -25,6 +25,9 @@
 		"back": "ニュース一覧へ戻る",
 		"wasRedirect": ["こちらの記事は ", " に移動しました。"]
 	},
+	"teams": {
+		"gearsAndGameSettingsOfThisPlayer": "この選手の使用デバイスとゲーム設定"
+	},
 	"coaching": {
 		"desc": [
 			"Nyam Gaming × REVATI による Overwatch2 コーチングプロジェクトです。",

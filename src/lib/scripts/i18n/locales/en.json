@@ -25,6 +25,9 @@
 		"back": "Back to news list",
 		"wasRedirect": ["This article has been moved to ", "."]
 	},
+	"teams": {
+		"gearsAndGameSettingsOfThisPlayer": "This player's gears and game settings"
+	},
 	"coaching": {
 		"desc": [
 			"This is an Overwatch 2 coaching project by Nyam Gaming & REVATI.",

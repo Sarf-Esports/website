@@ -25,6 +25,9 @@
 		"back": "뉴스 목록으로 돌아가기",
 		"wasRedirect": ["이 기사는 ", " 로 이동되었습니다."]
 	},
+	"teams": {
+		"gearsAndGameSettingsOfThisPlayer": "이 선수의 사용 장치 및 게임 설정"
+	},
 	"coaching": {
 		"desc": [
 			"이 프로젝트는 Nyam Gaming & REVATI 의 Overwatch2 코칭 프로젝트입니다.",

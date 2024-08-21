@@ -143,7 +143,7 @@
 				{/if}
 				{#if gearAndSens !== undefined}
 					<li class="gear-and-sens">
-						<button class="gear-and-sens-btn">
+						<button class="gear-and-sens-btn" title={$_('teams.gearsAndGameSettingsOfThisPlayer')}>
 							<MaterialIcon kind="stadia-controller" width="28px" />
 						</button>
 					</li>
