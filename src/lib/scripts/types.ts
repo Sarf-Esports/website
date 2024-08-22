@@ -22,12 +22,12 @@ export interface GearsAndSettings {
 	crosshair: {
 		type: string;
 		showsAccuracy: boolean;
-		color: number;
+		color: string;
 		thickness: number;
 		centerGap: number;
 		opacity: number;
 		outline: {
-			color: number;
+			color: string;
 			opacity: number;
 			thickness: number;
 			shift: number;

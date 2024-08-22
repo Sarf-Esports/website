@@ -111,12 +111,12 @@ export const MEMBER_LISTS: {
 					crosshair: {
 						type: 'default',
 						showsAccuracy: true,
-						color: 0x00fefe,
+						color: 'cyan',
 						thickness: 1.0,
 						centerGap: 0.0,
 						opacity: 0,
 						outline: {
-							color: 0x000000,
+							color: 'black',
 							opacity: 0,
 							thickness: 0.0,
 							shift: 0.0
