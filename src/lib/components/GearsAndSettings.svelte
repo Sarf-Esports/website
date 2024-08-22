@@ -32,7 +32,7 @@
 	}
 </script>
 
-<img src="/images/gears-and-settings--poster/{gearsAndSettings.imageId}.png" alt="ぽすたー" />
+<!-- <img src="/images/gears-and-settings--poster/{gearsAndSettings.imageId}.png" alt="ぽすたー" /> -->
 
 <h2>{playerName}{$_('teams.sGearsAndGameSettings')}</h2>
 
@@ -149,15 +149,16 @@
 </table>
 
 <style lang="scss">
-	img {
-		width: 640px;
-		margin-top: 46px;
-		border: 1px solid #888888;
-		border-radius: 8px;
-	}
+	// img {
+	// 	width: 640px;
+	// 	margin-top: 46px;
+	// 	border: 1px solid #888888;
+	// 	border-radius: 8px;
+	// }
 
 	h2 {
 		font-size: 24px;
+		margin-top: 38px;
 	}
 
 	table {
