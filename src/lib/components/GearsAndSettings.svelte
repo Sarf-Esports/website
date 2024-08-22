@@ -64,7 +64,7 @@
 	</tr>
 	<tr>
 		<td>{$_('w.sens')}</td>
-		<td>{gearsAndSettings.sens.toFixed(1)}</td>
+		<td>{gearsAndSettings.sens.toFixed(2)}</td>
 	</tr>
 </table>
 
