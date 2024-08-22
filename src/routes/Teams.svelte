@@ -147,17 +147,23 @@
 				{#if gearAndSens !== undefined}
 					<li class="gear-and-sens">
 						<button
-							on:click={() => {
+							on:click={() =>
 								gearAndSensModalState.update(() => {
 									return {
 										isOpened: true,
-										content: {
-											playerName: memberName,
-											gearsAndSettings: gearAndSens
-										}
+										content:
+											// The `gearAndSens` variable is already guaranteed to be not `undefined` by the `#if` block,
+											// but we exclude `undefined` again with a ternary operator to avoid ESLint errors.
+											// The `content` field will never be assigned `null` here,
+											// because the button is not rendered if the `gearAndSens` variable is `undefined`.
+											gearAndSens !== undefined
+												? {
+														playerName: memberName,
+														gearsAndSettings: gearAndSens
+													}
+												: null
 									};
-								});
-							}}
+								})}
 							class="gear-and-sens-btn"
 							title={$_('teams.gearsAndGameSettingsOfThisPlayer')}
 						>
