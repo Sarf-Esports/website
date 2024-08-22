@@ -21,11 +21,11 @@ export interface GearsAndSettings {
 	keyboard: string;
 	crosshair: {
 		type: string;
-		showsAccuracy: boolean;
+		showsAccuracy: boolean | null;
 		color: string;
-		thickness: number;
-		centerGap: number;
-		opacity: number;
+		thickness: number | null;
+		centerGap: number | null;
+		opacity: number | null;
 		outline: {
 			color: string;
 			opacity: number;

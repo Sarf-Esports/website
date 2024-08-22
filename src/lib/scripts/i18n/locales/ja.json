@@ -71,7 +71,9 @@
 				"size": "ドットサイズ",
 				"opacity": "ドット透明度"
 			},
-			"scaleWithResolution": "解像度スケール"
+			"scaleWithResolution": "解像度スケール",
+			"scaleWithResolution.on": "ON",
+			"scaleWithResolution.off": "OFF"
 		}
 	},
 	"coaching": {

@@ -76,10 +76,12 @@
 		<td>{$_(T9N_KEY_PREFIX + 'type')}</td>
 		<td>{$_(`${T9N_KEY_PREFIX}type.${crosshair.type}`)}</td>
 	</tr>
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX + 'showsAccuracy')}</td>
-		<td>{convertBoolToOnOff(crosshair.showsAccuracy)}</td>
-	</tr>
+	{#if crosshair.showsAccuracy !== null}
+		<tr>
+			<td>{$_(T9N_KEY_PREFIX + 'showsAccuracy')}</td>
+			<td>{convertBoolToOnOff(crosshair.showsAccuracy)}</td>
+		</tr>
+	{/if}
 	<tr>
 		<td>{$_(T9N_KEY_PREFIX + 'color')}</td>
 		<td
@@ -93,18 +95,24 @@
 			{$_(`${T9N_KEY_PREFIX}color.${crosshairColName}`)}
 		</td>
 	</tr>
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX + 'thickness')}</td>
-		<td>{crosshair.thickness.toFixed(1)}</td>
-	</tr>
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX + 'centerGap')}</td>
-		<td>{crosshair.centerGap.toFixed(1)}</td>
-	</tr>
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX + 'opacity')}</td>
-		<td>{crosshair.opacity + '%'}</td>
-	</tr>
+	{#if crosshair.thickness !== null}
+		<tr>
+			<td>{$_(T9N_KEY_PREFIX + 'thickness')}</td>
+			<td>{crosshair.thickness.toFixed(1)}</td>
+		</tr>
+	{/if}
+	{#if crosshair.centerGap !== null}
+		<tr>
+			<td>{$_(T9N_KEY_PREFIX + 'centerGap')}</td>
+			<td>{crosshair.centerGap.toFixed(1)}</td>
+		</tr>
+	{/if}
+	{#if crosshair.opacity !== null}
+		<tr>
+			<td>{$_(T9N_KEY_PREFIX + 'opacity')}</td>
+			<td>{crosshair.opacity + '%'}</td>
+		</tr>
+	{/if}
 	<tr>
 		<td>{$_(T9N_KEY_PREFIX_OUTLINE + 'color')}</td>
 		<td

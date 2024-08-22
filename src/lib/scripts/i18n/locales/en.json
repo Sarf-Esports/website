@@ -71,7 +71,9 @@
 				"size": "Dot Size",
 				"opacity": "Dot Opacity"
 			},
-			"scaleWithResolution": "Scale with Resolution"
+			"scaleWithResolution": "Scale with Resolution",
+			"scaleWithResolution.on": "ON",
+			"scaleWithResolution.off": "OFF"
 		}
 	},
 	"coaching": {

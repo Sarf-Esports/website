@@ -140,7 +140,35 @@ export const MEMBER_LISTS: {
 				twitter: 'fearful0405',
 				youtube: null,
 				twitch: null,
-				homepage: null
+				homepage: null,
+				gearAndSens: {
+					imageId: 'fearful',
+					dpi: 800,
+					sens: 7.00,
+					mouse: 'Logicool G PRO X Superlight',
+					mousepad: 'VAXEE B22',
+					keyboard: 'VARMILO VA87M V2 SEA MELODY PBT',
+					crosshair: {
+						type: 'dot',
+						showsAccuracy: null,
+						color: 'cyan',
+						thickness: null,
+						centerGap: null,
+						opacity: null,
+						outline: {
+							color: 'black',
+							opacity: 100,
+							thickness: 1.0,
+							shift: 0.0
+						},
+						dot: {
+							type: 'default',
+							size: 7.0,
+							opacity: 100
+						},
+						scaleWithResolution: true
+					}
+				}
 			},
 			{
 				memberName: 'harutoon',

@@ -55,10 +55,10 @@
 			"centerGap": "",
 			"opacity": "",
 			"outline": {
-				"color": "",
-				"opacity": "",
-				"thickness": "",
-				"shift": ""
+				"color": "윤곽선 색상",
+				"opacity": "윤곽선 불투명도",
+				"thickness": "윤곽선 굵기",
+				"shift": "윤곽선 변화"
 			},
 			"dot": {
 				"type": "점 유형",
@@ -68,10 +68,12 @@
 				"type.triangle": "",
 				"type.cross": "",
 				"type.heart": "",
-				"size": "",
-				"opacity": ""
+				"size": "점 크기",
+				"opacity": "점 불투명도"
 			},
-			"scaleWithResolution": ""
+			"scaleWithResolution": "해상도에 비례",
+			"scaleWithResolution.on": "활성화",
+			"scaleWithResolution.off": ""
 		}
 	},
 	"coaching": {
