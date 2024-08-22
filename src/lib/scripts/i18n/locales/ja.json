@@ -5,7 +5,14 @@
 		"articleThumbnailImg": "記事のサムネイル画像",
 		"nationalFlag": "国旗",
 		"selfStyled": "自称",
-		"poster": "ポスター"
+		"poster": "ポスター",
+		"gears": "デバイス",
+		"gameSettings": "ゲーム設定",
+		"crosshairSettings": "クロスヘア設定",
+		"sens": "感度",
+		"mouse": "マウス",
+		"mousepad": "マウスパッド",
+		"keyboard": "キーボード"
 	},
 	"header.back": "トップページへ戻る",
 	"top": {
@@ -26,7 +33,46 @@
 		"wasRedirect": ["こちらの記事は ", " に移動しました。"]
 	},
 	"teams": {
-		"gearsAndGameSettingsOfThisPlayer": "この選手の使用デバイスとゲーム設定"
+		"gearsAndGameSettingsOfThisPlayer": "この選手の使用デバイスとゲーム設定",
+		"sGearsAndGameSettings": " の使用デバイス&ゲーム設定",
+		"gearsAndSettingsItem": {
+			"type": "タイプ",
+			"type.default": "デフォルト",
+			"type.circle": "サークル",
+			"type.crosshairs": "照準",
+			"type.circleAndCrosshairs": "サークルと照準",
+			"type.dot": "ドット",
+			"type.line": "ライン",
+			"type.box": "ボックス",
+			"type.falloff": "減衰",
+			"type.triwing": "トライウィング",
+			"type.square": "四角",
+			"showsAccuracy": "精度を表示",
+			"color": "色",
+			"color.black": "ブラック",
+			"color.cyan": "シアン",
+			"thickness": "濃さ",
+			"centerGap": "中心ギャップ",
+			"opacity": "透明度",
+			"outline": {
+				"color": "アウトラインの色",
+				"opacity": "アウトラインの透明度",
+				"thickness": "アウトラインの太さ",
+				"shift": "アウトラインのシフト"
+			},
+			"dot": {
+				"type": "ドットタイプ",
+				"type.default": "デフォルト",
+				"type.ring": "リング",
+				"type.square": "四角",
+				"type.triangle": "トライアングル",
+				"type.cross": "クロス",
+				"type.heart": "ハート",
+				"size": "ドットサイズ",
+				"opacity": "ドット透明度"
+			},
+			"scaleWithResolution": "解像度スケール"
+		}
 	},
 	"coaching": {
 		"desc": [

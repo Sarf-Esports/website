@@ -2,6 +2,7 @@
 <script lang="ts">
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 	import Modal from '$lib/components/Modal.svelte';
+	import GearsAndSettings from '$lib/components/GearsAndSettings.svelte';
 
 	import { MEMBER_LISTS } from '$lib/scripts/data/MEMBERS';
 	import { replaceState } from '$app/navigation';
@@ -170,9 +171,7 @@
 </ul>
 
 {#if $gearAndSensModalState.isOpened && $gearAndSensModalState.content !== null}
-	<Modal>
-		<h2>{$gearAndSensModalState.content.playerName} の使用デバイスとゲーム設定</h2>
-	</Modal>
+	<Modal><GearsAndSettings {...$gearAndSensModalState.content} /></Modal>
 {/if}
 
 <style lang="scss">

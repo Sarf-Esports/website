@@ -5,7 +5,14 @@
 		"articleThumbnailImg": "기사의 썸네일 이미지",
 		"nationalFlag": "국기",
 		"selfStyled": "자칭",
-		"poster": "포스터"
+		"poster": "포스터",
+		"gears": "장치",
+		"gameSettings": "게임 설정",
+		"crosshairSettings": "크로스 헤어 설정",
+		"sens": "감도",
+		"mouse": "마우스",
+		"mousepad": "마우스 패드",
+		"keyboard": "키보드"
 	},
 	"header.back": "톱 페이지로 돌아가기",
 	"top": {
@@ -26,7 +33,46 @@
 		"wasRedirect": ["이 기사는 ", " 로 이동되었습니다."]
 	},
 	"teams": {
-		"gearsAndGameSettingsOfThisPlayer": "이 선수의 사용 장치 및 게임 설정"
+		"gearsAndGameSettingsOfThisPlayer": "이 선수의 사용 장치 및 게임 설정",
+		"sGearsAndGameSettings": " 의 사용 장치 및 게임 설정",
+		"gearsAndSettingsItem": {
+			"type": "종류",
+			"type.default": "",
+			"type.circle": "원",
+			"type.crosshairs": "",
+			"type.circleAndCrosshairs": "",
+			"type.dot": "점",
+			"type.line": "",
+			"type.box": "",
+			"type.falloff": "",
+			"type.triwing": "",
+			"type.square": "",
+			"showsAccuracy": "",
+			"color": "색상",
+			"color.black": "",
+			"color.cyan": "",
+			"thickness": "",
+			"centerGap": "",
+			"opacity": "",
+			"outline": {
+				"color": "",
+				"opacity": "",
+				"thickness": "",
+				"shift": ""
+			},
+			"dot": {
+				"type": "점 유형",
+				"type.default": "기본",
+				"type.ring": "",
+				"type.square": "",
+				"type.triangle": "",
+				"type.cross": "",
+				"type.heart": "",
+				"size": "",
+				"opacity": ""
+			},
+			"scaleWithResolution": ""
+		}
 	},
 	"coaching": {
 		"desc": [
