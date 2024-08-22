@@ -1,7 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import type { GearsAndSettings } from "$lib/scripts/types";
-	import { _ } from "svelte-i18n";
+	import type { GearsAndSettings } from '$lib/scripts/types';
+	import { _ } from 'svelte-i18n';
 
 	export let playerName: string;
 	export let gearsAndSettings: GearsAndSettings;
@@ -12,18 +12,18 @@
 	const outlineColName = outline.color;
 	const dot = crosshair.dot;
 
-	const T9N_KEY_PREFIX = "teams.gearsAndSettingsItem.";
-	const T9N_KEY_PREFIX_OUTLINE = T9N_KEY_PREFIX + "outline.";
-	const T9N_KEY_PREFIX_DOT = T9N_KEY_PREFIX + "dot.";
+	const T9N_KEY_PREFIX = 'teams.gearsAndSettingsItem.';
+	const T9N_KEY_PREFIX_OUTLINE = T9N_KEY_PREFIX + 'outline.';
+	const T9N_KEY_PREFIX_DOT = T9N_KEY_PREFIX + 'dot.';
 
 	function convertColNameToHexCol(colName: string): string {
 		switch (colName) {
-			case "black":
-				return "#000000";
-			case "cyan":
-				return "#00fefe";
+			case 'black':
+				return '#000000';
+			case 'cyan':
+				return '#00fefe';
 			default:
-				return "#00000000";
+				return '#00000000';
 		}
 	}
 
