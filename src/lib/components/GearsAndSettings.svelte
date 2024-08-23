@@ -90,8 +90,10 @@
 	<table>
 		<tr>
 			<th colSpan="2">
-				{$_('w.crosshairSettings')} {1 < crosshairs.length ? i + 1 : ''}
-		</tr>
+				{$_('w.crosshairSettings')}
+				{1 < crosshairs.length ? i + 1 : ''}
+			</th></tr
+		>
 		<tr>
 			<td>{$_(T9N_KEY_PREFIX + 'type')}</td>
 			<td>{$_(`${T9N_KEY_PREFIX}type.${crosshair.type}`)}</td>

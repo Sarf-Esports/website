@@ -108,28 +108,30 @@ export const MEMBER_LISTS: {
 					mouse: 'Logicool G PRO X Superlight',
 					mousepad: 'Padsmith Crucible - Temple of Dreams V2',
 					keyboard: 'Logicool G PRO',
-					crosshairSettings: [{
-						type: 'default',
-						showsAccuracy: true,
-						color: 'cyan',
-						thickness: 1.0,
-						rotation: null,
-						crosshairLength: null,
-						centerGap: 0.0,
-						opacity: 0,
-						outline: {
-							color: 'black',
-							opacity: 0,
-							thickness: 0.0,
-							shift: 0.0
-						},
-						dot: {
+					crosshairSettings: [
+						{
 							type: 'default',
-							size: 5.0,
-							opacity: 100
-						},
-						scaleWithResolution: true
-					}]
+							showsAccuracy: true,
+							color: 'cyan',
+							thickness: 1.0,
+							rotation: null,
+							crosshairLength: null,
+							centerGap: 0.0,
+							opacity: 0,
+							outline: {
+								color: 'black',
+								opacity: 0,
+								thickness: 0.0,
+								shift: 0.0
+							},
+							dot: {
+								type: 'default',
+								size: 5.0,
+								opacity: 100
+							},
+							scaleWithResolution: true
+						}
+					]
 				}
 			},
 			{
@@ -146,32 +148,34 @@ export const MEMBER_LISTS: {
 				gearAndSens: {
 					imageId: 'fearful',
 					dpi: 800,
-					sens: 7.00,
+					sens: 7.0,
 					mouse: 'Logicool G PRO X Superlight',
 					mousepad: 'VAXEE B22',
 					keyboard: 'VARMILO VA87M V2 SEA MELODY PBT',
-					crosshairSettings: [{
-						type: 'dot',
-						showsAccuracy: null,
-						color: 'cyan',
-						thickness: null,
-						rotation: null,
-						crosshairLength: null,
-						centerGap: null,
-						opacity: null,
-						outline: {
-							color: 'black',
-							opacity: 100,
-							thickness: 1.0,
-							shift: 0.0
-						},
-						dot: {
-							type: 'default',
-							size: 7.0,
-							opacity: 100
-						},
-						scaleWithResolution: true
-					}]
+					crosshairSettings: [
+						{
+							type: 'dot',
+							showsAccuracy: null,
+							color: 'cyan',
+							thickness: null,
+							rotation: null,
+							crosshairLength: null,
+							centerGap: null,
+							opacity: null,
+							outline: {
+								color: 'black',
+								opacity: 100,
+								thickness: 1.0,
+								shift: 0.0
+							},
+							dot: {
+								type: 'default',
+								size: 7.0,
+								opacity: 100
+							},
+							scaleWithResolution: true
+						}
+					]
 				}
 			},
 			{
@@ -192,28 +196,30 @@ export const MEMBER_LISTS: {
 					mouse: 'Logicool G PRO X SUPERLIGHT WHITE',
 					mousepad: 'Padsmith Temple of Dreams - Remastered',
 					keyboard: 'DrunkDeer A75',
-					crosshairSettings: [{
-						type: 'crosshairs',
-						showsAccuracy: false,
-						color: 'cyan',
-						thickness: 1.0,
-						rotation: 0,
-						crosshairLength: 8.0,
-						centerGap: 0.0,
-						opacity: 100,
-						outline: {
-							color: 'black',
-							opacity: 0,
-							thickness: 0.0,
-							shift: 0.0
-						},
-						dot: {
-							type: 'default',
-							size: 0.0,
-							opacity: 0
-						},
-						scaleWithResolution: true
-					}]
+					crosshairSettings: [
+						{
+							type: 'crosshairs',
+							showsAccuracy: false,
+							color: 'cyan',
+							thickness: 1.0,
+							rotation: 0,
+							crosshairLength: 8.0,
+							centerGap: 0.0,
+							opacity: 100,
+							outline: {
+								color: 'black',
+								opacity: 0,
+								thickness: 0.0,
+								shift: 0.0
+							},
+							dot: {
+								type: 'default',
+								size: 0.0,
+								opacity: 0
+							},
+							scaleWithResolution: true
+						}
+					]
 				}
 			},
 			{
@@ -233,33 +239,35 @@ export const MEMBER_LISTS: {
 					sens: [
 						{ role: 'tank', value: 10.0 },
 						{ role: 'damage', value: 5.22 },
-						{ role: 'support', value: 7.00 }
+						{ role: 'support', value: 7.0 }
 					],
 					mouse: 'Finalmouse Ultralight 2 - CAPE TOWN',
 					mousepad: 'Padsmith Crucible - Temple of Dreams V2',
 					keyboard: 'Varmilo 92 Sakura 桜 JIS Keyboard V2',
-					crosshairSettings: [{
-						type: 'line',
-						showsAccuracy: false,
-						color: 'red',
-						thickness: 1.0,
-						rotation: 0,
-						crosshairLength: 4.0,
-						centerGap: 0.0,
-						opacity: 100,
-						outline: {
-							color: 'black',
-							opacity: 0,
+					crosshairSettings: [
+						{
+							type: 'line',
+							showsAccuracy: false,
+							color: 'red',
 							thickness: 1.0,
-							shift: 1.0
-						},
-						dot: {
-							type: 'default',
-							size: 4.5,
-							opacity: 0
-						},
-						scaleWithResolution: true
-					}]
+							rotation: 0,
+							crosshairLength: 4.0,
+							centerGap: 0.0,
+							opacity: 100,
+							outline: {
+								color: 'black',
+								opacity: 0,
+								thickness: 1.0,
+								shift: 1.0
+							},
+							dot: {
+								type: 'default',
+								size: 4.5,
+								opacity: 0
+							},
+							scaleWithResolution: true
+						}
+					]
 				}
 			},
 			{
@@ -280,28 +288,30 @@ export const MEMBER_LISTS: {
 					mouse: 'Logicool G PRO Wireless',
 					mousepad: 'PADSMITH Temple of Dreams - Remastered',
 					keyboard: 'COX Endeavour Original Retro Tenkeyless',
-					crosshairSettings: [{
-						type: 'line',
-						showsAccuracy: false,
-						color: 'orange',
-						thickness: 1.0,
-						rotation: 0,
-						crosshairLength: 4.0,
-						centerGap: 0.0,
-						opacity: 100,
-						outline: {
-							color: 'black',
-							opacity: 0,
+					crosshairSettings: [
+						{
+							type: 'line',
+							showsAccuracy: false,
+							color: 'orange',
 							thickness: 1.0,
-							shift: 1.0
-						},
-						dot: {
-							type: 'default',
-							size: 4.5,
-							opacity: 0
-						},
-						scaleWithResolution: true
-					}]
+							rotation: 0,
+							crosshairLength: 4.0,
+							centerGap: 0.0,
+							opacity: 100,
+							outline: {
+								color: 'black',
+								opacity: 0,
+								thickness: 1.0,
+								shift: 1.0
+							},
+							dot: {
+								type: 'default',
+								size: 4.5,
+								opacity: 0
+							},
+							scaleWithResolution: true
+						}
+					]
 				}
 			},
 			{
@@ -318,32 +328,34 @@ export const MEMBER_LISTS: {
 				gearAndSens: {
 					imageId: 'solace',
 					dpi: 1200,
-					sens: [{ role: 'genji', value: 5.00 }],
+					sens: [{ role: 'genji', value: 5.0 }],
 					mouse: 'Ninjutso Sora V2',
 					mousepad: 'Aritsan Hien Mid Soft',
 					keyboard: 'Varmilo Minilo VXH67 (65%)',
-					crosshairSettings: [{
-						type: 'box',
-						showsAccuracy: false,
-						color: 'white',
-						thickness: 4.0,
-						rotation: 315,
-						crosshairLength: 1.0,
-						centerGap: 0.0,
-						opacity: 100,
-						outline: {
+					crosshairSettings: [
+						{
+							type: 'box',
+							showsAccuracy: false,
 							color: 'white',
-							opacity: 0,
-							thickness: 3.0,
-							shift: 0.0
-						},
-						dot: {
-							type: 'default',
-							size: 0.0,
-							opacity: 100
-						},
-						scaleWithResolution: true
-					}]
+							thickness: 4.0,
+							rotation: 315,
+							crosshairLength: 1.0,
+							centerGap: 0.0,
+							opacity: 100,
+							outline: {
+								color: 'white',
+								opacity: 0,
+								thickness: 3.0,
+								shift: 0.0
+							},
+							dot: {
+								type: 'default',
+								size: 0.0,
+								opacity: 100
+							},
+							scaleWithResolution: true
+						}
+					]
 				}
 			},
 			{
@@ -364,28 +376,30 @@ export const MEMBER_LISTS: {
 					mouse: 'Gwolves HTS Plus 4K',
 					mousepad: 'Artizan Hayate乙',
 					keyboard: 'Steelseries Apex pro mini',
-					crosshairSettings: [{
-						type: 'circle',
-						showsAccuracy: false,
-						color: 'magenta',
-						thickness: 1.0,
-						rotation: null,
-						crosshairLength: null,
-						centerGap: 39.7,
-						opacity: 100,
-						outline: {
-							color: 'black',
-							opacity: 100,
+					crosshairSettings: [
+						{
+							type: 'circle',
+							showsAccuracy: false,
+							color: 'magenta',
 							thickness: 1.0,
-							shift: 1.0
-						},
-						dot: {
-							type: 'default',
-							size: 5.0,
-							opacity: 100
-						},
-						scaleWithResolution: true
-					}]
+							rotation: null,
+							crosshairLength: null,
+							centerGap: 39.7,
+							opacity: 100,
+							outline: {
+								color: 'black',
+								opacity: 100,
+								thickness: 1.0,
+								shift: 1.0
+							},
+							dot: {
+								type: 'default',
+								size: 5.0,
+								opacity: 100
+							},
+							scaleWithResolution: true
+						}
+					]
 				}
 			},
 			// // ▲ 選手
@@ -519,32 +533,34 @@ export const MEMBER_LISTS: {
 				gearAndSens: {
 					imageId: 'hakaisinkotaro',
 					dpi: 800,
-					sens: 7.30,
+					sens: 7.3,
 					mouse: 'Logicool G PRO X SUPERLIGHT',
 					mousepad: 'Padsmith Crucible - Temple of Dreams V2',
 					keyboard: 'Logicool G 913 TKL',
-					crosshairSettings: [{
-						type: 'dot',
-						showsAccuracy: null,
-						color: 'white',
-						thickness: null,
-						rotation: null,
-						crosshairLength: null,
-						centerGap: null,
-						opacity: null,
-						outline: {
-							color: 'black',
-							opacity: 100,
-							thickness: 3.0,
-							shift: 1.0
-						},
-						dot: {
-							type: 'default',
-							size: 2.9,
-							opacity: 100
-						},
-						scaleWithResolution: true
-					}]
+					crosshairSettings: [
+						{
+							type: 'dot',
+							showsAccuracy: null,
+							color: 'white',
+							thickness: null,
+							rotation: null,
+							crosshairLength: null,
+							centerGap: null,
+							opacity: null,
+							outline: {
+								color: 'black',
+								opacity: 100,
+								thickness: 3.0,
+								shift: 1.0
+							},
+							dot: {
+								type: 'default',
+								size: 2.9,
+								opacity: 100
+							},
+							scaleWithResolution: true
+						}
+					]
 				}
 			},
 			{
