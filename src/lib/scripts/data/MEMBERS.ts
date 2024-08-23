@@ -226,7 +226,41 @@ export const MEMBER_LISTS: {
 				twitter: '__Hestyow',
 				youtube: null,
 				twitch: 'hesty_ow',
-				homepage: null
+				homepage: null,
+				gearAndSens: {
+					imageId: 'hesty',
+					dpi: 800,
+					sens: {
+						tank: 10.0,
+						damage: 5.22,
+						support: 7.00
+					},
+					mouse: 'Finalmouse Ultralight 2 - CAPE TOWN',
+					mousepad: 'Padsmith Crucible - Temple of Dreams V2',
+					keyboard: 'Varmilo 92 Sakura 桜 JIS Keyboard V2',
+					crosshair: {
+						type: 'line',
+						showsAccuracy: false,
+						color: 'red',
+						thickness: 1.0,
+						rotation: 0,
+						crosshairLength: 4.0,
+						centerGap: 0.0,
+						opacity: 100,
+						outline: {
+							color: 'black',
+							opacity: 0,
+							thickness: 1.0,
+							shift: 1.0
+						},
+						dot: {
+							type: 'default',
+							size: 4.5,
+							opacity: 0
+						},
+						scaleWithResolution: true
+					}
+				}
 			},
 			{
 				memberName: 'HoFac',

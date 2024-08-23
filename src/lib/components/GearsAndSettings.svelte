@@ -6,6 +6,7 @@
 	export let playerName: string;
 	export let gearsAndSettings: GearsAndSettings;
 
+	const sens = gearsAndSettings.sens;
 	const crosshair = gearsAndSettings.crosshair;
 	const crosshairColName = crosshair.color;
 	const outline = crosshair.outline;
@@ -20,8 +21,10 @@
 		switch (colName) {
 			case 'black':
 				return '#000000';
+			case 'red':
+				return '#ff0000';
 			case 'cyan':
-				return '#00fefe';
+				return '#00ffff';
 			default:
 				return '#00000000';
 		}
@@ -62,10 +65,31 @@
 	<tr>
 		<th colSpan="2">{$_('w.gameSettings')}</th>
 	</tr>
-	<tr>
-		<td>{$_('w.sens')}</td>
-		<td>{gearsAndSettings.sens.toFixed(2)}</td>
-	</tr>
+	{#if typeof sens === 'number'}
+		<tr>
+			<td>{$_('w.sens')}</td>
+			<td>{sens.toFixed(2)}</td>
+		</tr>
+	{:else if sens !== null}
+		{#if sens.tank !== undefined}
+			<tr>
+				<td>{$_('w.sens')} (TANK)</td>
+				<td>{sens.tank.toFixed(2)}</td>
+			</tr>
+		{/if}
+		{#if sens.damage !== undefined}
+			<tr>
+				<td>{$_('w.sens')} (DAMAGE)</td>
+				<td>{sens.damage.toFixed(2)}</td>
+			</tr>
+		{/if}
+		{#if sens.support !== undefined}
+			<tr>
+				<td>{$_('w.sens')} (SUPPORT)</td>
+				<td>{sens.support.toFixed(2)}</td>
+			</tr>
+		{/if}
+	{/if}
 </table>
 
 <table>
