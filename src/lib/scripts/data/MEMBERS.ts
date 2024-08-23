@@ -515,7 +515,37 @@ export const MEMBER_LISTS: {
 				twitter: 'mareku1212',
 				youtube: '@hakaisinkotaro',
 				twitch: 'hakaisinnkotaro',
-				homepage: null
+				homepage: null,
+				gearAndSens: {
+					imageId: 'hakaisinkotaro',
+					dpi: 800,
+					sens: 7.30,
+					mouse: 'Logicool G PRO X SUPERLIGHT',
+					mousepad: 'Padsmith Crucible - Temple of Dreams V2',
+					keyboard: 'Logicool G 913 TKL',
+					crosshair: {
+						type: 'dot',
+						showsAccuracy: null,
+						color: 'white',
+						thickness: null,
+						rotation: null,
+						crosshairLength: null,
+						centerGap: null,
+						opacity: null,
+						outline: {
+							color: 'black',
+							opacity: 100,
+							thickness: 3.0,
+							shift: 1.0
+						},
+						dot: {
+							type: 'default',
+							size: 2.9,
+							opacity: 100
+						},
+						scaleWithResolution: true
+					}
+				}
 			},
 			{
 				memberName: '碧海まっちゃ',
