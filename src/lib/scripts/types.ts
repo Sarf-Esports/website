@@ -19,7 +19,7 @@ export interface GearsAndSettings {
 	mouse: string;
 	mousepad: string;
 	keyboard: string;
-	crosshair: {
+	crosshairSettings: {
 		type: string;
 		showsAccuracy: boolean | null;
 		color: string;
@@ -40,5 +40,5 @@ export interface GearsAndSettings {
 			opacity: number;
 		};
 		scaleWithResolution: boolean;
-	};
+	}[];
 }

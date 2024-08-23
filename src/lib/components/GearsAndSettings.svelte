@@ -7,11 +7,7 @@
 	export let gearsAndSettings: GearsAndSettings;
 
 	const sens = gearsAndSettings.sens;
-	const crosshair = gearsAndSettings.crosshair;
-	const crosshairColName = crosshair.color;
-	const outline = crosshair.outline;
-	const outlineColName = outline.color;
-	const dot = crosshair.dot;
+	const crosshairs = gearsAndSettings.crosshairSettings;
 
 	const T9N_KEY_PREFIX = 'teams.gearsAndSettingsItem.';
 	const T9N_KEY_PREFIX_OUTLINE = T9N_KEY_PREFIX + 'outline.';
@@ -86,105 +82,112 @@
 	{/if}
 </table>
 
-<table>
-	<tr>
-		<th colSpan="2">{$_('w.crosshairSettings')}</th>
-	</tr>
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX + 'type')}</td>
-		<td>{$_(`${T9N_KEY_PREFIX}type.${crosshair.type}`)}</td>
-	</tr>
-	{#if crosshair.showsAccuracy !== null}
+{#each crosshairs as crosshair, i}
+	{@const colName = crosshair.color}
+	{@const outline = crosshair.outline}
+	{@const outlineColName = outline.color}
+	{@const dot = crosshair.dot}
+	<table>
 		<tr>
-			<td>{$_(T9N_KEY_PREFIX + 'showsAccuracy')}</td>
-			<td>{convertBoolToOnOff(crosshair.showsAccuracy)}</td>
+			<th colSpan="2">
+				{$_('w.crosshairSettings')} {1 < crosshairs.length ? i + 1 : ''}
 		</tr>
-	{/if}
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX + 'color')}</td>
-		<td
-			style="
-				text-decoration: underline;
-				text-decoration-color: {convertColNameToHexCol(crosshairColName)};
-				text-decoration-thickness: 2px;
-				text-decoration-skip-ink: none;
-			"
-		>
-			{$_(`${T9N_KEY_PREFIX}color.${crosshairColName}`)}
-		</td>
-	</tr>
-	{#if crosshair.thickness !== null}
 		<tr>
-			<td>{$_(T9N_KEY_PREFIX + 'thickness')}</td>
-			<td>{crosshair.thickness.toFixed(1)}</td>
+			<td>{$_(T9N_KEY_PREFIX + 'type')}</td>
+			<td>{$_(`${T9N_KEY_PREFIX}type.${crosshair.type}`)}</td>
 		</tr>
-	{/if}
-	{#if crosshair.rotation !== null}
+		{#if crosshair.showsAccuracy !== null}
+			<tr>
+				<td>{$_(T9N_KEY_PREFIX + 'showsAccuracy')}</td>
+				<td>{convertBoolToOnOff(crosshair.showsAccuracy)}</td>
+			</tr>
+		{/if}
 		<tr>
-			<td>{$_(T9N_KEY_PREFIX + 'rotation')}</td>
-			<td>{crosshair.rotation}</td>
+			<td>{$_(T9N_KEY_PREFIX + 'color')}</td>
+			<td
+				style="
+					text-decoration: underline;
+					text-decoration-color: {convertColNameToHexCol(colName)};
+					text-decoration-thickness: 2px;
+					text-decoration-skip-ink: none;
+				"
+			>
+				{$_(`${T9N_KEY_PREFIX}color.${colName}`)}
+			</td>
 		</tr>
-	{/if}
-	{#if crosshair.crosshairLength !== null}
+		{#if crosshair.thickness !== null}
+			<tr>
+				<td>{$_(T9N_KEY_PREFIX + 'thickness')}</td>
+				<td>{crosshair.thickness.toFixed(1)}</td>
+			</tr>
+		{/if}
+		{#if crosshair.rotation !== null}
+			<tr>
+				<td>{$_(T9N_KEY_PREFIX + 'rotation')}</td>
+				<td>{crosshair.rotation}</td>
+			</tr>
+		{/if}
+		{#if crosshair.crosshairLength !== null}
+			<tr>
+				<td>{$_(T9N_KEY_PREFIX + 'crosshairLength')}</td>
+				<td>{crosshair.crosshairLength.toFixed(1)}</td>
+			</tr>
+		{/if}
+		{#if crosshair.centerGap !== null}
+			<tr>
+				<td>{$_(T9N_KEY_PREFIX + 'centerGap')}</td>
+				<td>{crosshair.centerGap.toFixed(1)}</td>
+			</tr>
+		{/if}
+		{#if crosshair.opacity !== null}
+			<tr>
+				<td>{$_(T9N_KEY_PREFIX + 'opacity')}</td>
+				<td>{crosshair.opacity + '%'}</td>
+			</tr>
+		{/if}
 		<tr>
-			<td>{$_(T9N_KEY_PREFIX + 'crosshairLength')}</td>
-			<td>{crosshair.crosshairLength.toFixed(1)}</td>
+			<td>{$_(T9N_KEY_PREFIX_OUTLINE + 'color')}</td>
+			<td
+				style="
+					text-decoration: underline;
+					text-decoration-color: {convertColNameToHexCol(outlineColName)};
+					text-decoration-thickness: 2px;
+					text-decoration-skip-ink: none;
+				"
+			>
+				{$_(`${T9N_KEY_PREFIX}color.${outlineColName}`)}
+			</td>
 		</tr>
-	{/if}
-	{#if crosshair.centerGap !== null}
 		<tr>
-			<td>{$_(T9N_KEY_PREFIX + 'centerGap')}</td>
-			<td>{crosshair.centerGap.toFixed(1)}</td>
+			<td>{$_(T9N_KEY_PREFIX_OUTLINE + 'opacity')}</td>
+			<td>{outline.opacity + '%'}</td>
 		</tr>
-	{/if}
-	{#if crosshair.opacity !== null}
 		<tr>
-			<td>{$_(T9N_KEY_PREFIX + 'opacity')}</td>
-			<td>{crosshair.opacity + '%'}</td>
+			<td>{$_(T9N_KEY_PREFIX_OUTLINE + 'thickness')}</td>
+			<td>{outline.thickness.toFixed(1)}</td>
 		</tr>
-	{/if}
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX_OUTLINE + 'color')}</td>
-		<td
-			style="
-				text-decoration: underline;
-				text-decoration-color: {convertColNameToHexCol(outlineColName)};
-				text-decoration-thickness: 2px;
-				text-decoration-skip-ink: none;
-			"
-		>
-			{$_(`${T9N_KEY_PREFIX}color.${outlineColName}`)}
-		</td>
-	</tr>
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX_OUTLINE + 'opacity')}</td>
-		<td>{outline.opacity + '%'}</td>
-	</tr>
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX_OUTLINE + 'thickness')}</td>
-		<td>{outline.thickness.toFixed(1)}</td>
-	</tr>
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX_OUTLINE + 'shift')}</td>
-		<td>{outline.shift.toFixed(1)}</td>
-	</tr>
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX_DOT + 'type')}</td>
-		<td>{$_(`${T9N_KEY_PREFIX_DOT}type.${dot.type}`)}</td>
-	</tr>
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX_DOT + 'size')}</td>
-		<td>{dot.size.toFixed(1)}</td>
-	</tr>
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX_DOT + 'opacity')}</td>
-		<td>{dot.opacity + '%'}</td>
-	</tr>
-	<tr>
-		<td>{$_(T9N_KEY_PREFIX + 'scaleWithResolution')}</td>
-		<td>{convertBoolToOnOff(crosshair.scaleWithResolution)}</td>
-	</tr>
-</table>
+		<tr>
+			<td>{$_(T9N_KEY_PREFIX_OUTLINE + 'shift')}</td>
+			<td>{outline.shift.toFixed(1)}</td>
+		</tr>
+		<tr>
+			<td>{$_(T9N_KEY_PREFIX_DOT + 'type')}</td>
+			<td>{$_(`${T9N_KEY_PREFIX_DOT}type.${dot.type}`)}</td>
+		</tr>
+		<tr>
+			<td>{$_(T9N_KEY_PREFIX_DOT + 'size')}</td>
+			<td>{dot.size.toFixed(1)}</td>
+		</tr>
+		<tr>
+			<td>{$_(T9N_KEY_PREFIX_DOT + 'opacity')}</td>
+			<td>{dot.opacity + '%'}</td>
+		</tr>
+		<tr>
+			<td>{$_(T9N_KEY_PREFIX + 'scaleWithResolution')}</td>
+			<td>{convertBoolToOnOff(crosshair.scaleWithResolution)}</td>
+		</tr>
+	</table>
+{/each}
 
 <style lang="scss">
 	// img {
