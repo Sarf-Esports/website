@@ -15,11 +15,7 @@ export interface ArticleThumbnailImgFmts {
 export interface GearsAndSettings {
 	imageId: string;
 	dpi: number;
-	sens: number | {
-		tank?: number;
-		damage?: number;
-		support?: number;
-	},
+	sens: number | { role: string; value: number }[];
 	mouse: string;
 	mousepad: string;
 	keyboard: string;

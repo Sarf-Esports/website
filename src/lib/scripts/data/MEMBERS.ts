@@ -230,11 +230,11 @@ export const MEMBER_LISTS: {
 				gearAndSens: {
 					imageId: 'hesty',
 					dpi: 800,
-					sens: {
-						tank: 10.0,
-						damage: 5.22,
-						support: 7.00
-					},
+					sens: [
+						{ role: 'tank', value: 10.0 },
+						{ role: 'damage', value: 5.22 },
+						{ role: 'support', value: 7.00 }
+					],
 					mouse: 'Finalmouse Ultralight 2 - CAPE TOWN',
 					mousepad: 'Padsmith Crucible - Temple of Dreams V2',
 					keyboard: 'Varmilo 92 Sakura 桜 JIS Keyboard V2',
@@ -314,7 +314,37 @@ export const MEMBER_LISTS: {
 				twitter: 'sorryimsolace',
 				youtube: '@sorryimsolace',
 				twitch: 'sorryimsolace',
-				homepage: null
+				homepage: null,
+				gearAndSens: {
+					imageId: 'solace',
+					dpi: 1200,
+					sens: [{ role: 'genji', value: 5.00 }],
+					mouse: 'Ninjutso Sora V2',
+					mousepad: 'Aritsan Hien Mid Soft',
+					keyboard: 'Varmilo Minilo VXH67 (65%)',
+					crosshair: {
+						type: 'box',
+						showsAccuracy: false,
+						color: 'white',
+						thickness: 4.0,
+						rotation: 315,
+						crosshairLength: 1.0,
+						centerGap: 0.0,
+						opacity: 100,
+						outline: {
+							color: 'white',
+							opacity: 0,
+							thickness: 3.0,
+							shift: 0.0
+						},
+						dot: {
+							type: 'default',
+							size: 0.0,
+							opacity: 100
+						},
+						scaleWithResolution: true
+					}
+				}
 			},
 			{
 				memberName: 'にんじゃはむぞー',

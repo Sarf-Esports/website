@@ -21,6 +21,8 @@
 		switch (colName) {
 			case 'black':
 				return '#000000';
+			case 'white':
+				return '#ffffff';
 			case 'red':
 				return '#ff0000';
 			case 'cyan':
@@ -73,24 +75,12 @@
 			<td>{sens.toFixed(2)}</td>
 		</tr>
 	{:else if sens !== null}
-		{#if sens.tank !== undefined}
+		{#each sens as { role, value }}
 			<tr>
-				<td>{$_('w.sens')} (TANK)</td>
-				<td>{sens.tank.toFixed(2)}</td>
+				<td>{$_('w.sens')} ({role.toUpperCase()})</td>
+				<td>{value.toFixed(2)}</td>
 			</tr>
-		{/if}
-		{#if sens.damage !== undefined}
-			<tr>
-				<td>{$_('w.sens')} (DAMAGE)</td>
-				<td>{sens.damage.toFixed(2)}</td>
-			</tr>
-		{/if}
-		{#if sens.support !== undefined}
-			<tr>
-				<td>{$_('w.sens')} (SUPPORT)</td>
-				<td>{sens.support.toFixed(2)}</td>
-			</tr>
-		{/if}
+		{/each}
 	{/if}
 </table>
 
