@@ -101,6 +101,18 @@
 			<td>{crosshair.thickness.toFixed(1)}</td>
 		</tr>
 	{/if}
+	{#if crosshair.rotation !== null}
+		<tr>
+			<td>{$_(T9N_KEY_PREFIX + 'rotation')}</td>
+			<td>{crosshair.rotation}</td>
+		</tr>
+	{/if}
+	{#if crosshair.crosshairLength !== null}
+		<tr>
+			<td>{$_(T9N_KEY_PREFIX + 'crosshairLength')}</td>
+			<td>{crosshair.crosshairLength.toFixed(1)}</td>
+		</tr>
+	{/if}
 	{#if crosshair.centerGap !== null}
 		<tr>
 			<td>{$_(T9N_KEY_PREFIX + 'centerGap')}</td>

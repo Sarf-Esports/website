@@ -113,6 +113,8 @@ export const MEMBER_LISTS: {
 						showsAccuracy: true,
 						color: 'cyan',
 						thickness: 1.0,
+						rotation: null,
+						crosshairLength: null,
 						centerGap: 0.0,
 						opacity: 0,
 						outline: {
@@ -153,6 +155,8 @@ export const MEMBER_LISTS: {
 						showsAccuracy: null,
 						color: 'cyan',
 						thickness: null,
+						rotation: null,
+						crosshairLength: null,
 						centerGap: null,
 						opacity: null,
 						outline: {
@@ -180,7 +184,37 @@ export const MEMBER_LISTS: {
 				twitter: 'harutoon_FN',
 				youtube: null,
 				twitch: 'harutoon_',
-				homepage: null
+				homepage: null,
+				gearAndSens: {
+					imageId: 'harutoon',
+					dpi: 800,
+					sens: 7.62,
+					mouse: 'Logicool G PRO X SUPERLIGHT WHITE',
+					mousepad: 'Padsmith Temple of Dreams - Remastered',
+					keyboard: 'DrunkDeer A75',
+					crosshair: {
+						type: 'crosshairs',
+						showsAccuracy: false,
+						color: 'cyan',
+						thickness: 1.0,
+						rotation: 0,
+						crosshairLength: 8.0,
+						centerGap: 0.0,
+						opacity: 100,
+						outline: {
+							color: 'black',
+							opacity: 0,
+							thickness: 0.0,
+							shift: 0.0
+						},
+						dot: {
+							type: 'default',
+							size: 0.0,
+							opacity: 0
+						},
+						scaleWithResolution: true
+					}
+				}
 			},
 			{
 				memberName: 'Hesty',

@@ -24,6 +24,8 @@ export interface GearsAndSettings {
 		showsAccuracy: boolean | null;
 		color: string;
 		thickness: number | null;
+		rotation: number | null;
+		crosshairLength: number | null;
 		centerGap: number | null;
 		opacity: number | null;
 		outline: {

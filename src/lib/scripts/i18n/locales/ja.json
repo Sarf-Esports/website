@@ -52,6 +52,8 @@
 			"color.black": "ブラック",
 			"color.cyan": "シアン",
 			"thickness": "濃さ",
+			"rotation": "",
+			"crosshairLength": "",
 			"centerGap": "中心ギャップ",
 			"opacity": "透明度",
 			"outline": {
