@@ -145,7 +145,7 @@
 					</li>
 				{/if}
 				{#if gearsAndSettings !== undefined}
-					<li class="gear-and-sens">
+					<li class="gears-and-settings">
 						<button
 							on:click={() =>
 								gearsAndSettingsModalState.update(() => {
