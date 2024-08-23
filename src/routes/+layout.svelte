@@ -8,7 +8,7 @@
 		isContactModalOpened,
 		isFeesModalOpened,
 		isCoachesModalOpened,
-		gearAndSensModalState
+		gearsAndSettingsModalState
 	} from '$lib/scripts/stores';
 	import { COPYRIGHT, SITE_URL } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
@@ -90,7 +90,7 @@
 	<link rel="icon" href="/images/logos/revati/icon_180px_oxipng.png?v=3" />
 </svelte:head>
 
-{#if $isContactModalOpened || $isFeesModalOpened || $isCoachesModalOpened || $gearAndSensModalState.isOpened}
+{#if $isContactModalOpened || $isFeesModalOpened || $isCoachesModalOpened || $gearsAndSettingsModalState.isOpened}
 	<div class="modal-bg" on:click={closeAllModals} on:keypress={empty} role="none" />
 {/if}
 

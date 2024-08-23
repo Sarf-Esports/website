@@ -8,7 +8,7 @@
 	import { replaceState } from '$app/navigation';
 	import { calcAge, zeroPad } from '$lib/scripts/util';
 	import { date, _ } from 'svelte-i18n';
-	import { gearAndSensModalState } from '$lib/scripts/stores';
+	import { gearsAndSettingsModalState } from '$lib/scripts/stores';
 
 	export let division: string | null;
 
@@ -148,7 +148,7 @@
 					<li class="gear-and-sens">
 						<button
 							on:click={() =>
-								gearAndSensModalState.update(() => {
+								gearsAndSettingsModalState.update(() => {
 									return {
 										isOpened: true,
 										content:
@@ -176,8 +176,8 @@
 	{/each}
 </ul>
 
-{#if $gearAndSensModalState.isOpened && $gearAndSensModalState.content !== null}
-	<Modal doesNotHaveBloom><GearsAndSettings {...$gearAndSensModalState.content} /></Modal>
+{#if $gearsAndSettingsModalState.isOpened && $gearsAndSettingsModalState.content !== null}
+	<Modal doesNotHaveBloom><GearsAndSettings {...$gearsAndSettingsModalState.content} /></Modal>
 {/if}
 
 <style lang="scss">

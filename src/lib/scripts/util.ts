@@ -4,7 +4,7 @@ import {
 	isContactModalOpened,
 	isFeesModalOpened,
 	isCoachesModalOpened,
-	gearAndSensModalState
+	gearsAndSettingsModalState
 } from '$lib/scripts/stores';
 
 /**
@@ -108,5 +108,5 @@ export function closeAllModals() {
 	isContactModalOpened.update(() => false);
 	isFeesModalOpened.update(() => false);
 	isCoachesModalOpened.update(() => false);
-	gearAndSensModalState.update(() => ({ isOpened: false, content: null }));
+	gearsAndSettingsModalState.update(() => ({ isOpened: false, content: null }));
 }

@@ -11,14 +11,14 @@ export const isFeesModalOpened = writable(false);
 isFeesModalOpened.subscribe(updateScrollPrevention);
 export const isCoachesModalOpened = writable(false);
 isCoachesModalOpened.subscribe(updateScrollPrevention);
-export const gearAndSensModalState: Writable<{
+export const gearsAndSettingsModalState: Writable<{
 	isOpened: boolean;
 	content: {
 		playerName: string;
 		gearsAndSettings: GearsAndSettings;
 	} | null;
 }> = writable({ isOpened: false, content: null });
-gearAndSensModalState.subscribe(({ isOpened }) => updateScrollPrevention(isOpened));
+gearsAndSettingsModalState.subscribe(({ isOpened }) => updateScrollPrevention(isOpened));
 
 function updateScrollPrevention(v: boolean) {
 	if (browser) toggleScrollPrevention(v);
