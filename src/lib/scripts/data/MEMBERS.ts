@@ -310,6 +310,28 @@ export const MEMBER_LISTS: {
 								opacity: 0
 							},
 							scaleWithResolution: true
+						},
+						{
+							type: 'crosshairs',
+							showsAccuracy: false,
+							color: 'red',
+							thickness: 1.0,
+							rotation: 45,
+							crosshairLength: 5.0,
+							centerGap: 0.8,
+							opacity: 100,
+							outline: {
+								color: 'black',
+								opacity: 100,
+								thickness: 1.0,
+								shift: 1.0
+							},
+							dot: {
+								type: 'default',
+								size: 0.0,
+								opacity: 0
+							},
+							scaleWithResolution: true
 						}
 					]
 				}
