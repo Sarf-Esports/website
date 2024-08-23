@@ -46,7 +46,7 @@
 {/if}
 
 <ul class="members">
-	{#each currentDivisionMembers as { memberName, icon, role, country, birthday, age, twitter, youtube, twitch, homepage, gearAndSens }}
+	{#each currentDivisionMembers as { memberName, icon, role, country, birthday, age, twitter, youtube, twitch, homepage, gearsAndSettings }}
 		<li class="member">
 			<img src="/images/members/{icon ?? 'noimage.webp'}" alt="" loading="lazy" class="icon" />
 			<div class="info">
@@ -144,7 +144,7 @@
 						</a>
 					</li>
 				{/if}
-				{#if gearAndSens !== undefined}
+				{#if gearsAndSettings !== undefined}
 					<li class="gear-and-sens">
 						<button
 							on:click={() =>
@@ -152,14 +152,14 @@
 									return {
 										isOpened: true,
 										content:
-											// The `gearAndSens` variable is already guaranteed to be not `undefined` by the `#if` block,
+											// The `gearsAndSettings` variable is already guaranteed to be not `undefined` by the `#if` block,
 											// but we exclude `undefined` again with a ternary operator to avoid ESLint errors.
 											// The `content` field will never be assigned `null` here,
-											// because the button is not rendered if the `gearAndSens` variable is `undefined`.
-											gearAndSens !== undefined
+											// because the button is not rendered if the `gearsAndSettings` variable is `undefined`.
+											gearsAndSettings !== undefined
 												? {
 														playerName: memberName,
-														gearsAndSettings: gearAndSens
+														gearsAndSettings
 													}
 												: null
 									};

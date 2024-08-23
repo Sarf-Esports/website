@@ -84,7 +84,7 @@ export const MEMBER_LISTS: {
 		youtube: string | null;
 		twitch: string | null;
 		homepage: string | null;
-		gearAndSens?: GearsAndSettings;
+		gearsAndSettings?: GearsAndSettings;
 	}[];
 }[] = [
 	{
@@ -101,7 +101,7 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: 'ep1c_ow',
 				homepage: null,
-				gearAndSens: {
+				gearsAndSettings: {
 					imageId: 'epic',
 					dpi: 800,
 					sens: 4.5,
@@ -145,7 +145,7 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: null,
 				homepage: null,
-				gearAndSens: {
+				gearsAndSettings: {
 					imageId: 'fearful',
 					dpi: 800,
 					sens: 7.0,
@@ -189,7 +189,7 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: 'harutoon_',
 				homepage: null,
-				gearAndSens: {
+				gearsAndSettings: {
 					imageId: 'harutoon',
 					dpi: 800,
 					sens: 7.62,
@@ -277,7 +277,7 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: 'hesty_ow',
 				homepage: null,
-				gearAndSens: {
+				gearsAndSettings: {
 					imageId: 'hesty',
 					dpi: 800,
 					sens: [
@@ -347,7 +347,7 @@ export const MEMBER_LISTS: {
 				youtube: '@ahoneyfactory9887',
 				twitch: 'hofac_ow',
 				homepage: null,
-				gearAndSens: {
+				gearsAndSettings: {
 					imageId: 'hofac',
 					dpi: 800,
 					sens: 3.25,
@@ -391,7 +391,7 @@ export const MEMBER_LISTS: {
 				youtube: '@sorryimsolace',
 				twitch: 'sorryimsolace',
 				homepage: null,
-				gearAndSens: {
+				gearsAndSettings: {
 					imageId: 'solace',
 					dpi: 1200,
 					sens: [{ role: 'genji', value: 5.0 }],
@@ -435,7 +435,7 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: 'nhzow',
 				homepage: null,
-				gearAndSens: {
+				gearsAndSettings: {
 					imageId: 'ninja_hamuzo',
 					dpi: 800,
 					sens: 3.25,
@@ -618,7 +618,7 @@ export const MEMBER_LISTS: {
 				youtube: '@hakaisinkotaro',
 				twitch: 'hakaisinnkotaro',
 				homepage: null,
-				gearAndSens: {
+				gearsAndSettings: {
 					imageId: 'hakaisinkotaro',
 					dpi: 800,
 					sens: 7.3,
