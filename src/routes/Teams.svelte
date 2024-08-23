@@ -164,7 +164,7 @@
 												: null
 									};
 								})}
-							class="gear-and-sens-btn"
+							class="gears-and-settings-btn"
 							title={$_('teams.gearsAndGameSettingsOfThisPlayer')}
 						>
 							<MaterialIcon kind="stadia-controller" width="28px" />
