@@ -177,7 +177,7 @@
 </ul>
 
 {#if $gearAndSensModalState.isOpened && $gearAndSensModalState.content !== null}
-	<Modal><GearsAndSettings {...$gearAndSensModalState.content} /></Modal>
+	<Modal doesNotHaveBloom><GearsAndSettings {...$gearAndSensModalState.content} /></Modal>
 {/if}
 
 <style lang="scss">
