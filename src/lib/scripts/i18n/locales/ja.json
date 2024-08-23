@@ -12,7 +12,9 @@
 		"sens": "感度",
 		"mouse": "マウス",
 		"mousepad": "マウスパッド",
-		"keyboard": "キーボード"
+		"keyboard": "キーボード",
+		"on": "ON",
+		"off": "OFF"
 	},
 	"header.back": "トップページへ戻る",
 	"top": {
@@ -77,9 +79,7 @@
 				"size": "ドットサイズ",
 				"opacity": "ドット透明度"
 			},
-			"scaleWithResolution": "解像度スケール",
-			"scaleWithResolution.on": "ON",
-			"scaleWithResolution.off": "OFF"
+			"scaleWithResolution": "解像度スケール"
 		}
 	},
 	"coaching": {

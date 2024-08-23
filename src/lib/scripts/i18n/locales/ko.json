@@ -12,7 +12,9 @@
 		"sens": "감도",
 		"mouse": "마우스",
 		"mousepad": "마우스 패드",
-		"keyboard": "키보드"
+		"keyboard": "키보드",
+		"on": "활성화",
+		"off": "비활성화"
 	},
 	"header.back": "톱 페이지로 돌아가기",
 	"top": {
@@ -47,7 +49,7 @@
 			"type.falloff": "",
 			"type.triwing": "",
 			"type.square": "",
-			"showsAccuracy": "",
+			"showsAccuracy": "정확도 표시",
 			"color": "색상",
 			"color.black": "",
 			"color.white": "",
@@ -55,11 +57,11 @@
 			"color.cyan": "",
 			"color.magenta": "",
 			"color.orange": "",
-			"thickness": "",
+			"thickness": "굵기",
 			"rotation": "",
 			"crosshairLength": "",
-			"centerGap": "",
-			"opacity": "",
+			"centerGap": "중앙 공간",
+			"opacity": "불투명도",
 			"outline": {
 				"color": "윤곽선 색상",
 				"opacity": "윤곽선 불투명도",
@@ -77,9 +79,7 @@
 				"size": "점 크기",
 				"opacity": "점 불투명도"
 			},
-			"scaleWithResolution": "해상도에 비례",
-			"scaleWithResolution.on": "활성화",
-			"scaleWithResolution.off": ""
+			"scaleWithResolution": "해상도에 비례"
 		}
 	},
 	"coaching": {

@@ -12,7 +12,9 @@
 		"sens": "Sensitivity",
 		"mouse": "Mouse",
 		"mousepad": "Mousepad",
-		"keyboard": "Keyboard"
+		"keyboard": "Keyboard",
+		"on": "ON",
+		"off": "OFF"
 	},
 	"header.back": "Back to top page",
 	"top": {
@@ -77,9 +79,7 @@
 				"size": "Dot Size",
 				"opacity": "Dot Opacity"
 			},
-			"scaleWithResolution": "Scale with Resolution",
-			"scaleWithResolution.on": "ON",
-			"scaleWithResolution.off": "OFF"
+			"scaleWithResolution": "Scale with Resolution"
 		}
 	},
 	"coaching": {

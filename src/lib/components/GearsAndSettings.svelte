@@ -33,7 +33,7 @@
 	}
 
 	function convertBoolToOnOff(b: boolean): string {
-		return b ? 'ON' : 'OFF';
+		return b ? $_('w.on') : $_('w.off');
 	}
 </script>
 

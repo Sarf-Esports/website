@@ -218,6 +218,28 @@ export const MEMBER_LISTS: {
 								opacity: 0
 							},
 							scaleWithResolution: true
+						},
+						{
+							type: 'circle',
+							showsAccuracy: false,
+							color: 'cyan',
+							thickness: 1.0,
+							rotation: null,
+							crosshairLength: null,
+							centerGap: 10.0,
+							opacity: 100,
+							outline: {
+								color: 'black',
+								opacity: 0,
+								thickness: 0.0,
+								shift: 0.0
+							},
+							dot: {
+								type: 'default',
+								size: 0.0,
+								opacity: 0
+							},
+							scaleWithResolution: true
 						}
 					]
 				}
