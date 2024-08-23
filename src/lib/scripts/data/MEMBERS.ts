@@ -272,7 +272,37 @@ export const MEMBER_LISTS: {
 				twitter: 'HoneyFactory_OW',
 				youtube: '@ahoneyfactory9887',
 				twitch: 'hofac_ow',
-				homepage: null
+				homepage: null,
+				gearAndSens: {
+					imageId: 'hofac',
+					dpi: 800,
+					sens: 3.25,
+					mouse: 'Logicool G PRO Wireless',
+					mousepad: 'PADSMITH Temple of Dreams - Remastered',
+					keyboard: 'COX Endeavour Original Retro Tenkeyless',
+					crosshair: {
+						type: 'line',
+						showsAccuracy: false,
+						color: 'orange',
+						thickness: 1.0,
+						rotation: 0,
+						crosshairLength: 4.0,
+						centerGap: 0.0,
+						opacity: 100,
+						outline: {
+							color: 'black',
+							opacity: 0,
+							thickness: 1.0,
+							shift: 1.0
+						},
+						dot: {
+							type: 'default',
+							size: 4.5,
+							opacity: 0
+						},
+						scaleWithResolution: true
+					}
+				}
 			},
 			{
 				memberName: 'solace',
