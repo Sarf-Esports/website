@@ -356,7 +356,37 @@ export const MEMBER_LISTS: {
 				twitter: 'ninja_hamuzo',
 				youtube: null,
 				twitch: 'nhzow',
-				homepage: null
+				homepage: null,
+				gearAndSens: {
+					imageId: 'ninja_hamuzo',
+					dpi: 800,
+					sens: 3.25,
+					mouse: 'Gwolves HTS Plus 4K',
+					mousepad: 'Artizan Hayate乙',
+					keyboard: 'Steelseries Apex pro mini',
+					crosshair: {
+						type: 'circle',
+						showsAccuracy: false,
+						color: 'magenta',
+						thickness: 1.0,
+						rotation: null,
+						crosshairLength: null,
+						centerGap: 39.7,
+						opacity: 100,
+						outline: {
+							color: 'black',
+							opacity: 100,
+							thickness: 1.0,
+							shift: 1.0
+						},
+						dot: {
+							type: 'default',
+							size: 5.0,
+							opacity: 100
+						},
+						scaleWithResolution: true
+					}
+				}
 			},
 			// // ▲ 選手
 			// // ▼ コーチ

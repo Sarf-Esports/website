@@ -27,6 +27,8 @@
 				return '#ff0000';
 			case 'cyan':
 				return '#00ffff';
+			case 'magenta':
+				return '#ff00ff';
 			case 'orange':
 				return '#fd7000';
 			default:
