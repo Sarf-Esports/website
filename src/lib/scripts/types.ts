@@ -20,7 +20,7 @@ export interface GearsAndSettings {
 	mousepad: string;
 	keyboard: string;
 	crosshairSettings: {
-		type: string;
+		type: string | null;
 		showsAccuracy: boolean | null;
 		color: string;
 		thickness: number | null;

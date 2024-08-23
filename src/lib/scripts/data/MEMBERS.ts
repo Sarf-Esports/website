@@ -240,6 +240,28 @@ export const MEMBER_LISTS: {
 								opacity: 0
 							},
 							scaleWithResolution: true
+						},
+						{
+							type: null,
+							showsAccuracy: false,
+							color: 'black',
+							thickness: 1.0,
+							rotation: 0,
+							crosshairLength: 5.0,
+							centerGap: 5.0,
+							opacity: 100,
+							outline: {
+								color: 'black',
+								opacity: 0,
+								thickness: 0.0,
+								shift: 0.0
+							},
+							dot: {
+								type: 'default',
+								size: 0.0,
+								opacity: 0
+							},
+							scaleWithResolution: true
 						}
 					]
 				}

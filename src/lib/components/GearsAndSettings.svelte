@@ -94,10 +94,12 @@
 				{1 < crosshairs.length ? i + 1 : ''}
 			</th></tr
 		>
-		<tr>
-			<td>{$_(T9N_KEY_PREFIX + 'type')}</td>
-			<td>{$_(`${T9N_KEY_PREFIX}type.${crosshair.type}`)}</td>
-		</tr>
+		{#if crosshair.type !== null}
+			<tr>
+				<td>{$_(T9N_KEY_PREFIX + 'type')}</td>
+				<td>{$_(`${T9N_KEY_PREFIX}type.${crosshair.type}`)}</td>
+			</tr>
+		{/if}
 		{#if crosshair.showsAccuracy !== null}
 			<tr>
 				<td>{$_(T9N_KEY_PREFIX + 'showsAccuracy')}</td>

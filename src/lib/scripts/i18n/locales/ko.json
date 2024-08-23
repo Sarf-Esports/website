@@ -58,8 +58,8 @@
 			"color.magenta": "",
 			"color.orange": "",
 			"thickness": "굵기",
-			"rotation": "",
-			"crosshairLength": "",
+			"rotation": "회전",
+			"crosshairLength": "십자선 길이",
 			"centerGap": "중앙 공간",
 			"opacity": "불투명도",
 			"outline": {
