@@ -194,6 +194,9 @@
 {/each}
 
 <style lang="scss">
+	@use '$lib/stylesheets/variables/mixin' as *;
+	@use '$lib/stylesheets/variables/color' as *;
+
 	// img {
 	// 	width: 640px;
 	// 	margin-top: 46px;
@@ -206,7 +209,45 @@
 		margin-top: 38px;
 	}
 
+	$table-border-col: #566569;
+
 	table {
-		margin: 0 auto;
+		width: 100%;
+		margin: 24px auto;
+		font-size: 16px;
+		border-collapse: collapse;
+		overflow-x: scroll;
+		word-break: break-all;
+		scrollbar-color: $primary-color-pale transparent;
+	}
+
+	th,
+	td {
+		max-width: 383px;
+		padding: 3px 6px;
+		border: 1px solid rgba($table-border-col, 0.5);
+	}
+
+	th {
+		background-color: #121826;
+		border-bottom: 2px solid $table-border-col;
+	}
+
+	td {
+		background-color: #122026;
+	}
+
+	@include sp {
+		table {
+			display: block;
+			font-size: 14px;
+			white-space: nowrap;
+		}
+
+		th,
+		td {
+			max-width: initial;
+			width: 100vw;
+		}
 	}
 </style>
