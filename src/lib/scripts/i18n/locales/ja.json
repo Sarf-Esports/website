@@ -60,7 +60,7 @@
 			"thickness": "濃さ",
 			"rotation": "回転",
 			"crosshairLength": "照準幅",
-			"centerGap": "中心ギャップ",
+			"centerGap": "中央ギャップ",
 			"opacity": "透明度",
 			"outline": {
 				"color": "アウトラインの色",
