@@ -53,11 +53,18 @@
 //
 //     // メンバーの TwitchアカウントID (アットマークはつけないで)
 //     // ない場合は `null` にしてください
-//     twitch: 'rinrin0413'
+//     twitch: 'rinrin0413',
 //
 //     // メンバーのホームページの URL
 //     // ない場合は `null` にしてください
-//     homepage: 'https://rinrin.pages.dev'
+//     homepage: 'https://rinrin.pages.dev',
+//
+//     // メンバーの使用デバイスとゲーム設定
+//     // この項目のデータは `src/lib/scripts/data/GEARS_AND_SETTINGS.ts` に記載します
+//     // 詳しくはそちらを参照してください
+//     // 指定しない場合は `null` にするのではなく、
+//     // このプロパティ自体を省略してください
+//     gearsAndSettings: GEARS_AND_SETTINGS['rinrin']
 // }
 //
 // 並びは名前の `数字順 -> アルファベット順 -> 五十音順 -> その他(ここまで着たら追加順)` でお願いします。
