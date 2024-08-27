@@ -112,7 +112,8 @@
 				<span
 					class="color"
 					style="text-decoration-color: {convertColNameToHexCol(crosshairColName)};"
-				>{$_(`${T9N_KEY_PREFIX}color.${crosshairColName}`)}</span>
+					>{$_(`${T9N_KEY_PREFIX}color.${crosshairColName}`)}</span
+				>
 			</td>
 		</tr>
 		{#if crosshair.thickness !== null}
@@ -148,10 +149,8 @@
 		<tr>
 			<td>{$_(T9N_KEY_PREFIX_OUTLINE + 'color')}</td>
 			<td>
-				<span
-					class="color"
-					style="text-decoration-color: {convertColNameToHexCol(outlineColName)};"
-				>{$_(`${T9N_KEY_PREFIX}color.${outlineColName}`)}
+				<span class="color" style="text-decoration-color: {convertColNameToHexCol(outlineColName)};"
+					>{$_(`${T9N_KEY_PREFIX}color.${outlineColName}`)}
 				</span>
 			</td>
 		</tr>
