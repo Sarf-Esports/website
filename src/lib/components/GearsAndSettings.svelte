@@ -83,7 +83,7 @@
 </table>
 
 {#each crosshairs as crosshair, i}
-	{@const colName = crosshair.color}
+	{@const crosshairColName = crosshair.color}
 	{@const outline = crosshair.outline}
 	{@const outlineColName = outline.color}
 	{@const dot = crosshair.dot}
@@ -108,15 +108,11 @@
 		{/if}
 		<tr>
 			<td>{$_(T9N_KEY_PREFIX + 'color')}</td>
-			<td
-				style="
-					text-decoration: underline;
-					text-decoration-color: {convertColNameToHexCol(colName)};
-					text-decoration-thickness: 2px;
-					text-decoration-skip-ink: none;
-				"
-			>
-				{$_(`${T9N_KEY_PREFIX}color.${colName}`)}
+			<td>
+				<span
+					class="color"
+					style="text-decoration-color: {convertColNameToHexCol(crosshairColName)};"
+				>{$_(`${T9N_KEY_PREFIX}color.${crosshairColName}`)}</span>
 			</td>
 		</tr>
 		{#if crosshair.thickness !== null}
@@ -151,15 +147,12 @@
 		{/if}
 		<tr>
 			<td>{$_(T9N_KEY_PREFIX_OUTLINE + 'color')}</td>
-			<td
-				style="
-					text-decoration: underline;
-					text-decoration-color: {convertColNameToHexCol(outlineColName)};
-					text-decoration-thickness: 2px;
-					text-decoration-skip-ink: none;
-				"
-			>
-				{$_(`${T9N_KEY_PREFIX}color.${outlineColName}`)}
+			<td>
+				<span
+					class="color"
+					style="text-decoration-color: {convertColNameToHexCol(outlineColName)};"
+				>{$_(`${T9N_KEY_PREFIX}color.${outlineColName}`)}
+				</span>
 			</td>
 		</tr>
 		<tr>
@@ -235,6 +228,12 @@
 
 	td {
 		background-color: #122026;
+	}
+
+	.color {
+		text-decoration: underline;
+		text-decoration-thickness: 2px;
+		text-decoration-skip-ink: none;
 	}
 
 	@include sp {
