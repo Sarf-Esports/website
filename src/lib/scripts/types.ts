@@ -13,7 +13,7 @@ export interface ArticleThumbnailImgFmts {
 }
 
 export interface GearsAndSettings {
-	imageId: string;
+	avatar: string;
 	dpi: number;
 	sens: number | { role: string; value: number }[];
 	mouse: string;

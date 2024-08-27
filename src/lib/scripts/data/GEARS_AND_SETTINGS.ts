@@ -10,7 +10,7 @@
 //     // 等身イラストのファイル名 (必須)
 //     // `static/images/members/characters/` に置く画像ファイルの名前を指定してください。
 //     // なお、用意する画像ファイルの拡張子は `.webp` で統一してください。
-//     imageId: 'epic',
+//     avatar: 'epic',
 //
 //     // DPI (必須)
 //     dpi: 800,
@@ -114,7 +114,7 @@ import type { GearsAndSettings } from '$lib/scripts/types';
 
 export const GEARS_AND_SETTINGS: { [key: string]: GearsAndSettings } = {
 	epic: {
-		imageId: 'epic',
+		avatar: 'epic',
 		dpi: 800,
 		sens: 4.5,
 		mouse: 'Logicool G PRO X Superlight',
@@ -146,7 +146,7 @@ export const GEARS_AND_SETTINGS: { [key: string]: GearsAndSettings } = {
 		]
 	},
 	fearful: {
-		imageId: 'fearful',
+		avatar: 'fearful',
 		dpi: 800,
 		sens: 7.0,
 		mouse: 'Logicool G PRO X Superlight',
@@ -178,7 +178,7 @@ export const GEARS_AND_SETTINGS: { [key: string]: GearsAndSettings } = {
 		]
 	},
 	harutoon: {
-		imageId: 'harutoon',
+		avatar: 'harutoon',
 		dpi: 800,
 		sens: 7.62,
 		mouse: 'Logicool G PRO X SUPERLIGHT WHITE',
@@ -254,7 +254,7 @@ export const GEARS_AND_SETTINGS: { [key: string]: GearsAndSettings } = {
 		]
 	},
 	hesty: {
-		imageId: 'hesty',
+		avatar: 'hesty',
 		dpi: 800,
 		sens: [
 			{ role: 'tank', value: 10.0 },
@@ -312,7 +312,7 @@ export const GEARS_AND_SETTINGS: { [key: string]: GearsAndSettings } = {
 		]
 	},
 	hofac: {
-		imageId: 'hofac',
+		avatar: 'hofac',
 		dpi: 800,
 		sens: 3.25,
 		mouse: 'Logicool G PRO Wireless',
@@ -344,7 +344,7 @@ export const GEARS_AND_SETTINGS: { [key: string]: GearsAndSettings } = {
 		]
 	},
 	solace: {
-		imageId: 'solace',
+		avatar: 'solace',
 		dpi: 1200,
 		sens: [{ role: 'genji', value: 5.0 }],
 		mouse: 'Ninjutso Sora V2',
@@ -376,7 +376,7 @@ export const GEARS_AND_SETTINGS: { [key: string]: GearsAndSettings } = {
 		]
 	},
 	ninja_hamuzo: {
-		imageId: 'ninja_hamuzo',
+		avatar: 'ninja_hamuzo',
 		dpi: 800,
 		sens: 3.25,
 		mouse: 'Gwolves HTS Plus 4K',
@@ -430,7 +430,7 @@ export const GEARS_AND_SETTINGS: { [key: string]: GearsAndSettings } = {
 		]
 	},
 	hakaisinkotaro: {
-		imageId: 'hakaisinkotaro',
+		avatar: 'hakaisinkotaro',
 		dpi: 800,
 		sens: 7.3,
 		mouse: 'Logicool G PRO X SUPERLIGHT',

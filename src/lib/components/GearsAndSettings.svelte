@@ -38,7 +38,7 @@
 </script>
 
 <img
-	src="/images/members/characters/{gearsAndSettings.imageId}.webp"
+	src="/images/members/characters/{gearsAndSettings.avatar}.webp"
 	alt="{playerName}{$_('teams.sAvatar')}"
 />
 
