@@ -177,7 +177,9 @@
 </ul>
 
 {#if $gearsAndSettingsModalState.isOpened && $gearsAndSettingsModalState.content !== null}
-	<Modal minWidth={422} doesNotHaveBloom><GearsAndSettings {...$gearsAndSettingsModalState.content} /></Modal>
+	<Modal minWidth={422} doesNotHaveBloom
+		><GearsAndSettings {...$gearsAndSettingsModalState.content} /></Modal
+	>
 {/if}
 
 <style lang="scss">
