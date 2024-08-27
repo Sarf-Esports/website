@@ -36,6 +36,7 @@
 	},
 	"teams": {
 		"gearsAndGameSettingsOfThisPlayer": "이 선수의 사용 장치 및 게임 설정",
+		"sAvatar": " 의 아바타",
 		"sGearsAndGameSettings": " 의 사용 장치 및 게임 설정",
 		"gearsAndSettingsItem": {
 			"type": "종류",

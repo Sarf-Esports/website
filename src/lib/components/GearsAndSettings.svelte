@@ -37,7 +37,10 @@
 	}
 </script>
 
-<!-- <img src="/images/gears-and-settings--poster/{gearsAndSettings.imageId}.png" alt="ぽすたー" /> -->
+<img
+	src="/images/members/characters/{gearsAndSettings.imageId}.webp"
+	alt="{playerName}{$_('teams.sAvatar')}"
+/>
 
 <h2>{playerName}{$_('teams.sGearsAndGameSettings')}</h2>
 
@@ -189,12 +192,10 @@
 	@use '$lib/stylesheets/variables/mixin' as *;
 	@use '$lib/stylesheets/variables/color' as *;
 
-	// img {
-	// 	width: 640px;
-	// 	margin-top: 46px;
-	// 	border: 1px solid #888888;
-	// 	border-radius: 8px;
-	// }
+	img {
+		height: 186px;
+		margin-top: 46px;
+	}
 
 	h2 {
 		font-size: 24px;

@@ -36,6 +36,7 @@
 	},
 	"teams": {
 		"gearsAndGameSettingsOfThisPlayer": "This player's gears and game settings",
+		"sAvatar": "'s Avatar",
 		"sGearsAndGameSettings": "'s Gears & Game Settings",
 		"gearsAndSettingsItem": {
 			"type": "Type",

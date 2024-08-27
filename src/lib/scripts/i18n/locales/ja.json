@@ -36,6 +36,7 @@
 	},
 	"teams": {
 		"gearsAndGameSettingsOfThisPlayer": "この選手の使用デバイスとゲーム設定",
+		"sAvatar": " のアバター",
 		"sGearsAndGameSettings": " の使用デバイス&ゲーム設定",
 		"gearsAndSettingsItem": {
 			"type": "タイプ",
