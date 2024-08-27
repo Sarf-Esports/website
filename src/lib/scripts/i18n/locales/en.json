@@ -41,7 +41,7 @@
 		"gearsAndSettingsItem": {
 			"type": "Type",
 			"type.default": "DEFAULT",
-			"type.circle": "",
+			"type.circle": "CIRCLE",
 			"type.crosshairs": "CROSSHAIRS",
 			"type.circleAndCrosshairs": "CIRCLE AND CROSSHAIRS",
 			"type.dot": "DOT",
