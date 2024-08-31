@@ -2,72 +2,83 @@
 
 // # メンバーを追加する人へ
 //
-// 追加するときは以下のフォーマットで追加してください:
+// 追加する際は以下のフォーマットで追加してください。
+// 任意となっている項目には、`null` を指定することで指定なしとすることができます。
+// メンバーの並びは名前の `数字順 -> アルファベット順 -> 五十音順 -> その他(ここまで着たら追加順)` でお願いします。
+// やむを得ず並びを変える場合はコメントアウトでその旨を記載してください。
 //
 // {
-//     // メンバーの名前
-//     // null にはしないこと。あとあんまり長くしないでね^^;
+//
+//     // 名前 (必須)
+//     // 長くしすぎないように。
 //     memberName: 'Rinrin.rs',
 //
-//     // メンバーのアイコン画像のファイル名
-//     // `/static/images/members/` 配下に置く画像ファイルの名前を指定してください
-//     // ただ単にアイコンが無い人や著作権の問題で貼れない人は `null` にして
+//     // アイコン画像のファイル名 (任意)
+//     // `static/images/members/` に置く画像ファイルを指定してください。
+//     // - 最大ファイルサイズ: 50KB (原則)
+//     // - 推奨ファイルサイズ: 7KB 前後
+//     // - 推奨画像フォーマット: WebP
+//     // - 推奨画像サイズ: 256x256
+//     // - 推奨画像比率: 1:1 (正方形以外は押し潰されて表示される)
+//     // 画像ファイルの配置を忘れないでください。
 //     icon: 'rinrin.png',
 //
-//	   // メンバーの役職 (例: Player, Coach, Manager)
-//     // 指定しない場合は `null` にしてください
+//	   // 役職 (任意)
+//     // Player, Coach, Manager 等を指定してください。
+//     // 長くしすぎないように。
 //     role: 'Web Developer',
 //
-//     // メンバーの国旗
-//     // 'jp' が日本国、`us` がアメリカ合衆国、'kr' が大韓民国です
-//     // 新しい国旗を追加する場合は `static/images/flags/` 配下に SVG で追加して、
-//     // このファイル80行目あたりの `country` の型に追加してください
-//     // 指定しない場合は `null` にしてください
+//     // 国旗 (任意)
+//     // 'jp' が日本国、`us` がアメリカ合衆国、'kr' が大韓民国となります。
+//     // 新しい国旗を追加する場合は `static/images/flags/` に SVG ファイルとして追加し、
+//     // このファイル100行目あたりの `country` フィールドの型にファイル名を追加してください。
 //     country: 'jp',
 //
-//     // メンバーの生年月日 (YYYY-MM-DD)
-//     // ┏━ 生年月日を一切指定しない場合は `null` にしてください
+//     // 生年月日 (任意)
+//     // ┏━ 生年月日を一切指定しない場合は `null` にしてください。
 //     // ┃
-//     // ┃          ┏━ 年は必ず4桁の整数で西暦を指定してください
-//     // ┃          ┃  誕生日の月日のみを指定する場合はこれは `null` にしてください
+//     // ┃          ┏━ 年は必ず4桁の整数で西暦を指定してください。
+//     // ┃          ┃  誕生日の月日のみを指定する場合はこれを `null` にしてください。
 //     // ┃          ┃
-//     // ┃          ┃           ┏━ 月は1から12までの整数で指定してください
+//     // ┃          ┃           ┏━ 月は1から12までの整数で指定してください。
 //     // ┃          ┃           ┃
-//     // ┃          ┃           ┃         ┏━ 日は1から31までの整数で指定してください
+//     // ┃          ┃           ┃         ┏━ 日は1から31までの整数で指定してください。
 //     birthday: { year: 2006, month: 4, day: 13 },
 //
-//     // メンバーの年齢
-//     // 上記で誕生日を年まで指定している場合は、
-//     // 自動で計算(誤差約1日)されるので `null` で良いが、上書も可能
-//     // 指定しない場合は `null` にしてください
+//     // 年齢 (任意)
+//     // 上の `birthday` フィールドで誕生日を年まで指定している場合は、
+//     // 自動で計算(約1日の誤差あり)されるため `null` で問題はありません。
+//     // 自動計算の上書きをすると、「(自称)」と付きます。
 //     age: null,
 //
-//     // メンバーの X(旧Twitter)アカウントID (アットマークはつけないで)
-//     // ない場合は `null` にしてください
-//     twitter: 'rinrin_2nd',
+//     // X(旧 Twitter) アカウントの ID (任意)
+//     // アットマークはつけないでください。
+//     twitter: 'Rinrin_2nd',
 //
-//     // メンバーの YouTubeチャンネルID
-//     // `@rinrin-rs` みたいな感じか `UCb3U3ovwzmagTBuzkdrsJkQ` みたいな形式で指定してください
-//     // ない場合は `null` にしてください
+//     // YouTube チャンネル ID (任意)
+//     // `@rinrin-rs` みたいな感じか `UCb3U3ovwzmagTBuzkdrsJkQ` みたいな形式で指定してください。
 //     youtube: '@rinrin-rs',
 //
-//     // メンバーの TwitchアカウントID (アットマークはつけないで)
-//     // ない場合は `null` にしてください
-//     twitch: 'rinrin0413'
+//     // Twitch アカウント ID (任意)
+//     // アットマークはつけないでください。
+//     twitch: 'rinrin0413',
 //
-//     // メンバーのホームページの URL
-//     // ない場合は `null` にしてください
-//     homepage: 'https://rinrin.pages.dev'
+//     // ホームページの URL (任意)
+//     homepage: 'https://rinrin.pages.dev',
+//
+//     // 使用デバイスとゲーム設定
+//     // この項目のデータは `src/lib/scripts/data/GEARS_AND_SETTINGS.ts` に記載します。
+//     // 詳しくはそちらを参照してください。
+//     // 指定しない場合は `null` にするのではなく、
+//     // このプロパティ自体を省略してください。
+//     gearsAndSettings: GEARS_AND_SETTINGS['rinrin']
 // }
 //
-// 並びは名前の `数字順 -> アルファベット順 -> 五十音順 -> その他(ここまで着たら追加順)` でお願いします。
-// どうしても並びを変えたい場合はコメントアウトでその旨を記載してください。
+// なお、部門の並びは自由です。
 //
-// また、メンバーのアイコン画像を指定した場合は `/static/images/members/` 配下に置くのを忘れないでください。
-// - 最大ファイルサイズ: 50KB (原則)
-// - 推奨画像フォーマット: WebP
-// - 推奨画像サイズ: 256x256
-// - 推奨画像比率: 1:1 (正方形以外は押し込まれて表示される)
+
+import type { GearsAndSettings } from '$lib/scripts/types';
+import { GEARS_AND_SETTINGS } from './GEARS_AND_SETTINGS';
 
 export const MEMBER_LISTS: {
 	divisionName: string;
@@ -82,6 +93,7 @@ export const MEMBER_LISTS: {
 		youtube: string | null;
 		twitch: string | null;
 		homepage: string | null;
+		gearsAndSettings?: GearsAndSettings;
 	}[];
 }[] = [
 	{
@@ -97,7 +109,8 @@ export const MEMBER_LISTS: {
 				twitter: 'ep11111123',
 				youtube: null,
 				twitch: 'ep1c_ow',
-				homepage: null
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['epic']
 			},
 			{
 				memberName: 'Fearful',
@@ -109,7 +122,8 @@ export const MEMBER_LISTS: {
 				twitter: 'fearful0405',
 				youtube: null,
 				twitch: null,
-				homepage: null
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['fearful']
 			},
 			{
 				memberName: 'harutoon',
@@ -121,7 +135,8 @@ export const MEMBER_LISTS: {
 				twitter: 'harutoon_FN',
 				youtube: null,
 				twitch: 'harutoon_',
-				homepage: null
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['harutoon']
 			},
 			{
 				memberName: 'Hesty',
@@ -133,7 +148,8 @@ export const MEMBER_LISTS: {
 				twitter: '__Hestyow',
 				youtube: null,
 				twitch: 'hesty_ow',
-				homepage: null
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
 			},
 			{
 				memberName: 'HoFac',
@@ -145,7 +161,8 @@ export const MEMBER_LISTS: {
 				twitter: 'HoneyFactory_OW',
 				youtube: '@ahoneyfactory9887',
 				twitch: 'hofac_ow',
-				homepage: null
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['hofac']
 			},
 			{
 				memberName: 'solace',
@@ -157,7 +174,8 @@ export const MEMBER_LISTS: {
 				twitter: 'sorryimsolace',
 				youtube: '@sorryimsolace',
 				twitch: 'sorryimsolace',
-				homepage: null
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['solace']
 			},
 			{
 				memberName: 'にんじゃはむぞー',
@@ -169,7 +187,8 @@ export const MEMBER_LISTS: {
 				twitter: 'ninja_hamuzo',
 				youtube: null,
 				twitch: 'nhzow',
-				homepage: null
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['ninja_hamuzo']
 			},
 			// // ▲ 選手
 			// // ▼ コーチ
@@ -298,7 +317,8 @@ export const MEMBER_LISTS: {
 				twitter: 'mareku1212',
 				youtube: '@hakaisinkotaro',
 				twitch: 'hakaisinnkotaro',
-				homepage: null
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['hakaisinkotaro']
 			},
 			{
 				memberName: '碧海まっちゃ',

@@ -44,6 +44,7 @@
 </div>
 
 <style lang="scss">
+	@use '$lib/stylesheets/variables/color' as *;
 	@use '$lib/stylesheets/variables/mixin' as *;
 
 	$secondary-color: #ccfbff;
@@ -65,6 +66,8 @@
 		$bloom-color-small: rgba($secondary-color, 0.2);
 		filter: drop-shadow(0 0 128px $bloom-color-large) drop-shadow(0 0 28px $bloom-color-small);
 		overflow: scroll;
+		scrollbar-color: #d1ff46 transparent;
+		scrollbar-width: thin;
 		z-index: 255;
 
 		@include sp {
