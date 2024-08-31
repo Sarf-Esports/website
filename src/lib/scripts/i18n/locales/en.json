@@ -5,7 +5,16 @@
 		"articleThumbnailImg": "Article thumbnail image",
 		"nationalFlag": "National flag",
 		"selfStyled": "self-styled",
-		"poster": "Poster"
+		"poster": "Poster",
+		"gears": "Gears",
+		"gameSettings": "Game Settings",
+		"crosshairSettings": "Crosshair Settings",
+		"sens": "Sensitivity",
+		"mouse": "Mouse",
+		"mousepad": "Mousepad",
+		"keyboard": "Keyboard",
+		"on": "ON",
+		"off": "OFF"
 	},
 	"header.back": "Back to top page",
 	"top": {
@@ -24,6 +33,55 @@
 		"desc": "Latest news from REVATI:",
 		"back": "Back to news list",
 		"wasRedirect": ["This article has been moved to ", "."]
+	},
+	"teams": {
+		"gearsAndGameSettingsOfThisPlayer": "This player's gears and game settings",
+		"sAvatar": "'s Avatar",
+		"sGearsAndGameSettings": "'s Gears & Game Settings",
+		"gearsAndSettingsItem": {
+			"type": "Type",
+			"type.default": "DEFAULT",
+			"type.circle": "CIRCLE",
+			"type.crosshairs": "CROSSHAIRS",
+			"type.circleAndCrosshairs": "CIRCLE AND CROSSHAIRS",
+			"type.dot": "DOT",
+			"type.line": "LINE",
+			"type.box": "BOX",
+			"type.falloff": "FALLOFF",
+			"type.triwing": "TRIWING",
+			"type.square": "SQUARE",
+			"showsAccuracy": "Shows Accuracy",
+			"color": "Color",
+			"color.black": "Black",
+			"color.white": "White",
+			"color.red": "Red",
+			"color.cyan": "Cyan",
+			"color.magenta": "Magenta",
+			"color.orange": "Orange",
+			"thickness": "Thickness",
+			"rotation": "Rotation",
+			"crosshairLength": "Crosshair Length",
+			"centerGap": "Center Gap",
+			"opacity": "Opacity",
+			"outline": {
+				"color": "Outline Color",
+				"opacity": "Outline Opacity",
+				"thickness": "Outline Thickness",
+				"shift": "Outline Shift"
+			},
+			"dot": {
+				"type": "Dot Type",
+				"type.default": "DEFAULT",
+				"type.ring": "RING",
+				"type.square": "SQUARE",
+				"type.triangle": "TRIANGLE",
+				"type.cross": "CROSS",
+				"type.heart": "HEART",
+				"size": "Dot Size",
+				"opacity": "Dot Opacity"
+			},
+			"scaleWithResolution": "Scale with Resolution"
+		}
 	},
 	"coaching": {
 		"desc": [
