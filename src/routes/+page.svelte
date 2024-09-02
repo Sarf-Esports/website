@@ -142,4 +142,8 @@
 			}
 		}
 	}
+
+	#teams {
+		max-width: 1136px;
+	}
 </style>
