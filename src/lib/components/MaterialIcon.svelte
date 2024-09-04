@@ -17,7 +17,8 @@
 		},
 		'stadia-controller': {
 			src:
-				GOOGLE_MATERIAL_DESIGN_ICONS_PATH + 'stadia_controller_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg',
+				GOOGLE_MATERIAL_DESIGN_ICONS_PATH +
+				'stadia_controller_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg',
 			alt: 'Stadia Controller'
 		}
 	};
