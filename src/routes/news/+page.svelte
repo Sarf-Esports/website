@@ -1,7 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
-	import SectionTitle from '../SectionTitle.svelte';
+	import SectionTitle from '../../lib/components/SectionTitle.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
 
 	import type { PageData } from './$types';

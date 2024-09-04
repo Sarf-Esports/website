@@ -3,7 +3,7 @@
 	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
 	import MainVisual from '../lib/components/home/MainVisual.svelte';
 	import SponsorBanner from '$lib/components/home/sponsor_banner/SponsorBanner.svelte';
-	import SectionTitle from './SectionTitle.svelte';
+	import SectionTitle from '../lib/components/SectionTitle.svelte';
 	import RevealFadeIn from '$lib/components/RevealFadeIn.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
 	import Teams from '../lib/components/home/Teams.svelte';
