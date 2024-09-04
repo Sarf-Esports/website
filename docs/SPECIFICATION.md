@@ -106,3 +106,78 @@ Default font weight is `400`.
 
 </div>
 </details>
+
+<details>
+<summary>API Endpoints</summary>
+<div>
+
+- [Articles](#articles---get-apiarticles) (`/api/articles`)
+- [Article Thumbnail Image Formats](#article-thumbnail-image-formats---get-apiarticlesthumbnail-imgs) (`/api/articles/thumbnail-imgs`)
+
+## Articles - `GET /api/articles`
+
+Returns a list of the news articles.
+
+### Response Body
+
+`ArticleMetadata[]` ([`src/lib/scripts/types.ts`](/src/lib/scripts/types.ts))
+
+- `[]` (`object[]`) - The list of articles.
+	- `redirect` (`string?`) - The article ID to redirect to.
+	- `published` (`boolean`) - Whether the article is published.
+	- `indexed` (`boolean`) - Whether the article is indexed.
+	- `title` (`string`) - The title of the article.
+	- `slug` (`string?`) - The slug of the article. Its type is an optional string but it always exists.
+
+#### Example
+
+```json
+[
+    {
+        "published": true,
+        "indexed": true,
+        "title": "1名のメンバーが脱退",
+        "slug": "20230220"
+    },
+    {
+        "published": true,
+        "indexed": true,
+        "title": "計5名のメンバーが新たに加入",
+        "slug": "2023012102"
+    },
+    {
+        "published": true,
+        "indexed": true,
+        "title": "Sarf Esports リブランディングのお知らせ",
+        "slug": "20230121"
+    }
+]
+```
+
+---
+
+## Article Thumbnail Image Formats - `GET /api/articles/thumbnail-imgs`
+
+Returns a list of the articles that have their thumbnail images with the image file formats.
+
+### Response Body
+
+`ArticleThumbnailImgFmts` ([`src/lib/scripts/types.ts`](/src/lib/scripts/types.ts))
+
+- `{}` (`object`) - The list of the articles that have their thumbnail images with the image file formats.
+	- `[slug]` (`string`) - The thumbnail image file format for the article identified by this slug.
+
+#### Example
+
+```json
+{
+    "20230825": "jpg",
+    "20240819": "webp",
+    "2023031502": "png"
+}
+```
+
+---
+
+</div>
+</details>
