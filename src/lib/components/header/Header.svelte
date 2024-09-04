@@ -158,7 +158,7 @@
 				}
 			}
 
-			@include sp {
+			@include hb {
 				margin-top: 16px;
 			}
 
@@ -180,7 +180,7 @@
 
 			$ul-border-thickness: 4px;
 
-			@include sp {
+			@include hb {
 				display: inline-block;
 				text-align: left;
 				transform: translateY(calc($vh001 * -48));
@@ -239,13 +239,13 @@
 			letter-spacing: 0.4px;
 			transition: 0.27s;
 
-			@include pc {
+			@include not-hb {
 				display: none;
 			}
 		}
 
 		&.open {
-			@include sp {
+			@include hb {
 				top: calc($opened_header_height - $vh100 - $height);
 
 				span {
@@ -306,7 +306,7 @@
 				&::after {
 					transform: scaleX(112%);
 
-					@include sp {
+					@include hb {
 						transform: scaleX(0);
 					}
 				}
@@ -314,7 +314,7 @@
 		}
 
 		@include low-height {
-			@include sp {
+			@include hb {
 				margin: 4px 12px 0px 10px;
 
 				a,
@@ -340,7 +340,7 @@
 		border-left: $border-thickness solid $primary-color-darker-2;
 		transition: $tf-duration ease-in;
 
-		@include sp {
+		@include hb {
 			width: 100vw;
 			height: calc($vh100 - $opened_header_height - $border-thickness + 2px);
 			z-index: 253;
@@ -366,11 +366,10 @@
 	}
 
 	#header-bg {
-		@include pc {
-			display: none;
-		}
+		display: none;
 
-		@include sp {
+		@include hb {
+			display: initial;
 			position: fixed;
 			top: 0;
 			left: 0;
