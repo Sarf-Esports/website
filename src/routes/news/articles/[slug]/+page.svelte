@@ -80,7 +80,9 @@
 			<Article body={data.component} />
 		{/if}
 		<a href="/news"
-			>{$_('news.back')}<!--
+			>{$_(
+				'news.back'
+			)}<!--
 				Bootstrap Icons - Box arrow in down left
 				https://icons.getbootstrap.com/icons/box-arrow-in-down-left
 				Copyright (c) 2019 The Bootstrap Authors

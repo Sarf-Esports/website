@@ -23,7 +23,12 @@
 </script>
 
 {#if kind == 'box-arrow-up-right'}
-	<img src="{BOOTSTRAP_ICONS_PATH}box-arrow-up-right.svg" alt="Box arrow up-right" loading="lazy" {style} />
+	<img
+		src="{BOOTSTRAP_ICONS_PATH}box-arrow-up-right.svg"
+		alt="Box arrow up-right"
+		loading="lazy"
+		{style}
+	/>
 {:else if kind == 'link-45deg'}
 	<img src="{BOOTSTRAP_ICONS_PATH}link-45deg.svg" alt="Link 45deg" loading="lazy" {style} />
 {:else if kind == 'lock-fill_inline'}
