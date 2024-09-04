@@ -5,9 +5,10 @@
 
 <style lang="scss">
 	@use '$lib/stylesheets/variables/mixin' as *;
+	@use '$lib/stylesheets/variables/dimension' as *;
 
 	div {
-		height: 100vh;
+		height: calc($max-vh001 * 100);
 		position: relative;
 		opacity: 0;
 		filter: blur(12px);
