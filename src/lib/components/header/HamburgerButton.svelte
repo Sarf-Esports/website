@@ -3,13 +3,13 @@
 	import { browser } from '$app/environment';
 	import { fly, scale } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
-	import { BREAKPOINT } from '$lib/scripts/variables';
+	import { BREAKPOINT_HB } from '$lib/scripts/variables';
 	import { toggleScrollPrevention } from '$lib/scripts/util';
 
 	let isHbButtonEnabled: boolean;
 
 	if (browser) {
-		let bp = window.matchMedia(BREAKPOINT);
+		let bp = window.matchMedia(BREAKPOINT_HB);
 
 		isHbButtonEnabled = bp.matches;
 

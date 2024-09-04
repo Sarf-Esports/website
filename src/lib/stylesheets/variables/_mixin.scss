@@ -1,8 +1,9 @@
 // © 2022 REVATI
 
-// If update `$breakpoint` Sass variable, also update `BREAKPOINT` JS constant in `src/lib/scripts/variables.ts`.
-// ＊ `$breakpoint` = (numerical value of `BREAKPOINT`) + 1
 $breakpoint: 908px;
+// If update `$bp-hamburger-btn` Sass variable, also update `BREAKPOINT_HB` JS constant in `src/lib/scripts/variables.ts`.
+// ＊ `$bp-hamburger-btn` = (numerical value of `BREAKPOINT_HB`) + 1
+$bp-hamburger-btn: 908px;
 $bp-wide: 1058px;
 
 @mixin pc {
@@ -13,6 +14,18 @@ $bp-wide: 1058px;
 
 @mixin sp {
 	@media screen and (max-width: #{$breakpoint - 1}) {
+		@content;
+	}
+}
+
+@mixin not-hb {
+	@media screen and (min-width: $bp-hamburger-btn) {
+		@content;
+	}
+}
+
+@mixin hb {
+	@media screen and (max-width: #{$bp-hamburger-btn - 1}) {
 		@content;
 	}
 }
