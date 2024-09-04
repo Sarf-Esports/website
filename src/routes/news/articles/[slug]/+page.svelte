@@ -2,7 +2,6 @@
 <script lang="ts">
 	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
 	import Article from './Article.svelte';
-	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
 	import type { PageData } from './$types';
 	import { onMount } from 'svelte';

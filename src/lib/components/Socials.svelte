@@ -1,7 +1,5 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import MaterialIcon from './MaterialIcon.svelte';
-
 	import { SOCIALS } from '$lib/scripts/variables';
 
 	/** Inline styles. */
