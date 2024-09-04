@@ -5,6 +5,7 @@
 	import GearsAndSettings from '$lib/components/GearsAndSettings.svelte';
 
 	import { MEMBER_LISTS } from '$lib/scripts/data/MEMBERS';
+	import type { IconKind } from '$lib/components/MaterialIcon.svelte';
 	import { replaceState } from '$app/navigation';
 	import { calcAge, zeroPad } from '$lib/scripts/util';
 	import { date, _ } from 'svelte-i18n';
@@ -19,7 +20,11 @@
 
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
 
-	const LOCK_ICON = {
+	const LOCK_ICON: {
+		kind: IconKind;
+		height: string;
+		style: string;
+	} = {
 		kind: 'lock-fill_inline',
 		height: '15px',
 		style: 'position: relative; top: 2px; pointer-events: none;'
@@ -139,7 +144,18 @@
 							<MaterialIcon
 								kind="link-45deg"
 								width="34px"
-								style="color: #eeeeee; margin-top: 11px;"
+								style="
+									filter:
+										brightness(0)
+										saturate(100%)
+										invert(99%)
+										sepia(10%)
+										saturate(2437%)
+										hue-rotate(284deg)
+										brightness(129%)
+										contrast(87%);
+									margin-top: 11px;
+								"
 							/>
 						</a>
 					</li>

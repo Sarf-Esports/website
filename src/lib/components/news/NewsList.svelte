@@ -1,6 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import ChevronArrow from './util/ChevronArrow.svelte';
+	import ChevronArrow from './ChevronArrow.svelte';
 	import ArticleCard from './ArticleCard.svelte';
 
 	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
