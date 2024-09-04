@@ -4,7 +4,6 @@
 	 * Valid values:
 	 * `box-arrow-up-right`,
 	 * `link-45deg`,
-	 * `envelope-fill`,
 	 * `lock-fill_inline`,
 	 * `stadia-controller`
 	 * */
@@ -27,26 +26,6 @@
 	<img src="{BOOTSTRAP_ICONS_PATH}box-arrow-up-right.svg" alt="Box arrow up-right" loading="lazy" {style} />
 {:else if kind == 'link-45deg'}
 	<img src="{BOOTSTRAP_ICONS_PATH}link-45deg.svg" alt="Link 45deg" loading="lazy" {style} />
-{:else if kind == 'envelope-fill'}
-	<!--
-		Bootstrap Icons - Envelope fill
-		https://icons.getbootstrap.jp/icons/envelope-fill
-		Copyright (c) 2019 The Bootstrap Authors
-		under the MIT License: https://github.com/twbs/icons/blob/main/LICENSE
-	-->
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		width="16"
-		height="16"
-		fill="currentColor"
-		class="bi bi-envelope-fill"
-		viewBox="0 0 16 16"
-		{style}
-	>
-		<path
-			d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
-		/>
-	</svg>
 {:else if kind == 'box-arrow-in-down-left'}
 	<!--
 		Bootstrap Icons - Box arrow in down left
