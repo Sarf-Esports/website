@@ -4,14 +4,13 @@
 <summary>Z-Index</summary>
 <div>
 
-| Z-Index | Entity |
-| --: | --- |
-| 252 | Header Background |
-| 253 | Header, Header II |
-| 254 | Modal Background |
-| 255 | Modals |
-| 32 | News list arrows (`NewsList.svelte>style button`) |
-| -1 | Background | (`style.scss>main::before`) |
+| Z-Index | Entity | Path |
+| --: | --- | --- |
+| 255 | modal | `Modal.svelte>style>.modal` |
+| 254 | modal bg | `layout.scss>.modal-bg` |
+| 253 | header, header2 | `Header.svelte>style>header`, `Header.svelte>style>#header2` |
+| 252 | header bg | `Header.svelte>style>#header-bg` |
+| -1 | bg | `layout.scss>main::before` |
 
 </div>
 </details>
