@@ -2,7 +2,7 @@
 <script lang="ts">
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 	import Modal from '$lib/components/Modal.svelte';
-	import GearsAndSettings from '$lib/components/GearsAndSettings.svelte';
+	import GearsAndSettings from '$lib/components/home/GearsAndSettings.svelte';
 
 	import { MEMBER_LISTS } from '$lib/scripts/data/MEMBERS';
 	import type { IconKind } from '$lib/components/MaterialIcon.svelte';
