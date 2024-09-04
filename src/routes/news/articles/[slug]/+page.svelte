@@ -52,6 +52,7 @@
 <svelte:head>
 	<meta property="og:image" content={absThumbnailImgPath} />
 	<meta name="thumbnail" content={absThumbnailImgPath} />
+	<meta name="robots" content="max-image-preview:large" />
 
 	{#if !metadata.indexed || willRedirect}
 		<meta name="robots" content="noindex" />
