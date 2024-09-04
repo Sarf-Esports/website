@@ -139,7 +139,18 @@
 							<MaterialIcon
 								kind="link-45deg"
 								width="34px"
-								style="color: #eeeeee; margin-top: 11px;"
+								style="
+									filter:
+										brightness(0)
+										saturate(100%)
+										invert(99%)
+										sepia(10%)
+										saturate(2437%)
+										hue-rotate(284deg)
+										brightness(129%)
+										contrast(87%);
+									margin-top: 11px;
+								"
 							/>
 						</a>
 					</li>
