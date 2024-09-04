@@ -92,5 +92,8 @@
 		"coaches": "Coaches",
 		"form": "Participation form here"
 	},
-	"error.404": "The page you are looking for could not be found."
+	"error": {
+		"404": "The page you are looking for could not be found.",
+		"unknown": "An unexpected error occurred."
+	}
 }
