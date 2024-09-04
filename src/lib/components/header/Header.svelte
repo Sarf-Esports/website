@@ -117,7 +117,7 @@
 	$vh100: calc($vh001 * 100);
 	$border-thickness: 6px;
 	$tf-duration: 0.28s;
-	$opened_header_height: calc($vh001 * 75);
+	$opened-header-height: calc($vh001 * 75);
 
 	header {
 		$height: 88px;
@@ -246,7 +246,7 @@
 
 		&.open {
 			@include hb {
-				top: calc($opened_header_height - $vh100 - $height);
+				top: calc($opened-header-height - $vh100 - $height);
 
 				span {
 					transform: translateY(calc($vh001 * -86));
@@ -342,7 +342,7 @@
 
 		@include hb {
 			width: 100vw;
-			height: calc($vh100 - $opened_header_height - $border-thickness + 2px);
+			height: calc($vh100 - $opened-header-height - $border-thickness + 2px);
 			z-index: 253;
 
 			&.open {
