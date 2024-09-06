@@ -155,6 +155,7 @@
 										brightness(129%)
 										contrast(87%);
 									margin-top: 11px;
+									user-select: none;
 								"
 							/>
 						</a>
