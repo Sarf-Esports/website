@@ -427,6 +427,18 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'Pear',
+				icon: 'pear.webp',
+				role: null,
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'pear_fps',
+				youtube: null,
+				twitch: 'pear_fps',
+				homepage: null
+			},
+			{
 				memberName: 'Rinrin.rs',
 				icon: 'rinrin.webp',
 				role: 'Web Developer',
