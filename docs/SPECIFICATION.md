@@ -6,10 +6,10 @@
 
 | Z-Index | Entity | Path |
 | --: | --- | --- |
-| 255 | modal | `Modal.svelte>style>.modal` |
+| 255 | modal | `modal.scss>.modal` |
 | 254 | modal bg | `layout.scss>.modal-bg` |
-| 253 | header, header2 | `Header.svelte>style>header`, `Header.svelte>style>#header2` |
-| 252 | header bg | `Header.svelte>style>#header-bg` |
+| 253 | header, header2 | `header.scss>header`, `header.scss>#header2` |
+| 252 | header bg | `header.scss>#header-bg` |
 | -1 | bg | `layout.scss>main::before` |
 
 ---

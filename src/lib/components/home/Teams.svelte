@@ -200,5 +200,5 @@
 {/if}
 
 <style lang="scss">
-	@use '$lib/stylesheets/teams';
+	@use '$lib/stylesheets/home/teams';
 </style>
