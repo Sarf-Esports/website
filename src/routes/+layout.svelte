@@ -26,7 +26,7 @@
 		setMaxVh001();
 
 		document.addEventListener('keydown', (event) => {
-			if (event.key == 'Escape') closeAllModals();
+			if (event.key === 'Escape') closeAllModals();
 		});
 	}
 

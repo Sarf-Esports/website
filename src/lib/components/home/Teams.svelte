@@ -16,7 +16,7 @@
 	let currentDivisionIndex = 0;
 
 	if (division !== null)
-		currentDivisionIndex = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName == division);
+		currentDivisionIndex = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName === division);
 
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
 
@@ -36,7 +36,7 @@
 		<li class="division">
 			<button
 				class="div-btn"
-				class:active={i == currentDivisionIndex}
+				class:active={i === currentDivisionIndex}
 				on:click={() => {
 					currentDivisionIndex = i;
 					replaceState(`?div=${divisionName.replace(' ', '+')}#teams`, {});
@@ -56,7 +56,7 @@
 			<img src="/images/members/{icon ?? 'noimage.webp'}" alt="" loading="lazy" class="icon" />
 			<div class="info">
 				<div class="role-and-country">
-					<span class="role" class:inactive={role == null}>{role ?? '　'}</span>
+					<span class="role" class:inactive={role === null}>{role ?? '　'}</span>
 					{#if country !== null}
 						<img src="/images/flags/{country}.svg" alt={$_('w.nationalFlag')} class="flag" />
 					{/if}
@@ -64,7 +64,7 @@
 				<h2>{memberName}</h2>
 				<div class="details">
 					Age:
-					{#if age == null && birthday !== null && birthday.year !== null}
+					{#if age === null && birthday !== null && birthday.year !== null}
 						{calcAge(new Date(birthday.year, birthday.month - 1, birthday.day))}
 					{:else if age !== null}
 						{age + (birthday !== null && birthday.year === null ? ` (${$_('w.selfStyled')})` : '')}
@@ -102,7 +102,7 @@
 					</li>
 				{/if}
 				{#if youtube !== null}
-					{@const path = youtube[0] == '@' ? youtube : `channel/${youtube}`}
+					{@const path = youtube[0] === '@' ? youtube : `channel/${youtube}`}
 					<li>
 						<a
 							href="https://youtube.com/{path}"

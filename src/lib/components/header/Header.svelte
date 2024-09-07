@@ -18,7 +18,7 @@
 
 	if (browser) {
 		window.addEventListener('scroll', function () {
-			if (url !== undefined && url.pathname == '/') {
+			if (url !== undefined && url.pathname === '/') {
 				let sectionPositions = HEADER_ITEMS.filter((i) => !NON_SECTION_ITEMS.includes(i)).map(
 					(item) => {
 						return {
@@ -61,7 +61,7 @@
 		<a href="/" draggable="false"><span title={$_('header.back')} /></a>
 		<ul>
 			{#each HEADER_ITEMS as item}
-				{#if item == 'contact'}
+				{#if item === 'contact'}
 					<li class="item-contact">
 						<button class:active={false} on:click={() => isContactModalOpened.update(() => true)}
 							>CONTACT</button
@@ -71,9 +71,9 @@
 					<li>
 						<a
 							href="/#{item}"
-							class:active={currentSection == ''
-								? url.hash == '#' + item || url.pathname.split('/')[1] == item
-								: currentSection == item}
+							class:active={currentSection === ''
+								? url.hash === '#' + item || url.pathname.split('/')[1] === item
+								: currentSection === item}
 							on:click={() => {
 								toggleDrawerMenu(false);
 							}}>{item.toUpperCase()}</a

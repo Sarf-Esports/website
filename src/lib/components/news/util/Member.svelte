@@ -38,7 +38,7 @@
 							loading="lazy"
 							class="vertical-icn"
 						/></a
-					>{/if}{#if youtube}{@const path = youtube[0] == '@' ? youtube : `channel/${youtube}`}
+					>{/if}{#if youtube}{@const path = youtube[0] === '@' ? youtube : `channel/${youtube}`}
 					<a
 						href="https://youtube.com/{path}"
 						target="_blank"

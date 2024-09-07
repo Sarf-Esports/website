@@ -5,7 +5,7 @@
 </script>
 
 <div class:transparent>
-	{#if direction == 'left'}
+	{#if direction === 'left'}
 		<!--
 			Google Material Symbols and Icons - Arrow Back iOS
 			https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Aarrow_back_ios%3AFILL%400%3Bwght%40500%3BGRAD%400%3Bopsz%4040
@@ -16,7 +16,7 @@
 				d="M406.377-73.623 0-480l406.377-406.377 67.377 68.043L135.42-480l338.334 338.334-67.377 68.043Z"
 			/></svg
 		>
-	{:else if direction == 'right'}
+	{:else if direction === 'right'}
 		<!--
 			Google Material Symbols and Icons - Arrow Forward iOS
 			https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Aarrow_forward_ios%3AFILL%400%3Bwght%40500%3BGRAD%400%3Bopsz%4040
