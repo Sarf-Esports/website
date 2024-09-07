@@ -34,7 +34,12 @@
 	}
 
 	$: {
-		if ($navigating !== null && $navigating.to !== null && $navigating.to.url.href !== $page.url.href) NProgress.start();
+		if (
+			$navigating !== null &&
+			$navigating.to !== null &&
+			$navigating.to.url.href !== $page.url.href
+		)
+			NProgress.start();
 		else NProgress.done();
 	}
 
