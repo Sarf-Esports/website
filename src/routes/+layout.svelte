@@ -4,6 +4,9 @@
 	import Footer from '$lib/components/Footer.svelte';
 
 	import { closeAllModals } from '$lib/scripts/util';
+	import NProgress from 'nprogress';
+	import 'nprogress/nprogress.css';
+	import { navigating } from '$app/stores';
 	import {
 		isContactModalOpened,
 		isFeesModalOpened,
@@ -28,6 +31,11 @@
 		document.addEventListener('keydown', (event) => {
 			if (event.key === 'Escape') closeAllModals();
 		});
+	}
+
+	$: {
+		if ($navigating !== null) NProgress.start();
+		else NProgress.done();
 	}
 
 	/**
