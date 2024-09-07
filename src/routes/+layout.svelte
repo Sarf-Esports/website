@@ -6,7 +6,7 @@
 	import { closeAllModals } from '$lib/scripts/util';
 	import NProgress from 'nprogress';
 	import 'nprogress/nprogress.css';
-	import { navigating } from '$app/stores';
+	import { navigating, page } from '$app/stores';
 	import {
 		isContactModalOpened,
 		isFeesModalOpened,
@@ -34,7 +34,7 @@
 	}
 
 	$: {
-		if ($navigating !== null) NProgress.start();
+		if ($navigating !== null && $navigating.to !== null && $navigating.to.url.href !== $page.url.href) NProgress.start();
 		else NProgress.done();
 	}
 
