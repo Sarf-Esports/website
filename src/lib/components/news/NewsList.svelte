@@ -46,8 +46,8 @@
 <svelte:window
 	on:keydown={(e) => {
 		const key = e.key;
-		if (key == 'ArrowLeft') pageFlip(-1);
-		else if (key == 'ArrowRight') pageFlip(1);
+		if (key === 'ArrowLeft') pageFlip(-1);
+		else if (key === 'ArrowRight') pageFlip(1);
 	}}
 />
 
@@ -78,7 +78,7 @@
 				<li>
 					<button
 						class="indicator"
-						class:active={i == currentPage}
+						class:active={i === currentPage}
 						on:click={() => pageFlip(i, true)}
 					/>
 				</li>
