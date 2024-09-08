@@ -229,18 +229,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'MinHyouk',
-				icon: 'minhyouk.webp',
-				role: 'Coach',
-				country: 'kr',
-				birthday: { year: 2005, month: 11, day: 19 },
-				age: null,
-				twitter: 'JeonMinHyouk_ow',
-				youtube: null,
-				twitch: 'jeonminhyouk_ow',
-				homepage: null
-			},
-			{
 				memberName: 'STRIKE',
 				icon: 'strike.webp',
 				role: 'Coach',
