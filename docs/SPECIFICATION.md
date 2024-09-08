@@ -6,6 +6,7 @@
 
 | Z-Index | Entity | Path |
 | --: | --- | --- |
+| 1031 | nprogress { bar, spinner } (`/node_modules/nprogress/nprogress.css>#nprogress { .bar, .spinner }`|
 | 255 | modal | `modal.scss>.modal` |
 | 254 | modal bg | `layout.scss>.modal-bg` |
 | 253 | header, header2 | `header.scss>header`, `header.scss>#header2` |
