@@ -94,7 +94,7 @@ export function calcAge(birthday: Date) {
 	const date = today.getDate();
 	let age = year - birthday.getFullYear();
 	const birthMonth = birthday.getMonth() + 1;
-	age -= month < birthMonth || (month == birthMonth && date < birthday.getDate()) ? 1 : 0;
+	age -= month < birthMonth || (month === birthMonth && date < birthday.getDate()) ? 1 : 0;
 	return age;
 }
 

@@ -4,6 +4,9 @@
 	import Footer from '$lib/components/Footer.svelte';
 
 	import { closeAllModals } from '$lib/scripts/util';
+	import NProgress from 'nprogress';
+	import 'nprogress/nprogress.css';
+	import { navigating, page } from '$app/stores';
 	import {
 		isContactModalOpened,
 		isFeesModalOpened,
@@ -26,8 +29,18 @@
 		setMaxVh001();
 
 		document.addEventListener('keydown', (event) => {
-			if (event.key == 'Escape') closeAllModals();
+			if (event.key === 'Escape') closeAllModals();
 		});
+	}
+
+	$: {
+		if (
+			$navigating !== null &&
+			$navigating.to !== null &&
+			$navigating.to.url.href !== $page.url.href
+		)
+			NProgress.start();
+		else NProgress.done();
 	}
 
 	/**

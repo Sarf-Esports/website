@@ -46,7 +46,7 @@ export async function fetchThumbnailImgFmt() {
 			const slug = path.split('/').pop()!.split('.')[0];
 			for (const img of thumbnailImgs) {
 				const [name, fmt] = img.split('.');
-				if (name == slug) acc[slug] = fmt;
+				if (name === slug) acc[slug] = fmt;
 			}
 			return acc;
 		},

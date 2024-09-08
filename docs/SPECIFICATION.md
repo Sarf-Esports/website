@@ -4,14 +4,16 @@
 <summary>Z-Index</summary>
 <div>
 
-| Z-Index | Entity |
-| --: | --- |
-| 252 | Header Background |
-| 253 | Header, Header II |
-| 254 | Modal Background |
-| 255 | Modals |
-| 32 | News list arrows (`NewsList.svelte>style button`) |
-| -1 | Background | (`style.scss>main::before`) |
+| Z-Index | Entity | Path |
+| --: | --- | --- |
+| 1031 | nprogress { bar, spinner } (`/node_modules/nprogress/nprogress.css>#nprogress { .bar, .spinner }`|
+| 255 | modal | `modal.scss>.modal` |
+| 254 | modal bg | `layout.scss>.modal-bg` |
+| 253 | header, header2 | `header.scss>header`, `header.scss>#header2` |
+| 252 | header bg | `header.scss>#header-bg` |
+| -1 | bg | `layout.scss>main::before` |
+
+---
 
 </div>
 </details>
@@ -24,6 +26,8 @@
 | --: | --- | --- |
 | `--vh001` | viewport height * 0.01 (realtime update) | all |
 | `--max-vh001` | viewport max height ever * 0.01 (realtime update) | all |
+
+---
 
 </div>
 </details>
@@ -98,6 +102,81 @@ Default font weight is `400`.
 
 **Must specify the `font-weight` to `700`**.  
 **We can use only uppercase letters of [`HEADER_ITEMS`](/src/lib/scripts/data/HEADER_ITEMS.ts) constant.**
+
+---
+
+</div>
+</details>
+
+<details>
+<summary>API Endpoints</summary>
+<div>
+
+- [Articles](#articles---get-apiarticles) (`/api/articles`)
+- [Article Thumbnail Image Formats](#article-thumbnail-image-formats---get-apiarticlesthumbnail-imgs) (`/api/articles/thumbnail-imgs`)
+
+## Articles - `GET /api/articles`
+
+Returns a list of the news articles.
+
+### Response Body
+
+`ArticleMetadata[]` ([`src/lib/scripts/types.ts`](/src/lib/scripts/types.ts))
+
+- `[]` (`object[]`) - The list of articles.
+	- `redirect` (`string?`) - The article ID to redirect to.
+	- `published` (`boolean`) - Whether the article is published.
+	- `indexed` (`boolean`) - Whether the article is indexed.
+	- `title` (`string`) - The title of the article.
+	- `slug` (`string?`) - The slug of the article. Its type is an optional string but it always exists.
+
+#### Example
+
+```json
+[
+    {
+        "published": true,
+        "indexed": true,
+        "title": "1名のメンバーが脱退",
+        "slug": "20230220"
+    },
+    {
+        "published": true,
+        "indexed": true,
+        "title": "計5名のメンバーが新たに加入",
+        "slug": "2023012102"
+    },
+    {
+        "published": true,
+        "indexed": true,
+        "title": "Sarf Esports リブランディングのお知らせ",
+        "slug": "20230121"
+    }
+]
+```
+
+---
+
+## Article Thumbnail Image Formats - `GET /api/articles/thumbnail-imgs`
+
+Returns a list of the articles that have their thumbnail images with the image file formats.
+
+### Response Body
+
+`ArticleThumbnailImgFmts` ([`src/lib/scripts/types.ts`](/src/lib/scripts/types.ts))
+
+- `{}` (`object`) - The list of the articles that have their thumbnail images with the image file formats.
+	- `[slug]` (`string`) - The thumbnail image file format for the article identified by this slug.
+
+#### Example
+
+```json
+{
+    "20230825": "jpg",
+    "20240819": "webp",
+    "2023031502": "png"
+}
+```
 
 ---
 

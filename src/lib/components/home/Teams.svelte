@@ -2,9 +2,10 @@
 <script lang="ts">
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 	import Modal from '$lib/components/Modal.svelte';
-	import GearsAndSettings from '$lib/components/GearsAndSettings.svelte';
+	import GearsAndSettings from '$lib/components/home/GearsAndSettings.svelte';
 
 	import { MEMBER_LISTS } from '$lib/scripts/data/MEMBERS';
+	import type { IconKind } from '$lib/components/MaterialIcon.svelte';
 	import { replaceState } from '$app/navigation';
 	import { calcAge, zeroPad } from '$lib/scripts/util';
 	import { date, _ } from 'svelte-i18n';
@@ -15,11 +16,15 @@
 	let currentDivisionIndex = 0;
 
 	if (division !== null)
-		currentDivisionIndex = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName == division);
+		currentDivisionIndex = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName === division);
 
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
 
-	const LOCK_ICON = {
+	const LOCK_ICON: {
+		kind: IconKind;
+		height: string;
+		style: string;
+	} = {
 		kind: 'lock-fill_inline',
 		height: '15px',
 		style: 'position: relative; top: 2px; pointer-events: none;'
@@ -31,7 +36,7 @@
 		<li class="division">
 			<button
 				class="div-btn"
-				class:active={i == currentDivisionIndex}
+				class:active={i === currentDivisionIndex}
 				on:click={() => {
 					currentDivisionIndex = i;
 					replaceState(`?div=${divisionName.replace(' ', '+')}#teams`, {});
@@ -51,7 +56,7 @@
 			<img src="/images/members/{icon ?? 'noimage.webp'}" alt="" loading="lazy" class="icon" />
 			<div class="info">
 				<div class="role-and-country">
-					<span class="role" class:inactive={role == null}>{role ?? '　'}</span>
+					<span class="role" class:inactive={role === null}>{role ?? '　'}</span>
 					{#if country !== null}
 						<img src="/images/flags/{country}.svg" alt={$_('w.nationalFlag')} class="flag" />
 					{/if}
@@ -59,7 +64,7 @@
 				<h2>{memberName}</h2>
 				<div class="details">
 					Age:
-					{#if age == null && birthday !== null && birthday.year !== null}
+					{#if age === null && birthday !== null && birthday.year !== null}
 						{calcAge(new Date(birthday.year, birthday.month - 1, birthday.day))}
 					{:else if age !== null}
 						{age + (birthday !== null && birthday.year === null ? ` (${$_('w.selfStyled')})` : '')}
@@ -97,7 +102,7 @@
 					</li>
 				{/if}
 				{#if youtube !== null}
-					{@const path = youtube[0] == '@' ? youtube : `channel/${youtube}`}
+					{@const path = youtube[0] === '@' ? youtube : `channel/${youtube}`}
 					<li>
 						<a
 							href="https://youtube.com/{path}"
@@ -139,7 +144,19 @@
 							<MaterialIcon
 								kind="link-45deg"
 								width="34px"
-								style="color: #eeeeee; margin-top: 11px;"
+								style="
+									filter:
+										brightness(0)
+										saturate(100%)
+										invert(99%)
+										sepia(10%)
+										saturate(2437%)
+										hue-rotate(284deg)
+										brightness(129%)
+										contrast(87%);
+									margin-top: 11px;
+									user-select: none;
+								"
 							/>
 						</a>
 					</li>
@@ -183,5 +200,5 @@
 {/if}
 
 <style lang="scss">
-	@use '$lib/stylesheets/teams';
+	@use '$lib/stylesheets/home/teams';
 </style>

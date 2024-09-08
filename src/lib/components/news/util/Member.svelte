@@ -38,7 +38,7 @@
 							loading="lazy"
 							class="vertical-icn"
 						/></a
-					>{/if}{#if youtube}{@const path = youtube[0] == '@' ? youtube : `channel/${youtube}`}
+					>{/if}{#if youtube}{@const path = youtube[0] === '@' ? youtube : `channel/${youtube}`}
 					<a
 						href="https://youtube.com/{path}"
 						target="_blank"
@@ -68,7 +68,18 @@
 						<MaterialIcon
 							kind="link-45deg"
 							width="30px"
-							style="color: #98c0e7; vertical-align: middle;"
+							style="
+								filter:
+									brightness(0)
+									saturate(100%)
+									invert(68%)
+									sepia(86%)
+									saturate(149%)
+									hue-rotate(171deg)
+									brightness(93%)
+									contrast(94%);
+								vertical-align: middle;
+							"
 						/>
 					</a>
 				{/if}

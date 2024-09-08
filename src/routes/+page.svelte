@@ -1,14 +1,14 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
-	import MainVisual from './MainVisual.svelte';
-	import SponsorBanner from '$lib/components/sponsor_banner/SponsorBanner.svelte';
-	import SectionTitle from './SectionTitle.svelte';
+	import MainVisual from '../lib/components/home/MainVisual.svelte';
+	import SponsorBanner from '$lib/components/home/sponsor_banner/SponsorBanner.svelte';
+	import SectionTitle from '../lib/components/SectionTitle.svelte';
 	import RevealFadeIn from '$lib/components/RevealFadeIn.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
-	import Teams from './Teams.svelte';
-	import Coaching from '$lib/components/coaching/Coaching.svelte';
-	import Sponsors from './Sponsors.svelte';
+	import Teams from '../lib/components/home/Teams.svelte';
+	import Coaching from '$lib/components/home/coaching/Coaching.svelte';
+	import Sponsors from '../lib/components/home/Sponsors.svelte';
 
 	import type { PageData } from './$types';
 	import { SITE_URL } from '$lib/scripts/variables';
@@ -78,68 +78,5 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/mixin' as *;
-
-	#about {
-		.slogan {
-			font-weight: 900;
-			padding: 0 6px;
-			margin: 0 auto;
-
-			&::after {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background-color: #d3d3d3;
-				clip-path: polygon(
-					0 16%,
-					0 100%,
-					100% 100%,
-					100% 100%,
-					92% 100%,
-					100% 86%,
-					100% 100%,
-					0 100%,
-					0 0,
-					8% 0
-				);
-				border-radius: 4px;
-			}
-
-			h1 {
-				letter-spacing: 0.075em;
-				font-size: 48px;
-			}
-
-			h2 {
-				font-size: 36px;
-				margin-top: -32px;
-				padding-bottom: 16px;
-			}
-
-			@include sp {
-				max-width: 448px;
-
-				h1,
-				h2 {
-					display: inline-block;
-				}
-
-				h1 {
-					font-size: 30px;
-					line-height: 1.2;
-					padding: 0 5px;
-				}
-
-				h2 {
-					font-size: 30px;
-					margin-top: -18px;
-					padding-bottom: 8px;
-				}
-			}
-		}
-	}
+	@use '$lib/stylesheets/home/home';
 </style>

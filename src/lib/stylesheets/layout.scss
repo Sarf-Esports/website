@@ -3,6 +3,18 @@
 @use '$lib/stylesheets/variables/color' as *;
 @use '$lib/stylesheets/variables/dimension' as *;
 
+#nprogress {
+	.bar {
+		background: #d1ff46;
+		height: 3px;
+	}
+
+	.peg,
+	.spinner {
+		display: none;
+	}
+}
+
 .modal-bg {
 	position: fixed;
 	inset: 0;

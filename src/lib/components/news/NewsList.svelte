@@ -1,6 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import ChevronArrow from './util/ChevronArrow.svelte';
+	import ChevronArrow from './ChevronArrow.svelte';
 	import ArticleCard from './ArticleCard.svelte';
 
 	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
@@ -46,8 +46,8 @@
 <svelte:window
 	on:keydown={(e) => {
 		const key = e.key;
-		if (key == 'ArrowLeft') pageFlip(-1);
-		else if (key == 'ArrowRight') pageFlip(1);
+		if (key === 'ArrowLeft') pageFlip(-1);
+		else if (key === 'ArrowRight') pageFlip(1);
 	}}
 />
 
@@ -78,7 +78,7 @@
 				<li>
 					<button
 						class="indicator"
-						class:active={i == currentPage}
+						class:active={i === currentPage}
 						on:click={() => pageFlip(i, true)}
 					/>
 				</li>

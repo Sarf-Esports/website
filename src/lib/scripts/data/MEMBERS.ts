@@ -229,18 +229,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'MinHyouk',
-				icon: 'minhyouk.webp',
-				role: 'Coach',
-				country: 'kr',
-				birthday: { year: 2005, month: 11, day: 19 },
-				age: null,
-				twitter: 'JeonMinHyouk_ow',
-				youtube: null,
-				twitch: 'jeonminhyouk_ow',
-				homepage: null
-			},
-			{
 				memberName: 'STRIKE',
 				icon: 'strike.webp',
 				role: 'Coach',
@@ -424,6 +412,18 @@ export const MEMBER_LISTS: {
 				twitter: 'l1fefn',
 				youtube: null,
 				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'Pear',
+				icon: 'pear.webp',
+				role: null,
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'pear_fps',
+				youtube: null,
+				twitch: 'pear_fps',
 				homepage: null
 			},
 			{

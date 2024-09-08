@@ -1,24 +1,25 @@
 <!-- © 2022 REVATI -->
 <script>
 	import { PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
-	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
+	import { page } from '$app/stores';
 	import { _ } from 'svelte-i18n';
+
+	$: status = $page.status;
+	$: is404 = status === 404;
+	$: err = $page.error;
+	$: msg = is404 ? 'Page not found' : err !== null ? err.message : 'Something went wrong';
+	$: title = `${status} ${msg}`;
 </script>
 
 <svelte:head>
-	<title>{PAGE_FULL_TITLE_PART}404 Not Found</title>
+	<title>{PAGE_FULL_TITLE_PART}{title}</title>
 </svelte:head>
 
 <div>
-	<h1>404 Page Not Found</h1>
-	<p>{$_('error.404')}</p>
-	<p>
-		<a href="/">
-			{$_('w.backToTop')}
-			<MaterialIcon kind="box-arrow-up-right" width="18px" />
-		</a>
-	</p>
+	<h1>{title}</h1>
+	<p>{is404 ? $_('error.404') : $_('error.unknown')}</p>
+	<p><a href="/">{$_('w.backToTop')}</a></p>
 </div>
 
 <style lang="scss">
@@ -32,7 +33,6 @@
 
 	h1 {
 		font-size: 42px;
-		transition: 0.4s cubic-bezier(0, 0.7, 0.3, 2);
 
 		@include sp {
 			font-size: 28px;
@@ -40,10 +40,6 @@
 
 		@include pc {
 			letter-spacing: 4px;
-
-			&:hover {
-				letter-spacing: 16px;
-			}
 		}
 	}
 
