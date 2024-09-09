@@ -16,7 +16,8 @@
 		"on": "ON",
 		"off": "OFF",
 		"prev": "Previous",
-		"next": "Next"
+		"next": "Next",
+		"pageN": ["Page ", " "]
 	},
 	"header.back": "Back to top page",
 	"top": {

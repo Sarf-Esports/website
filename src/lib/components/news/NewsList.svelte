@@ -21,6 +21,8 @@
 
 	let flipTo: 1 | -1 = 1;
 
+	$: t9nPageN = [$_('w.pageN.0'), $_('w.pageN.1')]
+
 	function pageFlip(to: number, isAbsolute = false) {
 		const toAbs = isAbsolute ? to : currentPage + to;
 		if ((toAbs < currentPage && !isFirstPage) || (currentPage < toAbs && !isLastPage)) {
@@ -78,6 +80,7 @@
 			{#each Array(pages) as _, i}
 				<li>
 					<button
+						aria-label="{t9nPageN[0]}{i + 1}{t9nPageN[1]}"
 						class="indicator"
 						class:active={i === currentPage}
 						on:click={() => pageFlip(i, true)}

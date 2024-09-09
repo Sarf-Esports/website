@@ -16,7 +16,8 @@
 		"on": "ON",
 		"off": "OFF",
 		"prev": "前へ",
-		"next": "次へ"
+		"next": "次へ",
+		"pageN": [" ", "ページ"]
 	},
 	"header.back": "トップページへ戻る",
 	"top": {
