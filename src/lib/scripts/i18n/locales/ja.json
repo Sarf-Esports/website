@@ -14,7 +14,10 @@
 		"mousepad": "マウスパッド",
 		"keyboard": "キーボード",
 		"on": "ON",
-		"off": "OFF"
+		"off": "OFF",
+		"prev": "前へ",
+		"next": "次へ",
+		"pageN": [" ", "ページ"]
 	},
 	"header.back": "トップページへ戻る",
 	"top": {
