@@ -97,7 +97,7 @@
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src="/images/logos/x_logo-white.png" alt="X" title="@{twitter}" loading="lazy" />
+							<img src="/images/logos/x_logo-white.webp" alt="X" title="@{twitter}" loading="lazy" />
 						</a>
 					</li>
 				{/if}

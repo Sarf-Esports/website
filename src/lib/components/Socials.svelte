@@ -43,7 +43,7 @@
 			title="X: @{SOCIALS.twitter}"
 			class="no-after-icn"
 		>
-			<img src="/images/logos/x_logo-white.png" alt="X" id="x-logo" />
+			<img src="/images/logos/x_logo-white.webp" alt="X" id="x-logo" />
 		</a>
 	</li>
 	<li>

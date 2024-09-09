@@ -40,7 +40,7 @@
 			class="no-after-icn"
 		>
 			<img
-				src="/images/logos/x_logo-white.png"
+				src="/images/logos/x_logo-white.webp"
 				alt="X"
 				title="@{X_HANDLE}"
 				loading="lazy"
