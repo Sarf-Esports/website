@@ -1,5 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
+	import { _ } from "svelte-i18n";
+
 	export let name: string;
 	export let url: string;
 	export let logo: string;
@@ -7,7 +9,7 @@
 
 <li>
 	<a href={url} target="_blank" rel="noopener noreferrer" title={name} class="no-after-icn">
-		<img src="images/logos/{logo}" alt={name} />
+		<img src="images/logos/{logo}" alt={$_('w.logoOf', { values: { name } })} />
 	</a>
 </li>
 

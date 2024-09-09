@@ -17,7 +17,8 @@
 		"off": "OFF",
 		"prev": "前へ",
 		"next": "次へ",
-		"pageN": [" ", "ページ"]
+		"pageN": [" ", "ページ"],
+		"logoOf": "{name} のロゴ"
 	},
 	"header.back": "トップページへ戻る",
 	"top": {

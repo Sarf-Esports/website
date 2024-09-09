@@ -17,7 +17,8 @@
 		"off": "OFF",
 		"prev": "Previous",
 		"next": "Next",
-		"pageN": ["Page ", " "]
+		"pageN": ["Page ", " "],
+		"logoOf": "Logo of {name}"
 	},
 	"header.back": "Back to top page",
 	"top": {
