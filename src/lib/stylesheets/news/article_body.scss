@@ -138,10 +138,25 @@
 	}
 
 	details summary {
-		cursor: pointer;
-		text-decoration: underline;
+		padding: 4px 14px;
+		padding-bottom: 8px;
 		font-weight: 900;
-		color: white;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: 0.1s;
+
+		&,
+		&::marker {
+			font-size: 24px;
+		}
+
+		&:hover {
+			background-color: rgba($primary-color, 0.2);
+		}
+
+		@include sp {
+			font-size: 22px;
+		}
 	}
 
 	iframe {
