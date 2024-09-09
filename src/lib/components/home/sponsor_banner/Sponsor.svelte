@@ -1,6 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import { _ } from "svelte-i18n";
+	import { _ } from 'svelte-i18n';
 
 	export let name: string;
 	export let url: string;

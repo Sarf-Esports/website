@@ -21,7 +21,7 @@
 
 	let flipTo: 1 | -1 = 1;
 
-	$: t9nPageN = [$_('w.pageN.0'), $_('w.pageN.1')]
+	$: t9nPageN = [$_('w.pageN.0'), $_('w.pageN.1')];
 
 	function pageFlip(to: number, isAbsolute = false) {
 		const toAbs = isAbsolute ? to : currentPage + to;
@@ -57,9 +57,17 @@
 <div class="news-list-container" class:show-all={showAll}>
 	{#if !showAll}
 		<div class="arrows">
-			<button on:click={() => pageFlip(-1)} aria-label={$_('w.prev')} class="arrow back-arrow" class:inactive={isFirstPage}
+			<button
+				on:click={() => pageFlip(-1)}
+				aria-label={$_('w.prev')}
+				class="arrow back-arrow"
+				class:inactive={isFirstPage}
 				><ChevronArrow direction="left" transparent={isFirstPage} /></button
-			><button on:click={() => pageFlip(1)} aria-label={$_('w.next')}  class="arrow forward-arrow" class:inactive={isLastPage}
+			><button
+				on:click={() => pageFlip(1)}
+				aria-label={$_('w.next')}
+				class="arrow forward-arrow"
+				class:inactive={isLastPage}
 				><ChevronArrow direction="right" transparent={isLastPage} /></button
 			>
 		</div>
