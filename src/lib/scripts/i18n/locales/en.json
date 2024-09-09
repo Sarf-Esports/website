@@ -14,7 +14,9 @@
 		"mousepad": "Mousepad",
 		"keyboard": "Keyboard",
 		"on": "ON",
-		"off": "OFF"
+		"off": "OFF",
+		"prev": "Previous",
+		"next": "Next"
 	},
 	"header.back": "Back to top page",
 	"top": {

@@ -5,6 +5,7 @@
 
 	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
 	import { fly } from 'svelte/transition';
+	import { _ } from 'svelte-i18n';
 
 	export let articles: ArticleMetadata[];
 	export let thumbnailImgFmts: ArticleThumbnailImgFmts;
@@ -54,9 +55,9 @@
 <div class="news-list-container" class:show-all={showAll}>
 	{#if !showAll}
 		<div class="arrows">
-			<button on:click={() => pageFlip(-1)} class="arrow back-arrow" class:inactive={isFirstPage}
+			<button on:click={() => pageFlip(-1)} aria-label={$_('w.prev')} class="arrow back-arrow" class:inactive={isFirstPage}
 				><ChevronArrow direction="left" transparent={isFirstPage} /></button
-			><button on:click={() => pageFlip(1)} class="arrow forward-arrow" class:inactive={isLastPage}
+			><button on:click={() => pageFlip(1)} aria-label={$_('w.next')}  class="arrow forward-arrow" class:inactive={isLastPage}
 				><ChevronArrow direction="right" transparent={isLastPage} /></button
 			>
 		</div>
