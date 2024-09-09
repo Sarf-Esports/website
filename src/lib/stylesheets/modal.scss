@@ -22,7 +22,7 @@ $bloom-color: #63f2ff;
 	$bloom-color-small: rgba($secondary-color, 0.2);
 	filter: drop-shadow(0 0 128px $bloom-color-large) drop-shadow(0 0 28px $bloom-color-small);
 	overflow: scroll;
-	scrollbar-color: #d1ff46 transparent;
+	scrollbar-color: $old-primary-color transparent;
 	scrollbar-width: thin;
 	z-index: 255;
 
