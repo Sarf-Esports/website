@@ -11,11 +11,11 @@
 	$: lang = $locale?.slice(0, 2);
 </script>
 
-<span>Language</span><select bind:value={lang}>
+<label><span>Language</span><select bind:value={lang}>
 	<option value="ja">日本語</option>
 	<option value="en">English</option>
 	<option value="ko">한국어</option>
-</select>
+</select></label>
 
 <style lang="scss">
 	span {
