@@ -20,6 +20,6 @@ export const SPONSORS: {
 	{
 		name: 'XENOVA',
 		url: 'https://xenova.shop',
-		logo: 'xenova_oxipng.png'
+		logo: 'xenova.webp'
 	}
 ];
