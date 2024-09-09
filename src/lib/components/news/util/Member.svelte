@@ -45,7 +45,7 @@
 						rel="noopener noreferrer"
 						class="no-after-icn"
 						><img
-							src="/images/logos/yt_icon_rgb.png"
+							src="/images/logos/yt_icon_rgb.webp"
 							alt="YouTube"
 							title="/{path}"
 							loading="lazy"

@@ -54,7 +54,7 @@
 			title="YouTube: /{SOCIALS.youtube}"
 			class="no-after-icn"
 		>
-			<img src="/images/logos/yt_icon_mono_dark.png" alt="YouTube" />
+			<img src="/images/logos/yt_icon_mono_dark.webp" alt="YouTube" />
 		</a>
 	</li>
 	<li>
