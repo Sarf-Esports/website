@@ -34,6 +34,7 @@
 
 ### その他注意事項
 
+- 新規ページを追加した場合は、[新規ページ追加後にすべきこと(`when-added-new-page.md`)](/docs/when-added-new-page.md) も参照してください。
 - プレビューがデプロイされるブランチは `dev`, `feat/*`, `fix/*`, `hotfix/*` のみ。
 - hotfix系ブランチは基本的にメインリポジトリで masterブランチから生やす。
 - 破壊的または大規模な変更になりそうだったら事前に [Issue](https://github.com/Sarf-Esports/website/issues) 立てた方が賢明。
