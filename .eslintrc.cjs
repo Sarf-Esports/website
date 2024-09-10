@@ -11,7 +11,8 @@ module.exports = {
 	parserOptions: {
 		sourceType: 'module',
 		ecmaVersion: 2020,
-		extraFileExtensions: ['.svelte']
+		extraFileExtensions: ['.svelte'],
+		project: './tsconfig.json'
 	},
 	env: {
 		browser: true,
@@ -25,5 +26,8 @@ module.exports = {
 			parserOptions: { parser: '@typescript-eslint/parser' }
 		}
 	],
-	rules: { eqeqeq: ['error', 'always'] }
+	rules: {
+		eqeqeq: ['error', 'always'],
+		'@typescript-eslint/strict-boolean-expressions': 'error'
+	}
 };
