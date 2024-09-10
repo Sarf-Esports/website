@@ -17,7 +17,7 @@
 					class="no-after-icn"
 				>
 					<img
-						src="/images/logos/x_logo-white.png"
+						src="/images/logos/x_logo-white.webp"
 						alt="X"
 						title="@{twitter}"
 						loading="lazy"

@@ -26,6 +26,7 @@
 ## その他文書
 
 - [変更を加える際の規則 / CONTRIBUTING](./docs/CONTRIBUTING.md)
+- [新規ページ追加後にすべきこと / WHEN ADDED NEW PAGE](/docs/when-added-new-page.md)
 - [ToDo](./docs/TODO.md)
 - [雑な仕様書 / SPECIFICATION](./docs/SPECIFICATION.md)
 

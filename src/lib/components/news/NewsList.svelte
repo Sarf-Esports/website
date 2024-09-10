@@ -5,6 +5,7 @@
 
 	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
 	import { fly } from 'svelte/transition';
+	import { _ } from 'svelte-i18n';
 
 	export let articles: ArticleMetadata[];
 	export let thumbnailImgFmts: ArticleThumbnailImgFmts;
@@ -19,6 +20,8 @@
 	$: isLastPage = pages - 1 <= currentPage;
 
 	let flipTo: 1 | -1 = 1;
+
+	$: t9nPageN = [$_('w.pageN.0'), $_('w.pageN.1')];
 
 	function pageFlip(to: number, isAbsolute = false) {
 		const toAbs = isAbsolute ? to : currentPage + to;
@@ -54,9 +57,17 @@
 <div class="news-list-container" class:show-all={showAll}>
 	{#if !showAll}
 		<div class="arrows">
-			<button on:click={() => pageFlip(-1)} class="arrow back-arrow" class:inactive={isFirstPage}
+			<button
+				on:click={() => pageFlip(-1)}
+				aria-label={$_('w.prev')}
+				class="arrow back-arrow"
+				class:inactive={isFirstPage}
 				><ChevronArrow direction="left" transparent={isFirstPage} /></button
-			><button on:click={() => pageFlip(1)} class="arrow forward-arrow" class:inactive={isLastPage}
+			><button
+				on:click={() => pageFlip(1)}
+				aria-label={$_('w.next')}
+				class="arrow forward-arrow"
+				class:inactive={isLastPage}
 				><ChevronArrow direction="right" transparent={isLastPage} /></button
 			>
 		</div>
@@ -77,6 +88,7 @@
 			{#each Array(pages) as _, i}
 				<li>
 					<button
+						aria-label="{t9nPageN[0]}{i + 1}{t9nPageN[1]}"
 						class="indicator"
 						class:active={i === currentPage}
 						on:click={() => pageFlip(i, true)}

@@ -15,11 +15,11 @@ export const SPONSORS: {
 	{
 		name: 'ガチサプ',
 		url: 'https://gachisup.com',
-		logo: 'gachisup_oxipng.png'
+		logo: 'gachisup.webp'
 	},
 	{
 		name: 'XENOVA',
 		url: 'https://xenova.shop',
-		logo: 'xenova_oxipng.png'
+		logo: 'xenova.webp'
 	}
 ];

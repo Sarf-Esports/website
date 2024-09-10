@@ -1,5 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
+	import { _ } from 'svelte-i18n';
+
 	import { SPONSORS } from '$lib/scripts/data/SPONSORS';
 </script>
 
@@ -8,7 +10,7 @@
 		{#each SPONSORS as { name, url, logo }}
 			<li>
 				<a href={url} target="_blank" rel="noopener noreferrer">
-					<img src="/images/logos/{logo}" alt={name} />
+					<img src="/images/logos/{logo}" alt={$_('w.logoOf', { values: { name } })} />
 					<span>{name}</span>
 				</a>
 			</li>

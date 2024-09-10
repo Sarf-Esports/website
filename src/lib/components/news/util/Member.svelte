@@ -32,7 +32,7 @@
 						class="no-after-icn"
 					>
 						<img
-							src="/images/logos/x_logo-white.png"
+							src="/images/logos/x_logo-white.webp"
 							alt="X"
 							title="@{twitter}"
 							loading="lazy"
@@ -45,7 +45,7 @@
 						rel="noopener noreferrer"
 						class="no-after-icn"
 						><img
-							src="/images/logos/yt_icon_rgb.png"
+							src="/images/logos/yt_icon_rgb.webp"
 							alt="YouTube"
 							title="/{path}"
 							loading="lazy"

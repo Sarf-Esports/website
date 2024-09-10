@@ -97,7 +97,12 @@
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src="/images/logos/x_logo-white.png" alt="X" title="@{twitter}" loading="lazy" />
+							<img
+								src="/images/logos/x_logo-white.webp"
+								alt="X"
+								title="@{twitter}"
+								loading="lazy"
+							/>
 						</a>
 					</li>
 				{/if}
@@ -111,7 +116,7 @@
 							rel="noopener noreferrer"
 						>
 							<img
-								src="/images/logos/yt_icon_rgb.png"
+								src="/images/logos/yt_icon_rgb.webp"
 								alt="YouTube"
 								title="/{path}"
 								loading="lazy"

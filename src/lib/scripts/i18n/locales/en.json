@@ -14,7 +14,11 @@
 		"mousepad": "Mousepad",
 		"keyboard": "Keyboard",
 		"on": "ON",
-		"off": "OFF"
+		"off": "OFF",
+		"prev": "Previous",
+		"next": "Next",
+		"pageN": ["Page ", " "],
+		"logoOf": "Logo of {name}"
 	},
 	"header.back": "Back to top page",
 	"top": {

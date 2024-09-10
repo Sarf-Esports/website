@@ -1,6 +1,6 @@
 // © 2022 REVATI
 
-// If update `BREAKPOINT_HB` JS constant, also update `$bp-hamburger-btn` Sass variable in `src/lib/stylesheets/variables/_mixin.scss`.
+// If update the `BREAKPOINT_HB` JS constant, also update the `$bp-hamburger-btn` Sass variable in `src/lib/stylesheets/variables/_mixin.scss`.
 // ＊ `BREAKPOINT_HB = $bp-hamburger-btn - 1`
 // ＊ numerical value of `BREAKPOINT_HB` = `$bp-hamburger-btn` - 1
 /** Breakpoint for media queries for the hamburger button. */
