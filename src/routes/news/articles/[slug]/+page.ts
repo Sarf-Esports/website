@@ -13,9 +13,13 @@ export const load: PageLoad = async ({
 	frontmatter: ArticleMetadata;
 	thumbnailImgFmt: string | null;
 }> => {
-	const { default: component, metadata: frontmatter } = await import(
-		`../../../../../articles/${params.slug}.md`
-	).catch(err);
+	const {
+		default: component,
+		metadata: frontmatter
+	}: {
+		default: typeof SvelteComponent;
+		metadata: ArticleMetadata;
+	} = await import(`../../../../../articles/${params.slug}.md`).catch(err);
 	if (!frontmatter.published) err();
 
 	const redirectTo = frontmatter.redirect;

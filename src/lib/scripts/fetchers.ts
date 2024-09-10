@@ -19,7 +19,8 @@ export async function fetchArticles() {
 
 	// Sort by newest.
 	articles.sort((a, b) => {
-		if (a.slug && b.slug) return calcOrder(b.slug) - calcOrder(a.slug);
+		if (typeof a.slug === 'string' && typeof b.slug === 'string')
+			return calcOrder(b.slug) - calcOrder(a.slug);
 		// unreachable
 		return 0;
 	});
