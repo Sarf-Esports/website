@@ -95,13 +95,12 @@
 <div id="header2" class:open={isDrawerMenuOpened}>
 	<div class="socials">
 		<Socials
-			showEmail
 			style="
-			justify-content: left;
-			margin-top: 5vh;
-			margin-left: 5vh;
-			margin-bottom: calc(13vh - 56px);
-		"
+				justify-content: left;
+				margin-top: 5vh;
+				margin-left: 5vh;
+				margin-bottom: calc(13vh - 56px);
+			"
 		/>
 	</div>
 	<div class="lang-switcher"><LangSwitcher /></div>
