@@ -58,7 +58,7 @@
 
 <header class:open={isDrawerMenuOpened}>
 	<nav>
-		<a href="/" draggable="false"><span title={$_('header.back')} /></a>
+		<a href="/" draggable="false" tabindex="-1"><span title={$_('header.back')} /></a>
 		<ul>
 			{#each HEADER_ITEMS as item}
 				{#if item === 'contact'}
