@@ -92,7 +92,7 @@
 	</nav>
 </header>
 
-<div id="header2" class:open={isDrawerMenuOpened}>
+<div id="header2" class:open={isDrawerMenuOpened} inert={!isDrawerMenuOpened}>
 	<div class="socials">
 		<Socials
 			style="
