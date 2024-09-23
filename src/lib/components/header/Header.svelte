@@ -59,6 +59,12 @@
 <header class:open={isDrawerMenuOpened}>
 	<nav>
 		<a href="/" draggable="false" tabindex="-1"><span title={$_('header.back')} /></a>
+		<HbBtn
+			isOpened={isDrawerMenuOpened}
+			on:toggle={(e) => {
+				toggleDrawerMenu(e.detail.isOpened);
+			}}
+		/>
 		<ul>
 			{#each HEADER_ITEMS as item}
 				{#if item === 'contact'}
@@ -83,12 +89,6 @@
 			{/each}
 		</ul>
 		<h3>{COPYRIGHT}</h3>
-		<HbBtn
-			isOpened={isDrawerMenuOpened}
-			on:toggle={(e) => {
-				toggleDrawerMenu(e.detail.isOpened);
-			}}
-		/>
 	</nav>
 </header>
 
