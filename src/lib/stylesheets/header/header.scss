@@ -191,6 +191,10 @@ li {
 			transition: 0.2s;
 		}
 
+		&:focus-visible::after {
+			content: none;
+		}
+
 		&:hover,
 		&.active {
 			&::after {
