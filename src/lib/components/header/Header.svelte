@@ -7,9 +7,9 @@
 
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS, NON_SECTION_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
+	import { isDrawerMenuOpened } from '$lib/scripts/stores';
 	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/scripts/variables';
-	import { toggleScrollPrevention } from '$lib/scripts/util';
 	import { isContactModalOpened } from '$lib/scripts/stores';
 	import { page } from '$app/stores';
 
@@ -38,33 +38,14 @@
 			}
 		});
 	}
-
-	let isDrawerMenuOpened = false;
-
-	/**
-	 * Toggles drawer menu open/close.
-	 *
-	 * **＊ Must be called in the browser environment.**
-	 */
-	function toggleDrawerMenu(open: boolean) {
-		isDrawerMenuOpened = open;
-		toggleScrollPrevention(isDrawerMenuOpened);
-
-		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
-	}
 </script>
 
-<div id="header-bg" class:visible={isDrawerMenuOpened} />
+<div id="header-bg" class:visible={$isDrawerMenuOpened} />
 
-<header class:open={isDrawerMenuOpened} inert={$isContactModalOpened}>
+<header class:open={$isDrawerMenuOpened} inert={$isContactModalOpened}>
 	<nav>
 		<a href="/" draggable="false" tabindex="-1"><span title={$_('header.back')} /></a>
-		<HbBtn
-			isOpened={isDrawerMenuOpened}
-			on:toggle={(e) => {
-				toggleDrawerMenu(e.detail.isOpened);
-			}}
-		/>
+		<HbBtn />
 		<ul>
 			{#each HEADER_ITEMS as item}
 				{#if item === 'contact'}
@@ -80,9 +61,7 @@
 							class:active={currentSection === ''
 								? url.hash === '#' + item || url.pathname.split('/')[1] === item
 								: currentSection === item}
-							on:click={() => {
-								toggleDrawerMenu(false);
-							}}>{item.toUpperCase()}</a
+							on:click={() => isDrawerMenuOpened.update(() => false)}>{item.toUpperCase()}</a
 						>
 					</li>
 				{/if}
@@ -96,8 +75,8 @@
 
 <div
 	id="header2"
-	class:open={isDrawerMenuOpened}
-	inert={!isDrawerMenuOpened || $isContactModalOpened}
+	class:open={$isDrawerMenuOpened}
+	inert={!$isDrawerMenuOpened || $isContactModalOpened}
 >
 	<div class="socials">
 		<Socials
