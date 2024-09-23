@@ -8,6 +8,12 @@
 	scroll-margin-top: 104px;
 }
 
+:focus-visible {
+	outline: 3px solid $old-primary-color;
+	outline-offset: 3px;
+	overflow: visible;
+}
+
 ::selection {
 	background: $primary-color;
 	color: white;
