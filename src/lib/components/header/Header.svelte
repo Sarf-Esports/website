@@ -7,7 +7,7 @@
 
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS, NON_SECTION_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
-	import { isDrawerMenuOpened } from '$lib/scripts/stores';
+	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '$lib/scripts/stores';
 	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/scripts/variables';
 	import { isContactModalOpened } from '$lib/scripts/stores';
@@ -46,7 +46,7 @@
 	<nav>
 		<a href="/" draggable="false" tabindex="-1"><span title={$_('header.back')} /></a>
 		<HbBtn />
-		<ul>
+		<ul inert={$isHamburgerButtonEnabled && !$isDrawerMenuOpened}>
 			{#each HEADER_ITEMS as item}
 				{#if item === 'contact'}
 					<li class="item-contact">
