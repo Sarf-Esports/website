@@ -92,6 +92,8 @@
 	</nav>
 </header>
 
+<Contact />
+
 <div id="header2" class:open={isDrawerMenuOpened} inert={!isDrawerMenuOpened || $isContactModalOpened}>
 	<div class="socials">
 		<Socials
@@ -105,8 +107,6 @@
 	</div>
 	<div class="lang-switcher"><LangSwitcher /></div>
 </div>
-
-<Contact />
 
 <style lang="scss">
 	@use '$lib/stylesheets/header/header';
