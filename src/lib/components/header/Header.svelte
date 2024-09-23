@@ -94,7 +94,11 @@
 
 <Contact />
 
-<div id="header2" class:open={isDrawerMenuOpened} inert={!isDrawerMenuOpened || $isContactModalOpened}>
+<div
+	id="header2"
+	class:open={isDrawerMenuOpened}
+	inert={!isDrawerMenuOpened || $isContactModalOpened}
+>
 	<div class="socials">
 		<Socials
 			style="
