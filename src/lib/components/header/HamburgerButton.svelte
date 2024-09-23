@@ -13,7 +13,9 @@
 		transition:fly|global={{ x: FLY_OFFSET, y: -FLY_OFFSET, duration: 600 }}
 	>
 		{#key $isDrawerMenuOpened}
-			<span transition:scale|global={{ duration: 300 }}>{$isDrawerMenuOpened ? 'CLOSE' : 'MENU'}</span>
+			<span transition:scale|global={{ duration: 300 }}
+				>{$isDrawerMenuOpened ? 'CLOSE' : 'MENU'}</span
+			>
 		{/key}
 	</button>
 {/if}
