@@ -13,6 +13,8 @@ isDrawerMenuOpened.subscribe((isOpened) => {
 	if (browser) document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
 });
 
+export const isHamburgerButtonEnabled = writable(false);
+
 export const isContactModalOpened = writable(false);
 isContactModalOpened.subscribe(updateScrollPrevention);
 export const isFeesModalOpened = writable(false);

@@ -1,28 +1,12 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import { browser } from '$app/environment';
 	import { fly, scale } from 'svelte/transition';
-	import { BREAKPOINT_HB } from '$lib/scripts/variables';
-	import { toggleScrollPrevention } from '$lib/scripts/util';
-	import { isDrawerMenuOpened } from '$lib/scripts/stores';
-
-	let isHbButtonEnabled: boolean;
-
-	if (browser) {
-		let bp = window.matchMedia(BREAKPOINT_HB);
-
-		isHbButtonEnabled = bp.matches;
-
-		window.addEventListener('resize', function () {
-			isHbButtonEnabled = bp.matches;
-			toggleScrollPrevention(isHbButtonEnabled && $isDrawerMenuOpened);
-		});
-	}
+	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '$lib/scripts/stores';
 
 	const FLY_OFFSET = 32;
 </script>
 
-{#if isHbButtonEnabled}
+{#if $isHamburgerButtonEnabled}
 	<button
 		class:is-opened={$isDrawerMenuOpened}
 		on:click={() => isDrawerMenuOpened.update((v) => !v)}

@@ -4,15 +4,18 @@
 	import Footer from '$lib/components/Footer.svelte';
 
 	import { closeAllModals } from '$lib/scripts/util';
+	import { BREAKPOINT_HB } from '$lib/scripts/variables';
+	import {
+		isContactModalOpened,
+		isDrawerMenuOpened,
+		isFeesModalOpened,
+		isCoachesModalOpened,
+		isHamburgerButtonEnabled,
+		gearsAndSettingsModalState
+	} from '$lib/scripts/stores';
 	import NProgress from 'nprogress';
 	import 'nprogress/nprogress.css';
 	import { navigating, page } from '$app/stores';
-	import {
-		isContactModalOpened,
-		isFeesModalOpened,
-		isCoachesModalOpened,
-		gearsAndSettingsModalState
-	} from '$lib/scripts/stores';
 	import { COPYRIGHT, SITE_URL } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
@@ -21,10 +24,17 @@
 	let maxVh1: number;
 
 	if (browser) {
+		let bp_hb = window.matchMedia(BREAKPOINT_HB);
+		isHamburgerButtonEnabled.set(bp_hb.matches);
+
 		window.addEventListener('resize', () => {
 			setVh001();
 			if (maxVh1 < window.innerHeight) setMaxVh001();
+
+			isHamburgerButtonEnabled.set(bp_hb.matches);
+			if (!$isHamburgerButtonEnabled) isDrawerMenuOpened.set(false);
 		});
+
 		setVh001();
 		setMaxVh001();
 
@@ -32,6 +42,13 @@
 			if (event.key === 'Escape') closeAllModals();
 		});
 	}
+
+	// if (browser) {
+	// 	let bp = window.matchMedia(BREAKPOINT_HB);
+
+	// 	isHbButtonEnabled = bp.matches;
+
+	// }
 
 	$: {
 		if (
