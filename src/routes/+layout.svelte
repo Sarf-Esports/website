@@ -126,7 +126,7 @@
 
 <Header />
 
-<main inert={$isContactModalOpened}><slot /></main>
+<main inert={$isDrawerMenuOpened || $isContactModalOpened}><slot /></main>
 
 <Footer />
 
