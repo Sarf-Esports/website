@@ -5,7 +5,7 @@
 </script>
 
 {#if 0 < SPONSORS.length}
-	<div class="banner-container">
+	<div class="banner-container" inert>
 		<div class="banner-content">
 			<ul>
 				{#each SPONSORS as sponsor}
