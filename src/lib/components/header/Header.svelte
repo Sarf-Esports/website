@@ -56,7 +56,7 @@
 
 <div id="header-bg" class:visible={isDrawerMenuOpened} />
 
-<header class:open={isDrawerMenuOpened}>
+<header class:open={isDrawerMenuOpened} inert={$isContactModalOpened}>
 	<nav>
 		<a href="/" draggable="false" tabindex="-1"><span title={$_('header.back')} /></a>
 		<HbBtn
@@ -92,7 +92,7 @@
 	</nav>
 </header>
 
-<div id="header2" class:open={isDrawerMenuOpened} inert={!isDrawerMenuOpened}>
+<div id="header2" class:open={isDrawerMenuOpened} inert={!isDrawerMenuOpened || $isContactModalOpened}>
 	<div class="socials">
 		<Socials
 			style="

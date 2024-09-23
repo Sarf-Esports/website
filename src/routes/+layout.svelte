@@ -109,7 +109,7 @@
 
 <Header />
 
-<main><slot /></main>
+<main inert={$isContactModalOpened}><slot /></main>
 
 <Footer />
 
