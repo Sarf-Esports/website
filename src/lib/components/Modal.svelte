@@ -9,7 +9,7 @@
 	 *
 	 * But it will be `100vw - 29px` if it is bigger than `100vw - 29px`.
 	 */
-	export let minWidth: number = 358;
+	export let minWidth: number = 382;
 
 	let dialog: HTMLDialogElement;
 	open.subscribe((isOpen) => {
@@ -25,6 +25,7 @@
 </script>
 
 <!-- Is the `<dialog>` element really not a non-interactive element? -->
+<!-- And `8px` in the `style` attribute is the sum of the maximum border width of the `<dialog>` element. -->
 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <dialog
@@ -34,8 +35,9 @@
 	on:close={close}
 	bind:this={dialog}
 	class="modal"
+	style="min-width: min({minWidth}px, 100vw - 8px);"
 >
-	<div class="modal-content" style="min-width: min({minWidth}px, 100vw - 29px);">
+	<div class="modal-content">
 		{#if title !== null}
 			<h1>{title}</h1>
 		{/if}
