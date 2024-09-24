@@ -1,6 +1,6 @@
 // © 2022 REVATI
 
-import { writable } from 'svelte/store';
+import { writable, get } from 'svelte/store';
 import { browser } from '$app/environment';
 import { toggleScrollPrevention } from '$lib/scripts/util';
 
@@ -16,7 +16,7 @@ isDrawerMenuOpened.subscribe((isOpened) => {
 export const isHamburgerButtonEnabled = writable(false);
 
 export const isContactModalOpen = writable(false);
-isContactModalOpen.subscribe(updateScrollPrevention);
+isContactModalOpen.subscribe((isOpen) => updateScrollPrevention(isOpen || get(isDrawerMenuOpened)));
 export const isFeesModalOpen = writable(false);
 isFeesModalOpen.subscribe(updateScrollPrevention);
 export const isCoachesModalOpen = writable(false);
