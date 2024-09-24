@@ -15,13 +15,6 @@
 	}
 }
 
-.modal-bg {
-	position: fixed;
-	inset: 0;
-	background-color: #000000aa;
-	z-index: 254;
-}
-
 main::before {
 	content: '';
 	$dark: rgba($secondary-color, 0.75);
