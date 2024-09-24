@@ -179,10 +179,17 @@
 					<li class="gears-and-settings">
 						<button
 							on:click={() => {
-								gearsAndSettingsModalContent = {
-									playerName: memberName,
-									gearsAndSettings
-								};
+								// The `gearsAndSettings` variable is already guaranteed to be not `undefined` by the `#if` block,
+								// but we exclude `undefined` again with a ternary operator to avoid ESLint errors.
+								// The `gearsAndSettingsModalContent` variable will never be assigned `null` here,
+								// because the button is not rendered if the `gearsAndSettings` variable is `undefined`.
+								gearsAndSettingsModalContent =
+									gearsAndSettings !== undefined
+										? {
+												playerName: memberName,
+												gearsAndSettings
+											}
+										: null;
 								isGearsAndSettingsModalOpen.set(true);
 							}}
 							class="gears-and-settings-btn"
