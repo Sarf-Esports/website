@@ -7,8 +7,6 @@
 | Z-Index | Entity | Path |
 | --: | --- | --- |
 | 1031 | nprogress { bar, spinner }  | [`/node_modules/nprogress/nprogress.css>#nprogress .bar`](/node_modules/nprogress/nprogress.css), [`/node_modules/nprogress/nprogress.css>#nprogress .spinner`](/node_modules/nprogress/nprogress.css) |
-| 255 | modal | [`modal.scss>.modal`](/src/lib/stylesheets/modal.scss) |
-| 254 | modal bg | [`layout.scss>.modal-bg`](/src/lib/stylesheets/layout.scss) |
 | 253 | header, header2 | [`header.scss>header`](/src/lib/stylesheets/header/header.scss), [`header.scss>#header2`](/src/lib/stylesheets/header/header.scss) |
 | 252 | header bg | [`header.scss>#header-bg`](/src/lib/stylesheets/header/header.scss) |
 | -1 | bg | [`layout.scss>main::before`](/src/lib/stylesheets/layout.scss) |
