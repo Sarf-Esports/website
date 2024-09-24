@@ -6,7 +6,6 @@
 $secondary-color: #ccfbff;
 
 .modal {
-	max-height: 85%;
 	margin: auto;
 	color: inherit;
 	background-color: #122426;
@@ -23,6 +22,7 @@ $secondary-color: #ccfbff;
 }
 
 .modal-content {
+	max-height: 85%;
 	padding: 18px 32px;
 	padding-bottom: 34px;
 }
@@ -63,10 +63,13 @@ svg {
 
 @include sp {
 	.modal {
+		border: 2px solid $secondary-color;
+	}
+
+	.modal-content {
 		min-width: 224px;
 		max-width: 90vw;
 		padding: 12px 12px;
-		border: 2px solid $secondary-color;
 	}
 
 	h1 {

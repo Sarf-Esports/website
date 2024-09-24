@@ -34,9 +34,8 @@
 	on:close={close}
 	bind:this={dialog}
 	class="modal"
-	style="min-width: min({minWidth}px, 100vw - 29px);"
 >
-	<div class="modal-content">
+	<div class="modal-content" style="min-width: min({minWidth}px, 100vw - 29px);">
 		{#if title !== null}
 			<h1>{title}</h1>
 		{/if}
