@@ -36,7 +36,9 @@
 	ul {
 		display: flex;
 		width: 672px;
+		margin: 0 auto;
 		margin-top: 38px;
+		margin-bottom: 22px;
 		padding: 0;
 		gap: 36px 0;
 		flex-wrap: wrap;
