@@ -4,35 +4,27 @@
 @use '$lib/stylesheets/variables/mixin' as *;
 
 $secondary-color: #ccfbff;
-$bloom-color: #63f2ff;
 
 .modal {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	max-height: 85%;
 	margin: auto;
+	color: inherit;
 	background-color: #122426;
 	border: 4px solid $secondary-color;
-	padding: 18px 32px;
-	padding-bottom: 34px;
+	padding: 0;
 	border-radius: 6px;
-	$bloom-color-large: rgba($bloom-color, 0.08);
-	$bloom-color-small: rgba($secondary-color, 0.2);
-	filter: drop-shadow(0 0 128px $bloom-color-large) drop-shadow(0 0 28px $bloom-color-small);
 	overflow: scroll;
 	scrollbar-color: $old-primary-color transparent;
 	scrollbar-width: thin;
-	z-index: 255;
 
-	@include sp {
-		filter: drop-shadow(0 0 32px $bloom-color-large) drop-shadow(0 0 14px $bloom-color-small);
+	&::backdrop {
+		background: #000000aa;
 	}
+}
 
-	&.no-bloom {
-		filter: none;
-	}
+.modal-content {
+	padding: 18px 32px;
+	padding-bottom: 34px;
 }
 
 h1 {
@@ -40,7 +32,7 @@ h1 {
 	font-size: 34px;
 	font-weight: 900;
 	margin: 16px 0;
-	filter: drop-shadow(0 0 14px rgba($bloom-color, 0.5));
+	filter: drop-shadow(0 0 14px #63f2ff80);
 
 	&::before,
 	&::after {

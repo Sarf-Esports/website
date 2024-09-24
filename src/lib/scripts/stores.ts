@@ -1,8 +1,7 @@
 // © 2022 REVATI
 
-import { writable, type Writable } from 'svelte/store';
+import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
-import type { GearsAndSettings } from './types';
 import { toggleScrollPrevention } from '$lib/scripts/util';
 
 export const isDrawerMenuOpened = writable(false);
@@ -16,20 +15,14 @@ isDrawerMenuOpened.subscribe((isOpened) => {
 
 export const isHamburgerButtonEnabled = writable(false);
 
-export const isContactModalOpened = writable(false);
-isContactModalOpened.subscribe(updateScrollPrevention);
-export const isFeesModalOpened = writable(false);
-isFeesModalOpened.subscribe(updateScrollPrevention);
-export const isCoachesModalOpened = writable(false);
-isCoachesModalOpened.subscribe(updateScrollPrevention);
-export const gearsAndSettingsModalState: Writable<{
-	isOpened: boolean;
-	content: {
-		playerName: string;
-		gearsAndSettings: GearsAndSettings;
-	} | null;
-}> = writable({ isOpened: false, content: null });
-gearsAndSettingsModalState.subscribe(({ isOpened }) => updateScrollPrevention(isOpened));
+export const isContactModalOpen = writable(false);
+isContactModalOpen.subscribe(updateScrollPrevention);
+export const isFeesModalOpen = writable(false);
+isFeesModalOpen.subscribe(updateScrollPrevention);
+export const isCoachesModalOpen = writable(false);
+isCoachesModalOpen.subscribe(updateScrollPrevention);
+export const isGearsAndSettingsModalOpen = writable(false);
+isGearsAndSettingsModalOpen.subscribe(updateScrollPrevention);
 
 function updateScrollPrevention(v: boolean) {
 	if (browser) toggleScrollPrevention(v);

@@ -5,11 +5,12 @@
 	import GearsAndSettings from '$lib/components/home/GearsAndSettings.svelte';
 
 	import { MEMBER_LISTS } from '$lib/scripts/data/MEMBERS';
+	import { type GearsAndSettings as GearsAndSettingsType } from '$lib/scripts/types';
+	import { isGearsAndSettingsModalOpen } from '$lib/scripts/stores';
 	import type { IconKind } from '$lib/components/MaterialIcon.svelte';
 	import { replaceState } from '$app/navigation';
 	import { calcAge, zeroPad } from '$lib/scripts/util';
 	import { date, _ } from 'svelte-i18n';
-	import { gearsAndSettingsModalState } from '$lib/scripts/stores';
 
 	export let division: string | null;
 
@@ -19,6 +20,12 @@
 		currentDivisionIndex = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName === division);
 
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
+
+	let gearsAndSettingsModalContent: {
+		playerName: string;
+		gearsAndSettings: GearsAndSettingsType
+	} | null = null;
+	isGearsAndSettingsModalOpen.subscribe((isOpen) => { if (!isOpen) gearsAndSettingsModalContent = null });
 
 	const LOCK_ICON: {
 		kind: IconKind;
@@ -169,23 +176,13 @@
 				{#if gearsAndSettings !== undefined}
 					<li class="gears-and-settings">
 						<button
-							on:click={() =>
-								gearsAndSettingsModalState.update(() => {
-									return {
-										isOpened: true,
-										content:
-											// The `gearsAndSettings` variable is already guaranteed to be not `undefined` by the `#if` block,
-											// but we exclude `undefined` again with a ternary operator to avoid ESLint errors.
-											// The `content` field will never be assigned `null` here,
-											// because the button is not rendered if the `gearsAndSettings` variable is `undefined`.
-											gearsAndSettings !== undefined
-												? {
-														playerName: memberName,
-														gearsAndSettings
-													}
-												: null
-									};
-								})}
+							on:click={() => {
+								gearsAndSettingsModalContent = {
+									playerName: memberName,
+									gearsAndSettings
+								};
+								isGearsAndSettingsModalOpen.set(true);
+							}}
 							class="gears-and-settings-btn"
 							title={$_('teams.gearsAndGameSettingsOfThisPlayer')}
 						>
@@ -198,11 +195,11 @@
 	{/each}
 </ul>
 
-{#if $gearsAndSettingsModalState.isOpened && $gearsAndSettingsModalState.content !== null}
-	<Modal minWidth={432} doesNotHaveBloom
-		><GearsAndSettings {...$gearsAndSettingsModalState.content} /></Modal
-	>
-{/if}
+<Modal open={isGearsAndSettingsModalOpen} minWidth={432}>
+	{#if gearsAndSettingsModalContent !== null}
+		<GearsAndSettings {...gearsAndSettingsModalContent} />
+	{/if}
+</Modal>
 
 <style lang="scss">
 	@use '$lib/stylesheets/home/teams';
