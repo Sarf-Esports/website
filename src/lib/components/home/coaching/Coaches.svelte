@@ -74,7 +74,7 @@
 
 	@include sp {
 		ul {
-			width: min(504px, 90vw);
+			width: min(504px, 100%);
 		}
 	}
 </style>
