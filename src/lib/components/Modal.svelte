@@ -1,6 +1,6 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import type { Writable } from "svelte/store";
+	import type { Writable } from 'svelte/store';
 
 	export let open: Writable<boolean>;
 	export let title: string | null = null;
@@ -16,7 +16,7 @@
 		if (dialog != undefined && dialog !== null) {
 			if (isOpen) dialog.showModal();
 			else dialog.close();
-		};
+		}
 	});
 
 	function close() {
@@ -28,7 +28,9 @@
 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <dialog
-	on:click={(e) => { if (e.target === dialog) close() }}
+	on:click={(e) => {
+		if (e.target === dialog) close();
+	}}
 	on:close={close}
 	bind:this={dialog}
 	class="modal"

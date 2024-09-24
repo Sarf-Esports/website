@@ -23,9 +23,11 @@
 
 	let gearsAndSettingsModalContent: {
 		playerName: string;
-		gearsAndSettings: GearsAndSettingsType
+		gearsAndSettings: GearsAndSettingsType;
 	} | null = null;
-	isGearsAndSettingsModalOpen.subscribe((isOpen) => { if (!isOpen) gearsAndSettingsModalContent = null });
+	isGearsAndSettingsModalOpen.subscribe((isOpen) => {
+		if (!isOpen) gearsAndSettingsModalContent = null;
+	});
 
 	const LOCK_ICON: {
 		kind: IconKind;

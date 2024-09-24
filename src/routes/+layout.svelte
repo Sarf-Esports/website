@@ -4,10 +4,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 
 	import { BREAKPOINT_HB } from '$lib/scripts/variables';
-	import {
-		isDrawerMenuOpened,
-		isHamburgerButtonEnabled
-	} from '$lib/scripts/stores';
+	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '$lib/scripts/stores';
 	import NProgress from 'nprogress';
 	import 'nprogress/nprogress.css';
 	import { navigating, page } from '$app/stores';

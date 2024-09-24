@@ -8,7 +8,11 @@
 
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS, NON_SECTION_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
-	import { isContactModalOpen, isDrawerMenuOpened, isHamburgerButtonEnabled } from '$lib/scripts/stores';
+	import {
+		isContactModalOpen,
+		isDrawerMenuOpened,
+		isHamburgerButtonEnabled
+	} from '$lib/scripts/stores';
 	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/scripts/variables';
 	import { page } from '$app/stores';
@@ -73,11 +77,7 @@
 
 <Modal open={isContactModalOpen} title="CONTACT US"><Contact /></Modal>
 
-<div
-	id="header2"
-	class:open={$isDrawerMenuOpened}
-	inert={!$isDrawerMenuOpened}
->
+<div id="header2" class:open={$isDrawerMenuOpened} inert={!$isDrawerMenuOpened}>
 	<div class="socials">
 		<Socials
 			style="
