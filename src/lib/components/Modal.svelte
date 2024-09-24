@@ -13,7 +13,7 @@
 
 	let dialog: HTMLDialogElement;
 	open.subscribe((isOpen) => {
-		if (dialog != undefined && dialog !== null) {
+		if (dialog !== undefined && dialog !== null) {
 			if (isOpen) dialog.showModal();
 			else dialog.close();
 		}
