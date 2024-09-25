@@ -5,7 +5,7 @@
 	import Coaches from './Coaches.svelte';
 
 	import { _ } from 'svelte-i18n';
-	import { isFeesModalOpened, isCoachesModalOpened } from '$lib/scripts/stores';
+	import { isFeesModalOpen, isCoachesModalOpen } from '$lib/scripts/stores';
 
 	$: modalTitles = {
 		fees: $_('coaching.fees'),
@@ -27,10 +27,8 @@
 
 <div class="buttons">
 	<div>
-		<button on:click={() => isFeesModalOpened.update(() => true)}>{modalTitles.fees}</button>
-		{#if $isFeesModalOpened}
-			<Modal title={modalTitles.fees} minWidth={485} doesNotHaveBloom><Fees /></Modal>
-		{/if}
+		<button on:click={() => isFeesModalOpen.set(true)}>{modalTitles.fees}</button>
+		<Modal open={isFeesModalOpen} title={modalTitles.fees} minWidth={485}><Fees /></Modal>
 	</div>
 	<div>
 		<a
@@ -49,10 +47,8 @@
 		</a>
 	</div>
 	<div>
-		<button on:click={() => isCoachesModalOpened.update(() => true)}>{modalTitles.coaches}</button>
-		{#if $isCoachesModalOpened}
-			<Modal title={modalTitles.coaches} doesNotHaveBloom><Coaches /></Modal>
-		{/if}
+		<button on:click={() => isCoachesModalOpen.set(true)}>{modalTitles.coaches}</button>
+		<Modal open={isCoachesModalOpen} title={modalTitles.coaches}><Coaches /></Modal>
 	</div>
 </div>
 
