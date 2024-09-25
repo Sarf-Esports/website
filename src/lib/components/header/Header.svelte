@@ -1,16 +1,20 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import HbBtn from './HamburgerButton.svelte';
-	import Socials from '../Socials.svelte';
-	import LangSwitcher from '../LangSwitcher.svelte';
+	import Modal from '$lib/components/Modal.svelte';
+	import Socials from '$lib/components/Socials.svelte';
+	import LangSwitcher from '$lib/components/LangSwitcher.svelte';
 	import Contact from './Contact.svelte';
 
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS, NON_SECTION_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
-	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '$lib/scripts/stores';
+	import {
+		isContactModalOpen,
+		isDrawerMenuOpened,
+		isHamburgerButtonEnabled
+	} from '$lib/scripts/stores';
 	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/scripts/variables';
-	import { isContactModalOpened } from '$lib/scripts/stores';
 	import { page } from '$app/stores';
 
 	$: url = $page.url;
@@ -42,7 +46,7 @@
 
 <div id="header-bg" class:visible={$isDrawerMenuOpened} />
 
-<header class:open={$isDrawerMenuOpened} inert={$isContactModalOpened}>
+<header class:open={$isDrawerMenuOpened}>
 	<nav>
 		<a href="/" draggable="false" tabindex="-1"><span title={$_('header.back')} /></a>
 		<HbBtn />
@@ -50,7 +54,7 @@
 			{#each HEADER_ITEMS as item}
 				{#if item === 'contact'}
 					<li class="item-contact">
-						<button class:active={false} on:click={() => isContactModalOpened.update(() => true)}
+						<button class:active={false} on:click={() => isContactModalOpen.set(true)}
 							>CONTACT</button
 						>
 					</li>
@@ -71,13 +75,9 @@
 	</nav>
 </header>
 
-<Contact />
+<Modal open={isContactModalOpen} title="CONTACT US"><Contact /></Modal>
 
-<div
-	id="header2"
-	class:open={$isDrawerMenuOpened}
-	inert={!$isDrawerMenuOpened || $isContactModalOpened}
->
+<div id="header2" class:open={$isDrawerMenuOpened} inert={!$isDrawerMenuOpened}>
 	<div class="socials">
 		<Socials
 			style="

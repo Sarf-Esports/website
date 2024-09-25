@@ -1,24 +1,17 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
-	import Modal from '../Modal.svelte';
-
-	import { isContactModalOpened as isOpened } from '$lib/scripts/stores';
 	import { _ } from 'svelte-i18n';
 	import { SOCIALS } from '$lib/scripts/variables';
 </script>
 
-{#if $isOpened}
-	<Modal title="CONTACT US">
-		<p>
-			{$_('contact.desc')}<br />
-			{$_('contact.note.0')}<br />
-			{$_('contact.note.1')}
-		</p>
-		<div class="mail-btn-container">
-			<a href="mailto:{SOCIALS.email}" draggable="false">{$_('contact.button')}</a>
-		</div>
-	</Modal>
-{/if}
+<p>
+	{$_('contact.desc')}<br />
+	{$_('contact.note.0')}<br />
+	{$_('contact.note.1')}
+</p>
+<div class="mail-btn-container">
+	<a href="mailto:{SOCIALS.email}" draggable="false">{$_('contact.button')}</a>
+</div>
 
 <style lang="scss">
 	@use '$lib/stylesheets/variables/mixin' as *;
