@@ -108,7 +108,7 @@
 
 <Header />
 
-<main inert={$isDrawerMenuOpened}><slot /></main>
+<main id="main-content" inert={$isDrawerMenuOpened}><slot /></main>
 
 <Footer />
 

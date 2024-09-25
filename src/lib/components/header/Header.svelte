@@ -48,6 +48,9 @@
 
 <header class:open={$isDrawerMenuOpened}>
 	<nav>
+		{#if !$isHamburgerButtonEnabled}
+			<a href="#main-content" class="skip-btn">{$_('header.skip')}</a>
+		{/if}
 		<a href="/" draggable="false" tabindex="-1"><span title={$_('header.back')} /></a>
 		<HbBtn />
 		<ul inert={$isHamburgerButtonEnabled && !$isDrawerMenuOpened}>

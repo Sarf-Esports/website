@@ -20,7 +20,10 @@
 		"pageN": ["Page ", " "],
 		"logoOf": "Logo of {name}"
 	},
-	"header.back": "Back to top page",
+	"header": {
+		"skip": "Skip to main content",
+		"back": "Back to top page"
+	},
 	"top": {
 		"about.undefeatedSpirit": " ",
 		"about": [
