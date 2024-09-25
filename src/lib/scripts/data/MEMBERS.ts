@@ -338,6 +338,18 @@ export const MEMBER_LISTS: {
 		divisionName: 'Other',
 		members: [
 			{
+				memberName: 'kishi',
+				icon: null,
+				role: 'Translator',
+				country: 'jp',
+				birthday: { year: null, month: 9, day: 2 },
+				age: null,
+				twitter: 'kishi_krunk',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				memberName: 'はいせ',
 				icon: 'haise.webp',
 				role: 'Designer',
