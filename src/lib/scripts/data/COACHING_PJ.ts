@@ -53,5 +53,11 @@ export const COACHES: {
 		icon: 'clank.webp',
 		affiliation: 'REVATI',
 		twitter: 'clank_ccc'
+	},
+	{
+		name: 'epic',
+		icon: 'epic.webp',
+		affiliation: 'REVATI',
+		twitter: 'ep11111123'
 	}
 ];
