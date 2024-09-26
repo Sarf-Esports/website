@@ -15,7 +15,7 @@
 			title="X: @{SOCIALS.twitter}"
 			class="no-after-icn"
 		>
-			<img src="/images/logos/x_logo-white.webp" alt="X" id="x-logo" />
+			<img src="/images/logos/x_logo-white.webp" alt="X" width=125 height=128 id="x-logo" />
 		</a>
 	</li>
 	<li>
@@ -26,7 +26,7 @@
 			title="YouTube: /{SOCIALS.youtube}"
 			class="no-after-icn"
 		>
-			<img src="/images/logos/yt_icon_mono_dark.webp" alt="YouTube" />
+			<img src="/images/logos/yt_icon_mono_dark.webp" alt="YouTube" width=128 height=90 />
 		</a>
 	</li>
 	<li>
@@ -37,7 +37,7 @@
 			title="GitHub: @{SOCIALS.github}"
 			class="no-after-icn"
 		>
-			<img src="/images/logos/github-mark-white.svg" alt="GitHub" />
+			<img src="/images/logos/github-mark-white.svg" alt="GitHub" width=98 height=96 />
 		</a>
 	</li>
 </ul>

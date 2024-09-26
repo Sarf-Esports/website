@@ -109,6 +109,8 @@
 							<img
 								src="/images/logos/x_logo-white.webp"
 								alt="X"
+								width=125
+								height=128
 								title="@{twitter}"
 								loading="lazy"
 							/>
@@ -127,6 +129,8 @@
 							<img
 								src="/images/logos/yt_icon_rgb.webp"
 								alt="YouTube"
+								width=128
+								height=90
 								title="/{path}"
 								loading="lazy"
 								class="wide-icn"
@@ -142,7 +146,7 @@
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src="/images/logos/twitch.svg" alt="Twitch" title="@{twitch}" loading="lazy" />
+							<img src="/images/logos/twitch.svg" alt="Twitch" width=118 height=138 title="@{twitch}" loading="lazy" />
 						</a>
 					</li>
 				{/if}

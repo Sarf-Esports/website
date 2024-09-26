@@ -24,9 +24,10 @@
 
 	img {
 		display: block;
+		width: 609px;
+		height: auto;
+		aspect-ratio: 917 / 256;
 		margin: 0 auto;
-		height: 170px;
-		width: auto;
 		position: relative;
 		top: calc(50% - 20px);
 		translate: 0 -50%;
@@ -37,7 +38,6 @@
 
 		@include sp {
 			width: 80vw;
-			height: auto;
 		}
 	}
 </style>

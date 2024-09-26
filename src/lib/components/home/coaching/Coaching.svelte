@@ -15,7 +15,7 @@
 	const X_HANDLE = 'NGRev_coaching';
 </script>
 
-<img src="/images/coaching-poster.webp" alt={$_('w.poster')} />
+<img src="/images/coaching-poster.webp" alt={$_('w.poster')} class="poster" />
 
 <p class="desc">
 	{$_('coaching.desc.0')}
@@ -40,6 +40,8 @@
 			<img
 				src="/images/logos/x_logo-white.webp"
 				alt="X"
+				width=125
+				height=128
 				title="@{X_HANDLE}"
 				loading="lazy"
 				class="social-logo"

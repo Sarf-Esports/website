@@ -19,6 +19,8 @@
 					<img
 						src="/images/logos/x_logo-white.webp"
 						alt="X"
+						width=125
+						height=128
 						title="@{twitter}"
 						loading="lazy"
 						class="social-logo"
@@ -52,6 +54,8 @@
 
 	.icn {
 		width: 88px;
+		height: auto;
+		aspect-ratio: 1 / 1;
 		border: 3px solid $primary-color-pale-darker;
 		border-radius: 50%;
 		pointer-events: none;
@@ -71,6 +75,7 @@
 
 	.social-logo {
 		width: 20px;
+		height: auto;
 		margin-top: 6px;
 	}
 

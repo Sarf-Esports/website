@@ -2,8 +2,10 @@
 
 @use '$lib/stylesheets/variables/mixin' as *;
 
-img {
+.poster {
 	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
 	margin-top: 4px;
 	border-radius: 2px;
 }
@@ -31,6 +33,7 @@ button {
 
 .social-logo {
 	width: 38px;
+	height: auto;
 	margin-top: 37px;
 }
 
