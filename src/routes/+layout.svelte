@@ -31,13 +31,6 @@
 		setMaxVh001();
 	}
 
-	// if (browser) {
-	// 	let bp = window.matchMedia(BREAKPOINT_HB);
-
-	// 	isHbButtonEnabled = bp.matches;
-
-	// }
-
 	$: {
 		if (
 			$navigating !== null &&
