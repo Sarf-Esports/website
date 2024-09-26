@@ -37,7 +37,8 @@
 
 	ul {
 		display: flex;
-		width: 672px;
+		width: 840px;
+		max-width: 100%;
 		margin: 0 auto;
 		margin-top: 38px;
 		margin-bottom: 22px;
