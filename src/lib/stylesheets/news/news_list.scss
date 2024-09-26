@@ -77,13 +77,8 @@ $arrow-width: 94px;
 	padding: 7px;
 	margin: 1px;
 	cursor: pointer;
-	opacity: 0.3;
 	touch-action: manipulation;
 	transition: 0.2s;
-
-	&.active {
-		opacity: 1;
-	}
 
 	&::before {
 		content: '';
@@ -92,6 +87,10 @@ $arrow-width: 94px;
 		width: $size;
 		height: $size;
 		border-radius: 50%;
+		background-color: #ffffff4d;
+	}
+
+	&.active::before {
 		background-color: white;
 	}
 }
