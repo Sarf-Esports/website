@@ -68,7 +68,7 @@
 							class:active={currentSection === ''
 								? url.hash === '#' + item || url.pathname.split('/')[1] === item
 								: currentSection === item}
-							on:click={() => isDrawerMenuOpened.update(() => false)}>{item.toUpperCase()}</a
+							on:click={() => isDrawerMenuOpened.set(false)}>{item.toUpperCase()}</a
 						>
 					</li>
 				{/if}
