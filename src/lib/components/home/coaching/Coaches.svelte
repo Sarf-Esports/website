@@ -19,8 +19,8 @@
 					<img
 						src="/images/logos/x_logo-white.webp"
 						alt="X"
-						width=125
-						height=128
+						width="125"
+						height="128"
 						title="@{twitter}"
 						loading="lazy"
 						class="social-logo"
