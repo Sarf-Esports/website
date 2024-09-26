@@ -4,6 +4,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 
 	import { BREAKPOINT_HB } from '$lib/scripts/variables';
+	import { updateVh001 } from '$lib/scripts/util';
 	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '$lib/scripts/stores';
 	import NProgress from 'nprogress';
 	import 'nprogress/nprogress.css';
@@ -20,15 +21,15 @@
 		isHamburgerButtonEnabled.set(bp_hb.matches);
 
 		window.addEventListener('resize', () => {
-			setVh001();
-			if (maxVh1 < window.innerHeight) setMaxVh001();
+			updateVh001();
+			if (maxVh1 < window.innerHeight) updateMaxVh001();
 
 			isHamburgerButtonEnabled.set(bp_hb.matches);
 			if (!$isHamburgerButtonEnabled) isDrawerMenuOpened.set(false);
 		});
 
-		setVh001();
-		setMaxVh001();
+		updateVh001();
+		updateMaxVh001();
 	}
 
 	$: {
@@ -42,20 +43,11 @@
 	}
 
 	/**
-	 * Sets CSS variable `--vh001`.
+	 * Updates the CSS variable `--max-vh001`.
 	 *
 	 * **＊ Must be called in the browser environment.**
 	 */
-	function setVh001() {
-		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
-	}
-
-	/**
-	 * Sets css variable `--max-vh001`.
-	 *
-	 * **＊ Must be called in the browser environment.**
-	 */
-	function setMaxVh001() {
+	function updateMaxVh001() {
 		maxVh1 = window.innerHeight;
 		document.documentElement.style.setProperty('--max-vh001', maxVh1 * 0.01 + 'px');
 	}

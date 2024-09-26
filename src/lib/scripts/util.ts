@@ -89,3 +89,12 @@ export function calcAge(birthday: Date) {
 export function zeroPad(num: number, len: number) {
 	return num.toString().padStart(len, '0');
 }
+
+/**
+ * Updates the CSS variable `--vh001`.
+ *
+ * **＊ Must be called in the browser environment.**
+ */
+export function updateVh001() {
+	document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
+}
