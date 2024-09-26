@@ -35,10 +35,6 @@ body {
 	overflow-x: hidden;
 	// Anti Dark reader
 	background: none;
-
-	&.prevent-scroll {
-		overflow: hidden;
-	}
 }
 
 main > div.container {

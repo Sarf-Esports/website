@@ -62,13 +62,7 @@ function addClassOnVisible_(element: Element | HTMLElement, className: string) {
  * **＊ Must be called in the browser environment.**
  */
 export function toggleScrollPrevention(prevent: boolean) {
-	const c = 'prevent-scroll';
-	const body = document.body.classList;
-	if (prevent) {
-		body.add(c);
-	} else {
-		body.remove(c);
-	}
+    document.body.style.overflow = prevent ? 'hidden' : 'auto';
 }
 
 /** Converts an article ID to a Date object. */
