@@ -120,7 +120,7 @@ Returns a list of the news articles.
 
 ### Response Body
 
-`ArticleMetadata[]` ([`src/lib/scripts/types.ts`](/src/lib/scripts/types.ts))
+`ArticleMetadata[]` ([`/src/lib/scripts/types.ts`](/src/lib/scripts/types.ts))
 
 - `[]` (`object[]`) - The list of articles.
 	- `redirect` (`string?`) - The article ID to redirect to.
@@ -162,7 +162,7 @@ Returns a list of the articles that have their thumbnail images with the image f
 
 ### Response Body
 
-`ArticleThumbnailImgFmts` ([`src/lib/scripts/types.ts`](/src/lib/scripts/types.ts))
+`ArticleThumbnailImgFmts` ([`/src/lib/scripts/types.ts`](/src/lib/scripts/types.ts))
 
 - `{}` (`object`) - The list of the articles that have their thumbnail images with the image file formats.
 	- `[slug]` (`string`) - The thumbnail image file format for the article identified by this slug.

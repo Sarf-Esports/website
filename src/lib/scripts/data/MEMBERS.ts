@@ -14,7 +14,7 @@
 //     memberName: 'Rinrin.rs',
 //
 //     // アイコン画像のファイル名 (任意)
-//     // `static/images/members/` に置く画像ファイルを指定してください。
+//     // `/static/images/members/` に置く画像ファイルを指定してください。
 //     // - 最大ファイルサイズ: 50KB (原則)
 //     // - 推奨ファイルサイズ: 7KB 前後
 //     // - 推奨画像フォーマット: WebP
@@ -30,7 +30,7 @@
 //
 //     // 国旗 (任意)
 //     // 'jp' が日本国、`us` がアメリカ合衆国、'kr' が大韓民国となります。
-//     // 新しい国旗を追加する場合は `static/images/flags/` に SVG ファイルとして追加し、
+//     // 新しい国旗を追加する場合は `/static/images/flags/` に SVG ファイルとして追加し、
 //     // このファイル100行目あたりの `country` フィールドの型にファイル名を追加してください。
 //     country: 'jp',
 //
@@ -67,7 +67,7 @@
 //     homepage: 'https://rinrin.pages.dev',
 //
 //     // 使用デバイスとゲーム設定
-//     // この項目のデータは `src/lib/scripts/data/GEARS_AND_SETTINGS.ts` に記載します。
+//     // この項目のデータは `/src/lib/scripts/data/GEARS_AND_SETTINGS.ts` に記載します。
 //     // 詳しくはそちらを参照してください。
 //     // 指定しない場合は `null` にするのではなく、
 //     // このプロパティ自体を省略してください。
