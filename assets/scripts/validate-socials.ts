@@ -14,6 +14,7 @@ function sleep1s() {
 
 function printError(name: string, url: string) {
 	console.error(`      ${name}: 404 - ${url}`);
+	invalidSocials++;
 }
 
 function handleError(
@@ -26,7 +27,6 @@ function handleError(
 ) {
 	if (e.status === 404) printError(name, url);
 	else console.error(`      ${name}: Unexpected Error - ${e.message}`);
-	invalidSocials++;
 }
 
 async function validate(url: string, name: string) {
