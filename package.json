@@ -10,7 +10,8 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lnt": "prettier --check . && eslint .",
 		"fmt": "prettier --write .",
-		"article": "node assets/scripts/create-article.js"
+		"article": "node assets/scripts/create-article.js",
+		"validate-socials": "tsx assets/scripts/validate-socials.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-cloudflare": "^3.0.0",
@@ -19,6 +20,8 @@
 		"@types/nprogress": "^0.2.3",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
+		"axios": "^1.7.7",
+		"cheerio": "^1.0.0",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
@@ -30,6 +33,7 @@
 		"svelte-check": "^3.6.0",
 		"svelte-i18n": "^4.0.0",
 		"tslib": "^2.4.1",
+		"tsx": "^4.19.1",
 		"typescript": "^5.0.0",
 		"vite": "^5.4.6"
 	},
