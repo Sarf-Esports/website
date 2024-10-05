@@ -1,10 +1,19 @@
 // © 2022 REVATI
 
+@use '$lib/stylesheets/variables/color' as *;
 @use '$lib/stylesheets/variables/mixin' as *;
 
 a {
 	color: inherit;
 	text-decoration: none;
+	outline: 3px solid transparent;
+
+	&:focus-visible {
+		article {
+			color: white;
+			background: rgba($old-primary-color, $alpha: 0.2);
+		}
+	}
 }
 
 article {

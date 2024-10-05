@@ -20,7 +20,10 @@
 		"pageN": [" ", "페이지"],
 		"logoOf": "{name} 의 로고"
 	},
-	"header.back": "톱 페이지로 돌아가기",
+	"header": {
+		"skip": "콘텐츠로 건너뛰기",
+		"back": "톱 페이지로 돌아가기"
+	},
 	"top": {
 		"about.undefeatedSpirit": "'불굴의 정신'",
 		"about": [

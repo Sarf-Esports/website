@@ -25,11 +25,11 @@
 
 ## その他文書
 
-- [変更を加える際の規則 / CONTRIBUTING](./docs/CONTRIBUTING.md)
+- [変更を加える際の規則 / CONTRIBUTING](/docs/CONTRIBUTING.md)
 - [新規ページ追加後にすべきこと / WHEN ADDED NEW PAGE](/docs/when-added-new-page.md)
-- [ToDo](./docs/TODO.md)
-- [雑な仕様書 / SPECIFICATION](./docs/SPECIFICATION.md)
+- [ToDo](/docs/TODO.md)
+- [雑な仕様書 / SPECIFICATION](/docs/SPECIFICATION.md)
 
-* [ニュース記事の追加方法](./docs/ADDING_NEWS.md)
-* [メンバーの追加方法](./src/lib/scripts/data/MEMBERS.ts)
+* [ニュース記事の追加方法](/docs/ADDING_NEWS.md)
+* [メンバーの追加方法](/src/lib/scripts/data/MEMBERS.ts)
 

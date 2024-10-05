@@ -34,7 +34,7 @@
 	@use '$lib/stylesheets/variables/mixin' as *;
 
 	.transparent {
-		opacity: 0;
+		opacity: 0.15;
 	}
 
 	svg {
@@ -45,10 +45,6 @@
 	}
 
 	@include not-wide-width {
-		.transparent {
-			opacity: 0.15;
-		}
-
 		svg {
 			width: 39px;
 		}

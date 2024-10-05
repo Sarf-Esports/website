@@ -5,11 +5,12 @@
 	import GearsAndSettings from '$lib/components/home/GearsAndSettings.svelte';
 
 	import { MEMBER_LISTS } from '$lib/scripts/data/MEMBERS';
+	import { type GearsAndSettings as GearsAndSettingsType } from '$lib/scripts/types';
+	import { isGearsAndSettingsModalOpen } from '$lib/scripts/stores';
 	import type { IconKind } from '$lib/components/MaterialIcon.svelte';
 	import { replaceState } from '$app/navigation';
 	import { calcAge, zeroPad } from '$lib/scripts/util';
 	import { date, _ } from 'svelte-i18n';
-	import { gearsAndSettingsModalState } from '$lib/scripts/stores';
 
 	export let division: string | null;
 
@@ -19,6 +20,14 @@
 		currentDivisionIndex = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName === division);
 
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
+
+	let gearsAndSettingsModalContent: {
+		playerName: string;
+		gearsAndSettings: GearsAndSettingsType;
+	} | null = null;
+	isGearsAndSettingsModalOpen.subscribe((isOpen) => {
+		if (!isOpen) gearsAndSettingsModalContent = null;
+	});
 
 	const LOCK_ICON: {
 		kind: IconKind;
@@ -100,6 +109,8 @@
 							<img
 								src="/images/logos/x_logo-white.webp"
 								alt="X"
+								width="125"
+								height="128"
 								title="@{twitter}"
 								loading="lazy"
 							/>
@@ -118,6 +129,8 @@
 							<img
 								src="/images/logos/yt_icon_rgb.webp"
 								alt="YouTube"
+								width="128"
+								height="90"
 								title="/{path}"
 								loading="lazy"
 								class="wide-icn"
@@ -133,7 +146,14 @@
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src="/images/logos/twitch.svg" alt="Twitch" title="@{twitch}" loading="lazy" />
+							<img
+								src="/images/logos/twitch.svg"
+								alt="Twitch"
+								width="118"
+								height="138"
+								title="@{twitch}"
+								loading="lazy"
+							/>
 						</a>
 					</li>
 				{/if}
@@ -169,23 +189,20 @@
 				{#if gearsAndSettings !== undefined}
 					<li class="gears-and-settings">
 						<button
-							on:click={() =>
-								gearsAndSettingsModalState.update(() => {
-									return {
-										isOpened: true,
-										content:
-											// The `gearsAndSettings` variable is already guaranteed to be not `undefined` by the `#if` block,
-											// but we exclude `undefined` again with a ternary operator to avoid ESLint errors.
-											// The `content` field will never be assigned `null` here,
-											// because the button is not rendered if the `gearsAndSettings` variable is `undefined`.
-											gearsAndSettings !== undefined
-												? {
-														playerName: memberName,
-														gearsAndSettings
-													}
-												: null
-									};
-								})}
+							on:click={() => {
+								// The `gearsAndSettings` variable is already guaranteed to be not `undefined` by the `#if` block,
+								// but we exclude `undefined` again with a ternary operator to avoid ESLint errors.
+								// The `gearsAndSettingsModalContent` variable will never be assigned `null` here,
+								// because the button is not rendered if the `gearsAndSettings` variable is `undefined`.
+								gearsAndSettingsModalContent =
+									gearsAndSettings !== undefined
+										? {
+												playerName: memberName,
+												gearsAndSettings
+											}
+										: null;
+								isGearsAndSettingsModalOpen.set(true);
+							}}
 							class="gears-and-settings-btn"
 							title={$_('teams.gearsAndGameSettingsOfThisPlayer')}
 						>
@@ -198,11 +215,11 @@
 	{/each}
 </ul>
 
-{#if $gearsAndSettingsModalState.isOpened && $gearsAndSettingsModalState.content !== null}
-	<Modal minWidth={432} doesNotHaveBloom
-		><GearsAndSettings {...$gearsAndSettingsModalState.content} /></Modal
-	>
-{/if}
+<Modal open={isGearsAndSettingsModalOpen} minWidth={432}>
+	{#if gearsAndSettingsModalContent !== null}
+		<GearsAndSettings {...gearsAndSettingsModalContent} />
+	{/if}
+</Modal>
 
 <style lang="scss">
 	@use '$lib/stylesheets/home/teams';

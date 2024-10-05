@@ -13,7 +13,9 @@ const date = `${year}${month}${day}`;
 
 let i = 1;
 while (
-	fs.existsSync(path.join(articlesDir, date + (1 < i ? String(i).padStart(2, '0') : '') + '.md'))
+	fs.existsSync(
+		path.join(articlesDir, date + (1 < i ? String(i).padStart(2, '0') : '') + '.md')
+	) === true
 )
 	i++;
 const fileName = date + (1 < i ? String(i).padStart(2, '0') : '') + '.md';

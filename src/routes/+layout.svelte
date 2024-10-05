@@ -3,16 +3,12 @@
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
-	import { closeAllModals } from '$lib/scripts/util';
+	import { BREAKPOINT_HB } from '$lib/scripts/variables';
+	import { updateVh001 } from '$lib/scripts/util';
+	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '$lib/scripts/stores';
 	import NProgress from 'nprogress';
 	import 'nprogress/nprogress.css';
 	import { navigating, page } from '$app/stores';
-	import {
-		isContactModalOpened,
-		isFeesModalOpened,
-		isCoachesModalOpened,
-		gearsAndSettingsModalState
-	} from '$lib/scripts/stores';
 	import { COPYRIGHT, SITE_URL } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
@@ -21,16 +17,19 @@
 	let maxVh1: number;
 
 	if (browser) {
-		window.addEventListener('resize', () => {
-			setVh001();
-			if (maxVh1 < window.innerHeight) setMaxVh001();
-		});
-		setVh001();
-		setMaxVh001();
+		let bp_hb = window.matchMedia(BREAKPOINT_HB);
+		isHamburgerButtonEnabled.set(bp_hb.matches);
 
-		document.addEventListener('keydown', (event) => {
-			if (event.key === 'Escape') closeAllModals();
+		window.addEventListener('resize', () => {
+			updateVh001();
+			if (maxVh1 < window.innerHeight) updateMaxVh001();
+
+			isHamburgerButtonEnabled.set(bp_hb.matches);
+			if (!$isHamburgerButtonEnabled) isDrawerMenuOpened.set(false);
 		});
+
+		updateVh001();
+		updateMaxVh001();
 	}
 
 	$: {
@@ -44,25 +43,14 @@
 	}
 
 	/**
-	 * Sets CSS variable `--vh001`.
+	 * Updates the CSS variable `--max-vh001`.
 	 *
 	 * **＊ Must be called in the browser environment.**
 	 */
-	function setVh001() {
-		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
-	}
-
-	/**
-	 * Sets css variable `--max-vh001`.
-	 *
-	 * **＊ Must be called in the browser environment.**
-	 */
-	function setMaxVh001() {
+	function updateMaxVh001() {
 		maxVh1 = window.innerHeight;
 		document.documentElement.style.setProperty('--max-vh001', maxVh1 * 0.01 + 'px');
 	}
-
-	function empty() {} // eslint-disable-line @typescript-eslint/no-empty-function
 </script>
 
 <svelte:head>
@@ -103,13 +91,9 @@
 	<link rel="icon" href="/images/logos/revati/icon_180px_oxipng.png?v=3" />
 </svelte:head>
 
-{#if $isContactModalOpened || $isFeesModalOpened || $isCoachesModalOpened || $gearsAndSettingsModalState.isOpened}
-	<div class="modal-bg" on:click={closeAllModals} on:keypress={empty} role="none" />
-{/if}
-
 <Header />
 
-<main><slot /></main>
+<main id="main-content" inert={$isDrawerMenuOpened}><slot /></main>
 
 <Footer />
 

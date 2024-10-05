@@ -19,6 +19,8 @@
 					<img
 						src="/images/logos/x_logo-white.webp"
 						alt="X"
+						width="125"
+						height="128"
 						title="@{twitter}"
 						loading="lazy"
 						class="social-logo"
@@ -35,8 +37,11 @@
 
 	ul {
 		display: flex;
-		width: 672px;
+		width: 840px;
+		max-width: 100%;
+		margin: 0 auto;
 		margin-top: 38px;
+		margin-bottom: 22px;
 		padding: 0;
 		gap: 36px 0;
 		flex-wrap: wrap;
@@ -50,6 +55,8 @@
 
 	.icn {
 		width: 88px;
+		height: auto;
+		aspect-ratio: 1 / 1;
 		border: 3px solid $primary-color-pale-darker;
 		border-radius: 50%;
 		pointer-events: none;
@@ -69,12 +76,13 @@
 
 	.social-logo {
 		width: 20px;
+		height: auto;
 		margin-top: 6px;
 	}
 
 	@include sp {
 		ul {
-			width: min(504px, 90vw);
+			width: min(504px, 100%);
 		}
 	}
 </style>

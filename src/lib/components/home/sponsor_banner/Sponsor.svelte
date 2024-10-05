@@ -8,7 +8,14 @@
 </script>
 
 <li>
-	<a href={url} target="_blank" rel="noopener noreferrer" title={name} class="no-after-icn">
+	<a
+		href={url}
+		target="_blank"
+		rel="noopener noreferrer"
+		title={name}
+		class="no-after-icn"
+		tabindex="-1"
+	>
 		<img src="images/logos/{logo}" alt={$_('w.logoOf', { values: { name } })} />
 	</a>
 </li>

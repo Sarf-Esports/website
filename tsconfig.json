@@ -10,7 +10,16 @@
 		"sourceMap": true,
 		"strict": true,
 		"moduleResolution": "bundler"
-	}
+	},
+	"include": [
+		"src/**/*.svelte",
+		"src/**/*.ts",
+		"assets/scripts/**/*.ts",
+		"assets/scripts/**/*.js",
+		"static/scripts/**/*.js",
+		"*.js",
+		"*.cjs"
+	]
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	//
 	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes

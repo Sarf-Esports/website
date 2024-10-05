@@ -7,10 +7,9 @@
 | Z-Index | Entity | Path |
 | --: | --- | --- |
 | 1031 | nprogress { bar, spinner }  | [`/node_modules/nprogress/nprogress.css>#nprogress .bar`](/node_modules/nprogress/nprogress.css), [`/node_modules/nprogress/nprogress.css>#nprogress .spinner`](/node_modules/nprogress/nprogress.css) |
-| 255 | modal | [`modal.scss>.modal`](/src/lib/stylesheets/modal.scss) |
-| 254 | modal bg | [`layout.scss>.modal-bg`](/src/lib/stylesheets/layout.scss) |
 | 253 | header, header2 | [`header.scss>header`](/src/lib/stylesheets/header/header.scss), [`header.scss>#header2`](/src/lib/stylesheets/header/header.scss) |
 | 252 | header bg | [`header.scss>#header-bg`](/src/lib/stylesheets/header/header.scss) |
+| 132 | header skip btn | [`header.scss>.skip-btn`](/src/lib/stylesheets/header/header.scss) |
 | -1 | bg | [`layout.scss>main::before`](/src/lib/stylesheets/layout.scss) |
 
 ---
@@ -121,7 +120,7 @@ Returns a list of the news articles.
 
 ### Response Body
 
-`ArticleMetadata[]` ([`src/lib/scripts/types.ts`](/src/lib/scripts/types.ts))
+`ArticleMetadata[]` ([`/src/lib/scripts/types.ts`](/src/lib/scripts/types.ts))
 
 - `[]` (`object[]`) - The list of articles.
 	- `redirect` (`string?`) - The article ID to redirect to.
@@ -163,7 +162,7 @@ Returns a list of the articles that have their thumbnail images with the image f
 
 ### Response Body
 
-`ArticleThumbnailImgFmts` ([`src/lib/scripts/types.ts`](/src/lib/scripts/types.ts))
+`ArticleThumbnailImgFmts` ([`/src/lib/scripts/types.ts`](/src/lib/scripts/types.ts))
 
 - `{}` (`object`) - The list of the articles that have their thumbnail images with the image file formats.
 	- `[slug]` (`string`) - The thumbnail image file format for the article identified by this slug.

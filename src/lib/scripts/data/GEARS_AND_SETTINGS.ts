@@ -8,7 +8,7 @@
 // {
 //
 //     // 等身イラストのファイル名 (必須)
-//     // `static/images/members/characters/` に置く画像ファイルの名前を指定してください。
+//     // `/static/images/members/characters/` に置く画像ファイルの名前を指定してください。
 //     // なお、用意する画像ファイルの拡張子は `.webp` で統一してください。
 //     avatar: 'epic',
 //
@@ -40,7 +40,7 @@
 //         {
 //
 //             // 「タイプ」 (任意)
-//             // 翻訳ファイル(`src/lib/scripts/i18n/locales/` にある JSON ファイル) の、
+//             // 翻訳ファイル(`/src/lib/scripts/i18n/locales/` にある JSON ファイル) の、
 //             // `teams.gearsAndSettingsItem.type.` に続く 対応するキーを指定してください。
 //             // 新しく追加する場合はすべての言語のファイルに追加してください。
 //             type: 'default',
@@ -49,10 +49,10 @@
 //             showsAccuracy: true,
 //
 //             // 「色」 (必須)
-//             // 翻訳ファイル(`src/lib/scripts/i18n/locales/` にある JSON ファイル) の、
+//             // 翻訳ファイル(`/src/lib/scripts/i18n/locales/` にある JSON ファイル) の、
 //             // `teams.gearsAndSettingsItem.color.` に続く 対応するキーを指定してください。
 //             // 新しく追加する場合はすべての言語のファイルに追加し、
-//             // `src/lib/components/home/GearsAndSettings.svelte` の `convertColNameToHexCol` 関数に対応する色を追加してください。
+//             // `/src/lib/components/home/GearsAndSettings.svelte` の `convertColNameToHexCol` 関数に対応する色を追加してください。
 //             color: 'cyan',
 //
 //             // 「濃さ」 (任意)
@@ -73,10 +73,10 @@
 //             outline: {
 //
 //                 // 「アウトラインの色」 (必須)
-//                 // 翻訳ファイル(`src/lib/scripts/i18n/locales/` にある JSON ファイル) の、
+//                 // 翻訳ファイル(`/src/lib/scripts/i18n/locales/` にある JSON ファイル) の、
 //                 // `teams.gearsAndSettingsItem.color.` に続く 対応するキーを指定してください。
 //                 // 新しく追加する場合はすべての言語のファイルに追加し、
-//                 // `src/lib/components/home/GearsAndSettings.svelte` の `convertColNameToHexCol` 関数に対応する色を追加してください。
+//                 // `/src/lib/components/home/GearsAndSettings.svelte` の `convertColNameToHexCol` 関数に対応する色を追加してください。
 //                 color: 'black',
 //
 //				   // 「アウトラインの透明度」 (必須)
@@ -91,7 +91,7 @@
 //             dot: {
 //
 //                 // 「ドットのタイプ」 (必須)
-//                 // 翻訳ファイル(`src/lib/scripts/i18n/locales/` にある JSON ファイル) の、
+//                 // 翻訳ファイル(`/src/lib/scripts/i18n/locales/` にある JSON ファイル) の、
 //                 // `teams.gearsAndSettingsItem.dot.type..` に続く 対応するキーを指定してください。
 //                 // 新しく追加する場合はすべての言語のファイルに追加してください。
 //                 type: 'default',

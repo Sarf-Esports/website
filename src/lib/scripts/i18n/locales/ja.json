@@ -20,7 +20,10 @@
 		"pageN": [" ", "ページ"],
 		"logoOf": "{name} のロゴ"
 	},
-	"header.back": "トップページへ戻る",
+	"header": {
+		"skip": "コンテンツへ進む",
+		"back": "トップページへ戻る"
+	},
 	"top": {
 		"about.undefeatedSpirit": "「不屈の精神」",
 		"about": [

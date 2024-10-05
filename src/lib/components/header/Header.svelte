@@ -1,16 +1,20 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import HbBtn from './HamburgerButton.svelte';
-	import Socials from '../Socials.svelte';
-	import LangSwitcher from '../LangSwitcher.svelte';
+	import Modal from '$lib/components/Modal.svelte';
+	import Socials from '$lib/components/Socials.svelte';
+	import LangSwitcher from '$lib/components/LangSwitcher.svelte';
 	import Contact from './Contact.svelte';
 
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS, NON_SECTION_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
+	import {
+		isContactModalOpen,
+		isDrawerMenuOpened,
+		isHamburgerButtonEnabled
+	} from '$lib/scripts/stores';
 	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/scripts/variables';
-	import { toggleScrollPrevention } from '$lib/scripts/util';
-	import { isContactModalOpened } from '$lib/scripts/stores';
 	import { page } from '$app/stores';
 
 	$: url = $page.url;
@@ -38,32 +42,22 @@
 			}
 		});
 	}
-
-	let isDrawerMenuOpened = false;
-
-	/**
-	 * Toggles drawer menu open/close.
-	 *
-	 * **＊ Must be called in the browser environment.**
-	 */
-	function toggleDrawerMenu(open: boolean) {
-		isDrawerMenuOpened = open;
-		toggleScrollPrevention(isDrawerMenuOpened);
-
-		document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
-	}
 </script>
 
-<div id="header-bg" class:visible={isDrawerMenuOpened} />
+<div id="header-bg" class:visible={$isDrawerMenuOpened} />
 
-<header class:open={isDrawerMenuOpened}>
+<header class:open={$isDrawerMenuOpened}>
 	<nav>
-		<a href="/" draggable="false"><span title={$_('header.back')} /></a>
-		<ul>
+		{#if !$isHamburgerButtonEnabled}
+			<a href="#main-content" class="skip-btn">{$_('header.skip')}</a>
+		{/if}
+		<a href="/" draggable="false" tabindex="-1"><span title={$_('header.back')} /></a>
+		<HbBtn />
+		<ul inert={$isHamburgerButtonEnabled && !$isDrawerMenuOpened}>
 			{#each HEADER_ITEMS as item}
 				{#if item === 'contact'}
 					<li class="item-contact">
-						<button class:active={false} on:click={() => isContactModalOpened.update(() => true)}
+						<button class:active={false} on:click={() => isContactModalOpen.set(true)}
 							>CONTACT</button
 						>
 					</li>
@@ -74,25 +68,19 @@
 							class:active={currentSection === ''
 								? url.hash === '#' + item || url.pathname.split('/')[1] === item
 								: currentSection === item}
-							on:click={() => {
-								toggleDrawerMenu(false);
-							}}>{item.toUpperCase()}</a
+							on:click={() => isDrawerMenuOpened.set(false)}>{item.toUpperCase()}</a
 						>
 					</li>
 				{/if}
 			{/each}
 		</ul>
 		<h3>{COPYRIGHT}</h3>
-		<HbBtn
-			isOpened={isDrawerMenuOpened}
-			on:toggle={(e) => {
-				toggleDrawerMenu(e.detail.isOpened);
-			}}
-		/>
 	</nav>
 </header>
 
-<div id="header2" class:open={isDrawerMenuOpened}>
+<Modal open={isContactModalOpen} title="CONTACT US"><Contact /></Modal>
+
+<div id="header2" class:open={$isDrawerMenuOpened} inert={!$isDrawerMenuOpened}>
 	<div class="socials">
 		<Socials
 			style="
@@ -105,8 +93,6 @@
 	</div>
 	<div class="lang-switcher"><LangSwitcher /></div>
 </div>
-
-<Contact />
 
 <style lang="scss">
 	@use '$lib/stylesheets/header/header';
