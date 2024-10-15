@@ -28,8 +28,8 @@
 	$: thumbnailImgFmt = data.thumbnailImgFmt;
 	$: hasThumbnailImg = thumbnailImgFmt !== null;
 	$: thumbnailImgPath = hasThumbnailImg
-		? `/images/news/thumbnails/${slug}.` + thumbnailImgFmt
-		: null;
+		? `/images/news/thumbnails/${slug}.${thumbnailImgFmt}`
+		: '/images/logos/revati/header_1200x600.webp';
 	$: absThumbnailImgPath = SITE_URL + thumbnailImgPath;
 
 	$: date = willRedirect ? null : idToDate(slug);
@@ -59,9 +59,13 @@
 </svelte:head>
 
 <div class="container">
-	<div id="bg" style="background-image: url({thumbnailImgPath});" />
+	{#if hasThumbnailImg}
+		<div id="bg" style="background-image: url({thumbnailImgPath});" />
+	{/if}
 	<div id="content">
-		<img src={thumbnailImgPath} alt="" />
+		{#if hasThumbnailImg}
+			<img src={thumbnailImgPath} alt="" />
+		{/if}
 		<h1>{metadata.title}</h1>
 		{#if willRedirect}
 			<p>
