@@ -9,7 +9,7 @@
 	export let forceDesktopVerOnSemiNarrow = false;
 
 	const slug = meta.slug ?? 'unreachable';
-	const thumbnailImgFmt = thumbnailImgFmts[slug];
+	const thumbnailImgFmt = thumbnailImgFmts[slug] ?? null;
 	const date = idToDate(slug);
 	let datePlus9h = new Date(date);
 	datePlus9h.setHours(datePlus9h.getHours() + 9);
@@ -19,7 +19,11 @@
 	><article class:force-pc-v-on-semi-narrow={forceDesktopVerOnSemiNarrow}>
 		<div class="thumbnail-img">
 			<img
-				src="/images/news/thumbnails/{slug}.{thumbnailImgFmt}"
+				src={
+					thumbnailImgFmt === null ?
+						'/images/logos/revati/header_1200x600.webp' :
+						`/images/news/thumbnails/${slug}.${thumbnailImgFmt}`
+				}
 				alt={$_('w.articleThumbnailImg')}
 				loading="lazy"
 			/>
