@@ -19,11 +19,9 @@
 	><article class:force-pc-v-on-semi-narrow={forceDesktopVerOnSemiNarrow}>
 		<div class="thumbnail-img">
 			<img
-				src={
-					thumbnailImgFmt === null ?
-						'/images/logos/revati/header_1200x600.webp' :
-						`/images/news/thumbnails/${slug}.${thumbnailImgFmt}`
-				}
+				src={thumbnailImgFmt === null
+					? '/images/logos/revati/header_1200x600.webp'
+					: `/images/news/thumbnails/${slug}.${thumbnailImgFmt}`}
 				alt={$_('w.articleThumbnailImg')}
 				loading="lazy"
 			/>
