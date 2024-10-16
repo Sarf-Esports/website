@@ -100,45 +100,6 @@ export const MEMBER_LISTS: {
 		divisionName: 'Overwatch',
 		members: [
 			{
-				memberName: 'epic',
-				icon: 'epic.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2002, month: 4, day: 6 },
-				age: null,
-				twitter: 'ep11111123',
-				youtube: null,
-				twitch: 'ep1c_ow',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['epic']
-			},
-			{
-				memberName: 'Fearful',
-				icon: 'fearful.webp',
-				role: 'Player',
-				country: 'kr',
-				birthday: { year: 2005, month: 4, day: 5 },
-				age: null,
-				twitter: 'fearful0405',
-				youtube: null,
-				twitch: null,
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['fearful']
-			},
-			{
-				memberName: 'harutoon',
-				icon: 'harutoon.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2005, month: 3, day: 14 },
-				age: null,
-				twitter: 'harutoon_FN',
-				youtube: null,
-				twitch: 'harutoon_',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['harutoon']
-			},
-			{
 				memberName: 'Hesty',
 				icon: 'hesty.webp',
 				role: 'Player',
@@ -150,19 +111,6 @@ export const MEMBER_LISTS: {
 				twitch: 'hesty_ow',
 				homepage: null,
 				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
-			},
-			{
-				memberName: 'HoFac',
-				icon: 'hofac.webp',
-				role: 'Player',
-				country: 'kr',
-				birthday: { year: 2005, month: 1, day: 27 },
-				age: null,
-				twitter: 'HoneyFactory_OW',
-				youtube: '@ahoneyfactory9887',
-				twitch: 'hofac_ow',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['hofac']
 			},
 			{
 				memberName: 'solace',
