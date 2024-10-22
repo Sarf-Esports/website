@@ -3,7 +3,7 @@
 	import { _ } from 'svelte-i18n';
 </script>
 
-<img src="/images/goods-poster.webp" alt={$_('w.poster')}>
+<img src="/images/goods-poster.webp" alt={$_('w.poster')} />
 
 <p>{$_('goods.desc')}</p>
 
@@ -11,8 +11,8 @@
 	href="https://suzuri.jp/revati_jp"
 	target="_blank"
 	rel="noopener noreferrer"
-	title={$_('goods.storeLinkTitle')}
->{$_('goods.storeLink')}</a>
+	title={$_('goods.storeLinkTitle')}>{$_('goods.storeLink')}</a
+>
 
 <style lang="scss">
 	@use '$lib/stylesheets/variables/mixin' as *;
