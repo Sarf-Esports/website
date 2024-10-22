@@ -99,6 +99,11 @@
 		"coaches": "코치 목록",
 		"form": "참여 신청 양식은 여기"
 	},
+	"goods": {
+		"desc": "팀 로고와 멤버들이 담긴 아크릴 키링이 발매되었습니다! 마음에 드는 아이템을 선택해 주시고, 앞으로도 REVATI 를 응원해 주시면 감사하겠습니다. 앞으로도 새로운 아이템이 추가될 예정이니 많은 기대 부탁드립니다!",
+		"storeLink": "상세 정보 및 구매하기",
+		"storeLinkTitle": "REVATI ( revati_jp ) | Online shopping for original items ∞ SUZURI"
+	},
 	"error": {
 		"404": "찾고 계신 페이지를 찾을 수 없습니다.",
 		"unknown": "예상치 못한 오류가 발생했습니다."
