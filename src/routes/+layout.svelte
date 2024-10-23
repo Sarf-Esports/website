@@ -91,6 +91,17 @@
 	<link rel="icon" href="/images/logos/revati/icon_180px_oxipng.png?v=3" />
 </svelte:head>
 
+<noscript>
+	JavaScript is disabled in your browser.
+	Some features don't work properly.
+	<br /><br />
+	お使いのブラウザでは JavaScript が無効になっています。
+	一部の機能が正常に動作しません。
+	<br /><br />
+	사용 중인 브라우저에서 JavaScript 가 비활성화되어 있습니다.
+	일부 기능이 정상적으로 작동하지 않습니다.
+</noscript>
+
 <Header />
 
 <main id="main-content" inert={$isDrawerMenuOpened}><slot /></main>
