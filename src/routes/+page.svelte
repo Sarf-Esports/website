@@ -6,7 +6,7 @@
 	import SectionTitle from '$lib/components/SectionTitle.svelte';
 	import RevealFadeIn from '$lib/components/RevealFadeIn.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
-	import Teams from '$lib/components/home/Teams.svelte';
+	import Teams from '$lib/components/home/teams/Teams.svelte';
 	import Coaching from '$lib/components/home/coaching/Coaching.svelte';
 	import Sponsors from '$lib/components/home/Sponsors.svelte';
 
