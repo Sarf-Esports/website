@@ -253,9 +253,7 @@ li {
 .item-contact {
 	margin-right: 2.6em;
 
-	@media (scripting: none) {
-		display: none;
-	}
+	@include hideWhenNoJs;
 }
 
 #header2 {
