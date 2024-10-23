@@ -1,14 +1,14 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
-	import MainVisual from '../lib/components/home/MainVisual.svelte';
+	import MainVisual from '$lib/components/home/MainVisual.svelte';
 	import SponsorBanner from '$lib/components/home/sponsor_banner/SponsorBanner.svelte';
-	import SectionTitle from '../lib/components/SectionTitle.svelte';
+	import SectionTitle from '$lib/components/SectionTitle.svelte';
 	import RevealFadeIn from '$lib/components/RevealFadeIn.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
-	import Teams from '../lib/components/home/Teams.svelte';
+	import Teams from '$lib/components/home/Teams.svelte';
 	import Coaching from '$lib/components/home/coaching/Coaching.svelte';
-	import Sponsors from '../lib/components/home/Sponsors.svelte';
+	import Sponsors from '$lib/components/home/Sponsors.svelte';
 
 	import type { PageData } from './$types';
 	import { SITE_URL } from '$lib/scripts/variables';
