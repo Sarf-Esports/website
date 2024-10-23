@@ -49,7 +49,10 @@
 
 <ul class="members">
 	{#each currentDivisionMembers as member}
-		<MemberCard {member} on:openGearsAndSettingsModal={({ detail }) => gearsAndSettingsModalContent = detail } />
+		<MemberCard
+			{member}
+			on:openGearsAndSettingsModal={({ detail }) => (gearsAndSettingsModalContent = detail)}
+		/>
 	{/each}
 </ul>
 
@@ -64,7 +67,10 @@
 		<h2>{divisionName}</h2>
 		<ul class="members noscript">
 			{#each members as member}
-				<MemberCard {member} on:openGearsAndSettingsModal={({ detail }) => gearsAndSettingsModalContent = detail } />
+				<MemberCard
+					{member}
+					on:openGearsAndSettingsModal={({ detail }) => (gearsAndSettingsModalContent = detail)}
+				/>
 			{/each}
 		</ul>
 	{/each}
