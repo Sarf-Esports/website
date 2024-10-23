@@ -107,7 +107,7 @@
 							rel="noopener noreferrer"
 						>
 							<img
-								src="/images/logos/x_logo-white.webp"
+								src="/images/logos/x_logo_white.svg"
 								alt="X"
 								width="125"
 								height="128"

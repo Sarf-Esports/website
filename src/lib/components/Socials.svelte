@@ -15,7 +15,7 @@
 			title="X: @{SOCIALS.twitter}"
 			class="no-after-icn"
 		>
-			<img src="/images/logos/x_logo-white.webp" alt="X" width="125" height="128" id="x-logo" />
+			<img src="/images/logos/x_logo_white.svg" alt="X" width="125" height="128" id="x-logo" />
 		</a>
 	</li>
 	<li>
