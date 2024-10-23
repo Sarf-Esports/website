@@ -91,7 +91,7 @@
 	<link rel="icon" href="/images/logos/revati/icon_180px_oxipng.png?v=3" />
 </svelte:head>
 
-<noscript>
+<noscript class="global-noscript">
 	JavaScript is disabled in your browser.
 	Some features don't work properly.
 	<br /><br />
