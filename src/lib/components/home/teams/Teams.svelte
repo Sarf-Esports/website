@@ -8,7 +8,6 @@
 	import { type GearsAndSettings as GearsAndSettingsType } from '$lib/scripts/types';
 	import { isGearsAndSettingsModalOpen } from '$lib/scripts/stores';
 	import { replaceState } from '$app/navigation';
-	import { _ } from 'svelte-i18n';
 
 	export let division: string | null;
 
