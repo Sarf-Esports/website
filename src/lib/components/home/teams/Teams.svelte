@@ -59,6 +59,17 @@
 	{/if}
 </Modal>
 
+<noscript>
+	{#each MEMBER_LISTS as { divisionName, members }}
+		<h2>{divisionName}</h2>
+		<ul class="members noscript">
+			{#each members as member}
+				<MemberCard {member} on:openGearsAndSettingsModal={({ detail }) => gearsAndSettingsModalContent = detail } />
+			{/each}
+		</ul>
+	{/each}
+</noscript>
+
 <style lang="scss">
 	@use '$lib/stylesheets/home/teams';
 </style>

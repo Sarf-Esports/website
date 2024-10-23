@@ -11,6 +11,7 @@ ul {
 .divisions {
 	margin: 0 auto;
 	margin-bottom: 24px;
+	@include hideWhenNoJs;
 }
 
 .division {
@@ -39,6 +40,16 @@ ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	&:not(.noscript) {
+		@include hideWhenNoJs;
+	}
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 900;
+	margin-top: 42px;
 }
 
 @include sp {
