@@ -6,6 +6,8 @@
 	position: relative;
 	top: 232px;
 	right: 44px;
+
+	@include hideWhenNoJs;
 }
 
 $arrow-width: 94px;
@@ -69,6 +71,8 @@ $arrow-width: 94px;
 	margin-bottom: 32px;
 	justify-content: center;
 	flex-wrap: wrap;
+
+	@include hideWhenNoJs;
 }
 
 .indicator {

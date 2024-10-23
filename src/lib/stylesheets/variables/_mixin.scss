@@ -84,3 +84,9 @@ $bp-wide: $bp-hamburger-btn + 150px;
 		transform: translateY($btn-side-height);
 	}
 }
+
+@mixin hideWhenNoJs {
+	@media (scripting: none) {
+		display: none;
+	}
+}
