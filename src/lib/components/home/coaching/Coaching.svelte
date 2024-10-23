@@ -21,7 +21,7 @@
 	{$_('coaching.desc.0')}
 </p>
 
-<p class="desc">
+<p class="desc note">
 	{$_('coaching.desc.1')}
 </p>
 

@@ -83,3 +83,9 @@ $bp-wide: 1058px;
 		transform: translateY($btn-side-height);
 	}
 }
+
+@mixin hideWhenNoJs {
+	@media (scripting: none) {
+		display: none;
+	}
+}
