@@ -182,8 +182,16 @@ li {
 	list-style: none;
 	margin: 10px 12px 2px 10px;
 
+	$last-child-margin-right: 2.6em;
+
 	&:last-child {
-		margin-right: 2.6em;
+		margin-right: $last-child-margin-right;
+	}
+
+	@media (scripting: none) {
+		&:nth-last-child(2) {
+			margin-right: $last-child-margin-right;
+		}
 	}
 
 	a,
@@ -244,6 +252,10 @@ li {
 
 .item-contact {
 	margin-right: 2.6em;
+
+	@media (scripting: none) {
+		display: none;
+	}
 }
 
 #header2 {
