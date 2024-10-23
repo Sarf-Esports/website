@@ -31,7 +31,7 @@
 //     // 国旗 (任意)
 //     // 'jp' が日本国、`us` がアメリカ合衆国、'kr' が大韓民国となります。
 //     // 新しい国旗を追加する場合は `/static/images/flags/` に SVG ファイルとして追加し、
-//     // このファイル100行目あたりの `country` フィールドの型にファイル名を追加してください。
+//     // `/src/lib/scripts/types.ts` に定義される `Member` 型の `country` フィールドの型にファイル名を追加してください。
 //     country: 'jp',
 //
 //     // 生年月日 (任意)
@@ -77,24 +77,12 @@
 // なお、部門の並びは自由です。
 //
 
-import type { GearsAndSettings } from '$lib/scripts/types';
+import type { Member } from '$lib/scripts/types';
 import { GEARS_AND_SETTINGS } from './GEARS_AND_SETTINGS';
 
 export const MEMBER_LISTS: {
 	divisionName: string;
-	members: {
-		memberName: string;
-		icon: string | null;
-		role: string | null;
-		country: 'jp' | 'us' | 'kr' | null;
-		birthday: { year: number | null; month: number; day: number } | null;
-		age: number | null;
-		twitter: string | null;
-		youtube: string | null;
-		twitch: string | null;
-		homepage: string | null;
-		gearsAndSettings?: GearsAndSettings;
-	}[];
+	members: Member[];
 }[] = [
 	{
 		divisionName: 'Overwatch',
