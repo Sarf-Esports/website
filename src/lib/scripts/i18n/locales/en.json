@@ -99,6 +99,11 @@
 		"coaches": "Coaches",
 		"form": "Participation form here"
 	},
+	"goods": {
+		"desc": "Our team's acrylic keychains featuring our logo and members are now available! We'd love for you to choose your favorite items and continue supporting REVATI.",
+		"storeLink": "Learn more & Buy here",
+		"storeLinkTitle": "REVATI ( revati_jp ) | Online shopping for original items ∞ SUZURI"
+	},
 	"error": {
 		"404": "The page you are looking for could not be found.",
 		"unknown": "An unexpected error occurred."

@@ -52,7 +52,7 @@
 //             // 翻訳ファイル(`/src/lib/scripts/i18n/locales/` にある JSON ファイル) の、
 //             // `teams.gearsAndSettingsItem.color.` に続く 対応するキーを指定してください。
 //             // 新しく追加する場合はすべての言語のファイルに追加し、
-//             // `/src/lib/components/home/GearsAndSettings.svelte` の `convertColNameToHexCol` 関数に対応する色を追加してください。
+//             // `/src/lib/components/home/teams/GearsAndSettings.svelte` の `convertColNameToHexCol` 関数に対応する色を追加してください。
 //             color: 'cyan',
 //
 //             // 「濃さ」 (任意)
@@ -76,7 +76,7 @@
 //                 // 翻訳ファイル(`/src/lib/scripts/i18n/locales/` にある JSON ファイル) の、
 //                 // `teams.gearsAndSettingsItem.color.` に続く 対応するキーを指定してください。
 //                 // 新しく追加する場合はすべての言語のファイルに追加し、
-//                 // `/src/lib/components/home/GearsAndSettings.svelte` の `convertColNameToHexCol` 関数に対応する色を追加してください。
+//                 // `/src/lib/components/home/teams/GearsAndSettings.svelte` の `convertColNameToHexCol` 関数に対応する色を追加してください。
 //                 color: 'black',
 //
 //				   // 「アウトラインの透明度」 (必須)

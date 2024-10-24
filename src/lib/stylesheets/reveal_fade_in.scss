@@ -50,8 +50,10 @@ $last-point: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 	}
 }
 
-.container {
-	opacity: 0;
+@media (scripting: enabled) {
+	.container {
+		opacity: 0;
+	}
 }
 
 .active .container {

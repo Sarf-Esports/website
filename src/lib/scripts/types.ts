@@ -42,3 +42,17 @@ export interface GearsAndSettings {
 		scaleWithResolution: boolean;
 	}[];
 }
+
+export interface Member {
+	memberName: string;
+	icon: string | null;
+	role: string | null;
+	country: 'jp' | 'us' | 'kr' | null;
+	birthday: { year: number | null; month: number; day: number } | null;
+	age: number | null;
+	twitter: string | null;
+	youtube: string | null;
+	twitch: string | null;
+	homepage: string | null;
+	gearsAndSettings?: GearsAndSettings;
+}

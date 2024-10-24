@@ -20,6 +20,12 @@
 >
 
 <style lang="scss">
+	@use '$lib/stylesheets/variables/mixin' as *;
+
+	label {
+		@include hideWhenNoJs;
+	}
+
 	span {
 		color: #dbfcff;
 		font-size: 14px;
