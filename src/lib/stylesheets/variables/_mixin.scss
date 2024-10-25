@@ -3,8 +3,9 @@
 $breakpoint: 788px;
 // If update the `$bp-hamburger-btn` Sass variable, also update the `BREAKPOINT_HB` JS constant in `/src/lib/scripts/variables.ts`.
 // ＊ `$bp-hamburger-btn` = (numerical value of `BREAKPOINT_HB`) + 1
-$bp-hamburger-btn: 908px;
-$bp-wide: 1058px;
+$bp-hamburger-btn: 1042px;
+$bp-low-height: 784px;
+$bp-wide: $bp-hamburger-btn + 150px;
 
 @mixin pc {
 	@media screen and (min-width: $breakpoint) {
@@ -37,7 +38,7 @@ $bp-wide: 1058px;
 }
 
 @mixin low-height {
-	@media screen and (max-height: 674px) {
+	@media screen and (max-height: $bp-low-height) {
 		@content;
 	}
 }
@@ -81,5 +82,11 @@ $bp-wide: 1058px;
 	&:active {
 		box-shadow: 0 $font-size * 0.05 0 $edge-color-dark;
 		transform: translateY($btn-side-height);
+	}
+}
+
+@mixin hideWhenNoJs {
+	@media (scripting: none) {
+		display: none;
 	}
 }

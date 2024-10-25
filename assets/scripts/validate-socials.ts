@@ -7,9 +7,9 @@ import { COACHES } from '$lib/scripts/data/COACHING_PJ';
 
 let invalidSocials = 0;
 
-function sleep1s() {
+function sleep1200ms() {
 	const start = Date.now();
-	while (Date.now() < start + 1000);
+	while (Date.now() < start + 1200);
 }
 
 function printError(name: string, url: string) {
@@ -35,9 +35,9 @@ async function validate(url: string, name: string) {
 		.get(url, axiosConfig)
 		.then(async () => {
 			// Twitch may not return the correct result on the first request,
-			// so we need to fetch again after 1 second.
+			// so we need to fetch again after 1200 milliseconds.
 			if (name === 'Twitch') {
-				sleep1s();
+				sleep1200ms();
 				await axios
 					.get(url)
 					.then((res) => {

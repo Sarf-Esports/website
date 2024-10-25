@@ -14,6 +14,10 @@
 	margin-top: 10px !important;
 	font-size: 17px !important;
 	letter-spacing: -0.5px !important;
+
+	&.note {
+		@include hideWhenNoJs;
+	}
 }
 
 .buttons {
@@ -27,6 +31,7 @@
 
 button {
 	margin: 28px 0;
+	@include hideWhenNoJs;
 
 	@include btn(24px);
 }
