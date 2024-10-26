@@ -24,7 +24,7 @@ export class ArticleId {
 	 */
 	constructor(value: string) {
 		let text: string;
-		[ value, text ] = value.split('_');
+		[value, text] = value.split('_');
 		const no = parseInt(value.slice(8, 10));
 		this.year = parseInt(value.slice(0, 4));
 		this.month = parseInt(value.slice(4, 6));

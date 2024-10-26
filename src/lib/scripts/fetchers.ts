@@ -43,16 +43,13 @@ export async function fetchThumbnailImgFmt() {
 		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 		(path) => path.split('/').pop()!
 	);
-	return (await Promise.all(Object.keys(ARTICLES))).reduce(
-		(acc: ArticleThumbnailImgFmts, path) => {
-			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-			const slug = path.split('/').pop()!.split('.')[0];
-			for (const img of thumbnailImgs) {
-				const [name, fmt] = img.split('.');
-				if (name === slug) acc[slug] = fmt;
-			}
-			return acc;
-		},
-		{}
-	);
+	return (await Promise.all(Object.keys(ARTICLES))).reduce((acc: ArticleThumbnailImgFmts, path) => {
+		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+		const slug = path.split('/').pop()!.split('.')[0];
+		for (const img of thumbnailImgs) {
+			const [name, fmt] = img.split('.');
+			if (name === slug) acc[slug] = fmt;
+		}
+		return acc;
+	}, {});
 }
