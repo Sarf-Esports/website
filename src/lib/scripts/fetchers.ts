@@ -2,11 +2,13 @@
 
 import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
 
+const ARTICLES = import.meta.glob('/articles/[0-9][0-9][0-9][0-9]/([1-9]|1[0-2])/*.md');
+
 /** Fetches and sorts articles. */
 export async function fetchArticles() {
 	// Fetch all articles.
 	let articles = await Promise.all(
-		Object.entries(import.meta.glob('/articles/*.md')).map(async ([path, importArticle]) => {
+		Object.entries(ARTICLES).map(async ([path, importArticle]) => {
 			const { metadata } = (await importArticle()) as { metadata: ArticleMetadata };
 			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 			metadata.slug = path.split('/').pop()!.split('.')[0];
@@ -41,16 +43,13 @@ export async function fetchThumbnailImgFmt() {
 		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 		(path) => path.split('/').pop()!
 	);
-	return (await Promise.all(Object.keys(import.meta.glob('/articles/*.md')))).reduce(
-		(acc: ArticleThumbnailImgFmts, path) => {
-			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-			const slug = path.split('/').pop()!.split('.')[0];
-			for (const img of thumbnailImgs) {
-				const [name, fmt] = img.split('.');
-				if (name === slug) acc[slug] = fmt;
-			}
-			return acc;
-		},
-		{}
-	);
+	return (await Promise.all(Object.keys(ARTICLES))).reduce((acc: ArticleThumbnailImgFmts, path) => {
+		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+		const slug = path.split('/').pop()!.split('.')[0];
+		for (const img of thumbnailImgs) {
+			const [name, fmt] = img.split('.');
+			if (name === slug) acc[slug] = fmt;
+		}
+		return acc;
+	}, {});
 }

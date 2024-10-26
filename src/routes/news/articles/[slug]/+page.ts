@@ -3,6 +3,7 @@
 import type { PageLoad } from './$types';
 import type { SvelteComponent } from 'svelte';
 import type { ArticleMetadata } from '$lib/scripts/types';
+import { ArticleId } from '$lib/scripts/ArticleId';
 import { error } from '@sveltejs/kit';
 
 export const load: PageLoad = async ({
@@ -13,20 +14,24 @@ export const load: PageLoad = async ({
 	frontmatter: ArticleMetadata;
 	thumbnailImgFmt: string | null;
 }> => {
+	const slug = params.slug;
+	const id = new ArticleId(slug);
 	const {
 		default: component,
 		metadata: frontmatter
 	}: {
 		default: typeof SvelteComponent;
 		metadata: ArticleMetadata;
-	} = await import(`../../../../../articles/${params.slug}.md`).catch(err);
+	} = await import(`../../../../../articles/${id.year}/${id.month}/${slug}.md`).catch(err);
 	if (!frontmatter.published) err();
 
 	const redirectTo = frontmatter.redirect;
-	const slug = redirectTo === undefined ? params.slug : redirectTo;
 	const thumbnailImgFmt = await (await fetch('/api/articles/thumbnail-imgs'))
 		.json()
-		.then((imgs: { [slug: string]: string }) => imgs[slug] ?? null);
+		.then(
+			(imgs: { [slug: string]: string }) =>
+				imgs[redirectTo === undefined ? params.slug : redirectTo] ?? null
+		);
 
 	return { component, frontmatter, thumbnailImgFmt };
 };
