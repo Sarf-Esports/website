@@ -7,8 +7,8 @@
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
+	import { ArticleId } from '$lib/scripts/ArticleId';
 	import { SITE_URL } from '$lib/scripts/variables';
-	import { idToDate } from '$lib/scripts/util';
 	import { _, date as dateI18n } from 'svelte-i18n';
 
 	export let data: PageData;
@@ -23,7 +23,8 @@
 	$: paths = $page.url.pathname.split('/');
 	$: pathnameLength = paths.length;
 	$: isPathnameEndsWithSlash = paths[pathnameLength - 1] === '';
-	$: slug = redirectTo ?? paths[pathnameLength - (isPathnameEndsWithSlash ? 2 : 1)];
+	$: id = new ArticleId(redirectTo ?? paths[pathnameLength - (isPathnameEndsWithSlash ? 2 : 1)]);
+	$: slug = id.string;
 
 	$: thumbnailImgFmt = data.thumbnailImgFmt;
 	$: hasThumbnailImg = thumbnailImgFmt !== null;
@@ -32,7 +33,7 @@
 		: '/images/logos/revati/header_1200x600.webp';
 	$: absThumbnailImgPath = SITE_URL + thumbnailImgPath;
 
-	$: date = willRedirect ? null : idToDate(slug);
+	$: date = willRedirect ? null : id.date;
 	let datePlus9h: Date;
 	$: if (date !== null) {
 		datePlus9h = new Date(date);
