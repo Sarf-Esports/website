@@ -1,16 +1,16 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
-	import { idToDate } from '$lib/scripts/util';
 	import { _, date as dateI18n } from 'svelte-i18n';
 
 	export let meta: ArticleMetadata;
 	export let thumbnailImgFmts: ArticleThumbnailImgFmts;
 	export let forceDesktopVerOnSemiNarrow = false;
 
-	const slug = meta.slug ?? 'unreachable';
+	const articleId = meta.slug!;
+	const slug = articleId.string;
 	const thumbnailImgFmt = thumbnailImgFmts[slug] ?? null;
-	const date = idToDate(slug);
+	const date = articleId.date;
 	let datePlus9h = new Date(date);
 	datePlus9h.setHours(datePlus9h.getHours() + 9);
 </script>

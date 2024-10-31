@@ -2,6 +2,7 @@
 
 import type { PageLoad } from './$types';
 import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
+import { reconstructIdsOfArticleMetadata } from '$lib/scripts/util';
 
 export const load: PageLoad = async ({
 	fetch
@@ -9,7 +10,7 @@ export const load: PageLoad = async ({
 	articles: ArticleMetadata[];
 	thumbnailImgFmts: ArticleThumbnailImgFmts;
 }> => {
-	const articles = await (await fetch('/api/articles')).json();
+	const articles = reconstructIdsOfArticleMetadata(await (await fetch('/api/articles')).json());
 	const thumbnailImgFmts = await (await fetch('/api/articles/thumbnail-imgs')).json();
 	return { articles, thumbnailImgFmts };
 };
