@@ -1,5 +1,7 @@
 // © 2022 REVATI
 
+import { zeroPad } from '$lib/scripts/util';
+
 export class ArticleId {
 	/** The year of the article. */
 	year: number;
@@ -42,5 +44,16 @@ export class ArticleId {
 			this.no = arg.no;
 			this.text = arg.text;
 		}
+	}
+
+	/** Returns the slug string of the article. */
+	get string() {
+		const text = this.text;
+		return `${this.year}${zeroPad(this.month, 2)}${zeroPad(this.day, 2)}${1 < this.no ? zeroPad(this.no, 2) : ''}${text === null ? '' : '_' + text}`;
+	}
+
+	/** Returns the `Date` object of the article. */
+	get date() {
+		return new Date(this.year, this.month - 1, this.day);
 	}
 }
