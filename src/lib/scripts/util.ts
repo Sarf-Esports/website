@@ -68,14 +68,6 @@ export function toggleScrollPrevention(prevent: boolean) {
 	document.body.style.overflow = prevent ? 'hidden' : 'auto';
 }
 
-/** Converts an article ID to a Date object. */
-export function idToDate(articleId: string) {
-	const y = articleId.slice(0, 4);
-	const m = articleId.slice(4, 6);
-	const d = articleId.slice(6, 8);
-	return new Date(`${y}-${m}-${d}`);
-}
-
 /** Calculates the age of a person from their birthday. */
 export function calcAge(birthday: Date) {
 	const today = new Date();
