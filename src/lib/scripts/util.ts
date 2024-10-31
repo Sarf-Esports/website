@@ -1,5 +1,8 @@
 // © 2022 REVATI
 
+import type { ArticleMetadata } from "$lib/scripts/types";
+import { ArticleId } from "$lib/scripts/ArticleId";
+
 /**
  * Adds a specified class to specified elements when they are scrolled into view.
  *
@@ -97,4 +100,12 @@ export function zeroPad(num: number, len: number) {
  */
 export function updateVh001() {
 	document.documentElement.style.setProperty('--vh001', window.innerHeight * 0.01 + 'px');
+}
+
+/** Reconstructs the `ArticleId` instances of the `slug` field in the `ArticleMetadata` instance array. */
+export function reconstructIdsOfArticleMetadata(articles: ArticleMetadata[]) {
+	return articles.map((a) => {
+		if (a.slug !== undefined) a.slug = new ArticleId(a.slug);
+		return a;
+	});
 }
