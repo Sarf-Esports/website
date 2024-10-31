@@ -71,8 +71,6 @@ $arrow-width: 94px;
 	margin-bottom: 32px;
 	justify-content: center;
 	flex-wrap: wrap;
-
-	@include hideWhenNoJs;
 }
 
 .indicator {
@@ -83,6 +81,8 @@ $arrow-width: 94px;
 	cursor: pointer;
 	touch-action: manipulation;
 	transition: 0.2s;
+
+	@include hideWhenNoJs;
 
 	&::before {
 		content: '';
