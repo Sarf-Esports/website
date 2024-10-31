@@ -21,9 +21,9 @@ export class ArticleId {
 	text: string | null;
 
 	/**
-     * @param slug - The slug of an article.
-     * `YYYYMMDD` or `YYYYMMDDNN` or `YYYYMMDD_text` or `YYYYMMDDNN_text` is expected.
-     */
+	 * @param slug - The slug of an article.
+	 * `YYYYMMDD` or `YYYYMMDDNN` or `YYYYMMDD_text` or `YYYYMMDDNN_text` is expected.
+	 */
 	constructor(slug: string);
 	constructor(value: ArticleId);
 

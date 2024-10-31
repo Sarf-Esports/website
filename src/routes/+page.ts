@@ -12,7 +12,9 @@ export const load: PageLoad = async ({
 	thumbnailImgFmts: ArticleThumbnailImgFmts;
 	division: string | null;
 }> => {
-	const articles: ArticleMetadata[] = reconstructIdsOfArticleMetadata(await (await fetch('/api/articles')).json());
+	const articles: ArticleMetadata[] = reconstructIdsOfArticleMetadata(
+		await (await fetch('/api/articles')).json()
+	);
 	const thumbnailImgFmts = await (await fetch('/api/articles/thumbnail-imgs')).json();
 
 	const division = url.searchParams.get('div');
