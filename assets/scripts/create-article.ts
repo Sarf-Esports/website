@@ -3,13 +3,13 @@
 import fs from 'fs';
 import path from 'path';
 
-const articlesDir = path.join(process.cwd(), 'articles');
-
 const now = new Date();
 const year = now.getFullYear();
-const month = String(now.getMonth() + 1).padStart(2, '0');
-const day = String(now.getDate()).padStart(2, '0');
-const date = `${year}${month}${day}`;
+const month = now.getMonth() + 1;
+const day = now.getDate();
+const date = `${year}${String(month).padStart(2, '0')}${String(day).padStart(2, '0')}`;
+
+const articlesDir = path.join(process.cwd(), `articles/${year}/${month}`);
 
 let i = 1;
 while (
@@ -44,15 +44,16 @@ title: ここにタイトル
 
 ## テスト記事
 
-- Markdownファイル: [/articles/20230206_test.md](/articles/20230206_test.md)
+- Markdownファイル: [/articles/2023/2/20230206_test.md](/articles/2023/2/20230206_test.md)
 - ページ: [/news/articles/20230206_test](/news/articles/20230206_test)
 
 ## 専用コンポーネント一覧
 
-- Markdownファイル: [/articles/20240301_test.md](/articles/20240301_test.md)
+- Markdownファイル: [/articles/2024/3/20240301_test.md](/articles/2024/3/20240301_test.md)
 - ページ: [/news/articles/20240301_test](/news/articles/20240301_test)
 `;
 
+if (!fs.existsSync(articlesDir)) fs.mkdirSync(articlesDir, { recursive: true });
 fs.writeFileSync(filePath, INIT_CONTENT);
 
 console.log('Created: ' + filePath);
