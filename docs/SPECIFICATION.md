@@ -128,7 +128,12 @@ Returns a list of the news articles.
 	- `published` (`boolean`) - Whether the article is published.
 	- `indexed` (`boolean`) - Whether the article is indexed.
 	- `title` (`string`) - The title of the article.
-	- `slug` (`string?`) - The slug of the article. Its type is an optional string but it always exists.
+	- `slug` (`object?`) - The slug of the article. Its type is an optional string but it always exists.
+        - `year` (`number`) - The year of the article.
+        - `month` (`number`) - The month of the article.
+        - `day` (`number`) - The day of the article.
+        - `no` (`number`) - The number of the article in the day.
+        - `text` (`string | null`) - The text of the article ID.
 
 #### Example
 
