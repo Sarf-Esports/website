@@ -133,7 +133,7 @@ Returns a list of the news articles.
         - `month` (`number`) - The month of the article.
         - `day` (`number`) - The day of the article.
         - `no` (`number`) - The number of the article in the day.
-        - `text` (`string | null`) - The text of the article ID.
+        - `text` (`string?`) - The text of the article ID.
 
 #### Example
 

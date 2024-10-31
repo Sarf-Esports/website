@@ -18,7 +18,7 @@ export class ArticleId {
 	 */
 	no: number;
 	/** The text of the article ID. */
-	text: string | null;
+	text?: string;
 
 	/**
 	 * @param slug - The slug of an article.
@@ -36,7 +36,7 @@ export class ArticleId {
 			this.month = parseInt(arg.slice(4, 6));
 			this.day = parseInt(arg.slice(6, 8));
 			this.no = isNaN(no) ? 1 : no;
-			this.text = text === undefined ? null : text;
+			this.text = text;
 		} else {
 			this.year = arg.year;
 			this.month = arg.month;
@@ -49,7 +49,7 @@ export class ArticleId {
 	/** Returns the slug string of the article. */
 	get string() {
 		const text = this.text;
-		return `${this.year}${zeroPad(this.month, 2)}${zeroPad(this.day, 2)}${1 < this.no ? zeroPad(this.no, 2) : ''}${text === null ? '' : '_' + text}`;
+		return `${this.year}${zeroPad(this.month, 2)}${zeroPad(this.day, 2)}${1 < this.no ? zeroPad(this.no, 2) : ''}${text === undefined ? '' : '_' + text}`;
 	}
 
 	/** Returns the `Date` object of the article. */
