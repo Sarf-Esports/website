@@ -1,6 +1,7 @@
 // © 2022 REVATI
 
 import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
+import { ArticleId } from '$lib/scripts/ArticleId';
 
 const ARTICLES = import.meta.glob('/articles/[0-9][0-9][0-9][0-9]/([1-9]|1[0-2])/*.md');
 
@@ -11,7 +12,7 @@ export async function fetchArticles() {
 		Object.entries(ARTICLES).map(async ([path, importArticle]) => {
 			const { metadata } = (await importArticle()) as { metadata: ArticleMetadata };
 			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-			metadata.slug = path.split('/').pop()!.split('.')[0];
+			metadata.slug = new ArticleId(path.split('/').pop()!.split('.')[0]);
 			return metadata;
 		})
 	);
@@ -21,7 +22,7 @@ export async function fetchArticles() {
 
 	// Sort by newest.
 	articles.sort((a, b) => {
-		if (typeof a.slug === 'string' && typeof b.slug === 'string')
+		if (a.slug instanceof ArticleId && b.slug instanceof ArticleId)
 			return calcOrder(b.slug) - calcOrder(a.slug);
 		// unreachable
 		return 0;
@@ -30,8 +31,8 @@ export async function fetchArticles() {
 	return articles;
 }
 
-function calcOrder(slug: string) {
-	let n = parseInt(slug.split('_')[0]);
+function calcOrder(slug: ArticleId) {
+	let n = parseInt(slug.string.split('_')[0]);
 	// It is alignment for slugs without numbering.
 	n *= n < 100000000 ? 100 : 1;
 	return n;
