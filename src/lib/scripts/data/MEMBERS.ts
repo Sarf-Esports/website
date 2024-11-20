@@ -113,19 +113,6 @@ export const MEMBER_LISTS: {
 				homepage: null,
 				gearsAndSettings: GEARS_AND_SETTINGS['solace']
 			},
-			{
-				memberName: 'にんじゃはむぞー',
-				icon: 'ninja_hamuzo.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2002, month: 11, day: 3 },
-				age: null,
-				twitter: 'ninja_hamuzo',
-				youtube: null,
-				twitch: 'nhzow',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['ninja_hamuzo']
-			},
 			// // ▲ 選手
 			// // ▼ コーチ
 			{
@@ -230,19 +217,6 @@ export const MEMBER_LISTS: {
 				youtube: '@relle3674',
 				twitch: null,
 				homepage: null
-			},
-			{
-				memberName: '破壊神こたろ',
-				icon: 'hakaisinkotaro.webp',
-				role: 'Streamer',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'mareku1212',
-				youtube: '@hakaisinkotaro',
-				twitch: 'hakaisinnkotaro',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['hakaisinkotaro']
 			},
 			{
 				memberName: '碧海まっちゃ',
