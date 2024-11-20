@@ -43,12 +43,6 @@ export const COACHES: {
 		twitter: 'Fickle_OW'
 	},
 	{
-		name: '破壊神こたろ',
-		icon: 'hakaisinkotaro.webp',
-		affiliation: 'REVATI',
-		twitter: 'mareku1212'
-	},
-	{
 		name: 'CLANK',
 		icon: 'clank.webp',
 		affiliation: 'REVATI',
