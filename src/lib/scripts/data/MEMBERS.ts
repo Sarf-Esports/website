@@ -152,20 +152,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			// ▲ コーチ
-			// ▼ マネージャー
-			{
-				memberName: 'みるふぃーゆ',
-				icon: 'millfy.webp',
-				role: 'Manager',
-				country: 'jp',
-				birthday: { year: 1997, month: 12, day: 12 },
-				age: null,
-				twitter: 'miru_fiiyu',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			// ▲ マネージャー
+
 			// ▼ アドバイザー
 			{
 				memberName: 'Byeolha',
@@ -175,6 +162,20 @@ export const MEMBER_LISTS: {
 				birthday: { year: 2001, month: 1, day: 3 },
 				age: null,
 				twitter: 'ow_byeolha',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			// ▲ アドバイザー
+			// ▼ マネージャー
+			{
+				memberName: 'みるふぃーゆ',
+				icon: 'millfy.webp',
+				role: 'Manager',
+				country: 'jp',
+				birthday: { year: 1997, month: 12, day: 12 },
+				age: null,
+				twitter: 'miru_fiiyu',
 				youtube: null,
 				twitch: null,
 				homepage: null
