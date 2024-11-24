@@ -7,12 +7,6 @@ export const COACHES: {
 	twitter: string | null;
 }[] = [
 	{
-		name: 'Mimoza',
-		icon: 'nyam-gaming/mimoza.webp',
-		affiliation: 'Nyam Gaming',
-		twitter: 'mimoza_ow'
-	},
-	{
 		name: '宮城大豆',
 		icon: 'ow_zundamon.webp',
 		affiliation: 'REVATI',
