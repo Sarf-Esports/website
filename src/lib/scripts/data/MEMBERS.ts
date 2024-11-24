@@ -113,7 +113,7 @@ export const MEMBER_LISTS: {
 				homepage: null,
 				gearsAndSettings: GEARS_AND_SETTINGS['solace']
 			},
-			// // ▲ 選手
+			// ▲ 選手
 			// ▼ ディレクター
 			{
 				memberName: 'Fickle',
@@ -128,7 +128,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			// ▲ ディレクター
-			// // ▼ コーチ
+			// ▼ コーチ
 			{
 				memberName: 'Fromis',
 				icon: null,
@@ -154,7 +154,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			// ▲ コーチ
-
 			// ▼ アドバイザー
 			{
 				memberName: 'Byeolha',
