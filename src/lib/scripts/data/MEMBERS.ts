@@ -114,11 +114,11 @@ export const MEMBER_LISTS: {
 				gearsAndSettings: GEARS_AND_SETTINGS['solace']
 			},
 			// // ▲ 選手
-			// // ▼ コーチ
+			// ▼ ディレクター
 			{
 				memberName: 'Fickle',
 				icon: 'fickle.webp',
-				role: 'Coach',
+				role: 'Director',
 				country: 'kr',
 				birthday: { year: 1998, month: 7, day: 9 },
 				age: null,
@@ -127,6 +127,8 @@ export const MEMBER_LISTS: {
 				twitch: 'fickle_ow',
 				homepage: null
 			},
+			// ▲ ディレクター
+			// // ▼ コーチ
 			{
 				memberName: 'Fromis',
 				icon: null,
