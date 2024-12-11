@@ -5,7 +5,6 @@
 	import Policy from './policy.svelte';
 
 	import { SITE_URL } from '$lib/scripts/variables';
-	import { _ } from 'svelte-i18n';
 </script>
 
 <HeadMetadata
