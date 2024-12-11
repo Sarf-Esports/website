@@ -2,8 +2,8 @@
 
 <div>
 	<p>
-		REVATI（以下、「弊チーム」）及び <a href="https://revati.jp">revati.jp</a>（以下、「本サイト」）では、
-		利用者の個人情報を適切に保護し、以下の方針に基づいて管理します。
+		REVATI（以下、「弊チーム」）及び <a href="https://revati.jp">revati.jp</a
+		>（以下、「本サイト」）では、 利用者の個人情報を適切に保護し、以下の方針に基づいて管理します。
 	</p>
 
 	<h2>1. 個人情報の収集について</h2>
@@ -15,8 +15,8 @@
 	</ul>
 	<p>
 		また、本サイトでは 訪問者のアクセス状況を把握するために、Cloudflare 社の提供する
-		<a href="https://cloudflare.com/web-analytics">Cloudflare Web Analytics</a> を利用しています。
-		Cloudflare Web Analytics は、Cookie や localStorage などクライアントサイドの状態を一切使わずに、利用に関するメトリクスを収集します。
+		<a href="https://cloudflare.com/web-analytics">Cloudflare Web Analytics</a> を利用しています。 Cloudflare
+		Web Analytics は、Cookie や localStorage などクライアントサイドの状態を一切使わずに、利用に関するメトリクスを収集します。
 		また、分析を表示する目的で、IP アドレス、ユーザーエージェント文字列、その他のデータを介して、個人の「フィンガープリント」を取得することもありません。
 		この分析は非侵襲的で、訪問者のプライバシーを尊重します。
 	</p>
@@ -31,7 +31,9 @@
 	</ul>
 
 	<h2>3. 個人情報の第三者提供について</h2>
-	<p>弊チーム及び本サイトは、利用者の同意を得ずに個人情報を第三者に提供することはありません。ただし、以下の場合を除きます。</p>
+	<p>
+		弊チーム及び本サイトは、利用者の同意を得ずに個人情報を第三者に提供することはありません。ただし、以下の場合を除きます。
+	</p>
 	<ul>
 		<li>法令に基づく場合</li>
 		<li>利用者の同意がある場合</li>
@@ -44,7 +46,10 @@
 		<li>アクセス制限によるデータ管理</li>
 		<li>定期的なセキュリティ監査</li>
 	</ul>
-	<p>また、本サイトは 個人情報を保護するために SSL（Secure Sockets Layer）を使用した通信の暗号化を行っています。</p>
+	<p>
+		また、本サイトは 個人情報を保護するために SSL（Secure Sockets
+		Layer）を使用した通信の暗号化を行っています。
+	</p>
 
 	<h2>5. ユーザーの権利</h2>
 	<p>利用者は、以下の権利を有します。</p>
@@ -61,11 +66,13 @@
 	</p>
 
 	<h2>7. プライバシーポリシーの変更について</h2>
-	<p>弊チームは、必要に応じて本プライバシーポリシーを変更する場合があります。変更後のポリシーは、本サイト上で公表した時点から適用されます。</p>
+	<p>
+		弊チームは、必要に応じて本プライバシーポリシーを変更する場合があります。変更後のポリシーは、本サイト上で公表した時点から適用されます。
+	</p>
 
 	<h2>8. お問い合わせ先</h2>
 	<p>
-		プライバシーポリシーに関するお問い合わせは、以下までご連絡ください。<br/>
+		プライバシーポリシーに関するお問い合わせは、以下までご連絡ください。<br />
 		メールアドレス: <a href="mailto:contact.revati@gmail.com">contact.revati@gmail.com</a>
 	</p>
 </div>
@@ -73,7 +80,8 @@
 <style lang="scss">
 	@use '$lib/stylesheets/variables/mixin' as *;
 
-	div, p {
+	div,
+	p {
 		font-size: 18px !important;
 		text-align: left !important;
 

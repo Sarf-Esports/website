@@ -18,9 +18,9 @@
 	<section class="no-max-width" id="news">
 		<SectionTitle name="privacy policy" />
 		<p>REVATI プライバシーポリシー</p>
-		<hr>
+		<hr />
 		<div class="content"><Policy /></div>
-		<hr>
+		<hr />
 		<p>発効日: 2024年12月11日</p>
 	</section>
 </div>
