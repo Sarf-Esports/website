@@ -5,10 +5,16 @@
 
 	import { isDrawerMenuOpened } from '$lib/scripts/stores';
 	import { COPYRIGHT } from '$lib/scripts/variables';
+	import { SOCIALS } from '$lib/scripts/variables';
 </script>
 
 <footer inert={$isDrawerMenuOpened}>
 	<p class="copyright">{COPYRIGHT}</p>
+	<div>
+		<a href="/privacy">Privacy</a><a href="mailto:{SOCIALS.email}">Contact</a><a
+			href="https://github.com/Sarf-Esports/website">Source</a
+		>
+	</div>
 	<div class="socials"><Socials /></div>
 	<div class="lang-btn"><LangSwitcher /></div>
 </footer>
@@ -30,6 +36,15 @@
 		.lang-btn {
 			margin: 0 32px 24px 0;
 			float: right;
+		}
+	}
+
+	a {
+		margin: 0 18px;
+
+		&:not(:hover, :focus) {
+			color: #eeeeee;
+			text-decoration: none;
 		}
 	}
 </style>
