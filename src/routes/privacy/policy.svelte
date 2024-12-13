@@ -1,79 +1,70 @@
 <!-- © 2022 REVATI -->
+<script lang="ts">
+	import { _ } from 'svelte-i18n';
+</script>
 
 <div>
 	<p>
-		REVATI（以下、「弊チーム」）及び <a href="https://revati.jp">revati.jp</a
-		>（以下、「本サイト」）では、 利用者の個人情報を適切に保護し、以下の方針に基づいて管理します。
+		{$_('privacy.policy.desc.0')} <a href="https://revati.jp">revati.jp</a>
+		{$_('privacy.policy.desc.1')}
 	</p>
 
-	<h2>1. 個人情報の収集について</h2>
-	<p>弊チームでは、以下の情報を必要に応じて収集することがあります。</p>
+	<h2>1. {$_('privacy.policy.1.0')}</h2>
+	<p>{$_('privacy.policy.1.1')}</p>
 	<ul>
-		<li>氏名</li>
-		<li>メールアドレス</li>
-		<li>電話番号</li>
+		<li>{$_('privacy.policy.1.2')}</li>
+		<li>{$_('privacy.policy.1.3')}</li>
+		<li>{$_('privacy.policy.1.4')}</li>
 	</ul>
 	<p>
-		また、本サイトでは 訪問者のアクセス状況を把握するために、Cloudflare 社の提供する
-		<a href="https://cloudflare.com/web-analytics">Cloudflare Web Analytics</a> を利用しています。 Cloudflare
-		Web Analytics は、Cookie や localStorage などクライアントサイドの状態を一切使わずに、利用に関するメトリクスを収集します。
-		また、分析を表示する目的で、IP アドレス、ユーザーエージェント文字列、その他のデータを介して、個人の「フィンガープリント」を取得することもありません。
-		この分析は非侵襲的で、訪問者のプライバシーを尊重します。
+		{$_('privacy.policy.1.5')}
+		<a href="https://cloudflare.com/web-analytics">Cloudflare Web Analytics</a>
+		{$_('privacy.policy.1.6')}
 	</p>
 
-	<h2>2. 個人情報の利用目的</h2>
-	<p>収集した個人情報は、以下の目的で使用します。</p>
+	<h2>2. {$_('privacy.policy.2.0')}</h2>
+	<p>{$_('privacy.policy.2.1')}</p>
 	<ul>
-		<li>サービスの提供および運営</li>
-		<li>お問い合わせへの対応</li>
-		<li>サイト利用状況の分析やサービス向上のため</li>
-		<li>法令遵守のため</li>
+		<li>{$_('privacy.policy.2.2')}</li>
+		<li>{$_('privacy.policy.2.3')}</li>
+		<li>{$_('privacy.policy.2.4')}</li>
+		<li>{$_('privacy.policy.2.5')}</li>
 	</ul>
 
-	<h2>3. 個人情報の第三者提供について</h2>
-	<p>
-		弊チーム及び本サイトは、利用者の同意を得ずに個人情報を第三者に提供することはありません。ただし、以下の場合を除きます。
-	</p>
+	<h2>3. {$_('privacy.policy.3.0')}</h2>
+	<p>{$_('privacy.policy.3.1')}</p>
 	<ul>
-		<li>法令に基づく場合</li>
-		<li>利用者の同意がある場合</li>
-		<li>業務委託先に提供する場合（例：配送業者など）</li>
+		<li>{$_('privacy.policy.3.2')}</li>
+		<li>{$_('privacy.policy.3.3')}</li>
+		<li>{$_('privacy.policy.3.4')}</li>
 	</ul>
 
-	<h2>4. 個人情報の管理について</h2>
-	<p>弊チームは、個人情報を保護するために以下の対策を講じています。</p>
+	<h2>4. {$_('privacy.policy.4.0')}</h2>
+	<p>{$_('privacy.policy.4.1')}</p>
 	<ul>
-		<li>アクセス制限によるデータ管理</li>
-		<li>定期的なセキュリティ監査</li>
+		<li>{$_('privacy.policy.4.2')}</li>
+		<li>{$_('privacy.policy.4.3')}</li>
 	</ul>
-	<p>
-		また、本サイトは 個人情報を保護するために SSL（Secure Sockets
-		Layer）を使用した通信の暗号化を行っています。
-	</p>
+	<p>{$_('privacy.policy.4.4')}</p>
 
-	<h2>5. ユーザーの権利</h2>
-	<p>利用者は、以下の権利を有します。</p>
+	<h2>5. {$_('privacy.policy.5.0')}</h2>
+	<p>{$_('privacy.policy.5.1')}</p>
 	<ul>
-		<li>自身の個人情報の確認、修正、削除の請求</li>
-		<li>個人情報の利用停止の要求</li>
+		<li>{$_('privacy.policy.5.2')}</li>
+		<li>{$_('privacy.policy.5.3')}</li>
 	</ul>
-	<p>これらの権利を行使する場合は、下記「8. お問い合わせ先」のメールアドレスにご連絡ください。</p>
+	<p>{$_('privacy.policy.5.4')}</p>
 
-	<h2>6. Cookieの使用について</h2>
-	<p>
-		本サイトでは、現在 Cookie を使用していません。
-		Cookieを使用する場合には、その目的および詳細を本プライバシーポリシーに記載し、適切に同意を取得します。
-	</p>
+	<h2>6. {$_('privacy.policy.6.0')}</h2>
+	<p>{$_('privacy.policy.6.1')}</p>
 
-	<h2>7. プライバシーポリシーの変更について</h2>
-	<p>
-		弊チームは、必要に応じて本プライバシーポリシーを変更する場合があります。変更後のポリシーは、本サイト上で公表した時点から適用されます。
-	</p>
+	<h2>7. {$_('privacy.policy.7.0')}</h2>
+	<p>{$_('privacy.policy.7.1')}</p>
 
-	<h2>8. お問い合わせ先</h2>
+	<h2>8. {$_('privacy.policy.8.0')}</h2>
 	<p>
-		プライバシーポリシーに関するお問い合わせは、以下までご連絡ください。<br />
-		メールアドレス: <a href="mailto:contact.revati@gmail.com">contact.revati@gmail.com</a>
+		{$_('privacy.policy.8.1')}<br />{$_('privacy.policy.8.2')}:
+		<a href="mailto:contact.revati@gmail.com">contact.revati@gmail.com</a>
 	</p>
 </div>
 

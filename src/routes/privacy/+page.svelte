@@ -5,6 +5,10 @@
 	import Policy from './policy.svelte';
 
 	import { SITE_URL } from '$lib/scripts/variables';
+	import { _ } from 'svelte-i18n';
+	import { date as dateI18n } from 'svelte-i18n';
+
+	const effectiveData = new Date('2024-12-11T09:00:00Z');
 </script>
 
 <HeadMetadata
@@ -16,11 +20,16 @@
 <div class="container">
 	<section class="no-max-width" id="news">
 		<SectionTitle name="privacy policy" />
-		<p>REVATI プライバシーポリシー</p>
+		<p>REVATI {$_('privacy.privacyPolicy')}</p>
 		<hr />
 		<div class="content"><Policy /></div>
 		<hr />
-		<p>発効日: 2024年12月11日</p>
+		<p>
+			{$_('privacy.effectiveDate')}:
+			<time datetime={effectiveData.toISOString()}
+				>{$dateI18n(effectiveData, { format: 'long' })}</time
+			>
+		</p>
 	</section>
 </div>
 

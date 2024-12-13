@@ -104,6 +104,67 @@
 		"storeLink": "Learn more & Buy here",
 		"storeLinkTitle": "REVATI ( revati_jp ) | Online shopping for original items ∞ SUZURI"
 	},
+	"privacy": {
+		"privacyPolicy": "Privacy Policy",
+		"effectiveDate": "Effective Date",
+		"policy": {
+			"desc": [
+				"REVATI (Hereinafter called “Our team”) and",
+				"(Hereinafter called “Our website”) will appropriately protect user's personal information and manage them based on following policy."
+			],
+			"1": [
+				"About collecting individual data",
+				"Our team might collect these data if needed.",
+				"Full name",
+				"Mail address",
+				"Phone number",
+				"In addition, to comprehend user's access status, our website uses",
+				"Cloudflare Web Analytics will collect metrics about usage status without using client-side circumstances such as Cookie or localStorage. Besides, we might acquire individual ”fingerprints” through IP address, user-agent, and other data in order to show analysis. This analysis is harmless and respect user's privacy."
+			],
+			"2": [
+				"Purpose of using personal information",
+				"Collected personal information will be used for these purposes.",
+				"Providing and managing services",
+				"Responding to inquires",
+				"Analyzing usage status of our website",
+				"For legal compliance"
+			],
+			"3": [
+				"Providing personal information to third party",
+				"Our team as well as our website will not provide personal information to third party without user's permission, except these situations.",
+				"When required by the law",
+				"When we have permission of user",
+				"When providing to outsourcing company (ex: delivery company)"
+			],
+			"4": [
+				"Managing personal information",
+				"Our team is taking following measures to protect personal information.",
+				"Managing data by having access limitation",
+				"Regularly security inspection",
+				"Also, to protect personal information, our website encrypt data by using SSL (Secure Sockets Layer)."
+			],
+			"5": [
+				"User's rights",
+				"User will possess these rights.",
+				"Requesting to confirm, correct, and delete user's personal information",
+				"Requiring our team to suspend using one's personal information",
+				"To enforce this right, please contact to the email address described below “8. Contact information”."
+			],
+			"6": [
+				"About the use of Cookie",
+				"Our website is currently not using Cookie. When using Cookie, we will state the purpose and detail on this privacy policy and properly acquire consent from the users."
+			],
+			"7": [
+				"Change of privacy policy",
+				"There are some circumstances our team will change this privacy policy. Changed privacy policy will be applied from the moment it's announced on this website."
+			],
+			"8": [
+				"Contact information",
+				"Please contact us if you have any questions regarding to this privacy policy.",
+				"Mail address"
+			]
+		}
+	},
 	"error": {
 		"404": "The page you are looking for could not be found.",
 		"unknown": "An unexpected error occurred."
