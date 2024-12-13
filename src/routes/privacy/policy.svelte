@@ -1,6 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
+	import { SOCIALS } from '$lib/scripts/variables';
 </script>
 
 <div>
@@ -64,7 +65,7 @@
 	<h2>8. {$_('privacy.policy.8.0')}</h2>
 	<p>
 		{$_('privacy.policy.8.1')}<br />{$_('privacy.policy.8.2')}:
-		<a href="mailto:contact.revati@gmail.com">contact.revati@gmail.com</a>
+		<a href="mailto:SOCIALS.email">{SOCIALS.email}</a>
 	</p>
 </div>
 
