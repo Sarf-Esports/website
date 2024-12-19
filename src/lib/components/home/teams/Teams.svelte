@@ -47,7 +47,7 @@
 {/if}
 
 <ul class="members">
-	{#each currentDivisionMembers as member}
+	{#each currentDivisionMembers as member (member.memberName)}
 		<MemberCard
 			{member}
 			on:openGearsAndSettingsModal={({ detail }) => (gearsAndSettingsModalContent = detail)}

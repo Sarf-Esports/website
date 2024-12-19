@@ -16,13 +16,14 @@ export const GET: RequestHandler = async ({ setHeaders }) => {
 
 async function body() {
 	const articles = (await fetchArticles())
-		.map(
-			(article) => `<url>
-        <loc>${SITE_URL}/news/articles/${article.slug}</loc>
+		.map((article) => {
+			const slug = article.slug?.string;
+			return `<url>
+        <loc>${SITE_URL}/news/articles/${slug}</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-    </url>`
-		)
+    </url>`;
+		})
 		.join('\n    ');
 
 	return `<?xml version="1.0" encoding="UTF-8"?>
@@ -34,6 +35,11 @@ async function body() {
     </url>
     <url>
         <loc>${SITE_URL}/news</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>${SITE_URL}/privacy</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
