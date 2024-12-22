@@ -199,18 +199,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'DROWSY',
-				icon: 'drowsy.webp',
-				role: 'Streamer',
-				country: 'kr',
-				birthday: { year: 2001, month: 2, day: 22 },
-				age: null,
-				twitter: 'drowsy4150',
-				youtube: 'UCm-Yd-aYSagMqVdMZSYiKLQ',
-				twitch: 'drowsy4150',
-				homepage: 'https://chzzk.naver.com/bc7110b6e2e16456e32cc6d5bb939a3b'
-			},
-			{
 				memberName: 'れるにゃ',
 				icon: 'relle.webp',
 				role: 'MCBE Map Creator',

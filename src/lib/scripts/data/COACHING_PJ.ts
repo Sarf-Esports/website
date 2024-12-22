@@ -13,12 +13,6 @@ export const COACHES: {
 		twitter: 'OWzundamon'
 	},
 	{
-		name: 'DROWSY',
-		icon: 'drowsy.webp',
-		affiliation: 'REVATI',
-		twitter: 'drowsy4150'
-	},
-	{
 		name: 'Hesty',
 		icon: 'hesty.webp',
 		affiliation: 'REVATI',
