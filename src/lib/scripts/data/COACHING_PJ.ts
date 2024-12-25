@@ -7,7 +7,7 @@ export const COACHES: {
 	twitter: string | null;
 }[] = [
 	{
-		name: '宮城大豆',
+		name: 'ZUN',
 		icon: 'ow_zundamon.webp',
 		affiliation: 'REVATI',
 		twitter: 'OWzundamon'
