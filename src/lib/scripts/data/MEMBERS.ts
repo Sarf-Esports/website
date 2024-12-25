@@ -223,7 +223,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: '宮城大豆',
+				memberName: 'ZUN',
 				icon: 'ow_zundamon.webp',
 				role: 'YouTuber',
 				country: 'jp',
