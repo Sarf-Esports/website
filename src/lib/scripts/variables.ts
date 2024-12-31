@@ -7,7 +7,7 @@
 export const BREAKPOINT_HB = '(max-width: 1041px)';
 
 /** Copyright notice. */
-export const COPYRIGHT = '© 2022 - 2024 REVATI';
+export const COPYRIGHT = '© 2022 - 2025 REVATI';
 
 /** Social media links. */
 export const SOCIALS = {
