@@ -202,18 +202,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'Fromis',
-				icon: null,
-				role: 'Coach',
-				country: 'kr',
-				birthday: { year: 2003, month: 5, day: 15 },
-				age: null,
-				twitter: 'OW_Fromis',
-				youtube: null,
-				twitch: 'fromis_ow',
-				homepage: null
-			},
-			{
 				memberName: 'STRIKE',
 				icon: 'strike.webp',
 				role: 'Coach',
