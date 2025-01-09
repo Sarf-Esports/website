@@ -88,6 +88,18 @@ export const MEMBER_LISTS: {
 		divisionName: 'Overwatch',
 		members: [
 			{
+				memberName: 'BAMBIE',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: null, month: 3, day: 25 },
+				age: null,
+				twitter: 'bambie_ow',
+				youtube: null,
+				twitch: 'bambie_ow',
+				homepage: null
+			},
+			{
 				memberName: 'Hesty',
 				icon: 'hesty.webp',
 				role: 'Player',
@@ -99,6 +111,54 @@ export const MEMBER_LISTS: {
 				twitch: 'hesty_ow',
 				homepage: null,
 				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
+			},
+			{
+				memberName: 'Imalone',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'Imalone_ow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'NineLives',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'NineLives_ow',
+				youtube: null,
+				twitch: 'ninelives_ow',
+				homepage: null
+			},
+			{
+				memberName: 'osato',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: null, month: 6, day: 13 },
+				age: null,
+				twitter: 'osato_ow',
+				youtube: '@osato_ow',
+				twitch: 'osato_fps',
+				homepage: null
+			},
+			{
+				memberName: 'SECHAN',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'sechan_O',
+				youtube: null,
+				twitch: null,
+				homepage: null
 			},
 			{
 				memberName: 'solace',
@@ -129,6 +189,18 @@ export const MEMBER_LISTS: {
 			},
 			// ▲ ディレクター
 			// ▼ コーチ
+			{
+				memberName: 'Forte',
+				icon: null,
+				role: 'Coach',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'OW_Forte',
+				youtube: '@OW_Forte',
+				twitch: null,
+				homepage: null
+			},
 			{
 				memberName: 'Fromis',
 				icon: null,
