@@ -206,7 +206,7 @@ export const MEMBER_LISTS: {
 				icon: 'strike.webp',
 				role: 'Coach',
 				country: 'kr',
-				birthday: { year: null, month: 5, day: 31 },
+				birthday: { year: 2008, month: 5, day: 31 },
 				age: 47,
 				twitter: '_Strikeow_',
 				youtube: null,
