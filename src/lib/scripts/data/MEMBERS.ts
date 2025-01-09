@@ -100,7 +100,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'Hesty',
+				memberName: 'HESTY',
 				icon: 'hesty.webp',
 				role: 'Player',
 				country: 'jp',
