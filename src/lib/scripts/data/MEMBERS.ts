@@ -210,7 +210,7 @@ export const MEMBER_LISTS: {
 				age: 47,
 				twitter: '_Strikeow_',
 				youtube: null,
-				twitch: null,
+				twitch: 'owcstrike',
 				homepage: null
 			},
 			// ▲ コーチ
