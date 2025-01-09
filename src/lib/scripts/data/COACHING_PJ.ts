@@ -13,7 +13,7 @@ export const COACHES: {
 		twitter: 'OWzundamon'
 	},
 	{
-		name: 'Hesty',
+		name: 'HESTY',
 		icon: 'hesty.webp',
 		affiliation: 'REVATI',
 		twitter: '__Hestyow'
