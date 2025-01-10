@@ -198,7 +198,7 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: 'OW_Forte',
 				youtube: '@OW_Forte',
-				twitch: null,
+				twitch: 'chanhaj45',
 				homepage: null
 			},
 			{
