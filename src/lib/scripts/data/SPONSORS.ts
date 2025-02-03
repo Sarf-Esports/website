@@ -21,5 +21,10 @@ export const SPONSORS: {
 		name: 'XENOVA',
 		url: 'https://xenova.shop',
 		logo: 'xenova.webp'
+	},
+	{
+		name: 'Undercade',
+		url: 'https://undercade.official.ec',
+		logo: 'undercade_white-bg.webp'
 	}
 ];
