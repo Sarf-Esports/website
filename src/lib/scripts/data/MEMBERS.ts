@@ -271,18 +271,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: '碧海まっちゃ',
-				icon: 'aomi_matcha.webp',
-				role: 'Streamer',
-				country: 'jp',
-				birthday: { year: null, month: 2, day: 28 },
-				age: null,
-				twitter: 'aomi_matcha',
-				youtube: '@aomi_matcha',
-				twitch: 'aomi_matcha',
-				homepage: null
-			},
-			{
 				memberName: 'ZUN',
 				icon: 'ow_zundamon.webp',
 				role: 'YouTuber',
