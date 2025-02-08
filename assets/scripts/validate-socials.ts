@@ -9,7 +9,7 @@ let invalidSocials = 0;
 
 function sleep() {
 	const start = Date.now();
-	while (Date.now() < start + 2000);
+	while (Date.now() < start + 2200);
 }
 
 function printError(name: string, url: string) {
