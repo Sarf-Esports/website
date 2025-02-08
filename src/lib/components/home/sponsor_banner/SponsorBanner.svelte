@@ -33,7 +33,7 @@
 
 	.banner-content {
 		display: flex;
-		width: 200%;
+		width: 230%;
 		height: 98px;
 
 		&:hover ul {
@@ -41,7 +41,7 @@
 		}
 
 		@include sp {
-			width: 295%;
+			width: 340%;
 			height: 70px;
 		}
 	}
@@ -55,12 +55,16 @@
 		justify-content: space-around;
 		list-style: none;
 		translate: 0;
-		animation: slide 5s linear infinite;
+		animation: slide 15s linear infinite;
 
 		@keyframes slide {
 			to {
 				translate: -100%;
 			}
+		}
+
+		@include sp {
+			animation: slide 10s linear infinite;
 		}
 	}
 </style>
