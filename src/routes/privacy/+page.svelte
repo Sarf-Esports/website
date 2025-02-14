@@ -19,7 +19,7 @@
 />
 
 <div class="container">
-	<section class="no-max-width" id="news">
+	<section class="no-max-width">
 		<SectionTitle name="privacy policy" />
 		<p>REVATI {$_('privacy.privacyPolicy')}</p>
 		<hr />
