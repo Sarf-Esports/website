@@ -54,7 +54,11 @@
 		<li>{$_('privacy.policy.5.2')}</li>
 		<li>{$_('privacy.policy.5.3')}</li>
 	</ul>
-	<p>{$_('privacy.policy.5.4')}</p>
+	<p>
+		{$_('privacy.policy.5.4')}<a href="#policy8">8. {$_('privacy.policy.8.0')}</a>{$_(
+			'privacy.policy.5.5'
+		)}
+	</p>
 
 	<h2 id="policy6">6. {$_('privacy.policy.6.0')}</h2>
 	<p>{$_('privacy.policy.6.1')}<br /><br /></p>

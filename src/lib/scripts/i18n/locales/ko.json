@@ -150,7 +150,8 @@
 				"User will possess these rights.",
 				"Requesting to confirm, correct, and delete user's personal information",
 				"Requiring our team to suspend using one's personal information",
-				"To enforce this right, please contact to the email address described below “8. Contact information”."
+				"To enforce this right, please contact to the email address described below “",
+				"”."
 			],
 			"6": [
 				"About the use of Cookie",
