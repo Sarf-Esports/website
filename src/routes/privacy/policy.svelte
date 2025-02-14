@@ -73,7 +73,7 @@
 	<h2 id="policy8">8. {$_('privacy.policy.8.0')}</h2>
 	<p>
 		{$_('privacy.policy.8.1')}<br />{$_('privacy.policy.8.2')}:
-		<a href="mailto:SOCIALS.email">{SOCIALS.email}</a>
+		<a href={`mailto:${SOCIALS.email}`}>{SOCIALS.email}</a>
 	</p>
 </div>
 
