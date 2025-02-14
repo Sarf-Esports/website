@@ -8,7 +8,8 @@
 	import { _ } from 'svelte-i18n';
 	import { date as dateI18n } from 'svelte-i18n';
 
-	const effectiveData = new Date('2024-12-11T09:00:00Z');
+	const establishedData = new Date('2024-12-11T09:00:00Z');
+	const revisedDates = [new Date('2025-02-14T09:00:00Z')];
 </script>
 
 <HeadMetadata
@@ -18,17 +19,24 @@
 />
 
 <div class="container">
-	<section class="no-max-width" id="news">
+	<section class="no-max-width">
 		<SectionTitle name="privacy policy" />
 		<p>REVATI {$_('privacy.privacyPolicy')}</p>
 		<hr />
 		<div class="content"><Policy /></div>
 		<hr />
 		<p>
-			{$_('privacy.effectiveDate')}:
-			<time datetime={effectiveData.toISOString()}
-				>{$dateI18n(effectiveData, { format: 'long' })}</time
+			<time datetime={establishedData.toISOString()}
+				>{$_('w.establishedOn', {
+					values: { date: $dateI18n(establishedData, { format: 'long' }) }
+				})}</time
 			>
+			{#each revisedDates as date}
+				<br />
+				<time datetime={date.toISOString()}
+					>{$_('w.revisedOn', { values: { date: $dateI18n(date, { format: 'long' }) } })}</time
+				>
+			{/each}
 		</p>
 	</section>
 </div>

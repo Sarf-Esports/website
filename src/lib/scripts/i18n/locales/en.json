@@ -18,7 +18,10 @@
 		"prev": "Previous",
 		"next": "Next",
 		"pageN": ["Page ", " "],
-		"logoOf": "Logo of {name}"
+		"logoOf": "Logo of {name}",
+		"gmoPepaboInc": "GMO Pepabo, Inc.",
+		"establishedOn": "Established on {date}",
+		"revisedOn": "Revised on {date}"
 	},
 	"header": {
 		"skip": "Skip to main content",
@@ -106,7 +109,6 @@
 	},
 	"privacy": {
 		"privacyPolicy": "Privacy Policy",
-		"effectiveDate": "Effective Date",
 		"policy": {
 			"desc": [
 				"REVATI (Hereinafter called “Our team”) and",
@@ -148,11 +150,17 @@
 				"User will possess these rights.",
 				"Requesting to confirm, correct, and delete user's personal information",
 				"Requiring our team to suspend using one's personal information",
-				"To enforce this right, please contact to the email address described below “8. Contact information”."
+				"To enforce this right, please contact to the email address described below “",
+				"”."
 			],
 			"6": [
 				"About the use of Cookie",
-				"Our website is currently not using Cookie. When using Cookie, we will state the purpose and detail on this privacy policy and properly acquire consent from the users."
+				"Our website is currently not using Cookie. When using Cookie, we will state the purpose and detail on this privacy policy and properly acquire consent from the users.",
+				"However, some pages on our website contain embedded content from",
+				" (",
+				"). As a result, SUZURI may collect access information. For more details, please refer to SUZURI's \"",
+				"Site Policy",
+				"\" page."
 			],
 			"7": [
 				"Change of privacy policy",
