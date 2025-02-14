@@ -57,7 +57,15 @@
 	<p>{$_('privacy.policy.5.4')}</p>
 
 	<h2>6. {$_('privacy.policy.6.0')}</h2>
-	<p>{$_('privacy.policy.6.1')}</p>
+	<p>{$_('privacy.policy.6.1')}<br /><br /></p>
+	<p>
+		{$_('privacy.policy.6.2')}
+		<a href="https://suzuri.jp/trading">SUZURI</a>{$_('privacy.policy.6.3')}<a
+			href="https://pepabo.com/company/overview">{$_('w.gmoPepaboInc')}</a
+		>{$_('privacy.policy.6.4')}<a href="https://pepabo.com/company/privacy/#site"
+			>{$_('privacy.policy.6.5')}</a
+		>{$_('privacy.policy.6.6')}
+	</p>
 
 	<h2>7. {$_('privacy.policy.7.0')}</h2>
 	<p>{$_('privacy.policy.7.1')}</p>
