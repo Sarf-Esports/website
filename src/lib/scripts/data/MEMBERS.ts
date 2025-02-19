@@ -254,7 +254,7 @@ export const MEMBER_LISTS: {
 				birthday: { year: 1999, month: 9, day: 24 },
 				age: null,
 				twitter: 'Lilx_zZc',
-				youtube: null,
+				youtube: '@k0uh862',
 				twitch: 'kxuh_ttv',
 				homepage: null
 			},
