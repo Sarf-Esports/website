@@ -248,7 +248,7 @@ export const MEMBER_LISTS: {
 		members: [
 			{
 				memberName: 'Kxuh',
-				icon: null,
+				icon: 'kxuh.webp',
 				role: 'Player',
 				country: 'jp',
 				birthday: { year: 1999, month: 9, day: 24 },
@@ -260,7 +260,7 @@ export const MEMBER_LISTS: {
 			},
 			{
 				memberName: 'Rap1Sel',
-				icon: null,
+				icon: 'rap1sel.webp',
 				role: 'Player',
 				country: 'jp',
 				birthday: { year: 2000, month: 10, day: 23 },
