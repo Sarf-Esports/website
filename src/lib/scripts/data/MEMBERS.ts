@@ -244,6 +244,61 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
+		divisionName: 'Apex',
+		members: [
+			{
+				memberName: 'Kxuh',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 1999, month: 9, day: 24 },
+				age: null,
+				twitter: 'Lilx_zZc',
+				youtube: null,
+				twitch: 'kxuh_ttv',
+				homepage: null
+			},
+			{
+				memberName: 'Rap1Sel',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2000, month: 10, day: 23 },
+				age: null,
+				twitter: 'Rap1selF',
+				youtube: null,
+				twitch: 'rap1sel',
+				homepage: null
+			},
+			{
+				memberName: 'SUGAR',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2002, month: 6, day: 7 },
+				age: null,
+				twitter: 'sugarqpq67',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			// ▲ 選手
+			// ▼ コーチ
+			{
+				memberName: 'nerope',
+				icon: null,
+				role: 'Coach',
+				country: 'jp',
+				birthday: { year: 1998, month: 3, day: 15 },
+				age: null,
+				twitter: 'ne_rope76195',
+				youtube: null,
+				twitch: 'nerope1221',
+				homepage: null
+			}
+		]
+	},
+	{
 		divisionName: 'Content Creator',
 		members: [
 			{
