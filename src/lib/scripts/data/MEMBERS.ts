@@ -333,6 +333,18 @@ export const MEMBER_LISTS: {
 			// ▲ 選手
 			// ▼ コーチ
 			{
+				memberName: 'CLANK',
+				icon: 'clank.webp',
+				role: 'Coach',
+				country: 'jp',
+				birthday: { year: 1998, month: 7, day: 10 },
+				age: null,
+				twitter: 'clank_ccc',
+				youtube: null,
+				twitch: 'clank_owl',
+				homepage: null
+			},
+			{
 				memberName: 'molly',
 				icon: null,
 				role: 'Coach',
@@ -404,18 +416,6 @@ export const MEMBER_LISTS: {
 	{
 		divisionName: 'Content Creator',
 		members: [
-			{
-				memberName: 'CLANK',
-				icon: 'clank.webp',
-				role: 'Streamer',
-				country: 'jp',
-				birthday: { year: 1998, month: 7, day: 10 },
-				age: null,
-				twitter: 'clank_ccc',
-				youtube: null,
-				twitch: 'clank_owl',
-				homepage: null
-			},
 			{
 				memberName: 'れるにゃ',
 				icon: 'relle.webp',
