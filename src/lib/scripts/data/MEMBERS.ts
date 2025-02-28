@@ -468,18 +468,6 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: null,
 				homepage: 'https://behance.net/Haise__00'
-			},
-			{
-				memberName: 'らいふれっくす',
-				icon: 'lifelex.webp',
-				role: 'Video Editor',
-				country: 'jp',
-				birthday: { year: 2006, month: 12, day: 24 },
-				age: null,
-				twitter: 'lex57D',
-				youtube: '@Lifelex57',
-				twitch: 'lilex7',
-				homepage: null
 			}
 		]
 	},
@@ -520,18 +508,6 @@ export const MEMBER_LISTS: {
 				twitter: 'KAZKUN_TSUYOI',
 				youtube: null,
 				twitch: 'rev_kazkun',
-				homepage: null
-			},
-			{
-				memberName: 'Life',
-				icon: 'life.webp',
-				role: null,
-				country: 'jp',
-				birthday: { year: 2007, month: 8, day: 9 },
-				age: null,
-				twitter: 'l1fefn',
-				youtube: null,
-				twitch: null,
 				homepage: null
 			},
 			{
