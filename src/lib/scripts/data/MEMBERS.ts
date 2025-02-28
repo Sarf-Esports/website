@@ -244,6 +244,109 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
+		divisionName: 'Overwatch Woman\'s',
+		members: [
+			{
+				memberName: 'Elty',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'elty_owo',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'ToT',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'ToT_ow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'エマ',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'zen__ema',
+				youtube: '@エマ-p8r',
+				twitch: 'emao425',
+				homepage: null
+			},
+			{
+				memberName: 'てお',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: { year: null, month: 7, day: 29 },
+				age: null,
+				twitter: 'teo_kure5',
+				youtube: null,
+				twitch: 'teo_kure5',
+				homepage: null
+			},
+			{
+				memberName: 'まるこ',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'umya58n',
+				youtube: null,
+				twitch: 'umya58n',
+				homepage: null
+			},
+			{
+				memberName: '翆',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: { year: null, month: 2, day: 15 },
+				age: null,
+				twitter: 'suisan_ow',
+				youtube: null,
+				twitch: 'sui0zasso',
+				homepage: null
+			},
+			{
+				memberName: '瓜果めろん',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'melon_urika',
+				youtube: '@melonurika8543',
+				twitch: 'melon_urika',
+				homepage: null
+			},
+			// ▲ 選手
+			// ▼ コーチ
+			{
+				memberName: 'molly',
+				icon: null,
+				role: 'Coach',
+				country: null,
+				birthday: { year: 2004, month: 8, day: 18 },
+				age: null,
+				twitter: 'm5riOW',
+				youtube: '@m5riOW',
+				twitch: 'm5riow',
+				homepage: null
+			}
+		]
+	},
+	{
 		divisionName: 'Apex',
 		members: [
 			{
