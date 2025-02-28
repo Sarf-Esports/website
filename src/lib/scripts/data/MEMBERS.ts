@@ -244,7 +244,7 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
-		divisionName: 'Overwatch Woman\'s',
+		divisionName: "Overwatch Woman's",
 		members: [
 			{
 				memberName: 'Elty',
