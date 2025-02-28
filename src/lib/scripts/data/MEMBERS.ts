@@ -486,6 +486,7 @@ export const MEMBER_LISTS: {
 				twitch: null,
 				homepage: null
 			},
+			// ▲ 代表
 			{
 				memberName: '2止',
 				icon: 'haineko.webp',
