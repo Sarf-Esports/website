@@ -417,18 +417,6 @@ export const MEMBER_LISTS: {
 		divisionName: 'Content Creator',
 		members: [
 			{
-				memberName: 'れるにゃ',
-				icon: 'relle.webp',
-				role: 'MCBE Map Creator',
-				country: 'jp',
-				birthday: { year: 2002, month: 7, day: 23 },
-				age: null,
-				twitter: 'LanternCold',
-				youtube: '@relle3674',
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: 'ZUN',
 				icon: 'ow_zundamon.webp',
 				role: 'YouTuber',
@@ -437,6 +425,18 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: 'OWzundamon',
 				youtube: '@overwatch9753',
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'れるにゃ',
+				icon: 'relle.webp',
+				role: 'MCBE Map Creator',
+				country: 'jp',
+				birthday: { year: 2002, month: 7, day: 23 },
+				age: null,
+				twitter: 'LanternCold',
+				youtube: '@relle3674',
 				twitch: null,
 				homepage: null
 			}
