@@ -265,7 +265,7 @@ export const MEMBER_LISTS: {
 				country: 'kr',
 				birthday: null,
 				age: null,
-				twitter: 'ToT_ow',
+				twitter: 'T0T_ow',
 				youtube: null,
 				twitch: null,
 				homepage: null
