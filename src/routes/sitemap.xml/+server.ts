@@ -20,8 +20,8 @@ async function body() {
 			const slug = article.slug?.string;
 			return `<url>
         <loc>${SITE_URL}/news/articles/${slug}</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>`;
 		})
 		.join('\n    ');
@@ -30,18 +30,18 @@ async function body() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>${SITE_URL}</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>${SITE_URL}/news</loc>
         <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>${SITE_URL}/privacy</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
     </url>
     ${articles}
 </urlset>`;
