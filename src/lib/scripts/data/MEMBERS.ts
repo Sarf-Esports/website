@@ -441,112 +441,112 @@ export const MEMBER_LISTS: {
 				homepage: null
 			}
 		]
-	},
-	{
-		divisionName: 'Other',
-		members: [
-			{
-				memberName: 'kishi',
-				icon: null,
-				role: 'Translator',
-				country: 'jp',
-				birthday: { year: null, month: 9, day: 2 },
-				age: null,
-				twitter: 'kishi_krunk',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'はいせ',
-				icon: 'haise.webp',
-				role: 'Designer',
-				country: 'jp',
-				birthday: { year: 2005, month: 5, day: 30 },
-				age: null,
-				twitter: 'h4ise05',
-				youtube: null,
-				twitch: null,
-				homepage: 'https://behance.net/Haise__00'
-			}
-		]
-	},
-	{
-		divisionName: 'Operator',
-		members: [
-			{
-				memberName: 'しろねこ',
-				icon: '46nek_0.webp',
-				role: 'Owner',
-				country: 'jp',
-				birthday: { year: 2005, month: 3, day: 23 },
-				age: null,
-				twitter: '46nek_0',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			// ▲ 代表
-			{
-				memberName: '2止',
-				icon: 'haineko.webp',
-				role: null,
-				country: 'jp',
-				birthday: { year: 2004, month: 4, day: 7 },
-				age: null,
-				twitter: 'zitome22',
-				youtube: '@zitome2',
-				twitch: 'zitome2',
-				homepage: null
-			},
-			{
-				memberName: 'Kaz9nnN',
-				icon: 'kaz.webp',
-				role: null,
-				country: 'jp',
-				birthday: { year: 2003, month: 4, day: 23 },
-				age: null,
-				twitter: 'KAZKUN_TSUYOI',
-				youtube: null,
-				twitch: 'rev_kazkun',
-				homepage: null
-			},
-			{
-				memberName: 'Pear',
-				icon: 'pear.webp',
-				role: null,
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'pear_fps',
-				youtube: null,
-				twitch: 'pear_fps',
-				homepage: null
-			},
-			{
-				memberName: 'Rinrin.rs',
-				icon: 'rinrin.webp',
-				role: 'Web Developer',
-				country: 'jp',
-				birthday: { year: 2006, month: 4, day: 13 },
-				age: null,
-				twitter: 'Rinrin_2nd',
-				youtube: '@rinrin-rs',
-				twitch: 'rinrin0413',
-				homepage: 'https://rinrin.pages.dev'
-			},
-			{
-				memberName: 'ひなこ',
-				icon: null,
-				role: null,
-				country: 'jp',
-				birthday: { year: 2004, month: 10, day: 14 },
-				age: null,
-				twitter: 'hinakunaiueo',
-				youtube: '@hinakox9220',
-				twitch: 'hinakoooo_fn',
-				homepage: null
-			}
-		]
 	}
+	// {
+	// 	divisionName: 'Other',
+	// 	members: [
+	// 		{
+	// 			memberName: 'kishi',
+	// 			icon: null,
+	// 			role: 'Translator',
+	// 			country: 'jp',
+	// 			birthday: { year: null, month: 9, day: 2 },
+	// 			age: null,
+	// 			twitter: 'kishi_krunk',
+	// 			youtube: null,
+	// 			twitch: null,
+	// 			homepage: null
+	// 		},
+	// 		{
+	// 			memberName: 'はいせ',
+	// 			icon: 'haise.webp',
+	// 			role: 'Designer',
+	// 			country: 'jp',
+	// 			birthday: { year: 2005, month: 5, day: 30 },
+	// 			age: null,
+	// 			twitter: 'h4ise05',
+	// 			youtube: null,
+	// 			twitch: null,
+	// 			homepage: 'https://behance.net/Haise__00'
+	// 		}
+	// 	]
+	// },
+	// {
+	// 	divisionName: 'Operator',
+	// 	members: [
+	// 		{
+	// 			memberName: 'しろねこ',
+	// 			icon: '46nek_0.webp',
+	// 			role: 'Owner',
+	// 			country: 'jp',
+	// 			birthday: { year: 2005, month: 3, day: 23 },
+	// 			age: null,
+	// 			twitter: '46nek_0',
+	// 			youtube: null,
+	// 			twitch: null,
+	// 			homepage: null
+	// 		},
+	// 		// ▲ 代表
+	// 		{
+	// 			memberName: '2止',
+	// 			icon: 'haineko.webp',
+	// 			role: null,
+	// 			country: 'jp',
+	// 			birthday: { year: 2004, month: 4, day: 7 },
+	// 			age: null,
+	// 			twitter: 'zitome22',
+	// 			youtube: '@zitome2',
+	// 			twitch: 'zitome2',
+	// 			homepage: null
+	// 		},
+	// 		{
+	// 			memberName: 'Kaz9nnN',
+	// 			icon: 'kaz.webp',
+	// 			role: null,
+	// 			country: 'jp',
+	// 			birthday: { year: 2003, month: 4, day: 23 },
+	// 			age: null,
+	// 			twitter: 'KAZKUN_TSUYOI',
+	// 			youtube: null,
+	// 			twitch: 'rev_kazkun',
+	// 			homepage: null
+	// 		},
+	// 		{
+	// 			memberName: 'Pear',
+	// 			icon: 'pear.webp',
+	// 			role: null,
+	// 			country: 'jp',
+	// 			birthday: null,
+	// 			age: null,
+	// 			twitter: 'pear_fps',
+	// 			youtube: null,
+	// 			twitch: 'pear_fps',
+	// 			homepage: null
+	// 		},
+	// 		{
+	// 			memberName: 'Rinrin.rs',
+	// 			icon: 'rinrin.webp',
+	// 			role: 'Web Developer',
+	// 			country: 'jp',
+	// 			birthday: { year: 2006, month: 4, day: 13 },
+	// 			age: null,
+	// 			twitter: 'Rinrin_2nd',
+	// 			youtube: '@rinrin-rs',
+	// 			twitch: 'rinrin0413',
+	// 			homepage: 'https://rinrin.pages.dev'
+	// 		},
+	// 		{
+	// 			memberName: 'ひなこ',
+	// 			icon: null,
+	// 			role: null,
+	// 			country: 'jp',
+	// 			birthday: { year: 2004, month: 10, day: 14 },
+	// 			age: null,
+	// 			twitter: 'hinakunaiueo',
+	// 			youtube: '@hinakox9220',
+	// 			twitch: 'hinakoooo_fn',
+	// 			homepage: null
+	// 		}
+	// 	]
+	// }
 ];
