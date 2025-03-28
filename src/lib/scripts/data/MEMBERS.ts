@@ -456,18 +456,6 @@ export const MEMBER_LISTS: {
 	// 			youtube: null,
 	// 			twitch: null,
 	// 			homepage: null
-	// 		},
-	// 		{
-	// 			memberName: 'はいせ',
-	// 			icon: 'haise.webp',
-	// 			role: 'Designer',
-	// 			country: 'jp',
-	// 			birthday: { year: 2005, month: 5, day: 30 },
-	// 			age: null,
-	// 			twitter: 'h4ise05',
-	// 			youtube: null,
-	// 			twitch: null,
-	// 			homepage: 'https://behance.net/Haise__00'
 	// 		}
 	// 	]
 	// },
