@@ -7,7 +7,7 @@
 	import RevealFadeIn from '$lib/components/RevealFadeIn.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
 	import Teams from '$lib/components/home/teams/Teams.svelte';
-	import Coaching from '$lib/components/home/coaching/Coaching.svelte';
+	// import Coaching from '$lib/components/home/coaching/Coaching.svelte';
 	import Goods from '$lib/components/home/Goods.svelte';
 	import Sponsors from '$lib/components/home/Sponsors.svelte';
 
@@ -64,12 +64,12 @@
 	</section>
 </div>
 
-<div class="container">
+<!-- <div class="container">
 	<section id="coaching">
 		<SectionTitle name="coaching" />
 		<div class="content"><Coaching /></div>
 	</section>
-</div>
+</div> -->
 
 <div class="container">
 	<section id="goods">

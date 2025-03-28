@@ -3,8 +3,8 @@
 $breakpoint: 788px;
 // If update the `$bp-hamburger-btn` Sass variable, also update the `BREAKPOINT_HB` JS constant in `/src/lib/scripts/variables.ts`.
 // ＊ `$bp-hamburger-btn` = (numerical value of `BREAKPOINT_HB`) + 1
-$bp-hamburger-btn: 1042px;
-$bp-low-height: 784px;
+$bp-hamburger-btn: 882px;
+$bp-low-height: 671px;
 $bp-wide: $bp-hamburger-btn + 150px;
 
 @mixin pc {
