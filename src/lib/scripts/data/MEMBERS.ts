@@ -119,7 +119,7 @@ export const MEMBER_LISTS: {
 				country: 'kr',
 				birthday: null,
 				age: null,
-				twitter: 'Imalone_ow',
+				twitter: 'ow_imalone',
 				youtube: null,
 				twitch: null,
 				homepage: null
