@@ -373,30 +373,6 @@ export const MEMBER_LISTS: {
 				twitch: 'kxuh_ttv',
 				homepage: null
 			},
-			{
-				memberName: 'Rap1Sel',
-				icon: 'rap1sel.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2000, month: 10, day: 23 },
-				age: null,
-				twitter: 'Rap1selF',
-				youtube: null,
-				twitch: 'rap1sel',
-				homepage: null
-			},
-			{
-				memberName: 'SUGAR',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2002, month: 6, day: 7 },
-				age: null,
-				twitter: 'sugarqpq67',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
 			// ▲ 選手
 			// ▼ コーチ
 			{
