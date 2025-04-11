@@ -362,6 +362,18 @@ export const MEMBER_LISTS: {
 		divisionName: 'Apex',
 		members: [
 			{
+				memberName: 'Allice',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'GGGallice',
+				youtube: null,
+				twitch: 'kyarakonn142',
+				homepage: null
+			},
+			{
 				memberName: 'Kxuh',
 				icon: 'kxuh.webp',
 				role: 'Player',
@@ -395,6 +407,18 @@ export const MEMBER_LISTS: {
 				twitter: 'sugarqpq67',
 				youtube: null,
 				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: '四葉みる',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'Yotsuha_Mil',
+				youtube: null,
+				twitch: 'yotsuhamil',
 				homepage: null
 			},
 			// ▲ 選手
