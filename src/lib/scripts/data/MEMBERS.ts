@@ -291,7 +291,7 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: 'teo_kure5',
 				youtube: null,
-				twitch: 'teo_kure5',
+				twitch: 'teo_walkure',
 				homepage: null
 			},
 			{
