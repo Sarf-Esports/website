@@ -171,33 +171,119 @@ export const GEARS_AND_SETTINGS: { [key: string]: GearsAndSettings } = {
 			}
 		]
 	},
-	solace: {
-		avatar: 'solace',
-		dpi: 1200,
-		sens: [{ role: 'genji', value: 5.0 }],
-		mouse: 'Ninjutso Sora V2',
-		mousepad: 'Aritsan Hien Mid Soft',
-		keyboard: 'Varmilo Minilo VXH67 (65%)',
+	hakaisinkotaro: {
+		avatar: 'hakaisinkotaro',
+		dpi: 800,
+		sens: 7.3,
+		mouse: 'Logicool G PRO X SUPERLIGHT',
+		mousepad: 'Padsmith Crucible - Temple of Dreams V2',
+		keyboard: 'Logicool G 913 TKL',
 		crosshairSettings: [
 			{
-				type: 'box',
-				showsAccuracy: false,
+				type: 'dot',
+				showsAccuracy: null,
 				color: 'white',
-				thickness: 4.0,
-				rotation: 315,
-				crosshairLength: 1.0,
+				thickness: null,
+				rotation: null,
+				crosshairLength: null,
+				centerGap: null,
+				opacity: null,
+				outline: {
+					color: 'black',
+					opacity: 100,
+					thickness: 3.0,
+					shift: 1.0
+				},
+				dot: {
+					type: 'default',
+					size: 2.9,
+					opacity: 100
+				},
+				scaleWithResolution: true
+			}
+		]
+	},
+	hofac: {
+		avatar: 'hofac',
+		dpi: 800,
+		sens: 3.25,
+		mouse: 'Logicool G PRO Wireless',
+		mousepad: 'PADSMITH Temple of Dreams - Remastered',
+		keyboard: 'COX Endeavour Original Retro Tenkeyless',
+		crosshairSettings: [
+			{
+				type: 'line',
+				showsAccuracy: false,
+				color: 'orange',
+				thickness: 1.0,
+				rotation: 0,
+				crosshairLength: 4.0,
 				centerGap: 0.0,
 				opacity: 100,
 				outline: {
-					color: 'white',
+					color: 'black',
 					opacity: 0,
-					thickness: 3.0,
-					shift: 0.0
+					thickness: 1.0,
+					shift: 1.0
+				},
+				dot: {
+					type: 'default',
+					size: 4.5,
+					opacity: 0
+				},
+				scaleWithResolution: true
+			}
+		]
+	},
+	ninja_hamuzo: {
+		avatar: 'ninja_hamuzo',
+		dpi: 800,
+		sens: 3.25,
+		mouse: 'Gwolves HTS Plus 4K',
+		mousepad: 'Artizan Hayate乙',
+		keyboard: 'Steelseries Apex pro mini',
+		crosshairSettings: [
+			{
+				type: 'circle',
+				showsAccuracy: false,
+				color: 'magenta',
+				thickness: 1.0,
+				rotation: null,
+				crosshairLength: null,
+				centerGap: 39.7,
+				opacity: 100,
+				outline: {
+					color: 'black',
+					opacity: 100,
+					thickness: 1.0,
+					shift: 1.0
+				},
+				dot: {
+					type: 'default',
+					size: 5.0,
+					opacity: 100
+				},
+				scaleWithResolution: true
+			},
+			{
+				type: 'crosshairs',
+				showsAccuracy: false,
+				color: 'magenta',
+				thickness: 1.0,
+				rotation: 0,
+				crosshairLength: 5.0,
+				centerGap: 3.5,
+				opacity: 100,
+				outline: {
+					color: 'black',
+					opacity: 100,
+					thickness: 1.0,
+					shift: 1.0
 				},
 				dot: {
 					type: 'default',
 					size: 0.0,
-					opacity: 100
+					opacity: 0
 				},
 				scaleWithResolution: true
 			}

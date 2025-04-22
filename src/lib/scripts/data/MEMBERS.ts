@@ -88,15 +88,15 @@ export const MEMBER_LISTS: {
 		divisionName: 'Overwatch',
 		members: [
 			{
-				memberName: 'BAMBIE',
+				memberName: 'AZENT',
 				icon: null,
 				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 3, day: 25 },
+				country: 'kr',
+				birthday: null,
 				age: null,
-				twitter: 'bambie_ow',
+				twitter: 'AZENT_OW',
 				youtube: null,
-				twitch: 'bambie_ow',
+				twitch: null,
 				homepage: null
 			},
 			{
@@ -113,28 +113,17 @@ export const MEMBER_LISTS: {
 				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
 			},
 			{
-				memberName: 'Imalone',
-				icon: null,
+				memberName: 'Hofac',
+				icon: 'hofac.webp',
 				role: 'Player',
 				country: 'kr',
-				birthday: null,
+				birthday: { year: 2005, month: 1, day: 27 },
 				age: null,
-				twitter: 'ow_imalone',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'NineLives',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'NineLives_ow',
-				youtube: null,
-				twitch: 'ninelives_ow',
-				homepage: null
+				twitter: 'HofacOW',
+				youtube: '@ahoneyfactory9887',
+				twitch: 'hofac_ow',
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['hofac']
 			},
 			{
 				memberName: 'osato',
@@ -149,36 +138,63 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'SECHAN',
-				icon: null,
+				memberName: 'にんじゃはむぞー',
+				icon: 'ninja_hamuzo.webp',
 				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2002, month: 11, day: 3 },
+				age: null,
+				twitter: 'ninja_hamuzo',
+				youtube: null,
+				twitch: 'nhzow',
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['ninja_hamuzo']
+			},
+			{
+				memberName: '破壊神こたろ',
+				icon: 'hakaisinkotaro.webp',
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'mareku1212',
+				youtube: '@hakaisinkotaro',
+				twitch: 'hakaisinnkotaro',
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['hakaisinkotaro']
+			},
+			// ▲ 選手
+			// ▼ コーチ
+			{
+				memberName: 'saeyeon',
+				icon: null,
+				role: 'Coach',
 				country: 'kr',
 				birthday: null,
 				age: null,
-				twitter: 'sechan_O',
+				twitter: 'saeyeonow',
 				youtube: null,
 				twitch: null,
 				homepage: null
 			},
 			{
-				memberName: 'solace',
-				icon: 'solace.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2005, month: 3, day: 22 },
+				memberName: 'メンヘラ',
+				icon: null,
+				role: 'Coach',
+				country: 'kr',
+				birthday: null,
 				age: null,
-				twitter: 'sorryimsolace',
-				youtube: '@sorryimsolace',
-				twitch: 'sorryimsolace',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['solace']
+				twitter: 'menheraa0_0',
+				youtube: null,
+				twitch: null,
+				homepage: null
 			},
-			// ▲ 選手
-			// ▼ ディレクター
+			// ▲ コーチ
+			// ▼ マネージャー
 			{
 				memberName: 'Fickle',
 				icon: 'fickle.webp',
-				role: 'Director',
+				role: 'Manager',
 				country: 'kr',
 				birthday: { year: 1998, month: 7, day: 9 },
 				age: null,
@@ -187,58 +203,28 @@ export const MEMBER_LISTS: {
 				twitch: 'fickle_ow',
 				homepage: null
 			},
-			// ▲ ディレクター
-			// ▼ コーチ
 			{
-				memberName: 'Forte',
+				memberName: 'GENESIS',
 				icon: null,
-				role: 'Coach',
+				role: 'Manager',
 				country: 'kr',
 				birthday: null,
 				age: null,
-				twitter: 'OW_Forte',
-				youtube: '@OW_Forte',
-				twitch: 'chanhaj45',
-				homepage: null
-			},
-			{
-				memberName: 'STRIKE',
-				icon: 'strike.webp',
-				role: 'Coach',
-				country: 'kr',
-				birthday: { year: 2008, month: 5, day: 31 },
-				age: 47,
-				twitter: '_Strikeow_',
-				youtube: null,
-				twitch: 'owcstrike',
-				homepage: null
-			},
-			// ▲ コーチ
-			// ▼ アドバイザー
-			{
-				memberName: 'Byeolha',
-				icon: 'byeolha.webp',
-				role: 'Advisor',
-				country: 'kr',
-				birthday: { year: 2001, month: 1, day: 3 },
-				age: null,
-				twitter: 'ow_byeolha',
+				twitter: 'GENES1S_OW',
 				youtube: null,
 				twitch: null,
 				homepage: null
 			},
-			// ▲ アドバイザー
-			// ▼ マネージャー
 			{
-				memberName: 'みるふぃーゆ',
-				icon: 'millfy.webp',
+				memberName: 'NineLives',
+				icon: null,
 				role: 'Manager',
 				country: 'jp',
-				birthday: { year: 1997, month: 12, day: 12 },
+				birthday: null,
 				age: null,
-				twitter: 'miru_fiiyu',
+				twitter: 'NineLives_ow',
 				youtube: null,
-				twitch: null,
+				twitch: 'ninelives_ow',
 				homepage: null
 			}
 		]
@@ -416,6 +402,18 @@ export const MEMBER_LISTS: {
 	{
 		divisionName: 'Content Creator',
 		members: [
+			{
+				memberName: 'STRIKE',
+				icon: 'strike.webp',
+				role: 'Coach',
+				country: 'kr',
+				birthday: { year: 2008, month: 5, day: 31 },
+				age: 47,
+				twitter: '_Strikeow_',
+				youtube: null,
+				twitch: 'owcstrike',
+				homepage: null
+			},
 			{
 				memberName: 'ZUN',
 				icon: 'ow_zundamon.webp',
