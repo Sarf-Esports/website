@@ -230,6 +230,95 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
+		divisionName: 'Overwatch Academy',
+		members: [
+			{
+				memberName: '1500円玉',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'yen_0w',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'Another',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'Another3354',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'lud',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'Luvica_Lore',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'XuanSeo',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'XuanSeo_OW',
+				youtube: null,
+				twitch: 'XuanSeo',
+				homepage: null
+			},
+			{
+				memberName: 'うちのごはん',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'rqa_j',
+				youtube: null,
+				twitch: 'rqa_ow',
+				homepage: null
+			},
+			{
+				memberName: 'ホータロウ',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'Hotaro_ow',
+				youtube: null,
+				twitch: 'hotaro_ow',
+				homepage: null
+			},
+			{
+				memberName: 'ʍօʟ',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'moruka0824',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			}
+		]
+	},
+	{
 		divisionName: "Overwatch Woman's",
 		members: [
 			{
