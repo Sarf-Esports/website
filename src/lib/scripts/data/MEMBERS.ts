@@ -233,18 +233,6 @@ export const MEMBER_LISTS: {
 		divisionName: 'Overwatch Academy',
 		members: [
 			{
-				memberName: '1500円玉',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'yen_0w',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: 'Another',
 				icon: null,
 				role: 'Player',
@@ -257,11 +245,23 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'hotaro',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: { year: null, month: 3, day: 13 },
+				age: null,
+				twitter: 'Hotaro_ow',
+				youtube: null,
+				twitch: 'hotaro_ow',
+				homepage: null
+			},
+			{
 				memberName: 'lud',
 				icon: null,
 				role: 'Player',
 				country: null,
-				birthday: null,
+				birthday: { year: null, month: 9, day: 10 },
 				age: null,
 				twitter: 'Luvica_Lore',
 				youtube: null,
@@ -269,19 +269,19 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'XuanSeo',
+				memberName: 'MOL',
 				icon: null,
 				role: 'Player',
 				country: null,
 				birthday: null,
 				age: null,
-				twitter: 'XuanSeo_OW',
+				twitter: 'moruka0824',
 				youtube: null,
-				twitch: 'XuanSeo',
+				twitch: null,
 				homepage: null
 			},
 			{
-				memberName: 'うちのごはん',
+				memberName: 'tino',
 				icon: null,
 				role: 'Player',
 				country: null,
@@ -293,27 +293,27 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'ホータロウ',
+				memberName: 'YEN',
 				icon: null,
 				role: 'Player',
 				country: null,
-				birthday: null,
+				birthday: { year: null, month: 12, day: 23 },
 				age: null,
-				twitter: 'Hotaro_ow',
+				twitter: 'yen_0w',
 				youtube: null,
-				twitch: 'hotaro_ow',
+				twitch: null,
 				homepage: null
 			},
 			{
-				memberName: 'ʍօʟ',
+				memberName: 'XuanSeo',
 				icon: null,
 				role: 'Player',
 				country: null,
-				birthday: null,
+				birthday: { year: null, month: 12, day: 25 },
 				age: null,
-				twitter: 'moruka0824',
+				twitter: 'XuanSeo_OW',
 				youtube: null,
-				twitch: null,
+				twitch: 'XuanSeo',
 				homepage: null
 			}
 		]
