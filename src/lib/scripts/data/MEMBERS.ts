@@ -237,11 +237,11 @@ export const MEMBER_LISTS: {
 				icon: null,
 				role: 'Player',
 				country: 'jp',
-				birthday: null,
+				birthday: { year: null, month: 10, day: 25 },
 				age: null,
 				twitter: 'Another3354',
 				youtube: null,
-				twitch: null,
+				twitch: 'another_1025',
 				homepage: null
 			},
 			{
