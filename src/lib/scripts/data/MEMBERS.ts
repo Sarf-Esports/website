@@ -273,11 +273,11 @@ export const MEMBER_LISTS: {
 				icon: null,
 				role: 'Player',
 				country: 'jp',
-				birthday: null,
+				birthday: { year: null, month: 8, day: 24 },
 				age: null,
 				twitter: 'moruka0824',
 				youtube: null,
-				twitch: null,
+				twitch: 'mol_ow',
 				homepage: null
 			},
 			{
@@ -285,7 +285,7 @@ export const MEMBER_LISTS: {
 				icon: null,
 				role: 'Player',
 				country: 'jp',
-				birthday: null,
+				birthday: { year: null, month: 9, day: 29 },
 				age: null,
 				twitter: 'rqa_j',
 				youtube: null,
