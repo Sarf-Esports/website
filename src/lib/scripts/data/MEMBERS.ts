@@ -437,18 +437,6 @@ export const MEMBER_LISTS: {
 		divisionName: 'Apex',
 		members: [
 			{
-				memberName: 'Allice',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'GGGallice',
-				youtube: null,
-				twitch: 'kyarakonn142',
-				homepage: null
-			},
-			{
 				memberName: 'Kxuh',
 				icon: 'kxuh.webp',
 				role: 'Player',
