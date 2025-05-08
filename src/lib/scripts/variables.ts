@@ -17,10 +17,10 @@ export const SOCIALS = {
 	github: 'Sarf-Esports'
 };
 
-// TMP: The site URL is set to the development URL to check the new OGP image.
+// TMP: The site URL is set to the topic development URL to check the new OGP image.
 //      Be sure to revert to the original URL before merging into the master branch.
 /** URL of the site. */
-export const SITE_URL = 'https://dev.revati.pages.dev'; // 'https://revati.jp';
+export const SITE_URL = 'https://feat--234-branding-minor-upd.revati.pages.dev'; // 'https://revati.jp';
 
 /**
  * The part of the full title of the pages.
