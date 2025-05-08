@@ -1,6 +1,7 @@
 <!-- © 2022 REVATI -->
 <script lang="ts">
 	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
+	import { HEADER_1200x600_PATH } from '$lib/scripts/variables';
 	import { _, date as dateI18n } from 'svelte-i18n';
 
 	export let meta: ArticleMetadata;
@@ -20,7 +21,7 @@
 		<div class="thumbnail-img">
 			<img
 				src={thumbnailImgFmt === null
-					? '/images/logos/revati/header_1200x600.webp'
+					? HEADER_1200x600_PATH
 					: `/images/news/thumbnails/${slug}.${thumbnailImgFmt}`}
 				alt={$_('w.articleThumbnailImg')}
 				loading="lazy"

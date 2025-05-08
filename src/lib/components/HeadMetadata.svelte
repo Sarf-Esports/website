@@ -34,7 +34,7 @@
 	export let doesNotSetThumbnailImg = false;
 
 	$: fullTitle = title === 'REVATI' ? title : PAGE_FULL_TITLE_PART + title;
-	const absThumbnailPath = SITE_URL + '/images/logos/revati/header_mini.png';
+	const absThumbnailPath = SITE_URL + '/images/logos/revati/header_mini_oxipng.png';
 </script>
 
 <svelte:head>

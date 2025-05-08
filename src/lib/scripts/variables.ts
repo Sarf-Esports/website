@@ -31,3 +31,6 @@ export const SITE_URL = 'https://revati.jp';
  * ```
  */
 export const PAGE_FULL_TITLE_PART = 'REVATI | ';
+
+/** The absolute path of `header_mini_1200x600.webp`. */
+export const HEADER_1200x600_PATH = '/images/logos/revati/header_mini_1200x600.webp?v=2';
