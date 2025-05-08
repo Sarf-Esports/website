@@ -88,7 +88,7 @@
 	<meta name="author" content="Rinrin.rs <rinrin0413.valley@gmail.com>, GEN3987" />
 	<meta name="copyright" content={COPYRIGHT} />
 
-	<link rel="icon" href="/images/logos/revati/icon_180px_oxipng.png?v=3" />
+	<link rel="icon" href="/images/logos/revati/icon_180px_oxipng.png?v=4" />
 </svelte:head>
 
 <noscript class="global-noscript">
