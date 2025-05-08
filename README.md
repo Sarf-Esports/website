@@ -4,7 +4,7 @@
 ###### 俺だけ入れる【最強プロeスポーツチーム】で宇宙最強〜一日中ゲームをして引きこもる低学歴ニートの俺、実は家族から見放された全一プロeスポーツ選手の生まれ変わりだった。俺にだけ使えるUSSRランク級最強キーボードと1000円マウスで宇宙で最強のeスポーツ選手となる～俺にだけある最強神スキルで無双したら垢BAN食らったので引退します～
 *~+-. -->
 <p align="center">
-	<img src="https://revati.jp/images/logos/revati/icon_180px_oxipng.png" alt="REVATI" width="86" />
+	<img src="https://revati.jp/images/logos/revati/header_mini_oxipng.png" alt="REVATI" width="192" />
 	<br />
 	<a href="https://revati.jp">revati.jp</a>
 </p>

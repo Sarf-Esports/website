@@ -8,7 +8,7 @@
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { ArticleId } from '$lib/scripts/ArticleId';
-	import { SITE_URL } from '$lib/scripts/variables';
+	import { HEADER_1200x600_PATH, SITE_URL } from '$lib/scripts/variables';
 	import { _, date as dateI18n } from 'svelte-i18n';
 
 	export let data: PageData;
@@ -30,7 +30,7 @@
 	$: hasThumbnailImg = thumbnailImgFmt !== null;
 	$: thumbnailImgPath = hasThumbnailImg
 		? `/images/news/thumbnails/${slug}.${thumbnailImgFmt}`
-		: '/images/logos/revati/header_1200x600.webp';
+		: HEADER_1200x600_PATH;
 	$: absThumbnailImgPath = SITE_URL + thumbnailImgPath;
 
 	$: date = willRedirect ? null : id.date;
