@@ -12,8 +12,10 @@
 	<p class="copyright">{COPYRIGHT}</p>
 	<div>
 		<a href="/privacy">Privacy</a><a href="mailto:{SOCIALS.email}">Contact</a><a
-			href="https://github.com/Sarf-Esports/website">Source</a
-		>
+			href="/feed"
+			target="_blank"
+			class="no-after-icn">Feed</a
+		><a href="https://github.com/Sarf-Esports/website">Source</a>
 	</div>
 	<div class="socials"><Socials /></div>
 	<div class="lang-btn"><LangSwitcher /></div>

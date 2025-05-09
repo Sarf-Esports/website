@@ -37,6 +37,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"sass": "^1.57.1"
+		"@types/uuid": "^10.0.0",
+		"sass": "^1.57.1",
+		"uuid": "^11.1.0"
 	}
 }

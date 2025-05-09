@@ -21,7 +21,8 @@ const CLOUDFLARE_ROUTES_EXCLUDE = [
 	'/privacy',
 	'/api/articles/thumbnail-imgs',
 	'/sitemap.xml',
-	'/robots.txt'
+	'/robots.txt',
+	'/feed'
 ];
 
 /** @type {import('@sveltejs/kit').Config} */
