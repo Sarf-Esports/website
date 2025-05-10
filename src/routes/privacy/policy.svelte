@@ -19,8 +19,9 @@
 	</ul>
 	<p>
 		{$_('privacy.policy.1.5')}
-		<a href="https://cloudflare.com/web-analytics">Cloudflare Web Analytics</a>
-		{$_('privacy.policy.1.6')}
+		<a href="https://cloudflare.com/web-analytics">Cloudflare Web Analytics</a>{$_(
+			'privacy.policy.1.6'
+		)}
 	</p>
 
 	<h2 id="policy2">2. {$_('privacy.policy.2.0')}</h2>
