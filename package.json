@@ -13,32 +13,32 @@
 		"article": "tsx assets/scripts/create-article.ts"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-cloudflare": "^3.0.0",
-		"@sveltejs/kit": "^2.20.6",
-		"@sveltejs/vite-plugin-svelte": "^3.0.0",
-		"@types/node": "^22.7.4",
-		"@types/nprogress": "^0.2.3",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
-		"mdsvex": "^0.11.0",
-		"nprogress": "^0.2.0",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
+		"svelte-check": "^3.6.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"@sveltejs/adapter-cloudflare": "^3.0.0",
+		"@sveltejs/kit": "^2.20.6",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/node": "^22.7.4",
+		"@types/nprogress": "^0.2.3",
+		"@types/uuid": "^10.0.0",
+		"mdsvex": "^0.11.0",
+		"nprogress": "^0.2.0",
+		"sass": "^1.57.1",
 		"svelte": "^4.2.19",
-		"svelte-check": "^3.6.0",
 		"svelte-i18n": "^4.0.0",
 		"tslib": "^2.4.1",
 		"tsx": "^4.19.1",
 		"typescript": "^5.0.0",
+		"uuid": "^11.1.0",
 		"vite": "^5.4.19"
-	},
-	"type": "module",
-	"dependencies": {
-		"@types/uuid": "^10.0.0",
-		"sass": "^1.57.1",
-		"uuid": "^11.1.0"
 	}
 }
