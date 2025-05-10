@@ -2,7 +2,7 @@
 
 import type { RequestHandler } from './$types';
 import { fetchArticles } from '$lib/scripts/fetchers';
-import { SITE_URL, PAGE_FULL_TITLE_PART, COPYRIGHT } from '$lib/scripts/variables';
+import { SITE_URL, PAGE_FULL_TITLE_PART, COPYRIGHT, SOCIALS } from '$lib/scripts/variables';
 import { v5 as uuidV5 } from 'uuid';
 
 export const prerender = true;
@@ -61,6 +61,11 @@ async function body() {
     <id>urn:uuid:${FEED_UUID}</id>
     <title>${PAGE_FULL_TITLE_PART}News</title>
     <updated>${new Date().toISOString()}</updated>
+    <author>
+        <name>REVATI</name>
+        <email>${SOCIALS.email}</email>
+        <uri>${SITE_URL}</uri>
+    </author>
     <link rel="self" href="${SITE_URL}/feed" />
     <link rel="alternate" href="${SITE_URL}" />
     <icon>${SITE_URL}/favicon.ico</icon>
