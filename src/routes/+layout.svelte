@@ -9,7 +9,7 @@
 	import NProgress from 'nprogress';
 	import 'nprogress/nprogress.css';
 	import { navigating, page } from '$app/stores';
-	import { COPYRIGHT, SITE_URL } from '$lib/scripts/variables';
+	import { COPYRIGHT, SITE_URL, PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
 	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
@@ -89,6 +89,12 @@
 	<meta name="copyright" content={COPYRIGHT} />
 
 	<link rel="icon" href="/images/logos/revati/icon_180px_oxipng.png?v=4" />
+	<link
+		rel="alternate"
+		href="/feed"
+		type="application/atom+xml"
+		title="{PAGE_FULL_TITLE_PART}News"
+	/>
 </svelte:head>
 
 <noscript class="global-noscript">
