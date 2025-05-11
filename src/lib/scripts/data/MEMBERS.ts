@@ -113,19 +113,6 @@ export const MEMBER_LISTS: {
 				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
 			},
 			{
-				memberName: 'Hofac',
-				icon: 'hofac.webp',
-				role: 'Player',
-				country: 'kr',
-				birthday: { year: 2005, month: 1, day: 27 },
-				age: null,
-				twitter: 'HofacOW',
-				youtube: '@ahoneyfactory9887',
-				twitch: 'hofac_ow',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['hofac']
-			},
-			{
 				memberName: 'osato',
 				icon: null,
 				role: 'Player',
