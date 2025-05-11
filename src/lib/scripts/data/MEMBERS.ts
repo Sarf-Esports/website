@@ -113,6 +113,18 @@ export const MEMBER_LISTS: {
 				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
 			},
 			{
+				memberName: 'K4NE',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: { year: 2008, month: 4, day: 29 },
+				age: null,
+				twitter: 'k4ne_ow',
+				youtube: '@OW_k4nE',
+				twitch: null,
+				homepage: 'https://chzzk.naver.com'
+			},
+			{
 				memberName: 'osato',
 				icon: null,
 				role: 'Player',
@@ -122,6 +134,18 @@ export const MEMBER_LISTS: {
 				twitter: 'osato_ow',
 				youtube: '@osato_ow',
 				twitch: 'osato_fps',
+				homepage: null
+			},
+			{
+				memberName: 'rohan',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'dian_rohan87823',
+				youtube: null,
+				twitch: null,
 				homepage: null
 			},
 			{
