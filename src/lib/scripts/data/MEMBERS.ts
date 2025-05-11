@@ -113,17 +113,16 @@ export const MEMBER_LISTS: {
 				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
 			},
 			{
-				memberName: 'Hofac',
-				icon: 'hofac.webp',
+				memberName: 'K4NE',
+				icon: null,
 				role: 'Player',
 				country: 'kr',
-				birthday: { year: 2005, month: 1, day: 27 },
+				birthday: { year: 2008, month: 4, day: 29 },
 				age: null,
-				twitter: 'HofacOW',
-				youtube: '@ahoneyfactory9887',
-				twitch: 'hofac_ow',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['hofac']
+				twitter: 'k4ne_ow',
+				youtube: '@OW_k4nE',
+				twitch: null,
+				homepage: 'https://chzzk.naver.com'
 			},
 			{
 				memberName: 'osato',
@@ -135,6 +134,18 @@ export const MEMBER_LISTS: {
 				twitter: 'osato_ow',
 				youtube: '@osato_ow',
 				twitch: 'osato_fps',
+				homepage: null
+			},
+			{
+				memberName: 'rohan',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'dian_rohan87823',
+				youtube: null,
+				twitch: null,
 				homepage: null
 			},
 			{
