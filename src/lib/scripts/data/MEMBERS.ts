@@ -141,7 +141,7 @@ export const MEMBER_LISTS: {
 				icon: null,
 				role: 'Player',
 				country: 'jp',
-				birthday: null,
+				birthday: { year: 2003, month: 3, day: 2 },
 				age: null,
 				twitter: 'dian_rohan87823',
 				youtube: null,
