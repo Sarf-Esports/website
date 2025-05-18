@@ -515,6 +515,18 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'きゅうりおいしい',
+				icon: 'kyuurioisii.webp',
+				role: 'Streamer',
+				country: 'jp',
+				birthday: { year: null, month: 11, day: 11 },
+				age: null,
+				twitter: 'kyuurioisii333',
+				youtube: null,
+				twitch: 'kyuurioisii333',
+				homepage: 'https://lit.link/kyuurioisii333'
+			},
+			{
 				memberName: 'れるにゃ',
 				icon: 'relle.webp',
 				role: 'MCBE Map Creator',
@@ -525,6 +537,30 @@ export const MEMBER_LISTS: {
 				youtube: '@relle3674',
 				twitch: null,
 				homepage: null
+			},
+			{
+				memberName: '翠羽めもり',
+				icon: 'suiumemori.webp',
+				role: 'Streamer',
+				country: 'jp',
+				birthday: { year: null, month: 7, day: 22 },
+				age: null,
+				twitter: 'lO7zZl',
+				youtube: '@memori2851',
+				twitch: 'lo7zzl',
+				homepage: 'https://suiumemori.fanbox.cc/'
+			},
+			{
+				memberName: '魔灰えん',
+				icon: 'makaien.webp',
+				role: 'Streamer',
+				country: 'jp',
+				birthday: { year: null, month: 5, day: 5 },
+				age: null,
+				twitter: 'makaien_vtuber',
+				youtube: '@makaien_vtuber',
+				twitch: 'makaien_vtuber',
+				homepage: 'https://lit.link/makaien'
 			}
 		]
 	}
