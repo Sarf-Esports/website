@@ -470,20 +470,6 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: 'yotsuhamil',
 				homepage: null
-			},
-			// ▲ 選手
-			// ▼ コーチ
-			{
-				memberName: 'nerope',
-				icon: null,
-				role: 'Coach',
-				country: 'jp',
-				birthday: { year: 1998, month: 3, day: 15 },
-				age: null,
-				twitter: 'ne_rope76195',
-				youtube: null,
-				twitch: 'nerope1221',
-				homepage: null
 			}
 		]
 	},
