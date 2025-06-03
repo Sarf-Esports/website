@@ -458,18 +458,6 @@ export const MEMBER_LISTS: {
 				youtube: '@k0uh862',
 				twitch: 'kxuh_ttv',
 				homepage: null
-			},
-			{
-				memberName: '四葉みる',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'Yotsuha_Mil',
-				youtube: null,
-				twitch: 'yotsuhamil',
-				homepage: null
 			}
 		]
 	},
