@@ -477,18 +477,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'ZUN',
-				icon: 'ow_zundamon.webp',
-				role: 'YouTuber',
-				country: 'jp',
-				birthday: { year: null, month: 1, day: 7 },
-				age: null,
-				twitter: 'OWzundamon',
-				youtube: '@overwatch9753',
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: 'きゅうりおいしい',
 				icon: 'kyuurioisii.webp',
 				role: 'Streamer',
