@@ -244,18 +244,6 @@ export const MEMBER_LISTS: {
 		divisionName: 'Overwatch Academy',
 		members: [
 			{
-				memberName: 'Another',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 10, day: 25 },
-				age: null,
-				twitter: 'Another3354',
-				youtube: null,
-				twitch: 'another_1025',
-				homepage: null
-			},
-			{
 				memberName: 'hotaro',
 				icon: null,
 				role: 'Player',
