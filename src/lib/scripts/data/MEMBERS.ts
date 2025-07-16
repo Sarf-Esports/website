@@ -436,6 +436,18 @@ export const MEMBER_LISTS: {
 		divisionName: 'Apex',
 		members: [
 			{
+				memberName: 'kiwamyX',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: { year: 2007, month: 4, day: 30 },
+				age: null,
+				twitter: 'lozexyz111',
+				youtube: '@kiwami7140',
+				twitch: 'kiwamyx',
+				homepage: null
+			},
+			{
 				memberName: 'Kxuh',
 				icon: 'kxuh.webp',
 				role: 'Player',
@@ -445,6 +457,32 @@ export const MEMBER_LISTS: {
 				twitter: 'Lilx_zZc',
 				youtube: '@k0uh862',
 				twitch: 'kxuh_ttv',
+				homepage: null
+			},
+			{
+				memberName: 'Suy',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: { year: 2003, month: 10, day: 11 },
+				age: null,
+				twitter: 'Suy_On_Fire',
+				youtube: '@Suy_1203',
+				twitch: null,
+				homepage: null
+			},
+			// ▲ 選手
+			// ▼ コーチ
+			{
+				memberName: 'Allice',
+				icon: null,
+				role: 'Coach',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'GGGallice',
+				youtube: null,
+				twitch: 'kyarakonn142',
 				homepage: null
 			}
 		]
