@@ -4,7 +4,7 @@
 // ＊ `BREAKPOINT_HB = $bp-hamburger-btn - 1`
 // ＊ numerical value of `BREAKPOINT_HB` = `$bp-hamburger-btn` - 1
 /** Breakpoint for media queries for the hamburger button. */
-export const BREAKPOINT_HB = '(max-width: 881px)';
+export const BREAKPOINT_HB = '(max-width: 761px)';
 
 /** Copyright notice. */
 export const COPYRIGHT = '© 2022 - 2025 REVATI';
