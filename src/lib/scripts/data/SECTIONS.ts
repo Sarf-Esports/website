@@ -5,7 +5,7 @@ export const SECTIONS = [
 	'news',
 	'teams',
 	// 'coaching',
-	'goods',
+	// 'goods',
 	'sponsors',
 	'privacy policy'
 ] as const;

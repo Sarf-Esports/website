@@ -8,7 +8,7 @@
 	import NewsList from '$lib/components/news/NewsList.svelte';
 	import Teams from '$lib/components/home/teams/Teams.svelte';
 	// import Coaching from '$lib/components/home/coaching/Coaching.svelte';
-	import Goods from '$lib/components/home/Goods.svelte';
+	// import Goods from '$lib/components/home/Goods.svelte';
 	import Sponsors from '$lib/components/home/Sponsors.svelte';
 
 	import type { PageData } from './$types';
@@ -71,12 +71,12 @@
 	</section>
 </div> -->
 
-<div class="container">
+<!-- <div class="container">
 	<section id="goods">
 		<SectionTitle name="goods" />
 		<div class="content"><Goods /></div>
 	</section>
-</div>
+</div> -->
 
 <div class="container">
 	<section id="sponsors">

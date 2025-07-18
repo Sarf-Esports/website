@@ -10,5 +10,12 @@
 //
 // - `$bp-low-height` Sass variable in `/src/lib/stylesheets/variables/_mixin.scss`
 // A threshold value for the drawer menu to switch to a low height style.
-export const HEADER_ITEMS = ['about', 'news', 'teams', 'goods', 'sponsors', 'contact'];
+export const HEADER_ITEMS = [
+	'about',
+	'news',
+	'teams',
+	// 'goods',
+	'sponsors',
+	'contact'
+];
 export const NON_SECTION_ITEMS = ['contact'];
