@@ -333,6 +333,18 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'Sleepy',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: null, month: 11, day: 29 },
+				age: null,
+				twitter: 'ss_s1eepy',
+				youtube: null,
+				twitch: 'ss_s1eepy',
+				homepage: null
+			},
+			{
 				memberName: 'ToT',
 				icon: null,
 				role: 'Player',
