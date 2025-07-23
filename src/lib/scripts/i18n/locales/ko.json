@@ -111,8 +111,9 @@
 		"privacyPolicy": "Privacy Policy",
 		"policy": {
 			"desc": [
-				"REVATI (Hereinafter called “Our team”) and",
-				"(Hereinafter called “Our website”) will appropriately protect user's personal information and manage them based on following policy."
+				"REVATI and its affiliated organization REVATI Studio (hereinafter collectively, “Our team”), as well as the websites that are operated by our team including ",
+				" and ",
+				" (hereinafter collectively, “Our website”), will appropriately protect users' personal information and manage it based on the following policy."
 			],
 			"1": [
 				"About collecting personal data",
@@ -156,10 +157,13 @@
 			"6": [
 				"About the use of Cookie",
 				"Our website is currently not using Cookie. When using Cookie, we will state the purpose and detail on this privacy policy and properly acquire consent from the users.",
-				"However, some pages on our website contain embedded content from",
+				"However, some pages on our website contain embedded content from external services such as",
 				" (",
-				"). As a result, SUZURI may collect access information. For more details, please refer to SUZURI's \"",
+				") and",
+				" (",
+				"). As a result, these services may collect access information. For more details, please refer to SUZURI's \"",
 				"Site Policy",
+				"\" and Twitter Developer Platform's \"",
 				"\" page."
 			],
 			"7": [

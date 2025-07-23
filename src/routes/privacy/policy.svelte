@@ -6,8 +6,10 @@
 
 <div>
 	<p>
-		{$_('privacy.policy.desc.0')} <a href="https://revati.jp">revati.jp</a>
-		{$_('privacy.policy.desc.1')}
+		{$_('privacy.policy.desc.0')}<a href="https://revati.jp">revati.jp</a>{$_(
+			'privacy.policy.desc.1'
+		)}<a href="https://studio.revati.jp">studio.revati.jp</a>
+		{$_('privacy.policy.desc.2')}
 	</p>
 
 	<h2 id="policy1">1. {$_('privacy.policy.1.0')}</h2>
