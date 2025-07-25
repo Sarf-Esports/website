@@ -527,6 +527,18 @@ export const MEMBER_LISTS: {
 				homepage: 'https://lit.link/kyuurioisii333'
 			},
 			{
+				memberName: 'ささかま',
+				icon: 'sskmovo.webp',
+				role: 'Streamer',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'sskmovo',
+				youtube: null,
+				twitch: 'nidonesiyoo',
+				homepage: 'https://skeb.jp/@sskmovo'
+			},
+			{
 				memberName: 'れるにゃ',
 				icon: 'relle.webp',
 				role: 'MCBE Map Creator',
@@ -561,6 +573,18 @@ export const MEMBER_LISTS: {
 				youtube: '@makaien_vtuber',
 				twitch: 'makaien_vtuber',
 				homepage: 'https://lit.link/makaien'
+			},
+			{
+				memberName: '美作小夜子',
+				icon: 'mimasaka.webp',
+				role: 'Streamer & Creator',
+				country: 'jp',
+				birthday: { year: null, month: 7, day: 4 },
+				age: null,
+				twitter: '345mimasaka',
+				youtube: null,
+				twitch: '345mimasaka_vt',
+				homepage: 'https://lit.link/345mimasaka'
 			}
 		]
 	}
