@@ -225,18 +225,6 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: null,
 				homepage: null
-			},
-			{
-				memberName: 'NineLives',
-				icon: null,
-				role: 'Manager',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'NineLives_ow',
-				youtube: null,
-				twitch: 'ninelives_ow',
-				homepage: null
 			}
 		]
 	},
@@ -313,6 +301,20 @@ export const MEMBER_LISTS: {
 				twitter: 'XuanSeo_OW',
 				youtube: null,
 				twitch: 'XuanSeo',
+				homepage: null
+			},
+			// ▲ 選手
+			// ▼ マネージャー
+			{
+				memberName: 'NineLives',
+				icon: null,
+				role: 'Manager',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'NineLives_ow',
+				youtube: null,
+				twitch: 'ninelives_ow',
 				homepage: null
 			}
 		]
