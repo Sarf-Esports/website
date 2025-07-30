@@ -100,19 +100,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'HESTY',
-				icon: 'hesty.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 1999, month: 9, day: 17 },
-				age: null,
-				twitter: '__Hestyow',
-				youtube: null,
-				twitch: 'hesty_ow',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
-			},
-			{
 				memberName: 'K4NE',
 				icon: null,
 				role: 'Player',
@@ -304,6 +291,21 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			// ▲ 選手
+			// ▼ コーチ
+			{
+				memberName: 'HESTY',
+				icon: 'hesty.webp',
+				role: 'Coach',
+				country: 'jp',
+				birthday: { year: 1999, month: 9, day: 17 },
+				age: null,
+				twitter: '__Hestyow',
+				youtube: null,
+				twitch: 'hesty_ow',
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
+			},
+			// ▲ コーチ
 			// ▼ マネージャー
 			{
 				memberName: 'NineLives',
