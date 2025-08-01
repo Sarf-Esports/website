@@ -279,18 +279,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'YEN',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 12, day: 23 },
-				age: null,
-				twitter: 'yen_0w',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: 'XuanSeo',
 				icon: null,
 				role: 'Player',
@@ -300,6 +288,18 @@ export const MEMBER_LISTS: {
 				twitter: 'XuanSeo_OW',
 				youtube: null,
 				twitch: 'XuanSeo',
+				homepage: null
+			},
+			{
+				memberName: 'YEN',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: null, month: 12, day: 23 },
+				age: null,
+				twitter: 'yen_0w',
+				youtube: null,
+				twitch: null,
 				homepage: null
 			},
 			{
