@@ -255,6 +255,18 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'Sorasuke',
+				icon: null,
+				role: null,
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'NotSorasuke',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				memberName: 'tino',
 				icon: null,
 				role: 'Player',
@@ -288,6 +300,30 @@ export const MEMBER_LISTS: {
 				twitter: 'XuanSeo_OW',
 				youtube: null,
 				twitch: 'XuanSeo',
+				homepage: null
+			},
+			{
+				memberName: 'zenith',
+				icon: null,
+				role: null,
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'zenith_ow_',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'かぼちゃpumpkin',
+				icon: null,
+				role: null,
+				country: null,
+				birthday: { year: null, month: 1, day: 1 },
+				age: null,
+				twitter: 'pumpkin_hk',
+				youtube: null,
+				twitch: 'pumpkin_kabotyaaa',
 				homepage: null
 			},
 			// ▲ 選手
