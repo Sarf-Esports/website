@@ -540,6 +540,71 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
+		divisionName: 'Rainbow Six Siege',
+		members: [
+			{
+				memberName: 'itos0n',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: { year: null, month: 12, day: 15 },
+				age: null,
+				twitter: 'itoson1415',
+				youtube: null,
+				twitch: 'itos0n1415',
+				homepage: null
+			},
+			{
+				memberName: 'MeeeL',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: { year: null, month: 8, day: 16 },
+				age: null,
+				twitter: 'MeeeL_cc',
+				youtube: 'UCRLj16xVlr4nMV-0UauZYHw',
+				twitch: 'meeel0816',
+				homepage: null
+			},
+			{
+				memberName: 's4kuya3',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: { year: null, month: 9, day: 11 },
+				age: null,
+				twitter: 's4kuya3',
+				youtube: null,
+				twitch: 's4kuya3',
+				homepage: null
+			},
+			{
+				memberName: 'しぇりー',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: { year: null, month: 8, day: 5 },
+				age: null,
+				twitter: 'ShqIIy',
+				youtube: null,
+				twitch: 'shellychaaan',
+				homepage: null
+			},
+			{
+				memberName: 'かばお',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: { year: null, month: 5, day: 13 },
+				age: null,
+				twitter: 'kabao_8989',
+				youtube: null,
+				twitch: 'kabao_dayo',
+				homepage: null
+			}
+		]
+	},
+	{
 		divisionName: 'Content Creator',
 		members: [
 			{
@@ -595,7 +660,7 @@ export const MEMBER_LISTS: {
 				icon: 'suiumemori.webp',
 				role: 'Streamer',
 				country: 'jp',
-				birthday: { year: null, month: 7, day: 22 },
+				birthday: { year: 2002, month: 7, day: 22 },
 				age: null,
 				twitter: 'lO7zZl',
 				youtube: '@memori2851',
@@ -607,7 +672,7 @@ export const MEMBER_LISTS: {
 				icon: 'makaien.webp',
 				role: 'Streamer',
 				country: 'jp',
-				birthday: { year: null, month: 5, day: 5 },
+				birthday: { year: 2002, month: 5, day: 5 },
 				age: null,
 				twitter: 'makaien_vtuber',
 				youtube: '@makaien_vtuber',
@@ -619,7 +684,7 @@ export const MEMBER_LISTS: {
 				icon: 'mimasaka.webp',
 				role: 'Streamer & Creator',
 				country: 'jp',
-				birthday: { year: null, month: 7, day: 4 },
+				birthday: { year: 2002, month: 7, day: 4 },
 				age: null,
 				twitter: '345mimasaka',
 				youtube: null,
