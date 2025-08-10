@@ -88,30 +88,6 @@ export const MEMBER_LISTS: {
 		divisionName: 'Overwatch',
 		members: [
 			{
-				memberName: 'AZENT',
-				icon: null,
-				role: 'Player',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'AZENT_OW',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'K4NE',
-				icon: null,
-				role: 'Player',
-				country: 'kr',
-				birthday: { year: 2008, month: 4, day: 29 },
-				age: null,
-				twitter: 'k4ne_ow',
-				youtube: '@OW_k4nE',
-				twitch: null,
-				homepage: 'https://chzzk.naver.com'
-			},
-			{
 				memberName: 'osato',
 				icon: null,
 				role: 'Player',
@@ -121,18 +97,6 @@ export const MEMBER_LISTS: {
 				twitter: 'osato_ow',
 				youtube: '@osato_ow',
 				twitch: 'osato_fps',
-				homepage: null
-			},
-			{
-				memberName: 'rohan',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2003, month: 3, day: 2 },
-				age: null,
-				twitter: 'dian_rohan87823',
-				youtube: null,
-				twitch: null,
 				homepage: null
 			},
 			{
@@ -162,32 +126,6 @@ export const MEMBER_LISTS: {
 				gearsAndSettings: GEARS_AND_SETTINGS['hakaisinkotaro']
 			},
 			// ▲ 選手
-			// ▼ コーチ
-			{
-				memberName: 'saeyeon',
-				icon: null,
-				role: 'Coach',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'saeyeonow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'メンヘラ',
-				icon: null,
-				role: 'Coach',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'menheraa0_0',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			// ▲ コーチ
 			// ▼ マネージャー
 			{
 				memberName: 'Fickle',
@@ -199,18 +137,6 @@ export const MEMBER_LISTS: {
 				twitter: 'Fickle_OW',
 				youtube: null,
 				twitch: 'fickle_ow',
-				homepage: null
-			},
-			{
-				memberName: 'GENESIS',
-				icon: null,
-				role: 'Manager',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'GENES1S_OW',
-				youtube: null,
-				twitch: null,
 				homepage: null
 			}
 		]
