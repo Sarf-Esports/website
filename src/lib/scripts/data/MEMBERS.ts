@@ -605,6 +605,133 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
+		divisionName: 'Marvel Rivals',
+		members: [
+			{
+				memberName: 'Enzo',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'EnzoSG_',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'ved',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'hippoevents2024',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'yatoru',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'oh_mazika',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'あかま',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'akamafps',
+				youtube: null,
+				twitch: 'akama_fps',
+				homepage: null
+			},
+			{
+				memberName: 'うーりー',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'unagidazo1',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'ひろ',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: { year: null, month: 5, day: 22 },
+				age: null,
+				twitter: 'qou_sy8go',
+				youtube: '@alba1453',
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'りぜ',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'uyuyuUwU8',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'れいちぇる',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'rei_15399',
+				youtube: null,
+				twitch: 'rei_1539',
+				homepage: null
+			},
+			{
+				memberName: '終末論',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: '4xevel',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			// ▲ 選手
+			// ▼ コーチ
+			{
+				memberName: 'mepisto',
+				icon: null,
+				role: 'Coach',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'mepisto_mr',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			}
+		]
+	},
+	{
 		divisionName: 'Content Creator',
 		members: [
 			{
