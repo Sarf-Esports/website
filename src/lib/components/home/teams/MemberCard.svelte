@@ -46,7 +46,7 @@
 			{#if age === null && birthday !== null && birthday.year !== null}
 				{calcAge(new Date(birthday.year, birthday.month - 1, birthday.day))}
 			{:else if age !== null}
-				{age + ` (${$_('w.selfStyled')})`}
+				{age}
 			{:else}
 				<MaterialIcon {...LOCK_ICON} />
 			{/if}
