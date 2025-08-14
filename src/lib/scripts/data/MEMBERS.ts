@@ -606,18 +606,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'りぜ',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'uyuyuUwU8',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: 'れいちぇる',
 				icon: null,
 				role: 'Player',
