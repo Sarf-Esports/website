@@ -48,7 +48,6 @@
 //     // 年齢 (任意)
 //     // 上の `birthday` フィールドで誕生日を年まで指定している場合は、
 //     // 自動で計算(約1日の誤差あり)されるため `null` で問題はありません。
-//     // 自動計算の上書きをすると、「(自称)」と付きます。
 //     age: null,
 //
 //     // X(旧 Twitter) アカウントの ID (任意)
@@ -701,7 +700,7 @@ export const MEMBER_LISTS: {
 				icon: 'suiumemori.webp',
 				role: 'Streamer',
 				country: 'jp',
-				birthday: { year: 2002, month: 7, day: 22 },
+				birthday: { year: null, month: 7, day: 22 },
 				age: null,
 				twitter: 'lO7zZl',
 				youtube: '@memori2851',
@@ -713,8 +712,8 @@ export const MEMBER_LISTS: {
 				icon: 'makaien.webp',
 				role: 'Streamer',
 				country: 'jp',
-				birthday: { year: 2002, month: 5, day: 5 },
-				age: null,
+				birthday: { year: null, month: 5, day: 5 },
+				age: 666.2,
 				twitter: 'makaien_vtuber',
 				youtube: '@makaien_vtuber',
 				twitch: 'makaien_vtuber',
@@ -725,7 +724,7 @@ export const MEMBER_LISTS: {
 				icon: 'mimasaka.webp',
 				role: 'Streamer & Creator',
 				country: 'jp',
-				birthday: { year: 2002, month: 7, day: 4 },
+				birthday: { year: null, month: 7, day: 4 },
 				age: null,
 				twitter: '345mimasaka',
 				youtube: null,
