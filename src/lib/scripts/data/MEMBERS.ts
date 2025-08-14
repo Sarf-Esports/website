@@ -714,7 +714,7 @@ export const MEMBER_LISTS: {
 				role: 'Streamer',
 				country: 'jp',
 				birthday: { year: null, month: 5, day: 5 },
-				age: null,
+				age: 666.2,
 				twitter: 'makaien_vtuber',
 				youtube: '@makaien_vtuber',
 				twitch: 'makaien_vtuber',
