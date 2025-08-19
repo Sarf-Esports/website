@@ -87,6 +87,42 @@ export const MEMBER_LISTS: {
 		divisionName: 'Overwatch',
 		members: [
 			{
+				memberName: 'BAMBIE',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'bambie_ow',
+				youtube: null,
+				twitch: 'bambie_ow',
+				homepage: null
+			},
+			{
+				memberName: 'HINIS4Ku',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'HINIS4Ku_ow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'm5ri',
+				icon: null,
+				role: 'Player',
+				country: 'us',
+				birthday: null,
+				age: null,
+				twitter: 'm5riOW',
+				youtube: null,
+				twitch: 'm5riow',
+				homepage: null
+			},
+			{
 				memberName: 'osato',
 				icon: null,
 				role: 'Player',
@@ -96,6 +132,30 @@ export const MEMBER_LISTS: {
 				twitter: 'osato_ow',
 				youtube: '@osato_ow',
 				twitch: 'osato_fps',
+				homepage: null
+			},
+			{
+				memberName: 'shisui',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'shisui_441',
+				youtube: null,
+				twitch: 'shisui_441',
+				homepage: null
+			},
+			{
+				memberName: 'STRIKE',
+				icon: 'strike.webp',
+				role: 'Player',
+				country: 'kr',
+				birthday: { year: 2008, month: 5, day: 31 },
+				age: 47,
+				twitter: 'strike_nise',
+				youtube: null,
+				twitch: 'owcstrike',
 				homepage: null
 			},
 			{
@@ -110,6 +170,18 @@ export const MEMBER_LISTS: {
 				twitch: 'nhzow',
 				homepage: null,
 				gearsAndSettings: GEARS_AND_SETTINGS['ninja_hamuzo']
+			},
+			{
+				memberName: 'はるを。',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'wo_33_',
+				youtube: null,
+				twitch: null,
+				homepage: null
 			},
 			{
 				memberName: '破壊神こたろ',
@@ -136,6 +208,18 @@ export const MEMBER_LISTS: {
 				twitter: 'Fickle_OW',
 				youtube: null,
 				twitch: 'fickle_ow',
+				homepage: null
+			},
+			{
+				memberName: 'N4rAKq',
+				icon: null,
+				role: 'Manager',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'N4rAKq_ow',
+				youtube: null,
+				twitch: 'n4rakq_ow',
 				homepage: null
 			}
 		]
@@ -647,18 +731,6 @@ export const MEMBER_LISTS: {
 	{
 		divisionName: 'Content Creator',
 		members: [
-			{
-				memberName: 'STRIKE',
-				icon: 'strike.webp',
-				role: 'Coach',
-				country: 'kr',
-				birthday: { year: 2008, month: 5, day: 31 },
-				age: 47,
-				twitter: '_Strikeow_',
-				youtube: null,
-				twitch: 'owcstrike',
-				homepage: null
-			},
 			{
 				memberName: 'きゅうりおいしい',
 				icon: 'kyuurioisii.webp',
