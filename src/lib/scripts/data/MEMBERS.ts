@@ -276,18 +276,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'tino',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 9, day: 29 },
-				age: null,
-				twitter: 'rqa_j',
-				youtube: null,
-				twitch: 'rqa_ow',
-				homepage: null
-			},
-			{
 				memberName: 'XuanSeo',
 				icon: null,
 				role: 'Player',
