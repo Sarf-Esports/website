@@ -598,18 +598,6 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: 'shellychaaan',
 				homepage: null
-			},
-			{
-				memberName: 'かばお',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 5, day: 13 },
-				age: null,
-				twitter: 'kabao_8989',
-				youtube: null,
-				twitch: 'kabao_dayo',
-				homepage: null
 			}
 		]
 	},
