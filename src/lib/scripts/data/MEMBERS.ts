@@ -276,18 +276,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'tino',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 9, day: 29 },
-				age: null,
-				twitter: 'rqa_j',
-				youtube: null,
-				twitch: 'rqa_ow',
-				homepage: null
-			},
-			{
 				memberName: 'XuanSeo',
 				icon: null,
 				role: 'Player',
@@ -597,18 +585,6 @@ export const MEMBER_LISTS: {
 				twitter: 'ShqIIy',
 				youtube: null,
 				twitch: 'shellychaaan',
-				homepage: null
-			},
-			{
-				memberName: 'かばお',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 5, day: 13 },
-				age: null,
-				twitter: 'kabao_8989',
-				youtube: null,
-				twitch: 'kabao_dayo',
 				homepage: null
 			}
 		]
