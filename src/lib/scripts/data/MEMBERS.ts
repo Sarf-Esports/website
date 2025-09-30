@@ -99,18 +99,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'HINIS4Ku',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'HINIS4Ku_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: 'm5ri',
 				icon: null,
 				role: 'Player',
