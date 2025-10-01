@@ -454,18 +454,6 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: 'clank_owl',
 				homepage: null
-			},
-			{
-				memberName: 'molly',
-				icon: null,
-				role: 'Coach',
-				country: 'us',
-				birthday: { year: 2004, month: 8, day: 18 },
-				age: null,
-				twitter: 'm5riOW',
-				youtube: '@m5riOW',
-				twitch: 'm5riow',
-				homepage: null
 			}
 		]
 	},
