@@ -12,11 +12,6 @@ export const SPONSORS: {
 	logo: string;
 }[] = [
 	{
-		name: 'ガチサプ',
-		url: 'https://gachisup.com',
-		logo: 'gachisup.webp'
-	},
-	{
 		name: 'XENOVA',
 		url: 'https://xenova.shop',
 		logo: 'xenova.webp'
