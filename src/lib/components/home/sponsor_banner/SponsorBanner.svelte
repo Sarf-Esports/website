@@ -31,25 +31,25 @@
 	// The interval index for the sponsor logos on wide screens.
 	// Must be greater than 200.
 	// Set the interval to be as narrow as is acceptable in the case of the minimum screen width (≈788) at which the banner does not switch for narrow screens.
-	$interval-on-wide: 230%;
+	$interval-on-wide: 201%;
 	// 狭い画面におけるスポンサーのロゴの間隔指数。
 	// 200% 超過である必要があります。
 	// 間隔の目安は、「iPhone SE (第2世代) の画面幅(≒375)」の際に、妥協できる限界の狭さ。
 	// The interval index for the sponsor logos on narrow screens.
 	// Must be greater than 200.
 	// Set the interval to be as narrow as is acceptable in the case of the screen width of the iPhone SE (2nd generation) (≈375).
-	$interval-on-narrow: 340%;
+	$interval-on-narrow: 210%;
 
 	// 広い画面においてバナーが一周するまでの期間。
 	// 間隔の目安は、「バナーが狭い画面用に切り替わらない最小の画面幅(≒788)」の際に、妥協できる限界の短さ。
 	// The duration for the banner to go around on wide screens.
 	// Set the duration to be as short as is acceptable in the case of the minimum screen width (≈788) at which the banner does not switch for narrow screens.
-	$duration-on-wide: 20s;
+	$duration-on-wide: 10s;
 	// 狭い画面においてバナーが一周するまでの期間。
 	// 間隔の目安は、「iPhone SE (第2世代) の画面幅(≒375)」の際に、妥協できる限界の短さ。
 	// The duration for the banner to go around on narrow screens.
 	// Set the duration to be as short as is acceptable in the case of the screen width of the iPhone SE (2nd generation) (≈375).
-	$duration-on-narrow: 30s;
+	$duration-on-narrow: 15s;
 
 	.banner-container {
 		background-color: #111111;
