@@ -92,6 +92,14 @@
 			"scaleWithResolution": "Scale with Resolution"
 		}
 	},
+	"creative": {
+		"desc": [
+			"Introducing ",
+			", our new creative studio 🚀",
+			"We are your one-stop solution for bringing any creative vision to life, covering everything from video and music production to design, translation, and web development, and more. We look forward to your inquiries."
+		],
+		"websiteLink": "Official website here"
+	},
 	"coaching": {
 		"desc": [
 			"This is an Overwatch 2 coaching project by Nyam Gaming & REVATI.",
