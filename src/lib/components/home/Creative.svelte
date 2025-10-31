@@ -39,6 +39,7 @@
 	span {
 		font-weight: 900;
 		letter-spacing: 0.5px;
+		white-space: nowrap;
 	}
 
 	a {
