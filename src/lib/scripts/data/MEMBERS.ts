@@ -343,121 +343,6 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
-		divisionName: "Overwatch Woman's",
-		members: [
-			{
-				memberName: 'Elty',
-				icon: null,
-				role: 'Player',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'elty_owo',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'Sleepy',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 11, day: 29 },
-				age: null,
-				twitter: 'ss_s1eepy',
-				youtube: null,
-				twitch: 'ss_s1eepy',
-				homepage: null
-			},
-			{
-				memberName: 'ToT',
-				icon: null,
-				role: 'Player',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'T0T_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'エマ',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'zen__ema',
-				youtube: '@エマ-p8r',
-				twitch: 'emao425',
-				homepage: null
-			},
-			{
-				memberName: 'てお',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 7, day: 29 },
-				age: null,
-				twitter: 'teo_kure5',
-				youtube: null,
-				twitch: 'teo_walkure',
-				homepage: null
-			},
-			{
-				memberName: 'まるこ',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'umya58n',
-				youtube: null,
-				twitch: 'umya58n',
-				homepage: null
-			},
-			{
-				memberName: '翆',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 2, day: 15 },
-				age: null,
-				twitter: 'suisan_ow',
-				youtube: null,
-				twitch: 'sui0zasso',
-				homepage: null
-			},
-			{
-				memberName: '瓜果めろん',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'melon_urika',
-				youtube: '@melonurika8543',
-				twitch: 'melon_urika',
-				homepage: null
-			},
-			// ▲ 選手
-			// ▼ コーチ
-			{
-				memberName: 'CLANK',
-				icon: 'clank.webp',
-				role: 'Coach',
-				country: 'jp',
-				birthday: { year: 1998, month: 7, day: 10 },
-				age: null,
-				twitter: 'clank_ccc',
-				youtube: null,
-				twitch: 'clank_owl',
-				homepage: null
-			}
-		]
-	},
-	{
 		divisionName: 'Apex',
 		members: [
 			{
@@ -568,6 +453,18 @@ export const MEMBER_LISTS: {
 	{
 		divisionName: 'Content Creator',
 		members: [
+			{
+				memberName: 'CLANK',
+				icon: 'clank.webp',
+				role: 'Streamer',
+				country: 'jp',
+				birthday: { year: 1998, month: 7, day: 10 },
+				age: null,
+				twitter: 'clank_ccc',
+				youtube: null,
+				twitch: 'clank_owl',
+				homepage: null
+			},
 			{
 				memberName: 'きゅうりおいしい',
 				icon: 'kyuurioisii.webp',
