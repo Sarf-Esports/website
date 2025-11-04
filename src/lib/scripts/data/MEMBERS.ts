@@ -325,20 +325,6 @@ export const MEMBER_LISTS: {
 				twitch: 'hesty_ow',
 				homepage: null,
 				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
-			},
-			// ▲ コーチ
-			// ▼ マネージャー
-			{
-				memberName: 'NineLives',
-				icon: null,
-				role: 'Manager',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'NineLives_ow',
-				youtube: null,
-				twitch: 'ninelives_ow',
-				homepage: null
 			}
 		]
 	},
