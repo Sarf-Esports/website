@@ -7,5 +7,6 @@ export const SECTIONS = [
 	// 'coaching',
 	// 'goods',
 	'sponsors',
-	'privacy policy'
+	'privacy policy',
+	'licenses'
 ] as const;
