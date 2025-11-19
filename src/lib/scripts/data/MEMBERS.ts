@@ -146,7 +146,8 @@ export const MEMBER_LISTS: {
 				twitch: 'owcstrike',
 				homepage: null
 			},
-			{ // Overwatch Academy 2nd 部門との兼任
+			{
+				// Overwatch Academy 2nd 部門との兼任
 				memberName: 'にんじゃはむぞー',
 				icon: 'ninja_hamuzo.webp',
 				role: 'Player',
@@ -393,7 +394,8 @@ export const MEMBER_LISTS: {
 			},
 			// ▲ 選手
 			// ▼ コーチ
-			{ // Overwatch 部門との兼任
+			{
+				// Overwatch 部門との兼任
 				memberName: 'にんじゃはむぞー',
 				icon: 'ninja_hamuzo.webp',
 				role: 'Coach',
