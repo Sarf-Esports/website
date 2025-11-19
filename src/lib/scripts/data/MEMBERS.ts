@@ -147,6 +147,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				// Overwatch Academy 2nd 部門との兼任
 				memberName: 'にんじゃはむぞー',
 				icon: 'ninja_hamuzo.webp',
 				role: 'Player',
@@ -197,23 +198,11 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: 'fickle_ow',
 				homepage: null
-			},
-			{
-				memberName: 'N4rAKq',
-				icon: null,
-				role: 'Manager',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'N4rAKq_ow',
-				youtube: null,
-				twitch: 'n4rakq_ow',
-				homepage: null
 			}
 		]
 	},
 	{
-		divisionName: 'Overwatch Academy',
+		divisionName: 'Overwatch Academy 1st',
 		members: [
 			{
 				memberName: 'hotaro',
@@ -237,18 +226,6 @@ export const MEMBER_LISTS: {
 				twitter: 'Luvica_Lore',
 				youtube: null,
 				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'MOL',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 8, day: 24 },
-				age: null,
-				twitter: 'moruka0824',
-				youtube: null,
-				twitch: 'mol_ow',
 				homepage: null
 			},
 			{
@@ -325,134 +302,124 @@ export const MEMBER_LISTS: {
 				twitch: 'hesty_ow',
 				homepage: null,
 				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
-			},
-			// ▲ コーチ
-			// ▼ マネージャー
-			{
-				memberName: 'NineLives',
-				icon: null,
-				role: 'Manager',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'NineLives_ow',
-				youtube: null,
-				twitch: 'ninelives_ow',
-				homepage: null
 			}
 		]
 	},
 	{
-		divisionName: "Overwatch Woman's",
+		divisionName: 'Overwatch Academy 2nd',
 		members: [
 			{
-				memberName: 'Elty',
+				memberName: 'chihuahua',
 				icon: null,
 				role: 'Player',
-				country: 'kr',
+				country: null,
 				birthday: null,
 				age: null,
-				twitter: 'elty_owo',
+				twitter: 'Smth_ow',
 				youtube: null,
 				twitch: null,
 				homepage: null
 			},
 			{
-				memberName: 'Sleepy',
+				memberName: 'FEARLESS',
 				icon: null,
 				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 11, day: 29 },
-				age: null,
-				twitter: 'ss_s1eepy',
-				youtube: null,
-				twitch: 'ss_s1eepy',
-				homepage: null
-			},
-			{
-				memberName: 'ToT',
-				icon: null,
-				role: 'Player',
-				country: 'kr',
+				country: null,
 				birthday: null,
 				age: null,
-				twitter: 'T0T_ow',
+				twitter: 'FEARLESS87f',
 				youtube: null,
 				twitch: null,
 				homepage: null
 			},
 			{
-				memberName: 'エマ',
+				memberName: 'MOL',
 				icon: null,
 				role: 'Player',
-				country: 'jp',
+				country: null,
+				birthday: { year: null, month: 8, day: 24 },
+				age: null,
+				twitter: 'moruka0824',
+				youtube: null,
+				twitch: 'mol_ow',
+				homepage: null
+			},
+			{
+				memberName: 'Ril',
+				icon: null,
+				role: 'Player',
+				country: null,
 				birthday: null,
 				age: null,
-				twitter: 'zen__ema',
-				youtube: '@エマ-p8r',
-				twitch: 'emao425',
-				homepage: null
-			},
-			{
-				memberName: 'てお',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 7, day: 29 },
-				age: null,
-				twitter: 'teo_kure5',
+				twitter: 'Ril7_ow',
 				youtube: null,
-				twitch: 'teo_walkure',
+				twitch: null,
 				homepage: null
 			},
 			{
-				memberName: 'まるこ',
+				memberName: 'Seungyeon',
 				icon: null,
 				role: 'Player',
-				country: 'jp',
+				country: null,
 				birthday: null,
 				age: null,
-				twitter: 'umya58n',
+				twitter: 'Seungyeon_ow',
 				youtube: null,
-				twitch: 'umya58n',
+				twitch: null,
 				homepage: null
 			},
 			{
-				memberName: '翆',
+				memberName: 'ギネス',
 				icon: null,
 				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 2, day: 15 },
-				age: null,
-				twitter: 'suisan_ow',
-				youtube: null,
-				twitch: 'sui0zasso',
-				homepage: null
-			},
-			{
-				memberName: '瓜果めろん',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
+				country: null,
 				birthday: null,
 				age: null,
-				twitter: 'melon_urika',
-				youtube: '@melonurika8543',
-				twitch: 'melon_urika',
+				twitter: 'Aiji_1014',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'しのたん',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'shlnoqun_ow',
+				youtube: null,
+				twitch: null,
 				homepage: null
 			},
 			// ▲ 選手
 			// ▼ コーチ
 			{
-				memberName: 'CLANK',
-				icon: 'clank.webp',
+				// Overwatch 部門との兼任
+				memberName: 'にんじゃはむぞー',
+				icon: 'ninja_hamuzo.webp',
 				role: 'Coach',
 				country: 'jp',
-				birthday: { year: 1998, month: 7, day: 10 },
+				birthday: { year: 2002, month: 11, day: 3 },
 				age: null,
-				twitter: 'clank_ccc',
+				twitter: 'ninja_hamuzo',
 				youtube: null,
-				twitch: 'clank_owl',
+				twitch: 'nhzow',
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['ninja_hamuzo']
+			},
+			// ▲ コーチ
+			// ▼ マネージャー
+			{
+				memberName: 'N4rAKq',
+				icon: null,
+				role: 'Manager',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'N4rAKq_ow',
+				youtube: null,
+				twitch: 'n4rakq_ow',
 				homepage: null
 			}
 		]
@@ -568,6 +535,18 @@ export const MEMBER_LISTS: {
 	{
 		divisionName: 'Content Creator',
 		members: [
+			{
+				memberName: 'CLANK',
+				icon: 'clank.webp',
+				role: 'Streamer',
+				country: 'jp',
+				birthday: { year: 1998, month: 7, day: 10 },
+				age: null,
+				twitter: 'clank_ccc',
+				youtube: null,
+				twitch: 'clank_owl',
+				homepage: null
+			},
 			{
 				memberName: 'きゅうりおいしい',
 				icon: 'kyuurioisii.webp',

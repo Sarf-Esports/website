@@ -13,11 +13,11 @@
 <footer inert={$isDrawerMenuOpened}>
 	<p class="copyright">{COPYRIGHT}</p>
 	<div>
-		<a href="/privacy">Privacy</a><a href="mailto:{SOCIALS.email}">Contact</a><a
-			href="/feed"
-			target="_blank"
-			class="no-after-icn">Feed</a
-		><a href="https://github.com/Sarf-Esports/website">Source</a>
+		<a href="/privacy">Privacy</a><a href="mailto:{SOCIALS.email}">Contact</a><a href="/licenses"
+			>Licenses</a
+		><a href="/feed" target="_blank" class="no-after-icn">Feed</a><a
+			href="https://github.com/Sarf-Esports/website">Source</a
+		>
 	</div>
 	<div class="socials"><Socials style="margin-top: 21px;" /></div>
 	<div>
@@ -37,6 +37,8 @@
 </footer>
 
 <style lang="scss">
+	@use '$lib/stylesheets/variables/mixin' as *;
+
 	footer {
 		// min-height: 24vh; // Is this necessary?
 		background-color: #0a0a0a;
@@ -57,7 +59,7 @@
 	}
 
 	a {
-		margin: 0 18px;
+		margin: 0 15px;
 
 		&:not(:hover, :focus) {
 			color: #eeeeee;
@@ -73,6 +75,13 @@
 
 		&:hover {
 			opacity: 0.8;
+		}
+	}
+
+	@include sp {
+		a {
+			margin-inline: 12px;
+			font-size: 15px;
 		}
 	}
 </style>
