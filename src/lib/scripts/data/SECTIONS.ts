@@ -4,6 +4,7 @@ export const SECTIONS = [
 	'about',
 	'news',
 	'teams',
+	'creative',
 	// 'coaching',
 	// 'goods',
 	'sponsors',

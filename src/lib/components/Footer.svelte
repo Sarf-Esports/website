@@ -6,6 +6,8 @@
 	import { isDrawerMenuOpened } from '$lib/scripts/stores';
 	import { COPYRIGHT } from '$lib/scripts/variables';
 	import { SOCIALS } from '$lib/scripts/variables';
+
+	const REVATI_STUDIO_TITLE = 'REVATI Studio（レバスタ）';
 </script>
 
 <footer inert={$isDrawerMenuOpened}>
@@ -17,7 +19,20 @@
 			href="https://github.com/Sarf-Esports/website">Source</a
 		>
 	</div>
-	<div class="socials"><Socials /></div>
+	<div class="socials"><Socials style="margin-top: 21px;" /></div>
+	<div>
+		<a
+			href="https://studio.revati.jp"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="no-after-icn"
+			><img
+				src="/images/logos/REVATI-Studio/250724_studio_logo_banner.webp"
+				alt={REVATI_STUDIO_TITLE}
+				title={REVATI_STUDIO_TITLE}
+			/></a
+		>
+	</div>
 	<div class="lang-btn"><LangSwitcher /></div>
 </footer>
 
@@ -25,7 +40,7 @@
 	@use '$lib/stylesheets/variables/mixin' as *;
 
 	footer {
-		min-height: 24vh;
+		// min-height: 24vh; // Is this necessary?
 		background-color: #0a0a0a;
 
 		.copyright {
@@ -49,6 +64,17 @@
 		&:not(:hover, :focus) {
 			color: #eeeeee;
 			text-decoration: none;
+		}
+	}
+
+	img {
+		width: 256px;
+		height: auto;
+		aspect-ratio: 4 / 1;
+		margin-bottom: 12px;
+
+		&:hover {
+			opacity: 0.8;
 		}
 	}
 
