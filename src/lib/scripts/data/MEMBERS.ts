@@ -81,6 +81,7 @@ import { GEARS_AND_SETTINGS } from './GEARS_AND_SETTINGS';
 
 export const MEMBER_LISTS: {
 	divisionName: string;
+	divisionSubName?: string;
 	members: Member[];
 }[] = [
 	{
@@ -203,6 +204,7 @@ export const MEMBER_LISTS: {
 	},
 	{
 		divisionName: 'Overwatch Academy 1st',
+		divisionSubName: 'HASTA',
 		members: [
 			{
 				memberName: 'hotaro',
@@ -307,6 +309,7 @@ export const MEMBER_LISTS: {
 	},
 	{
 		divisionName: 'Overwatch Academy 2nd',
+		divisionSubName: 'パチマリぽこぽこファイターズ',
 		members: [
 			{
 				memberName: 'chihuahua',

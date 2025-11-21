@@ -31,6 +31,14 @@ ul {
 	letter-spacing: -0.4px;
 }
 
+.division-sub-name {
+	font-size: 26px;
+	font-weight: 900;
+	margin-top: 0;
+	margin-bottom: 24px;
+	@include hideWhenNoJs;
+}
+
 .active {
 	background-color: $primary-color-pale-lighter;
 	color: $primary-color-darker-2;
@@ -46,10 +54,17 @@ ul {
 	}
 }
 
-h2 {
+.division-name {
 	font-size: 30px;
 	font-weight: 900;
 	margin-top: 42px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: -14px;
+	margin-bottom: 25px;
 }
 
 @include sp {

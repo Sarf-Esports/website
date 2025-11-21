@@ -42,6 +42,10 @@
 	{/each}
 </ul>
 
+{#if MEMBER_LISTS[currentDivisionIndex].divisionSubName !== undefined}
+	<h2 class="division-sub-name">{MEMBER_LISTS[currentDivisionIndex].divisionSubName}</h2>
+{/if}
+
 {#if currentDivisionMembers.length <= 0}
 	<p>Coming soon...</p>
 {/if}
@@ -62,8 +66,13 @@
 </Modal>
 
 <noscript>
-	{#each MEMBER_LISTS as { divisionName, members }}
-		<h2>{divisionName}</h2>
+	{#each MEMBER_LISTS as { divisionName, divisionSubName, members }}
+		<h2 class="division-name">
+			{divisionName}
+		</h2>
+		{#if divisionSubName !== undefined}
+			<h3>{divisionSubName}</h3>
+		{/if}
 		<ul class="members noscript">
 			{#each members as member}
 				<MemberCard
