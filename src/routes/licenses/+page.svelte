@@ -4,15 +4,10 @@
 	import SectionTitle from '$lib/components/SectionTitle.svelte';
 
 	import licenses from '$lib/licenses.json';
+	import { OTHER_LICENSES } from '$lib/scripts/data/OTHER_LICENSES';
 	import { SITE_URL } from '$lib/scripts/variables';
+	import type { LicenseInfo } from '$lib/scripts/types';
 	import { _ } from 'svelte-i18n';
-
-	type LicenseInfo = {
-		licenses: string;
-		licenseText: string;
-		copyright: string;
-		[key: string]: unknown;
-	};
 
 	const libraries = Object.entries(licenses as Record<string, LicenseInfo>).map(
 		([id, license]) => ({
@@ -20,6 +15,8 @@
 			license
 		})
 	);
+
+	const softwares = libraries.concat(OTHER_LICENSES);
 </script>
 
 <HeadMetadata
@@ -34,14 +31,14 @@
 		<p>{$_('licenses.desc')}</p>
 		<div class="content">
 			<ul>
-				{#each libraries as library}
-					{@const licenseInfo = library.license}
+				{#each softwares as software}
+					{@const licenseInfo = software.license}
 					{@const licenseNames = licenseInfo.licenses}
 					{@const copyright = licenseInfo.copyright}
 					{@const licenseText = licenseInfo.licenseText}
 					<li>
 						<details>
-							<summary>{library.id}<span>&nbsp;- {licenseNames}</span></summary>
+							<summary>{software.id}<span>&nbsp;- {licenseNames}</span></summary>
 							<pre>{#if copyright !== ''}<div
 										class="copyright">{copyright}</div>{/if}{licenseText !== ''
 									? licenseText

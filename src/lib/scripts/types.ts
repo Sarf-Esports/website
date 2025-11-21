@@ -59,3 +59,10 @@ export interface Member {
 	homepage: string | null;
 	gearsAndSettings?: GearsAndSettings;
 }
+
+export interface LicenseInfo {
+	licenses: string;
+	licenseText: string;
+	copyright: string;
+	[key: string]: unknown;
+}
