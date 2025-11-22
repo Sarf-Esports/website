@@ -1,5 +1,3 @@
-<!-- © 2022 REVATI -->
-
 <table>
 	<tr>
 		<th colspan="2">個人で受ける場合</th>

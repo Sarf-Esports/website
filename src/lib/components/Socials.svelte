@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import { SOCIALS } from '$lib/scripts/variables';
 

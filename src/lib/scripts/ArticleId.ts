@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 import { zeroPad } from '$lib/scripts/util';
 
 export class ArticleId {

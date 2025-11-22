@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import { SPONSORS } from '$lib/scripts/data/SPONSORS';
 	import Sponsor from './Sponsor.svelte';

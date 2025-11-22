@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
 

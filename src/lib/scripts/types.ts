@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 import { ArticleId } from '$lib/scripts/ArticleId';
 
 /** The `slug` field will be provided if the instance was provided by the API. */

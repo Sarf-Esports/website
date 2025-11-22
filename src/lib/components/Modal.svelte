@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import type { Writable } from 'svelte/store';
 	import { fly } from 'svelte/transition';

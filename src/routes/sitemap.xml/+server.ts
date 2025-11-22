@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 import type { RequestHandler } from './$types';
 import { fetchArticles } from '$lib/scripts/fetchers';
 import { SITE_URL } from '$lib/scripts/variables';

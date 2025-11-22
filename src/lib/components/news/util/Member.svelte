@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 

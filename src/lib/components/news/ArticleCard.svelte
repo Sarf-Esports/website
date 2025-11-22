@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
 	import { HEADER_1200x600_PATH } from '$lib/scripts/variables';

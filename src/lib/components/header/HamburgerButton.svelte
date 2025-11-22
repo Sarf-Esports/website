@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import { fly, scale } from 'svelte/transition';
 	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '$lib/scripts/stores';

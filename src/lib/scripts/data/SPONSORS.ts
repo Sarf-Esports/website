@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 // スポンサーの数が増えてギチギチになったら、
 // `SponsorBanner.svelte>style` タグ内の `$interval-on-wide` 変数や `$interval-on-narrow` 変数を調整してください。
 //

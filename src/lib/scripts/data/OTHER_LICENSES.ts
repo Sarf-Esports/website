@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 import type { LicenseInfo } from '$lib/scripts/types';
 
 export const OTHER_LICENSES: {
