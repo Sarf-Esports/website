@@ -17,6 +17,7 @@ const CLOUDFLARE_ROUTES_EXCLUDE = [
 	// ▼ Pre-rendered Pages ▼
 	// "<prerendered>",
 	'/privacy',
+	'/licenses',
 	'/api/articles/thumbnail-imgs',
 	'/sitemap.xml',
 	'/robots.txt',
