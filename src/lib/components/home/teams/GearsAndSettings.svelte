@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import type { GearsAndSettings } from '$lib/scripts/types';
 	import { _ } from 'svelte-i18n';

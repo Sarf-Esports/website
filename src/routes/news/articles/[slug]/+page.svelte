@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
 	import Article from './Article.svelte';

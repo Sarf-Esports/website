@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 export const COACHES: {
 	name: string;
 	icon: string | null;

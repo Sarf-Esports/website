@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 import { writable, get } from 'svelte/store';
 import { browser } from '$app/environment';
 import { updateVh001 } from '$lib/scripts/util';

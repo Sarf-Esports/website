@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import ChevronArrow from './ChevronArrow.svelte';
 	import ArticleCard from './ArticleCard.svelte';

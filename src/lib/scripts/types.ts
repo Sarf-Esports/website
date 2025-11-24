@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 import { ArticleId } from '$lib/scripts/ArticleId';
 
 /** The `slug` field will be provided if the instance was provided by the API. */
@@ -58,4 +56,11 @@ export interface Member {
 	twitch: string | null;
 	homepage: string | null;
 	gearsAndSettings?: GearsAndSettings;
+}
+
+export interface LicenseInfo {
+	licenses: string;
+	licenseText: string;
+	copyright: string;
+	[key: string]: unknown;
 }

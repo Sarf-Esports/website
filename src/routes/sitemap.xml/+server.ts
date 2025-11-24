@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 import type { RequestHandler } from './$types';
 import { fetchArticles } from '$lib/scripts/fetchers';
 import { SITE_URL } from '$lib/scripts/variables';
@@ -42,6 +40,11 @@ async function body() {
         <loc>${SITE_URL}/privacy</loc>
         <changefreq>monthly</changefreq>
         <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>${SITE_URL}/licenses</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.1</priority>
     </url>
     ${articles}
 </urlset>`;

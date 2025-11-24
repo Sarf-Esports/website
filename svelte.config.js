@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import preprocess from 'svelte-preprocess';
@@ -19,6 +17,7 @@ const CLOUDFLARE_ROUTES_EXCLUDE = [
 	// ▼ Pre-rendered Pages ▼
 	// "<prerendered>",
 	'/privacy',
+	'/licenses',
 	'/api/articles/thumbnail-imgs',
 	'/sitemap.xml',
 	'/robots.txt',

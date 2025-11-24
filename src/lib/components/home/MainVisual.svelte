@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <div>
 	<img src="/images/logos/revati/title_without-icon.webp" alt="REVATI - UNDEFINED SPIRIT" />
 </div>

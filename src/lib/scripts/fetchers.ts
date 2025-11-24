@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
 import { ArticleId } from '$lib/scripts/ArticleId';
 

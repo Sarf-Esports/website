@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script context="module" lang="ts">
 	const GOOGLE_MATERIAL_DESIGN_ICONS_PATH = '/images/google-material-design-icons/';
 	const BOOTSTRAP_ICONS_PATH = '/images/bootstrap-icons/';

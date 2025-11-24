@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 // If update the `BREAKPOINT_HB` JS constant, also update the `$bp-hamburger-btn` Sass variable in `/src/lib/stylesheets/variables/_mixin.scss`.
 // ＊ `BREAKPOINT_HB = $bp-hamburger-btn - 1`
 // ＊ numerical value of `BREAKPOINT_HB` = `$bp-hamburger-btn` - 1
@@ -7,7 +5,7 @@
 export const BREAKPOINT_HB = '(max-width: 908px)';
 
 /** Copyright notice. */
-export const COPYRIGHT = '© 2022 - 2025 REVATI';
+export const COPYRIGHT = '© 2022 - 2025 REVATI | BSD-3-Clause';
 
 /** Social media links. */
 export const SOCIALS = {

@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import { SITE_URL, PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
 

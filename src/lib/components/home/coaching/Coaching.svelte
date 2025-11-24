@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import Modal from '$lib/components/Modal.svelte';
 	import Fees from './Fees.svelte';

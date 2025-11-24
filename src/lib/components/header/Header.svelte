@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import HbBtn from './HamburgerButton.svelte';
 	import Modal from '$lib/components/Modal.svelte';

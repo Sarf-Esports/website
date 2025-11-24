@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 import type { PageLoad } from './$types';
 import type { SvelteComponent } from 'svelte';
 import type { ArticleMetadata } from '$lib/scripts/types';

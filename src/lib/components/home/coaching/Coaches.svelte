@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import { COACHES } from '$lib/scripts/data/COACHING_PJ';
 </script>

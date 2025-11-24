@@ -1,5 +1,3 @@
-// © 2022 REVATI
-
 import { fetchThumbnailImgFmt } from '$lib/scripts/fetchers';
 import { json } from '@sveltejs/kit';
 

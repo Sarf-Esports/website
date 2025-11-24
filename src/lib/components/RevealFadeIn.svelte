@@ -1,4 +1,3 @@
-<!-- © 2022 REVATI -->
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
