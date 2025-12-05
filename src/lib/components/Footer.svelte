@@ -39,7 +39,8 @@
 	@use '$lib/stylesheets/variables/mixin' as *;
 
 	footer {
-		// min-height: 24vh; // Is this necessary?
+		// Ensures the footer stays anchored to the bottom on pages with short content, especially on high-resolution screens (e.g., 4K).
+		min-height: 24vh;
 		background-color: #0a0a0a;
 
 		.copyright {
