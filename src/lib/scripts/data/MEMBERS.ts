@@ -422,6 +422,18 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: 'n4rakq_ow',
 				homepage: null
+			},
+			{
+				memberName: 'YAMININE',
+				icon: null,
+				role: 'Manager',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'YAMlCHAAAAN',
+				youtube: null,
+				twitch: null,
+				homepage: null
 			}
 		]
 	},
