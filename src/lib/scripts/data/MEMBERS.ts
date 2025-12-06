@@ -197,6 +197,18 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: 'fickle_ow',
 				homepage: null
+			},
+			{
+				memberName: 'N4rAKq',
+				icon: null,
+				role: 'Manager',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'N4rAKq_ow',
+				youtube: null,
+				twitch: 'n4rakq_ow',
+				homepage: null
 			}
 		]
 	},
@@ -412,15 +424,15 @@ export const MEMBER_LISTS: {
 			// ▲ コーチ
 			// ▼ マネージャー
 			{
-				memberName: 'N4rAKq',
+				memberName: 'YAMININE',
 				icon: null,
 				role: 'Manager',
-				country: 'jp',
+				country: null,
 				birthday: null,
 				age: null,
-				twitter: 'N4rAKq_ow',
+				twitter: 'YAMlCHAAAAN',
 				youtube: null,
-				twitch: 'n4rakq_ow',
+				twitch: null,
 				homepage: null
 			}
 		]
