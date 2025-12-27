@@ -86,32 +86,69 @@ export const MEMBER_LISTS: {
 		divisionName: 'Overwatch',
 		members: [
 			{
-				memberName: 'BAMBIE',
+				memberName: 'harutoon',
 				icon: null,
 				role: 'Player',
 				country: 'jp',
 				birthday: null,
 				age: null,
-				twitter: 'bambie_ow',
+				twitter: 'harutoon_ow',
 				youtube: null,
-				twitch: 'bambie_ow',
+				twitch: null,
 				homepage: null
 			},
 			{
-				memberName: 'm5ri',
-				icon: null,
+				memberName: 'hesty',
+				icon: 'hesty.webp',
 				role: 'Player',
-				country: 'us',
+				country: 'jp',
 				birthday: null,
 				age: null,
-				twitter: 'm5riOW',
+				twitter: '__Hestyow',
 				youtube: null,
-				twitch: 'm5riow',
+				twitch: 'hesty_ow',
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
+			},
+			{
+				memberName: 'minseo',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'Kirito0519_OW',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'molang',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'molangmolang_ow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'NOZL',
+				icon: 'nozl.webp',
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'nozl_hog',
+				youtube: null,
+				twitch: 'nozl_hog',
 				homepage: null
 			},
 			{
 				memberName: 'osato',
-				icon: null,
+				icon: 'osato.webp',
 				role: 'Player',
 				country: 'jp',
 				birthday: { year: null, month: 6, day: 13 },
@@ -122,51 +159,13 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'shisui',
+				memberName: 'seunghyeon',
 				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'shisui_441',
-				youtube: null,
-				twitch: 'shisui_441',
-				homepage: null
-			},
-			{
-				memberName: 'STRIKE',
-				icon: 'strike.webp',
 				role: 'Player',
 				country: 'kr',
-				birthday: { year: 2008, month: 5, day: 31 },
-				age: 47,
-				twitter: 'strike_nise',
-				youtube: null,
-				twitch: 'owcstrike',
-				homepage: null
-			},
-			{
-				// Overwatch Academy 2nd 部門との兼任
-				memberName: 'にんじゃはむぞー',
-				icon: 'ninja_hamuzo.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2002, month: 11, day: 3 },
-				age: null,
-				twitter: 'ninja_hamuzo',
-				youtube: null,
-				twitch: 'nhzow',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['ninja_hamuzo']
-			},
-			{
-				memberName: 'はるを。',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
 				birthday: null,
 				age: null,
-				twitter: 'wo_33_',
+				twitter: 'Hyeon_Seung2',
 				youtube: null,
 				twitch: null,
 				homepage: null
@@ -185,7 +184,19 @@ export const MEMBER_LISTS: {
 				gearsAndSettings: GEARS_AND_SETTINGS['hakaisinkotaro']
 			},
 			// ▲ 選手
-			// ▼ マネージャー
+			// ▼ コーチ
+			{
+				memberName: 'Byeolha',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'ow_byeolha',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
 			{
 				memberName: 'Fickle',
 				icon: 'fickle.webp',
@@ -196,6 +207,32 @@ export const MEMBER_LISTS: {
 				twitter: 'Fickle_OW',
 				youtube: null,
 				twitch: 'fickle_ow',
+				homepage: null
+			},
+			{
+				memberName: 'Troyda',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'troy_da0321',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			// ▲ コーチ
+			// ▼ マネージャー
+			{
+				memberName: 'LUD',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'Luvica_Lore',
+				youtube: null,
+				twitch: null,
 				homepage: null
 			},
 			{
