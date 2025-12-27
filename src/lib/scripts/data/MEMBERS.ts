@@ -94,7 +94,7 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: 'harutoon_ow',
 				youtube: null,
-				twitch: null,
+				twitch: 'harutoon_',
 				homepage: null
 			},
 			{
