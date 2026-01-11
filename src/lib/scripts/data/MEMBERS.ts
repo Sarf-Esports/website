@@ -98,11 +98,11 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'hesty',
+				memberName: 'HESTY',
 				icon: 'hesty.webp',
 				role: 'Player',
 				country: 'jp',
-				birthday: null,
+	 			birthday: { year: 1999, month: 9, day: 17 },
 				age: null,
 				twitter: '__Hestyow',
 				youtube: null,
@@ -239,111 +239,6 @@ export const MEMBER_LISTS: {
 	},
 	{
 		divisionName: 'Overwatch Academy 1st',
-		divisionSubName: 'HASTA',
-		members: [
-			{
-				memberName: 'hotaro',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 3, day: 13 },
-				age: null,
-				twitter: 'Hotaro_ow',
-				youtube: null,
-				twitch: 'hotaro_ow',
-				homepage: null
-			},
-			{
-				memberName: 'lud',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 9, day: 10 },
-				age: null,
-				twitter: 'Luvica_Lore',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'Sorasuke',
-				icon: null,
-				role: null,
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'NotSorasuke',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'XuanSeo',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 12, day: 25 },
-				age: null,
-				twitter: 'XuanSeo_OW',
-				youtube: null,
-				twitch: 'XuanSeo',
-				homepage: null
-			},
-			{
-				memberName: 'YEN',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 12, day: 23 },
-				age: null,
-				twitter: 'yen_0w',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'zenith',
-				icon: null,
-				role: null,
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'zenith_ow_',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'かぼちゃpumpkin',
-				icon: null,
-				role: null,
-				country: null,
-				birthday: { year: null, month: 1, day: 1 },
-				age: null,
-				twitter: 'pumpkin_hk',
-				youtube: null,
-				twitch: 'pumpkin_kabotyaaa',
-				homepage: null
-			},
-			// ▲ 選手
-			// ▼ コーチ
-			{
-				memberName: 'HESTY',
-				icon: 'hesty.webp',
-				role: 'Coach',
-				country: 'jp',
-				birthday: { year: 1999, month: 9, day: 17 },
-				age: null,
-				twitter: '__Hestyow',
-				youtube: null,
-				twitch: 'hesty_ow',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
-			}
-		]
-	},
-	{
-		divisionName: 'Overwatch Academy 2nd',
 		divisionSubName: 'パチマリぽこぽこファイターズ',
 		members: [
 			{
@@ -356,30 +251,6 @@ export const MEMBER_LISTS: {
 				twitter: 'Smth_ow',
 				youtube: null,
 				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'FEARLESS',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'FEARLESS87f',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'MOL',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: { year: null, month: 8, day: 24 },
-				age: null,
-				twitter: 'moruka0824',
-				youtube: null,
-				twitch: 'mol_ow',
 				homepage: null
 			},
 			{
@@ -402,18 +273,6 @@ export const MEMBER_LISTS: {
 				birthday: null,
 				age: null,
 				twitter: 'Seungyeon_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'ギネス',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'Aiji_1014',
 				youtube: null,
 				twitch: null,
 				homepage: null
