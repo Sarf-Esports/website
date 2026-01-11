@@ -276,30 +276,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'FEARLESS',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'FEARLESS87f',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'MOL',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: { year: null, month: 8, day: 24 },
-				age: null,
-				twitter: 'moruka0824',
-				youtube: null,
-				twitch: 'mol_ow',
-				homepage: null
-			},
-			{
 				memberName: 'Ril',
 				icon: null,
 				role: 'Player',
@@ -319,18 +295,6 @@ export const MEMBER_LISTS: {
 				birthday: null,
 				age: null,
 				twitter: 'Seungyeon_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'ギネス',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'Aiji_1014',
 				youtube: null,
 				twitch: null,
 				homepage: null
