@@ -98,11 +98,11 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'hesty',
+				memberName: 'HESTY',
 				icon: 'hesty.webp',
 				role: 'Player',
 				country: 'jp',
-				birthday: null,
+	 			birthday: { year: 1999, month: 9, day: 17 },
 				age: null,
 				twitter: '__Hestyow',
 				youtube: null,
@@ -237,28 +237,6 @@ export const MEMBER_LISTS: {
 			}
 		]
 	},
-	// ==== 記事 20260106 にコーチ HESTY 氏に関する記述がないため、念の為コメントアウトで凍結 ====
-	// {
-	// 	divisionName: 'Overwatch Academy 1st',
-	// 	divisionSubName: 'HASTA',
-	// 	members: [
-	// 		// ...削除済み...
-	// 		// ▲ コーチ以外
-	// 		{
-	// 			memberName: 'HESTY',
-	// 			icon: 'hesty.webp',
-	// 			role: 'Coach',
-	// 			country: 'jp',
-	// 			birthday: { year: 1999, month: 9, day: 17 },
-	// 			age: null,
-	// 			twitter: '__Hestyow',
-	// 			youtube: null,
-	// 			twitch: 'hesty_ow',
-	// 			homepage: null,
-	// 			gearsAndSettings: GEARS_AND_SETTINGS['hesty']
-	// 		}
-	// 	]
-	// },
 	{
 		divisionName: 'Overwatch Academy 1st',
 		divisionSubName: 'パチマリぽこぽこファイターズ',
