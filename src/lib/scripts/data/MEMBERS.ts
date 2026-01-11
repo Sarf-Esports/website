@@ -123,18 +123,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'molang',
-				icon: null,
-				role: 'Player',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'molangmolang_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: 'NOZL',
 				icon: 'nozl.webp',
 				role: 'Player',
