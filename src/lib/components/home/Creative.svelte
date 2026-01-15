@@ -10,11 +10,8 @@
 	)}
 </p>
 
-<a
-	href="https://studio.revati.jp"
-	target="_blank"
-	rel="noopener noreferrer"
-	title="REVATI Studio | WORKS">{$_('creative.websiteLink')}</a
+<a href="https://studio.revati.jp" target="_blank" rel="noopener" title="REVATI Studio | WORKS"
+	>{$_('creative.websiteLink')}</a
 >
 
 <style lang="scss">

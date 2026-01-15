@@ -20,11 +20,7 @@
 	</div>
 	<div class="socials"><Socials style="margin-top: 21px;" /></div>
 	<div>
-		<a
-			href="https://studio.revati.jp"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="no-after-icn"
+		<a href="https://studio.revati.jp" target="_blank" rel="noopener" class="no-after-icn"
 			><img
 				src="/images/logos/REVATI-Studio/250724_studio_logo_banner.webp"
 				alt={REVATI_STUDIO_TITLE}

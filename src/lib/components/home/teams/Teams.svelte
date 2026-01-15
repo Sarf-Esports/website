@@ -12,8 +12,10 @@
 
 	let currentDivisionIndex = 0;
 
-	if (division !== null)
-		currentDivisionIndex = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName === division);
+	if (division !== null) {
+		const index = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName === division);
+		if (index !== -1) currentDivisionIndex = index;
+	}
 
 	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
 
@@ -34,7 +36,7 @@
 				class:active={i === currentDivisionIndex}
 				on:click={() => {
 					currentDivisionIndex = i;
-					replaceState(`?div=${divisionName.replace(' ', '+')}#teams`, {});
+					replaceState(`?div=${divisionName.replaceAll(' ', '+')}#teams`, {});
 				}}>{divisionName}</button
 			>
 		</li>
