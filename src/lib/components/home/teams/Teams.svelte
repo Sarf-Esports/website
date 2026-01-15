@@ -34,7 +34,7 @@
 				class:active={i === currentDivisionIndex}
 				on:click={() => {
 					currentDivisionIndex = i;
-					replaceState(`?div=${divisionName.replace(' ', '+')}#teams`, {});
+					replaceState(`?div=${divisionName.replaceAll(' ', '+')}#teams`, {});
 				}}>{divisionName}</button
 			>
 		</li>
