@@ -102,7 +102,7 @@ export const MEMBER_LISTS: {
 				icon: 'hesty.webp',
 				role: 'Player',
 				country: 'jp',
-	 			birthday: { year: 1999, month: 9, day: 17 },
+				birthday: { year: 1999, month: 9, day: 17 },
 				age: null,
 				twitter: '__Hestyow',
 				youtube: null,
