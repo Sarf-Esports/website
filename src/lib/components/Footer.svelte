@@ -23,7 +23,7 @@
 		<a
 			href="https://studio.revati.jp"
 			target="_blank"
-			rel="noopener noreferrer"
+			rel="noopener"
 			class="no-after-icn"
 			><img
 				src="/images/logos/REVATI-Studio/250724_studio_logo_banner.webp"

@@ -13,7 +13,7 @@
 <a
 	href="https://studio.revati.jp"
 	target="_blank"
-	rel="noopener noreferrer"
+	rel="noopener"
 	title="REVATI Studio | WORKS">{$_('creative.websiteLink')}</a
 >
 
