@@ -254,6 +254,18 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'Ginkgo',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: '_Ginkgo_ow_',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				memberName: 'Ril',
 				icon: null,
 				role: 'Player',
