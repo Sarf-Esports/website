@@ -135,18 +135,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'osato',
-				icon: 'osato.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 6, day: 13 },
-				age: null,
-				twitter: 'osato_ow',
-				youtube: '@osato_ow',
-				twitch: 'osato_fps',
-				homepage: null
-			},
-			{
 				memberName: 'seunghyeon',
 				icon: null,
 				role: 'Player',
@@ -157,19 +145,6 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: null,
 				homepage: null
-			},
-			{
-				memberName: '破壊神こたろ',
-				icon: 'hakaisinkotaro.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'mareku1212',
-				youtube: '@hakaisinkotaro',
-				twitch: 'hakaisinnkotaro',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['hakaisinkotaro']
 			},
 			// ▲ 選手
 			// ▼ コーチ
@@ -457,6 +432,18 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'osato',
+				icon: 'osato.webp',
+				role: 'Streamer',
+				country: 'jp',
+				birthday: { year: null, month: 6, day: 13 },
+				age: null,
+				twitter: 'osato_ow',
+				youtube: '@osato_ow',
+				twitch: 'osato_fps',
+				homepage: null
+			},
+			{
 				memberName: 'きゅうりおいしい',
 				icon: 'kyuurioisii.webp',
 				role: 'Streamer',
@@ -527,6 +514,19 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: '345mimasaka_vt',
 				homepage: 'https://lit.link/345mimasaka'
+			},
+			{
+				memberName: '破壊神こたろ',
+				icon: 'hakaisinkotaro.webp',
+				role: 'Streamer',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'mareku1212',
+				youtube: '@hakaisinkotaro',
+				twitch: 'hakaisinnkotaro',
+				homepage: null,
+				gearsAndSettings: GEARS_AND_SETTINGS['hakaisinkotaro']
 			}
 		]
 	}
