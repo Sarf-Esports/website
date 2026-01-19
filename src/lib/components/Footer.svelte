@@ -15,7 +15,7 @@
 		<a href="/privacy">Privacy</a><a href="mailto:{SOCIALS.email}">Contact</a><a href="/licenses"
 			>Licenses</a
 		><a href="/feed" target="_blank" class="no-after-icn">Feed</a><a
-			href="https://github.com/Sarf-Esports/website">Source</a
+			href="https://github.com/revati-jp/website">Source</a
 		>
 	</div>
 	<div class="socials"><Socials style="margin-top: 21px;" /></div>

@@ -12,7 +12,7 @@ export const SOCIALS = {
 	email: 'contact.revati@gmail.com',
 	twitter: 'revati_jp',
 	youtube: '@revati_jp',
-	github: 'Sarf-Esports'
+	github: 'revati-jp'
 };
 
 /** URL of the site. */
