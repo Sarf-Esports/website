@@ -1,7 +1,7 @@
 # 変更を加える際の規則
 
 弊チームのウェブサイト開発への貢献を検討いただきありがとうございます。
-単純な変更であれば、[Issue](https://github.com/Sarf-Esports/website/issues) を立てていただければ こちらで対応いたします。
+単純な変更であれば、[Issue](https://github.com/revati-jp/website/issues) を立てていただければ こちらで対応いたします。
 
 > [!CAUTION]
 >
@@ -33,5 +33,5 @@
 - 新規ページを追加した場合は、[新規ページ追加後にすべきこと(`when-added-new-page.md`)](/docs/when-added-new-page.md) も参照してください。
 - プレビューがデプロイされるブランチは `dev`, `feat/*`, `fix/*`, `hotfix/*` のみ。
 - hotfix系ブランチは基本的にメインリポジトリで masterブランチから生やす。
-- 破壊的または大規模な変更になりそうだったら事前に [Issue](https://github.com/Sarf-Esports/website/issues) 立てた方が賢明。
-- 何かわからないことがあれば [Discussions](https://github.com/Sarf-Esports/website/discussions) なりで気軽に質問してください。
+- 破壊的または大規模な変更になりそうだったら事前に [Issue](https://github.com/revati-jp/website/issues) 立てた方が賢明。
+- 何かわからないことがあれば [Discussions](https://github.com/revati-jp/website/discussions) なりで気軽に質問してください。
