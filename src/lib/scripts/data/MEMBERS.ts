@@ -111,6 +111,18 @@ export const MEMBER_LISTS: {
 				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
 			},
 			{
+				memberName: 'imalone',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'ow_imalone',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				memberName: 'minseo',
 				icon: null,
 				role: 'Player',
@@ -147,11 +159,25 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			// ▲ 選手
+			// ▼ アナリスト
+			{
+				memberName: 'Findirath',
+				icon: null,
+				role: 'Analyst',
+				country: 'us',
+				birthday: { year: 2002, month: 8, day: 9 },
+				age: null,
+				twitter: 'findirath_ow',
+				youtube: null,
+				twitch: 'findirath',
+				homepage: null
+			},
+			// ▲ アナリスト
 			// ▼ コーチ
 			{
 				memberName: 'Byeolha',
 				icon: null,
-				role: 'Player',
+				role: 'Coach',
 				country: 'kr',
 				birthday: null,
 				age: null,
@@ -163,7 +189,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'Fickle',
 				icon: 'fickle.webp',
-				role: 'Manager',
+				role: 'Coach',
 				country: 'kr',
 				birthday: { year: 1998, month: 7, day: 9 },
 				age: null,
@@ -175,7 +201,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'Troyda',
 				icon: null,
-				role: 'Player',
+				role: 'Coach',
 				country: 'kr',
 				birthday: null,
 				age: null,
@@ -189,7 +215,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'LUD',
 				icon: null,
-				role: 'Player',
+				role: 'Manager',
 				country: 'jp',
 				birthday: null,
 				age: null,
