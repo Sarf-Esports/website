@@ -177,7 +177,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'Byeolha',
 				icon: null,
-				role: 'Player',
+				role: 'Coach',
 				country: 'kr',
 				birthday: null,
 				age: null,
@@ -189,7 +189,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'Fickle',
 				icon: 'fickle.webp',
-				role: 'Manager',
+				role: 'Coach',
 				country: 'kr',
 				birthday: { year: 1998, month: 7, day: 9 },
 				age: null,
@@ -201,7 +201,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'Troyda',
 				icon: null,
-				role: 'Player',
+				role: 'Coach',
 				country: 'kr',
 				birthday: null,
 				age: null,
