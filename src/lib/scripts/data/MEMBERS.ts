@@ -215,7 +215,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'LUD',
 				icon: null,
-				role: 'Player',
+				role: 'Manager',
 				country: 'jp',
 				birthday: null,
 				age: null,
