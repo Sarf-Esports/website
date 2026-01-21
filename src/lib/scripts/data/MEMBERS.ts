@@ -86,18 +86,6 @@ export const MEMBER_LISTS: {
 		divisionName: 'Overwatch',
 		members: [
 			{
-				memberName: 'Findirath',
-				icon: null,
-				role: 'Analyst',
-				country: 'us',
-				birthday: { year: 2002, month: 8, day: 9 },
-				age: null,
-				twitter: 'findirath_ow',
-				youtube: null,
-				twitch: 'findirath',
-				homepage: null
-			},
-			{
 				memberName: 'harutoon',
 				icon: null,
 				role: 'Player',
@@ -171,6 +159,20 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			// ▲ 選手
+			// ▼ アナリスト
+			{
+				memberName: 'Findirath',
+				icon: null,
+				role: 'Analyst',
+				country: 'us',
+				birthday: { year: 2002, month: 8, day: 9 },
+				age: null,
+				twitter: 'findirath_ow',
+				youtube: null,
+				twitch: 'findirath',
+				homepage: null
+			},
+			// ▲ アナリスト
 			// ▼ コーチ
 			{
 				memberName: 'Byeolha',
