@@ -86,6 +86,18 @@ export const MEMBER_LISTS: {
 		divisionName: 'Overwatch',
 		members: [
 			{
+				memberName: 'Findirath',
+				icon: null,
+				role: 'Analyst',
+				country: 'us',
+				birthday: { year: 2002, month: 8, day: 9 },
+				age: null,
+				twitter: 'findirath_ow',
+				youtube: null,
+				twitch: 'findirath',
+				homepage: null
+			},
+			{
 				memberName: 'harutoon',
 				icon: null,
 				role: 'Player',
@@ -109,6 +121,18 @@ export const MEMBER_LISTS: {
 				twitch: 'hesty_ow',
 				homepage: null,
 				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
+			},
+			{
+				memberName: 'imalone',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'ow_imalone',
+				youtube: null,
+				twitch: null,
+				homepage: null
 			},
 			{
 				memberName: 'minseo',
