@@ -111,7 +111,7 @@ export const MEMBER_LISTS: {
 				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
 			},
 			{
-				memberName: 'imalone',
+				memberName: 'Imalone',
 				icon: null,
 				role: 'Player',
 				country: 'kr',
