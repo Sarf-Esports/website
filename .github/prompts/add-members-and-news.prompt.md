@@ -77,19 +77,19 @@ title: ここにタイトル
 
 	const PLAYERS = [
 		{ name: 'Player1', socials: { twitter: 'player1' } },
-      {
-         name: 'Player2',
-         socials: {
-            twitter: 'player2',
-            youtube: 'UCb3U3ovwzmagTBuzkdrsJkQ',
-            twitch: 'player2',
-            other: 'https://example.com'
-         }
-      },
 		{
-         name: 'Player3',
-         socials: { twitter: 'player3', youtube: '@player3' }
-      }
+			name: 'Player2',
+			socials: {
+				twitter: 'player2',
+				youtube: 'UCb3U3ovwzmagTBuzkdrsJkQ',
+				twitch: 'player2',
+				other: 'https://example.com'
+			}
+		},
+		{
+			name: 'Player3',
+			socials: { twitter: 'player3', youtube: '@player3' }
+		}
 	];
 
 	const COACHES = [
@@ -128,15 +128,15 @@ Coach1「任意のコメント」
 他に、複雑な形式を使用したい場合は次のファイルを参照してください:
 
 - ニュース記事のテスト: `articles/2023/2/20230206_test.md`
-   - 段落は空行区切り
-   - 明示改行は行末に半角スペース2つ
-   - 見出しは `##` から `######` まで
-   - 区切り線は `---`
-   - 引用 `> ` も使用可能
-   - ...など、ニュース記事の詳細な記法がまとめられている
+	- 段落は空行区切り
+	- 明示改行は行末に半角スペース2つ
+	- 見出しは `##` から `######` まで
+	- 区切り線は `---`
+	- 引用 `> ` も使用可能
+	- ...など、ニュース記事の詳細な記法がまとめられている
 - ニュース記事専用のコンポーネント一覧: `articles/2024/3/20240301_test.md`
-   - Member コンポーネント
-   - Twitter Embed コンポーネント
+	- Member コンポーネント
+	- Twitter Embed コンポーネント
 
 誤字や不自然な表現などがあった場合は、黙って修正をするのではなく必ずユーザーに確認をしてください。
 
@@ -159,11 +159,11 @@ npm run check && npm run fmt && npm run lnt
 （あなたではなくユーザーがコミットを実行する）:
 
 - `🛠️ Update: *`
-   - `*` の部分例:
-      - Player A joins
-      - Foo, Bar, Boo join
-      - 6 members join
-         - 人数が多い場合はコミットメッセージ本文で箇条書き
+	- `*` の部分例:
+		- Player A joins
+		- Foo, Bar, Boo join
+		- 6 members join
+			- 人数が多い場合はコミットメッセージ本文で箇条書き
 - `✨ Feat: add article <ID>`
 
 以上の手順に従って、REVATI のメンバー追加とニュース記事作成を行ってください。
